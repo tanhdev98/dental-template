@@ -1,6 +1,271 @@
-#table .table-header {
+#table .sub-icon-star {
+    background: url('../images/icon/sub-icon-star.png') no-repeat center / 100%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: -2px 8px 0 12px;
+}
+
+#table .sub-icon-link {
+    background: url('../images/icon/sub-icon-link.png') no-repeat center / 100%;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+#table .sub-icon-select {
+    background: url('../images/icon/sub-icon-select.png') no-repeat center / 100%;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+#table .icon {
+    cursor: pointer;
+}
+
+#table #table-header {
     height: 120px;
     border-radius: 10px;
     background-color: #88abda;
     margin: 20px 0 40px 0;
+}
+
+#table #table-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#table .table-title-1 {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+#table .table-title-1 .color-blue-1 {
+    color: #88abda;
+}
+
+
+.group-select {
+    display: flex;
+    gap: 3px;
+    padding: 0;
+}
+
+.custom-select select {
+    appearance: none;
+    /* Ẩn mũi tên mặc định */
+    -webkit-appearance: none;
+    /* Ẩn mũi tên trên Safari */
+    -moz-appearance: none;
+    /* Ẩn mũi tên trên Firefox */
+    padding: 10px 43px 10px 14px;
+    background: #fff url('../images/icon/sub-icon-select.png') no-repeat right 10px center;
+    background-size: 10px 6px;
+}
+
+.custom-select select:hover {
+    cursor: pointer;
+}
+
+#table #table-title select {
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+
+#table #table-title select option {
+    font-size: 16px;
+}
+
+#table #table-list {
+    padding: 0;
+}
+
+#table .table-item {
+    border-top: 1px solid #333333;
+    margin-bottom: 11px;
+}
+
+#table .table-item-header {
+    height: 104px;
+    margin: 28px 28px 0 28px;
+}
+
+#table .table-item-header .col {
+    padding: 0;
+}
+
+#table .table-item-header .title-text {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#table .table-item-header .title-text .text {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#table .table-item-header .title-text-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#table .table-item-header .title-text-child p {
+    line-height: 1;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.title-text-child p {
+    position: relative;
+    padding: 5px;
+}
+
+.title-text-child p::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: #333;
+}
+
+.title-text-child p:last-child::after {
+    content: "";
+}
+
+#table .table-item-header .title-text-child p:first-child {
+    padding-left: 0;
+}
+
+#table .table-item-header .title-text-child p:last-child {
+    border-right: none;
+}
+
+#table .col-3 .title-text-child p:last-child {
+    padding: 5px 0;
+}
+
+#table .col-3 .title-text-child p:nth-last-child(2)::after {
+    content: "";
+}
+
+#table .status {
+    width: max-content;
+    margin-right: 40px;
+}
+
+#table .text-status {
+    font-size: 16px;
+    color: #80b156;
+    padding: 2px 8px;
+    border: 1px solid #80b156;
+    border-radius: 10px;
+    line-height: 1;
+    margin-bottom: 7px;
+}
+
+#table .text-status.date-time {
+    font-size: 13px;
+    color: #999999;
+    padding: 0;
+    border: unset;
+    border-radius: unset;
+    line-height: 1;
+}
+
+#table .text-status-child {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#table .flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#table .table-item-footer {
+    height: 50px;
+    border: 1px solid #dddddd;
+    border-left: unset;
+    border-right: unset;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#table .table-item-footer .item-footer {
+    margin-left: 28px;
+    display: flex;
+    gap: 20px;
+}
+
+#table .table-item-footer .item-footer .item-title {
+    font-weight: bold;
+}
+
+
+
+
+#table .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 42px;
+    position: relative;
+}
+
+
+
+.pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination li a {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .number-page:hover {
+    font-weight: bold;
+    color: #000;
+    border-radius: 50%;
+    background-color: #eeeeee;
+}
+
+.prev.sub-icon-select,
+.next.sub-icon-select {
+    width: 12px !important;
+    height: 12px !important;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.prev.sub-icon-select:hover,
+.next.sub-icon-select:hover {
+    font-weight: bold;
+    color: #000;
+}
+
+.prev.sub-icon-select {
+    transform: rotate(90deg);
+}
+
+.next.sub-icon-select {
+    transform: rotate(-90deg);
 }
