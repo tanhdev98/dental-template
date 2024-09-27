@@ -77,8 +77,8 @@ a {
     border-radius: 10px 10px 0 0;
     color: #999;
     font-size: 19px;
-    font-weight: 700;
     line-height: 48px;
+    background-color: #f3f7f8;
 }
 
 .wrap-tab-form button.active {
@@ -89,6 +89,7 @@ a {
     border: 1px solid #000;
     border-bottom: 1px solid transparent;
     color: #333;
+    font-weight: 700;
 }
 
 .hide {
@@ -129,7 +130,7 @@ a {
     border-radius: 10px;
     width: 100%;
     padding: 0 15px 0 40px;
-    font-size: 21px;
+    font-size: 17px;
     color: #333;
 }
 
@@ -164,6 +165,12 @@ a {
 
 }
 
+.wrap-bottom-form .form-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .wrap-bottom-form .remember {
     display: flex;
     justify-content: space-between;
@@ -177,7 +184,7 @@ a {
     border-radius: 2px;
 }
 
-.wrap-bottom-form .remember span {
+.wrap-bottom-form .remember label {
     font-size: 14px;
     font-weight: 700;
     color: #666;
@@ -185,7 +192,6 @@ a {
 
 .wrap-forward a {
     font-size: 18px;
-    font-weight: 400;
     color: #666;
 }
 
@@ -220,6 +226,9 @@ a {
 
 .wrap-question p {
     margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
 }
 
 .wrap-question a.btn {
@@ -228,7 +237,9 @@ a {
     padding: 0 15px;
     border-radius: 35px;
     background-color: #80b156;
-    color: #fff
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -237,7 +248,7 @@ a {
     text-align: center;
     font-size: 19px;
     color: #666;
-    margin-top: 32px;
+    margin-top: 37px;
 }
 
 
@@ -297,5 +308,12 @@ a {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+    }
+
+    .wrap-question {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 10px;
+        align-items: flex-start;
     }
 }
