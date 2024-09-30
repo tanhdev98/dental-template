@@ -3,7 +3,7 @@
     width: 16px;
     height: 16px;
     display: inline-block;
-    margin: -2px 8px 0 12px;
+    margin-right: 7px;
 }
 
 .sub-icon-link {
@@ -11,7 +11,7 @@
     width: 14px;
     height: 14px;
     display: inline-block;
-    margin-top: -2px;
+    margin-right: 10px;
 }
 
 .sub-icon-select {
@@ -21,61 +21,30 @@
     display: inline-block;
 }
 
+.icon-avata {
+    background: url('../images/icon/icon-avata.png') no-repeat center / 100%;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
 .icon {
     cursor: pointer;
 }
 
-#table #table-header {
-    height: 120px;
-    border-radius: 10px;
-    background-color: #88abda;
-    margin: 20px 0 40px 0;
+.top-7 {
+    top: 7px;
 }
 
-#table #table-title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+.redText {
+    color: #fe0216;
 }
 
-#table .table-title-1 {
-    font-size: 18px;
-    margin-top: 8px;
+.boldText {
+    font-weight: bold;
 }
 
-#table .table-title-1 .color-blue-1 {
-    color: #88abda;
-}
-
-
-.group-select {
-    display: flex;
-    gap: 3px;
-    padding: 0;
-}
-
-.custom-select select {
-    appearance: none;
-    /* Ẩn mũi tên mặc định */
-    -webkit-appearance: none;
-    /* Ẩn mũi tên trên Safari */
-    -moz-appearance: none;
-    /* Ẩn mũi tên trên Firefox */
-    padding: 10px 43px 10px 14px;
-    background: #fff url('../images/icon/sub-icon-select.png') no-repeat right 10px center;
-    background-size: 10px 6px;
-}
-
-.custom-select select:hover {
-    cursor: pointer;
-}
-
-#table #table-title select {
-    border: 1px solid #999999;
-    border-radius: 4px;
-}
-
-#table #table-title select option {
+.fs-16 {
     font-size: 16px;
 }
 
@@ -84,8 +53,7 @@
 }
 
 #table .table-item {
-    border-top: 1px solid #333333;
-    margin-bottom: 11px;
+    border-bottom: 1px solid #333333;
 }
 
 #table .table-item-header {
@@ -112,23 +80,27 @@
 #table .table-item-header .title-text-child {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #table .table-item-header .title-text-child p {
     line-height: 1;
     font-size: 15px;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
-.title-text-child p {
+.title-text-child p span {
     position: relative;
     padding: 5px;
+    padding-left: 10px;
 }
 
-.title-text-child p::after {
+.title-text-child p .striated::after {
     content: "|";
     position: absolute;
-    right: 0;
+    right: -5px;
     color: #333;
 }
 
@@ -142,73 +114,56 @@
 
 #table .table-item-header .title-text-child p:last-child {
     border-right: none;
+    padding-left: 5px;
 }
 
-#table .col-3 .title-text-child p:last-child {
-    padding: 5px 0;
+#table .table-item-header .title-text-child p:nth-last-child(2) {
+    padding-left: 0;
 }
 
-#table .col-3 .title-text-child p:nth-last-child(2)::after {
-    content: "";
+
+#table .table-item-header .col-3 .title-text-child p:nth-last-child(2) {
+    padding-left: 10px;
+}
+
+#table .table-item-header .col-3 .boldText.fs-16 {
+    margin-left: 167px;
 }
 
 #table .status {
     width: max-content;
-    margin-right: 40px;
 }
 
-#table .text-status {
-    font-size: 16px;
-    color: #80b156;
-    padding: 2px 8px;
-    border: 1px solid #80b156;
-    border-radius: 10px;
-    line-height: 1;
+.status .item-status {
     margin-bottom: 7px;
 }
 
-#table .text-status.date-time {
-    font-size: 13px;
-    color: #999999;
-    padding: 0;
-    border: unset;
-    border-radius: unset;
-    line-height: 1;
-}
-
 #table .text-status-child {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
 
-#table .flex-end {
+.flex-end {
     display: flex;
     justify-content: flex-end;
 }
 
-#table .table-item-footer {
-    height: 50px;
-    border: 1px solid #dddddd;
-    border-left: unset;
-    border-right: unset;
-    background-color: #f9f9f9;
+.flex-col-end {
     display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.group-avt {
+    display: flex;
+    gap: 2px;
     align-items: center;
-    gap: 20px;
 }
 
-#table .table-item-footer .item-footer {
-    margin-left: 28px;
-    display: flex;
-    gap: 20px;
+.item-status .sub-icon-link {
+    margin-right: 0;
 }
-
-#table .table-item-footer .item-footer .item-title {
-    font-weight: bold;
-}
-
-
 
 /* start pagination */
 #pagination {
@@ -216,7 +171,7 @@
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin-top: 42px;
+    margin-top: 30px;
     position: relative;
 }
 
