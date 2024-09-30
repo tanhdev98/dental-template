@@ -44,3 +44,13 @@
     content: '';
     background: url('../images/icons/icon-hamburger-bar.png') no-repeat center / contain;
 }
+
+.icon-dropdown {
+    width: 10px;
+    height: 6px;
+}
+
+.icon-dropdown::after {
+    content: '';
+    background: url('../images/arrow-down.png') no-repeat center / contain;
+}
