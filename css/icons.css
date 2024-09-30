@@ -53,4 +53,19 @@
 .icon-dropdown::after {
     content: '';
     background: url('../images/arrow-down.png') no-repeat center / contain;
+
+.icon-blank,
+.icon-star {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-blank::after {
+    content: '';
+    background: url('../images/icons/icon-blank.png') no-repeat center / contain;
+}
+
+.icon-star::after {
+    content: '';
+    background: url('../images/icons/icon-star.png') no-repeat center / contain;
 }
