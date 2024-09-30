@@ -14,7 +14,7 @@
 }
 
 #search-infor .notification {
-    width: 1100px;
+    max-width: 1100px;
     height: 250px;
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -46,7 +46,7 @@
 
 #search-infor .wrap-infor {
     border-radius: 10px 10px 0 0;
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -165,6 +165,15 @@
     gap: 5px;
 }
 
+.form-select-container {
+    width: 130px;
+    height: 40px;
+}
+
+.form-select-container>.form-select-cus {
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
 
 #search-infor .content-tab .form-phone .group-phone {
     display: flex;
