@@ -234,11 +234,196 @@
 
 /* footer */
 #footer {
-    height: 230px;
     background: #f3f7f8;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
+    padding: 30px 0 35px 0;
+}
+
+#footer .menu>ul {
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+
+#footer .menu>ul>li {
+    color: #666;
+    white-space: nowrap;
+}
+
+#footer .menu>ul .active {
+    color: #076ecc;
+}
+
+#footer .info {
+    margin-top: 25px;
+}
+
+#footer .info>ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+#footer .info>ul:last-child {
+    margin-bottom: 0;
+}
+
+#footer .info>ul>li {
+    position: relative;
+    color: #999;
+    font-size: 15px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+#footer .info>ul>li::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #999;
+    position: absolute;
+    right: -15px;
+}
+
+#footer .info>ul>li:last-child::after {
+    display: none;
+}
+
+#footer .info .copyright li p {
+    display: inline;
+    color: #999;
+}
+
+#footer .collab {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+#footer .collab img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (width <=1320px) {
+
+    #footer .info>ul,
+    #footer .menu>ul {
+        row-gap: 10px;
+    }
 }
 
 /* end footer */
+
+/* Dropdown Button */
+.form-select-container {
+    width: 160px;
+    height: 40px;
+}
+
+.form-select-container>select {
+    visibility: hidden;
+    position: absolute;
+}
+
+.form-select-container>.form-select-cus {
+    border: 1px solid #999;
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+}
+
+.form-select-container.active>.form-select-cus {
+    border-color: transparent;
+}
+
+.form-select-container>.form-select-cus>.form-option-placeholder {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    height: 100%;
+}
+
+.form-select-container>.form-select-cus>.form-option-placeholder::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 14px;
+    background: url('../images/arrow-down.png') no-repeat center / contain;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 2px 1px 16px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.form-select-container.active>.form-select-cus>.form-option-wrapper {
+    visibility: visible;
+    opacity: 1;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder,
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option {
+    cursor: pointer;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder:hover,
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder:hover {
+    border-radius: 10px 10px 0 0;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option:last-child:hover {
+    border-radius: 0 0 10px 10px;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container {
+    border-bottom: 1px solid #999;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option,
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper {
+    border-radius: 10px;
+}
+
+.form-select-container.open-upwards .form-select-cus .form-option-wrapper {
+    bottom: 100%;
+    top: auto;
+}

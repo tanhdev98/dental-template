@@ -44,3 +44,58 @@
     content: '';
     background: url('../images/icons/icon-hamburger-bar.png') no-repeat center / contain;
 }
+
+.icon-dropdown {
+    width: 10px;
+    height: 6px;
+}
+
+.icon-dropdown::after {
+    content: '';
+    background: url('../images/arrow-down.png') no-repeat center / contain;
+
+.icon-blank,
+.icon-star {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-blank::after {
+    content: '';
+    background: url('../images/icons/icon-blank.png') no-repeat center / contain;
+}
+
+.icon-star::after {
+    content: '';
+    background: url('../images/icons/icon-star.png') no-repeat center / contain;
+}
+
+.icon-next,
+.icon-prev {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+
+}
+
+.icon-next:hover,
+.icon-prev:hover {
+    background-color: #eee;
+}
+
+.icon-next::after {
+    content: '';
+    background: url('../images/icons/icon-right.png') no-repeat center / contain;
+    height: 10px;
+}
+
+.icon-prev::after {
+    content: '';
+    background: url('../images/icons/icon-left.png') no-repeat center / contain;
+    height: 10px;
+}
