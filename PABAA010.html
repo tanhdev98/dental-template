@@ -7,14 +7,94 @@
     <title>PABAA010</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/class.css">
     <link rel="stylesheet" href="css/PABAA010.css">
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
 </head>
 
 <body>
-    <div id="search-content" style="margin: 100px 0">
+    <!-- Top Ads -->
+    <div id="topAds">
+        <div class="topAds-wrap">
+            <div class="topAds-content">
+                <a href="#" class="btn-primary">이력서 등록 이벤트</a>
+                <span class="text"><b>정성껏 이력서를 작성</b>하여 주신</span>
+                <img class="topAds-img" src="./images/home/coffee.png" alt="topAds-img">
+                <span class="text">모든 분들께 <b>선물을 드립니다.</b></span>
+            </div>
+            <div class="close-topAds-wrap">
+                <input type="checkbox" id="disappear" name="disappear">
+                <label for="disappear">오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
+            </div>
+        </div>
+    </div>
+    <!-- End top ads -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo.png " alt="logo">
+                    </a>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
+                        <a href="#">
+                            <i class="icon icon-find"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <img src="./images/intro-logo.png" alt="intro-logo">
+                </div>
+                <div class="nav-wrap">
+                    <a href="#">
+                        <i class="icon icon-bell"></i>
+                    </a>
+                    <a href="">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar-wrap">
+                <div class="menu">
+                    <a href="#">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                    <div class="total-menu"></div>
+                    <ul>
+                        <li>
+                            <a href="#">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="#">인재소식</a>
+                        </li>
+                        <li>
+                            <a href="#">덴탈플러스</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth">
+                    <a href="./PACAA010.html" class="login">로그인</a>
+                    <a href="./PACAA010.html" class="register">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End navbar -->
+    <!-- Content -->
+    <div id="search-content">
         <div class="container">
             <h4 class="title-results">전체검색결과</h4>
             <ul class="wrap-tab">
@@ -67,22 +147,22 @@
                     <a href="#" class="more-results light-blue">공지/소식 보기 ></a>
                 </div>
                 <ul class="content-table style-2-column">
-                    <li class="flex al-center j-spaceb">
-                        <div class="wrap-left flex al-center gap-30">
+                    <li class="flex wrap-item">
+                        <div class="flex wrap-left">
                             <div class="status blue">공지</div>
                             <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
                         </div>
                         <div class="date">2024.08.31</div>
                     </li>
-                    <li class="flex al-center j-spaceb">
-                        <div class="wrap-left flex al-center gap-30">
+                    <li class="flex wrap-item">
+                        <div class="flex wrap-left">
                             <div class="status green">소식</div>
                             <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
                         </div>
                         <div class="date">2024.08.31</div>
                     </li>
-                    <li class="flex al-center j-spaceb">
-                        <div class="wrap-left flex al-center gap-30">
+                    <li class="flex wrap-item">
+                        <div class="flex wrap-left">
                             <div class="status blue">공지</div>
                             <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
                         </div>
@@ -99,11 +179,11 @@
                     <li class="flex">
                         <div class="result-item">
                             <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" />
+                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
                             </div>
                             <div class="wrap-content">
                                 <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta flex al-center gap-10">
+                                <div class="wrapMeta">
                                     <span class="status red">진행중</span>
                                     <div class="wrap-date">
                                         <span class="start-date">2024.08.01</span>
@@ -114,11 +194,11 @@
                         </div>
                         <div class="result-item">
                             <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" />
+                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
                             </div>
                             <div class="wrap-content">
                                 <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta flex al-center gap-10">
+                                <div class="wrapMeta">
                                     <span class="status red">진행중</span>
                                     <div class="wrap-date">
                                         <span class="start-date">2024.08.01</span>
@@ -131,11 +211,11 @@
                     <li class="flex">
                         <div class="result-item">
                             <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" />
+                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
                             </div>
                             <div class="wrap-content">
                                 <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta flex al-center gap-10">
+                                <div class="wrapMeta">
                                     <span class="status red">진행중</span>
                                     <div class="wrap-date">
                                         <span class="start-date">2024.08.01</span>
@@ -146,11 +226,11 @@
                         </div>
                         <div class="result-item">
                             <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" />
+                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
                             </div>
                             <div class="wrap-content">
                                 <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta flex al-center gap-10">
+                                <div class="wrapMeta">
                                     <span class="status">마감</span>
                                     <div class="wrap-date">
                                         <span class="start-date">2024.08.01</span>
@@ -164,6 +244,14 @@
             </div>
         </div>
     </div>
+    <!-- End Content -->
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+
+        </div>
+    </div>
+    <!-- End footer -->
 </body>
 
 </html>
