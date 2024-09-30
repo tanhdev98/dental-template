@@ -7,7 +7,8 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #333;
-    padding-bottom: 24px;
+    padding-bottom: 15px;
+    align-items: center;
 }
 
 #content .count-results {
@@ -28,6 +29,20 @@
 
 #content .more-results {
     font-size: 18px;
+}
+
+.wrap-dropDown {
+    display: flex;
+    gap: 3px;
+}
+
+.form-select-container>.form-select-cus {
+    border-radius: 3px;
+}
+
+.form-select-container>.form-select-cus>.form-option-placeholder {
+    padding: 0 13px;
+    color: #666;
 }
 
 /* Content Table */
@@ -263,5 +278,11 @@
     .pagination-number li a {
         width: 25px;
         height: 25px;
+    }
+
+    #content .top-table {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
