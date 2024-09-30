@@ -53,6 +53,7 @@
 .icon-dropdown::after {
     content: '';
     background: url('../images/arrow-down.png') no-repeat center / contain;
+}
 
 .icon-blank,
 .icon-star {
