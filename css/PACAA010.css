@@ -6,17 +6,21 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: auto;
+}
+
 .t-center {
     text-align: center;
 }
 
-#login {
+#auth {
     width: 100%;
     max-width: 1130px;
     margin: 100px auto;
 }
 
-#login .logo {
+#auth .logo {
     margin-bottom: 40px;
 }
 
@@ -35,40 +39,45 @@ a {
     /* color: #666; */
 }
 
-.wrap-login {
+.wrap-auth {
     background-color: #fff;
     border-radius: 15px;
     padding: 75px 120px;
 }
 
-.wrap-login .wrap-content {
+.wrap-auth .wrap-content {
     display: flex;
 }
 
-.wrap-login .wrap-content .wrap-login-left {
+.wrap-auth .wrap-content .wrap-auth-left {
     width: 50%;
     padding-right: 40px;
     border-right: 1px solid #ddd;
 }
 
-.wrap-login .wrap-content .wrap-login-right {
+.wrap-auth .wrap-content .wrap-auth-right {
     width: 50%;
     padding-left: 40px;
     margin-bottom: -50px;
 }
 
-.wrap-login .wrap-content .wrap-login-right img {
+.wrap-auth .wrap-content .wrap-auth-right img {
     /* width: 100%; */
 }
 
 /* Tab Form */
-.wrap-tab-form {
+.wrap-tab {
     display: flex;
     margin-bottom: 20px;
+    padding: 0;
 }
 
-.wrap-tab-form button {
-    width: 50%;
+.wrap-tab li {
+    width: 100%;
+}
+
+.wrap-tab li a {
+    display: block;
     border: none;
     outline: none;
     background-color: transparent;
@@ -79,10 +88,10 @@ a {
     font-size: 19px;
     line-height: 48px;
     background-color: #f3f7f8;
+    text-align: center;
 }
 
-.wrap-tab-form button.active {
-    width: 50%;
+.wrap-tab li.active a {
     border: none;
     outline: none;
     background-color: transparent;
@@ -255,24 +264,24 @@ a {
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
-    .wrap-login {
+    .wrap-auth {
         padding: 60px 80px;
     }
 
 }
 
 @media screen and (max-width: 991px) {
-    .wrap-login .wrap-content {
+    .wrap-auth .wrap-content {
         flex-direction: column;
     }
 
-    .wrap-login .wrap-content .wrap-login-left {
+    .wrap-auth .wrap-content .wrap-auth-left {
         width: 100%;
         padding-right: 0;
         border-right: none;
     }
 
-    .wrap-login .wrap-content .wrap-login-right {
+    .wrap-auth .wrap-content .wrap-auth-right {
         width: 100%;
         padding-left: 0;
         text-align: center;
@@ -280,7 +289,7 @@ a {
         margin: 50px auto 0;
     }
 
-    .wrap-login .wrap-content .wrap-login-right img {
+    .wrap-auth .wrap-content .wrap-auth-right img {
         width: 100%;
     }
 
@@ -290,7 +299,7 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-    .wrap-login {
+    .wrap-auth {
         padding: 30px;
     }
 }
