@@ -1,0 +1,111 @@
+#user-guide {
+    padding: 30px 0 100px 0;
+}
+
+#user-guide .titleText {
+    font-size: 40px;
+    margin-bottom: 17px;
+    font-weight: 500;
+}
+
+#user-guide .border-bottom-blue {
+    border: 1px solid #00467b;
+}
+
+#user-guide .content-title {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#user-guide .outer-circle {
+    width: 23px;
+    height: 23px;
+    background-color: #48b805;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-guide .inner-circle {
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+#user-guide .text-content-title {
+    font-size: 33px;
+    color: #48b805;
+    font-weight: bold;
+}
+
+#user-guide .text-content-title-child {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#user-guide .vertical-line {
+    margin: 25px auto;
+    width: 1px;
+    height: 24px;
+    background-color: #666666;
+}
+
+#user-guide .title-content-child {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#user-guide .item-text-arrow {
+    margin-bottom: 67px;
+}
+
+#user-guide .item-text-arrow .line-item {
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.line-1 {
+    margin-bottom: 32px;
+}
+
+.line-2 {
+    justify-content: flex-end;
+}
+
+#user-guide .item-arrow {
+    position: relative;
+    width: 260px;
+    height: 85px;
+    border-radius: 43px;
+    background-color: #d9f2d0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.item-arrow::after {
+    content: '';
+    background-image: url('../images/icons/icon-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
