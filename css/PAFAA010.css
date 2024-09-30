@@ -259,4 +259,9 @@
     .more-infomation li+li {
         margin-left: 0;
     }
+
+    .pagination-number li a {
+        width: 25px;
+        height: 25px;
+    }
 }
