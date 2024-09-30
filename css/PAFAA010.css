@@ -195,3 +195,34 @@
 .more-infomation li .desc-info {
     font-weight: 300;
 }
+
+/* Pagination */
+.wrap-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.pagination-number {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-number li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 300;
+}
+
+.pagination-number li.active a,
+.pagination-number li:hover a {
+    background-color: #eeeeee;
+    font-weight: 700;
+}

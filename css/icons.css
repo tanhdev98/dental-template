@@ -69,3 +69,33 @@
     content: '';
     background: url('../images/icons/icon-star.png') no-repeat center / contain;
 }
+
+.icon-next,
+.icon-prev {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+
+}
+
+.icon-next:hover,
+.icon-prev:hover {
+    background-color: #eee;
+}
+
+.icon-next::after {
+    content: '';
+    background: url('../images/icons/icon-right.png') no-repeat center / contain;
+    height: 10px;
+}
+
+.icon-prev::after {
+    content: '';
+    background: url('../images/icons/icon-left.png') no-repeat center / contain;
+    height: 10px;
+}
