@@ -16,18 +16,28 @@
 <body>
     <div id="search-content" style="margin: 100px 0">
         <div class="container">
-            <h4 class="title-search-result">전체검색결과</h4>
-            <div class="wrap-tab-form">
-                <button id="tab-login" class="active">통합검색</button>
-                <button id="tab-signup">채용소식</button>
-                <button id="tab-signup">인재소식</button>
-                <button id="tab-signup">덴탈잡 </button>
-                <button id="tab-signup">덴탈잡 이벤트</button>
-            </div>
+            <h4 class="title-results">전체검색결과</h4>
+            <ul class="wrap-tab">
+                <li class="active">
+                    <a href="#">통합검색</a>
+                </li>
+                <li>
+                    <a href="#">채용소식</a>
+                </li>
+                <li>
+                    <a href="#">인재소식</a>
+                </li>
+                <li>
+                    <a href="#">덴탈잡 </a>
+                </li>
+                <li>
+                    <a href="#">덴탈잡 이벤트</a>
+                </li>
+            </ul>
             <div class="results-text">
                 <a href="#">'{검색어}'</a><span class="results-default-text">에 대한 검색결과입니다.</span>
             </div>
-            <section class="section section-1">
+            <div class="section section-1">
                 <div class="top-table">
                     <div class="count-results">채용소식 <span>총 <span class="high-light-number">1.000</span>건</span></div>
                     <a href="#" class="more-results blue">채용소식 보기 ></a>
@@ -38,8 +48,8 @@
                     </li>
                 </ul>
 
-            </section>
-            <section class="section section-2">
+            </div>
+            <div class="section section-2">
                 <div class="top-table">
                     <div class="count-results">인재소식 <span>총 <span class="high-light-number">1.000</span>건</span></div>
                     <a href="#" class="more-results green">인재소식 보기 ></a>
@@ -50,13 +60,13 @@
                     </li>
                 </ul>
 
-            </section>
-            <section class="section section-3">
+            </div>
+            <div class="section section-3">
                 <div class="top-table">
                     <div class="count-results">공지/소식 <span>총 <span class="high-light-number">1.000</span>건</span></div>
                     <a href="#" class="more-results light-blue">공지/소식 보기 ></a>
                 </div>
-                <ul class="content-table">
+                <ul class="content-table style-2-column">
                     <li class="flex al-center j-spaceb">
                         <div class="wrap-left flex al-center gap-30">
                             <div class="status blue">공지</div>
@@ -80,8 +90,8 @@
                     </li>
                 </ul>
 
-            </section>
-            <section class="section section-4">
+            </div>
+            <div class="section section-4">
                 <div class="top-table">
                     <div class="count-results">이벤트 <span>총 <span class="high-light-number">1.000</span>건</span></div>
                     <a href="#" class="more-results red">이벤트 보기 ></a>
@@ -152,7 +162,7 @@
                         </div>
                     </li>
                 </ul>
-            </section>
+            </div>
         </div>
     </div>
 </body>
