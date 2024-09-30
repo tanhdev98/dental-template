@@ -14,16 +14,6 @@
 #content .count-results {
     font-size: 18px;
     font-weight: 500;
-    color: #666;
-}
-
-#content .count-results>span {
-    font-size: 18px;
-    color: #666;
-}
-
-#content .count-results .high-light {
-    font-size: 18px;
     color: #0068b7;
 }
 
@@ -49,41 +39,50 @@
 }
 
 /* Content Table */
-#content .wrap-table.table-3-column>li+li {
-    margin-top: 10px;
-    border-top: 1px solid #333;
+#content .wrap-table.table-4-column>li {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 34px;
 }
 
-#content .wrap-table.table-3-column>li>div {
+#content .wrap-table.table-4-column>li>div {
     display: grid;
-    grid-template-columns: calc(100% - 27.15% - 13.88%) 27.15% 13.88%;
+    grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
     padding: 28px 0 0;
 }
 
-/* Column left */
-#content .wrap-table .column-left {
+/* Column 1 */
+.column-1 {}
+
+.column-1 .clinic-name {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Column 2*/
+#content .wrap-table .column-2 {
     padding-left: 25px;
 }
 
-#content .wrap-table .column-left .wrap-title {
+#content .wrap-table .column-2 .wrap-title {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
 
-#content .wrap-table .column-left .wrap-title+.wrap-link {
+#content .wrap-table .column-2 .wrap-title+.wrap-link {
     margin-top: 10px;
 }
 
-#content .wrap-table .column-left .wrap-title .item-title {
+#content .wrap-table .column-2 .wrap-title .item-title {
     margin-bottom: 0;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 700;
     color: #333;
 }
 
-#content .wrap-table .column-left .wrap-title .wrap-meta {
+#content .wrap-table .column-2 .wrap-title .wrap-meta {
     display: inline-flex;
     gap: 8px;
 }
@@ -123,12 +122,7 @@
     transform: translateY(-50%);
 }
 
-/* Column center */
-#content .wrap-table .column-center {
-    padding-left: 35px;
-}
-
-#content .wrap-table .column-center .wrap-position li {
+#content .wrap-table .column-2 .wrap-position li {
     font-size: 15px;
     color: #666;
 }
@@ -137,36 +131,50 @@
     margin-top: 10px;
 }
 
-/* Column right */
-.column-right {
+/* Column 3 */
+#content .wrap-table .column-3 {
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+/* Column 4 */
+.column-4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.column-right .date {
-    font-size: 13px;
-    color: #999;
+.column-4 .support {
+    font-size: 17px;
+    color: #fff;
+    background-color: #0068b7;
+    border-radius: 30px;
+    padding: 0 11px;
+    line-height: 30px;
 }
 
-.column-right .date.update {
+.column-4 .room {
+    color: #666;
     font-size: 16px;
-    color: #80b156;
-    line-height: 18px;
-    padding: 0 7px;
-    border: 1px solid #80b156;
-    border-radius: 15px;
-
-
-}
-
-.column-right .price {
-    font-size: 18px;
-    color: #333;
     font-weight: 600;
-    margin-top: 8px;
 }
+
+.column-4 .support+.room {
+    color: #fe0216;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.column-4 .time {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.column-4 .price {}
 
 /* More Information */
 .more-infomation {
@@ -237,55 +245,38 @@
 }
 
 @media screen and (width <=1320px) {
-    #content .wrap-table.table-3-column>li>div {
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 15px 0 0;
-    }
-
-    #content .wrap-table.table-3-column>li>div.column-left {
-        grid-template-columns: 100%;
-        padding-right: 15px;
-    }
-
-    #content .wrap-table.table-3-column>li>div.column-center {
-        grid-template-columns: 100%;
-    }
-
-    .column-right {
-        grid-template-columns: 100%;
-        align-items: end;
-        padding-right: 15px;
-    }
-
-    #content .wrap-table .column-left {
-        grid-column: 1 / -1;
-        padding: 0 15px;
-    }
-
-    #content .wrap-table .column-center {
-        padding-left: 15px;
-        margin-top: 20px;
-    }
-
-    .more-infomation {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-
-    .more-infomation li+li {
-        margin-left: 0;
-    }
-
-    .pagination-number li a {
-        width: 25px;
-        height: 25px;
+    #content .wrap-table.table-4-column>li>div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     #content .top-table {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+
+    }
+
+    .column-1 .clinic-name {
+        text-align: left;
+    }
+
+    #content .wrap-table .column-2 {
+        padding-left: 0;
+    }
+
+    #content .wrap-table .column-3 {
+        padding: 0;
+    }
+
+    .column-4 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .column-4 .support+.room {
+        margin-top: 0;
     }
 }
