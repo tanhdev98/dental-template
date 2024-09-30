@@ -96,7 +96,7 @@
     }
 }
 
-@media screen and (width <=1340px) {
+@media screen and (width <=1320px) {
     #topAds {
         display: none;
     }
@@ -110,6 +110,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 32px 0;
+    position: relative;
 }
 
 #header .header-wrap .header-left {
@@ -129,6 +130,7 @@
     height: 50px;
     width: 100%;
     flex: 1;
+    max-width: 580px;
 }
 
 #header .header-wrap .header-left .search-wrap>input {
@@ -137,5 +139,107 @@
     border-radius: 25px;
     border: 2px solid #076ecc;
     padding: 16px 20px;
-    max-width: 580px;
 }
+
+#header .header-wrap .nav-wrap {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    gap: 30px;
+    display: none;
+}
+
+@media screen and (width <=1320px) {
+    #header .header-wrap .header-left {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #header .header-wrap .header-right {
+        display: none;
+    }
+
+    #header .header-wrap .header-left .search-wrap {
+        max-width: unset;
+    }
+
+    #header .header-wrap .nav-wrap {
+        display: flex;
+    }
+}
+
+/* end header */
+
+/* navbar */
+#navbar {
+    padding-bottom: 33px;
+    box-shadow: 2px 3px 10px 0px rgba(6, 0, 1, 0.1);
+    position: relative;
+}
+
+#navbar::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: -5px;
+}
+
+#navbar .navbar-wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#navbar .navbar-wrap .menu {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar .navbar-wrap .menu .total-menu {
+    position: absolute;
+    display: none;
+}
+
+#navbar .navbar-wrap .menu .icon-hamburger-bar {
+    width: 20px;
+    height: 14px;
+}
+
+#navbar .navbar-wrap .menu>ul {
+    display: flex;
+    gap: 60px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+#navbar .navbar-wrap .menu .active {
+    color: #0068b7;
+}
+
+#navbar .navbar-wrap .auth {
+    display: flex;
+    gap: 25px;
+}
+
+@media screen and (width <=1320px) {
+    #navbar {
+        display: none;
+    }
+}
+
+/* end navbar */
+
+/* footer */
+#footer {
+    height: 230px;
+    background: #f3f7f8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* end footer */
