@@ -1,9 +1,123 @@
-#hero {
+/* hero */
+#hero .container {
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 20px;
 }
 
-/* slider */
-#slider {}
+/* slide */
+#slide {
+    flex: 1;
+}
 
-/* hero-menu */
-#hero-menu {}
+#slide .carousel-inner {
+    border-radius: 10px;
+    height: 100%;
+}
+
+#slide .carousel-item.active>img,
+#slide .carousel-item.active,
+#slide .carousel-item-next,
+#slide .carousel-item-prev {
+    height: 100%;
+}
+
+#slide .carousel-control-prev-icon {
+    width: 34px;
+    height: 100%;
+    background-size: contain;
+    background-image: url('../images/PAAAA010/icon-slide-prev.png');
+}
+
+#slide .carousel-control-next-icon {
+    width: 34px;
+    height: 100%;
+    background-size: contain;
+    background-image: url('../images/PAAAA010/icon-slide-next.png');
+}
+
+#slide .carousel-control-next,
+#slide .carousel-control-prev {
+    opacity: 1;
+    width: 34px;
+}
+
+#slide .carousel-control-next {
+    right: 15px;
+}
+
+#slide .carousel-control-prev {
+    left: 15px;
+}
+
+
+/* hero menu */
+#hero-menu {
+    width: 210px;
+    border: 1px solid #c3d7f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#hero-menu .icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 35px;
+}
+
+#hero-menu>ul>li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#hero-menu>ul>li:hover {
+    background-color: #c3d7f2;
+}
+
+#hero-menu>ul>li a {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+@media screen and (width <=1320px) {
+    #hero-menu {
+        display: none;
+    }
+}
+
+/* slide news */
+#slide-news .slide-news-wrap {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 50px;
+}
+
+#slide-news .slide-news-wrap .left-slide {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#slide-news .slide-news-wrap .left-slide>a {
+    font-weight: 200;
+}
+
+#slide-news .slide-news-wrap .left-slide>h1 {
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: 700;
+    white-space: nowrap;
+}

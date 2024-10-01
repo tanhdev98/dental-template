@@ -100,3 +100,28 @@
     background: url('../images/icons/icon-left.png') no-repeat center / contain;
     height: 10px;
 }
+
+.icon-check::after {
+    content: '';
+    background: url('../images/PAAAA010/icon-check.png') no-repeat center / contain;
+}
+
+.icon-mess::after {
+    content: '';
+    background: url('../images/PAAAA010/icon-mess.png') no-repeat center / contain;
+}
+
+.icon-phone::after {
+    content: '';
+    background: url('../images/PAAAA010/icon-phone.png') no-repeat center / contain;
+}
+
+.icon-edu::after {
+    content: '';
+    background: url('../images/PAAAA010/icon-edu.png') no-repeat center / contain;
+}
+
+.icon-heart::after {
+    content: '';
+    background: url('../images/PAAAA010/icon-heart.png') no-repeat center / contain;
+}
