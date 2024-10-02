@@ -1,9 +1,5 @@
-#content {
-    padding: 30px 0 100px;
-}
-
 /* Top Table */
-#content .top-table {
+#content-table .top-table {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #333;
@@ -11,23 +7,23 @@
     align-items: center;
 }
 
-#content .count-results {
+#content-table .count-results {
     font-size: 18px;
     font-weight: 500;
     color: #666;
 }
 
-#content .count-results>span {
+#content-table .count-results>span {
     font-size: 18px;
     color: #666;
 }
 
-#content .count-results .high-light {
+#content-table .count-results .high-light {
     font-size: 18px;
     color: #0068b7;
 }
 
-#content .more-results {
+#content-table .more-results {
     font-size: 18px;
 }
 
@@ -49,70 +45,70 @@
 }
 
 /* Content Table */
-#content .wrap-table.table-3-column>li+li {
+#content-table .wrap-table.table-3-column>li+li {
     margin-top: 10px;
     border-top: 1px solid #333;
 }
 
-#content .wrap-table.table-3-column>li>div {
+#content-table .wrap-table.table-3-column>li>div {
     display: grid;
     grid-template-columns: calc(100% - 27.15% - 13.88%) 27.15% 13.88%;
     padding: 28px 0 0;
 }
 
 /* Column left */
-#content .wrap-table .column-left {
+#content-table .wrap-table .column-left {
     padding-left: 25px;
 }
 
-#content .wrap-table .column-left .wrap-title {
+#content-table .wrap-table .column-left .wrap-title {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
 
-#content .wrap-table .column-left .wrap-title+.wrap-link {
+#content-table .wrap-table .column-left .wrap-title+.wrap-link {
     margin-top: 10px;
 }
 
-#content .wrap-table .column-left .wrap-title .item-title {
+#content-table .wrap-table .column-left .wrap-title .item-title {
     margin-bottom: 0;
     font-size: 21px;
     font-weight: 700;
     color: #333;
 }
 
-#content .wrap-table .column-left .wrap-title .wrap-meta {
+#content-table .wrap-table .column-left .wrap-title .wrap-meta {
     display: inline-flex;
     gap: 8px;
 }
 
-#content .wrap-table .wrap-link {
+#content-table .wrap-table .wrap-link {
     display: flex;
     position: relative;
 }
 
-#content .wrap-table .wrap-link li {}
+#content-table .wrap-table .wrap-link li {}
 
-#content .wrap-table .wrap-link li a {
+#content-table .wrap-table .wrap-link li a {
     font-size: 15px;
     color: #666;
     white-space: nowrap;
 }
 
-#content .wrap-table .wrap-link li a:hover {
+#content-table .wrap-table .wrap-link li a:hover {
     font-size: 15px;
     color: #333;
 }
 
-#content .wrap-table .wrap-link li+li {
+#content-table .wrap-table .wrap-link li+li {
     margin-left: 9px;
     padding-left: 9px;
     position: relative;
 }
 
-#content .wrap-table .wrap-link li+li:before {
+#content-table .wrap-table .wrap-link li+li:before {
     content: "";
     width: 1px;
     height: 10px;
@@ -124,16 +120,16 @@
 }
 
 /* Column center */
-#content .wrap-table .column-center {
+#content-table .wrap-table .column-center {
     padding-left: 35px;
 }
 
-#content .wrap-table .column-center .wrap-position li {
+#content-table .wrap-table .column-center .wrap-position li {
     font-size: 15px;
     color: #666;
 }
 
-#content .wrap-table .wrap-link+.wrap-position {
+#content-table .wrap-table .wrap-link+.wrap-position {
     margin-top: 10px;
 }
 
@@ -237,18 +233,18 @@
 }
 
 @media screen and (width <=1320px) {
-    #content .wrap-table.table-3-column>li>div {
+    #content-table .wrap-table.table-3-column>li>div {
         display: grid;
         grid-template-columns: auto auto;
         padding: 15px 0 0;
     }
 
-    #content .wrap-table.table-3-column>li>div.column-left {
+    #content-table .wrap-table.table-3-column>li>div.column-left {
         grid-template-columns: 100%;
         padding-right: 15px;
     }
 
-    #content .wrap-table.table-3-column>li>div.column-center {
+    #content-table .wrap-table.table-3-column>li>div.column-center {
         grid-template-columns: 100%;
     }
 
@@ -258,12 +254,12 @@
         padding-right: 15px;
     }
 
-    #content .wrap-table .column-left {
+    #content-table .wrap-table .column-left {
         grid-column: 1 / -1;
         padding: 0 15px;
     }
 
-    #content .wrap-table .column-center {
+    #content-table .wrap-table .column-center {
         padding-left: 15px;
         margin-top: 20px;
     }
@@ -283,7 +279,7 @@
         height: 25px;
     }
 
-    #content .top-table {
+    #content-table .top-table {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;

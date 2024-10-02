@@ -12,6 +12,7 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
 </head>
 
 <body>
@@ -96,136 +97,164 @@
     </div>
     <!-- End navbar -->
 
-    <div id="search-infor">
+    <!-- Content -->
+    <div id="content">
+        <!-- Side Ads -->
         <div class="container">
-            <!-- start title -->
-            <div id="title">
-                <div class="titleText">아이디/비밀번호 찾기</div>
-                <div class="border-bottom-blue"></div>
-            </div>
-            <!-- end title -->
-
-            <!-- start notification -->
-            <div class="notification">
-                <div class="group-notifi">
-                    <div class="title-notifi">
-                        회원가입여부 확인 안내
+            <div id="sideAds">
+                <div class="side-ads-wrap">
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-1.png" alt="side ads">
+                        </a>
                     </div>
-                    <ul class="title-notifi-child">
-                        <li>회원정보에 등록된 정보를 입력하시면 아이디와 임시 비밀번호를 발송해 드립니다.</li>
-                        <li>임시 비밀번호로 로그인하신 후 반드시 새로운 비밀번호로 변경하시기 바랍니다.</li>
-                        <li>기타 문의사항은 080-801-1580(덴탈잡, 알바), 080-811-2201(덴탈비타민), 02-6366-2020(덴탈세미나),
-                            1544-2809(DVmall)로 연락주시기 바랍니다.</li>
-                    </ul>
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-2.png" alt="side ads">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- end notification -->
-            <!-- start wrap-infor -->
-            <div class="wrap-infor">
-                <div class="wrap-content">
-                    <div class="wrap-infor">
-                        <ul class="wrap-tab">
-                            <li>
-                                <a href="#">아이디 찾기</a>
-                            </li>
-                            <li class="active">
-                                <a href="#">비밀번호 찾기</a>
-                            </li>
-                        </ul>
-                        <div class="wrap-tab-child wrap-tab-child-1">
-                            <div class="content-tab"></div>
+        </div>
+        <!-- End Side Ads -->
+
+        <!-- Search Infor -->
+        <div id="search-infor">
+            <div class="container">
+                <!-- Title -->
+                <div id="title">
+                    <div class="titleText">아이디/비밀번호 찾기</div>
+                    <div class="border-bottom-blue"></div>
+                </div>
+                <!-- End  Title -->
+
+                <!-- Notification -->
+                <div class="notification">
+                    <div class="group-notifi">
+                        <div class="title-notifi">
+                            회원가입여부 확인 안내
                         </div>
-                        <div class="wrap-tab-child wrap-tab-child-2 active">
-                            <div class="content-tab">
-                                <form>
-                                    <div class="form form-radio">
-                                        <div class="title-form title-radio">
-                                            회원구분
+                        <ul class="title-notifi-child">
+                            <li>회원정보에 등록된 정보를 입력하시면 아이디와 임시 비밀번호를 발송해 드립니다.</li>
+                            <li>임시 비밀번호로 로그인하신 후 반드시 새로운 비밀번호로 변경하시기 바랍니다.</li>
+                            <li>기타 문의사항은 080-801-1580(덴탈잡, 알바), 080-811-2201(덴탈비타민), 02-6366-2020(덴탈세미나),
+                                1544-2809(DVmall)로 연락주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Notification -->
+                <!-- Form -->
+                <div class="wrap-infor">
+                    <div class="wrap-content">
+                        <div class="wrap-infor">
+                            <ul class="wrap-tab">
+                                <li>
+                                    <a href="#">아이디 찾기</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">비밀번호 찾기</a>
+                                </li>
+                            </ul>
+                            <div class="wrap-tab-child wrap-tab-child-1">
+                                <div class="content-tab"></div>
+                            </div>
+                            <div class="wrap-tab-child wrap-tab-child-2 active">
+                                <div class="content-tab">
+                                    <form>
+                                        <div class="form form-radio">
+                                            <div class="title-form title-radio">
+                                                회원구분
+                                            </div>
+                                            <div class="group-radio">
+                                                <label>
+                                                    <input type="radio" name="options" value="option1">
+                                                    <span class="title-value-radio">DVmall, DV(덴탈비타민, 덴탈잡, 덴탈알바, 덴탈세미나)
+                                                        통합회원</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="options" value="option2">
+                                                    <span class="title-value-radio">DV(덴탈비타민, 덴탈잡, 덴탈알바, 덴탈세미나)
+                                                        회원</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="options" value="option3">
+                                                    <span class="title-value-radio">DVmall 회원</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="group-radio">
-                                            <label>
-                                                <input type="radio" name="options" value="option1">
-                                                <span class="title-value-radio">DVmall, DV(덴탈비타민, 덴탈잡, 덴탈알바, 덴탈세미나)
-                                                    통합회원</span>
-                                            </label>
-                                            <label>
-                                                <input type="radio" name="options" value="option2">
-                                                <span class="title-value-radio">DV(덴탈비타민, 덴탈잡, 덴탈알바, 덴탈세미나) 회원</span>
-                                            </label>
-                                            <label>
-                                                <input type="radio" name="options" value="option3">
-                                                <span class="title-value-radio">DVmall 회원</span>
-                                            </label>
+                                        <div class="form form-id">
+                                            <div class="title-form title-id">
+                                                아이디
+                                            </div>
+                                            <div class="group-id">
+                                                <input value="" placeholder="아이디를 입력해 주세요.">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form form-id">
-                                        <div class="title-form title-id">
-                                            아이디
+                                        <div class="form form-name">
+                                            <div class="title-form title-name">
+                                                이름
+                                            </div>
+                                            <div class="group-name">
+                                                <input value="" placeholder="이름을 입력해 주세요.">
+                                            </div>
                                         </div>
-                                        <div class="group-id">
-                                            <input value="" placeholder="아이디를 입력해 주세요.">
+                                        <div class="form form-birth">
+                                            <div class="title-form title-birth">
+                                                생년월일
+                                            </div>
+                                            <div class="group-birth">
+                                                <select class="dropdown">
+                                                    <option value="year1">1980</option>
+                                                    <option value="year2">2</option>
+                                                    <option value="year3">3</option>
+                                                </select>
+                                                <select class="dropdown">
+                                                    <option value="month1">월</option>
+                                                    <option value="month2">2</option>
+                                                    <option value="month3">3</option>
+                                                </select>
+                                                <select class="dropdown">
+                                                    <option value="day1">일</option>
+                                                    <option value="day2">2</option>
+                                                    <option value="day3">3</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form form-name">
-                                        <div class="title-form title-name">
-                                            이름
+                                        <div class="form form-phone">
+                                            <div class="title-form title-phone">
+                                                휴대폰번호
+                                            </div>
+                                            <div class="group-phone">
+                                                <input value="" placeholder="이름을 입력해 주세요.">
+                                                <button>인증번호 발송</button>
+                                            </div>
+                                            <div class="note-form-phone">※ 회원가입시 등록한 핸드폰번호를 입력하세요.</div>
                                         </div>
-                                        <div class="group-name">
-                                            <input value="" placeholder="이름을 입력해 주세요.">
+                                        <div class="form form-otp">
+                                            <div class="title-form title-otp">
+                                                인증번호
+                                            </div>
+                                            <div class="group-otp">
+                                                <input value="">
+                                            </div>
+                                            <div class="time-remaining-otp">(남은 시간 : <span
+                                                    class="time-count">03:00</span> )
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form form-birth">
-                                        <div class="title-form title-birth">
-                                            생년월일
-                                        </div>
-                                        <div class="group-birth">
-                                            <select class="dropdown">
-                                                <option value="year1">1980</option>
-                                                <option value="year2">2</option>
-                                                <option value="year3">3</option>
-                                            </select>
-                                            <select class="dropdown">
-                                                <option value="month1">월</option>
-                                                <option value="month2">2</option>
-                                                <option value="month3">3</option>
-                                            </select>
-                                            <select class="dropdown">
-                                                <option value="day1">일</option>
-                                                <option value="day2">2</option>
-                                                <option value="day3">3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form form-phone">
-                                        <div class="title-form title-phone">
-                                            휴대폰번호
-                                        </div>
-                                        <div class="group-phone">
-                                            <input value="" placeholder="이름을 입력해 주세요.">
-                                            <button>인증번호 발송</button>
-                                        </div>
-                                        <div class="note-form-phone">※ 회원가입시 등록한 핸드폰번호를 입력하세요.</div>
-                                    </div>
-                                    <div class="form form-otp">
-                                        <div class="title-form title-otp">
-                                            인증번호
-                                        </div>
-                                        <div class="group-otp">
-                                            <input value="">
-                                        </div>
-                                        <div class="time-remaining-otp">(남은 시간 : <span class="time-count">03:00</span> )
-                                        </div>
-                                    </div>
-                                    <button class="submit-form" type="submit">비밀번호 찾기</button>
-                                </form>
+                                        <button class="submit-form" type="submit">비밀번호 찾기</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Form -->
             </div>
-            <!-- end wrap-infor -->
         </div>
+        <!-- End Search Info -->
     </div>
+    <!-- End Content -->
+
     <!-- Footer -->
     <div id="footer">
         <div class="container">

@@ -1,14 +1,9 @@
-#search-content {
-    padding: 30px 0 100px;
-}
-
 #search-content .title-results {
     font-size: 28px;
     font-weight: 300;
     color: #000;
     margin-bottom: 19px;
 }
-
 
 /* Tab Form */
 #search-content .wrap-tab {
@@ -21,7 +16,6 @@
 #search-content .wrap-tab li {
     width: 100%;
     max-width: 140px;
-
 }
 
 #search-content .wrap-tab li a {
@@ -68,7 +62,6 @@
 #search-content .section .content-table {
     padding: 0 30px;
 }
-
 
 /* Table */
 #search-content .top-table {
@@ -118,7 +111,6 @@
 }
 
 /* Section 3 */
-
 #search-content .section-3 .content-table>li {
     padding-bottom: 17px;
     margin-top: 22px;
@@ -163,7 +155,6 @@
     font-weight: 300;
     color: #999;
 }
-
 
 /* Section 4 */
 
@@ -228,8 +219,6 @@
     content: "~";
     margin-right: 3px;
 }
-
-
 
 /* Responsive */
 @media screen and (max-width: 1320px) {

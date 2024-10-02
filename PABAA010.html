@@ -11,6 +11,7 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
 </head>
 
 <body>
@@ -94,158 +95,184 @@
         </div>
     </div>
     <!-- End navbar -->
+
     <!-- Content -->
-    <div id="search-content">
+    <div id="content">
+        <!-- Side Ads -->
         <div class="container">
-            <h4 class="title-results">전체검색결과</h4>
-            <ul class="wrap-tab">
-                <li class="active">
-                    <a href="#">통합검색</a>
-                </li>
-                <li>
-                    <a href="#">채용소식</a>
-                </li>
-                <li>
-                    <a href="#">인재소식</a>
-                </li>
-                <li>
-                    <a href="#">덴탈잡 </a>
-                </li>
-                <li>
-                    <a href="#">덴탈잡 이벤트</a>
-                </li>
-            </ul>
-            <div class="results-text">
-                <a href="#">'{검색어}'</a><span class="results-default-text">에 대한 검색결과입니다.</span>
-            </div>
-            <div class="section section-1">
-                <div class="top-table">
-                    <div class="count-results">채용소식 <span>총 <span class="high-light-number">1.000</span>건</span></div>
-                    <a href="#" class="more-results blue">채용소식 보기 ></a>
+            <div id="sideAds">
+                <div class="side-ads-wrap">
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-1.png" alt="side ads">
+                        </a>
+                    </div>
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-2.png" alt="side ads">
+                        </a>
+                    </div>
                 </div>
-                <ul class="content-table">
+            </div>
+        </div>
+        <!-- End Side Ads -->
+        <div id="search-content">
+            <div class="container">
+                <h4 class="title-results">전체검색결과</h4>
+                <ul class="wrap-tab">
+                    <li class="active">
+                        <a href="#">통합검색</a>
+                    </li>
                     <li>
-
+                        <a href="#">채용소식</a>
                     </li>
-                </ul>
-
-            </div>
-            <div class="section section-2">
-                <div class="top-table">
-                    <div class="count-results">인재소식 <span>총 <span class="high-light-number">1.000</span>건</span></div>
-                    <a href="#" class="more-results green">인재소식 보기 ></a>
-                </div>
-                <ul class="content-table">
                     <li>
-
+                        <a href="#">인재소식</a>
+                    </li>
+                    <li>
+                        <a href="#">덴탈잡 </a>
+                    </li>
+                    <li>
+                        <a href="#">덴탈잡 이벤트</a>
                     </li>
                 </ul>
-
-            </div>
-            <div class="section section-3">
-                <div class="top-table">
-                    <div class="count-results">공지/소식 <span>총 <span class="high-light-number">1.000</span>건</span></div>
-                    <a href="#" class="more-results light-blue">공지/소식 보기 ></a>
+                <div class="results-text">
+                    <a href="#">'{검색어}'</a><span class="results-default-text">에 대한 검색결과입니다.</span>
                 </div>
-                <ul class="content-table style-2-column">
-                    <li class="flex wrap-item">
-                        <div class="flex wrap-left">
-                            <div class="status blue">공지</div>
-                            <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
+                <div class="section section-1">
+                    <div class="top-table">
+                        <div class="count-results">채용소식 <span>총 <span class="high-light-number">1.000</span>건</span>
                         </div>
-                        <div class="date">2024.08.31</div>
-                    </li>
-                    <li class="flex wrap-item">
-                        <div class="flex wrap-left">
-                            <div class="status green">소식</div>
-                            <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
-                        </div>
-                        <div class="date">2024.08.31</div>
-                    </li>
-                    <li class="flex wrap-item">
-                        <div class="flex wrap-left">
-                            <div class="status blue">공지</div>
-                            <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
-                        </div>
-                        <div class="date">2024.08.31</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="section section-4">
-                <div class="top-table">
-                    <div class="count-results">이벤트 <span>총 <span class="high-light-number">1.000</span>건</span></div>
-                    <a href="#" class="more-results red">이벤트 보기 ></a>
+                        <a href="#" class="more-results blue">채용소식 보기 ></a>
+                    </div>
+                    <ul class="content-table">
+                        <li>
+
+                        </li>
+                    </ul>
+
                 </div>
-                <ul class="content-table">
-                    <li class="flex">
-                        <div class="result-item">
-                            <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
+                <div class="section section-2">
+                    <div class="top-table">
+                        <div class="count-results">인재소식 <span>총 <span class="high-light-number">1.000</span>건</span>
+                        </div>
+                        <a href="#" class="more-results green">인재소식 보기 ></a>
+                    </div>
+                    <ul class="content-table">
+                        <li>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="section section-3">
+                    <div class="top-table">
+                        <div class="count-results">공지/소식 <span>총 <span class="high-light-number">1.000</span>건</span>
+                        </div>
+                        <a href="#" class="more-results light-blue">공지/소식 보기 ></a>
+                    </div>
+                    <ul class="content-table style-2-column">
+                        <li class="flex wrap-item">
+                            <div class="flex wrap-left">
+                                <div class="status blue">공지</div>
+                                <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
                             </div>
-                            <div class="wrap-content">
-                                <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta">
-                                    <span class="status red">진행중</span>
-                                    <div class="wrap-date">
-                                        <span class="start-date">2024.08.01</span>
-                                        <span class="end-date">2024.08.31</span>
+                            <div class="date">2024.08.31</div>
+                        </li>
+                        <li class="flex wrap-item">
+                            <div class="flex wrap-left">
+                                <div class="status green">소식</div>
+                                <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
+                            </div>
+                            <div class="date">2024.08.31</div>
+                        </li>
+                        <li class="flex wrap-item">
+                            <div class="flex wrap-left">
+                                <div class="status blue">공지</div>
+                                <h4 class="result-title m0">(2024.02.03) 덴탈잡 상품 단가 변경 예정 공지</h4>
+                            </div>
+                            <div class="date">2024.08.31</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section section-4">
+                    <div class="top-table">
+                        <div class="count-results">이벤트 <span>총 <span class="high-light-number">1.000</span>건</span>
+                        </div>
+                        <a href="#" class="more-results red">이벤트 보기 ></a>
+                    </div>
+                    <ul class="content-table">
+                        <li class="flex">
+                            <div class="result-item">
+                                <div class="wrapImg">
+                                    <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
+                                </div>
+                                <div class="wrap-content">
+                                    <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
+                                    <div class="wrapMeta">
+                                        <span class="status red">진행중</span>
+                                        <div class="wrap-date">
+                                            <span class="start-date">2024.08.01</span>
+                                            <span class="end-date">2024.08.31</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="result-item">
-                            <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
-                            </div>
-                            <div class="wrap-content">
-                                <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta">
-                                    <span class="status red">진행중</span>
-                                    <div class="wrap-date">
-                                        <span class="start-date">2024.08.01</span>
-                                        <span class="end-date">2024.08.31</span>
+                            <div class="result-item">
+                                <div class="wrapImg">
+                                    <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
+                                </div>
+                                <div class="wrap-content">
+                                    <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
+                                    <div class="wrapMeta">
+                                        <span class="status red">진행중</span>
+                                        <div class="wrap-date">
+                                            <span class="start-date">2024.08.01</span>
+                                            <span class="end-date">2024.08.31</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="flex">
-                        <div class="result-item">
-                            <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
-                            </div>
-                            <div class="wrap-content">
-                                <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta">
-                                    <span class="status red">진행중</span>
-                                    <div class="wrap-date">
-                                        <span class="start-date">2024.08.01</span>
-                                        <span class="end-date">2024.08.31</span>
+                        </li>
+                        <li class="flex">
+                            <div class="result-item">
+                                <div class="wrapImg">
+                                    <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
+                                </div>
+                                <div class="wrap-content">
+                                    <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
+                                    <div class="wrapMeta">
+                                        <span class="status red">진행중</span>
+                                        <div class="wrap-date">
+                                            <span class="start-date">2024.08.01</span>
+                                            <span class="end-date">2024.08.31</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="result-item">
-                            <div class="wrapImg">
-                                <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
-                            </div>
-                            <div class="wrap-content">
-                                <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
-                                <div class="wrapMeta">
-                                    <span class="status">마감</span>
-                                    <div class="wrap-date">
-                                        <span class="start-date">2024.08.01</span>
-                                        <span class="end-date">2024.08.31</span>
+                            <div class="result-item">
+                                <div class="wrapImg">
+                                    <img src="./images/PABAA010/image_sample-section4.png" alt="Image Result Item" />
+                                </div>
+                                <div class="wrap-content">
+                                    <h4 class="result-title">[덴탈잡 이용권] 사용시 신흥 KF94 마스크 24매/2Box 증정 혜택</h4>
+                                    <div class="wrapMeta">
+                                        <span class="status">마감</span>
+                                        <div class="wrap-date">
+                                            <span class="start-date">2024.08.01</span>
+                                            <span class="end-date">2024.08.31</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Content -->
+    <!-- End content -->
+
     <!-- Footer -->
     <div id="footer">
         <div class="container">

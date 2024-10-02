@@ -11,6 +11,7 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
 </head>
 
 <body>
@@ -94,348 +95,371 @@
         </div>
     </div>
     <!-- End navbar -->
-    <!-- Content Table -->
+
+    <!-- Content -->
     <div id="content">
+        <!-- Side Ads -->
         <div class="container">
-            <div class="wrap-table">
-                <div class="top-table">
-                    <div class="count-results"><span class="high-light">1.000건</span>의 이력서가 등록되어 있습니다.
+            <div id="sideAds">
+                <div class="side-ads-wrap">
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-1.png" alt="side ads">
+                        </a>
                     </div>
-                    <div class="wrap-dropDown">
-                        <div class="collab">
-                            <div class="form-select-container">
-                                <select>
-                                    <option class="option-placeholder">업데이트순</option>
-                                    <option value="">업데이트순 1</option>
-                                    <option value="">업데이트순 2</option>
-                                    <option value="">업데이트순 3</option>
-                                    <option value="">업데이트순 4</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="collab">
-                            <div class="form-select-container">
-                                <select>
-                                    <option class="option-placeholder">50개 씩 보기</option>
-                                    <option value="">50개 씩 보기 1</option>
-                                    <option value="">50개 씩 보기 2</option>
-                                    <option value="">50개 씩 보기 3</option>
-                                    <option value="">50개 씩 보기 4</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-2.png" alt="side ads">
+                        </a>
                     </div>
-                </div>
-                <ul class="wrap-table table-3-column">
-                    <li>
-                        <div class="wrap-column">
-                            <div class="column-left">
-                                <div class="wrap-title">
-                                    <h4 class="item-title">항상 성실한 자세로 임하겠습니다.</h4>
-                                    <div class="wrap-meta">
-                                        <a href="#" class="icon icon-star"></a>
-                                        <a href="#" class="icon icon-blank"></a>
-                                    </div>
-                                </div>
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                            </div>
-                            <div class="column-center">
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                                <ul class="wrap-position">
-                                    <li>서울시 강남구</li>
-                                </ul>
-                            </div>
-                            <div class="column-right">
-                                <div class="date update">update</div>
-                                <div class="price">홍OO</div>
-                            </div>
-                        </div>
-                        <ul class="more-infomation">
-                            <li>
-                                <h6 class="title-info">희망직급</h6>
-                                <span class="desc-info">스탭</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">학력</h6>
-                                <span class="desc-info">전문대학졸업</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">경력사항</h6>
-                                <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="wrap-column">
-                            <div class="column-left">
-                                <div class="wrap-title">
-                                    <h4 class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자 김수재입니다.</h4>
-                                    <div class="wrap-meta">
-                                        <a href="#" class="icon icon-star"></a>
-                                        <a href="#" class="icon icon-blank"></a>
-                                    </div>
-                                </div>
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                            </div>
-                            <div class="column-center">
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                                <ul class="wrap-position">
-                                    <li>서울시 강남구</li>
-                                </ul>
-                            </div>
-                            <div class="column-right">
-                                <div class="date">2024.08.31</div>
-                                <div class="price">홍OO</div>
-                            </div>
-                        </div>
-                        <ul class="more-infomation">
-                            <li>
-                                <h6 class="title-info">희망직급</h6>
-                                <span class="desc-info">스탭</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">학력</h6>
-                                <span class="desc-info">전문대학졸업</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">경력사항</h6>
-                                <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="wrap-column">
-                            <div class="column-left">
-                                <div class="wrap-title">
-                                    <h4 class="item-title">항상 성실한 자세로 임하겠습니다.</h4>
-                                    <div class="wrap-meta">
-                                        <a href="#" class="icon icon-star"></a>
-                                        <a href="#" class="icon icon-blank"></a>
-                                    </div>
-                                </div>
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                            </div>
-                            <div class="column-center">
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                                <ul class="wrap-position">
-                                    <li>서울시 강남구</li>
-                                </ul>
-                            </div>
-                            <div class="column-right">
-                                <div class="date">2024.08.31</div>
-                                <div class="price">홍OO</div>
-                            </div>
-                        </div>
-                        <ul class="more-infomation">
-                            <li>
-                                <h6 class="title-info">희망직급</h6>
-                                <span class="desc-info">스탭</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">학력</h6>
-                                <span class="desc-info">전문대학졸업</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">경력사항</h6>
-                                <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="wrap-column">
-                            <div class="column-left">
-                                <div class="wrap-title">
-                                    <h4 class="item-title">항상 성실한 자세로 임하겠습니다.</h4>
-                                    <div class="wrap-meta">
-                                        <a href="#" class="icon icon-star"></a>
-                                        <a href="#" class="icon icon-blank"></a>
-                                    </div>
-                                </div>
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                            </div>
-                            <div class="column-center">
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                                <ul class="wrap-position">
-                                    <li>서울시 강남구</li>
-                                </ul>
-                            </div>
-                            <div class="column-right">
-                                <div class="date update">update</div>
-                                <div class="price">홍OO</div>
-                            </div>
-                        </div>
-                        <ul class="more-infomation">
-                            <li>
-                                <h6 class="title-info">희망직급</h6>
-                                <span class="desc-info">스탭</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">학력</h6>
-                                <span class="desc-info">전문대학졸업</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">경력사항</h6>
-                                <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="wrap-column">
-                            <div class="column-left">
-                                <div class="wrap-title">
-                                    <h4 class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자 김수재입니다.</h4>
-                                    <div class="wrap-meta">
-                                        <a href="#" class="icon icon-star"></a>
-                                        <a href="#" class="icon icon-blank"></a>
-                                    </div>
-                                </div>
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                            </div>
-                            <div class="column-center">
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                                <ul class="wrap-position">
-                                    <li>서울시 강남구</li>
-                                </ul>
-                            </div>
-                            <div class="column-right">
-                                <div class="date">2024.08.31</div>
-                                <div class="price">홍OO</div>
-                            </div>
-                        </div>
-                        <ul class="more-infomation">
-                            <li>
-                                <h6 class="title-info">희망직급</h6>
-                                <span class="desc-info">스탭</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">학력</h6>
-                                <span class="desc-info">전문대학졸업</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">경력사항</h6>
-                                <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="wrap-column">
-                            <div class="column-left">
-                                <div class="wrap-title">
-                                    <h4 class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자 김수재입니다.</h4>
-                                    <div class="wrap-meta">
-                                        <a href="#" class="icon icon-star"></a>
-                                        <a href="#" class="icon icon-blank"></a>
-                                    </div>
-                                </div>
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                            </div>
-                            <div class="column-center">
-                                <ul class="wrap-link">
-                                    <li><a href="#">진료실</a></li>
-                                    <li><a href="#">상담</a></li>
-                                    <li><a href="#">보험청구</a></li>
-                                    <li><a href="#">기타</a></li>
-                                </ul>
-                                <ul class="wrap-position">
-                                    <li>서울시 강남구</li>
-                                </ul>
-                            </div>
-                            <div class="column-right">
-                                <div class="date">2024.08.31</div>
-                                <div class="price">홍OO</div>
-                            </div>
-                        </div>
-                        <ul class="more-infomation">
-                            <li>
-                                <h6 class="title-info">희망직급</h6>
-                                <span class="desc-info">스탭</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">학력</h6>
-                                <span class="desc-info">전문대학졸업</span>
-                            </li>
-                            <li>
-                                <h6 class="title-info">경력사항</h6>
-                                <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="wrap-pagination">
-                    <div class="pagination-arrow icon icon-prev disable"></div>
-                    <ul class="pagination-number">
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li>...</li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#">10</a></li>
-                    </ul>
-                    <div class="pagination-arrow icon icon-next"></div>
                 </div>
             </div>
         </div>
-
+        <!-- End Side Ads -->
+        <!-- Content Table -->
+        <div id="content-table">
+            <div class="container">
+                <div class="wrap-table">
+                    <div class="top-table">
+                        <div class="count-results"><span class="high-light">1.000건</span>의 이력서가 등록되어 있습니다.
+                        </div>
+                        <div class="wrap-dropDown">
+                            <div class="collab">
+                                <div class="form-select-container">
+                                    <select>
+                                        <option class="option-placeholder">업데이트순</option>
+                                        <option value="">업데이트순 1</option>
+                                        <option value="">업데이트순 2</option>
+                                        <option value="">업데이트순 3</option>
+                                        <option value="">업데이트순 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="collab">
+                                <div class="form-select-container">
+                                    <select>
+                                        <option class="option-placeholder">50개 씩 보기</option>
+                                        <option value="">50개 씩 보기 1</option>
+                                        <option value="">50개 씩 보기 2</option>
+                                        <option value="">50개 씩 보기 3</option>
+                                        <option value="">50개 씩 보기 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="wrap-table table-3-column">
+                        <li>
+                            <div class="wrap-column">
+                                <div class="column-left">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">항상 성실한 자세로 임하겠습니다.</h4>
+                                        <div class="wrap-meta">
+                                            <a href="#" class="icon icon-star"></a>
+                                            <a href="#" class="icon icon-blank"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column-center">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 강남구</li>
+                                    </ul>
+                                </div>
+                                <div class="column-right">
+                                    <div class="date update">update</div>
+                                    <div class="price">홍OO</div>
+                                </div>
+                            </div>
+                            <ul class="more-infomation">
+                                <li>
+                                    <h6 class="title-info">희망직급</h6>
+                                    <span class="desc-info">스탭</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">학력</h6>
+                                    <span class="desc-info">전문대학졸업</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">경력사항</h6>
+                                    <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="wrap-column">
+                                <div class="column-left">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자 김수재입니다.</h4>
+                                        <div class="wrap-meta">
+                                            <a href="#" class="icon icon-star"></a>
+                                            <a href="#" class="icon icon-blank"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column-center">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 강남구</li>
+                                    </ul>
+                                </div>
+                                <div class="column-right">
+                                    <div class="date">2024.08.31</div>
+                                    <div class="price">홍OO</div>
+                                </div>
+                            </div>
+                            <ul class="more-infomation">
+                                <li>
+                                    <h6 class="title-info">희망직급</h6>
+                                    <span class="desc-info">스탭</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">학력</h6>
+                                    <span class="desc-info">전문대학졸업</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">경력사항</h6>
+                                    <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="wrap-column">
+                                <div class="column-left">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">항상 성실한 자세로 임하겠습니다.</h4>
+                                        <div class="wrap-meta">
+                                            <a href="#" class="icon icon-star"></a>
+                                            <a href="#" class="icon icon-blank"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column-center">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 강남구</li>
+                                    </ul>
+                                </div>
+                                <div class="column-right">
+                                    <div class="date">2024.08.31</div>
+                                    <div class="price">홍OO</div>
+                                </div>
+                            </div>
+                            <ul class="more-infomation">
+                                <li>
+                                    <h6 class="title-info">희망직급</h6>
+                                    <span class="desc-info">스탭</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">학력</h6>
+                                    <span class="desc-info">전문대학졸업</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">경력사항</h6>
+                                    <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="wrap-column">
+                                <div class="column-left">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">항상 성실한 자세로 임하겠습니다.</h4>
+                                        <div class="wrap-meta">
+                                            <a href="#" class="icon icon-star"></a>
+                                            <a href="#" class="icon icon-blank"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column-center">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 강남구</li>
+                                    </ul>
+                                </div>
+                                <div class="column-right">
+                                    <div class="date update">update</div>
+                                    <div class="price">홍OO</div>
+                                </div>
+                            </div>
+                            <ul class="more-infomation">
+                                <li>
+                                    <h6 class="title-info">희망직급</h6>
+                                    <span class="desc-info">스탭</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">학력</h6>
+                                    <span class="desc-info">전문대학졸업</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">경력사항</h6>
+                                    <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="wrap-column">
+                                <div class="column-left">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자 김수재입니다.</h4>
+                                        <div class="wrap-meta">
+                                            <a href="#" class="icon icon-star"></a>
+                                            <a href="#" class="icon icon-blank"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column-center">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 강남구</li>
+                                    </ul>
+                                </div>
+                                <div class="column-right">
+                                    <div class="date">2024.08.31</div>
+                                    <div class="price">홍OO</div>
+                                </div>
+                            </div>
+                            <ul class="more-infomation">
+                                <li>
+                                    <h6 class="title-info">희망직급</h6>
+                                    <span class="desc-info">스탭</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">학력</h6>
+                                    <span class="desc-info">전문대학졸업</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">경력사항</h6>
+                                    <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="wrap-column">
+                                <div class="column-left">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자 김수재입니다.</h4>
+                                        <div class="wrap-meta">
+                                            <a href="#" class="icon icon-star"></a>
+                                            <a href="#" class="icon icon-blank"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column-center">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">상담</a></li>
+                                        <li><a href="#">보험청구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 강남구</li>
+                                    </ul>
+                                </div>
+                                <div class="column-right">
+                                    <div class="date">2024.08.31</div>
+                                    <div class="price">홍OO</div>
+                                </div>
+                            </div>
+                            <ul class="more-infomation">
+                                <li>
+                                    <h6 class="title-info">희망직급</h6>
+                                    <span class="desc-info">스탭</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">학력</h6>
+                                    <span class="desc-info">전문대학졸업</span>
+                                </li>
+                                <li>
+                                    <h6 class="title-info">경력사항</h6>
+                                    <span class="desc-info">[2024.4~ 2024.8]에버엠 치과 – 진료팀 스탭 외 2건</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="wrap-pagination">
+                        <div class="pagination-arrow icon icon-prev disable"></div>
+                        <ul class="pagination-number">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li>...</li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                        </ul>
+                        <div class="pagination-arrow icon icon-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Content Table -->
     </div>
-    <!-- End Content Table -->
+    <!-- End Content -->
+
     <!-- Footer -->
     <div id="footer">
         <div class="container">

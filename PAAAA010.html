@@ -11,6 +11,7 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
 </head>
 
 <body>
@@ -96,81 +97,407 @@
     <!-- End navbar -->
 
     <!-- Content -->
-
-    <div id="hero">
+    <div id="content">
+        <!-- Side ads -->
         <div class="container">
-            <!--	Slider	-->
-            <div id="slide" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/PAAAA010/slide-1.png" class="d-block w-100" alt="Dental Job Slide">
+            <div id="sideAds">
+                <div class="side-ads-wrap">
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-1.png" alt="side ads">
+                        </a>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./images/PAAAA010/slide-2.png" class="d-block w-100" alt="Dental Job Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/PAAAA010/slide-3.png" class="d-block w-100" alt="Dental Job Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/PAAAA010/slide-4.png" class="d-block w-100" alt="Dental Job Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/PAAAA010/slide-5.png" class="d-block w-100" alt="Dental Job Slide">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <!--	End Slider	-->
-            <!-- Hero menu -->
-            <div id="hero-menu">
-                <ul>
-                    <li>
-                        <a href="#"><i class="icon icon-check"></i><span>이용안내</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="icon icon-mess"></i><span>상품안내</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="icon icon-phone"></i><span>고객센터</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="icon icon-edu"></i><span>법정 의무교육</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="icon icon-heart"></i><span>자원봉사</span></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Hero menu -->
-        </div>
-    </div>
-    <!-- Slide NEWS -->
-    <div id="slide-news">
-        <div class="container">
-            <div class="slide-news-wrap">
-                <div class="left-slide">
-                    <h1>공지사항</h1>
-                    <a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트</a>
-                </div>
-                <div class="right-slide">
-                    <p>2024-07-24</p>
-                    <div class="control">
-                        <button class="control-prev" type="button">Previous</button>
-                        <button class="control-next" type="button">Next</button>
+                    <div class="side-ads-item">
+                        <a href="#">
+                            <img src="./images/side-ads-2.png" alt="side ads">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Slide NEWS -->
+        <!-- End side ads -->
+        <!-- Hero -->
+        <div id="hero">
+            <div class="container">
+                <!--	Slider	-->
+                <div id="slide" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/PAAAA010/slide-1.png" class="d-block w-100" alt="DentalJob Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/PAAAA010/slide-2.png" class="d-block w-100" alt="DentalJob Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/PAAAA010/slide-3.png" class="d-block w-100" alt="DentalJob Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/PAAAA010/slide-4.png" class="d-block w-100" alt="DentalJob Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/PAAAA010/slide-5.png" class="d-block w-100" alt="DentalJob Slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <!--	End Slider	-->
+                <!-- Hero menu -->
+                <div id="hero-menu">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="icon icon-check"></i><span>이용안내</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon icon-mess"></i><span>상품안내</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon icon-phone"></i><span>고객센터</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon icon-edu"></i><span>법정 의무교육</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon icon-heart"></i><span>자원봉사</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Hero menu -->
+            </div>
+        </div>
+        <!-- End Hero -->
+        <!-- Slide NEWS -->
+        <div id="slide-news">
+            <div class="container">
+                <div class="slide-news-wrap">
+                    <div class="left-slide">
+                        <h1>공지사항</h1>
+                        <a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트</a>
+                    </div>
+                    <div class="right-slide">
+                        <p>2024-07-24</p>
+                        <div class="control-container">
+                            <button class="control control-prev" type="button">
+                                <i class="icon icon-black-prev"></i>
+                            </button>
+                            <button class="control control-next" type="button">
+                                <i class="icon icon-black-next"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Slide NEWS -->
+        <!-- Grand Banner -->
+        <div id="grand-banner">
+            <div class="container">
+                <h1 class="section-title">그랜드</h1>
+                <div class="list-grid">
+                    <div class="list-item slide">
+                        <div class="item-content">
+                            <div id="sub-slide" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/PAAAA010/banner-slide-1.png" class="d-block w-100"
+                                            alt="DentalJob Slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/PAAAA010/banner-slide-2.png" class="d-block w-100"
+                                            alt="DentalJob Slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/PAAAA010/banner-slide-3.png" class="d-block w-100"
+                                            alt="DentalJob Slide">
+                                    </div>
+                                </div>
+                                <div class="carousel-controller">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#sub-slide"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-pause" type="button" data-bs-target="#sub-slide">
+                                        <span class="carousel-control-pause-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#sub-slide"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-content"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-1.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                [여의도] 구강내과 진료실 /
+                                데스크 코디네이
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-2.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                가락시장역 8번출구 10
+                                초거리! 치위생사 선생 초거리! 치위생사 선생
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-1.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                가락시장역 8번출구 10
+                                초거리! 치위생사 선생! 치위생사 선생
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-3.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                가락시장역 8번출구 10
+                                초거리! 치위생사 선생장역 8번출구 10
+                                초거리! 치위생사 선생
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-4.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                가락시장역 8번출구 10
+                                초거리! 치위생사 선생생사 선생
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-3.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                (용인 보정동) 연세 웰키
+                                즈 치과 치과위생사 모집
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item nor">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-5.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                가락시장역 8번출구 10
+                                초거리! 치위생사 선생
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item nor">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-6.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                가락시장역 8번출구 10
+                                초거리! 치위생사 선생
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item nor">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-5.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                가락시장역 8번출구 10
+                                초거리! 치위생사 선생
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item nor">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-6.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                (업계최고)[플란치과 수원점]
+                                진료팀 팀원 채용
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item nor">
+                        <div class="item-content">
+                            <div class="item-logo">
+                                <img src="./images/PAAAA010/banner-logo-6.png" alt="logo banner">
+                            </div>
+                            <div class="item-title">
+                                (업계최고)[플란치과 수원점]
+                                진료팀 팀원 채용
+                            </div>
+                            <ul class="item-tag">
+                                <li>진료실</li>
+                                <li>서울(강남구)</li>
+                                <li>정규직</li>
+                                <li>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Grand Banner -->
 
+        <!-- Premium Banner -->
+        <div id="premium-banner">
+
+        </div>
+        <!-- End Premium Banner -->
+
+        <!-- Enterprise -->
+        <div id="enterprise">
+
+        </div>
+        <!-- End Enterprise -->
+
+        <!-- Hot Recruit -->
+        <div id="hot-recruit">
+
+        </div>
+        <!-- End Hot Recruit -->
+
+        <!-- Hot Talent -->
+        <div id="hot-talent">
+
+        </div>
+        <!-- End Hot Talent -->
+
+        <!--  -->
+        <!--  -->
+    </div>
     <!-- End Content -->
 
     <!-- Footer -->
