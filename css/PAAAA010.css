@@ -16,6 +16,10 @@
     height: 100%;
 }
 
+#testcss {
+    padding: 10px;
+}
+
 #slide .carousel-item.active>img,
 #slide .carousel-item.active,
 #slide .carousel-item-next,
