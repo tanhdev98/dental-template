@@ -123,5 +123,10 @@
 }
 
 .icon-black-next::after {
-    background-image: url('../images/icons/icon-right-black.png');
+    background-image: url('../images/icons/icon-left-black.png');
+    transform: rotate(180deg);
+}
+
+.icon-pause::after {
+    background-image: url('../images/icons/icon-pause.png');
 }

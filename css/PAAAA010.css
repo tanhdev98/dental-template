@@ -146,7 +146,7 @@
 }
 
 #slide-news .slide-news-wrap .right-slide .control-container .control i {
-    width: 6px;
+    width: 100%;
     height: 10px;
 }
 
@@ -227,6 +227,26 @@
     grid-area: item13;
 }
 
+.list-grid .list-item:nth-child(14) {
+    grid-area: item14;
+}
+
+.list-grid .list-item:nth-child(15) {
+    grid-area: item15;
+}
+
+.list-grid .list-item:nth-child(16) {
+    grid-area: item16;
+}
+
+.list-grid .list-item:nth-child(17) {
+    grid-area: item17;
+}
+
+.list-grid .list-item:nth-child(18) {
+    grid-area: item18;
+}
+
 .list-grid .list-item {
     width: 100%;
     height: 100%;
@@ -264,7 +284,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 18px 22px;
+    padding: 18px 25px;
 }
 
 .list-grid .list-item.nor:hover .item-content {
@@ -304,7 +324,7 @@
     align-items: center;
     font-size: 13px;
     color: #666;
-    gap: 14px;
+    gap: 10px;
 }
 
 .list-grid .list-item .item-content .item-tag li {
@@ -314,7 +334,10 @@
 .list-grid .list-item .item-content .item-tag li::after {
     content: '';
     position: absolute;
-    right: -7px;
+    right: -5px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
     height: 10px;
     width: 1px;
     background-color: #666;
@@ -373,4 +396,97 @@
     width: 16px;
     height: 16px;
     position: relative;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.list-grid .list-item.slide .carousel-controller button .icon {
+    width: 100%;
+    height: 6px;
+    object-fit: contain;
+}
+
+.list-grid .list-item.slide .carousel-controller .count-slides {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+.list-grid .list-item.slide .carousel-controller .count-slides .total-slides {
+    color: #002e73;
+    font-weight: 700;
+}
+
+.list-grid .list-item.large .item-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 255px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.list-grid .list-item.large .item-image>img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Premium Banner */
+#premium-banner {
+    padding: 45px 0;
+}
+
+#premium-banner .list-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 210px);
+    grid-template-areas:
+        "item1 item2 item3 item4 item5 item6"
+        "item7 item8 item9 item10 item11 item12"
+        "item13 item14 item15 item16 item17 item18";
+}
+
+#premium-banner .list-grid .list-item {
+    background-color: #80b156;
+}
+
+#premium-banner .list-grid .list-item.nor:hover .item-content {
+    outline: 2px solid #80b156;
+}
+
+#premium-banner .list-grid .list-item .item-content {
+    padding: 18px 20px;
+}
+
+#premium-banner .list-grid .list-item .item-content .item-title {
+    font-size: 18px;
+}
+
+#premium-banner .list-grid .list-item.full .item-content {
+    padding: 0;
+}
+
+#premium-banner .list-grid .list-item.full .item-content img {
+    height: 100%;
+    width: 100%;
+}
+
+#premium-banner .list-grid .list-item.full {
+    padding-top: 0;
+    background-color: transparent;
+}
+
+#premium-banner .list-grid .list-item .item-content .item-logo {
+    height: 45px;
+}
+
+/* Enterprise */
+
+#enterprise {
+    background-color: #f7faff;
+    padding: 45px 0;
 }
