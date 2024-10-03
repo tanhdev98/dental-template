@@ -39,7 +39,7 @@
             <div class="header-wrap">
                 <div class="header-left">
                     <a href="#">
-                        <img class="logo" src="/images/logo.png" alt="logo">
+                        <img class="logo" src="./images/logo.png" alt="logo">
                     </a>
                     <div class="search-wrap">
                         <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
@@ -203,21 +203,35 @@
                                                 생년월일
                                             </div>
                                             <div class="group-birth">
-                                                <select class="dropdown">
-                                                    <option value="year1">1980</option>
-                                                    <option value="year2">2</option>
-                                                    <option value="year3">3</option>
-                                                </select>
-                                                <select class="dropdown">
-                                                    <option value="month1">월</option>
-                                                    <option value="month2">2</option>
-                                                    <option value="month3">3</option>
-                                                </select>
-                                                <select class="dropdown">
-                                                    <option value="day1">일</option>
-                                                    <option value="day2">2</option>
-                                                    <option value="day3">3</option>
-                                                </select>
+                                                <div class="form-select-container select-year">
+                                                    <select>
+                                                        <option class="option-placeholder">1980</option>
+                                                        <option value="#">1985</option>
+                                                        <option value="#">1990</option>
+                                                        <option value="#">1995</option>
+                                                        <option value="#">2000</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-select-container select-month">
+                                                    <select>
+                                                        <option class="option-placeholder">월</option>
+                                                        <option value="#">월</option>
+                                                        <option value="#">월</option>
+                                                        <option value="#">월</option>
+                                                        <option value="#">월</option>
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-select-container select-day">
+                                                    <select>
+                                                        <option class="option-placeholder">일</option>
+                                                        <option value="#">일</option>
+                                                        <option value="#">일</option>
+                                                        <option value="#">일</option>
+                                                        <option value="#">일</option>
+                                                        </option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form form-phone">
@@ -225,7 +239,7 @@
                                                 휴대폰번호
                                             </div>
                                             <div class="group-phone">
-                                                <input value="" placeholder="이름을 입력해 주세요.">
+                                                <input value="" placeholder="‘-’없이 입력하세요.">
                                                 <button>인증번호 발송</button>
                                             </div>
                                             <div class="note-form-phone">※ 회원가입시 등록한 핸드폰번호를 입력하세요.</div>
