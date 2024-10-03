@@ -1,12 +1,9 @@
 /* hero */
 #hero .container {
     display: flex;
-    margin-top: 30px;
     margin-bottom: 20px;
     gap: 20px;
 }
-
-
 
 /* slide */
 
@@ -407,6 +404,7 @@
     display: flex;
     align-items: center;
     font-size: 13px;
+    font-weight: 300;
     color: #666;
     gap: 10px;
 }
@@ -435,7 +433,6 @@
 .list-grid .list-item .item-content .item-tag .bookmark {
     width: 16px;
     height: 16px;
-    background-color: transparent;
 }
 
 .list-grid .list-item .item-content .item-tag .bookmark .icon-star {
@@ -602,6 +599,7 @@
 
 #premium-banner .list-grid .list-item .item-content .item-desc {
     font-size: 18px;
+    line-height: 24px;
 }
 
 #premium-banner .list-grid .list-item.full .item-content {
@@ -744,9 +742,13 @@
     background-color: #f29c9f;
 }
 
+#hot-recruit .list-grid .list-item.nor:hover .item-content {
+    outline: 2px solid #f29c9f;
+}
+
 #hot-recruit .list-grid .list-item .item-content {
-    padding: 0 23px;
-    justify-content: center;
+    justify-content: space-between;
+    padding-right: 5px;
 }
 
 #hot-recruit .list-grid .list-item .item-content .item-title {
@@ -758,4 +760,135 @@
 #hot-recruit .list-grid .list-item .item-content .item-desc {
     margin-bottom: 0;
     font-size: 19px;
+    -webkit-line-clamp: 1;
+}
+
+/* Hot Talent */
+#hot-talent {
+    padding-bottom: 45px;
+}
+
+#hot-talent .list-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 170px);
+    grid-template-areas: "item1 item2 item3 item4 item5"
+        "item6 item7 item8 item9 item10";
+}
+
+#hot-talent .list-grid .list-item {
+    padding-top: 0;
+}
+
+#hot-talent .list-grid .list-item .item-content {
+    padding: 25px;
+    border-top: 1px solid #ddd;
+    justify-content: space-between;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-header .item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-header .item-info .item-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-header .item-info .item-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-desc {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-footer .item-position {
+    font-weight: 300;
+    font-size: 13px;
+    color: #666;
+}
+
+#hot-talent .list-grid .list-item .item-content .item-tag li:nth-last-child(2):after {
+    display: block;
+}
+
+/* Bottom Nav */
+#bottom-nav .bottom-nav-wrap {
+    display: flex;
+    gap: 20px;
+}
+
+#bottom-nav .bottom-nav-wrap .bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #f7faff;
+    height: 170px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px 35px;
+    border: 2px solid transparent;
+    transition: .2s linear;
+}
+
+#bottom-nav .icon-docs::after {
+    background-image: url('../images/PAAAA010/nav-icon-docs.png');
+}
+
+#bottom-nav .icon-letter::after {
+    background-image: url('../images/PAAAA010/nav-icon-letter.png');
+}
+
+#bottom-nav .icon-mess::after {
+    background-image: url('../images/PAAAA010/nav-icon-mess.png');
+}
+
+#bottom-nav .icon-contact::after {
+    background-image: url('../images/PAAAA010/nav-icon-contact.png');
+}
+
+#bottom-nav .bottom-nav-wrap .bottom-nav-item .icon {
+    width: 38px;
+    height: 38px;
+}
+
+#bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+#bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-desc {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#bottom-nav .bottom-nav-wrap .bottom-nav-item:hover {
+    margin-top: -10px;
+    border: 2px solid #7fbde7;
+    background-color: #fff;
+    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.2);
 }

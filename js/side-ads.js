@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var offsetTop = $('#topAds').outerHeight(true) +
         $('#header').outerHeight(true) +
-        $('#navbar').outerHeight(true) + 60;
+        $('#navbar').outerHeight(true) + 30;
 
 
     function calculateLeftPos() {
@@ -30,17 +30,17 @@ $(document).ready(function () {
         var scrollY = $(this).scrollTop();
         leftPos = calculateLeftPos();
 
-        if (scrollY > offsetTop) {
+        if (scrollY > offsetTop - 30) {
             $('#sideAds').css({
                 position: 'fixed',
                 top: '30px',
-                left: leftPos + 'px'
+                left: leftPos + 'px',
             });
         } else {
             $('#sideAds').css({
                 position: 'absolute',
                 top: offsetTop + 'px',
-                left: leftPos + 'px'
+                left: leftPos + 'px',
             });
         }
     });
