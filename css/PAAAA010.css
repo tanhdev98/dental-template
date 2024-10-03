@@ -669,8 +669,8 @@
 #enterprise {
     background-color: #f7faff;
     padding: 45px 0;
+}
 
-/* Enterprise */
 #enterprise .list-grid {
     display: grid;
     gap: 20px;
