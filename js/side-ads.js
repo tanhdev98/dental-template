@@ -1,23 +1,53 @@
 $(document).ready(function () {
-    var top = $('#sideAds').offset().top - parseFloat($('#sideAds').css('marginTop').replace(/auto/, 0));
-    var footTop = $('#footer').offset().top - parseFloat($('#footer').css('marginTop').replace(/auto/, 0));
 
-    var maxY = footTop - $('#sideAds').outerHeight();
+    var offsetTop = $('#topAds').outerHeight(true) +
+        $('#header').outerHeight(true) +
+        $('#navbar').outerHeight(true) + 60;
+
+
+    function calculateLeftPos() {
+        var containerWidth = $('.container').width();
+        var marginLeft = parseInt($('.container').css('margin-left'), 10);
+
+        if ($(window).width() < 1720) {
+            return containerWidth + 10 + marginLeft;
+        } else {
+            return containerWidth + 30 + marginLeft;
+        }
+    }
+
+
+    var leftPos = calculateLeftPos();
+
+
+    $('#sideAds').css({
+        position: 'fixed',
+        top: offsetTop + 'px',
+        left: leftPos + 'px'
+    });
 
     $(window).scroll(function () {
-        var y = $(this).scrollTop() + 30;
-        if (y > top) {
-            if (y < maxY) {
-                $('#sideAds').css({
-                    top: (y - top) + 'px'
-                });
-            } else {
-                $('#sideAds').css({
-                    top: (maxY - top - 30) + 'px'
-                });
-            }
+        var scrollY = $(this).scrollTop();
+        leftPos = calculateLeftPos();
+
+        if (scrollY > offsetTop) {
+            $('#sideAds').css({
+                position: 'fixed',
+                top: '30px',
+                left: leftPos + 'px'
+            });
         } else {
-            $('#sideAds').removeAttr('style');
+            $('#sideAds').css({
+                position: 'absolute',
+                top: offsetTop + 'px',
+                left: leftPos + 'px'
+            });
         }
+    });
+
+
+    $(window).resize(function () {
+        leftPos = calculateLeftPos();
+        $('#sideAds').css('left', leftPos + 'px');
     });
 });

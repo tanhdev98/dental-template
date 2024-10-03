@@ -178,7 +178,7 @@
     position: relative;
 }
 
-/* side ads */
+/* side ads
 #sideAds {
     position: absolute;
     width: max-content;
@@ -187,6 +187,13 @@
 
 #sideAds.fixed {
     position: absolute;
+    top: 30px;
+}
+
+
+ */
+#sideAds {
+    position: fixed;
     top: 30px;
 }
 
@@ -210,12 +217,14 @@
 }
 
 @media screen and (width <=1790px) {
-    #sideAds {
-        right: -145px;
-    }
-
     #sideAds .side-ads-wrap .side-ads-item img {
         width: 70%;
+    }
+}
+
+@media screen and (width <=1670px) {
+    #sideAds {
+        display: none;
     }
 }
 
