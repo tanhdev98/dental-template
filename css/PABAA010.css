@@ -8,7 +8,7 @@
 /* Tab Form */
 #search-content .wrap-tab {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     border-bottom: 1px solid #333;
     padding: 0;
 }
@@ -18,31 +18,38 @@
     max-width: 140px;
 }
 
+#search-content .wrap-tab li+li {
+    margin-left: -1px;
+}
+
 #search-content .wrap-tab li a {
     display: block;
     border: none;
     outline: none;
-    background-color: transparent;
-    border: 1px solid #ddd;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-bottom: none;
     border-radius: 10px 10px 0 0;
-    color: #999;
-    font-size: 19px;
-    line-height: 48px;
-    background-color: #f3f7f8;
+    color: #666;
+    font-size: 20px;
+    line-height: 44px;
     text-align: center;
+}
+
+#search-content .wrap-tab li.active {
+    z-index: 12;
 }
 
 #search-content .wrap-tab li.active a {
     border: none;
     outline: none;
-    background-color: transparent;
     border: 1px solid #000;
-    border-bottom: 1px solid transparent;
-    color: #333;
-    font-weight: 700;
+    border-bottom: none;
+    color: #000;
+    font-weight: 500;
 }
 
-/* Results */
+/* Results Search */
 #search-content .results-text a {
     font-size: 20px;
     font-weight: 600;
@@ -55,92 +62,28 @@
     color: #666;
 }
 
-#search-content .section {
-    margin-top: 30px;
+
+
+/* Section recruitment news */
+#search-content #recruitment-news {
+    margin-top: 25px;
 }
 
-#search-content .section .content-table {
-    padding: 0 30px;
+/* Section talent news */
+#search-content #talent-news {
+    margin-top: 66px;
 }
 
-/* Table */
-#search-content .top-table {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #333;
-    padding-bottom: 22px;
-}
-
-#search-content .count-results {
-    font-size: 22px;
-    font-weight: 300;
-    color: #666;
-}
-
-#search-content .count-results>span {
-    font-size: 18px;
-    font-weight: 300;
-    color: #666;
-}
-
-#search-content .count-results .high-light-number {
-    font-size: 18px;
-    font-weight: 700;
-    color: #666;
-}
-
-#search-content .more-results {
-    font-size: 18px;
-    font-weight: 300;
-}
-
-#search-content .more-results.blue {
-    color: #0068b7;
-}
-
-#search-content .more-results.green {
-    color: #80b156;
-}
-
-#search-content .more-results.light-blue {
-    color: #009e96;
-}
-
-#search-content .more-results.red {
-    color: #f29c9f;
-}
-
-/* Section 3 */
-#search-content .section-3 .content-table>li {
-    padding-bottom: 17px;
-    margin-top: 22px;
-    display: flex;
-    padding: 0;
-}
-
-#search-content .content-table li .status.blue {
-    color: #0068b7;
-    border: 1px solid #0068b7;
-}
-
-#search-content .content-table li .status.green {
-    color: #80b156;
-    border: 1px solid #80b156;
-}
-
-
-#search-content .content-table.style-2-column li.wrap-item {
-    padding-bottom: 17px;
-    margin-top: 22px;
-    justify-content: space-between;
-    align-items: center;
+/* Notices/news */
+#search-content #notices-news {
+    margin-top: 59px;
 }
 
 #search-content .content-table.style-2-column li .wrap-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 31px;
 }
 
 #search-content .section-3 .content-table li .result-title {
@@ -151,7 +94,7 @@
 }
 
 #search-content .section-3 .content-table li .date {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
     color: #999;
 }
@@ -166,6 +109,10 @@
     margin-top: 33px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 34px;
+}
+
+#search-content .section-4 .top-table {
+    border-color: #ddd;
 }
 
 /* .content-table li .result-item {}
@@ -191,11 +138,11 @@
     gap: 30px;
 }
 
-#search-content .content-table li .status {
+#search-content .section-4 .content-table li .status {
     font-size: 16px;
     font-weight: 600;
     color: #666;
-    padding: 4px 14px;
+    padding: 6px 14px;
     border: 1px solid #666;
     border-radius: 30px;
     height: fit-content;
