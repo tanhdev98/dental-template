@@ -275,7 +275,8 @@
     font-weight: 700;
 }
 
-#navbar .navbar-wrap .menu .active {
+#navbar .navbar-wrap .menu>ul li.active,
+#navbar .navbar-wrap .menu>ul li:hover {
     color: #0068b7;
 }
 
@@ -312,6 +313,7 @@
     white-space: nowrap;
 }
 
+#footer .menu>ul>li:hover,
 #footer .menu>ul .active {
     color: #076ecc;
 }
@@ -433,6 +435,7 @@
     z-index: 1;
     width: 100%;
     box-shadow: 2px 1px 16px rgba(0, 0, 0, 0.15);
+    border: 1px solid #999;
     background-color: #fff;
     border-radius: 5px;
 }
