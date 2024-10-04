@@ -109,6 +109,13 @@
     margin-top: 33px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#search-content .section-4 .content-table li .wrapImg img {
+    height: 130px;
+    width: 100%;
 }
 
 #search-content .section-4 .top-table {
@@ -135,7 +142,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 #search-content .section-4 .content-table li .status {
