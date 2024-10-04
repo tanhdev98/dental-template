@@ -555,6 +555,13 @@
     font-weight: 300;
 }
 
+#sub-header .header-wrap .header-right .profile-setting::after {
+    content: '';
+    background: url('../images/arrow-down-black.png') no-repeat center / contain;
+    width: 10px;
+    height: 6px;
+}
+
 #content.sub-page {
     background: #f4f6f8;
 }
@@ -628,7 +635,6 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-
 }
 
 .table-3-column .column-left .wrap-title+.wrap-link {
