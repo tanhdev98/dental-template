@@ -227,6 +227,12 @@
     gap: 8px;
 }
 
+.pagination-number li.more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 .pagination-number li a {
     width: 35px;
     height: 35px;
@@ -238,10 +244,15 @@
     font-weight: 300;
 }
 
+.pagination-number li.active a {
+    cursor: pointer;
+}
+
 .pagination-number li.active a,
 .pagination-number li:hover a {
     background-color: #eeeeee;
     font-weight: 700;
+
 }
 
 @media screen and (width <=1320px) {
