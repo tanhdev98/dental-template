@@ -26,17 +26,13 @@ img {
 
 #back-to-home {
     text-align: right;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
 }
 
 #back-to-home a {
     color: #666;
     font-size: 19px;
-    line-height: 1.89473684;
-}
-
-#back-to-home a:hover {
-    /* color: #666; */
+    font-weight: 300;
 }
 
 .wrap-auth {
@@ -61,9 +57,9 @@ img {
     margin-bottom: -50px;
 }
 
-.wrap-auth .wrap-content .wrap-auth-right img {
-    /* width: 100%; */
-}
+/* .wrap-auth .wrap-content .wrap-auth-right img {
+    width: 100%;
+} */
 
 /* Tab Form */
 .wrap-tab {
@@ -169,15 +165,17 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 0 17px;
+    margin-top: 19px;
+    padding-bottom: 17px;
     border-bottom: 1px solid #ddd;
-
 }
 
 .wrap-bottom-form .form-group {
     display: flex;
     align-items: center;
     gap: 6px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .wrap-bottom-form .remember {
@@ -241,14 +239,15 @@ img {
 }
 
 .wrap-question a.btn {
-    margin: 0;
-    line-height: 35px;
     padding: 0 15px;
     border-radius: 35px;
     background-color: #80b156;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
+    height: 35px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -258,6 +257,7 @@ img {
     font-size: 19px;
     color: #666;
     margin-top: 37px;
+    font-weight: 300;
 }
 
 
@@ -267,7 +267,6 @@ img {
     .wrap-auth {
         padding: 60px 80px;
     }
-
 }
 
 @media screen and (max-width: 991px) {
