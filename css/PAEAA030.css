@@ -51,7 +51,7 @@
 }
 
 /* Column 1 */
-.column-1 {}
+/* .column-1 {} */
 
 .column-1 .clinic-name {
     text-align: center;
@@ -92,7 +92,7 @@
     position: relative;
 }
 
-#content-table .wrap-table .wrap-link li {}
+/* #content-table .wrap-table .wrap-link li {} */
 
 #content-table .wrap-table .wrap-link li a {
     font-size: 15px;
@@ -174,7 +174,7 @@
     font-weight: 400;
 }
 
-.column-4 .price {}
+/* .column-4 .price {} */
 
 /* More Information */
 .more-infomation {
