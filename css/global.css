@@ -495,22 +495,28 @@
     height: 65px;
 }
 
-#sub-header .letter-notify {
+#sub-header .header-wrap .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#sub-header .header-wrap .header-right .letter-notify {
     width: 24px;
     height: 22px;
     position: relative;
 }
 
-#sub-header .letter-notify .icon-letter {
+#sub-header .header-wrap .header-right .letter-notify .icon-letter {
     width: 100%;
     height: 100%;
 }
 
-#sub-header .letter-notify .icon-letter::after {
+#sub-header .header-wrap .header-right .letter-notify .icon-letter::after {
     background-image: url('../images/icons/icon-letter.png');
 }
 
-#sub-header .letter-notify .count-notify {
+#sub-header .header-wrap .header-right .letter-notify .count-notify {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -525,6 +531,28 @@
     font-size: 11px;
     font-weight: 300;
     outline: 1px solid #fff;
+}
+
+#sub-header .header-wrap .header-right .profile-setting {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#sub-header .header-wrap .header-right .profile-setting .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+#sub-header .header-wrap .header-right .profile-setting .avatar>img {
+    width: 100%;
+    height: 100%;
+}
+
+#sub-header .header-wrap .header-right .profile-setting .name {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 #content.sub-page {
@@ -625,8 +653,6 @@
     display: flex;
     position: relative;
 }
-
-.table-3-column .wrap-link li {}
 
 .table-3-column .wrap-link li a {
     font-size: 15px;
