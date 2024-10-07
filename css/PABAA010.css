@@ -6,7 +6,13 @@
 }
 
 /* Tab Form */
+#search-content .wrap-tab {
+    margin-bottom: 32px;
+}
 
+#search-content .wrap-tab li {
+    max-width: 140px;
+}
 
 /* Results Search */
 #search-content .results-text a {
