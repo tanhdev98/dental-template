@@ -787,14 +787,12 @@
 /* Tab */
 .wrap-tab {
     display: flex;
-    margin-bottom: 32px;
     border-bottom: 1px solid #333;
     padding: 0;
 }
 
 .wrap-tab li {
     width: 100%;
-    max-width: 140px;
 }
 
 .wrap-tab li+li {
@@ -805,7 +803,6 @@
     display: block;
     border: none;
     outline: none;
-    background-color: #fff;
     border: 1px solid #999;
     border-bottom: none;
     border-radius: 10px 10px 0 0;
@@ -825,5 +822,32 @@
     border: 1px solid #000;
     border-bottom: none;
     color: #000;
+    font-weight: 500;
+}
+
+
+/* Tab no border */
+.tabs-no-border {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs-no-border li {
+    padding-right: 32px;
+}
+
+.tabs-no-border li:last-child {
+    padding-right: 0;
+}
+
+.tabs-no-border li a {
+    font-size: 20px;
+    color: #666;
+}
+
+.tabs-no-border li.active a {
+    color: #0068b7;
     font-weight: 500;
 }

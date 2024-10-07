@@ -63,9 +63,8 @@ img {
 
 /* Tab Form */
 .wrap-tab {
-    display: flex;
     margin-bottom: 20px;
-    padding: 0;
+    border-color: transparent;
 }
 
 .wrap-tab li {
@@ -74,11 +73,8 @@ img {
 
 .wrap-tab li a {
     display: block;
-    border: none;
-    outline: none;
-    background-color: transparent;
     border: 1px solid #ddd;
-    border-bottom: 1px solid #000;
+    border-bottom-color: #000;
     border-radius: 10px 10px 0 0;
     color: #999;
     font-size: 19px;
@@ -88,11 +84,7 @@ img {
 }
 
 .wrap-tab li.active a {
-    border: none;
-    outline: none;
     background-color: transparent;
-    border: 1px solid #000;
-    border-bottom: 1px solid transparent;
     color: #333;
     font-weight: 700;
 }

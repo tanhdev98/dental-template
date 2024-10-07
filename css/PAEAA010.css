@@ -2,6 +2,211 @@
     padding: 30px 0 100px;
 }
 
+/* Wrap Tab Form */
+
+/* #wrap-tab-form{} */
+
+.top-form {
+    display: flex;
+    margin-bottom: 29px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrap-tab-form h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+#wrap-tab-form .wrap-tab li {}
+
+#wrap-tab-form .wrap-tab li:last-child {
+    max-width: 203px;
+}
+
+#wrap-tab-form .wrap-tab li a {
+    text-align: left;
+    padding-left: 46px;
+    position: relative;
+    font-weight: 600;
+    color: #999;
+    line-height: 49px;
+}
+
+#wrap-tab-form .wrap-tab li.active a {
+    font-weight: 400;
+    color: #333;
+}
+
+#wrap-tab-form .wrap-tab li a.icon-plus {
+    text-align: left;
+    padding-left: 38px;
+    position: relative;
+}
+
+#wrap-tab-form .wrap-tab li a::after {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#wrap-tab-form .wrap-tab li a.icon-plus::after {
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#wrap-tab-form .wrap-tab-select {
+    display: flex;
+    border: 1px solid #333;
+    border-top: transparent;
+}
+
+/* Wrap tab left */
+#wrap-tab-form .wrap-tab-left {
+    width: calc((100% - 203px) / 3);
+    padding: 20px 0 8px;
+}
+
+#wrap-tab-form .wrap-tab-left ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 180px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#wrap-tab-form .wrap-tab-left ul li {
+    padding-left: 25px;
+    line-height: 30px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+}
+
+#wrap-tab-form .wrap-tab-left ul li .city-name {
+
+    color: #333;
+}
+
+#wrap-tab-form .wrap-tab-left ul li.active,
+#wrap-tab-form .wrap-tab-left ul li:hover {
+    background-color: #eef7fd;
+}
+
+#wrap-tab-form .wrap-tab-left ul li.active::after,
+#wrap-tab-form .wrap-tab-left ul li:hover::after {
+    content: "";
+    width: 5px;
+    height: 8px;
+    background: url('../images/icons/icon-right-blue.png') no-repeat center / 100%;
+    position: absolute;
+    right: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Wrap tab right */
+#wrap-tab-form .wrap-tab-right {
+    width: calc(100% - ((100% - 203px) / 3));
+    padding: 20px 0 0;
+}
+
+
+#wrap-tab-form .wrap-tab-right form .notification {
+    padding-left: 25px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #0068b7;
+    margin-bottom: 6px;
+}
+
+#wrap-tab-form .wrap-tab-right form .notification span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #0068b7;
+}
+
+#wrap-tab-form .wrap-tab-right ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-height: 178px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#wrap-tab-form .wrap-tab-right ul li {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    position: relative;
+    margin-left: 25px;
+}
+
+#wrap-tab-form .wrap-tab-right ul li input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+span {
+    position: absolute;
+    left: 0;
+}
+
+input[type="checkbox"]+span::before {
+    content: "";
+    background: url('../images/icons/icon-checked-blue.png') no-repeat center /100%;
+    width: 10px;
+    height: 8px;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked+span::before {
+    opacity: 1;
+}
+
+#wrap-tab-form .wrap-tab-right ul li>span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    position: absolute;
+    cursor: pointer;
+}
+
+#wrap-tab-form .wrap-tab-right ul li label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #888;
+    z-index: 1;
+}
+
+#wrap-tab-form .wrap-tab-right ul li label span {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #333;
+    padding-left: 25px;
+}
+
 /* Top Table */
 #content-table .top-table {
     display: flex;
