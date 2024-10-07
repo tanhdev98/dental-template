@@ -102,7 +102,13 @@
     border-bottom: unset;
 }
 
-#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(odd) {}
+#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(n + 6) {
+    border-right: unset;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(10) {
+    border-right: 1px solid #dddddd;
+}
 
 /* End wrap-tab-select-bag */
 
