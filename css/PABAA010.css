@@ -6,48 +6,7 @@
 }
 
 /* Tab Form */
-#search-content .wrap-tab {
-    display: flex;
-    margin-bottom: 32px;
-    border-bottom: 1px solid #333;
-    padding: 0;
-}
 
-#search-content .wrap-tab li {
-    width: 100%;
-    max-width: 140px;
-}
-
-#search-content .wrap-tab li+li {
-    margin-left: -1px;
-}
-
-#search-content .wrap-tab li a {
-    display: block;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    border: 1px solid #999;
-    border-bottom: none;
-    border-radius: 10px 10px 0 0;
-    color: #666;
-    font-size: 20px;
-    line-height: 44px;
-    text-align: center;
-}
-
-#search-content .wrap-tab li.active {
-    z-index: 12;
-}
-
-#search-content .wrap-tab li.active a {
-    border: none;
-    outline: none;
-    border: 1px solid #000;
-    border-bottom: none;
-    color: #000;
-    font-weight: 500;
-}
 
 /* Results Search */
 #search-content .results-text a {
