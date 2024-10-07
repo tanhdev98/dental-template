@@ -267,8 +267,13 @@
     height: 30px;
 }
 
-#user-guide #company-introduction .icon.icon-star {
-    background-image: url('../images/PAFAA040/icon-star.png');
+#user-guide #company-introduction .icon.icon-find-people {
+    background-image: url('../images/PAFAA040/icon-find-people.png');
+    width: 32px;
+}
+
+#user-guide #company-introduction .icon.icon-star-blue {
+    background-image: url('../images/PAFAA040/icon-star-blue.png');
     width: 32px;
 }
 
@@ -292,8 +297,9 @@
     color: #666666;
     text-align: center;
     font-weight: 300;
-    padding: 0 28px;
+    padding: 0 10px;
     word-break: keep-all;
+    line-height: 18px;
 }
 
 #user-guide #company-introduction .col {
