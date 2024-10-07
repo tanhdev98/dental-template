@@ -143,9 +143,36 @@
     background-image: url('../images/icons/icon-search.png');
 }
 
-.icon-plus::after {
-    background-image: url('../images/icons/icon-plus.png');
+.icon-plus {
+    position: relative;
 }
+
+.icon-plus::before {
+    content: "";
+    width: 3px;
+    height: 16px;
+    background-color: #aeaeae;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-plus::after {
+    content: "";
+    width: 16px;
+    height: 3px;
+    background-color: #aeaeae;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.icon-plus::after {}
 
 .icon-reset::after {
     background-image: url('../images/icons/icon-reset.png');
