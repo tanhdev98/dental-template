@@ -1,6 +1,5 @@
 #search-infor {
-    padding: 30px 0 100px 0;
-    margin-bottom: 85px;
+    margin-bottom: 74px;
 }
 
 #search-infor .titleText {
@@ -14,39 +13,50 @@
 }
 
 #search-infor .notification {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 250px;
     max-width: 1100px;
     height: 250px;
     background-color: #f5f5f5;
     border-radius: 10px;
-    margin: 40px auto 10px auto;
+    margin: 39px auto 11px auto;
 }
 
 #search-infor .group-notifi {
-    padding: 45px 80px 58px 80px;
+    padding: 45px 100px 58px 80px;
     height: 100%;
     width: 100%;
 }
 
 #search-infor .title-notifi {
     font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 19px;
 }
 
-#search-infor .title-notifi-child {
-    list-style-type: disc;
-    padding-left: 20px;
+#search-infor .title-notifi-child li {
+    position: relative;
+    padding-left: 15px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 28px;
+    font-weight: 300;
 }
 
-#search-infor .title-notifi-child li::marker {
-    color: #8898a4;
+#search-infor .title-notifi-child li::before {
+    content: "";
+    background-color: #8898a4;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    border-radius: 50px;
 }
 
 #search-infor .wrap-infor {
     border-radius: 10px 10px 0 0;
-    max-width: 1100px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -68,13 +78,18 @@
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     font-size: 20px;
+    width: 100%;
+    font-weight: 300;
+    color: #666;
+    border-bottom: 1px solid #000;
 }
 
 #search-infor .wrap-tab li.active {
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #000000;
-    border-bottom: unset;
-    font-weight: bold;
+    border-bottom: none;
+    font-weight: 600;
+    color: #333;
 }
 
 #search-infor .wrap-tab-child {
@@ -82,7 +97,7 @@
 }
 
 #search-infor .wrap-tab-child.active {
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #000000;
     border-top: unset;
     display: block;
@@ -92,32 +107,19 @@
     position: relative;
 }
 
-#search-infor .wrap-tab-child.active::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: calc(50% + 2px);
-    height: 1px;
-    background-color: #000000;
-}
-
-#search-infor .wrap-tab-child-1.active::before {
-    transform: translateX(calc(0% - 1px));
-}
+/* .wrap-tab li {} */
 
 #search-infor .wrap-tab-child-2.active::before {
-    transform: translateX(calc(-100% + 1px));
+    transform: translateX(calc(-100%));
 }
 
 #search-infor .content-tab {
-    padding: 40px 80px;
+    padding: 38px 80px 0px;
 }
 
 #search-infor .content-tab .form {
     display: flex;
     align-items: center;
-
 }
 
 #search-infor .content-tab .form-radio {
@@ -130,14 +132,23 @@
     gap: 10px;
 }
 
+#search-infor .content-tab .form-radio .group-radio label {
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    accent-color: #00467b;
+}
+
 #search-infor .content-tab .title-form {
     width: 110px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #search-infor .content-tab .form-radio .title-value-radio {
     font-size: 20px;
+    font-weight: 300;
 }
 
 #search-infor .content-tab .form-id input,
@@ -148,8 +159,9 @@
     width: 400px;
     height: 40px;
     border-radius: 3px;
-    border: 1px solid #dddddd;
-    font-size: 20px;
+    border: 1px solid #ddd;
+    font-size: 19px;
+    font-weight: 300;
 }
 
 #search-infor .content-tab .form-phone input {
@@ -165,39 +177,41 @@
     gap: 5px;
 }
 
-.form-select-container {
-    width: 130px;
-    height: 40px;
-}
-
-.form-select-container>.form-select-cus {
-    border-radius: 3px;
-    border: 1px solid #dddddd;
-}
 
 #search-infor .content-tab .form-phone .group-phone {
     display: flex;
     gap: 5px;
 }
 
+#search-infor .content-tab .form-phone .group-phone input {
+    font-size: 15px;
+    color: #999;
+}
+
 #search-infor .content-tab .form-phone .group-phone button {
     width: 145px;
     border-radius: 3px;
-    border: 1px solid #dddddd;
-
+    border: 1px solid #999;
+    background-color: #f5f5f5;
+    font-size: 19px;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0 15px;
 }
 
 #search-infor .content-tab .form-phone .note-form-phone {
-    font-size: 20px;
+    font-size: 19px;
     color: #0068b7;
     margin-left: 16px;
+    font-weight: 300;
 }
 
 #search-infor .content-tab .form-otp .time-remaining-otp,
 #search-infor .content-tab .form-otp .time-remaining-otp .time-count {
-    font-size: 20px;
+    font-size: 19px;
     color: #e60012;
-    margin-left: 16px;
+    margin-left: 13px;
+    font-weight: 300;
 }
 
 #search-infor .content-tab .form-otp .time-remaining-otp .time-count {
@@ -209,15 +223,16 @@
     height: 45px;
     background-color: #0068b7;
     border-radius: 22.5px;
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
+    font-weight: 600;
+    font-size: 19px;
+    color: #fff;
     position: relative;
-    top: 125px;
+    top: 75px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -5px;
 }
 
 .form-id,
@@ -228,15 +243,13 @@
 }
 
 /* Responsive */
-@media screen and (width <=1590px) {
-    body {
-        overflow-x: hidden;
-    }
-}
-
 @media screen and (width <=1320px) {
-    #search-infor .notification {
-        width: 100%;
+    #content {
+        padding: 30px 0 50px;
+    }
+
+    #search-infor .content-tab .form-radio .title-value-radio {
+        word-break: keep-all;
     }
 
     #search-infor .group-notifi {
@@ -251,13 +264,9 @@
         padding: 20px 20px;
     }
 
-    #search-infor .wrap-infor {
-        width: 100%;
-    }
-
     #search-infor .content-tab .form {
         display: flex;
-        align-items: unset;
+        align-items: flex-start;
         flex-direction: column;
     }
 
@@ -275,7 +284,7 @@
     #search-infor .content-tab .form-phone .note-form-phone,
     #search-infor .content-tab .form-otp .time-remaining-otp,
     #search-infor .content-tab .form-otp .time-remaining-otp .time-count {
-        margin: 10px auto;
+        margin: 10px 0;
         font-size: 16px;
     }
 
@@ -285,7 +294,6 @@
 
     #search-infor .wrap-tab-child.active::before {
         width: calc(50% + 1px);
-
     }
 
     #search-infor .wrap-tab-child-1.active::before {

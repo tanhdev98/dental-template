@@ -64,8 +64,11 @@ $(document).ready(function () {
         } else {
             form_select_container.classList.remove("open-upwards");
         }
-
-        form_select_container.classList.add("active");
+        if (form_select_container.classList.contains('active')) {
+            form_select_container.classList.remove("active");
+        } else {
+            form_select_container.classList.add("active");
+        }
 
         let form_option_container = e.currentTarget.closest(".form-select-cus").querySelector(".form-option-wrapper > .form-option-container");
         form_option_container.style.height = "calc(" + form_option_container.scrollHeight + "px)";

@@ -6,6 +6,7 @@
     font-size: 100%;
     vertical-align: baseline;
     color: #333;
+    box-sizing: border-box;
 }
 
 article,
@@ -73,6 +74,10 @@ p {
     margin-bottom: 0;
 }
 
+button {
+    background-color: transparent;
+}
+
 @media (min-width: 1400px) {
 
     .container-xxl,
@@ -82,5 +87,6 @@ p {
     .container-sm,
     .container {
         max-width: 1440px;
+        padding: 0;
     }
 }
