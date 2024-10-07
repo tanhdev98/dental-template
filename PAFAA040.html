@@ -11,6 +11,7 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
             <div class="topAds-content">
                 <a href="#" class="btn-primary">이력서 등록 이벤트</a>
                 <span class="text"><b>정성껏 이력서를 작성</b>하여 주신</span>
-                <img class="topAds-img" src="./images/home/coffee.png" alt="topAds-img">
+                <img class="topAds-img" src="./images/coffee.png" alt="top ads imgage">
                 <span class="text">모든 분들께 <b>선물을 드립니다.</b></span>
             </div>
             <div class="close-topAds-wrap">
@@ -31,13 +32,29 @@
         </div>
     </div>
     <!-- End top ads -->
+    <!-- Side ads -->
+    <div id="sideAds">
+        <div class="side-ads-wrap">
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-1.png" alt="side ads">
+                </a>
+            </div>
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-2.png" alt="side ads">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End side ads -->
     <!-- Header -->
     <div id="header">
         <div class="container">
             <div class="header-wrap">
                 <div class="header-left">
                     <a href="#">
-                        <img class="logo" src="./images/logo.png " alt="logo">
+                        <img class="logo" src="./images/logo.png" alt="Logo">
                     </a>
                     <div class="search-wrap">
                         <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
@@ -81,65 +98,304 @@
                         <li>
                             <a href="#">덴탈플러스</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#">고객센터</a>
                         </li>
                     </ul>
                 </div>
                 <div class="auth">
-                    <a href="./PACAA010.html" class="login">로그인</a>
-                    <a href="./PACAA010.html" class="register">회원가입</a>
+                    <a href="./PACAA010.html">로그인</a>
+                    <a href="./PACAA010.html">회원가입</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- End navbar -->
-    <!-- Content -->
-    <div id="user-guide">
-        <div class="container">
-            <!-- start title -->
-            <div id="title">
-                <div class="titleText">아이디/비밀번호 찾기</div>
-                <div class="border-bottom-blue"></div>
-            </div>
-            <!-- end title -->
-            <div class="user-guide-content">
-                <div class="content-title">
-                    <div class="outer-circle">
-                        <div class="inner-circle"></div>
-                    </div>
-                    <div class="text-content-title">치과회원</div>
-                </div>
-                <div class="text-content-title-child">구인을 원하시는 회원님을 위해 다음과 같은 서비스가 준비되어 있습니다.</div>
-                <div class="vertical-line"></div>
 
-                <div class="content-child content-child-1">
-                    <div class="item-content-1">
-                        <div class="title-content-child">채용소식 등록 방법</div>
-                        <ul class="item-text-arrow">
-                            <div class="line-item line-1">
-                                <li class="item-arrow">‘치과회원’으로 가입</li>
-                                <li class="item-arrow">‘치과회원’으로 로그인</li>
-                                <li class="item-arrow">‘마이페이지 > 채용소식 등록’<br>
-                                    메뉴 클릭</li>
-                                <li class="item-arrow">채용내역 입력</li>
+    <!-- Content -->
+    <div id="content">
+        <div id="user-guide">
+            <div class="container">
+                <!-- Start title -->
+                <div class="titleText">이용안내</div>
+                <!-- End title -->
+                <!-- Start user-guide-content -->
+                <div class="user-guide-content">
+                    <div class="user-guide-content-child-1">
+                        <div class="content-title">
+                            <div class="outer-circle">
+                                <div class="inner-circle"></div>
                             </div>
-                            <div class="line-item line-2">
-                                <li class="item-arrow">상품선택(채용소식, 배너 등)</li>
-                                <li class="item-arrow">결제방법 선택<br>
-                                    (카드결제 및 입금)</li>
-                                <li class="item-arrow">덴탈잡 승인</li>
-                                <li class="item-arrow">채용소식 등록 완료</li>
+                            <div class="text-content-title">치과회원</div>
+                        </div>
+                        <div class="text-content-title-child">구인을 원하시는 회원님을 위해 다음과 같은 서비스가 준비되어 있습니다.</div>
+                        <div class="vertical-line"></div>
+                        <div class="content-child">
+                            <div class="item-content">
+                                <div class="title-content-child">채용소식 등록 방법</div>
+                                <ul class="item-text-arrow">
+                                    <div class="line-item line-1">
+                                        <div class="item">
+                                            <li class="item-arrow">‘치과회원’으로 가입</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">‘치과회원’으로 로그인</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">‘마이페이지 > 채용소식 등록’<br>메뉴 클릭</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">채용내역 입력</li>
+                                        </div>
+                                    </div>
+                                    <div class="line-item line-2">
+                                        <div class="item">
+                                            <li class="item-arrow">상품선택(채용소식, 배너 등)</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">결제방법 선택<br>(카드결제 및 입금)</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">덴탈잡 승인</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">채용소식 등록 완료</li>
+                                        </div>
+                                    </div>
+                                </ul>
                             </div>
-                        </ul>
+                            <!-- Start group-recommend -->
+                            <div id="group-recommend">
+                                <button class="btn-recommend-use">
+                                    <div class="text-rcm-use">채용광고 상품안내</div>
+                                    <div class="icon-right"></div>
+                                </button>
+                                <div class="title-item">배너 및 강조 상품 등 덴탈잡의 다양한 상품으로 회원님의 채용소식을 눈에 띄게 해보세요!</div>
+                            </div>
+                            <!-- End group-recommend -->
+                            <!-- Start company Introduction -->
+                            <div id="company-introduction">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-people"></div>
+                                            </li>
+                                            <li class="title">회원가입</li>
+                                            <li class="content">
+                                                대한민국 치과계 No.1
+                                                구인구직 사이트
+                                                덴탈잡에서 무료로
+                                                가입하세요.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-mouse"></div>
+                                            </li>
+                                            <li class="title">채용소식 등록</li>
+                                            <li class="content">
+                                                세부 사항을
+                                                꼼꼼히 입력하여
+                                                채용광고를 등록하세요.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-up"></div>
+                                            </li>
+                                            <li class="title">채용소식 JUMP UP</li>
+                                            <li class="content">
+                                                회원님의 채용소식을
+                                                Jump up 하시면
+                                                목록 맨 앞으로 이동합니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-image"></div>
+                                            </li>
+                                            <li class="title">포토채용 등록</li>
+                                            <li class="content">
+                                                치과 사진과 함께
+                                                우리 치과를 자랑해 주시면
+                                                구인이 더욱 쉬워집니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-very-people"></div>
+                                            </li>
+                                            <li class="title">인재소식 열람</li>
+                                            <li class="content">
+                                                우리 치과에 맞는
+                                                인재소식을 검색하고
+                                                직접 연락하실 수 있습니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li></li>
+                                            <li class="title">덴탈잡 지원자 관리</li>
+                                            <li class="content">
+                                                덴탈잡에서 온라인으로
+                                                입사지원한 인재 내역을
+                                                간편하게 확인할 수 있습니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End company Introduction -->
+                        </div>
                     </div>
-                    <div class="item-content-2">
-                        <div class="group-recommend">
-                            <button class="btn-recommend-use">채용광고 상품안내</button>
-                            <div class="title-item">배너 및 강조 상품 등 덴탈잡의 다양한 상품으로 회원님의 채용소식을 눈에 띄게 해보세요!</div>
+                    <div class="user-guide-content-child-2">
+                        <div class="content-title">
+                            <div class="outer-circle">
+                                <div class="inner-circle"></div>
+                            </div>
+                            <div class="text-content-title">치과회원</div>
+                        </div>
+                        <div class="text-content-title-child">구직을 원하시는 회원님을 위해 다음과 같은 서비스가 준비되어 있습니다.</div>
+                        <div class="vertical-line"></div>
+                        <div class="content-child">
+                            <div class="item-content">
+                                <div class="title-content-child">이력서 등록 방법</div>
+                                <ul class="item-text-arrow">
+                                    <div class="line-item line-1">
+                                        <div class="item">
+                                            <li class="item-arrow">‘개인회원’으로 가입</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">‘개인회원’으로 로그인</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">‘마이페이지 > 이력서 등록’<br>메뉴 클릭</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">상세내용 입력</li>
+                                        </div>
+                                    </div>
+                                    <div class="line-item line-2">
+                                        <div class="item">
+                                            <li class="item-arrow">‘등록하기’ 버튼 클릭</li>
+                                        </div>
+                                        <div class="item">
+                                            <li class="item-arrow">인재소식 등록 완료</li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <!-- Start company Introduction -->
+                            <div id="company-introduction">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-people"></div>
+                                            </li>
+                                            <li class="title">회원가입</li>
+                                            <li class="content">
+                                                대한민국 치과계 No.1
+                                                구인구직 사이트
+                                                덴탈잡에서 무료로
+                                                가입하세요.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-file"></div>
+                                            </li>
+                                            <li class="title">이력서 등록</li>
+                                            <li class="content">
+                                                이력서를 등록하시고
+                                                덴탈잡의 인재로
+                                                거듭나세요.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-up"></div>
+                                            </li>
+                                            <li class="title">이력서 JUMP UP</li>
+                                            <li class="content">
+                                                회원님의 이력서를 Jump up
+                                                하시면 목록 맨 앞으로
+                                                이동합니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-computer"></div>
+                                            </li>
+                                            <li class="title">온라인 입사지원</li>
+                                            <li class="content">
+                                                덴탈잡에서 작성한
+                                                이력서로 바로
+                                                입사지원이 가능합니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-very-people"></div>
+                                            </li>
+                                            <li class="title">채용소식 검색</li>
+                                            <li class="content">
+                                                나에게 맞는
+                                                채용소식을 검색할 수
+                                                있습니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="join-membership">
+                                            <li>
+                                                <div class="icon icon-star"></div>
+                                            </li>
+                                            <li class="title">관심 채용소식 보관</li>
+                                            <li class="content">
+                                                관심있게 보고 있는
+                                                치과의 채용소식을 My초이스에
+                                                저장할 수 있습니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End company Introduction -->
                         </div>
                     </div>
                 </div>
+                <!-- Start bottom-note -->
+                <div class="bottom-note">
+                    <div class="img-text-bottom"></div>
+                    <div class="title-bottom-note">
+                        믿음이 있어 아름다운 채용/취업 문화
+                    </div>
+                    <div class="content-bottom-note">
+                        <p>면접 결과에 관계없이 지원자와의 소중한 인연에 감사할 줄 압니다.</p>
+                        <p>약속된 면접에 참석할 수 없을때는 사전에 미리 연락하는 것이 기본 매너입니다.</p>
+                        <p>아름다운 인연을 만들고 에티켓을 지킬줄 아는 우리는 덴탈잡 회원입니다.</p>
+                    </div>
+                </div>
+                <!-- End bottom-note -->
             </div>
         </div>
     </div>
@@ -152,7 +408,7 @@
                     <li>
                         <a href="#">회원약관</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#">개인정보취급방침</a>
                     </li>
                     <li>
