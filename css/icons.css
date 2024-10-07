@@ -146,3 +146,15 @@
 .icon-plus::after {
     background-image: url('../images/icons/icon-plus.png');
 }
+
+.icon-reset::after {
+    background-image: url('../images/icons/icon-reset.png');
+}
+
+.icon-ghim::after {
+    background-image: url('../images/icons/icon-ghim.png');
+}
+
+.icon-x::after {
+    background-image: url('../images/icons/icon-x.png');
+}

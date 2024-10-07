@@ -1,5 +1,5 @@
 #content-table {
-    padding: 30px 0 100px;
+    padding-top: 40px;
 }
 
 /* Wrap Tab Form */
@@ -8,14 +8,15 @@
 
 .top-form {
     display: flex;
-    margin-bottom: 29px;
+    margin: 44px 0 29px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #wrap-tab-form h2 {
     font-size: 34px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 #wrap-tab-form .wrap-tab li {}
@@ -70,22 +71,45 @@
 }
 
 /* Wrap tab left */
+#wrap-tab-form ::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+#wrap-tab-form ::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+#wrap-tab-form ::-webkit-scrollbar-thumb {
+    background: #eee;
+}
+
+/* Handle on hover */
+#wrap-tab-form ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 #wrap-tab-form .wrap-tab-left {
     width: calc((100% - 203px) / 3);
-    padding: 20px 0 8px;
+    padding: 20px 0 20px;
 }
 
 #wrap-tab-form .wrap-tab-left ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-height: 180px;
+    max-height: 190px;
     overflow: hidden;
     overflow-y: scroll;
+    gap: 1px;
+    border-right: 1px solid #ddd;
+
 }
 
 #wrap-tab-form .wrap-tab-left ul li {
     padding-left: 25px;
-    line-height: 30px;
+    line-height: 32px;
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
@@ -140,7 +164,7 @@
 #wrap-tab-form .wrap-tab-right ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    max-height: 178px;
+    max-height: 180px;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -149,7 +173,6 @@
     line-height: 1;
     display: flex;
     align-items: center;
-    gap: 7px;
     position: relative;
     margin-left: 25px;
 }
@@ -206,6 +229,140 @@ input[type="checkbox"]:checked+span::before {
     color: #333;
     padding-left: 25px;
 }
+
+/* Select result */
+.tab-select-results {
+    min-height: 118px;
+    padding: 19px 420px 19px 29px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+
+.results-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.results-area li {
+    display: flex;
+    margin-right: 27px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.results-area li:last-child {
+    display: flex;
+    margin-right: 0;
+}
+
+.results-area li>div {
+    font-size: 16px;
+}
+
+.results-area li>.item-city-name+.item-dictrict-name::before {
+    content: '>';
+}
+
+.results-area li>span.icon-x {
+    width: 11px;
+    height: 11px;
+    margin-left: 4px;
+}
+
+.results-area li {
+    display: flex;
+}
+
+.tab-select-results button {
+    position: absolute;
+    height: 80px;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 50%;
+    right: 29px;
+    transform: translateY(-50%);
+}
+
+.tab-select-results button {
+    position: absolute;
+    height: 80px;
+    padding: 0 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+}
+
+.tab-select-results span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.wrap-option-search {
+    display: flex;
+    gap: 23px;
+    position: absolute;
+    bottom: 20px;
+    right: 235px;
+}
+
+.wrap-option-search .icon {
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+}
+
+.wrap-option-search .icon-reset:after {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.wrap-option-search .icon-ghim:after {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+.line-after-tab {
+    height: 120px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #88abda;
+    margin-top: 20px;
+}
+
+@media screen and (width <=1320px) {
+    #wrap-tab-form .wrap-tab-left ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
+        overflow-y: scroll;
+        gap: 1px;
+        border-right: 1px solid #ddd;
+    }
+
+    #wrap-tab-form .wrap-tab-right ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-height: 180px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+
+
 
 /* Top Table */
 #content-table .top-table {
