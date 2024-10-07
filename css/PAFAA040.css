@@ -21,7 +21,7 @@
     margin-top: 70px;
 }
 
-#user-guide #user-guide-content-child-2 .content-title {
+#user-guide .user-guide-content-child-2 .content-title {
     margin-top: 80px;
 }
 
@@ -35,13 +35,14 @@
     align-items: center;
 }
 
-#user-guide #user-guide-content-child-2 .outer-circle {
+#user-guide .user-guide-content-child-2 .outer-circle {
     background-color: #eb9b00;
 }
 
-#user-guide .inner-circle {
-    width: 9px;
-    height: 9px;
+#user-guide .outer-circle::after {
+    content: "";
+    width: 7px;
+    height: 7px;
     background-color: #ffffff;
     border-radius: 50%;
 }
@@ -52,15 +53,17 @@
     font-weight: 500;
 }
 
-#user-guide #user-guide-content-child-2 .text-content-title {
+#user-guide .user-guide-content-child-2 .text-content-title {
     color: #eb9b00;
 }
 
 #user-guide .text-content-title-child {
     font-size: 22px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 13px;
     color: #666666;
+    font-weight: 300;
+    word-break: keep-all;
 }
 
 #user-guide .vertical-line {
@@ -96,7 +99,7 @@
     gap: 32px;
 }
 
-#user-guide #user-guide-content-child-2 .item-text-arrow .line-item {
+#user-guide .user-guide-content-child-2 .item-text-arrow .line-item {
     justify-content: center;
 }
 
@@ -114,6 +117,7 @@
 }
 
 #user-guide .item-content .item-arrow {
+    line-height: 25px;
     position: relative;
     width: 260px;
     height: 85px;
@@ -145,8 +149,8 @@
     height: 20px;
 }
 
-#user-guide #user-guide-content-child-2 .line-2 .item:last-child .item-arrow::after {
-    background-image: unset;
+#user-guide .user-guide-content-child-2 .line-2 .item:last-child .item-arrow::after {
+    background-image: none;
 }
 
 #user-guide #group-recommend {
@@ -175,10 +179,11 @@
     color: #ffffff;
     font-size: 21px;
     font-weight: 500;
+    line-height: 28px;
 }
 
 #user-guide .btn-recommend-use .icon-right {
-    background-image: url('../images/icons/icon-right-white.png');
+    background-image: url('../images/PAFAA040/icon-right-white.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 8px;
@@ -191,6 +196,7 @@
     margin-top: 11px;
     color: #666666;
     padding: 0 15px;
+    word-break: keep-all;
 }
 
 #user-guide #company-introduction {
@@ -245,6 +251,11 @@
     width: 32px;
 }
 
+#user-guide #company-introduction .icon.icon-referral-card {
+    background-image: url('../images/PAFAA040/icon-referral-card.png');
+    width: 32px;
+}
+
 #user-guide #company-introduction .icon.icon-file {
     background-image: url('../images/PAFAA040/icon-file.png');
     width: 28px;
@@ -283,7 +294,6 @@
     font-weight: 300;
     padding: 0 28px;
     word-break: keep-all;
-
 }
 
 #user-guide #company-introduction .col {
@@ -298,8 +308,7 @@
     font-weight: 500;
     margin-top: 14px;
     margin-bottom: 22px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-break: keep-all;
 }
 
 #user-guide .bottom-note .content-bottom-note {
@@ -308,6 +317,7 @@
     font-weight: 400;
     text-align: center;
     line-height: 24px;
+    word-break: keep-all;
 }
 
 #user-guide .bottom-note .img-text-bottom {
