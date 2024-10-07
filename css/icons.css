@@ -130,3 +130,19 @@
 .icon-pause::after {
     background-image: url('../images/icons/icon-pause.png');
 }
+
+.icon-location::after {
+    background-image: url('../images/icons/icon-location.png');
+}
+
+.icon-bag::after {
+    background-image: url('../images/icons/icon-bag.png');
+}
+
+.icon-search::after {
+    background-image: url('../images/icons/icon-search.png');
+}
+
+.icon-plus::after {
+    background-image: url('../images/icons/icon-plus.png');
+}
