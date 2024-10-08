@@ -1,0 +1,366 @@
+#content-table {
+    padding: 30px 0 100px;
+}
+
+/* Wrap Tab Form */
+
+/* #wrap-tab-form{} */
+
+.top-form {
+    display: flex;
+    margin-bottom: 29px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrap-tab-form h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+#wrap-tab-form .wrap-tab li:last-child {
+    max-width: 203px;
+}
+
+#wrap-tab-form .wrap-tab li a {
+    text-align: left;
+    padding-left: 46px;
+    position: relative;
+    font-weight: 600;
+    color: #999;
+    line-height: 49px;
+}
+
+#wrap-tab-form .wrap-tab li.active a {
+    font-weight: 400;
+    color: #333;
+}
+
+#wrap-tab-form .wrap-tab li a.icon-plus {
+    text-align: left;
+    padding-left: 38px;
+    position: relative;
+}
+
+#wrap-tab-form .wrap-tab li a::after {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#wrap-tab-form .wrap-tab li a.icon-plus::after {
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#wrap-tab-form .wrap-tab-select {
+    display: flex;
+    border: 1px solid #333;
+    border-top: transparent;
+}
+
+/* Start wrap-tab-select-bag */
+#wrap-tab-form .wrap-tab-select-bag {
+    padding: 24px;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li {
+    border: 1px solid #dddddd;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 17px 0;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(-n+4) {
+    border-right: unset;
+    border-bottom: unset;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(5) {
+    border-bottom: unset;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(-n+4) {
+    border-right: unset;
+    border-bottom: unset;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(n + 6) {
+    border-right: unset;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li:nth-child(10) {
+    border-right: 1px solid #dddddd;
+}
+
+#wrap-tab-form .wrap-tab-select-bag ul li.active {
+    background-color: #eef7fd;
+    color: #0068b7;
+    font-weight: 600;
+}
+
+#wrap-tab-form .wrap-tab-select-bag
+/* End wrap-tab-select-bag */
+
+
+
+/* Top Table */
+#content-table .top-table {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+#content-table .count-results {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0068b7;
+}
+
+#content-table .more-results {
+    font-size: 18px;
+}
+
+.wrap-dropDown {
+    display: flex;
+    gap: 3px;
+}
+
+.form-select-container {
+    height: 35px;
+}
+
+.form-select-container>.form-select-cus {
+    border-radius: 3px;
+}
+
+.form-select-container>.form-select-cus>.form-option-placeholder {
+    color: #666;
+}
+
+/* Content Table */
+#content-table .wrap-table>li {
+    padding-bottom: 34px;
+}
+
+#content-table .wrap-table>li>div {
+    display: grid;
+    grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
+    padding: 28px 0 0;
+}
+
+/* Column 1 */
+/* .column-1 {} */
+
+.column-1 .clinic-name {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Column 2*/
+#content-table .wrap-table .column-2 {
+    padding-left: 25px;
+}
+
+#content-table .wrap-table .column-2 .wrap-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#content-table .wrap-table .column-2 .wrap-title+.wrap-link {
+    margin-top: 10px;
+}
+
+#content-table .wrap-table .column-2 .wrap-title .item-title {
+    margin-bottom: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #333;
+}
+
+#content-table .wrap-table .column-2 .wrap-title .wrap-meta {
+    display: inline-flex;
+    gap: 8px;
+}
+
+#content-table .wrap-table .wrap-link+.wrap-position {
+    margin-top: 10px;
+}
+
+/* Column 3 */
+#content-table .wrap-table .column-3 {
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+/* Column 4 */
+.column-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-4 .support {
+    font-size: 17px;
+    color: #fff;
+    background-color: #0068b7;
+    border-radius: 30px;
+    padding: 0 11px;
+    line-height: 30px;
+}
+
+.column-4 .room {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.column-4 .time {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* .column-4 .price {} */
+
+/* More Information */
+.more-infomation {
+    display: flex;
+    padding: 16px 0 19px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+.more-infomation li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.more-infomation li+li {
+    margin-left: 28px;
+}
+
+.more-infomation li .title-info {
+    margin-bottom: 0;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.more-infomation li .title-info:after {
+    content: ":";
+    margin: 0 3px;
+}
+
+.more-infomation li .desc-info {
+    font-weight: 300;
+}
+
+/* Pagination */
+.wrap-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.pagination-number {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-number li.more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pagination-number li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 300;
+}
+
+.pagination-number li.active a {
+    cursor: pointer;
+}
+
+.pagination-number li.active a,
+.pagination-number li:hover a {
+    background-color: #eeeeee;
+    font-weight: 700;
+
+}
+
+@media screen and (width <=1320px) {
+    #content-table .wrap-table>li>div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #content-table .top-table {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+
+    .column-1 .clinic-name {
+        text-align: left;
+    }
+
+    #content-table .wrap-table .column-2 {
+        padding-left: 0;
+    }
+
+    #content-table .wrap-table .column-3 {
+        padding: 0;
+    }
+
+    .column-4 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .column-4 .support+.room {
+        margin-top: 0;
+    }
+}

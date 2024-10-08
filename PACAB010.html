@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/side-ads.js"></script>
+    <script src="js/close-top-banner.js"></script>
 </head>
 
 <body>
@@ -125,7 +126,7 @@
                 </div>
                 <!-- End  Title -->
 
-                <!-- Notification -->
+                <!-- start notification -->
                 <div class="notification">
                     <div class="group-notifi">
                         <div class="title-notifi">
@@ -139,8 +140,8 @@
                         </ul>
                     </div>
                 </div>
-                <!-- End Notification -->
-                <!-- Form -->
+                <!-- end notification -->
+                <!-- start wrap-infor -->
                 <div class="wrap-infor">
                     <div class="wrap-content">
                         <div class="wrap-infor">
@@ -200,35 +201,21 @@
                                                 생년월일
                                             </div>
                                             <div class="group-birth">
-                                                <div class="form-select-container select-year">
-                                                    <select>
-                                                        <option class="option-placeholder">1980</option>
-                                                        <option value="#">1985</option>
-                                                        <option value="#">1990</option>
-                                                        <option value="#">1995</option>
-                                                        <option value="#">2000</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-select-container select-month">
-                                                    <select>
-                                                        <option class="option-placeholder">월</option>
-                                                        <option value="#">월</option>
-                                                        <option value="#">월</option>
-                                                        <option value="#">월</option>
-                                                        <option value="#">월</option>
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-select-container select-day">
-                                                    <select>
-                                                        <option class="option-placeholder">일</option>
-                                                        <option value="#">일</option>
-                                                        <option value="#">일</option>
-                                                        <option value="#">일</option>
-                                                        <option value="#">일</option>
-                                                        </option>
-                                                    </select>
-                                                </div>
+                                                <select class="dropdown">
+                                                    <option value="year1">1980</option>
+                                                    <option value="year2">2</option>
+                                                    <option value="year3">3</option>
+                                                </select>
+                                                <select class="dropdown">
+                                                    <option value="month1">월</option>
+                                                    <option value="month2">2</option>
+                                                    <option value="month3">3</option>
+                                                </select>
+                                                <select class="dropdown">
+                                                    <option value="day1">일</option>
+                                                    <option value="day2">2</option>
+                                                    <option value="day3">3</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="form form-phone">
@@ -236,7 +223,7 @@
                                                 휴대폰번호
                                             </div>
                                             <div class="group-phone">
-                                                <input value="" placeholder="‘-’없이 입력하세요.">
+                                                <input value="" placeholder="이름을 입력해 주세요.">
                                                 <button>인증번호 발송</button>
                                             </div>
                                             <div class="note-form-phone">※ 회원가입시 등록한 핸드폰번호를 입력하세요.</div>
@@ -249,7 +236,7 @@
                                                 <input value="">
                                             </div>
                                             <div class="time-remaining-otp">(남은 시간 : <span
-                                                    class="time-count">03:00</span>)
+                                                    class="time-count">03:00</span> )
                                             </div>
                                         </div>
                                         <button class="submit-form" type="submit">비밀번호 찾기</button>
@@ -258,81 +245,80 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End Form -->
                 </div>
-                <!-- End Form -->
             </div>
+            <!-- End Search Info -->
         </div>
-        <!-- End Search Info -->
-    </div>
-    <!-- End Content -->
+        <!-- End Content -->
 
-    <!-- Footer -->
-    <div id="footer">
-        <div class="container">
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#">회원약관</a>
-                    </li>
-                    <li>
-                        <a href="#">개인정보취급방침</a>
-                    </li>
-                    <li>
-                        <a href="#">이메일주소수집거부</a>
-                    </li>
-                    <li>
-                        <a href="#">사이트맵</a>
-                    </li>
-                    <li>
-                        <a href="#">이용안내</a>
-                    </li>
-                    <li>
-                        <a href="#">고객센터</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="info">
-                <ul class="info-company">
-                    <li>(주) 신흥 100-858 서울시 중구 청파로 450 (중림동)</li>
-                    <li>대표 이용익</li>
-                    <li>사업자등록번호 114-81-43063</li>
-                    <li>통신판매업신고 제2012-서울중구-0983호</li>
-                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
-                </ul>
-                <ul class="info-contact">
-                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
-                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
-                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
-                </ul>
-                <ul class="copyright">
-                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
-                </ul>
-            </div>
-            <div class="collab">
-                <img src="./images/logo-collab.png" alt="Logo collab">
-                <div class="form-select-container">
-                    <select>
-                        <option class="option-placeholder">패밀리사이트</option>
-                        <option value="http://www.dentalalba.com/">덴달 알바</option>
-                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
-                        <option value="https://www.DVmall.co.kr/">DVmall</option>
-                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
-                    </select>
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">회원약관</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이메일주소수집거부</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트맵</a>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul class="info-company">
+                        <li>(주) 신흥 100-858 서울시 중구 청파로 450 (중림동)</li>
+                        <li>대표 이용익</li>
+                        <li>사업자등록번호 114-81-43063</li>
+                        <li>통신판매업신고 제2012-서울중구-0983호</li>
+                        <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                    </ul>
+                    <ul class="info-contact">
+                        <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                        <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                        <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                    </ul>
+                </div>
+                <div class="collab">
+                    <img src="./images/logo-collab.png" alt="Logo collab">
+                    <div class="form-select-container">
+                        <select>
+                            <option class="option-placeholder">패밀리사이트</option>
+                            <option value="http://www.dentalalba.com/">덴달 알바</option>
+                            <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                            <option value="https://www.DVmall.co.kr/">DVmall</option>
+                            <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End footer -->
-    <script>
-        document.querySelectorAll('.wrap-tab li').forEach((tab, index) => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.wrap-tab li').forEach(item => item.classList.remove('active'));
-                document.querySelectorAll('.wrap-tab-child').forEach(child => child.classList.remove('active'));
-                tab.classList.add('active');
-                document.querySelectorAll('.wrap-tab-child')[index].classList.add('active');
+        <!-- End footer -->
+        <script>
+            document.querySelectorAll('.wrap-tab li').forEach((tab, index) => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.wrap-tab li').forEach(item => item.classList.remove('active'));
+                    document.querySelectorAll('.wrap-tab-child').forEach(child => child.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.querySelectorAll('.wrap-tab-child')[index].classList.add('active');
+                });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
