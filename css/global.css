@@ -833,6 +833,11 @@
     font-weight: 700;
 }
 
+/* Table Name Column */
+.title-name-column {
+    display: flex;
+}
+
 /* Table */
 .table> :not(caption)>*>* {
     padding: 0;
