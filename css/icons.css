@@ -67,7 +67,12 @@
 }
 
 .icon-star::after {
-    background-image: url('../images/icons/icon-star.png');
+    background-image: url('../images/icons/star-blank.png');
+}
+
+.icon-star:hover::after,
+.icon-star.active::after {
+    background-image: url('../images/icons/star-fill.png');
 }
 
 .icon-next,
