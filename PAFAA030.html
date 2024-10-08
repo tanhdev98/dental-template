@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
@@ -25,9 +25,9 @@
                 <span class="text">모든 분들께 <b>선물을 드립니다.</b></span>
             </div>
             <div class="close-topAds-wrap">
-                <input type="checkbox" class="disappear" name="disappear">
-                <lab<span></span>el for="disappear">오늘하루 이 창을 열지 않음</labspanel>
-                    <button class="close-ads"></button>
+                <input type="checkbox" id="disappear" name="disappear">
+                <label for="disappear">오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
             </div>
         </div>
     </div>
@@ -139,26 +139,24 @@
                     </div>
                 </div>
                 <ul class="wrap-tab">
+                    <li>
+                        <a href="#"> <i class="icon icon-location before"></i><span>지역 선택</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-bag before"></i><span>업무 선택</span></a>
+                    </li>
                     <li class="active">
-                        <a href="#"><i class="icon icon-location"></i><span>지역 선택</span></a>
+                        <a href="#"><i class="icon icon-search before"></i><span>검색어 입력</span></a>
                     </li>
                     <li>
-
-                        <a href="#"><i class="icon icon-bag"></i><span>업무 선택</span></a>
-                    </li>
-                    <li>
-
-                        <a href="#"><i class="icon icon-search"></i><span>검색어 입력</span></a>
-                    </li>
-                    <li>
-
-                        <a href="#"><i class="icon-plus"></i><span>상세조건</span></a>
+                        <a href="#"><i class="icon icon-plus before"></i><span>상세조건</span></a>
                     </li>
                 </ul>
+
                 <div class="wrap-tab-select wrap-tab-select-bag">
                     <ul>
                         <li>전체</li>
-                        <li>진료실</li>
+                        <li class="active">진료실</li>
                         <li>데스크 </li>
                         <li>상담</li>
                         <li>보험청구</li>
@@ -168,6 +166,9 @@
                         <li>관리 및 경영지원</li>
                         <li></li>
                     </ul>
+                    <div class="tab-select-bottom">
+
+                    </div>
                 </div>
                 <div class="tab-select-results">
                     <ul class="results-area">
@@ -181,14 +182,6 @@
                             <div class="item-dictrict-name">강동구</div>
                             <span class="item-remove icon icon-x"></span>
                         </li>
-                        <li>
-                            <div class="item-dictrict-name">진료실</div>
-                            <span class="item-remove icon icon-x"></span>
-                        </li>
-                        <li>
-                            <div class="item-dictrict-name">검색어</div>
-                            <span class="item-remove icon icon-x"></span>
-                        </li>
                     </ul>
                     <button>선택한 조건으로<span>검색하기</span></button>
                     <div class="wrap-option-search">
@@ -196,7 +189,9 @@
                         <div class="option-save icon icon-ghim">조건 저장</div>
                     </div>
                 </div>
-                <div class="line-after-tab"></div>
+                <div class="line-after-tab">
+
+                </div>
             </div>
         </div>
         <!-- Content Table -->
@@ -231,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="table wrap-table">
+                    <ul class="table table-has-more-infomation ">
                         <li>
                             <div class="wrap-column">
                                 <div class="column-left">
@@ -333,7 +328,8 @@
                             <div class="wrap-column">
                                 <div class="column-left">
                                     <div class="wrap-title">
-                                        <a href="#" class="item-title">항상 성실한 자세로 임하겠습니다.</a>
+                                        <a href="#" class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자
+                                            김수재입니다.</a>
                                         <div class="wrap-meta">
                                             <a href="#"><i class="icon icon-star"></i></a>
                                             <a href="#"><i class="icon icon-blank"></i></a>
@@ -533,7 +529,7 @@
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
-                            <li>...</li>
+                            <li class="more">...</li>
                             <li><a href="#">7</a></li>
                             <li><a href="#">8</a></li>
                             <li><a href="#">9</a></li>

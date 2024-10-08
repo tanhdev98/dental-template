@@ -1,27 +1,27 @@
-body {
-    background-color: #f3f7f8;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: auto;
-}
-
-.t-center {
-    text-align: center;
-}
-
 #auth {
     width: 100%;
+    background-color: #f3f7f8;
+    height: 100vh;
+}
+
+#auth .container {
     max-width: 1130px;
-    margin: 100px auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    height: max-content;
+    right: 0;
+}
+
+#auth img {
+    width: auto;
 }
 
 #auth .logo {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 #back-to-home {
@@ -62,31 +62,17 @@ img {
 } */
 
 /* Tab Form */
-.wrap-tab {
+#auth .wrap-tab {
     margin-bottom: 20px;
     border-color: transparent;
 }
 
-.wrap-tab li {
-    width: 100%;
+#auth .wrap-tab li a {
+    border-bottom: 1px solid #000;
 }
 
-.wrap-tab li a {
-    display: block;
-    border: 1px solid #ddd;
-    border-bottom-color: #000;
-    border-radius: 10px 10px 0 0;
-    color: #999;
-    font-size: 19px;
-    line-height: 48px;
-    background-color: #f3f7f8;
-    text-align: center;
-}
-
-.wrap-tab li.active a {
-    background-color: transparent;
-    color: #333;
-    font-weight: 700;
+#auth .wrap-tab li.active a {
+    border-bottom: 1px solid transparent;
 }
 
 .hide {

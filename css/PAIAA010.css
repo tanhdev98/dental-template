@@ -128,3 +128,124 @@
     top: 0;
     right: 0;
 }
+
+
+/* Table Status Support */
+
+#status-support .table li {
+    display: grid;
+    grid-template-columns: 14.6% calc(100% - 14.6% - 10.33% - 14.75% - 11.85% - 12.88%) 10.33% 14.75% 11.85% 12.88%;
+    height: 50px;
+    align-items: center;
+}
+
+#status-support .table li.row-name-column {
+    height: 50px;
+    padding: 16px 0 17px;
+}
+
+#status-support .table li.row-name-column div {
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#status-support .table li.row-name-column div:nth-child(2) {
+    text-align: left;
+    padding-left: 98px;
+}
+
+#status-support .table li div:not(:nth-child(2)) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#status-support .table li .name-clinic {
+    font-size: 19px;
+    font-weight: 300;
+    color: #111;
+}
+
+#status-support .table li .item-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#status-support .table li .item-title span {
+    display: inline-flex;
+}
+
+#status-support .table li .support-details {
+    padding-left: 20px;
+}
+
+#status-support .table li .support-details .link-to-details-cv {
+    margin-top: 5px;
+}
+
+#status-support .table li .support-details .link-to-details-cv a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+    color: #666;
+}
+
+#status-support .table li .link-to-details-cv a::after {
+    content: '';
+    background: url(../images/icons/arrow-down-gray.png) no-repeat center / contain;
+    height: 6px;
+    width: 10px;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -13px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+#status-support .table li .status-progress .status-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+#status-support .table li .status-progress .status-time {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+#status-support .table li .view .view-status {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+#status-support .table li .view .view-time {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #0068b7;
+}
+
+#status-support .table li .application-result .application-result-status {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+#status-support .table li .application-result .application-result-status.blue {
+    color: #0068b7;
+}
+
+#status-support .table li .application-result .application-result-status.red {
+    color: #e60012;
+}
