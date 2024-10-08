@@ -116,17 +116,16 @@
     font-weight: 600;
 }
 
-#wrap-tab-form .wrap-tab-select-bag
-
 /* End wrap-tab-select-bag */
-.tab-select-results {
-    position: relative;
+/* Select result */
+#wrap-tab-form .tab-select-results {
     min-height: 118px;
     padding: 19px 420px 19px 29px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-top: none;
     border-radius: 0 0 10px 10px;
+    position: relative;
 }
 
 .results-area {
