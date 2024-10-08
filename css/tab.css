@@ -1,0 +1,147 @@
+/* Tab */
+.wrap-tab {
+    display: flex;
+    border-bottom: 1px solid #333;
+    padding: 0;
+}
+
+.wrap-tab li {
+    width: 100%;
+}
+
+.wrap-tab li+li {
+    margin-left: -1px;
+}
+
+.wrap-tab li a {
+    display: block;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    color: #666;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.wrap-tab li.active {
+    z-index: 12;
+}
+
+.wrap-tab li.active a {
+    border: none;
+    outline: none;
+    border: 1px solid #000;
+    border-bottom: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+/* Tab no border */
+.tabs-no-border {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs-no-border li {
+    padding-right: 32px;
+}
+
+.tabs-no-border li:last-child {
+    padding-right: 0;
+}
+
+.tabs-no-border li a {
+    font-size: 20px;
+    color: #666;
+}
+
+.tabs-no-border li.active a {
+    color: #0068b7;
+    font-weight: 500;
+}
+
+li.dot {
+    position: relative;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+li.dot::before {
+    content: "";
+    background-color: #ddd;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    border-radius: 50px;
+}
+
+
+/* Wrap Tab Form Search Position*/
+.top-form {
+    display: flex;
+    margin: 44px 0 29px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#wrap-tab-form h2 {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#wrap-tab-form .wrap-tab li {
+    position: relative;
+}
+
+#wrap-tab-form .wrap-tab li span {
+    color: #999;
+}
+
+#wrap-tab-form .wrap-tab li:last-child {
+    max-width: 204px;
+}
+
+#wrap-tab-form .wrap-tab li a {
+    text-align: left;
+    padding-left: 25px;
+    position: relative;
+    color: #999;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
+
+#wrap-tab-form .wrap-tab li.active a span {
+    font-weight: 400;
+    color: #333;
+    font-size: 20px;
+}
+
+#wrap-tab-form .wrap-tab li i {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+#wrap-tab-form .wrap-tab li i:after {
+    display: flex;
+}
+
+#wrap-tab-form .wrap-tab-select {
+    display: flex;
+    border: 1px solid #333;
+    border-top: transparent;
+}

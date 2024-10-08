@@ -134,8 +134,9 @@
 
 #status-support .table li {
     display: grid;
-    grid-template-columns: 14.5% calc(100% - 14.5% - 10.33% - 14.75% - 11.85% - 12.88%) 10.33% 14.75% 11.85% 12.88%;
-    padding: 16px 0 19px;
+    grid-template-columns: 14.6% calc(100% - 14.6% - 10.33% - 14.75% - 11.85% - 12.88%) 10.33% 14.75% 11.85% 12.88%;
+    height: 50px;
+    align-items: center;
 }
 
 #status-support .table li.row-name-column {
@@ -177,20 +178,25 @@
     display: inline-flex;
 }
 
-#status-support .table li .link-to-details-cv {
+#status-support .table li .support-details {
+    padding-left: 20px;
+}
+
+#status-support .table li .support-details .link-to-details-cv {
     margin-top: 5px;
 }
 
-#status-support .table li .link-to-details-cv a {
+#status-support .table li .support-details .link-to-details-cv a {
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
     position: relative;
+    color: #666;
 }
 
 #status-support .table li .link-to-details-cv a::after {
     content: '';
-    background: url(../images/arrow-down-black.png) no-repeat center / contain;
+    background: url(../images/icons/arrow-down-gray.png) no-repeat center / contain;
     height: 6px;
     width: 10px;
     transform: rotate(-90deg);
@@ -234,4 +240,12 @@
     font-weight: 300;
     line-height: 20px;
     color: #111;
+}
+
+#status-support .table li .application-result .application-result-status.blue {
+    color: #0068b7;
+}
+
+#status-support .table li .application-result .application-result-status.red {
+    color: #e60012;
 }

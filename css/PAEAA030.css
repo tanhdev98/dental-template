@@ -1,49 +1,19 @@
-#content-table {
-    padding: 30px 0 100px;
-}
-
 /* Top Table */
 #content-table .top-table {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #333;
-    padding-bottom: 15px;
     align-items: center;
 }
 
 #content-table .count-results {
-    font-size: 18px;
-    font-weight: 500;
     color: #0068b7;
-}
-
-#content-table .more-results {
-    font-size: 18px;
-}
-
-.wrap-dropDown {
-    display: flex;
-    gap: 3px;
-}
-
-.form-select-container {
-    height: 35px;
-}
-
-.form-select-container>.form-select-cus {
-    border-radius: 3px;
-}
-
-.form-select-container>.form-select-cus>.form-option-placeholder {
-    color: #666;
+    font-weight: 500;
 }
 
 /* Content Table */
-#content-table .wrap-table>li {
+#support-now .wrap-table>li {
     padding-bottom: 34px;
 }
 
-#content-table .wrap-table>li>div {
+#support-now .wrap-table>li>div {
     display: grid;
     grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
     padding: 28px 0 0;
@@ -59,39 +29,39 @@
 }
 
 /* Column 2*/
-#content-table .wrap-table .column-2 {
+#support-now .wrap-table .column-2 {
     padding-left: 25px;
 }
 
-#content-table .wrap-table .column-2 .wrap-title {
+#support-now .wrap-table .column-2 .wrap-title {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
 
-#content-table .wrap-table .column-2 .wrap-title+.wrap-link {
-    margin-top: 10px;
+#support-now .wrap-table .column-2 .wrap-title+.wrap-link {
+    margin-top: 8px;
 }
 
-#content-table .wrap-table .column-2 .wrap-title .item-title {
+#support-now .wrap-table .column-2 .wrap-title .item-title {
     margin-bottom: 0;
     font-size: 19px;
     font-weight: 700;
     color: #333;
 }
 
-#content-table .wrap-table .column-2 .wrap-title .wrap-meta {
+#support-now .wrap-table .column-2 .wrap-title .wrap-meta {
     display: inline-flex;
     gap: 8px;
 }
 
-#content-table .wrap-table .wrap-link+.wrap-position {
-    margin-top: 10px;
+#support-now .wrap-table .wrap-link+.wrap-position {
+    margin-top: 4px;
 }
 
 /* Column 3 */
-#content-table .wrap-table .column-3 {
+#support-now .wrap-table .column-3 {
     padding-left: 35px;
     display: flex;
     align-items: center;
@@ -114,10 +84,8 @@
     line-height: 30px;
 }
 
-.column-4 .room {
-    color: #666;
-    font-size: 16px;
-    font-weight: 600;
+.column-4 .room-name {
+    margin-top: 6px;
 }
 
 .column-4 .time {
@@ -128,92 +96,15 @@
 
 /* .column-4 .price {} */
 
-/* More Information */
-.more-infomation {
-    display: flex;
-    padding: 16px 0 19px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    background-color: #f9f9f9;
-    margin-top: 30px;
-    padding-left: 25px;
-}
 
-.more-infomation li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-}
-
-.more-infomation li+li {
-    margin-left: 28px;
-}
-
-.more-infomation li .title-info {
-    margin-bottom: 0;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.more-infomation li .title-info:after {
-    content: ":";
-    margin: 0 3px;
-}
-
-.more-infomation li .desc-info {
-    font-weight: 300;
-}
-
-/* Pagination */
-.wrap-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    margin-top: 30px;
-}
-
-.pagination-number {
-    display: flex;
-    gap: 8px;
-}
-
-.pagination-number li.more {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.pagination-number li a {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-weight: 300;
-}
-
-.pagination-number li.active a {
-    cursor: pointer;
-}
-
-.pagination-number li.active a,
-.pagination-number li:hover a {
-    background-color: #eeeeee;
-    font-weight: 700;
-
-}
 
 @media screen and (width <=1320px) {
-    #content-table .wrap-table>li>div {
+    #support-now .wrap-table>li>div {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
-    #content-table .top-table {
+    #support-now .top-table {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
@@ -224,11 +115,11 @@
         text-align: left;
     }
 
-    #content-table .wrap-table .column-2 {
+    #support-now .wrap-table .column-2 {
         padding-left: 0;
     }
 
-    #content-table .wrap-table .column-3 {
+    #support-now .wrap-table .column-3 {
         padding: 0;
     }
 

@@ -69,8 +69,6 @@
 
 }
 
-#search-infor .wrap-tab li {}
-
 #search-infor .wrap-tab li a {
     border-color: transparent;
     border-bottom: 1px solid #333;
@@ -167,7 +165,6 @@ input[type='radio'] {
     display: flex;
     gap: 5px;
 }
-
 
 #search-infor .content-tab .form-phone .group-phone {
     display: flex;
