@@ -1,0 +1,85 @@
+#info-dashboard {
+    margin-top: 20px;
+}
+
+#statistic {
+    position: relative;
+}
+
+/* dv-point */
+#dv-point {
+    margin-right: 20px;
+    width: 240px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dv-point p {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#dv-point p span {
+    font-weight: 600;
+    display: block;
+}
+
+#dv-point h1 {
+    font-size: 44px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+#dv-point h1 span {
+    font-weight: 300;
+}
+
+#dv-point a {
+    background-color: #076ecc;
+    width: 100%;
+    max-width: 150px;
+    height: 35px;
+    border-radius: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* unused vouchers */
+#unused-vouchers .header-frame {
+    border-bottom: 0;
+    margin-top: 0;
+}
+
+#unused-vouchers .header-frame h1 {
+    font-size: 24px;
+}
+
+#unused-vouchers .content-frame ul {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+#unused-vouchers .content-frame ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#unused-vouchers .content-frame ul li span {
+    color: #666;
+}
+
+#unused-vouchers .content-frame ul li b {
+    color: #0068b7;
+}
