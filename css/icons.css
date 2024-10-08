@@ -229,30 +229,30 @@
 
 .icon-plus::before {
     content: "";
-    width: 3px;
-    height: 16px;
+    width: 4px;
+    height: 100%;
     background-color: #aeaeae;
-    display: block;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .icon-plus::after {
     content: "";
-    width: 16px;
-    height: 3px;
+    width: 100%;
+    height: 4px;
     background-color: #aeaeae;
-    display: block;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
 }
-
-.icon-plus::after {}
 
 .icon-reset::after {
     background-image: url('../images/icons/icon-reset.png');
