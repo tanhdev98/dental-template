@@ -614,6 +614,10 @@
     gap: 7px;
 }
 
+.frame-section .header-frame a span {
+    color: #666;
+}
+
 .frame-section .header-frame .icon {
     width: 8px;
     height: 8px;
@@ -630,6 +634,15 @@
 .frame-section .header-frame .icon::before,
 .frame-section .header-frame .icon::after {
     background-color: #666;
+}
+
+.frame-section .header-frame a:hover span {
+    color: #0068b7;
+}
+
+.frame-section .header-frame a:hover .icon::before,
+.frame-section .header-frame a:hover .icon::after {
+    background-color: #0068b7;
 }
 
 #top-sub-page #side-nav {
