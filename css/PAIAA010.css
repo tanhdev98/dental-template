@@ -123,28 +123,6 @@
     line-height: 27px;
 }
 
-/* notification */
-#notification .content-frame ul li {
-    padding: 14px 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-#notification .content-frame ul li h1 {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 17px;
-}
-
-#notification .content-frame ul li h1::before {
-    content: '※ ';
-}
-
-#notification .content-frame ul li .notify-image {
-    height: 150px;
-    border-radius: 10px;
-    background-color: #f4f6f8;
-}
-
 #status-support .top-link {
     position: relative;
     top: 0;
