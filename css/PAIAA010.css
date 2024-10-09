@@ -57,8 +57,7 @@
 #info-dashboard .common-user-info .info-setting h1 {
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 8px;
-    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
 #info-dashboard .common-user-info .info-setting .box-gray {
@@ -135,27 +134,19 @@
 #status-support .table li {
     display: grid;
     grid-template-columns: 14.6% calc(100% - 14.6% - 10.33% - 14.75% - 11.85% - 12.88%) 10.33% 14.75% 11.85% 12.88%;
-    height: 50px;
     align-items: center;
 }
 
-#status-support .table li.row-name-column {
-    height: 50px;
-    padding: 16px 0 17px;
+#status-support .table li:not(.row-name-column) {
+    padding: 17px 0 19px;
 }
 
-#status-support .table li.row-name-column div {
-    font-size: 19px;
-    font-weight: 600;
-    text-align: center;
-}
-
-#status-support .table li.row-name-column div:nth-child(2) {
+#status-support .table li.row-name-column .column:nth-child(2) {
+    align-items: flex-start;
     text-align: left;
-    padding-left: 98px;
 }
 
-#status-support .table li div:not(:nth-child(2)) {
+#status-support .table li>div:not(.support-details) {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -163,30 +154,32 @@
     flex-direction: column;
 }
 
-#status-support .table li .name-clinic {
+
+#status-support .table .name-clinic {
     font-size: 19px;
     font-weight: 300;
     color: #111;
 }
 
-#status-support .table li .item-title {
+#status-support .table .item-title {
     font-weight: 600;
     font-size: 16px;
+    line-height: 20px;
 }
 
-#status-support .table li .item-title span {
+#status-support .table .item-title span {
     display: inline-flex;
 }
 
-#status-support .table li .support-details {
+#status-support .table .support-details {
     padding-left: 20px;
 }
 
-#status-support .table li .support-details .link-to-details-cv {
+#status-support .table .support-details .link-to-details {
     margin-top: 5px;
 }
 
-#status-support .table li .support-details .link-to-details-cv a {
+#status-support .table .support-details .link-to-details a {
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
@@ -194,7 +187,11 @@
     color: #666;
 }
 
-#status-support .table li .link-to-details-cv a::after {
+#status-support .table .support-details .link-to-details a:hover {
+    color: #333;
+}
+
+#status-support .table .link-to-details a::after {
     content: '';
     background: url(../images/icons/arrow-down-gray.png) no-repeat center / contain;
     height: 6px;
@@ -207,45 +204,163 @@
     margin: auto;
 }
 
-#status-support .table li .status-progress .status-text {
+#status-support .table .status-progress .status-text {
     font-size: 18px;
     font-weight: 300;
     line-height: 20px;
     color: #111;
 }
 
-#status-support .table li .status-progress .status-time {
+#status-support .table .status-progress .status-time {
     font-size: 18px;
     font-weight: 300;
     line-height: 20px;
     color: #111;
 }
 
-#status-support .table li .view .view-status {
+#status-support .table .view .view-status {
     font-size: 19px;
     font-weight: 300;
     line-height: 20px;
     color: #111;
 }
 
-#status-support .table li .view .view-time {
+#status-support .table .view .view-time {
     font-size: 18px;
     font-weight: 300;
     line-height: 20px;
     color: #0068b7;
 }
 
-#status-support .table li .application-result .application-result-status {
+#status-support .table .application-result .application-result-status {
     font-size: 19px;
     font-weight: 300;
     line-height: 20px;
     color: #111;
 }
 
-#status-support .table li .application-result .application-result-status.blue {
+#status-support .table .application-result .application-result-status.blue {
     color: #0068b7;
 }
 
-#status-support .table li .application-result .application-result-status.red {
+#status-support .table .application-result .application-result-status.red {
     color: #e60012;
+}
+
+#status-support .table .management {
+    text-align: center;
+}
+
+#status-support .table .management .management-button {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #666;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 20px;
+}
+
+#status-support .table .management .management-button.red {
+    background-color: #eb6877;
+}
+
+
+/* Notification Tabs */
+
+#notification-tab .wrap-tab {
+    align-items: end;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #111;
+    margin-top: 5px;
+}
+
+#notification-tab .wrap-tab:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #0068b7;
+    position: relative;
+    top: -1px;
+}
+
+#notification-tab .wrap-tab li a {
+    font-weight: 300;
+    color: #999;
+    background-color: #f9f9f9;
+}
+
+#notification-tab .wrap-tab li.active a {
+    color: #0068b7;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+#notification-tab .table {
+    margin-bottom: 5px;
+}
+
+#notification-tab .table>li {
+    display: grid;
+    grid-template-columns: 20.67% calc(100% - 20.67% - 10.93%) 10.93%;
+    padding: 32px 0 35px;
+}
+
+#notification-tab .table>li>div:not(:last-child) {
+    text-align: left;
+    align-items: flex-start;
+}
+
+#notification-tab .table .name-dental {
+    font-size: 20px;
+}
+
+#notification-tab .table .wrap-title {
+    gap: 10px;
+}
+
+#notification-tab .table .wrap-title .item-title {
+    font-size: 20px;
+}
+
+#notification-tab .table .wrap-title .wrap-meta {
+    gap: 9px;
+}
+
+#notification-tab .table .wrap-title .wrap-meta a i {
+    width: 16px;
+    height: 16px;
+}
+
+#notification-tab .table .wrap-block-link {
+    margin-top: 8px;
+}
+
+#notification-tab .table .wrap-block-link a {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#notification-tab .table .wrap-position li {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#notification-tab .column .support {
+    font-weight: 500;
+}
+
+#notification-tab .table .room-name {
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 16px;
+}
+
+#notification-tab .table .time {
+    font-size: 17px;
+    line-height: 16px;
 }

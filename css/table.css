@@ -1,6 +1,35 @@
+.table {
+    margin: 0;
+}
+
 /* Table Name Column */
 .title-name-column {
     display: flex;
+}
+
+.table li.row-name-column {
+    height: 50px;
+    padding: 16px 0 17px;
+    background-color: #f4f6f8;
+}
+
+.table li.row-name-column div {
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.table li.row-name-column div:nth-child(2) {
+    text-align: left;
+    padding-left: 98px;
+}
+
+.table li.row-name-column div:not(:nth-child(2)) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Top Table */
@@ -112,14 +141,6 @@
 }
 
 /* Content Table */
-.table>li>div {
-    display: grid;
-    grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
-    padding: 28px 0 0;
-}
-
-/* Column 1 */
-/* .column-1 {} */
 
 .column-1 .clinic-name {
     text-align: center;
@@ -132,7 +153,7 @@
     padding-left: 25px;
 }
 
-.table .column-2 .wrap-title {
+.table .wrap-title {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -160,14 +181,21 @@
 }
 
 /* Column 4 */
-.column-4 {
+.column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.column-4 .support {
+.column.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.column .support {
     font-size: 17px;
     color: #fff;
     background-color: #0068b7;
@@ -176,7 +204,7 @@
     line-height: 30px;
 }
 
-.column-4 .time {
+.column .time {
     color: #999;
     font-size: 16px;
     font-weight: 400;
@@ -322,14 +350,20 @@
     position: relative;
 }
 
+.table .wrap-block-link {
+    display: flex;
+    gap: 131px;
+}
+
 .table .wrap-link li a {
-    font-size: 16px;
+    font-size: 15px;
     color: #666;
     white-space: nowrap;
     line-height: 20px;
 }
 
 .table .wrap-link li a:hover {
+    font-size: 15px;
     color: #333;
 }
 
@@ -391,33 +425,33 @@
 }
 
 @media screen and (width <=1320px) {
-    .table.table>li>div {
+    .table.table-three-column>li>div {
         display: grid;
         grid-template-columns: auto auto;
         padding: 15px 0 0;
     }
 
-    .table.table>li>div.column-left {
+    .table.table-three-column>li>div.column-left {
         grid-template-columns: 100%;
         padding-right: 15px;
     }
 
-    .table.table>li>div.column-center {
+    .table.table-three-column>li>div.column-center {
         grid-template-columns: 100%;
     }
 
-    .column-right {
+    .table-three-column .column-right {
         grid-template-columns: 100%;
         align-items: end;
         padding-right: 15px;
     }
 
-    .table .column-left {
+    .table.table-three-column .column-left {
         grid-column: 1 / -1;
         padding: 0 15px;
     }
 
-    .table .column-center {
+    .table.table-three-column .column-center {
         padding-left: 15px;
         margin-top: 20px;
     }
@@ -612,4 +646,94 @@
     .table.table-three-column .column-right {
         padding-right: 0;
     }
+}
+
+.table .support-details .link-to-details a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+    color: #666;
+}
+
+.table .support-details .link-to-details a:hover {
+    color: #333;
+}
+
+.table .link-to-details a::after {
+    content: '';
+    background: url(../images/icons/arrow-down-gray.png) no-repeat center / contain;
+    height: 6px;
+    width: 10px;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -13px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.table .status-progress .status-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+.table .status-progress .status-time {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+.table .view .view-status {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+.table .view .view-time {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #0068b7;
+}
+
+.table .application-result .application-result-status {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #111;
+}
+
+.table .application-result .application-result-status.blue {
+    color: #0068b7;
+}
+
+.table .application-result .application-result-status.red {
+    color: #e60012;
+}
+
+.table .management {
+    text-align: center;
+}
+
+.table .management .management-button {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #666;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 20px;
+}
+
+.table .management .management-button.red {
+    background-color: #eb6877;
 }
