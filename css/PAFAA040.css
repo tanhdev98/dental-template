@@ -18,11 +18,11 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 64px;
 }
 
 #user-guide .user-guide-content-child-2 .content-title {
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
 #user-guide .outer-circle {
@@ -80,16 +80,12 @@
     margin-bottom: 44px;
 }
 
-
-
 .line-item {
     grid-column: span 1;
 }
 
-
 #user-guide .item-text-arrow {
     margin-bottom: 67px;
-
 }
 
 #user-guide .item-content .item-text-arrow .line-item {
@@ -203,7 +199,7 @@
     margin-top: 67px;
     border: 1px solid #dddddd;
     border-radius: 10px;
-    padding: 57px 14px;
+    padding: 55px 14px;
 }
 
 #user-guide .user-guide-content-child-1 .content-child #company-introduction {

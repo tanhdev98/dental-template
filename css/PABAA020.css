@@ -1,0 +1,51 @@
+#not-found-search {
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+#not-found-search .title {
+    text-align: center;
+    font-weight: 300;
+}
+
+#not-found-search .title h1 {
+    font-size: 36px;
+}
+
+#not-found-search .title p {
+    font-size: 30px;
+    margin-top: 36px;
+}
+
+#not-found-search .info {
+    display: flex;
+    align-items: center;
+    color: #6e7c97;
+}
+
+#not-found-search .info * {
+    color: inherit;
+}
+
+#not-found-search .info .icon {
+    width: 31px;
+    height: 31px;
+}
+
+#not-found-search .info p {
+    font-size: 24px;
+    margin-left: 6px;
+    margin-right: 32px;
+}
+
+#not-found-search .info ul li {
+    font-size: 21px;
+}
+
+#not-found-search .info ul li.dot::before {
+    background-color: #6e7c97;
+}

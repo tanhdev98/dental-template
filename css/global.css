@@ -1129,22 +1129,21 @@ input[type="checkbox"]:checked+span::before {
     align-items: center;
 }
 
-.results-area li>div {
+.results-area li>.item-search {
     font-size: 16px;
 }
 
-.results-area li>.item-city-name+.item-dictrict-name::before {
+.results-area li>.item-search+.item-search::before {
     content: '>';
+    position: relative;
+    top: -1px;
+    margin: 0 2px;
 }
 
 .results-area li>span.icon-x {
     width: 11px;
     height: 11px;
     margin-left: 4px;
-}
-
-.results-area li {
-    display: flex;
 }
 
 .tab-select-results button {
@@ -1303,6 +1302,11 @@ input[type="checkbox"]:checked+span::before {
     font-size: 22px;
     font-weight: 300;
     color: #666;
+}
+
+.count-results.blue {
+    color: #0068b7;
+    font-weight: 500;
 }
 
 .count-results>span {
