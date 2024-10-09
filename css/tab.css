@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.wrap-tab.short-tab li {
+    max-width: 140px;
+}
+
 .wrap-tab li+li {
     margin-left: -1px;
 }

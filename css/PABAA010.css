@@ -1,17 +1,6 @@
-#search-content .title-results {
-    font-size: 28px;
-    font-weight: 300;
-    color: #000;
-    margin-bottom: 19px;
-}
-
 /* Tab Form */
 #search-content .wrap-tab {
     margin-bottom: 32px;
-}
-
-#search-content .wrap-tab li {
-    max-width: 140px;
 }
 
 /* Results Search */
@@ -31,8 +20,6 @@
 #search-content #recruitment-news {
     margin-top: 25px;
 }
-
-
 
 /* Section talent news */
 #search-content #talent-news {
@@ -160,6 +147,10 @@
 }
 
 /* Notices news */
+#notices-news {
+    margin-top: 60px;
+}
+
 #notices-news .table li.wrap-item {
     display: flex;
 }
@@ -195,12 +186,10 @@
     color: #999;
 }
 
-#notices-news {
-    margin-top: 59px;
-}
 
 #notices-news .top-table {
     border-color: #ddd;
+    padding-bottom: 20px;
 }
 
 #notices-news .content-table li .item-title {
