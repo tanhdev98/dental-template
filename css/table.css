@@ -275,13 +275,6 @@
     align-items: center;
 }
 
-.count-results {
-    font-size: 18px;
-    font-weight: 500;
-    color: #0068b7;
-}
-
-
 .wrap-dropDown {
     display: flex;
     gap: 3px;
@@ -300,17 +293,6 @@
 }
 
 /* Table Under */
-.count-results {
-    font-size: 18px;
-    font-weight: 500;
-    color: #666;
-}
-
-.count-results>span {
-    font-size: 18px;
-    color: #666;
-}
-
 .count-results .high-light {
     font-size: 18px;
     color: #0068b7;
@@ -524,6 +506,7 @@
     margin-bottom: 0;
     font-weight: 600;
     white-space: nowrap;
+    font-size: 17px;
 }
 
 .more-infomation li .title-info:after {

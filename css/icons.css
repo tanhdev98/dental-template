@@ -270,3 +270,7 @@
 .icon-x::after {
     background-image: url('../images/icons/icon-x.png');
 }
+
+.icon-info::after {
+    background-image: url('../images/icons/icon-info.png');
+}

@@ -1,5 +1,5 @@
 #support-now .wrap-table>li>div {
     display: grid;
     grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
-    padding: 28px 0 34px;
+    padding: 29px 0 34px;
 }
