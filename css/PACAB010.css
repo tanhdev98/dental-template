@@ -24,9 +24,11 @@
 }
 
 #search-infor .group-notifi {
-    padding: 45px 100px 58px 80px;
+    padding: 0 100px 0 80px;
     height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #search-infor .title-notifi {

@@ -69,10 +69,13 @@
 
 #auth .wrap-tab li a {
     border-bottom: 1px solid #000;
+    font-size: 19px;
+    background-color: #f3f7f8;
 }
 
 #auth .wrap-tab li.active a {
     border-bottom: 1px solid transparent;
+    background-color: #fff;
 }
 
 .hide {

@@ -1316,3 +1316,10 @@ input[type="checkbox"]:checked+span::before {
     font-weight: 700;
     color: #666;
 }
+
+.title-results {
+    font-size: 28px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 19px;
+}
