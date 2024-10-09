@@ -68,19 +68,47 @@
     align-items: center;
     margin-bottom: 0;
     border-bottom: transparent;
+    height: 49px;
+}
 
+#search-infor .wrap-tab li {
+    cursor: pointer;
+    height: 100%;
 }
 
 #search-infor .wrap-tab li a {
     border-color: transparent;
     border-bottom: 1px solid #333;
     background-color: #f9f9f9;
+    height: 100%;
 }
 
 #search-infor .wrap-tab li.active a {
     background-color: #fff;
     border-color: #030303;
     border-bottom: 1px solid transparent;
+}
+
+.icon-magnifying-glass {
+    width: 25px;
+    height: 25px;
+}
+
+#search-infor .wrap-tab li a span {
+    position: relative;
+}
+
+#search-infor .wrap-tab li a i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    margin: auto;
+    display: none;
+}
+
+#search-infor .wrap-tab li.active i {
+    display: flex;
 }
 
 #search-infor .wrap-tab-child {
@@ -105,7 +133,7 @@
 }
 
 #search-infor .content-tab {
-    padding: 38px 80px 0px;
+    padding: 39px 80px 0px;
 }
 
 #search-infor .content-tab .form {
@@ -190,7 +218,6 @@ input[type='radio'] {
 }
 
 #search-infor .content-tab .form-phone .note-form-phone {
-    font-size: 19px;
     color: #0068b7;
     margin-left: 16px;
     font-weight: 300;
@@ -208,6 +235,14 @@ input[type='radio'] {
     margin-left: 0;
 }
 
+.form.form-otp {
+    margin-bottom: 70px;
+}
+
+.wrap-tab-child.wrap-tab-child-2 .form.form-otp {
+    margin-bottom: 84px;
+}
+
 #search-infor .content-tab .submit-form {
     width: 160px;
     height: 45px;
@@ -216,13 +251,15 @@ input[type='radio'] {
     font-weight: 600;
     font-size: 19px;
     color: #fff;
-    position: relative;
+    /* position: relative;
     top: 75px;
+   */
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -5px;
+    margin-bottom: -75px;
+    margin-top: 30px;
 }
 
 .form-id,
@@ -293,4 +330,43 @@ input[type='radio'] {
     #search-infor .wrap-tab-child-2.active::before {
         transform: translateX(-100%);
     }
+}
+
+#search-infor .form-select-container {
+    width: 130px;
+}
+
+#search-infor .form-select-container>.form-select-cus {
+    border-radius: 3px;
+    border-color: #ddd;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper {
+    border-radius: 3px;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option,
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder,
+.form-select-container>.form-select-cus>.form-option-placeholder {
+    padding: 0 19px;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder:hover {
+    border-radius: 3px 3px 0 0;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option:last-child:hover {
+    border-radius: 0 0 3px 3px;
+}
+
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option,
+.form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder,
+.form-select-container>.form-select-cus>.form-option-placeholder {
+    border-radius: 0 0 3px 3px;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.form-select-container>.form-select-cus>.form-option-placeholder::after {
+    right: 23px;
 }

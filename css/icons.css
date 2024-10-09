@@ -228,6 +228,7 @@
     background-image: url('../images/icons/icon-search.png');
 }
 
+
 .icon-plus {
     position: relative;
 }
@@ -273,4 +274,8 @@
 
 .icon-info::after {
     background-image: url('../images/icons/icon-info.png');
+}
+
+.icon-magnifying-glass::after {
+    background-image: url('../images/icons/icon-magnifying-glass.png');
 }
