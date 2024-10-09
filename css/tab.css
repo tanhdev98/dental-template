@@ -39,7 +39,7 @@
     align-items: center;
 }
 
-.wrap-tab.border-active-blue li a {
+.wrap-tab.border-active-blue li {
     border-bottom: 1px solid #0068b7;
 }
 
@@ -56,6 +56,10 @@
     color: #000;
     font-weight: 500;
     background-color: #fff;
+}
+
+.wrap-tab.border-active-blue li.active {
+    border-bottom: #fff;
 }
 
 .wrap-tab.border-active-blue li.active a {
