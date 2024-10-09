@@ -39,8 +39,6 @@
     align-items: center;
 }
 
-.wrap-tab.bgr-f9 li a {}
-
 .wrap-tab.border-active-blue li a {
     border-bottom: 1px solid #0068b7;
 }

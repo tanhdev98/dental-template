@@ -143,6 +143,7 @@
 }
 
 #status-support .table li.row-name-column .column:nth-child(2) {
+    align-items: flex-start;
     text-align: left;
 }
 
@@ -276,6 +277,7 @@
     align-items: end;
     padding-bottom: 30px;
     border-bottom: 1px solid #111;
+    margin-top: 5px;
 }
 
 #notification-tab .wrap-tab:after {
@@ -288,9 +290,76 @@
 #notification-tab .wrap-tab li a {
     font-weight: 300;
     color: #999;
+    background-color: #f9f9f9;
 }
 
 #notification-tab .wrap-tab li.active a {
     color: #0068b7;
     font-weight: 600;
+    background-color: #fff;
+}
+
+#notification-tab .table {
+    margin-bottom: 5px;
+}
+
+#notification-tab .table>li {
+    display: grid;
+    grid-template-columns: 20.67% calc(100% - 20.67% - 10.93%) 10.93%;
+    padding: 32px 0 35px;
+}
+
+#notification-tab .table>li>div:not(:last-child) {
+    text-align: left;
+    align-items: flex-start;
+}
+
+#notification-tab .table .name-dental {
+    font-size: 20px;
+}
+
+#notification-tab .table .wrap-title {
+    gap: 10px;
+}
+
+#notification-tab .table .wrap-title .item-title {
+    font-size: 20px;
+}
+
+#notification-tab .table .wrap-title .wrap-meta {
+    gap: 9px;
+}
+
+#notification-tab .table .wrap-title .wrap-meta a i {
+    width: 16px;
+    height: 16px;
+}
+
+#notification-tab .table .wrap-block-link {
+    margin-top: 8px;
+}
+
+#notification-tab .table .wrap-block-link a {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#notification-tab .table .wrap-position li {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#notification-tab .column .support {
+    font-weight: 500;
+}
+
+#notification-tab .table .room-name {
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 16px;
+}
+
+#notification-tab .table .time {
+    font-size: 17px;
+    line-height: 16px;
 }
