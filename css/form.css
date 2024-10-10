@@ -1,0 +1,63 @@
+.form {
+    display: flex;
+    align-items: center;
+}
+
+/* radio */
+.form-radio .group-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-radio .group-radio label {
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    accent-color: #00467b;
+}
+
+.title-value-radio {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* input */
+.form input:not([type="radio"]) {
+    padding-left: 16px;
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+/* button submit */
+.submit-form {
+    width: 160px;
+    height: 45px;
+    background-color: #0068b7;
+    border-radius: 22px;
+    font-weight: 600;
+    font-size: 19px;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* select */
+.form-select-container {
+    height: 35px;
+}
+
+.form-select-container>.form-select-cus {
+    border-radius: 3px;
+}
+
+.form-select-container>.form-select-cus>.form-option-placeholder {
+    color: #666;
+}
