@@ -792,118 +792,7 @@
     font-weight: 700;
 }
 
-/* Start tabs-select-bag */
-#tabs-form .tabs-select-bag {
-    padding: 24px;
-}
-
-#tabs-form .tabs-select-bag ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-#tabs-form .tabs-select-bag ul li {
-    border: 1px solid #dddddd;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    padding: 17px 0;
-    font-size: 19px;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(-n+4) {
-    border-right: unset;
-    border-bottom: unset;
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(5) {
-    border-bottom: unset;
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(-n+4) {
-    border-right: unset;
-    border-bottom: unset;
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
-    border-right: unset;
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(10) {
-    border-right: 1px solid #dddddd;
-}
-
-
-#tabs-form .tabs-select-bag ul li:hover {
-    background-color: #eef7fd;
-    color: #0068b7;
-    font-weight: 600;
-}
-
-.tabs-select ul li:empty {
-    pointer-events: none;
-}
-
-/* End tabs-select-bag */
 /* Wrap Tab Form */
-.top-form {
-    display: flex;
-    margin: 44px 0 29px;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-#tabs-form h2 {
-    font-size: 34px;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-#tabs-form .tabs li {
-    position: relative;
-}
-
-#tabs-form .tabs li:last-child {
-    max-width: 203px;
-}
-
-#tabs-form .tabs li a {
-    text-align: left;
-    padding-left: 25px;
-    position: relative;
-    color: #999;
-    height: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 7px;
-}
-
-#tabs-form .tabs li span {
-    color: #999999;
-}
-
-#tabs-form .tabs li.active a span {
-    font-weight: 400;
-    color: #333;
-    font-size: 20px;
-}
-
-#tabs-form .tabs li i {
-    display: block;
-    width: 16px;
-    height: 16px;
-}
-
-#tabs-form .tabs li i:after {
-    display: flex;
-}
-
 #tabs-form .tabs li i.icon-plus+a {
     padding-left: 37px;
 }
@@ -924,12 +813,6 @@
 #tabs-form .tabs li.active .icon-plus::after,
 #tabs-form .tabs li.active .icon-plus::before {
     background-color: #464646;
-}
-
-#tabs-form .tabs-select {
-    display: flex;
-    border: 1px solid #333;
-    border-top: transparent;
 }
 
 /* Wrap tab left */
@@ -1012,7 +895,6 @@
     width: calc(100% - ((100% - 203px) / 3));
     padding: 20px 0 0;
 }
-
 
 #tabs-form .tabs-right form .notification {
     padding-left: 25px;
