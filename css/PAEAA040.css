@@ -2,8 +2,8 @@
     padding: 30px 0 0px;
 }
 
-/* Start wrap-tab-select-plus */
-#wrap-tab-form .wrap-tab-select-plus {
+/* Start tabs-select-plus */
+#tabs-form .tabs-select-plus {
     padding: 19px 26px;
     display: flex;
     flex-direction: column;
@@ -11,79 +11,79 @@
 }
 
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child {
+#tabs-form .tabs-select-plus .wrap-select-plus-child {
     display: flex;
 
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child li {
+#tabs-form .tabs-select-plus .wrap-select-plus-child li {
     margin-left: 0;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .title-detailed {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .title-detailed {
     font-size: 17px;
     color: #333333;
     font-weight: 600;
     width: 150px;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .tab-check-box {
+#tabs-form .tabs-select-plus .tab-check-box {
     margin-right: 45px;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .tab-check-box li label {
+#tabs-form .tabs-select-plus .tab-check-box li label {
     line-height: unset;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .tab-check-box li label span {
+#tabs-form .tabs-select-plus .tab-check-box li label span {
     font-size: 16px;
     font-weight: 300;
     line-height: unset;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-radio label {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .group-radio label {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     margin-right: 52px;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-radio input[type="radio"] {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .group-radio input[type="radio"] {
     height: 17.5px;
     width: 17.5px;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .form-select-container {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .form-select-container {
     height: 30px;
     width: 135px;
     margin-top: -8px;
     z-index: 2;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-check-box {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .group-check-box {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-check-box-child {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .group-check-box-child {
     display: flex;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-check-box-child .tab-check-box {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .group-check-box-child .tab-check-box {
     width: 122px;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-datepicker {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .group-datepicker {
     display: flex;
     gap: 7px;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-datepicker .datepicker-child {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .group-datepicker .datepicker-child {
     position: relative;
 }
 
-#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child input[type="date"] {
+#tabs-form .tabs-select-plus .wrap-select-plus-child input[type="date"] {
     width: 180px;
     height: 30px;
     border: 1px solid #ccc;
@@ -109,7 +109,7 @@
 }
 
 
-/* End wrap-tab-select-plus */
+/* End tabs-select-plus */
 
 
 /* Top Table */

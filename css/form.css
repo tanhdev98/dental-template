@@ -1,6 +1,10 @@
-.form {
+.form-row {
     display: flex;
     align-items: center;
+}
+
+.form-row:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 /* radio */
@@ -24,7 +28,7 @@ input[type='radio'] {
 }
 
 /* input */
-.form input:not([type="radio"]) {
+.form-row input:not([type="radio"]) {
     padding-left: 16px;
     width: 400px;
     height: 40px;
@@ -47,17 +51,18 @@ input[type='radio'] {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 16px;
 }
 
 /* select */
-.form .form-select-container {
+.form.form-select-container {
     height: 35px;
 }
 
-.form .form-select-container>.form-select-cus {
+.form.form-select-container>.form-select-cus {
     border-radius: 3px;
 }
 
-.form .form-select-container>.form-select-cus>.form-option-placeholder {
+.form.form-select-container>.form-select-cus>.form-option-placeholder {
     color: #666;
 }

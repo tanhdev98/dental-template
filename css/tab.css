@@ -1,29 +1,29 @@
 /* Tab */
-.wrap-tab {
+.tabs {
     display: flex;
     border-bottom: 1px solid #333;
     padding: 0;
 }
 
-.wrap-tab.hide-border-bottom {
+.tabs.hide-border-bottom {
     display: flex;
     border-bottom: none;
     padding: 0;
 }
 
-.wrap-tab li {
+.tabs li {
     width: 100%;
 }
 
-.wrap-tab.short-tab li {
+.tabs.short-tab li {
     max-width: 140px;
 }
 
-.wrap-tab li+li {
+.tabs li+li {
     margin-left: -1px;
 }
 
-.wrap-tab li a {
+.tabs li a {
     display: block;
     border: none;
     outline: none;
@@ -39,16 +39,16 @@
     align-items: center;
 }
 
-.wrap-tab.border-active-blue li {
+.tabs.border-active-blue li {
     border-bottom: 1px solid #0068b7;
 }
 
 
-.wrap-tab li.active {
+.tabs li.active {
     z-index: 12;
 }
 
-.wrap-tab li.active a {
+.tabs li.active a {
     border: none;
     outline: none;
     border: 1px solid #000;
@@ -58,11 +58,11 @@
     background-color: #fff;
 }
 
-.wrap-tab.border-active-blue li.active {
+.tabs.border-active-blue li.active {
     border-bottom: #fff;
 }
 
-.wrap-tab.border-active-blue li.active a {
+.tabs.border-active-blue li.active a {
     border: 1px solid #0068b7;
     border-bottom: none;
     color: #0068b7;
@@ -113,27 +113,41 @@ li.dot::before {
     border-radius: 50px;
 }
 
-.wrap-tab.tab-user {
+/* Tabs Content */
+
+.tabs_content {
+    border: 1px solid #000000;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.tab-content-item {
+    position: relative;
+    padding: 39px 80px 53px;
+    display: none;
+}
+
+.tabs.tab-user {
     align-items: end;
     padding-bottom: 30px;
     border-bottom: 1px solid #111;
     margin-top: 5px;
 }
 
-.wrap-tab.tab-user:after {
+.tabs.tab-user:after {
     content: "";
     width: 100%;
     height: 1px;
     background-color: #0068b7;
 }
 
-.wrap-tab.tab-user li a {
+.tabs.tab-user li a {
     font-weight: 300;
     color: #999;
     background-color: #f9f9f9;
 }
 
-.wrap-tab.tab-user li.active a {
+.tabs.tab-user li.active a {
     color: #0068b7;
     font-weight: 600;
     background-color: #fff;
@@ -147,25 +161,25 @@ li.dot::before {
     align-items: flex-end;
 }
 
-#wrap-tab-form h2 {
+#tabs-form h2 {
     font-size: 34px;
     font-weight: 400;
     margin-bottom: 0;
 }
 
-#wrap-tab-form .wrap-tab li {
+#tabs-form .tabs li {
     position: relative;
 }
 
-#wrap-tab-form .wrap-tab li span {
+#tabs-form .tabs li span {
     color: #999;
 }
 
-#wrap-tab-form .wrap-tab li:last-child {
+#tabs-form .tabs li:last-child {
     max-width: 204px;
 }
 
-#wrap-tab-form .wrap-tab li a {
+#tabs-form .tabs li a {
     text-align: left;
     padding-left: 25px;
     position: relative;
@@ -177,23 +191,23 @@ li.dot::before {
     gap: 7px;
 }
 
-#wrap-tab-form .wrap-tab li.active a span {
+#tabs-form .tabs li.active a span {
     font-weight: 400;
     color: #333;
     font-size: 20px;
 }
 
-#wrap-tab-form .wrap-tab li i {
+#tabs-form .tabs li i {
     display: block;
     width: 16px;
     height: 16px;
 }
 
-#wrap-tab-form .wrap-tab li i:after {
+#tabs-form .tabs li i:after {
     display: flex;
 }
 
-#wrap-tab-form .wrap-tab-select {
+#tabs-form .tabs-select {
     display: flex;
     border: 1px solid #333;
     border-top: transparent;

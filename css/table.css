@@ -247,18 +247,11 @@
     line-height: 30px;
 }
 
-.column .time {
-    color: #999;
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .wrap-dropDown {
     display: flex;
     gap: 3px;
 }
 
-<<<<<<< HEAD
 .form-select-container {
     height: 35px;
 }
@@ -275,8 +268,6 @@
     color: #666;
 }
 
-=======
->>>>>>> 2d99d2a16df3b0301ab1d64d46e114391f99264e
 @media screen and (width <=1320px) {
     .table>li>div {
         grid-template-columns: repeat(2, 1fr);
