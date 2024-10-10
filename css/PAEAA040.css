@@ -1,0 +1,252 @@
+#content {
+    padding: 30px 0 0px;
+}
+
+/* Start wrap-tab-select-plus */
+#wrap-tab-form .wrap-tab-select-plus {
+    padding: 19px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child {
+    display: flex;
+
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child li {
+    margin-left: 0;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .title-detailed {
+    font-size: 17px;
+    color: #333333;
+    font-weight: 600;
+    width: 150px;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .tab-check-box {
+    margin-right: 45px;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .tab-check-box li label {
+    line-height: unset;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .tab-check-box li label span {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: unset;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-radio label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 52px;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-radio input[type="radio"] {
+    height: 17.5px;
+    width: 17.5px;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .form-select-container {
+    height: 30px;
+    width: 135px;
+    margin-top: -8px;
+    z-index: 2;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-check-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-check-box-child {
+    display: flex;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-check-box-child .tab-check-box {
+    width: 122px;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-datepicker {
+    display: flex;
+    gap: 7px;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child .group-datepicker .datepicker-child {
+    position: relative;
+}
+
+#wrap-tab-form .wrap-tab-select-plus .wrap-select-plus-child input[type="date"] {
+    width: 180px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 0px 11px;
+    margin-top: -8px;
+}
+
+.ui-datepicker-header a.ui-datepicker-prev {
+    left: 0;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-size: 0.5rem;
+    background-position: 50%;
+    transform: rotate(180deg);
+}
+
+.ui-datepicker-header a.ui-datepicker-next {
+    right: 0;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 50%;
+}
+
+
+/* End wrap-tab-select-plus */
+
+
+/* Top Table */
+#content-table .top-table {
+    align-items: center;
+}
+
+#content-table .count-results {
+    color: #0068b7;
+    font-weight: 500;
+}
+
+/* Content Table */
+#support-now .wrap-table>li {
+    padding-bottom: 34px;
+}
+
+#support-now .wrap-table>li>div {
+    display: grid;
+    grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
+    padding: 29px 0 0;
+}
+
+/* Column 1 */
+.column-1 {
+    justify-content: start;
+}
+
+.column-1 .clinic-name {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Column 2*/
+#support-now .wrap-table .column-2 {
+    padding-left: 25px;
+}
+
+#support-now .wrap-table .column-2 .wrap-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#support-now .wrap-table .column-2 .wrap-title+.wrap-link {
+    margin-top: 8px;
+}
+
+#support-now .wrap-table .column-2 .wrap-title .item-title {
+    margin-bottom: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #333;
+}
+
+#support-now .wrap-table .column-2 .wrap-title .wrap-meta {
+    display: inline-flex;
+    gap: 8px;
+}
+
+#support-now .wrap-table .wrap-link+.wrap-position {
+    margin-top: 4px;
+}
+
+/* Column 3 */
+#support-now .wrap-table .column-3 {
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+/* Column 4 */
+.column-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-4 .support {
+    font-size: 17px;
+    color: #fff;
+    background-color: #0068b7;
+    border-radius: 30px;
+    padding: 0 11px;
+    line-height: 30px;
+}
+
+.column-4 .room-name {
+    margin-top: 6px;
+}
+
+.column-4 .time {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* .column-4 .price {} */
+
+
+
+@media screen and (width <=1320px) {
+    #support-now .wrap-table>li>div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #support-now .top-table {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+
+    .column-1 .clinic-name {
+        text-align: left;
+    }
+
+    #support-now .wrap-table .column-2 {
+        padding-left: 0;
+    }
+
+    #support-now .wrap-table .column-3 {
+        padding: 0;
+    }
+
+    .column-4 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .column-4 .support+.room {
+        margin-top: 0;
+    }
+}
