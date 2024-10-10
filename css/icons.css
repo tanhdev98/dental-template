@@ -232,7 +232,6 @@
     background-image: url('../images/icons/icon-search.png');
 }
 
-
 .icon-plus {
     position: relative;
 }
@@ -261,7 +260,6 @@
     left: 0;
     right: 0;
     margin: auto;
-
 }
 
 .icon-reset::after {
@@ -282,4 +280,29 @@
 
 .icon-magnifying-glass::after {
     background-image: url('../images/icons/icon-magnifying-glass.png');
+}
+
+.icon-info-register::after {
+    background-image: url('../images/icons/icon-info-register.png');
+}
+
+.icon-magnifying-glass {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-date::after {
+    background-image: url('../images/icons/icon-date.png');
+}
+
+.icon-date {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0px;
+    right: 13px;
+    background: #fff;
+    cursor: pointer;
+    z-index: 2;
+    pointer-events: auto;
 }
