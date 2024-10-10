@@ -50,14 +50,14 @@ input[type='radio'] {
 }
 
 /* select */
-.form-select-container {
+.form .form-select-container {
     height: 35px;
 }
 
-.form-select-container>.form-select-cus {
+.form .form-select-container>.form-select-cus {
     border-radius: 3px;
 }
 
-.form-select-container>.form-select-cus>.form-option-placeholder {
+.form .form-select-container>.form-select-cus>.form-option-placeholder {
     color: #666;
 }
