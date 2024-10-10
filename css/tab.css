@@ -160,6 +160,10 @@ li.dot::before {
     align-items: flex-end;
 }
 
+.top-form .form-select-container {
+    z-index: 13;
+}
+
 #tabs-form h2 {
     font-size: 34px;
     font-weight: 400;
