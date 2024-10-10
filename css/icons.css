@@ -172,6 +172,10 @@
     background-image: url('../images/icons/icon-nav-letter.png');
 }
 
+.icon-letter::after {
+    background-image: url('../images/icons/icon-letter.png');
+}
+
 #top-sub-page #side-nav ul li:hover .icon-nav-letter::after {
     background-image: url('../images/icons/icon-nav-letter_hover.png');
 }

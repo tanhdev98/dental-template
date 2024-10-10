@@ -90,3 +90,289 @@
 #unused-vouchers .content-frame ul li b {
     color: #0068b7;
 }
+
+/* Manage recruitment news */
+#manage-recruitment-news .header-frame {
+    border-bottom-color: #076ecc;
+}
+
+#manage-recruitment-news .table {
+    margin-bottom: 5px;
+}
+
+#manage-recruitment-news .table>li {
+    display: grid;
+    grid-template-columns: 16.1% calc(100% - 16.1% - 9.4% - 12.29% - 9.66% - 13.9%) 9.4% 12.29% 9.66% 13.9%;
+    align-items: center;
+}
+
+#manage-recruitment-news .table>li:not(.row-name-column) {
+    padding: 17px 0 19px;
+}
+
+#manage-recruitment-news .table .column .date {
+    font-size: 19px;
+    font-weight: 300;
+    color: #111;
+}
+
+#manage-recruitment-news .table .column .status {
+    margin-top: 8px;
+    padding: 0;
+    width: 55px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#manage-recruitment-news .table .column .item-title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+
+#manage-recruitment-news .table .column .list-item .label {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    line-height: 22px;
+}
+
+#manage-recruitment-news .table .column .list-item.wrap-date {
+    gap: 8px;
+}
+
+#manage-recruitment-news .table .column .list-item .label-date {
+    font-weight: 700;
+    color: #0068b7;
+}
+
+#manage-recruitment-news .table .column .list-item .time {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    line-height: 22px;
+}
+
+
+#manage-recruitment-news .table .wrap-position li:after {
+    margin-right: 4px;
+}
+
+#manage-recruitment-news .table .table-button.yellow {
+    font-weight: 400;
+    width: 85px;
+    padding: 0;
+    height: 30px;
+}
+
+#manage-recruitment-news .table .viewed {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+#manage-recruitment-news .table .unviewed,
+#manage-recruitment-news .table .unviewed span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #111;
+    line-height: 20px;
+}
+
+#manage-recruitment-news .table .views .views-count {
+    font-size: 19px;
+    font-weight: 300;
+    color: #111;
+    line-height: 20px;
+}
+
+#manage-recruitment-news .table .management .table-button {
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#manage-recruitment-news .table .management .form-select-container {
+    max-width: 100px;
+    height: 30px;
+}
+
+#manage-recruitment-news .form-select-container>.form-select-cus {
+    border-radius: 50px;
+}
+
+#manage-recruitment-news .form-select-container>.form-select-cus>.form-option-placeholder {
+    padding-left: 16px;
+    font-size: 15px;
+    color: #111;
+    line-height: 20px;
+}
+
+#manage-recruitment-news .form-select-container>.form-select-cus>.form-option-placeholder::after {
+    right: 6px;
+}
+
+#manage-recruitment-news .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option,
+#manage-recruitment-news .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder {
+    height: 30px;
+}
+
+/* Tab Candidate */
+#candidate-tab.frame-section .header-frame {
+    display: block;
+    position: relative;
+}
+
+#candidate-tab.frame-section .header-frame>a {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+#candidate-tab .wrap-tab.tab-user {
+    border-bottom: none;
+}
+
+#candidate-tab .table {
+    margin-bottom: 5px;
+}
+
+#candidate-tab .table>li+li {
+    margin-top: 10px;
+}
+
+#candidate-tab .table>li:last-child {
+    margin-top: 5px;
+}
+
+#candidate-tab .table .column:first-child {
+    align-items: flex-start;
+}
+
+#candidate-tab .table>li>.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 47px 27px 42px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+#candidate-tab .table .name-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+#candidate-tab .table .name-user a {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+#candidate-tab .table .name-user i {
+    width: 19px;
+    height: 18px;
+}
+
+
+
+#candidate-tab .table .wrap-title {
+    margin-bottom: 5px;
+}
+
+#candidate-tab .table .wrap-title .item-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#candidate-tab .table .icon-blank,
+#candidate-tab .table .icon-star {
+    width: 16px;
+    height: 16px;
+}
+
+#candidate-tab .table .wrap-link li a {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+#candidate-tab .table .wrap-link li+li:before {
+    height: 12px;
+}
+
+#candidate-tab .table .wrap-date .label-date {
+    font-size: 19px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+#candidate-tab .table .wrap-date .time {
+    font-size: 19px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+#candidate-tab .table .status-text {
+    font-size: 19px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+#candidate-tab .table>li>.footer-infomation {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 28px;
+    border: 1px solid #f2f2f2;
+    background-color: #f9f9f9;
+    gap: 26px;
+}
+
+#candidate-tab .table>li>.footer-infomation div {
+    display: flex;
+}
+
+#candidate-tab .table>li>.footer-infomation div .category-title {
+    font-size: 19px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #0068b7;
+    margin-right: 10px;
+}
+
+#candidate-tab .table>li>.footer-infomation div .category-name {
+    font-size: 19px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+#candidate-tab .table .footer-infomation .time span {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #666;
+}
+
+#candidate-tab .table .footer-infomation .time .start-date+.end-date::before {
+    content: '~';
+    margin-right: 5px;
+
+}
+
+#candidate-tab .table>li {
+    border-bottom: none;
+}
