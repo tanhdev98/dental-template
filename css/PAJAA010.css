@@ -250,7 +250,7 @@
 }
 
 #candidate-tab .table>li:last-child {
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #candidate-tab .table .column:first-child {
