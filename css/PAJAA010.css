@@ -152,10 +152,7 @@
 }
 
 #manage-recruitment-news .table .column .list-item .time {
-    font-size: 14px;
     font-weight: 300;
-    color: #666;
-    line-height: 22px;
 }
 
 
@@ -229,6 +226,8 @@
 #candidate-tab.frame-section .header-frame {
     display: block;
     position: relative;
+    border-bottom-color: transparent;
+    padding-bottom: 0;
 }
 
 #candidate-tab.frame-section .header-frame>a {
@@ -237,7 +236,7 @@
     top: 8px;
 }
 
-#candidate-tab .wrap-tab.tab-user {
+#candidate-tab .tabs.tab-user {
     border-bottom: none;
 }
 
