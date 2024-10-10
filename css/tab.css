@@ -114,8 +114,7 @@ li.dot::before {
 }
 
 /* Tabs Content */
-
-.tabs_content {
+.tabs-content {
     border: 1px solid #000000;
     border-top: none;
     border-radius: 0 0 10px 10px;
@@ -211,4 +210,56 @@ li.dot::before {
     display: flex;
     border: 1px solid #333;
     border-top: transparent;
+}
+
+/* Start tabs-select-bag */
+#tabs-form .tabs-select-bag {
+    padding: 24px;
+}
+
+#tabs-form .tabs-select-bag ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#tabs-form .tabs-select-bag ul li {
+    border: 1px solid #dddddd;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 17px 0;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#tabs-form .tabs-select-bag ul li:nth-child(-n+4) {
+    border-right: unset;
+    border-bottom: unset;
+}
+
+#tabs-form .tabs-select-bag ul li:nth-child(5) {
+    border-bottom: unset;
+}
+
+#tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
+    border-right: unset;
+}
+
+#tabs-form .tabs-select-bag ul li:nth-child(10) {
+    border-right: 1px solid #dddddd;
+}
+
+
+#tabs-form .tabs-select-bag ul li:hover {
+    background-color: #eef7fd;
+    color: #0068b7;
+    font-weight: 600;
+}
+
+.tabs-select ul li:empty {
+    pointer-events: none;
 }
