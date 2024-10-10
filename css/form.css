@@ -1,4 +1,4 @@
-.form {
+.form-row {
     display: flex;
     align-items: center;
 }
@@ -24,7 +24,7 @@ input[type='radio'] {
 }
 
 /* input */
-.form input:not([type="radio"]) {
+.form-row input:not([type="radio"]) {
     padding-left: 16px;
     width: 400px;
     height: 40px;
@@ -50,14 +50,92 @@ input[type='radio'] {
 }
 
 /* select */
-.form .form-select-container {
+.form-row .form-select-container {
     height: 35px;
 }
 
-.form .form-select-container>.form-select-cus {
+.form-row .form-select-container>.form-select-cus {
     border-radius: 3px;
 }
 
-.form .form-select-container>.form-select-cus>.form-option-placeholder {
+.form-row .form-select-container>.form-select-cus>.form-option-placeholder {
     color: #666;
+}
+
+/* register form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.register-form .form-row:last-child {
+    margin-bottom: 0;
+}
+
+.register-form .form-row .title-form {
+    font-size: 24px;
+    text-align: end;
+    flex: 1;
+}
+
+.register-form .form-row .group-form {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    gap: 7px;
+}
+
+.register-form .form-row .group-form input {
+    border: 1px solid #bbb;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.register-form .form-row.form-phone .group-form input {
+    width: 70px;
+    text-align: center;
+}
+
+.register-form .form-select-container {
+    height: 100%;
+}
+
+.register-form .form-select-container .form-select-cus .form-option-wrapper {
+    border-radius: 5px;
+}
+
+.register-form .form-select-container .form-select-cus .form-option-wrapper .form-option-placeholder-container .form-option-placeholder:hover {
+    border-radius: 5px 5px 0 0;
+}
+
+.register-form .form-select-container .form-select-cus .form-option-wrapper .form-option-container .form-option:last-child:hover {
+    border-radius: 0 0 5px 5px;
+}
+
+.register-form .form-select-container.active .form-select-cus {
+    border-color: transparent;
+}
+
+.register-form .form-select-container .form-select-cus {
+    border-radius: 5px;
+    border-color: #bbb;
+    background-color: #fafafa;
+}
+
+.register-form .form-row .form-select-container.select-month,
+.register-form .form-row .form-select-container.select-day {
+    width: 83px;
 }

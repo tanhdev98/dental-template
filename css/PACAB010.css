@@ -238,7 +238,7 @@
         padding: 20px 20px;
     }
 
-    #search-infor .content-tab .form {
+    #search-infor .content-tab .form-row {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
