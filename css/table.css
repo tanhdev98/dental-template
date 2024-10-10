@@ -210,22 +210,9 @@
     font-weight: 400;
 }
 
-
 .wrap-dropDown {
     display: flex;
     gap: 3px;
-}
-
-.form-select-container {
-    height: 35px;
-}
-
-.form-select-container>.form-select-cus {
-    border-radius: 3px;
-}
-
-.form-select-container>.form-select-cus>.form-option-placeholder {
-    color: #666;
 }
 
 @media screen and (width <=1320px) {
@@ -238,7 +225,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-
     }
 
     .column-1 .clinic-name {
@@ -265,7 +251,6 @@
     }
 }
 
-
 /* Top Table */
 .top-table {
     display: flex;
@@ -275,45 +260,11 @@
     align-items: center;
 }
 
-.wrap-dropDown {
-    display: flex;
-    gap: 3px;
-}
-
-.form-select-container {
-    height: 35px;
-}
-
-.form-select-container>.form-select-cus {
-    border-radius: 3px;
-}
-
-.form-select-container>.form-select-cus>.form-option-placeholder {
-    color: #666;
-}
-
 /* Table Under */
 .count-results .high-light {
     font-size: 18px;
     color: #0068b7;
     font-weight: 500;
-}
-
-.wrap-dropDown {
-    display: flex;
-    gap: 3px;
-}
-
-.form-select-container {
-    height: 35px;
-}
-
-.form-select-container>.form-select-cus {
-    border-radius: 3px;
-}
-
-.form-select-container>.form-select-cus>.form-option-placeholder {
-    color: #666;
 }
 
 /* Column left */
