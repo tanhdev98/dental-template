@@ -1,0 +1,235 @@
+#register-page {
+    padding: 30px 0 15px 0;
+}
+
+#register-page .titleText {
+    font-size: 40px;
+    font-weight: 500;
+    border-bottom: 1px solid #333;
+    padding-bottom: 17px;
+}
+
+/* member step */
+#register-step {
+    margin-top: 25px;
+    margin-bottom: 73px;
+}
+
+#register-step ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 33px;
+}
+
+#register-step ul li {
+    background: #ececec;
+    border-radius: 10px;
+    height: 70px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    position: relative;
+}
+
+#register-step ul li::after {
+    content: '';
+    position: absolute;
+    background: url('../images/icons/icon-next-step.png') no-repeat center / contain;
+    height: 16px;
+    width: 23px;
+    right: -40px;
+}
+
+#register-step ul li:last-child::after {
+    display: none;
+}
+
+#register-step ul li.active {
+    background: #002060;
+    color: #fff;
+}
+
+/* member register */
+.register-container {
+    padding: 0 100px;
+}
+
+.register-container .content-wrap {
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* step 1 */
+#register-check h1 {
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+#register-check h1 .icon {
+    width: 25px;
+    height: 25px;
+}
+
+#register-check ul.notes {
+    margin-bottom: 60px;
+}
+
+#register-check ul.notes li {
+    font-weight: 400;
+    color: #555;
+}
+
+#register-check ul.notes li::before {
+    background-color: #555;
+}
+
+#register-check .banner {
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+#register-check .submit-form {
+    margin: 51px auto;
+}
+
+#register-check .register-form .form.title-form {
+    font-size: 24px;
+    text-align: end;
+    flex: 1;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.register-form .form:last-child {
+    margin-bottom: 0;
+}
+
+.register-form .form.group-form {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    gap: 7px;
+}
+
+.register-form .form.group-form input {
+    border: 1px solid #bbb;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.register-form .form.form-phone .group-form input {
+    width: 70px;
+}
+
+.register-form .form-select-container {
+    height: 100%;
+}
+
+.register-form .form-select-container .form-select-cus {
+    border-radius: 5px;
+    border-color: #bbb;
+    background-color: #fafafa;
+}
+
+.register-form .form-select-container .form-select-cus .form-option-wrapper {
+    border-radius: 5px;
+}
+
+.register-form .form-select-container .form-select-cus .form-option-wrapper .form-option-placeholder-container .form-option-placeholder:hover {
+    border-radius: 5px 5px 0 0;
+}
+
+.register-form .form-select-container .form-select-cus .form-option-wrapper .form-option-container .form-option:last-child:hover {
+    border-radius: 0 0 5px 5px;
+}
+
+.register-form .form-select-container.active .form-select-cus {
+    border-color: transparent;
+}
+
+/* step 4 */
+#register-complete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 630px;
+}
+
+#register-complete h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 127px;
+}
+
+#register-complete h1 b {
+    color: #076ecc;
+    font-weight: 400;
+}
+
+#register-complete h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+#register-complete p {
+    font-size: 24px;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 90px;
+    margin-top: 35px;
+}
+
+.button-group .button {
+    width: 268px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 36px;
+}
+
+.button-group .button-blue {
+    background-color: #076ecc;
+    color: #fff;
+}
+
+.button-group .button-white {
+    border: 1px solid #bbb;
+}
