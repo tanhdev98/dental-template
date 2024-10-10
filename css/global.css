@@ -1036,7 +1036,8 @@
     overflow-y: scroll;
 }
 
-#wrap-tab-form .wrap-tab-right ul li {
+#wrap-tab-form .wrap-tab-right ul li,
+.tab-check-box li {
     line-height: 1;
     display: flex;
     align-items: center;
@@ -1044,11 +1045,13 @@
     margin-left: 25px;
 }
 
-#wrap-tab-form .wrap-tab-right ul li input[type="checkbox"] {
+ul li input[type="checkbox"],
+.tab-check-box li input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"]+span {
+input[type="checkbox"]+span,
+.tab-check-box input[type="checkbox"]+span {
     position: absolute;
     left: 0;
 }
@@ -1070,7 +1073,8 @@ input[type="checkbox"]:checked+span::before {
     opacity: 1;
 }
 
-#wrap-tab-form .wrap-tab-right ul li>span {
+#wrap-tab-form .wrap-tab-right ul li>span,
+.tab-check-box li>span {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -1079,11 +1083,13 @@ input[type="checkbox"]:checked+span::before {
     cursor: pointer;
 }
 
-#wrap-tab-form .wrap-tab-right ul li input[type="checkbox"]:checked+span {
+#wrap-tab-form .wrap-tab-right ul li input[type="checkbox"]:checked+span,
+.tab-check-box li input[type="checkbox"]:checked+span {
     border-color: #0068b7;
 }
 
-#wrap-tab-form .wrap-tab-right ul li label {
+#wrap-tab-form .wrap-tab-right ul li label,
+.tab-check-box li label {
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
@@ -1092,7 +1098,8 @@ input[type="checkbox"]:checked+span::before {
     z-index: 1;
 }
 
-#wrap-tab-form .wrap-tab-right ul li label span {
+#wrap-tab-form .wrap-tab-right ul li label span,
+.tab-check-box li label span {
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;

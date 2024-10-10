@@ -279,3 +279,24 @@
 .icon-magnifying-glass::after {
     background-image: url('../images/icons/icon-magnifying-glass.png');
 }
+
+.icon-magnifying-glass {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-date::after {
+    background-image: url('../images/icons/icon-date.png');
+}
+
+.icon-date {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0px;
+    right: 13px;
+    background: #fff;
+    cursor: pointer;
+    z-index: 2;
+    pointer-events: auto;
+}
