@@ -61,6 +61,7 @@
     padding: 50px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    position: relative;
 }
 
 /* step 1 */
@@ -264,6 +265,7 @@
     padding: 120px 60px 130px;
 }
 
+/* terms and conditions */
 #terms-and-conditions {
     padding: 0;
     border: none;
@@ -338,4 +340,21 @@
 
 #terms-and-conditions ul li .content-terms p .space {
     display: block;
+}
+
+/* register form */
+
+#register-page .content-wrap>p {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #076ecc;
+}
+
+#register-invidual-form .type-register {
+    color: #d29132;
+}
+
+#dental-invidual-form .type-register {
+    color: #80b156;
 }
