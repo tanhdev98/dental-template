@@ -54,6 +54,11 @@ $(document).ready(function () {
     function openOptionList(e) {
         let form_select_container = e.currentTarget.closest(".form-select-container");
 
+        // Kiểm tra nếu form-select-container có class 'disabled'
+        if (form_select_container.classList.contains('disabled')) {
+            return;
+        }
+
         // Kiểm tra không gian phía dưới và điều chỉnh hướng dropdown
         let rect = form_select_container.getBoundingClientRect();
         let spaceBelow = window.innerHeight - rect.bottom;
@@ -104,6 +109,17 @@ $(document).ready(function () {
 
             options.forEach(o => o.classList.remove("active"));
             e.currentTarget.classList.add("active");
+        }
+        if (select_html.classList.contains('link')) {
+            console.log('aaa');
+        }
+
+        // Log the selected option's value
+        console.log("Selected Option Value:", select_html.value);
+
+        if (select_html.value.startsWith("http://") || select_html.value.startsWith("https://")) {
+            let url = select_html.value;
+            window.open(url, "_blank");
         }
     }
 
