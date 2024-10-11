@@ -126,6 +126,10 @@ li.dot::before {
     display: none;
 }
 
+.tab-content-item.active {
+    display: block;
+}
+
 .tabs.tab-user {
     align-items: end;
     padding-bottom: 30px;

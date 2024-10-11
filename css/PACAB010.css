@@ -101,20 +101,13 @@
     right: 0;
 }
 
-.tabs li.active .icon {
+#tab-search .tabs li.active .icon {
     display: flex !important;
 }
 
-.tab-content-item {
-    position: relative;
-    padding: 39px 80px 53px;
-    display: none;
-}
-
-.tab-content-item.active {
-    background-color: #fff;
-    display: block;
+#tab-search .tab-content-item {
     border-radius: 0 0 10px 10px;
+    padding: 39px 80px 53px;
 }
 
 #wrap-search .tab-content-item .title-form {
