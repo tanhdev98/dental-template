@@ -234,3 +234,28 @@
 .button-group .button-white {
     border: 1px solid #bbb;
 }
+
+#register-page .tabs {
+    border-bottom: transparent;
+    height: 81px;
+}
+
+#register-page .tabs li span {
+    font-size: 36px;
+    background-color: #f3f7f8;
+    border-bottom: 1px solid #000;
+    height: 100%;
+}
+
+#register-page .tabs li.active span {
+    border-bottom: 1px solid transparent;
+    background-color: #fff;
+}
+
+#register-page .tabs li.active:first-child span {
+    color: #80b156;
+}
+
+#register-page .tabs li.active:last-child span {
+    color: #d29132;
+}

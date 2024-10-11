@@ -266,8 +266,8 @@
     background-image: url('../images/icons/icon-reset.png');
 }
 
-.icon-ghim::after {
-    background-image: url('../images/icons/icon-ghim.png');
+.icon-pin::after {
+    background-image: url('../images/icons/icon-pin.png');
 }
 
 .icon-x::after {
@@ -278,21 +278,17 @@
     background-image: url('../images/icons/icon-info.png');
 }
 
+.icon-magnifying-glass {
+    width: 25px;
+    height: 25px;
+}
+
 .icon-magnifying-glass::after {
     background-image: url('../images/icons/icon-magnifying-glass.png');
 }
 
 .icon-info-register::after {
     background-image: url('../images/icons/icon-info-register.png');
-}
-
-.icon-magnifying-glass {
-    width: 25px;
-    height: 25px;
-}
-
-.icon-date::after {
-    background-image: url('../images/icons/icon-date.png');
 }
 
 .icon-date {
@@ -305,4 +301,8 @@
     cursor: pointer;
     z-index: 2;
     pointer-events: none;
+}
+
+.icon-date::after {
+    background-image: url('../images/icons/icon-date.png');
 }

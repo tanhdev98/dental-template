@@ -13,6 +13,7 @@
 
 .tabs li {
     width: 100%;
+    cursor: pointer;
 }
 
 .tabs.short-tab li {
@@ -23,7 +24,7 @@
     margin-left: -1px;
 }
 
-.tabs li a {
+.tabs li span {
     display: block;
     border: none;
     outline: none;
@@ -43,12 +44,11 @@
     border-bottom: 1px solid #0068b7;
 }
 
-
 .tabs li.active {
     z-index: 12;
 }
 
-.tabs li.active a {
+.tabs li.active span {
     border: none;
     outline: none;
     border: 1px solid #000;
@@ -62,7 +62,7 @@
     border-bottom: #fff;
 }
 
-.tabs.border-active-blue li.active a {
+.tabs.border-active-blue li.active span {
     border: 1px solid #0068b7;
     border-bottom: none;
     color: #0068b7;
@@ -174,15 +174,11 @@ li.dot::before {
     position: relative;
 }
 
-#tabs-form .tabs li span {
-    color: #999;
-}
-
 #tabs-form .tabs li:last-child {
     max-width: 204px;
 }
 
-#tabs-form .tabs li a {
+#tabs-form .tabs li span {
     text-align: left;
     padding-left: 25px;
     position: relative;
@@ -194,19 +190,19 @@ li.dot::before {
     gap: 7px;
 }
 
-#tabs-form .tabs li.active a span {
+#tabs-form .tabs li.active span {
     font-weight: 400;
     color: #333;
     font-size: 20px;
 }
 
-#tabs-form .tabs li i {
+#tabs-form .tabs li .icon {
     display: block;
     width: 16px;
     height: 16px;
 }
 
-#tabs-form .tabs li i:after {
+#tabs-form .tabs li .icon:after {
     display: flex;
 }
 
