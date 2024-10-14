@@ -1005,6 +1005,9 @@
 .tab-check-box input[type="radio"]+span {
     position: absolute;
     left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .item-radioBox input[type="radio"]+span::before {

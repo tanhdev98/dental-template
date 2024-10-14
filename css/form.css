@@ -29,7 +29,7 @@ input[type='radio'] {
 
 /* input */
 .form-row input:not([type="radio"]) {
-    padding-left: 16px;
+    padding: 0 16px;
     width: 400px;
     height: 40px;
     border-radius: 3px;
