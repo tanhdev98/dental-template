@@ -264,10 +264,6 @@
     color: #666;
 }
 
-.form-select-container>.form-select-cus>.form-option-placeholder {
-    color: #666;
-}
-
 @media screen and (width <=1320px) {
     .table>li>div {
         grid-template-columns: repeat(2, 1fr);

@@ -424,6 +424,8 @@
     border: 1px solid #999;
     background-color: #fff;
     border-radius: 5px;
+    max-height: 400px;
+    overflow: scroll;
 }
 
 .form-select-container.active>.form-select-cus>.form-option-wrapper {
@@ -1005,6 +1007,9 @@
 .tab-check-box input[type="radio"]+span {
     position: absolute;
     left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .item-radioBox input[type="radio"]+span::before {

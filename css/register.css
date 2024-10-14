@@ -151,29 +151,29 @@
     width: 70px;
 }
 
-.register-form .form-select-container {
+#register-page #register-check .form-select-container {
     height: 100%;
 }
 
-.register-form .form-select-container .form-select-cus {
+#register-page #register-check .form-select-container .form-select-cus {
     border-radius: 5px;
     border-color: #bbb;
     background-color: #fafafa;
 }
 
-.register-form .form-select-container .form-select-cus .form-option-wrapper {
+#register-page #register-check .form-select-container .form-select-cus .form-option-wrapper {
     border-radius: 5px;
 }
 
-.register-form .form-select-container .form-select-cus .form-option-wrapper .form-option-placeholder-container .form-option-placeholder:hover {
+#register-page #register-check .form-select-container .form-select-cus .form-option-wrapper .form-option-placeholder-container .form-option-placeholder:hover {
     border-radius: 5px 5px 0 0;
 }
 
-.register-form .form-select-container .form-select-cus .form-option-wrapper .form-option-container .form-option:last-child:hover {
+#register-page #register-check .form-select-container .form-select-cus .form-option-wrapper .form-option-container .form-option:last-child:hover {
     border-radius: 0 0 5px 5px;
 }
 
-.register-form .form-select-container.active .form-select-cus {
+#register-page #register-check .form-select-container.active .form-select-cus {
     border-color: transparent;
 }
 
@@ -343,18 +343,213 @@
 }
 
 /* register form */
+#register-page .content-wrap .require-input {
+    color: #076ecc;
+    font-size: 16px;
+    margin-left: 20px;
+}
 
-#register-page .content-wrap>p {
+#register-page .content-wrap>.require-input {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #076ecc;
+}
+
+#register-dental-form,
+#register-invidual-form {
+    padding-bottom: 100px;
 }
 
 #register-invidual-form .type-register {
     color: #d29132;
 }
 
-#dental-invidual-form .type-register {
+#register-dental-form .type-register {
     color: #80b156;
+}
+
+#register-page .form li {
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 25px;
+    height: 37px;
+}
+
+#register-page .form li:last-child {
+    margin-bottom: 0;
+}
+
+#register-page .form li::before {
+    content: '*';
+    margin-right: 5px;
+    color: #666;
+}
+
+#register-page .form .title-form {
+    width: 200px;
+    color: #666;
+}
+
+#register-page .form .content-form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 3px;
+}
+
+#register-page .form .content-form input {
+    font-size: 18px;
+    width: 200px;
+    height: 100%;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border-color: #bbb;
+}
+
+#register-page .content-form .button-gray {
+    background-color: #f5f5f5;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 90px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#register-page .form-select-container.disabled .form-select-cus,
+#register-page input:disabled {
+    background-color: #e4e4e4 !important;
+    pointer-events: none !important;
+}
+
+#register-page .content-form .form-select-container {
+    background-color: #fafafa;
+}
+
+#register-page .content-form .form-select-container>.form-select-cus>.form-option-placeholder {
+    font-size: 18px;
+}
+
+#register-page .content-form .form-select-container.select-year {
+    width: 110px;
+}
+
+#register-page .content-form .form-select-container.select-month,
+#register-page .content-form .form-select-container.select-day {
+    width: 90px;
+}
+
+#register-page .content-form .form-select-container .form-select-cus {
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#register-page .content-form .form-select-container.select-class {
+    width: 278px;
+}
+
+#register-page .content-form>label {
+    margin-left: 25px;
+}
+
+#register-page .content-form>label input[type="checkbox"] {
+    width: max-content;
+}
+
+#register-page .content-form .form-select-container.select-phone {
+    width: 97px;
+}
+
+#register-page .content-form.form-phone {
+    gap: 11px;
+}
+
+#register-page .content-form.form-phone input[type="number"] {
+    width: 67px;
+}
+
+#register-page .content-form.form-email {
+    gap: 8px;
+    position: relative;
+}
+
+#register-page .content-form.form-email input {
+    width: 150px;
+}
+
+#register-page .content-form.form-email .select-phone {
+    width: 173px;
+}
+
+#register-page .content-form.form-email .require-input {
+    position: absolute;
+    bottom: -25px;
+    margin-left: 0;
+}
+
+#register-page .form .form-address {
+    margin-top: 60px;
+    margin-bottom: 110px;
+}
+
+#register-page .form .form-address .content-form {
+    display: block;
+}
+
+#register-page .form .form-address .content-form .address-code-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+    margin-bottom: 4px;
+}
+
+#register-page .form .form-address .content-form>input {
+    display: block;
+    margin-bottom: 4px;
+    width: 770px;
+}
+
+#register-page .form .form-address .content-form .button-gray {
+    width: 120px;
+}
+
+#register-page .radio-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#register-page .item-radioBox label {
+    display: flex;
+}
+
+#register-page .item-radioBox label span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#register-page .content-wrap .form-sms .require-input {
+    line-height: 36px;
+    margin-top: 36px;
+}
+
+#register-page .content-form .form-select-container.select-school {
+    width: 160px;
+}
+
+#register-page .form-business-number input[maxlength="3"] {
+    width: 80px;
+}
+
+#register-page .form-business-number input[maxlength="2"] {
+    width: 65px;
+}
+
+#register-page .form-business-number input[maxlength="5"] {
+    width: 113px;
 }
