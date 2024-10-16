@@ -3,10 +3,18 @@ $(document).ready(function () {
         $('#side-nav').toggleClass('active');
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
-            $(this).addClass('close').appendTo('#side-nav').css('position', 'absolute').css('top', '20px').css('left', '0px').css('right', 'auto');
+            $(this).addClass('close').appendTo('#side-nav').css({
+                "position": "absolute",
+                'top': '20px',
+                'left': '0px',
+                'right': 'auto',
+            });
         }
         else {
-            $(this).removeClass('close').appendTo('#top-sub-page').css('position', 'fixed').css('top', '50px').css('right', '15px').css('left', 'auto');
+            $(this).removeClass('close').appendTo('#top-sub-page').css({
+                'left': 'auto',
+                'right': '15px'
+            });
         }
     });
 });
