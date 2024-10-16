@@ -316,3 +316,34 @@
 .icon-date::after {
     background-image: url('../images/icons/icon-date.png');
 }
+
+.icon-chat:after,
+.icon-document:after,
+.icon-letter-bigger:after {
+    mask-repeat: no-repeat;
+    mask-position: center top;
+    mask-size: contain;
+    position: absolute;
+    background-size: contain;
+    background-color: #000;
+}
+
+.icon-chat:after {
+    background: url('../images/icons/icon-chat-black.png') no-repeat center / 100%;
+}
+
+.icon-document:after {
+    background: url('../images/icons/icon-document.png') no-repeat center / 100%;
+}
+
+.icon-letter-bigger:after {
+    background: url('../images/icons/icon-letter-bigger.png') no-repeat center / 100%;
+}
+
+.icon-gift:after {
+    background: url('../images/icons/icon-gift.png') no-repeat center / 100%;
+}
+
+.icon-document-harm:after {
+    background: url('../images/icons/document-harm.png') no-repeat center / 100%;
+}

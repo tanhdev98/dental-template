@@ -1155,3 +1155,60 @@
 .button-group .button-white {
     border: 1px solid #bbb;
 }
+
+
+/* Header Frame */
+
+.header-frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #111;
+    margin-top: 5px;
+    padding-bottom: 24px;
+}
+
+.header-frame h1 {
+    margin-bottom: 0;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.header-frame a {
+    color: #666;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+}
+
+.header-frame a span {
+    color: #666;
+}
+
+.header-frame .icon {
+    width: 8px;
+    height: 8px;
+}
+
+.header-frame .icon::before {
+    width: 2px;
+}
+
+.header-frame .icon::after {
+    height: 2px;
+}
+
+.header-frame .icon::before,
+.header-frame .icon::after {
+    background-color: #666;
+}
+
+.header-frame a:hover span {
+    color: #0068b7;
+}
+
+.header-frame a:hover .icon::after {
+    background-color: #0068b7;
+}
