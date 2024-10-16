@@ -171,3 +171,91 @@
 .frame-section .top-link:hover::after {
     background: url('../images/arrow-down-black_hover.png') no-repeat center / contain;
 }
+
+@media screen and (width <=1320px) {
+    #top-sub-page #side-nav {
+        position: fixed;
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.3s ease;
+        right: 0;
+    }
+
+    #top-sub-page #side-nav.active {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #icon-side-nav {
+        position: fixed;
+        top: 50px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+    }
+
+    #icon-side-nav span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #333;
+    }
+
+    #icon-side-nav span:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: #333;
+    }
+
+    #icon-side-nav span::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: #333;
+    }
+
+    #icon-side-nav.close span {
+        background-color: transparent;
+    }
+
+    #icon-side-nav.close span:before {
+        width: 25px;
+        transform: rotate(45deg) translate(11px, 3px);
+    }
+
+    #icon-side-nav.close span::after {
+        width: 25px;
+        transform: rotate(-45deg) translate(11px, -3px);
+    }
+
+    #icon-side-nav.active {
+        transition: 0.35s all 0.04s ease;
+    }
+
+    .side-banner {
+        display: none;
+    }
+
+    #content.sub-page .main-section .content-frame .table-horizontal li {
+        display: grid !important;
+        grid-template-columns: 130px calc(100% - 130px) !important;
+    }
+
+    #content.sub-page .main-section .content-frame .table-horizontal li .table-content+.table-title,
+    #content.sub-page .main-section .content-frame .table-horizontal li .table-content+.table-title+.table-content {
+        border-top: 1px solid #ddd;
+    }
+}
