@@ -100,8 +100,12 @@
     height: 108px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 963px;
     padding: 0 40px;
+
 }
 
 #register-check .submit-form {
@@ -527,9 +531,50 @@
     width: 113px;
 }
 
+@media screen and (width <=1440px) {
+    #register-step ul {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #register-step ul li {
+        flex: 1 1 calc(50% -10px);
+    }
+
+    #register-check .banner {
+        height: auto;
+        gap: 50px;
+        padding: 40px 20px;
+        justify-content: center;
+    }
+}
 
 @media screen and (width <=1320px) {
     .register-container {
         padding: 0;
     }
+
+    #register-step ul li {
+        flex: 1 1 50%;
+    }
+
+    #register-check .banner {
+        flex-direction: column;
+    }
+
+    #register-step ul li+li::before {
+        width: 23px;
+        left: -40px;
+        top: 0;
+        left: 50%;
+        transform: rotate(90deg) translate(-150%, 50%);
+    }
+
+    .register-form .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
 }
