@@ -140,6 +140,7 @@
     background-image: url('../images/icons/icon-nav-docs.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-docs::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-docs::after {
     background-image: url('../images/icons/icon-nav-docs_hover.png');
 }
@@ -148,6 +149,7 @@
     background-image: url('../images/icons/icon-nav-list.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-list::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-list::after {
     background-image: url('../images/icons/icon-nav-list_hover.png');
 }
@@ -156,6 +158,7 @@
     background-image: url('../images/icons/icon-nav-light.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-light::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-light::after {
     background-image: url('../images/icons/icon-nav-light_hover.png');
 }
@@ -164,6 +167,7 @@
     background-image: url('../images/icons/icon-nav-star.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-star::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-star::after {
     background-image: url('../images/icons/icon-nav-star_hover.png');
 }
@@ -176,6 +180,7 @@
     background-image: url('../images/icons/icon-letter.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-letter::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-letter::after {
     background-image: url('../images/icons/icon-nav-letter_hover.png');
 }
@@ -184,6 +189,7 @@
     background-image: url('../images/icons/icon-nav-coins.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-coins::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-coins::after {
     background-image: url('../images/icons/icon-nav-coins_hover.png');
 }
@@ -192,6 +198,7 @@
     background-image: url('../images/icons/icon-nav-setting.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-setting::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-setting::after {
     background-image: url('../images/icons/icon-nav-setting_hover.png');
 }
@@ -200,6 +207,7 @@
     background-image: url('../images/icons/icon-nav-user.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-user::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-user::after {
     background-image: url('../images/icons/icon-nav-user_hover.png');
 }
@@ -208,6 +216,7 @@
     background-image: url('../images/icons/icon-nav-promo.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-promo::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-promo::after {
     background-image: url('../images/icons/icon-nav-promo_hover.png');
 }
@@ -216,6 +225,7 @@
     background-image: url('../images/icons/icon-nav-lock.png');
 }
 
+#top-sub-page #side-nav ul li.active .icon-nav-lock::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-lock::after {
     background-image: url('../images/icons/icon-nav-lock_hover.png');
 }
