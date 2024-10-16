@@ -174,7 +174,6 @@
     background: url('../images/arrow-down-black_hover.png') no-repeat center / contain;
 }
 
-<<<<<<< HEAD
 @media screen and (width <=1320px) {
     #top-sub-page #side-nav {
         position: fixed;
@@ -262,16 +261,3 @@
         border-top: 1px solid #ddd;
     }
 }
-=======
-#content.sub-page .main-section {
-    width: 100%;
-    padding: 20px 0;
-}
-
-#content.sub-page .main-section .title-sub-page {
-    font-size: 40px;
-    font-weight: 800;
-}
-
-/* setting-info */
->>>>>>> de10fd7988271b6cbffde985c4dfc312bc6a73fe
