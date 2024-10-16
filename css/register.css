@@ -17,9 +17,11 @@
 
 #register-step ul {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     padding: 0 33px;
+    gap: 58px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #register-step ul li {
@@ -34,13 +36,13 @@
     position: relative;
 }
 
-#register-step ul li::after {
+#register-step ul li+li::before {
     content: '';
     position: absolute;
     background: url('../images/icons/icon-next-step.png') no-repeat center / contain;
     height: 16px;
     width: 23px;
-    right: -40px;
+    left: -40px;
 }
 
 #register-step ul li:last-child::after {
@@ -523,4 +525,11 @@
 
 #register-page .form-business-number input[maxlength="5"] {
     width: 113px;
+}
+
+
+@media screen and (width <=1320px) {
+    .register-container {
+        padding: 0;
+    }
 }
