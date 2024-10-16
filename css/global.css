@@ -1130,20 +1130,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    height: 90px;
-    margin-top: 35px;
+    gap: 20px;
+    height: 45px;
+    margin-top: 30px;
 }
 
 .button-group .button {
-    min-width: 250px;
-    padding: 0 40px;
+    min-width: 160px;
+    padding: 0 30px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    font-size: 36px;
+    border-radius: 22px;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .button-group .button-blue {

@@ -105,11 +105,7 @@
     width: 100%;
     max-width: 963px;
     padding: 0 40px;
-
-}
-
-#register-check .submit-form {
-    margin: 51px auto;
+    margin-top: 50px;
 }
 
 #register-check .register-form .form.title-form {
@@ -350,6 +346,8 @@
     font-size: 22px;
     margin-bottom: 25px;
     height: 37px;
+    position: relative;
+    padding-left: 17px;
 }
 
 #register-page .form li:last-child {
@@ -358,8 +356,14 @@
 
 #register-page .form li::before {
     content: '*';
-    margin-right: 5px;
-    color: #666;
+    position: absolute;
+    color: #ff0000;
+    left: 0;
+    top: 10px;
+}
+
+#register-page .form li.blue::before {
+    color: #076ecc;
 }
 
 #register-page .form .title-form {
