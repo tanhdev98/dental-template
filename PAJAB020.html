@@ -13,7 +13,6 @@
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/close-top-banner.js"></script>
-    <script src="js/side-nav.js"></script>
 </head>
 
 <body>
@@ -48,7 +47,6 @@
         <div class="container">
             <div id="top-sub-page">
                 <!-- Side Nav -->
-                <div id="icon-side-nav"><span></span></div>
                 <div id="side-nav">
                     <ul class="frame-section">
                         <li class="active"><a href="#"><i class="icon icon-nav-docs"></i>이력서관리</a></li>
@@ -68,21 +66,34 @@
                 </div>
                 <!-- End Side Nav -->
                 <!-- Main Section -->
-                <div id="information-management">
+                <div id="information-management" class="edit">
                     <div class="main-section">
                         <h1 class="title-sub-page">치과 정보 관리</h1>
 
                         <div class="frame-section">
                             <div class="header-frame">
                                 <h1>치과 정보</h1>
+                                <p class="note">* 사업자 번호 및 대표자명 변경을 희망하신다면 고객센터에 연락하세요.</p>
                             </div>
                             <div class="content-frame">
                                 <ul class="table-horizontal">
                                     <li>
                                         <div class="table-title">기업명</div>
-                                        <div class="table-content">덴탈치과</div>
+                                        <div class="table-content">
+                                            <input type="text" value="덴탈치과">
+                                        </div>
                                         <div class="table-title">사업장 구분</div>
-                                        <div class="table-content">치과병원</div>
+                                        <div class="table-content">
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="table-title">대표자명</div>
@@ -93,12 +104,18 @@
                                     <li>
                                         <div class="table-title">주소</div>
                                         <div class="table-content">
-                                            <p>(21378)</p>
-                                            <p>서울특별시 광진구 천호대로 537</p>
-                                            <p>15층,덴탈치과 </p>
+                                            <p><input type="text" value="(21378)"><button
+                                                    class="button button-white">주소찾기</button></p>
+                                            <p><input type="text" value="서울특별시 광진구 천호대로 537"></p>
+                                            <p><input type="text" value="15층,덴탈치과"></p>
                                         </div>
+                                        <div class="table-col-span">
+                                            <img src="./images/PAJAB020/map-image.png" alt="Map Image">
+                                        </div>
+                                    </li>
+                                    <li>
                                         <div class="table-title">홈페이지</div>
-                                        <div class="table-content">-</div>
+                                        <div class="table-content"><input type="text" value="-"></div>
                                     </li>
                                 </ul>
                             </div>
@@ -112,25 +129,108 @@
                                 <ul class="table-horizontal">
                                     <li>
                                         <div class="table-title">담당자명</div>
-                                        <div class="table-content">김담당</div>
+                                        <div class="table-content"><input type="text" value="김담당"></div>
                                     </li>
                                     <li>
                                         <div class="table-title">담당자 이메일</div>
-                                        <div class="table-content">hr@dental.com</div>
+                                        <div class="table-content table-row">
+                                            <input type="text" value="hr">
+                                            <span>@</span>
+                                            <div class="form-select-container select-email">
+                                                <select>
+                                                    <option value="" class="option-placeholder">선택</option>
+                                                    <option value="chol.com">chol.com</option>
+                                                    <option value="dreamwiz.com">dreamwiz.com</option>
+                                                    <option value="gmail.com">gmail.com</option>
+                                                    <option value="hanmail.net">hanmail.net</option>
+                                                    <option value="hotmail.com">hotmail.com</option>
+                                                    <option value="msn.com">msn.com</option>
+                                                    <option value="nate.com">nate.com</option>
+                                                    <option value="naver.com">naver.com</option>
+                                                    <option value="netian.com">netian.com</option>
+                                                    <option value="yahoo.com">yahoo.com</option>
+                                                    <option value="zdirect">직접입력</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="table-title">전화번호</div>
-                                        <div class="table-content">02-0000-0000</div>
+                                        <div class="table-content table-row">
+                                            <div class="form-select-container select-phone">
+                                                <select>
+                                                    <option class="option-placeholder">02</option>
+                                                    <option value="02">02</option>
+                                                    <option value="031">031</option>
+                                                    <option value="032">032</option>
+                                                    <option value="033">033</option>
+                                                    <option value="041">041</option>
+                                                    <option value="042">042</option>
+                                                    <option value="043">043</option>
+                                                    <option value="044">044</option>
+                                                    <option value="051">051</option>
+                                                    <option value="052">052</option>
+                                                    <option value="053">053</option>
+                                                    <option value="054">054</option>
+                                                    <option value="055">055</option>
+                                                    <option value="061">061</option>
+                                                    <option value="062">062</option>
+                                                    <option value="063">063</option>
+                                                    <option value="064">064</option>
+                                                    <option value="070">070</option>
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="017">017</option>
+                                                    <option value="018">018</option>
+                                                    <option value="019">019</option>
+                                                </select>
+                                            </div>
+                                            <span>-</span>
+                                            <input type="number" value="00000000">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="table-title">휴대폰</div>
-                                        <div class="table-content">010-0000-0000</div>
+                                        <div class="table-content table-row">
+                                            <div class="form-select-container select-phone">
+                                                <select>
+                                                    <option class="option-placeholder">010</option>
+                                                    <option value="02">02</option>
+                                                    <option value="031">031</option>
+                                                    <option value="032">032</option>
+                                                    <option value="033">033</option>
+                                                    <option value="041">041</option>
+                                                    <option value="042">042</option>
+                                                    <option value="043">043</option>
+                                                    <option value="044">044</option>
+                                                    <option value="051">051</option>
+                                                    <option value="052">052</option>
+                                                    <option value="053">053</option>
+                                                    <option value="054">054</option>
+                                                    <option value="055">055</option>
+                                                    <option value="061">061</option>
+                                                    <option value="062">062</option>
+                                                    <option value="063">063</option>
+                                                    <option value="064">064</option>
+                                                    <option value="070">070</option>
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="017">017</option>
+                                                    <option value="018">018</option>
+                                                    <option value="019">019</option>
+                                                </select>
+                                            </div>
+                                            <span>-</span>
+                                            <input type="number" value="00000000">
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="frame-section">
+                        <div class="frame-section edit-image">
                             <div class="header-frame">
                                 <h1>치과 소개</h1>
                             </div>
@@ -263,6 +363,15 @@
         </div>
     </div>
     <!-- End footer -->
+
+    <script>
+        $(document).ready(() => {
+            if ($('.edit')) {
+                $('.image-container').append(`<div class="button-remove"></div>`);
+            }
+            $('.blank-image').remove('.button-remove');
+        })
+    </script>
 </body>
 
 </html>

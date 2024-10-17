@@ -426,21 +426,11 @@
 
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content {
     flex: 1;
-    padding: 20px 0 20px 24px;
+    padding: 20px 24px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-}
-
-#content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-#content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list .image-container {
-    width: 125px;
 }
 
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list .blank-image {
@@ -448,4 +438,14 @@
     display: flex;
     align-items: center;
     background: url('../images/organization-image-blank.png') no-repeat center / 100%;
+}
+
+#content.sub-page .main-section .content-frame .table-horizontal li .table-content p {
+    display: flex;
+    gap: 15px;
+}
+
+/* #content.sub-page .main-section .content-frame .table-horizontal li  */
+#content.sub-page .main-section .content-frame .table-horizontal li .table-content.form-email input {
+    width: 160px;
 }
