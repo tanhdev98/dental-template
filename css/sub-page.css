@@ -23,66 +23,6 @@
     margin-top: 20px;
 }
 
-.frame-section .header-frame {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #111;
-    margin-top: 5px;
-    padding-bottom: 24px;
-}
-
-.frame-section .header-frame h1 {
-    margin-bottom: 0;
-    font-size: 29px;
-    font-weight: 600;
-}
-
-.frame-section .header-frame .note {
-    color: #999;
-    font-weight: 600;
-}
-
-.frame-section .header-frame a {
-    color: #666;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    font-weight: 600;
-}
-
-.frame-section .header-frame a span {
-    color: #666;
-}
-
-.frame-section .header-frame .icon {
-    width: 8px;
-    height: 8px;
-}
-
-.frame-section .header-frame .icon::before {
-    width: 2px;
-}
-
-.frame-section .header-frame .icon::after {
-    height: 2px;
-}
-
-.frame-section .header-frame .icon::before,
-.frame-section .header-frame .icon::after {
-    background-color: #666;
-}
-
-.frame-section .header-frame a:hover span {
-    color: #0068b7;
-}
-
-.frame-section .header-frame a:hover .icon::before,
-.frame-section .header-frame a:hover .icon::after {
-    background-color: #0068b7;
-}
-
 #top-sub-page #side-nav {
     width: 270px;
     height: 100%;
