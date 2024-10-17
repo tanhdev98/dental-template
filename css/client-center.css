@@ -360,3 +360,66 @@
     word-break: keep-all;
     line-height: 22px;
 }
+
+/* Request Email */
+#request-email h1.title {
+    margin: 45px 0 21px;
+}
+
+#request-email .request {
+    height: 60px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 42px 0 22px;
+    width: fit-content;
+    gap: 68px;
+}
+
+#request-email .request span {
+    font-size: 24px;
+    font-weight: 300;
+    color: #696969;
+}
+
+#request-email .request button {
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 0 16px;
+}
+
+#request-email .table-horizontal {
+    border-top: 1px solid #666;
+    margin-top: 14px;
+}
+
+#request-email .table-horizontal li {
+    border-bottom-color: #d3d3d3;
+}
+
+#request-email .table-horizontal li .table-title {
+    width: 252px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #666;
+    padding: 20px 0 20px 45px;
+}
+
+#request-email input {
+    font-size: 18px;
+    width: 200px;
+    height: 100%;
+    border-radius: 5px;
+    border-color: #bbb;
+    border: 1px solid #ddd;
+    padding: 0 16px;
+    height: 37px;
+}
+
+#request-email .table-horizontal li .table-content {
+    flex-direction: row;
+}
