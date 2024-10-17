@@ -155,16 +155,20 @@
 
 #accordion .header-frame {
     padding-bottom: 21px;
-    border-color: #333;
+}
+
+#accordion .header-frame a,
+#accordion .header-frame a span {
+    color: #333;
+}
+
+#accordion .header-frame a:hover,
+#accordion .header-frame a:hover span {
+    color: #0068b7;
 }
 
 #accordion .header-frame h1 {
     font-size: 28px;
-}
-
-#accordion .header-frame a {
-    color: #333;
-    font-size: 18px;
 }
 
 #accordion .accodion-item {
@@ -213,8 +217,19 @@
     margin-top: 47px;
 }
 
+#notification .header-frame {
+    color: #333;
+}
+
+#notification .header-frame a,
 #notification .header-frame a span {
     color: #333;
+    font-size: 18px;
+}
+
+#notification .header-frame a:hover,
+#notification .header-frame a:hover span {
+    color: #0068b7;
 }
 
 #notification .content-frame {
@@ -265,6 +280,10 @@
 #notification .content-table li .item-title {
     font-size: 18px;
     line-height: 1;
+}
+
+#notification .content-table li .item-title:hover a {
+    color: #076ecc;
 }
 
 #notification .content-table li .date {
