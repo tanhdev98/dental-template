@@ -227,20 +227,19 @@
 }
 
 #notification .table li.wrap-item+.wrap-item {
-    padding: 15px 30px 14px;
+    padding: 10px 30px 9px;
 }
 
 #notification .table li.wrap-item {
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px 14px;
+    padding: 10px 30px 9px;
 }
 
 #notification .table li.wrap-item+.wrap-item {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    padding: 19px 31px 20px;
 }
 
 #notification .table li .wrap-left {
