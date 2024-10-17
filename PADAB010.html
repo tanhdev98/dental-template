@@ -13,6 +13,7 @@
     <script src="js/dropdown.js"></script>
     <script src="js/side-ads.js"></script>
     <script src="js/close-top-banner.js"></script>
+    <script src="js/accodion.js"></script>
 </head>
 
 <body>
@@ -633,23 +634,6 @@
                 document.querySelectorAll('.tab-content-item')[index].classList.add('active');
             });
         });
-
-        $(document).on('click', '.view-more-btn', function () {
-            const $this = $(this);
-            const $contentTerms = $this.closest('li').find('.content-terms');
-
-            if (!$this.hasClass('active')) {
-                $('.view-more-btn.active').removeClass('active')
-                    .closest('li').find('.content-terms').slideUp();
-
-                $this.addClass('active');
-                $contentTerms.stop(true, true).slideDown();
-            } else {
-                $this.removeClass('active');
-                $contentTerms.stop(true, true).slideUp();
-            }
-        });
-
 
         $(document).on('click', '#accept-all', function () {
             if (this.checked) {
