@@ -129,6 +129,80 @@
     font-weight: 800;
 }
 
+.edit .frame-section .content-frame input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0 6px;
+    font-weight: 600;
+    height: 33px;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+/* select */
+#information-management .form-select-container {
+    margin-left: -6px;
+    height: 33px;
+}
+
+#information-management .form-select-container>.form-select-cus {
+    border-radius: 0;
+    border-color: #ddd;
+}
+
+#information-management .form-select-container.active>.form-select-cus {
+    border-color: transparent;
+}
+
+#information-management .form-select-container>.form-select-cus>.form-option-placeholder {
+    color: #333;
+    padding: 0 6px;
+}
+
+.table-col-span {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 20px 30px 20px 0;
+}
+
+.frame-section .content-frame .button {
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+    padding: 0 25px;
+    white-space: nowrap;
+    margin-right: 6px;
+}
+
+.table-content.table-row {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: start !important;
+}
+
+.edit .table-content.table-row input {
+    width: 160px;
+    margin-right: 0;
+}
+
+.edit .table-content.table-row input:not(:first-child) {
+    margin-left: 0;
+}
+
+#information-management .form-select-container:not(:first-child) {
+    margin-left: 0;
+}
+
+#content.sub-page .edit .main-section .frame-section:not(.edit-image) .content-frame .table-horizontal li .table-content {
+    padding: 0 24px;
+}
+
+.edit .table-content.table-row>span {
+    width: 10px;
+}
+
 @media screen and (width <=1320px) {
     #top-sub-page #side-nav {
         position: fixed;
@@ -215,4 +289,48 @@
     #content.sub-page .main-section .content-frame .table-horizontal li .table-content+.table-title+.table-content {
         border-top: 1px solid #ddd;
     }
+}
+
+#content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list .image-container {
+    width: auto;
+    position: relative;
+}
+
+.button-remove {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #cecece;
+    z-index: 1;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+}
+
+.button-remove::after,
+.button-remove::before {
+    content: '';
+    width: 1px;
+    height: 9px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.button-remove::after {
+    transform: rotate(45deg);
+}
+
+.button-remove::before {
+    transform: rotate(-45deg);
 }
