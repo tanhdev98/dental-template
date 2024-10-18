@@ -7,10 +7,12 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/PAIAA010.css">
+    <link rel="stylesheet" href="css/sub-page.css">
+    <link rel="stylesheet" href="css/common-member-setting.css">
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
 </head>
 
 <body>
@@ -46,8 +48,8 @@
             <!-- Top Sub Page -->
             <div id="top-sub-page">
                 <!-- Side Nav -->
-                <div id="side-nav" class="frame-section">
-                    <ul>
+                <div id="side-nav">
+                    <ul class="frame-section">
                         <li><a href="#"><i class="icon icon-nav-docs"></i>이력서관리</a></li>
                         <li><a href="#"><i class="icon icon-nav-list"></i>지원현황</a></li>
                         <li><a href="#"><i class="icon icon-nav-light"></i>스마트 매칭</a></li>
@@ -260,15 +262,15 @@
                 </div>
             </div>
             <div id="notification-tab" class="frame-section">
-                <ul class="wrap-tab hide-border-bottom bgr-f9 border-active-blue short-tab">
+                <ul class="tabs tab-user hide-border-bottom bgr-f9 border-active-blue short-tab">
                     <li class="active">
-                        <a href="#">스마트 매칭</a>
+                        <span>스마트 매칭</span>
                     </li>
                     <li>
-                        <a href="#">스크랩 공고</a>
+                        <span>스크랩 공고</span>
                     </li>
                     <li>
-                        <a href="#">최근 본 공고</a>
+                        <span>최근 본 공고</span>
                     </li>
                 </ul>
                 <ul class="table">
@@ -464,6 +466,9 @@
             <div class="menu">
                 <ul>
                     <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
                         <a href="#">회원약관</a>
                     </li>
                     <li>
@@ -471,9 +476,6 @@
                     </li>
                     <li>
                         <a href="#">이메일주소수집거부</a>
-                    </li>
-                    <li>
-                        <a href="#">사이트맵</a>
                     </li>
                     <li>
                         <a href="#">이용안내</a>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/sub-page.css">
+    <link rel="stylesheet" href="css/dental-member-setting.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="sub-header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo-sub-dental.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="letter-notify">
+                        <a href="#" class="icon icon-letter"></a>
+                        <div class="count-notify">1</div>
+                    </div>
+                    <a href="#" class="profile-setting">
+                        <div class="avatar">
+                            <img src="./images/default-avatar-header.png" alt="avatar">
+                        </div>
+                        <div class="name">pdsoft 님</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Content -->
+    <div id="content" class="sub-page">
+        <div class="container">
+            <div id="top-sub-page">
+                <!-- Side Nav -->
+                <div id="side-nav">
+                    <ul class="frame-section">
+                        <li class="active"><a href="#"><i class="icon icon-nav-docs"></i>이력서관리</a></li>
+                        <li><a href="#"><i class="icon icon-nav-list"></i>지원현황</a></li>
+                        <li><a href="#"><i class="icon icon-nav-user"></i>지원자 관리</a></li>
+                        <li><a href="#"><i class="icon icon-nav-promo"></i>덴탈잡 이용권 관리</a></li>
+                        <li><a href="#"><i class="icon icon-nav-light"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
+                        <li><a href="#"><i class="icon icon-nav-coins"></i>DV 포인트 조회</a></li>
+                        <li><a href="#"><i class="icon icon-nav-lock"></i>내 정보 잠금 설정</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                    </ul>
+                    <a href="#" class="side-banner">
+                        <img src="./images/side-banner-sub-page.png" alt="Banner DentailJob">
+                    </a>
+                </div>
+                <!-- End Side Nav -->
+                <!-- Main Section -->
+                <div id="information-management" class="edit">
+                    <div class="main-section">
+                        <h1 class="title-sub-page">치과 정보 관리</h1>
+
+                        <div class="frame-section">
+                            <div class="header-frame">
+                                <h1>치과 정보</h1>
+                                <p class="note">* 사업자 번호 및 대표자명 변경을 희망하신다면 고객센터에 연락하세요.</p>
+                            </div>
+                            <div class="content-frame">
+                                <ul class="table-horizontal">
+                                    <li>
+                                        <div class="table-title">기업명</div>
+                                        <div class="table-content">
+                                            <input type="text" value="덴탈치과">
+                                        </div>
+                                        <div class="table-title">사업장 구분</div>
+                                        <div class="table-content">
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                    <option value="#">치과병원</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">대표자명</div>
+                                        <div class="table-content">박대표</div>
+                                        <div class="table-title">사업자 번호</div>
+                                        <div class="table-content">123-12-12345</div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">주소</div>
+                                        <div class="table-content">
+                                            <p><input type="text" value="(21378)"><button
+                                                    class="button button-white">주소찾기</button></p>
+                                            <p><input type="text" value="서울특별시 광진구 천호대로 537"></p>
+                                            <p><input type="text" value="15층,덴탈치과"></p>
+                                        </div>
+                                        <div class="table-col-span">
+                                            <img src="./images/PAJAB020/map-image.png" alt="Map Image">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">홈페이지</div>
+                                        <div class="table-content"><input type="text" value="-"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="frame-section">
+                            <div class="header-frame">
+                                <h1>채용 담당자</h1>
+                            </div>
+                            <div class="content-frame">
+                                <ul class="table-horizontal">
+                                    <li>
+                                        <div class="table-title">담당자명</div>
+                                        <div class="table-content"><input type="text" value="김담당"></div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">담당자 이메일</div>
+                                        <div class="table-content table-row">
+                                            <input type="text" value="hr">
+                                            <span>@</span>
+                                            <div class="form-select-container select-email">
+                                                <select>
+                                                    <option value="" class="option-placeholder">선택</option>
+                                                    <option value="chol.com">chol.com</option>
+                                                    <option value="dreamwiz.com">dreamwiz.com</option>
+                                                    <option value="gmail.com">gmail.com</option>
+                                                    <option value="hanmail.net">hanmail.net</option>
+                                                    <option value="hotmail.com">hotmail.com</option>
+                                                    <option value="msn.com">msn.com</option>
+                                                    <option value="nate.com">nate.com</option>
+                                                    <option value="naver.com">naver.com</option>
+                                                    <option value="netian.com">netian.com</option>
+                                                    <option value="yahoo.com">yahoo.com</option>
+                                                    <option value="zdirect">직접입력</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">전화번호</div>
+                                        <div class="table-content table-row">
+                                            <div class="form-select-container select-phone">
+                                                <select>
+                                                    <option class="option-placeholder">02</option>
+                                                    <option value="02">02</option>
+                                                    <option value="031">031</option>
+                                                    <option value="032">032</option>
+                                                    <option value="033">033</option>
+                                                    <option value="041">041</option>
+                                                    <option value="042">042</option>
+                                                    <option value="043">043</option>
+                                                    <option value="044">044</option>
+                                                    <option value="051">051</option>
+                                                    <option value="052">052</option>
+                                                    <option value="053">053</option>
+                                                    <option value="054">054</option>
+                                                    <option value="055">055</option>
+                                                    <option value="061">061</option>
+                                                    <option value="062">062</option>
+                                                    <option value="063">063</option>
+                                                    <option value="064">064</option>
+                                                    <option value="070">070</option>
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="017">017</option>
+                                                    <option value="018">018</option>
+                                                    <option value="019">019</option>
+                                                </select>
+                                            </div>
+                                            <span>-</span>
+                                            <input type="number" value="00000000">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">휴대폰</div>
+                                        <div class="table-content table-row">
+                                            <div class="form-select-container select-phone">
+                                                <select>
+                                                    <option class="option-placeholder">010</option>
+                                                    <option value="02">02</option>
+                                                    <option value="031">031</option>
+                                                    <option value="032">032</option>
+                                                    <option value="033">033</option>
+                                                    <option value="041">041</option>
+                                                    <option value="042">042</option>
+                                                    <option value="043">043</option>
+                                                    <option value="044">044</option>
+                                                    <option value="051">051</option>
+                                                    <option value="052">052</option>
+                                                    <option value="053">053</option>
+                                                    <option value="054">054</option>
+                                                    <option value="055">055</option>
+                                                    <option value="061">061</option>
+                                                    <option value="062">062</option>
+                                                    <option value="063">063</option>
+                                                    <option value="064">064</option>
+                                                    <option value="070">070</option>
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="017">017</option>
+                                                    <option value="018">018</option>
+                                                    <option value="019">019</option>
+                                                </select>
+                                            </div>
+                                            <span>-</span>
+                                            <input type="number" value="00000000">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="frame-section edit-image">
+                            <div class="header-frame">
+                                <h1>치과 소개</h1>
+                            </div>
+                            <div class="content-frame">
+                                <ul class="table-horizontal">
+                                    <li>
+                                        <div class="table-title">기관 로고</div>
+                                        <div class="table-content">
+                                            <div class="images-list">
+                                                <button class="button button-add-image"></button>
+                                                <div class="image-container">
+                                                    <img src="./images/PAJAB010/organization-logo.png"
+                                                        alt="Organization Logo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">기관 이미지<br>(3/8)</div>
+                                        <div class="table-content">
+                                            <div class="images-list">
+                                                <button class="button button-add-image"></button>
+                                                <div class="image-container">
+                                                    <img src="./images/PAJAB010/organization-image-1.png"
+                                                        alt="Organization Image">
+                                                </div>
+                                                <div class="image-container">
+                                                    <img src="./images/PAJAB010/organization-image-2.png"
+                                                        alt="Organization Image">
+                                                </div>
+                                                <div class="image-container">
+                                                    <img src="./images/PAJAB010/organization-image-3.png"
+                                                        alt="Organization Image">
+                                                </div>
+                                                <div class="image-container blank-image"></div>
+                                                <div class="image-container blank-image"></div>
+                                                <div class="image-container blank-image"></div>
+                                                <div class="image-container blank-image"></div>
+                                                <div class="image-container blank-image"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">총 구성원 수</div>
+                                        <div class="table-content flex-row justify-content-start align-items-center">
+                                            <input type="text" value="9" style="width: 150px;"> 명
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">구성원 설명</div>
+                                        <div class="table-content">
+                                            <textarea name="member-desc" id="member-desc">원장님 2명
+실장님 1명 포함 진료실 7명
+청소/소독/포장 이모님 계심</textarea>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="table-title">기관 소개</div>
+                                        <div class="table-content">
+                                            <textarea name="company-desc" id="company-desc" cols="30" rows="10">안녕하세요. 덴탈치과입니다.
+저의는 21년 11월 개원한 이래로 빠른 속도로 성장해 나가고 있습니다.
+
+-구강내과와 일반진료 협진 시스템을 갖춘 국내 최초의 치과로, 구강내과와 일반진료가 시너지를 이루고
+있어 심미보철 등
+                                        </textarea>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button class="button button-blue">치과 정보 수정</button>
+                        </div>
+                        <!-- End Main Section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주) 신흥 100-858 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+
+    <script>
+        $(document).ready(() => {
+            if ($('.edit').length > 0) {
+                $('.image-container').not('.blank-image').append(`<div class="button-remove"></div>`);
+            }
+        });
+    </script>
+</body>
+
+</html>

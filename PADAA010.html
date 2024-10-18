@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/PADAA010.css">
+    <link rel="stylesheet" href="css/register.css">
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
@@ -114,88 +114,119 @@
     <!-- End navbar -->
     <!-- Content -->
     <div id="content">
-        <div id="member-status">
+        <div id="register-page">
             <div class="container">
                 <div class="titleText">통합회원가입</div>
-                <div id="member-step">
+                <div id="register-step">
                     <ul>
-                        <li class="active"><a href="#">01. 회원가입여부 확인</a></li>
-                        <li><a href="#">02. 통합회원약관</a></li>
-                        <li><a href="#">03. 회원정보 입력</a></li>
-                        <li><a href="#">04. 회원가입 완료</a></li>
+                        <li class="active">01. 회원가입여부 확인</li>
+                        <li>02. 통합회원약관</li>
+                        <li>03. 회원정보 입력</li>
+                        <li>04. 회원가입 완료</li>
                     </ul>
                 </div>
-                <div id="member-register">
-                    <h1><i class="icon icon-info-register"></i>회원가입여부 확인 안내</h1>
-                    <ul class="notes">
-                        <li class="dot">기존 회원가입 정보와 일치하는 정보를 입력하셔야 회원가입 여부를 정확하게 확인하실 수 있습니다.</li>
-                        <li class="dot">회원이 되시면 하나의 통합된 회원 ID와 비밀번호로 각 웹사이트의 다양한 서비스 및 혜택을 이용하실 수 있습니다.</li>
-                        <li class="dot">입력하신 정보는 별도 저장되지 않으며, 회원가입 여부 확인 용도로만 사용됩니다.</li>
-                    </ul>
-                    <div id="main-register">
-                        <form action="post">
-                            <div class="form form-name">
-                                <div class="title-form">이름</div>
-                                <div class="group-form">
-                                    <input value="" placeholder="이름을 입력해 주세요.">
-                                </div>
-                            </div>
-                            <div class="form form-birth">
-                                <div class="title-form">생년월일</div>
-                                <div class="group-form">
-                                    <div class="form-select-container select-year">
-                                        <select>
-                                            <option class="option-placeholder">1980</option>
-                                            <option value="#">1985</option>
-                                            <option value="#">1990</option>
-                                            <option value="#">1995</option>
-                                            <option value="#">2000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-select-container select-month">
-                                        <select>
-                                            <option class="option-placeholder">월</option>
-                                            <option value="#">월</option>
-                                            <option value="#">월</option>
-                                            <option value="#">월</option>
-                                            <option value="#">월</option>
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="form-select-container select-day">
-                                        <select>
-                                            <option class="option-placeholder">일</option>
-                                            <option value="#">일</option>
-                                            <option value="#">일</option>
-                                            <option value="#">일</option>
-                                            <option value="#">일</option>
-                                            </option>
-                                        </select>
+                <div class="register-container">
+                    <!-- Content register -->
+                    <div id="register-check" class="content-wrap">
+                        <h1><i class="icon icon-info-register"></i>회원가입여부 확인 안내</h1>
+                        <ul class="notes">
+                            <li class="dot">기존 회원가입 정보와 일치하는 정보를 입력하셔야 회원가입 여부를 정확하게 확인하실 수 있습니다.</li>
+                            <li class="dot">회원이 되시면 하나의 통합된 회원 ID와 비밀번호로 각 웹사이트의 다양한 서비스 및 혜택을 이용하실 수 있습니다.</li>
+                            <li class="dot">입력하신 정보는 별도 저장되지 않으며, 회원가입 여부 확인 용도로만 사용됩니다.</li>
+                        </ul>
+                        <div class="register-form">
+                            <form action="post">
+                                <div class="form-row form-name">
+                                    <div class="title-form">이름</div>
+                                    <div class="group-form">
+                                        <input value="" placeholder="이름을 입력해 주세요.">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form form-phone">
-                                <div class="title-form">휴대폰번호</div>
-                                <div class="group-form">
-                                    <div class="form-select-container select-phone">
-                                        <select>
-                                            <option class="option-placeholder">010</option>
-                                            <option value="#">020</option>
-                                            <option value="#">030</option>
-                                            <option value="#">040</option>
-                                            <option value="#">050</option>
-                                        </select>
+                                <div class="form-row form-birth">
+                                    <div class="title-form">생년월일</div>
+                                    <div class="group-form">
+                                        <div class="form-select-container select-year">
+                                            <select>
+                                                <option class="option-placeholder">1980</option>
+                                                <option value="#">1985</option>
+                                                <option value="#">1990</option>
+                                                <option value="#">1995</option>
+                                                <option value="#">2000</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-select-container select-month">
+                                            <select>
+                                                <option class="option-placeholder">월</option>
+                                                <option value="#">월</option>
+                                                <option value="#">월</option>
+                                                <option value="#">월</option>
+                                                <option value="#">월</option>
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-select-container select-day">
+                                            <select>
+                                                <option class="option-placeholder">일</option>
+                                                <option value="#">일</option>
+                                                <option value="#">일</option>
+                                                <option value="#">일</option>
+                                                <option value="#">일</option>
+                                                </option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <span>-</span>
-                                    <input type="number">
-                                    <span>-</span>
-                                    <input type="number">
                                 </div>
+                                <div class="form-row form-phone">
+                                    <div class="title-form">휴대폰번호</div>
+                                    <div class="group-form">
+                                        <div class="form-select-container select-phone">
+                                            <select>
+                                                <option class="option-placeholder">010</option>
+                                                <option value="02">02</option>
+                                                <option value="031">031</option>
+                                                <option value="032">032</option>
+                                                <option value="033">033</option>
+                                                <option value="041">041</option>
+                                                <option value="042">042</option>
+                                                <option value="043">043</option>
+                                                <option value="044">044</option>
+                                                <option value="051">051</option>
+                                                <option value="052">052</option>
+                                                <option value="053">053</option>
+                                                <option value="054">054</option>
+                                                <option value="055">055</option>
+                                                <option value="061">061</option>
+                                                <option value="062">062</option>
+                                                <option value="063">063</option>
+                                                <option value="064">064</option>
+                                                <option value="070">070</option>
+                                                <option value="010">010</option>
+                                                <option value="011">011</option>
+                                                <option value="016">016</option>
+                                                <option value="017">017</option>
+                                                <option value="018">018</option>
+                                                <option value="019">019</option>
+                                            </select>
+                                        </div>
+                                        <span>-</span>
+                                        <input type="number" maxlength="4">
+                                        <span>-</span>
+                                        <input type="number" maxlength="4">
+                                    </div>
+                                </div>
+                                <div class="button-group">
+                                    <a href="./PADAB010.html" class="button button-blue">비밀번호 찾기</a>
+                                </div>
+                            </form>
+                            <div class="banner">
+                                <a href="#"><img src="./images/PADAA010/dentailjob-logo.png" alt="Logo Dental"></a>
+                                <a href="#"><img src="./images/PADAA010/dentalvitamin-logo.png" alt="Logo Vitamin"></a>
+                                <a href="#"><img src="./images/PADAA010/dentalseminar-logo.png" alt="Logo Seminar"></a>
+                                <a href="#"><img src="./images/PADAA010/dvmall-logo.png" alt="Logo Dvmall"></a>
                             </div>
-
-                            <button class="submit-form" type="button">비밀번호 찾기</button>
-                        </form>
+                        </div>
                     </div>
+                    <!-- End Content Register -->
                 </div>
             </div>
         </div>
@@ -208,6 +239,9 @@
             <div class="menu">
                 <ul>
                     <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
                         <a href="#">회원약관</a>
                     </li>
                     <li>
@@ -215,9 +249,6 @@
                     </li>
                     <li>
                         <a href="#">이메일주소수집거부</a>
-                    </li>
-                    <li>
-                        <a href="#">사이트맵</a>
                     </li>
                     <li>
                         <a href="#">이용안내</a>

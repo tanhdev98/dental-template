@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
+    <script src="js/close-top-banner.js"></script>
+</head>
+
+<body>
+    <!-- Top Ads -->
+    <div id="topAds">
+        <div class="topAds-wrap">
+            <div class="topAds-content">
+                <a href="#" class="btn-primary">이력서 등록 이벤트</a>
+                <span class="text"><b>정성껏 이력서를 작성</b>하여 주신</span>
+                <img class="topAds-img" src="./images/coffee.png" alt="top ads imgage">
+                <span class="text">모든 분들께 <b>선물을 드립니다.</b></span>
+            </div>
+            <div class="close-topAds-wrap">
+                <input type="checkbox" id="disappear" name="disappear">
+                <label for="disappear">오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
+            </div>
+        </div>
+    </div>
+    <!-- End top ads -->
+    <!-- Side ads -->
+    <div id="sideAds">
+        <div class="side-ads-wrap">
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-1.png" alt="side ads">
+                </a>
+            </div>
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-2.png" alt="side ads">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End side ads -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo.png" alt="Logo">
+                    </a>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
+                        <a href="#">
+                            <i class="icon icon-find"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <img src="./images/intro-logo.png" alt="intro-logo">
+                </div>
+                <div class="nav-wrap">
+                    <a href="#">
+                        <i class="icon icon-bell"></i>
+                    </a>
+                    <a href="">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar-wrap">
+                <div class="menu">
+                    <a href="#">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                    <div class="total-menu"></div>
+                    <ul>
+                        <li>
+                            <a href="#">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="#">인재소식</a>
+                        </li>
+                        <li>
+                            <a href="#">덴탈플러스</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth">
+                    <a href="./PACAA010.html">로그인</a>
+                    <a href="./PACAA010.html">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End navbar -->
+    <!-- Content -->
+    <div id="content">
+        <div id="register-page">
+            <div class="container">
+                <div class="titleText">통합회원가입</div>
+                <div id="register-step">
+                    <ul>
+                        <li>01. 회원가입여부 확인</li>
+                        <li>02. 통합회원약관</li>
+                        <li class="active">03. 회원정보 입력</li>
+                        <li>04. 회원가입 완료</li>
+                    </ul>
+                </div>
+                <div class="register-container">
+                    <!-- Content Register -->
+                    <div id="register-dental-form" class="content-wrap">
+                        <p class="require-input">* 필수입력사항입니다.</p>
+                        <ul class="form">
+                            <li class="form-row blue">
+                                <div class="title-form">회원그룹구분</div>
+                                <div class="content-form">
+                                    <span class="type-register">치과회원</span>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">아이디</div>
+                                <div class="content-form">
+                                    <input type="text" placeholder="아이디 입력">
+                                    <button class="button button-gray">중복확인</button>
+                                    <p class="require-input">※ 6~12자리 영문자 및 숫자 혼합만 가능, 첫자는 반드시 영문자만 가능</p>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">비밀번호</div>
+                                <div class="content-form">
+                                    <input type="text" placeholder="비밀번호 입력">
+                                    <p class="require-input">※ 4~12자리의 영문과 숫자</p>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">비밀번호 확인</div>
+                                <div class="content-form">
+                                    <input type="text" placeholder="비밀번호 한 번 더 입력">
+                                </div>
+                            </li>
+                            <li class="form-row blue">
+                                <div class="title-form">이름</div>
+                                <div class="content-form">
+                                    <input type="text" value="신미경" disabled>
+                                </div>
+                            </li>
+                            <li class="form-row blue">
+                                <div class="title-form">생년월일</div>
+                                <div class="content-form">
+                                    <div class="form-select-container select-year disabled">
+                                        <select>
+                                            <option class="option-placeholder">1983</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-select-container select-month disabled">
+                                        <select>
+                                            <option class="option-placeholder">08</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-select-container select-day disabled">
+                                        <select>
+                                            <option class="option-placeholder">17</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">회원구분</div>
+                                <div class="content-form">
+                                    <div class="form-select-container select-class">
+                                        <select>
+                                            <option class="option-placeholder">선택</option>
+                                            <option value="110">치과의사</option>
+                                            <option value="201">치과기공사(소장)</option>
+                                            <option value="202">치과기공사(기사)</option>
+                                            <option value="310">치과위생사 및 진료스탭</option>
+                                            <option value="401">학생(치의학과)</option>
+                                            <option value="402">학생(치위생과)</option>
+                                            <option value="403">학생(치기공과)</option>
+                                            <option value="999">기타</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">면허번호</div>
+                                <div class="content-form">
+                                    <input type="text" placeholder="">
+                                    <label>
+                                        <input type="checkbox" name="" value="">
+                                        <span class="title-value-radio">없음</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">학교 정보</div>
+                                <div class="content-form">
+                                    <div class="form-select-container select-school">
+                                        <select>
+                                            <option class="option-placeholder">졸업 학교 선택 </option>
+                                            <option value="110">치과의사</option>
+                                            <option value="201">치과기공사(소장)</option>
+                                            <option value="202">치과기공사(기사)</option>
+                                            <option value="310">치과위생사 및 진료스탭</option>
+                                            <option value="401">학생(치의학과)</option>
+                                            <option value="402">학생(치위생과)</option>
+                                            <option value="403">학생(치기공과)</option>
+                                            <option value="999">기타</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-select-container select-school">
+                                        <select>
+                                            <option class="option-placeholder">학교명 입력</option>
+                                            <option value="110">치과의사</option>
+                                            <option value="201">치과기공사(소장)</option>
+                                            <option value="202">치과기공사(기사)</option>
+                                            <option value="310">치과위생사 및 진료스탭</option>
+                                            <option value="401">학생(치의학과)</option>
+                                            <option value="402">학생(치위생과)</option>
+                                            <option value="403">학생(치기공과)</option>
+                                            <option value="999">기타</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-select-container select-school">
+                                        <select>
+                                            <option class="option-placeholder">졸업 년도 선택</option>
+                                            <option value="110">치과의사</option>
+                                            <option value="201">치과기공사(소장)</option>
+                                            <option value="202">치과기공사(기사)</option>
+                                            <option value="310">치과위생사 및 진료스탭</option>
+                                            <option value="401">학생(치의학과)</option>
+                                            <option value="402">학생(치위생과)</option>
+                                            <option value="403">학생(치기공과)</option>
+                                            <option value="999">기타</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="form-row">
+                                <div class="title-form">근무처(소속)</div>
+                                <div class="content-form">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </li>
+
+                            <li class="form-row">
+                                <div class="title-form">사업자등록번호</div>
+                                <div class="content-form form-business-number">
+                                    <input type="number" maxlength="3">
+                                    <span>-</span>
+                                    <input type="number" maxlength="2">
+                                    <span>-</span>
+                                    <input type="number" maxlength="5">
+                                    <label>
+                                        <input type="checkbox" name="" value="">
+                                        <span class="title-value-radio">나중에 입력</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">연락처</div>
+                                <div class="content-form form-phone">
+                                    <div class="form-select-container select-phone">
+                                        <select>
+                                            <option class="option-placeholder">02</option>
+                                            <option value="02">02</option>
+                                            <option value="031">031</option>
+                                            <option value="032">032</option>
+                                            <option value="033">033</option>
+                                            <option value="041">041</option>
+                                            <option value="042">042</option>
+                                            <option value="043">043</option>
+                                            <option value="044">044</option>
+                                            <option value="051">051</option>
+                                            <option value="052">052</option>
+                                            <option value="053">053</option>
+                                            <option value="054">054</option>
+                                            <option value="055">055</option>
+                                            <option value="061">061</option>
+                                            <option value="062">062</option>
+                                            <option value="063">063</option>
+                                            <option value="064">064</option>
+                                            <option value="070">070</option>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                    </div>
+                                    <span>-</span>
+                                    <input type="number" maxlength="4">
+                                    <span>-</span>
+                                    <input type="number" maxlength="4">
+                                </div>
+                            </li>
+
+                            <li class="form-row">
+                                <div class="title-form">휴대폰</div>
+                                <div class="content-form form-phone">
+                                    <div class="form-select-container select-phone disabled">
+                                        <select>
+                                            <option class="option-placeholder">010</option>
+                                        </select>
+                                    </div>
+                                    <span>-</span>
+                                    <input type="number" maxlength="4" disabled>
+                                    <span>-</span>
+                                    <input type="number" maxlength="4" disabled>
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">이메일</div>
+                                <div class="content-form form-email">
+                                    <input type="text">
+                                    <span>@</span>
+                                    <input type="text">
+                                    <div class="form-select-container select-phone">
+                                        <select>
+                                            <option value="" class="option-placeholder">선택</option>
+                                            <option value="chol.com">chol.com</option>
+                                            <option value="dreamwiz.com">dreamwiz.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="msn.com">msn.com</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="netian.com">netian.com</option>
+                                            <option value="yahoo.com">yahoo.com</option>
+                                            <option value="zdirect">직접입력</option>
+                                        </select>
+                                    </div>
+                                    <p class="require-input">※ hanmail, gmail은 수신에 제한이 있을 수 있습니다. 다른 이메일을 입력해주세요</p>
+                                </div>
+                            </li>
+                            <li class="form-row form-address">
+                                <div class="title-form">주소</div>
+                                <div class="content-form">
+                                    <div class="address-code-group">
+                                        <input type="text" placeholder="우편번호">
+                                        <button class="button button-gray">우편번호 검색</button>
+                                    </div>
+                                    <input type="text" placeholder="기본 주소">
+                                    <input type="text" placeholder="상세 주소">
+                                </div>
+                            </li>
+                            <li class="form-row">
+                                <div class="title-form">비타민메일수신</div>
+                                <div class="content-form">
+                                    <fieldset id="radio-group1" class="radio-group">
+                                        <div class="item-radioBox">
+                                            <input type="radio" name="options-1" value="option1" id="radio1" checked>
+                                            <span></span>
+                                            <label for="radio1"><span>예</span></label>
+                                        </div>
+                                        <div class="item-radioBox">
+                                            <input type="radio" name="options-1" value="option2" id="radio2">
+                                            <span></span>
+                                            <label for="radio2"><span>아니오</span></label>
+                                        </div>
+                                    </fieldset>
+                                    <p class="require-input">※ 비타민메일링은 매일매일 유용한 치과정보 이메일로 발송해 드리는 서비스 입니다.</p>
+                                </div>
+                            </li>
+                            <li class="form-row form-sms">
+                                <div class="title-form">SMS수신</div>
+                                <div class="content-form">
+                                    <fieldset id="radio-group2" class="radio-group">
+                                        <div class="item-radioBox">
+                                            <input type="radio" name="options-2" value="option1" id="radio3" checked>
+                                            <span></span>
+                                            <label for="radio3"><span>예</span></label>
+                                        </div>
+                                        <div class="item-radioBox">
+                                            <input type="radio" name="options-2" value="option2" id="radio4">
+                                            <span></span>
+                                            <label for="radio4"><span>아니오</span></label>
+                                        </div>
+                                    </fieldset>
+                                    <p class="require-input">※ 문자 수신 동의 시<br>
+                                        덴탈비타민, 덴탈잡, DVmall 사이트의 다양한 할인 혜택을 받으실 수 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Content Register -->
+                    <div class="button-group">
+                        <a href="./PADAD010.html" class="button button-blue">개인회원가입</a>
+                        <a href="./PADAB010.html" class="button button-white">취소</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주) 신흥 100-858 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>

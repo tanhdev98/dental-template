@@ -12,6 +12,7 @@
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/side-ads.js"></script>
+    <script src="js/close-top-banner.js"></script>
 </head>
 
 <body>
@@ -115,16 +116,16 @@
 
     <!-- Content -->
     <div id="content">
-        <div id="wrap-tab-follow">
+        <div id="tab-follow">
             <div class="container">
                 <ul class="tabs-no-border">
                     <li class="active"><a href="#">지역별</a></li>
                     <li><a href="#">업무별</a></li>
                 </ul>
-                <h2></h2>
+
             </div>
         </div>
-        <div id="wrap-tab-form">
+        <div id="tabs-form">
             <div class="container">
                 <div class="top-form">
                     <h2>지역별(근무 지역)</h2>
@@ -138,22 +139,21 @@
                         </select>
                     </div>
                 </div>
-                <ul class="wrap-tab">
+                <ul class="tabs">
                     <li>
-                        <a href="#"><i class="icon icon-location"></i><span>지역 선택</span></a>
+                        <span><i class="icon icon-location"></i>지역 선택</span>
                     </li>
                     <li class="active">
-
-                        <a href="#"><i class="icon icon-bag"></i><span>업무 선택</span></a>
+                        <span><i class="icon icon-bag"></i>업무 선택</span>
                     </li>
                     <li>
-                        <a href="#"><i class="icon icon-search"></i><span>검색어 입력</span></a>
+                        <span><i class="icon icon-search"></i>검색어 입력</span>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-plus"></i><span>상세조건</span></a>
+                        <span><i class="icon icon-plus"></i>상세조건</span>
                     </li>
                 </ul>
-                <div class="wrap-tab-select wrap-tab-select-bag">
+                <div class="tabs-select tabs-select-bag">
                     <ul>
                         <li>전체</li>
                         <li>진료실</li>
@@ -187,7 +187,7 @@
                     <button>선택한 조건으로<span>검색하기</span></button>
                     <div class="wrap-option-search">
                         <div class="option-reset icon icon-reset">조건 초기화</div>
-                        <div class="option-save icon icon-ghim">조건 저장</div>
+                        <div class="option-save icon icon-pin">조건 저장</div>
                     </div>
                 </div>
                 <div class="line-after-tab"></div>
@@ -548,6 +548,9 @@
             <div class="menu">
                 <ul>
                     <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
                         <a href="#">회원약관</a>
                     </li>
                     <li>
@@ -555,9 +558,6 @@
                     </li>
                     <li>
                         <a href="#">이메일주소수집거부</a>
-                    </li>
-                    <li>
-                        <a href="#">사이트맵</a>
                     </li>
                     <li>
                         <a href="#">이용안내</a>

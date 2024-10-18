@@ -2,6 +2,44 @@
     margin: 0;
 }
 
+.table .table-button {
+    background-color: #fff;
+    border: 1px solid #999;
+    height: 30px;
+    color: #111;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0 13px 0 12px;
+}
+
+.table-button.yellow {
+    color: #fff;
+    background-color: #ffc300;
+    border-color: #ffc300;
+}
+
+.table-button.grey {
+    color: #fff;
+    background-color: #999;
+    border-color: #999;
+}
+
+.table-button.blue {
+    color: #fff;
+    background-color: #0068b7;
+    border-color: #0068b7;
+}
+
+.table-button.red {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
 /* Table Name Column */
 .title-name-column {
     display: flex;
@@ -135,9 +173,14 @@
     border: 1px solid #80b156;
 }
 
-.table li .status.red {
+.table li .status.pink {
     color: #f29c9f;
     border: 1px solid #f29c9f;
+}
+
+.table li .status.red {
+    color: #ff0000;
+    border: 1px solid #ff0000;
 }
 
 /* Content Table */
@@ -204,15 +247,21 @@
     line-height: 30px;
 }
 
-.column .time {
-    color: #999;
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .wrap-dropDown {
     display: flex;
     gap: 3px;
+}
+
+.form-select-container {
+    height: 35px;
+}
+
+.form-select-container>.form-select-cus {
+    border-radius: 3px;
+}
+
+.form-select-container>.form-select-cus>.form-option-placeholder {
+    color: #666;
 }
 
 @media screen and (width <=1320px) {
@@ -687,4 +736,47 @@
 
 .table .management .management-button.red {
     background-color: #eb6877;
+}
+
+.table .column .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.table .column .list-item * {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+}
+
+/* Table horizontal */
+.table-horizontal li {
+    display: flex;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-horizontal li .table-title {
+    background-color: #eee;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 24px;
+}
+
+.table-horizontal li .table-title.require::before {
+    content: '*';
+    color: #076ecc;
+    margin-right: 5px;
+}
+
+.table-horizontal li .table-content {
+    flex: 1;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/accodion.js"></script>
+</head>
+
+<body>
+    <!-- Top Ads -->
+    <div id="topAds">
+        <div class="topAds-wrap">
+            <div class="topAds-content">
+                <a href="#" class="btn-primary">이력서 등록 이벤트</a>
+                <span class="text"><b>정성껏 이력서를 작성</b>하여 주신</span>
+                <img class="topAds-img" src="./images/coffee.png" alt="top ads imgage">
+                <span class="text">모든 분들께 <b>선물을 드립니다.</b></span>
+            </div>
+            <div class="close-topAds-wrap">
+                <input type="checkbox" id="disappear" name="disappear">
+                <label for="disappear">오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
+            </div>
+        </div>
+    </div>
+    <!-- End top ads -->
+    <!-- Side ads -->
+    <div id="sideAds">
+        <div class="side-ads-wrap">
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-1.png" alt="side ads">
+                </a>
+            </div>
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-2.png" alt="side ads">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End side ads -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo.png" alt="Logo">
+                    </a>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
+                        <a href="#">
+                            <i class="icon icon-find"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <img src="./images/intro-logo.png" alt="intro-logo">
+                </div>
+                <div class="nav-wrap">
+                    <a href="#">
+                        <i class="icon icon-bell"></i>
+                    </a>
+                    <a href="">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar-wrap">
+                <div class="menu">
+                    <a href="#">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                    <div class="total-menu"></div>
+                    <ul>
+                        <li>
+                            <a href="#">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="#">인재소식</a>
+                        </li>
+                        <li>
+                            <a href="#">덴탈플러스</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth">
+                    <a href="./PACAA010.html">로그인</a>
+                    <a href="./PACAA010.html">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End navbar -->
+    <!-- Content -->
+    <div id="content">
+        <div id="register-page">
+            <div class="container">
+                <div class="titleText">통합회원가입</div>
+                <div id="register-step">
+                    <ul>
+                        <li>01. 회원가입여부 확인</li>
+                        <li class="active">02. 통합회원약관</li>
+                        <li>03. 회원정보 입력</li>
+                        <li>04. 회원가입 완료</li>
+                    </ul>
+                </div>
+                <div class="register-container">
+                    <!-- Content Register -->
+                    <div id="terms-and-conditions" class="content-wrap">
+                        <ul class="tabs">
+                            <li class="active"><span>치과회원 가입</span></li>
+                            <li><span>개인회원 가입</span></li>
+                        </ul>
+                        <div class="tabs-content">
+                            <div id="member-dentail" class="tab-content-item active">
+                                <ul>
+                                    <li>
+                                        <div class="title-terms">
+                                            <h1>이용약관, 개인정보 수집 및 이용, 이벤트 등 프로모션 안내정보 수신(선택)에 모두 동의합니다.</h1>
+                                            <label>
+                                                <input type="checkbox" name="accept-all" value="accept-all"
+                                                    id="accept-all">
+                                                <span class="title-value-radio">모두 동의함</span>
+                                            </label>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이용약관동의 - 덴탈잡
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이용약관 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-1" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+
+                                                ① "사이트"라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업장 또는 웹사이트,
+                                                모바일웹, 앱 등의 서비스를 제공하는 모든 매체를 말하며, 통합된 하나의 아이디 및 비밀번호(이하 "통합계정")를 이용하여
+                                                "서비스" 를 제공받을 수 있는 아래의 "사이트"로 정의한다.<br>
+
+                                                - 구인구직정보제공 : www.dentaljob.co.kr, www.dentalalba.com<br>
+
+                                                - 온라인정보제공 : www.dentalvitamin.com<br>
+
+                                                - 전자상거래(상품주문, 세미나신청) : www.dentalseminar.co.kr<br>
+
+                                                ② "서비스"란 사이트를 통해 개인 또는 기업, 단체가 구직 또는 구인을 목적으로 제공하는 자료를 DB화하여 각각의 목적에 맞게
+                                                자료를 가공, 집계하여 정보를 제공하는 서비스와 취업 및 채용에 관련된 부가정보 서비스, 온라인 구매와 세미나 및 이벤트,
+                                                프로모션 등의 정보제공을 말한다.<br>
+
+                                                ③ "회원"이라 함은 서비스를 이용하기 위하여 동 약관에 동의하고 "사이트"와 이용계약을 체결하여 이용자ID를 부여받은 개인을
+                                                말한다.<br>
+
+                                                ④ "개인회원"이라 함은 구직을 목적으로 하는 개인이 본 서비스를 이용하기 위하여 동 약관에 동의하고 "사이트"와 이용계약을
+                                                체결하여 이용자ID를 부여받은 "회원"을 말한다.<br>
+
+                                                ⑤ "치과회원"이라 함은 자사의 직접 고용의 목적으로 채용을 원하는 병의원 단체(이하 "업체")나 구인을 목적으로 하는 개인이 본
+                                                서비스를 이용하기 위하여 동 약관에 동의하고 "사이트"와 이용계약을 체결하여 이용자ID를 부여받은 "회원"을 말한다.<br>
+
+                                                ⑥ "비회원"이라 함은 회원가입 절차를 거치지 않고 "사이트"가 제공하는 서비스를 이용하거나 하려는 자를 말한다.<br>
+
+                                                ⑦ "이용자"란 "사이트"가 제공하는 서비스를 받는 회원 및 비회원을 말한다.<br>
+
+                                                ⑧ "이용자ID" 또는 "회원ID"라 함은 "회원"의 식별과 "회원"의 "서비스" 이용을 위하여 "회원"이 선정하고 "사이트"가
+                                                부여하는 문자와 숫자의 조합을 말한다.<br>
+
+                                                ⑨ "비밀번호"라 함은 "사이트"의 "서비스"를 이용하려는 사람이 "이용자ID"를 부여받은 자와 동일인임을 확인하고 회원의 권익을
+                                                보호하기 위하여 회원이 선정한 문자와 숫자의 조합을 말한다.<br>
+
+                                                ⑩ "세미나 참가비"라 함은 "사이트"에서 제공하는 세미나에 참석하는 대가로 회사가 별도로 정한 요금체계에 의해 부과되는 비용을
+                                                말한다.<br>
+
+                                                ⑪ "주문"이라 함은 "사이트"에서 제공하는 서비스를 이용하기 위해 컨텐츠, 재화등을 신청하는 것을 말한다.<br>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이용약관동의 - 덴탈비타민, 덴탈세미나
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이용약관 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-2" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이용약관동의 - DV mall
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이용약관 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-3" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>개인정보 수집 및 이용에 대한 안내
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 개인정보 처리방침 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-4" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이벤트 등 프로모션 안내 정보 수신 - 이메일/SMS외
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이벤트 등 프로모션
+                                                    안내 정보 수신 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-5" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>DV포인트 이용안내
+                                                <span class="view-more-btn">※ DV포인트 이용안내 전문보기</span>
+                                            </p>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>개인정보 제3자 제공 및 위탁사항 안내
+                                                <span class="view-more-btn">※ 개인정보 제3자 제공 및 위탁사항 안내 전문보기</span>
+                                            </p>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="member-invidual" class="tab-content-item">
+                                <ul>
+                                    <li>
+                                        <div class="title-terms">
+                                            <h1>이용약관, 개인정보 수집 및 이용, 이벤트 등 프로모션 안내정보 수신(선택)에 모두 동의합니다.</h1>
+                                            <label>
+                                                <input type="checkbox" name="accept-all" value="accept-all"
+                                                    id="accept-all">
+                                                <span class="title-value-radio">모두 동의함</span>
+                                            </label>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이용약관동의 - 덴탈잡
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이용약관 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-1" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+
+                                                ① "사이트"라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업장 또는 웹사이트,
+                                                모바일웹, 앱 등의 서비스를 제공하는 모든 매체를 말하며, 통합된 하나의 아이디 및 비밀번호(이하 "통합계정")를 이용하여
+                                                "서비스" 를 제공받을 수 있는 아래의 "사이트"로 정의한다.<br>
+
+                                                - 구인구직정보제공 : www.dentaljob.co.kr, www.dentalalba.com<br>
+
+                                                - 온라인정보제공 : www.dentalvitamin.com<br>
+
+                                                - 전자상거래(상품주문, 세미나신청) : www.dentalseminar.co.kr<br>
+
+                                                ② "서비스"란 사이트를 통해 개인 또는 기업, 단체가 구직 또는 구인을 목적으로 제공하는 자료를 DB화하여 각각의 목적에 맞게
+                                                자료를 가공, 집계하여 정보를 제공하는 서비스와 취업 및 채용에 관련된 부가정보 서비스, 온라인 구매와 세미나 및 이벤트,
+                                                프로모션 등의 정보제공을 말한다.<br>
+
+                                                ③ "회원"이라 함은 서비스를 이용하기 위하여 동 약관에 동의하고 "사이트"와 이용계약을 체결하여 이용자ID를 부여받은 개인을
+                                                말한다.<br>
+
+                                                ④ "개인회원"이라 함은 구직을 목적으로 하는 개인이 본 서비스를 이용하기 위하여 동 약관에 동의하고 "사이트"와 이용계약을
+                                                체결하여 이용자ID를 부여받은 "회원"을 말한다.<br>
+
+                                                ⑤ "치과회원"이라 함은 자사의 직접 고용의 목적으로 채용을 원하는 병의원 단체(이하 "업체")나 구인을 목적으로 하는 개인이 본
+                                                서비스를 이용하기 위하여 동 약관에 동의하고 "사이트"와 이용계약을 체결하여 이용자ID를 부여받은 "회원"을 말한다.<br>
+
+                                                ⑥ "비회원"이라 함은 회원가입 절차를 거치지 않고 "사이트"가 제공하는 서비스를 이용하거나 하려는 자를 말한다.<br>
+
+                                                ⑦ "이용자"란 "사이트"가 제공하는 서비스를 받는 회원 및 비회원을 말한다.<br>
+
+                                                ⑧ "이용자ID" 또는 "회원ID"라 함은 "회원"의 식별과 "회원"의 "서비스" 이용을 위하여 "회원"이 선정하고 "사이트"가
+                                                부여하는 문자와 숫자의 조합을 말한다.<br>
+
+                                                ⑨ "비밀번호"라 함은 "사이트"의 "서비스"를 이용하려는 사람이 "이용자ID"를 부여받은 자와 동일인임을 확인하고 회원의 권익을
+                                                보호하기 위하여 회원이 선정한 문자와 숫자의 조합을 말한다.<br>
+
+                                                ⑩ "세미나 참가비"라 함은 "사이트"에서 제공하는 세미나에 참석하는 대가로 회사가 별도로 정한 요금체계에 의해 부과되는 비용을
+                                                말한다.<br>
+
+                                                ⑪ "주문"이라 함은 "사이트"에서 제공하는 서비스를 이용하기 위해 컨텐츠, 재화등을 신청하는 것을 말한다.<br>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이용약관동의 - 덴탈비타민, 덴탈세미나
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이용약관 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-2" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이용약관동의 - DV mall
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이용약관 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-3" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>개인정보 수집 및 이용에 대한 안내
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 개인정보 처리방침 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-4" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>이벤트 등 프로모션 안내 정보 수신 - 이메일/SMS외
+                                                <strong>(필수)</strong>
+                                                <span class="view-more-btn">※ 이벤트 등 프로모션
+                                                    안내 정보 수신 전문보기</span>
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="accept-5" value="accept">
+                                                <span class="title-value-radio">동의함</span>
+                                            </label>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>DV포인트 이용안내
+                                                <span class="view-more-btn">※ DV포인트 이용안내 전문보기</span>
+                                            </p>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title-terms">
+                                            <p>개인정보 제3자 제공 및 위탁사항 안내
+                                                <span class="view-more-btn">※ 개인정보 제3자 제공 및 위탁사항 안내 전문보기</span>
+                                            </p>
+                                        </div>
+                                        <div class="content-terms">
+                                            <p>
+                                                제 1조 (목적)<br>
+                                                본 약관은 주식화사 신흥(이하 “회사”)이 제공하는 웹사이트(이하 “사이트”)를 통해 인터넷 관련 서비스(이하 ”서비스”)를
+                                                제공함에 있어, 사이트가 제공하는 서비스와 관련하여, 이를 이용하는 이용자(이하 “회원”)의 이용조건 및 제반 절차, 기타
+                                                필요한 사항을 규정함을 목적으로 한다.
+                                                <span class="space">&nbsp;</span>
+                                                제 2조 (용어의 정의)<br>
+                                                이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                                ① “사이트”라 함은 서비스를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 설정한 가상의 영업
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content Register -->
+                    <div class="button-group">
+                        <a href="./PADAC010.html" class="button button-blue">약관동의 및 회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주) 신흥 100-858 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+    <script>
+        document.querySelectorAll('.tabs li').forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tabs li').forEach(item => item.classList.remove('active'));
+                document.querySelectorAll('.tab-content-item').forEach(child => child.classList.remove('active'));
+                tab.classList.add('active');
+                document.querySelectorAll('.tab-content-item')[index].classList.add('active');
+            });
+        });
+
+        $(document).on('click', '#accept-all', function () {
+            if (this.checked) {
+                $('.tab-content-item.active :checkbox').each(function () {
+                    this.checked = true;
+                });
+            } else {
+                $('.tab-content-item.active :checkbox').each(function () {
+                    this.checked = false;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
