@@ -310,6 +310,10 @@
     background-image: url('../images/icons/icon-info-register.png');
 }
 
+.icon-info-blue::after {
+    background-image: url('../images/icons/icon-info-blue.png');
+}
+
 .icon-date {
     width: 16px;
     height: 16px;
@@ -348,21 +352,25 @@
 }
 
 .icon-chat:after {
-    background: url('../images/icons/icon-chat-black.png') no-repeat center / 100%;
+    background-image: url('../images/icons/icon-chat-black.png');
 }
 
 .icon-document:after {
-    background: url('../images/icons/icon-document.png') no-repeat center / 100%;
+    background-image: url('../images/icons/icon-document.png');
 }
 
 .icon-letter-bigger:after {
-    background: url('../images/icons/icon-letter-bigger.png') no-repeat center / 100%;
+    background-image: url('../images/icons/icon-letter-bigger.png');
 }
 
 .icon-gift:after {
-    background: url('../images/icons/icon-gift.png') no-repeat center / 100%;
+    background-image: url('../images/icons/icon-gift.png');
 }
 
 .icon-document-harm:after {
-    background: url('../images/icons/document-harm.png') no-repeat center / 100%;
+    background-image: url('../images/icons/document-harm.png');
+}
+
+.icon-checklist::after {
+    background-image: url('../images/icons/icon-checklist.png');
 }

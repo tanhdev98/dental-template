@@ -37,13 +37,16 @@
 .frame-section.frame-gray-header .header-frame h1 {
     font-weight: 400;
     font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 
 .frame-section.frame-gray-header .content-frame {
     background: #fff;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     padding: 30px 40px;
-    margin-top: 25px;
+    margin-top: 15px;
     border-radius: 10px;
 }
 
@@ -371,12 +374,12 @@
     border: 1px solid #ddd;
     margin-left: -6px;
     margin-right: -6px;
-    padding: 0 6px;
+    padding: 10px;
     font-weight: 600;
 }
 
 .table-content #member-desc {
-    height: 80px;
+    height: 100px;
 }
 
 .table-content #company-desc {
@@ -460,4 +463,53 @@
 #password-subpage .form-container .button-group .button {
     margin-right: 0;
     min-width: 100px;
+}
+
+.main-section .frame-gray-header .content-frame .blue-text {
+    color: #076ecc;
+    font-size: 19px;
+    margin-bottom: 15px;
+    line-height: 25px;
+    position: relative;
+    padding-left: 23px;
+}
+
+.main-section .frame-gray-header .content-frame .blue-text:last-child {
+    margin-bottom: 0;
+}
+
+.main-section .frame-gray-header .content-frame .blue-text .icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.main-section .frame-gray-header .header-frame .icon {
+    width: 23px;
+    height: 23px;
+}
+
+.main-section .frame-gray-header .header-frame .icon::after {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.main-section .table-horizontal .table-content #withdraw-desc {
+    height: 210px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main-section .table-horizontal .table-content .blue-text {
+    padding-left: 0;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.main-section .table-horizontal.table-white .table-content textarea,
+.main-section .table-horizontal.table-white .table-content input {
+    border-radius: 5px;
 }
