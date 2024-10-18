@@ -15,12 +15,36 @@
 
 .frame-section {
     background: #fff;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     width: 100%;
     border-radius: 10px;
     padding: 30px 40px;
     position: relative;
     margin-top: 20px;
+}
+
+.frame-section.frame-gray-header {
+    margin-top: 48px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.frame-section.frame-gray-header .header-frame {
+    border-color: #ddd;
+}
+
+.frame-section.frame-gray-header .header-frame h1 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.frame-section.frame-gray-header .content-frame {
+    background: #fff;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+    margin-top: 25px;
+    border-radius: 10px;
 }
 
 #top-sub-page #side-nav {
@@ -357,4 +381,83 @@
 
 .table-content #company-desc {
     height: 260px;
+}
+
+#password-subpage {
+    width: 100%;
+}
+
+#password-subpage .frame-section {
+    margin-top: 85px;
+}
+
+#password-subpage .frame-section .header-frame {
+    border-bottom: none;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#password-subpage .frame-section .content-frame {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px;
+}
+
+#password-subpage .frame-section .content-frame h1 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #076ecc;
+}
+
+#password-subpage .frame-section .content-frame strong {
+    font-size: 18px;
+    color: #cc0000;
+}
+
+#password-subpage .form-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#password-subpage .form-container .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#password-subpage .form-container .form-group {
+    display: flex;
+    align-items: center;
+}
+
+#password-subpage .form-container .form-group>label {
+    font-size: 24px;
+    width: 110px;
+}
+
+#password-subpage .form-container .form-group>span {
+    font-size: 24px;
+    color: #076ecc;
+}
+
+#password-subpage .form-container .form-group input {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#password-subpage .form-container .button-group {
+    margin-top: 0;
+    height: 60px;
+}
+
+#password-subpage .form-container .button-group .button {
+    margin-right: 0;
+    min-width: 100px;
 }
