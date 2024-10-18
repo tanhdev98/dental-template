@@ -5,6 +5,10 @@
     gap: 20px;
 }
 
+.letter-spacing-05 {
+    letter-spacing: -0.5px;
+}
+
 /* slide */
 
 #hero .carousel-controller {
@@ -366,11 +370,12 @@
 }
 
 .list-grid .list-item:hover {
-    margin-top: -5px;
+    margin-top: 0px;
     box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .list-grid .list-item.nor:hover {
+    margin-top: -5px;
     box-shadow: unset;
 }
 
@@ -415,6 +420,29 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.list-grid .list-item .hover-background {
+    position: absolute;
+    background-color: #eef7fd;
+    z-index: 0;
+    width: calc(100% - 2px);
+    height: 136px;
+    bottom: 1px;
+    left: 1px;
+    border-radius: 0 0 10px 10px;
+}
+
+.list-grid .list-item.large .hover-background {
+    bottom: 255px;
+    border-radius: unset;
+}
+
+.list-grid .list-item.full .hover-background {
+    display: none;
 }
 
 .list-grid .list-item .item-content .item-tag {
@@ -424,6 +452,8 @@
     font-weight: 300;
     color: #666;
     gap: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .list-grid .list-item .item-content .item-tag li {
@@ -934,7 +964,7 @@
     padding: 30px 10px 30px 20px;
     border: 2px solid transparent;
     transition: .2s linear;
-    align-items: center;
+    align-items: start;
 }
 
 #bottom-nav .icon-docs::after {
@@ -954,17 +984,16 @@
 }
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .icon {
-    width: 38px;
-    height: 38px;
+    width: 50px;
+    height: 50px;
     min-height: 38px;
 }
-
-
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
     font-weight: 700;
     font-size: 18px;
     color: #111;
+    margin-bottom: 10px;
 }
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .phone-number,

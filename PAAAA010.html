@@ -2306,7 +2306,7 @@
                         <i class="icon icon-letter"></i>
                         <div class="wrap-nav-title">
                             <div class="bottom-nav-title">이메일 문의</div>
-                            <div class="bottom-nav-desc">빠르고 정확한 답변을 제공해 드리겠습니다.</div>
+                            <div class="bottom-nav-desc letter-spacing-05">빠르고 정확한 답변을 제공해 드리겠습니다.</div>
                         </div>
                     </a>
                     <a href="#" class="bottom-nav-item">
@@ -2399,6 +2399,19 @@
         </div>
     </div>
     <!-- End footer -->
+    <script>
+        $('#grand-banner .list-item, #premium-banner .list-item').hover(
+            function () {
+                $(this).append('<div class="hover-background"></div>'); // Thêm class khi hover
+                console.log('aaaaa');
+
+            },
+            function () {
+                $(this).find('.hover-background').remove(); // Xóa class khi thoát
+                console.log('bbbbbb');
+            }
+        );
+    </script>
 </body>
 
 </html>
