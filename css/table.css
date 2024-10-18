@@ -780,3 +780,31 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.table-horizontal li .table-content input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.table-horizontal.table-white li {
+    margin-bottom: 23px;
+    border-bottom: 0;
+}
+
+.table-horizontal.table-white li:last-child {
+    margin-bottom: 0;
+}
+
+.table-horizontal.table-white li .table-title {
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 200;
+    padding: 0;
+}
+
+.table-horizontal.table-white li .table-content {
+    padding: 0;
+}

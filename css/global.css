@@ -1156,6 +1156,12 @@
     border: 1px solid #bbb;
     background-color: #fff;
 }
+
+.button-group .button-red {
+    background-color: #cc0000;
+    color: #fff;
+}
+
 /* Header Frame */
 
 .header-frame {
