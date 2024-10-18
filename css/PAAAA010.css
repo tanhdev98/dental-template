@@ -104,6 +104,10 @@
     left: 15px;
 }
 
+.list-item.full .item-content {
+    border: none !important;
+}
+
 @media screen and (width <=1320px) {
     #hero .carousel-controller {
         display: flex;
@@ -406,7 +410,7 @@
     color: #333;
     margin-bottom: 18px;
     line-height: 26px;
-
+    display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -920,15 +924,17 @@
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    /* flex-direction: column; */
+    /* gap: 8px; */
+    gap: 20px;
     background: #f7faff;
-    height: 170px;
+    height: 130px;
     width: 100%;
     border-radius: 10px;
-    padding: 30px 35px;
+    padding: 30px 10px 30px 20px;
     border: 2px solid transparent;
     transition: .2s linear;
+    align-items: center;
 }
 
 #bottom-nav .icon-docs::after {
@@ -953,9 +959,11 @@
     min-height: 38px;
 }
 
+
+
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
     font-weight: 700;
-    font-size: 19px;
+    font-size: 18px;
     color: #111;
 }
 
@@ -965,7 +973,7 @@
 }
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-desc {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
 }
 
@@ -1026,7 +1034,8 @@
 #slide .scrollable-area,
 .group-banner-mobile,
 .banner-item-res,
-.carousel-img-res {
+.carousel-img-res,
+.drop-list-item-res {
     display: none;
 }
 
@@ -1264,6 +1273,11 @@
         width: 100%;
     }
 
+    #grand-banner .scrollable-area,
+    #grand-banner .scrollable-area .list-item {
+        height: 440px;
+    }
+
     .list-grid .list-item {
         padding-top: 5px;
         max-width: 960px;
@@ -1304,14 +1318,12 @@
     #grand-banner .list-grid .list-item .item-content .item-desc {
         font-size: 38px;
         line-height: 52px;
-        padding: 0 42px;
         margin: 59px 0 37px 0;
-        /* display: -webkit-box;
+        display: block;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-height: 3em; */
     }
 
     #grand-banner .list-grid .list-item.large .item-content .item-desc {
@@ -1321,7 +1333,6 @@
 
     #grand-banner .list-grid .list-item .item-content .item-tag {
         font-size: 27px;
-        padding-left: 42px;
     }
 
     #grand-banner .list-grid .list-item.large .item-content .item-tag .bookmark i {
@@ -1565,7 +1576,7 @@
         max-width: 100%; */
         margin-top: 18px;
         font-size: 36px;
-        line-height: 44px;
+        line-height: 40px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -1786,6 +1797,7 @@
         margin-left: 5px;
         background-color: #666666 !important;
         border-radius: 50%;
+        display: block;
     }
 
     .carousel-indicators .active {
