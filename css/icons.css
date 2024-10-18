@@ -311,3 +311,12 @@
     z-index: 2;
     pointer-events: auto;
 }
+
+.icon-down::after {
+    background-image: url('../images/icons/icon-down.png');
+}
+
+.icon-down {
+    width: 23px;
+    height: 13px;
+}
