@@ -132,6 +132,15 @@
     transform: rotate(180deg);
 }
 
+.icon-white-prev::after {
+    background-image: url('../images/icons/icon-left-white.png');
+}
+
+.icon-white-next::after {
+    background-image: url('../images/icons/icon-left-white.png');
+    transform: rotate(180deg);
+}
+
 .icon-pause::after {
     background-image: url('../images/icons/icon-pause.png');
 }
@@ -310,6 +319,16 @@
     background: #fff;
     cursor: pointer;
     z-index: 2;
+    pointer-events: auto;
+}
+
+.icon-down::after {
+    background-image: url('../images/icons/icon-down.png');
+}
+
+.icon-down {
+    width: 23px;
+    height: 13px;
     pointer-events: none;
 }
 
