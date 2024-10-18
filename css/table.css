@@ -750,3 +750,33 @@
     line-height: 22px;
     color: #666;
 }
+
+/* Table horizontal */
+.table-horizontal li {
+    display: flex;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-horizontal li .table-title {
+    background-color: #eee;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 24px;
+}
+
+.table-horizontal li .table-title.require::before {
+    content: '*';
+    color: #076ecc;
+    margin-right: 5px;
+}
+
+.table-horizontal li .table-content {
+    flex: 1;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}

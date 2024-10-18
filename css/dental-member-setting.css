@@ -410,30 +410,6 @@
 }
 
 /* main section */
-#content.sub-page .main-section .content-frame .table-horizontal li {
-    display: flex;
-    font-weight: 600;
-    border-bottom: 1px solid #ddd;
-}
-
-#content.sub-page .main-section .content-frame .table-horizontal li .table-title {
-    background-color: #eee;
-    width: 130px;
-    display: flex;
-    align-items: center;
-    padding: 20px 0 20px 24px;
-    text-align: center;
-}
-
-#content.sub-page .main-section .content-frame .table-horizontal li .table-content {
-    flex: 1;
-    padding: 20px 24px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list .blank-image {
     width: 45px;
     height: 100%;
