@@ -293,8 +293,9 @@
 
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 15px;
+    align-items: center;
 }
 
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list .image-container {
@@ -333,4 +334,27 @@
 
 .button-remove::before {
     transform: rotate(-45deg);
+}
+
+#content.sub-page .main-section .edit-image .content-frame .table-horizontal li .table-title {
+    justify-content: center;
+    padding: 20px 24px;
+}
+
+.table-content textarea {
+    resize: none;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    margin-left: -6px;
+    margin-right: -6px;
+    padding: 0 6px;
+    font-weight: 600;
+}
+
+.table-content #member-desc {
+    height: 80px;
+}
+
+.table-content #company-desc {
+    height: 260px;
 }
