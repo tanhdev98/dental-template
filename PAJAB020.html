@@ -240,6 +240,7 @@
                                         <div class="table-title">기관 로고</div>
                                         <div class="table-content">
                                             <div class="images-list">
+                                                <button class="button button-add-image"></button>
                                                 <div class="image-container">
                                                     <img src="./images/PAJAB010/organization-logo.png"
                                                         alt="Organization Logo">
@@ -248,9 +249,10 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="table-title">기관 이미지</div>
+                                        <div class="table-title">기관 이미지<br>(3/8)</div>
                                         <div class="table-content">
                                             <div class="images-list">
+                                                <button class="button button-add-image"></button>
                                                 <div class="image-container">
                                                     <img src="./images/PAJAB010/organization-image-1.png"
                                                         alt="Organization Image">
@@ -273,23 +275,27 @@
                                     </li>
                                     <li>
                                         <div class="table-title">총 구성원 수</div>
-                                        <div class="table-content">9 명</div>
+                                        <div class="table-content flex-row justify-content-start align-items-center">
+                                            <input type="text" value="9" style="width: 150px;"> 명
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="table-title">구성원 설명</div>
                                         <div class="table-content">
-                                            <p>원장님 2명</p>
-                                            <p>실장님 1명 포함 진료실 7명</p>
-                                            <p>청소/소독/포장 이모님 계심</p>
+                                            <textarea name="member-desc" id="member-desc">원장님 2명
+실장님 1명 포함 진료실 7명
+청소/소독/포장 이모님 계심</textarea>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="table-title">기관 소개</div>
                                         <div class="table-content">
-                                            <p>안녕하세요. 덴탈치과입니다.</p>
-                                            <p>저의는 21년 11월 개원한 이래로 빠른 속도로 성장해 나가고 있습니다.</p>
-                                            <p>-구강내과와 일반진료 협진 시스템을 갖춘 국내 최초의 치과로, 구강내과와 일반진료가 시너지를 이루고</p>
-                                            <p>있어 심미보철 등</p>
+                                            <textarea name="company-desc" id="company-desc" cols="30" rows="10">안녕하세요. 덴탈치과입니다.
+저의는 21년 11월 개원한 이래로 빠른 속도로 성장해 나가고 있습니다.
+
+-구강내과와 일반진료 협진 시스템을 갖춘 국내 최초의 치과로, 구강내과와 일반진료가 시너지를 이루고
+있어 심미보철 등
+                                        </textarea>
                                         </div>
                                     </li>
                                 </ul>
@@ -366,11 +372,10 @@
 
     <script>
         $(document).ready(() => {
-            if ($('.edit')) {
-                $('.image-container').append(`<div class="button-remove"></div>`);
+            if ($('.edit').length > 0) {
+                $('.image-container').not('.blank-image').append(`<div class="button-remove"></div>`);
             }
-            $('.blank-image').remove('.button-remove');
-        })
+        });
     </script>
 </body>
 
