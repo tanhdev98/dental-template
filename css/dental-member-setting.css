@@ -412,6 +412,7 @@
 /* main section */
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list .blank-image {
     width: 45px;
+    height: 100%;
     display: flex;
     align-items: center;
     background: url('../images/organization-image-blank.png') no-repeat center / 100%;
@@ -425,4 +426,32 @@
 /* #content.sub-page .main-section .content-frame .table-horizontal li  */
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content.form-email input {
     width: 160px;
+}
+
+.frame-section .content-frame .button.button-add-image {
+    width: 83px;
+    height: 83px;
+    border: 6px solid #cecece;
+    background-color: #efefef;
+    position: relative;
+    border-radius: 0;
+    flex: 0 0 auto;
+}
+
+.frame-section .content-frame .button.button-add-image::after,
+.frame-section .content-frame .button.button-add-image::before {
+    content: '';
+    width: 7px;
+    height: 27px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.frame-section .content-frame .button.button-add-image::before {
+    transform: rotate(90deg);
 }
