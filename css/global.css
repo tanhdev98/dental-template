@@ -532,7 +532,7 @@
 
 #sub-header .header-wrap .header-right .letter-notify .count-notify {
     position: absolute;
-    width: 15px;
+    padding: 0 6px;
     height: 15px;
     bottom: 0;
     right: -25%;
@@ -1154,9 +1154,8 @@
 
 .button-group .button-white {
     border: 1px solid #bbb;
+    background-color: #fff;
 }
-
-
 /* Header Frame */
 
 .header-frame {
