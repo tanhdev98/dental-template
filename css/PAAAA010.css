@@ -441,7 +441,8 @@
     border-radius: unset;
 }
 
-.list-grid .list-item.full .hover-background {
+.list-grid .list-item.full .hover-background,
+.list-grid .list-item.nor .hover-background {
     display: none;
 }
 
