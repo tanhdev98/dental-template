@@ -422,6 +422,12 @@
     padding-bottom: 35px;
 }
 
+#request-email .table-horizontal li.row-has-require-bottom .table-content>span {
+    font-size: 16px;
+    color: #696969;
+    font-weight: 400;
+}
+
 #request-email .require-input {
     position: absolute;
     bottom: 12px;
@@ -438,6 +444,17 @@
     gap: 3px;
 }
 
+#request-email .form-select-container>.form-select-cus {
+    border-color: #bbb;
+    font-size: 16px;
+}
+
+
+#request-email .form-select-cus>.form-option-placeholder {
+    color: #696969;
+    font-weight: 400;
+    font-size: 16px;
+}
 
 #request-email .form .table-content input {
     font-size: 18px;
@@ -475,6 +492,7 @@
 
 #request-email .content-form .form-select-container.select-phone {
     width: 97px;
+    background-color: transparent;
 }
 
 #request-email input.input-title {
@@ -544,6 +562,11 @@
     background-color: #f6f6f6;
 }
 
+#request-email table tr {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+}
+
 #request-email table thead th {
     font-size: 22px;
     color: #666;
@@ -599,7 +622,7 @@
     margin-top: 66px;
 }
 
-#request-email .button-group a {
+#request-email .button-group button {
     font-size: 19px;
     background-color: #0068b7;
 }
