@@ -348,7 +348,6 @@
     mask-size: contain;
     position: absolute;
     background-size: contain;
-    background-color: #000;
 }
 
 .icon-chat:after {

@@ -371,13 +371,6 @@
     color: #666;
 }
 
-#register-page .form .content-form {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    gap: 3px;
-}
-
 #register-page .form .content-form input {
     font-size: 18px;
     width: 200px;
@@ -453,7 +446,6 @@
 
 #register-page .content-form.form-email {
     gap: 8px;
-    position: relative;
 }
 
 #register-page .content-form.form-email input {
