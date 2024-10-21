@@ -140,8 +140,8 @@
                         <div class="table-title require">이름</div>
                         <div class="table-content"><input type="text"></div>
                     </li>
-                    <li>
-                        <div class="table-title require">근무처(소속)</div>
+                    <li class="custom-title">
+                        <div class="table-title require"><span>근무처</span><span>(소속)</span></div>
                         <div class="table-content"><input type="text"></div>
                     </li>
                     <li class="row-has-require-bottom">
@@ -228,7 +228,7 @@
                     <span></span>
                     <label for="accept-role"><span>개인정보 수집 및 이용 동의합니다.</span></label><strong>[필수]</strong>
                 </div>
-                <ul class="table table-content">
+                <div class="table table-content">
                     <table>
                         <thead>
                             <tr>
@@ -239,9 +239,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="column1">이용자식별 및 본인여부 확인</td>
-                                <td class="column2">이름, 사업자명, 아이디(로그인 회원인 경우만)</td>
-                                <td class="column3" rowspan="2">
+                                <td class="column1" data-label="목적">이용자식별 및 본인여부 확인</td>
+                                <td class="column2" data-label="항목">이름, 사업자명, 아이디(로그인 회원인 경우만)</td>
+                                <td class="column3" data-label="보유기간" rowspan="2">
                                     <ul>
                                         <li>
                                             비회원: 접수일부터 3개월까지
@@ -253,21 +253,33 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="column1">고객 상담 처리</td>
-                                <td class="column2">이메일, 연락처</td>
+                                <td class="column1" data-label="목적">고객 상담 처리</td>
+                                <td class="column2" data-label="항목">이메일, 연락처</td>
+                            </tr>
+                            <tr>
+                                <td data-label="보유기간">
+                                    <ul>
+                                        <li>
+                                            비회원: 접수일부터 3개월까지
+                                        </li>
+                                        <li>
+                                            회원: 탈퇴시까지
+                                        </li>
+                                    </ul>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                </ul>
-                <p class="require-form">※ 이메일문의 답변처리를 위해 필요한 최소한의 개인정보이므로 동의를해 주셔야 서비스를 이용할 수 있습니다.</p>
-                <div class="button-group">
-                    <button href="#" class="button button-blue">문의하기</button>
+
+                    <p class="require-form">※ 이메일문의 답변처리를 위해 필요한 최소한의 개인정보이므로 동의를해 주셔야 서비스를 이용할 수 있습니다.</p>
+                    <div class="button-group">
+                        <button href="#" class="button button-blue">문의하기</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End notices news -->
-    <!-- End ... -->
+        <!-- End notices news -->
+        <!-- End ... -->
     </div>
     <!-- End Content -->
 
