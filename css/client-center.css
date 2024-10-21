@@ -653,7 +653,6 @@
 
     #request-email .table-horizontal li .table-title {
         width: 100px;
-        font-size: 16px;
         padding: 20px 0 20px 15px;
     }
 
@@ -715,12 +714,9 @@
         padding-left: 0;
     }
 
-    #request-email table td {
-        font-size: 16px;
-    }
-
     #request-email table tr:last-child {
         display: block;
+        padding-right: 15px;
     }
 
     #request-email table tr:last-child li {
