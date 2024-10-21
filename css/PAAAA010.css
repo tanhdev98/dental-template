@@ -1709,6 +1709,7 @@
     #bottom-nav {
         padding-top: 25px;
         padding-bottom: 160px;
+        background-color: #f3f7f8;
     }
 
     #bottom-nav .bottom-nav-wrap {
@@ -2028,6 +2029,9 @@
         width: 512px;
     }
 
+    .grand-banner-mobile .title {
+        padding-left: 44px;
+    }
 }
 
 @media screen and (width <=847px) {
@@ -2067,6 +2071,7 @@
     #hot-talent .list-grid .list-item .item-content {
         padding: 30px;
     }
+
 }
 
 @media screen and (width <=600px) {
@@ -2177,6 +2182,12 @@
         padding-left: 0% !important;
     }
 
+    #enterprise .grand-banner-mobile .title,
+    #hot-recruit .grand-banner-mobile .title {
+        padding-left: 68px;
+    }
+
+
     .grand-banner-mobile .num-banner {
         margin-right: 70px;
     }
@@ -2195,9 +2206,16 @@
         display: block;
     }
 
+
+
     .scrollable-area,
     .scrollable-area .list-item {
         height: 220px !important;
+    }
+
+    #grand-banner .scrollable-area,
+    #grand-banner .scrollable-area .list-item {
+        height: 280px !important;
     }
 
     .list-grid .list-item .item-content .item-desc {
@@ -2298,6 +2316,17 @@
 }
 
 @media screen and (width <=480px) {
+
+    #grand-banner .list-grid .list-item .item-content,
+    #premium-banner .list-grid .list-item .item-content {
+        width: 280px;
+    }
+
+    #enterprise .grand-banner-mobile .title,
+    #hot-recruit .grand-banner-mobile .title {
+        padding-left: 38px;
+    }
+
     #slide img {
         width: 272px;
     }
@@ -2386,7 +2415,7 @@
     }
 
     #premium-banner .list-grid .list-item .item-content .item-desc {
-        margin-top: 15px !important;
+        margin-top: 40px !important;
     }
 
     #premium-banner .list-grid .list-item .item-content {
@@ -2472,7 +2501,7 @@
 
     #bottom-nav .title-bottom-nav-res a,
     #bottom-nav .title-bottom-nav-res span {
-        margin: 0 3px;
+        margin: 0 1px;
         font-size: 14px;
     }
 
@@ -2508,13 +2537,35 @@
     }
 }
 
-@media screen and (width <=340px) {
+@media screen and (width <=360px) {
     .hero-nav-child .item a {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .grand-banner-mobile .title {
+        padding-left: 24px;
+    }
+
+
+    #grand-banner .list-grid .list-item .item-content {
+        padding: 8px 15px;
     }
 
     #slide .scrollable-area .item-content {
         margin-right: 10px;
     }
 
+    #grand-banner .scrollable-area,
+    #grand-banner .scrollable-area .list-item {
+        height: 220px !important;
+    }
+
+    #grand-banner .list-grid .list-item .item-content {
+        width: 238px !important;
+    }
+
+    #grand-banner .list-grid .list-item.large .item-content,
+    #premium-banner .list-grid .list-item.large .item-content {
+        width: 50% !important;
+    }
 }
