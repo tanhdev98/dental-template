@@ -513,3 +513,37 @@
 .main-section .table-horizontal.table-white .table-content input {
     border-radius: 5px;
 }
+
+@media screen and (width <=1320px) {
+    #password-subpage .form-container {
+        gap: 15px 30px;
+        flex-wrap: wrap;
+    }
+
+    #password-subpage .frame-section .content-frame {
+        padding: 20px;
+    }
+
+    #password-subpage .form-container .input-container {
+        width: 100%;
+    }
+
+    #password-subpage .form-container .form-group {
+        gap: 15px;
+    }
+
+    #password-subpage .form-container .form-group input {
+        width: 100%;
+    }
+
+    #password-subpage .form-container .form-group>label {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    #password-subpage .form-container .button-group,
+    #password-subpage .form-container .button-group .button {
+        width: 100%;
+    }
+
+}
