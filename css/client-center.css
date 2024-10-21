@@ -407,19 +407,227 @@
     font-weight: 300;
     color: #666;
     padding: 20px 0 20px 45px;
-}
-
-#request-email input {
-    font-size: 18px;
-    width: 200px;
-    height: 100%;
-    border-radius: 5px;
-    border-color: #bbb;
-    border: 1px solid #ddd;
-    padding: 0 16px;
-    height: 37px;
+    background-color: #fafafa;
 }
 
 #request-email .table-horizontal li .table-content {
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 12px 58px 12px 20px;
+}
+
+#request-email .table-horizontal li.row-has-require-bottom .table-content {
+    padding-bottom: 35px;
+}
+
+#request-email .table-horizontal li.row-has-require-bottom .table-content>span {
+    font-size: 16px;
+    color: #696969;
+    font-weight: 400;
+}
+
+#request-email .require-input {
+    position: absolute;
+    bottom: 12px;
+    margin-left: 0;
+    color: #076ecc;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#request-email .table-horizontal .content-form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 3px;
+}
+
+#request-email .form-select-container>.form-select-cus {
+    border-color: #bbb;
+    font-size: 16px;
+}
+
+#request-email .form-select-container.active>.form-select-cus {
+    border-color: transparent;
+}
+
+
+#request-email .form-select-cus>.form-option-placeholder {
+    color: #696969;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#request-email .form .table-content input {
+    font-size: 18px;
+    width: 200px;
+    border-radius: 5px;
+    border-color: #bbb;
+    height: 37px;
+    margin: 0;
+}
+
+#request-email .form .table-content textarea {
+    font-size: 18px;
+    width: 100%;
+    height: 278px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    padding: 20px 12px;
+}
+
+#request-email .content-form.form-phone {
+    gap: 11px;
+}
+
+#request-email .content-form.form-phone input[type="number"] {
+    width: 67px;
+}
+
+#request-email .content-form.form-email {
+    gap: 8px;
+}
+
+#request-email .content-form.form-email input {
+    width: 150px;
+}
+
+#request-email .content-form .form-select-container.select-phone {
+    width: 97px;
+    background-color: transparent;
+}
+
+#request-email input.input-title {
+    width: 803px;
+}
+
+#request-email .table-horizontal li.border-none {
+    border: none;
+}
+
+#request-email .table-horizontal li.border-none+li>div {
+    align-items: flex-start;
+}
+
+#request-email .table-horizontal li.border-none>div {
+    padding-bottom: 0;
+}
+
+#request-email .item-checkBox {
+    margin: 72px 0 14px 0;
+}
+
+#request-email .item-checkBox label {
+    align-items: center;
+    display: flex;
+}
+
+#request-email .item-checkBox input[type="checkbox"]+span::before {
+    width: 15px;
+    height: 12px;
+}
+
+#request-email .item-checkBox>span {
+    height: 23px;
+    width: 23px;
+    border-radius: 3px;
+    border-color: #666;
+}
+
+#request-email .item-checkBox label span {
+    font-size: 24px;
+    font-weight: 400;
+    color: #666;
+    padding-left: 39px;
+}
+
+#request-email .item-checkBox strong {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ff0000;
+    margin-left: 5px;
+}
+
+#request-email .table>li {
+    display: grid;
+    grid-template-columns: 26.39% calc(100% - 26.39% - 31.25%) 31.25%;
+    align-items: center;
+}
+
+#request-email table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#request-email table thead {
+    height: 61px;
+    background-color: #f6f6f6;
+}
+
+#request-email table tr {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#request-email table thead th {
+    font-size: 22px;
+    color: #666;
+    padding: 20px 0 21px;
+    font-weight: 400;
+}
+
+#request-email table td {
+    border-bottom: 1px solid #d3d3d3;
+    text-align: left;
+    padding: 20px 0 17px;
+    font-size: 22px;
+    color: #666;
+}
+
+#request-email table .column1 {
+    width: 26.39%;
+    padding-left: 50px;
+}
+
+#request-email table .column2 {
+    width: 42.36%;
+}
+
+#request-email table .column3 {
+    width: 31.25%;
+    padding-left: 30px;
+    position: relative;
+}
+
+#request-email table .column3 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 16px;
+}
+
+#request-email .column3 ul li {
+    font-size: 22px;
+    color: #666;
+}
+
+#request-email .require-form {
+    font-size: 22px;
+    color: #076ecc;
+    margin-top: 20px;
+    padding-left: 51px;
+}
+
+#request-email .button-group {
+    margin-top: 66px;
+}
+
+#request-email .button-group button {
+    font-size: 19px;
+    background-color: #0068b7;
 }

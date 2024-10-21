@@ -135,7 +135,7 @@
                     <button>자주 묻는 질문</button>
                 </div>
 
-                <ul class="table-horizontal">
+                <ul class="form table-horizontal">
                     <li>
                         <div class="table-title require">이름</div>
                         <div class="table-content"><input type="text"></div>
@@ -144,7 +144,7 @@
                         <div class="table-title require">근무처(소속)</div>
                         <div class="table-content"><input type="text"></div>
                     </li>
-                    <li>
+                    <li class="row-has-require-bottom">
                         <div class="table-title require">이메일</div>
                         <div class="table-content form-email">
                             <input type="text">
@@ -166,48 +166,103 @@
                                     <option value="yahoo.com">yahoo.com</option>
                                     <option value="zdirect">직접입력</option>
                                 </select>
-                                <div class="form-select-cus">
-                                    <div class="form-option-placeholder" data-default="선택">선택</div>
-                                    <div class="form-option-wrapper">
-                                        <div class="form-option-placeholder-container">
-                                            <div class="form-option-placeholder" data-default="선택">선택</div>
-                                        </div>
-                                        <div class="form-option-container" style="height: 0px;">
-                                            <div class="form-option">chol.com</div>
-                                            <div class="form-option">dreamwiz.com</div>
-                                            <div class="form-option">gmail.com</div>
-                                            <div class="form-option">hanmail.net</div>
-                                            <div class="form-option">hotmail.com</div>
-                                            <div class="form-option">msn.com</div>
-                                            <div class="form-option">nate.com</div>
-                                            <div class="form-option">naver.com</div>
-                                            <div class="form-option">netian.com</div>
-                                            <div class="form-option">yahoo.com</div>
-                                            <div class="form-option">직접입력</div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <p class="require-input">※ hanmail, gmail은 수신에 제한이 있을 수 있습니다. 다른 이메일을 입력해주세요</p>
                         </div>
                     </li>
                     <li>
                         <div class="table-title require">연락처</div>
-                        <div class="table-content">010-0000-0000</div>
+                        <div class="table-content content-form form-phone">
+                            <div class="form-select-container select-phone">
+                                <select>
+                                    <option class="option-placeholder">02</option>
+                                    <option value="02">02</option>
+                                    <option value="031">031</option>
+                                    <option value="032">032</option>
+                                    <option value="033">033</option>
+                                    <option value="041">041</option>
+                                    <option value="042">042</option>
+                                    <option value="043">043</option>
+                                    <option value="044">044</option>
+                                    <option value="051">051</option>
+                                    <option value="052">052</option>
+                                    <option value="053">053</option>
+                                    <option value="054">054</option>
+                                    <option value="055">055</option>
+                                    <option value="061">061</option>
+                                    <option value="062">062</option>
+                                    <option value="063">063</option>
+                                    <option value="064">064</option>
+                                    <option value="070">070</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                            </div>
+                            <span>-</span>
+                            <input type="number" maxlength="4">
+                            <span>-</span>
+                            <input type="number" maxlength="4">
+                        </div>
                     </li>
-                    <li>
+                    <li class="border-none">
                         <div class="table-title require">제목</div>
-                        <div class="table-content">010-0000-0000</div>
+                        <div class="table-content"><input type="text" class="input-title"></div>
                     </li>
                     <li>
                         <div class="table-title require">내용</div>
-                        <div class="table-content">010-0000-0000</div>
+                        <div class="table-content">
+                            <textarea type="text"></textarea>
+                        </div>
                     </li>
                     <li>
                         <div class="table-title">아이디</div>
-                        <div class="table-content">010-0000-0000</div>
+                        <div class="table-content"><input type="text"></div>
                     </li>
                 </ul>
+                <div class="item-checkBox">
+                    <input type="checkbox" class="checkbox" id="accept-role">
+                    <span></span>
+                    <label for="accept-role"><span>개인정보 수집 및 이용 동의합니다.</span></label><strong>[필수]</strong>
+                </div>
+                <ul class="table table-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="column1">목적</th>
+                                <th class="column2">항목</th>
+                                <th class="column3">보유기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="column1">이용자식별 및 본인여부 확인</td>
+                                <td class="column2">이름, 사업자명, 아이디(로그인 회원인 경우만)</td>
+                                <td class="column3" rowspan="2">
+                                    <ul>
+                                        <li>
+                                            비회원: 접수일부터 3개월까지
+                                        </li>
+                                        <li>
+                                            회원: 탈퇴시까지
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">고객 상담 처리</td>
+                                <td class="column2">이메일, 연락처</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ul>
+                <p class="require-form">※ 이메일문의 답변처리를 위해 필요한 최소한의 개인정보이므로 동의를해 주셔야 서비스를 이용할 수 있습니다.</p>
+                <div class="button-group">
+                    <button href="#" class="button button-blue">문의하기</button>
+                </div>
             </div>
         </div>
     </div>
