@@ -316,6 +316,10 @@
     #content.sub-page .main-section .content-frame .table-horizontal li .table-content+.table-title+.table-content {
         border-top: 1px solid #ddd;
     }
+
+    .frame-section.frame-gray-header .content-frame {
+        padding: 20px;
+    }
 }
 
 #content.sub-page .main-section .content-frame .table-horizontal li .table-content .images-list {
@@ -546,4 +550,7 @@
         width: 100%;
     }
 
+    .button-group {
+        flex-wrap: wrap;
+    }
 }
