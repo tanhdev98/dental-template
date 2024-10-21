@@ -449,6 +449,10 @@
     font-size: 16px;
 }
 
+#request-email .form-select-container.active>.form-select-cus {
+    border-color: transparent;
+}
+
 
 #request-email .form-select-cus>.form-option-placeholder {
     color: #696969;
@@ -539,7 +543,7 @@
     padding-left: 39px;
 }
 
-#request-email .item-checkBox a {
+#request-email .item-checkBox strong {
     font-size: 22px;
     font-weight: 400;
     color: #ff0000;
