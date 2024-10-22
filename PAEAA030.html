@@ -27,8 +27,8 @@
             </div>
             <div class="close-topAds-wrap">
                 <input type="checkbox" class="disappear" name="disappear">
-                <lab<span></span>el for="disappear">오늘하루 이 창을 열지 않음</labspanel>
-                    <button class="close-ads"></button>
+                <label>오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
             </div>
         </div>
     </div>
@@ -127,14 +127,44 @@
             <div class="container">
                 <div class="top-form">
                     <h2>지역별(근무 지역)</h2>
-                    <div class="form-select-container">
-                        <select>
-                            <option class="option-placeholder">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                        </select>
+                    <button id="saved-conditions">저장한 조건 보기</button>
+                    <div class="popup active" for="saved-conditions">
+                        <button class="popup-close"></button>
+                        <div class="popup-header">
+                            최근 저장한 검색 조건<span>(보관은 최대 5개까지 가능)</span>
+                        </div>
+                        <div class="popup-content">
+                            <ul class="table table-content">
+                                <li class="row-name-column">
+                                    <div class="column start">검색조건</div>
+                                    <div class="column start">검색일</div>
+                                    <div class="column">삭제</div>
+                                </li>
+                                <li>
+                                    <ul class="wrap-link">
+                                        <li>서울>강북구</li>
+                                        <li>진료실</li>
+                                        <li>상담</li>
+                                    </ul>
+                                    <span class="date">2024.08.01</span>
+                                    <button class="delete">삭제</button>
+                                </li>
+                                <li>
+                                    <ul class="wrap-link">
+                                        <li>서울>강북구</li>
+                                    </ul>
+                                    <span class="date">2024.08.01</span>
+                                    <button class="delete">삭제</button>
+                                </li>
+                                <li>
+                                    <ul class="wrap-link">
+                                        <li>서울>강북구</li>
+                                    </ul>
+                                    <span class="date">2024.08.01</span>
+                                    <button class="delete">삭제</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <ul class="tabs">
@@ -194,7 +224,9 @@
                         <div class="option-save icon icon-pin">조건 저장</div>
                     </div>
                 </div>
-                <div class="line-after-tab"></div>
+                <a href="#" class="line-after-tab">
+                    <img src="./images/PAEAA030/banner-1.png" alt="Dental Job Banner">
+                </a>
             </div>
         </div>
         <!-- Content Table -->
@@ -229,43 +261,163 @@
                         </div>
                     </div>
                     <ul class="wrap-table table">
-                        <li class="item">
+                        <li class="item yellow">
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        강남애프터치과의원
+                                        이엘치과
                                     </div>
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
+                                        <h4 class="item-title">진료실/급여최고대우,워라벨확실,야간×,오버타임×,조기퇴근,주36시간,법정연차+a</h4>
                                     </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
                                         <li><a href="#">진료실</a></li>
-                                        <li><a href="#">상담</a></li>
-                                        <li><a href="#">보험청구</a></li>
-                                        <li><a href="#">기타</a></li>
                                     </ul>
                                     <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
+                                        <li>서울시 > 영등포구</li>
+                                        <li class="subway-tag">
+                                            <div class="subway-number subway-2"></div>
+                                            <div class="subway-number subway-9"></div>
+                                        </li>
                                     </ul>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                 </div>
                                 <div class="column column-3">
                                     <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
+                                        <li><a href="#">무관</a></li>
+                                        <li><a href="#">정규직</a></li>
+                                        <li><a href="#">치과위생사</a></li>
                                     </ul>
                                 </div>
                                 <div class="column column-4">
-                                    <div class="support">즉시지원</div>
-                                    <div class="room-name red">D-1</div>
-                                    <div class="time">~ 08.30(금)</div>
+                                    <button class="support">즉시지원</button>
+                                    <div class="room-name">D-12</div>
+                                    <div class="time">~ 11/03(일)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item yellow">
+                            <div class="wrap-column">
+                                <div class="column column-1">
+                                    <div class="clinic-name">
+                                        ■■엘투치과■■
+                                    </div>
+                                </div>
+                                <div class="column start column-2">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">■팀장님모십니다 & 연차무관■연말상여120■인센티브■9호선/분당선 삼성/선전릉■ </h4>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 > 강남구</li>
+                                        <li class="subway-tag">
+                                            <div class="subway-number subway-2"></div>
+                                            <div class="subway-number subway-9"></div>
+                                            <div class="subway-text subway-suin-bundang-line"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
+                                </div>
+                                <div class="column column-3">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">무관</a></li>
+                                        <li><a href="#">정규직</a></li>
+                                        <li><a href="#">치과위생사</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column column-4">
+                                    <button class="support">즉시지원</button>
+                                    <div class="room-name">D-10</div>
+                                    <div class="time">~ 11/01(금)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item yellow">
+                            <div class="wrap-column">
+                                <div class="column column-1">
+                                    <div class="clinic-name">
+                                        최앤이치과 [서울역/시청역]
+                                    </div>
+                                </div>
+                                <div class="column start column-2">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">▶[시청역/서울역]▶야간No/로테이션No▶교정/보철 진료팀7년차↓◀교정/보철알바▶데스크팀◀</h4>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 > 중구</li>
+                                        <li class="subway-tag">
+                                            <div class="subway-number subway-1"></div>
+                                            <div class="subway-number subway-2"></div>
+                                            <div class="subway-number subway-4"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
+                                </div>
+                                <div class="column column-3">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">무관</a></li>
+                                        <li><a href="#">정규직</a></li>
+                                        <li><a href="#">치과위생사</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column column-4">
+                                    <button class="support">즉시지원</button>
+                                    <div class="room-name red">내일 마감</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item yellow">
+                            <div class="wrap-column">
+                                <div class="column column-1">
+                                    <div class="clinic-name">
+                                        ♥♥서울하이안치과♥♥
+                                    </div>
+                                </div>
+                                <div class="column start column-2">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">♥[주4.5일/35시간]♥최고대우♥ 진료실 선생님(4년차이상) 모십니다.</h4>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 > 관악구</li>
+                                        <li class="subway-tag">
+                                            <div class="subway-number subway-2"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
+                                </div>
+                                <div class="column column-3">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">무관</a></li>
+                                        <li><a href="#">정규직</a></li>
+                                        <li><a href="#">치과위생사</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column column-4">
+                                    <button class="support">즉시지원</button>
+                                    <div class="room-name">D-12</div>
+                                    <div class="time">~ 11/03(일)</div>
                                 </div>
                             </div>
                         </li>
@@ -273,276 +425,125 @@
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        서울N치과
+                                        서울맥치과
                                     </div>
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">치위생사, 치기공사 모집</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
+                                        <h4 class="item-title">9호선가양역 ★3~6년차 진료실 선생님★ 모십니다.</h4>
                                     </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
                                         <li><a href="#">진료실</a></li>
-                                        <li><a href="#">상담</a></li>
-                                        <li><a href="#">보험청구</a></li>
-                                        <li><a href="#">기타</a></li>
                                     </ul>
                                     <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
+                                        <li>서울시 > 강서구</li>
+                                        <li class="subway-tag">
+                                            <div class="subway-number subway-9"></div>
+                                        </li>
                                     </ul>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                                 <div class="column column-3">
                                     <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
+                                        <li><a href="#">무관</a></li>
+                                        <li><a href="#">정규직</a></li>
+                                        <li><a href="#">치과위생사</a></li>
                                     </ul>
                                 </div>
                                 <div class="column column-4">
+                                    <button class="support">즉시지원</button>
+                                    <div class="room-name">D-12</div>
+                                    <div class="time">~ 11/03(일)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item yellow">
+                            <div class="wrap-column">
+                                <div class="column column-1">
+                                    <div class="clinic-name">
+                                        서울하늘에치과
+                                    </div>
+                                </div>
+                                <div class="column start column-2">
+                                    <div class="wrap-title">
+                                        <h4 class="item-title">함께 서장할 진료실 스텝, 코디네이터를 모십니다.</h4>
+                                    </div>
+                                    <ul class="wrap-link">
+                                        <li><a href="#">진료실</a></li>
+                                        <li><a href="#">데스크</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 > 강남구</li>
+                                        <li class="subway-tag">
+                                            <div class="subway-number subway-1"></div>
+                                            <div class="subway-number subway-2"></div>
+                                            <div class="subway-number subway-4"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
+                                </div>
+                                <div class="column column-3">
+                                    <ul class="wrap-link">
+                                        <li><a href="#">무관</a></li>
+                                        <li><a href="#">정규직</a></li>
+                                        <li><a href="#">치과위생사</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column column-4">
+                                    <button class="support">즉시지원</button>
                                     <div class="room-name">D-2</div>
-                                    <div class="time">~ 08.30(금)</div>
+                                    <div class="time">~ 11/24(일)</div>
                                 </div>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item blue">
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        강남애프터치과의원
+                                        ▶서울유앤치과◀
                                     </div>
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
+                                        <h4 class="item-title">▶▶ (주37시간이하) 최고 대우로 진료실 선생님을 모십니다.◀◀</h4>
                                     </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
                                         <li><a href="#">진료실</a></li>
+                                        <li><a href="#">데스크</a></li>
                                         <li><a href="#">상담</a></li>
                                         <li><a href="#">보험청구</a></li>
                                         <li><a href="#">기타</a></li>
                                     </ul>
                                     <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
+                                        <li>서울시 > 중랑구</li>
+                                        <li class="subway-tag">
+                                            <div class="subway-number subway-1"></div>
+                                            <div class="subway-number subway-7"></div>
+                                            <div class="subway-text subway-gyeongui-jungang-line"></div>
+                                        </li>
                                     </ul>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                                 <div class="column column-3">
                                     <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
+                                        <li><a href="#">무관</a></li>
+                                        <li><a href="#">정규직</a></li>
+                                        <li><a href="#">치과위생사</a></li>
                                     </ul>
                                 </div>
                                 <div class="column column-4">
-                                    <div class="support">즉시지원</div>
-                                    <div class="room-name red">D-1</div>
-                                    <div class="time">~ 08.30(금)</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="wrap-column">
-                                <div class="column column-1">
-                                    <div class="clinic-name">
-                                        강남애프터치과의원
-                                    </div>
-                                </div>
-                                <div class="column start column-2">
-                                    <div class="wrap-title">
-                                        <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                    </div>
-                                    <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
-                                        <li><a href="#">진료실</a></li>
-                                        <li><a href="#">상담</a></li>
-                                        <li><a href="#">보험청구</a></li>
-                                        <li><a href="#">기타</a></li>
-                                    </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                    </ul>
-                                </div>
-                                <div class="column column-3">
-                                    <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
-                                    </ul>
-                                </div>
-                                <div class="column column-4">
-                                    <div class="support">즉시지원</div>
-                                    <div class="room-name red">D-1</div>
-                                    <div class="time">~ 08.30(금)</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="wrap-column">
-                                <div class="column column-1">
-                                    <div class="clinic-name">
-                                        서울N치과
-                                    </div>
-                                </div>
-                                <div class="column start column-2">
-                                    <div class="wrap-title">
-                                        <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                    </div>
-                                    <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
-                                        <li><a href="#">진료실</a></li>
-                                        <li><a href="#">상담</a></li>
-                                        <li><a href="#">보험청구</a></li>
-                                        <li><a href="#">기타</a></li>
-                                    </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                    </ul>
-                                </div>
-                                <div class="column column-3">
-                                    <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
-                                    </ul>
-                                </div>
-                                <div class="column column-4">
-                                    <div class="room-name">D-2</div>
-                                    <div class="time">~ 08.30(금)</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="wrap-column">
-                                <div class="column column-1">
-                                    <div class="clinic-name">
-                                        서울N치과
-                                    </div>
-                                </div>
-                                <div class="column start column-2">
-                                    <div class="wrap-title">
-                                        <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                    </div>
-                                    <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
-                                        <li><a href="#">진료실</a></li>
-                                        <li><a href="#">상담</a></li>
-                                        <li><a href="#">보험청구</a></li>
-                                        <li><a href="#">기타</a></li>
-                                    </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                    </ul>
-                                </div>
-                                <div class="column column-3">
-                                    <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
-                                    </ul>
-                                </div>
-                                <div class="column column-4">
-                                    <div class="room-name">D-2</div>
-                                    <div class="time">~ 08.30(금)</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="wrap-column">
-                                <div class="column column-1">
-                                    <div class="clinic-name">
-                                        강남애프터치과의원
-                                    </div>
-                                </div>
-                                <div class="column start column-2">
-                                    <div class="wrap-title">
-                                        <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                    </div>
-                                    <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
-                                        <li><a href="#">진료실</a></li>
-                                        <li><a href="#">상담</a></li>
-                                        <li><a href="#">보험청구</a></li>
-                                        <li><a href="#">기타</a></li>
-                                    </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                    </ul>
-                                </div>
-                                <div class="column column-3">
-                                    <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
-                                    </ul>
-                                </div>
-                                <div class="column column-4">
-                                    <div class="support">즉시지원</div>
-                                    <div class="room-name red">D-1</div>
-                                    <div class="time">~ 08.30(금)</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="wrap-column">
-                                <div class="column column-1">
-                                    <div class="clinic-name">
-                                        강남애프터치과의원
-                                    </div>
-                                </div>
-                                <div class="column start column-2">
-                                    <div class="wrap-title">
-                                        <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                    </div>
-                                    <ul class="wrap-link">
-                                        <li><a href="#">치위생사</a></li>
-                                        <li><a href="#">진료실</a></li>
-                                        <li><a href="#">상담</a></li>
-                                        <li><a href="#">보험청구</a></li>
-                                        <li><a href="#">기타</a></li>
-                                    </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                    </ul>
-                                </div>
-                                <div class="column column-3">
-                                    <ul class="wrap-link">
-                                        <li><a href="#">경력</a></li>
-                                        <li><a href="#">정규직 외</a></li>
-                                        <li><a href="#">치위생사 외</a></li>
-                                    </ul>
-                                </div>
-                                <div class="column column-4">
-                                    <div class="support">즉시지원</div>
-                                    <div class="room-name red">D-1</div>
-                                    <div class="time">~ 08.30(금)</div>
+                                    <button class="support">즉시지원</button>
+                                    <div class="room-name">D-6</div>
+                                    <div class="time">~ 10/28(일)</div>
                                 </div>
                             </div>
                         </li>

@@ -1005,16 +1005,15 @@
 }
 
 .line-after-tab {
-    height: 120px;
+    display: block;
+    height: 180px;
     width: 100%;
     border-radius: 10px;
-    background-color: #88abda;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* end tab-select-results*/
-
 
 /* statistic */
 #statistic {
@@ -1097,13 +1096,20 @@
 }
 
 .count-results {
-    font-size: 22px;
     font-weight: 300;
     color: #666;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    font-size: 18px;
 }
 
 .count-results.blue {
-    color: #0068b7;
+    background-color: #0068b7;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -1216,4 +1222,194 @@
 
 .header-frame a:hover .icon::after {
     background-color: #0068b7;
+}
+
+/* subway tag */
+.subway-tag {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 5px;
+}
+
+.subway-tag>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 9px;
+    padding: 0 6px 0 2px;
+}
+
+.subway-tag .subway-number::before {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subway-tag .subway-number::after {
+    content: '호선';
+}
+
+.subway-tag .subway-number.subway-1 {
+    background-color: #003499;
+}
+
+.subway-tag .subway-number.subway-1::before {
+    content: '1';
+    color: #003499;
+}
+
+.subway-tag .subway-number.subway-2 {
+    background-color: #37b22d;
+}
+
+.subway-tag .subway-number.subway-2::before {
+    content: '2';
+    color: #37b22d;
+}
+
+.subway-tag .subway-number.subway-3 {
+    background-color: #d1673c;
+}
+
+.subway-tag .subway-number.subway-3::before {
+    content: '3';
+    color: #d1673c;
+}
+
+.subway-tag .subway-number.subway-4 {
+    background-color: #02a5e3;
+}
+
+.subway-tag .subway-number.subway-4::before {
+    content: '4';
+    color: #02a5e3;
+}
+
+.subway-tag .subway-number.subway-5 {
+    background-color: #6d528b;
+}
+
+.subway-tag .subway-number.subway-5::before {
+    content: '5';
+    color: #6d528b;
+}
+
+.subway-tag .subway-number.subway-6 {
+    background-color: #5b4234;
+}
+
+.subway-tag .subway-number.subway-6::before {
+    content: '6';
+    color: #5b4234;
+}
+
+.subway-tag .subway-number.subway-7 {
+    background-color: #606d00;
+}
+
+.subway-tag .subway-number.subway-7::before {
+    content: '7';
+    color: #606d00;
+}
+
+.subway-tag .subway-number.subway-8 {
+    background-color: #c73b6b;
+}
+
+.subway-tag .subway-number.subway-8::before {
+    content: '8';
+    color: #c73b6b;
+}
+
+.subway-tag .subway-number.subway-9 {
+    background-color: #bfa122;
+}
+
+.subway-tag .subway-number.subway-9::before {
+    content: '9';
+    color: #bfa122;
+}
+
+.subway-tag .subway-text {
+    padding: 0 6px;
+}
+
+.subway-tag .subway-suin-bundang-line {
+    background-color: #ffbf17;
+}
+
+.subway-tag .subway-suin-bundang-line::after {
+    content: '분당선';
+}
+
+.subway-tag .subway-gyeongui-jungang-line {
+    background-color: #32c6a6;
+}
+
+.subway-tag .subway-gyeongui-jungang-line::after {
+    content: '경의중앙';
+}
+
+/* popup */
+.popup {
+    display: none;
+    position: absolute;
+    border: 1px solid #333;
+    padding: 32px 20px;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 13;
+}
+
+.popup.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup .popup-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 15px;
+    height: 15px;
+}
+
+.popup .popup-close::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popup .popup-close::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popup .popup-header {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.popup .popup-header span {
+    font-size: 14px;
+    font-weight: 100;
 }
