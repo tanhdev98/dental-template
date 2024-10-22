@@ -362,7 +362,7 @@
 }
 
 /* Request Email */
-#request-email h1.title {
+h1.title {
     margin: 45px 0 21px;
 }
 
@@ -375,6 +375,7 @@
     padding: 0 42px 0 22px;
     width: fit-content;
     gap: 68px;
+    flex-wrap: wrap;
 }
 
 #request-email .request span {
@@ -408,6 +409,10 @@
     color: #666;
     padding: 20px 0 20px 45px;
     background-color: #fafafa;
+}
+
+#request-email .table-horizontal li.custom-title .table-title span {
+    color: #666;
 }
 
 #request-email .table-horizontal li .table-content {
@@ -571,6 +576,10 @@
     border-bottom: 1px solid #d3d3d3;
 }
 
+#request-email table tr:last-child {
+    display: none;
+}
+
 #request-email table thead th {
     font-size: 22px;
     color: #666;
@@ -599,6 +608,7 @@
     width: 31.25%;
     padding-left: 30px;
     position: relative;
+
 }
 
 #request-email table .column3 ul {
@@ -630,4 +640,167 @@
 #request-email .button-group button {
     font-size: 19px;
     background-color: #0068b7;
+}
+
+@media screen and (width <=1440px) {}
+
+@media screen and (width <=1320px) {
+    #request-email .request {
+        gap: 15px;
+        height: auto;
+        padding: 15px;
+    }
+
+    #request-email .table-horizontal li .table-title {
+        width: 100px;
+        padding: 20px 0 20px 15px;
+    }
+
+    #request-email .table-horizontal li.row-has-require-bottom .table-content {
+        flex-wrap: wrap;
+    }
+
+    #request-email .table-horizontal li .table-content {
+        padding: 15px;
+    }
+
+    #request-email .table-horizontal li.row-has-require-bottom .table-content {
+        padding-bottom: 50px;
+    }
+
+    #request-email table thead {
+        display: none;
+    }
+
+    #request-email table tbody tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    #request-email table tbody tr:last-child {
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+    #request-email table td {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        word-break: keep-all;
+        padding-left: 15px;
+        gap: 30px;
+        text-align: right;
+    }
+
+    #request-email table td:before {
+        content: attr(data-label);
+    }
+
+    #request-email table .column1 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #request-email table .column2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #request-email table .column3 {
+        display: none;
+    }
+
+    #request-email .require-form {
+        padding-left: 0;
+    }
+
+    #request-email table tr:last-child {
+        display: block;
+        padding-right: 15px;
+    }
+
+    #request-email table tr:last-child li {
+        color: #666;
+    }
+
+    #request-email .custom-title .table-title {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+
+/* Client Center Child  */
+
+#client-center-child .tabs {
+    border-bottom: none;
+}
+
+#client-center-child .tabs.short-tab li {
+    max-width: 252px;
+    box-sizing: border-box;
+}
+
+#client-center-child .tabs li span {
+    height: 51px;
+    border-color: #999;
+    padding: 0 12px;
+    font-size: 22px;
+}
+
+
+#client-center-child .tabs li.active {
+    position: relative;
+}
+
+#client-center-child .tabs li.active span {
+    color: #076ecc;
+}
+
+#client-center-child .tabs li.active:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #fff;
+    bottom: -1px;
+    left: 1px;
+    right: 1px;
+}
+
+#client-center-child .tabs li.active span {
+    border: 1px solid #0068b7;
+    border-bottom-color: transparent;
+}
+
+#client-center-child .content-tab {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 0 0 10px 10px;
+}
+
+#client-center-child .content-tab .print-item {
+    border: 1px solid #0068b7;
+    border-bottom-color: transparent;
+    height: 1296px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 0 0 10px 10px;
+}
+
+#client-center-child .content-tab .print-item span {
+    font-size: 40px;
+    color: #333;
+}
+
+@media screen and (width <=1440px) {
+    #client-center-child .content-tab .print-item {
+        height: 500px;
+    }
 }

@@ -74,10 +74,8 @@
     flex-direction: row;
     padding-bottom: 16px;
     border-bottom: 1px solid #ddd;
-}
-
-.tabs-no-border li {
-    padding-right: 32px;
+    flex-wrap: wrap;
+    gap: 15px 32px;
 }
 
 .tabs-no-border li:last-child {
