@@ -256,13 +256,15 @@
 
 #grand-banner .list-grid {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 235px);
+    gap: 25px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 235px);
     grid-template-areas:
-        "item1 item2 item3 item4 item5"
-        "item1 item2 item6 item7 item8"
-        "item9 item10 item11 item12 item13";
+        "item1 item2 item3 item4"
+        "item1 item2 item5 item6"
+        "item7 item8 item9 item10"
+        "item11 item12 item13 item14"
+        "item15 item16 item17 item18";
 }
 
 #grand-banner .scrollable-area,
@@ -411,10 +413,11 @@
 }
 
 .list-grid .list-item .item-content .item-desc {
-    font-size: 22px;
+    font-size: 18px;
     color: #333;
     margin-bottom: 18px;
     line-height: 26px;
+    font-weight: 600;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -436,6 +439,10 @@
     border-radius: 0 0 10px 10px;
 }
 
+#premium-banner .list-grid .list-item .hover-background {
+    background-color: #f3f9ed;
+}
+
 .list-grid .list-item.large .hover-background {
     bottom: 255px;
     border-radius: unset;
@@ -448,6 +455,7 @@
 
 .list-grid .list-item .item-content .item-tag {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 13px;
     font-weight: 300;
@@ -459,6 +467,9 @@
 
 .list-grid .list-item .item-content .item-tag li {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 
 .list-grid .list-item .item-content .item-tag li::after {
@@ -626,12 +637,13 @@
 #premium-banner .list-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 210px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 210px);
     grid-template-areas:
-        "item1 item2 item3 item4 item5 item6"
-        "item7 item8 item9 item10 item11 item12"
-        "item13 item14 item15 item16 item17 item18";
+        "item1 item2 item3 item4 item5"
+        "item6 item7 item8 item9 item10"
+        "item11 item12 item13 item14 item15"
+        "item16 item17 item18 item19 item20";
 }
 
 
@@ -648,8 +660,9 @@
 }
 
 #premium-banner .list-grid .list-item .item-content .item-desc {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
+    font-weight: 600;
 }
 
 #premium-banner .list-grid .list-item.full .item-content {
@@ -721,7 +734,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 170px);
+    grid-template-rows: repeat(1, 140px);
     grid-template-areas: "item1 item2";
 }
 
@@ -729,14 +742,14 @@
     flex-direction: row;
     align-items: center;
     border: 1px solid #13b5b1;
-    gap: 25px;
-    padding: 0 25px;
+    gap: 20px;
+    padding: 0 24px;
 }
 
 #enterprise .list-grid .list-item .item-content .item-logo {
     margin-bottom: 0;
-    width: 215px;
-    height: 115px;
+    width: 230px;
+    height: 90px;
 }
 
 #enterprise .list-grid .list-item .item-content .item-logo img {
@@ -746,13 +759,14 @@
 }
 
 #enterprise .list-grid .list-item .item-content .item-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 #enterprise .list-grid .list-item .item-content .item-desc {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 18px;
     margin-bottom: 15px;
 }
 
@@ -808,19 +822,23 @@
 
 #hot-recruit .list-grid .list-item .item-content {
     justify-content: space-between;
-    padding-right: 5px;
+    padding: 10px 25px;
 }
 
 #hot-recruit .list-grid .list-item .item-content .item-title {
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     color: #666;
 }
 
 #hot-recruit .list-grid .list-item .item-content .item-desc {
-    margin-bottom: 0;
-    font-size: 19px;
-    -webkit-line-clamp: 1;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #666;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    -webkit-line-clamp: 2;
 }
 
 @media screen and (width <=1320px) {
@@ -915,13 +933,14 @@
 
 #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name {
     font-weight: 600;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #hot-talent .list-grid .list-item .item-content .item-desc {
     margin-bottom: 0;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
 #hot-talent .list-grid .list-item .item-content .item-footer {
