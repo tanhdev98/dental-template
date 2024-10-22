@@ -561,6 +561,7 @@
 .list-grid .list-item.large .item-image>img {
     height: 100%;
     object-fit: cover;
+    border-radius: 0 10px 10px 0px;
 }
 
 @media screen and (width <=1590px) {
@@ -1252,7 +1253,6 @@
     }
 
     #slide .carousel-inner,
-    #footer,
     .section-title {
         display: none;
     }
@@ -1299,6 +1299,7 @@
     #grand-banner .list-grid .list-item.large {
         max-width: 95% !important;
         margin-right: 5%;
+        border-radius: 10px;
     }
 
     .group-banner-mobile {
@@ -1364,7 +1365,8 @@
     #grand-banner .list-grid .list-item.large .item-content {
         border-radius: 10px 0 0 0;
         flex-direction: row;
-        width: calc(50% + 3px);
+        width: calc(50% + 3px) !important;
+        border-radius: 10px 0 0 10px;
     }
 
     #grand-banner .list-grid .list-item .item-content {
@@ -1708,7 +1710,6 @@
 
     #bottom-nav {
         padding-top: 25px;
-        padding-bottom: 160px;
         background-color: #f3f7f8;
     }
 
@@ -1924,9 +1925,179 @@
         width: 100% !important;
         height: 100% !important;
     }
+
+    #footer {
+        padding: 30px 50px 35px 50px;
+    }
 }
 
-@media screen and (width <=1000px) {}
+@media screen and (width <=1000px) {
+
+    .list-grid .list-item .item-content,
+    .list-grid .list-item .item-content {
+        width: 290px;
+    }
+
+    .scrollable-area,
+    .scrollable-area .list-item {
+        height: 290px;
+    }
+
+    #slide .scrollable-area,
+    #slide .scrollable-area .list-item {
+        height: auto !important;
+    }
+
+    #grand-banner .list-grid .list-item .item-content .item-tag {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    #grand-banner .list-grid .list-item .item-content .item-desc {
+        margin: 29px 0 0 0;
+    }
+
+    .list-grid .list-item .item-content .item-tag .bookmark {
+        width: 15px;
+        height: 15px;
+    }
+
+    #premium-banner .list-grid .list-item .item-content .item-logo {
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #premium-banner .list-grid .list-item .item-content .item-desc {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    #premium-banner .list-grid .list-item .item-content .item-tag {
+        font-size: 18px;
+    }
+
+    #grand-banner .list-grid .list-item .item-content,
+    #premium-banner .list-grid .list-item .item-content {
+        padding: 18px 25px;
+        width: 290px;
+    }
+
+    #grand-banner .scrollable-area,
+    #grand-banner .scrollable-area .list-item {
+        height: 290px;
+    }
+
+    #grand-banner .list-grid,
+    #premium-banner .list-grid {
+        grid-template-rows: repeat(2, 290px);
+    }
+
+    #premium-banner .list-grid .scrollable-area-2 {
+        margin-top: 0px;
+    }
+
+    #enterprise .list-grid .list-item .item-content .item-logo {
+        width: 550px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    #enterprise .list-grid .list-item .item-content .item-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #enterprise .list-grid .item-title,
+    #enterprise .list-grid .item-desc,
+    #enterprise .list-grid .item-tag {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #enterprise .scrollable-area .list-item {
+        width: 80%;
+    }
+
+    #enterprise .list-grid .list-item .item-content,
+    #enterprise .list-grid .list-item .item-content {
+        width: 100% !important;
+    }
+
+    #enterprise .list-grid .item-tag {
+        font-size: 18px !important;
+    }
+
+    #enterprise .list-grid .list-item .item-content {
+        gap: 20px;
+    }
+
+    #hot-recruit .list-grid {
+        display: block;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content .item-title {
+        font-size: 36px;
+        line-height: 1;
+        color: #076ecc;
+        margin: 28px auto 28px auto;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content .item-desc {
+        font-size: 26px;
+        line-height: 37px;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content .item-tag {
+        font-size: 18px;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content {
+        padding: 18px 30px;
+    }
+
+    #hot-recruit .scrollable-area-2 {
+        margin-top: 20px;
+    }
+
+    #hot-recruit {
+        padding-bottom: 20px;
+    }
+
+    #hot-talent .list-grid .list-item .item-content {
+        width: 100% !important;
+    }
+
+    #hot-talent .list-grid .list-item .item-content .item-desc {
+        font-size: 26px;
+    }
+
+    #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-avatar {
+        width: 69px;
+        height: 69px;
+    }
+
+    #hot-talent .list-grid .list-item .item-content {
+        padding: 30px;
+    }
+
+    #hot-talent .list-grid {
+        grid-template-rows: repeat(3, 290px);
+    }
+
+    #bottom-nav .bottom-nav-wrap {
+        flex-wrap: nowrap;
+    }
+
+    #bottom-nav {
+        padding-bottom: 0;
+    }
+
+    #footer {
+        padding: 30px 50px 35px 50px;
+    }
+}
 
 /* end slider */
 @media screen and (width <=950px) {
@@ -1961,15 +2132,14 @@
     #hot-recruit .container {
         padding-left: 5%;
     }
-}
 
-@media screen and (width <=890px) {
-
-    #enterprise .list-grid .list-item .item-content .item-logo,
-    #enterprise .list-grid .list-item .item-content .item-logo img {
-        display: none;
+    #hot-talent .list-grid .list-item .item-content .item-footer .item-position,
+    #hot-talent .list-grid .list-item .item-content .item-tag {
+        font-size: 22px;
+        margin-top: 10px;
     }
 }
+
 
 @media screen and (width <=875px) {
     #header .header-wrap .nav-wrap {
@@ -1978,8 +2148,25 @@
         align-items: center;
     }
 
+    #grand-banner .list-grid .list-item.large .item-content .item-logo {
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    #enterprise .list-grid .item-desc {
+        font-size: 26px !important;
+    }
+
+    /* #grand-banner .list-grid .list-item .item-content .item-tag {
+        font-size: 22px;
+        margin-top: 35px;
+    } */
+
     #header .header-wrap .header-left {
-        gap: 50px;
+        gap: 51px;
     }
 
     #slide .scrollable-area .item-content {
@@ -2022,7 +2209,7 @@
     }
 
     #slide {
-        margin-left: 50px;
+        margin-left: 60px;
     }
 
     #slide img {
@@ -2032,17 +2219,18 @@
     .grand-banner-mobile .title {
         padding-left: 44px;
     }
+
 }
 
 @media screen and (width <=847px) {
     #grand-banner .list-grid .list-item .item-content .item-desc {
-        margin: 59px 0 10px 0;
-        font-size: 36px;
+        margin: 29px 0 10px 0;
+        font-size: 26px;
         line-height: 44px;
     }
 
     #slide .scrollable-area .item-content {
-        margin-right: 30px;
+        margin-right: 60px;
     }
 }
 
@@ -2074,6 +2262,97 @@
 
 }
 
+@media screen and (width <=650px) {
+
+    .list-grid .list-item .item-content,
+    .list-grid .list-item .item-content {
+        width: 225px;
+    }
+
+    .scrollable-area,
+    .scrollable-area .list-item {
+        height: 225px;
+    }
+
+    #grand-banner .list-grid .list-item .item-content,
+    #premium-banner .list-grid .list-item .item-content {
+        padding: 18px 25px;
+        width: 225px;
+    }
+
+    #grand-banner .scrollable-area,
+    #grand-banner .scrollable-area .list-item {
+        height: 225px;
+    }
+
+    #grand-banner .list-grid .list-item .item-content .item-desc {
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #premium-banner .list-grid .list-item .item-content .item-tag,
+    #grand-banner .list-grid .list-item .item-content .item-tag {
+        font-size: 12px;
+    }
+
+    .list-grid .list-item .item-content .item-logo {
+        margin-bottom: 0;
+    }
+
+    .list-grid .list-item .item-content .item-tag li::after {
+        height: 10px;
+    }
+
+    #premium-banner .list-grid .list-item .item-content .item-logo {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #hot-talent .list-grid .list-item .item-content .item-footer .item-position,
+    #hot-talent .list-grid .list-item .item-content .item-tag {
+        font-size: 16px;
+    }
+
+    #grand-banner .list-grid,
+    #premium-banner .list-grid {
+        grid-template-rows: repeat(2, 225px);
+    }
+
+    #premium-banner .scrollable-area.scrollable-area-1,
+    #premium-banner .list-grid .scrollable-area-2 {
+        margin-top: 45px;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content {
+        padding: 18px 20px;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content .item-tag {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content .item-title {
+        font-size: 28px;
+        margin: 28px auto 18px auto;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content .item-desc {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item {
+        height: 59px;
+    }
+
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+        font-size: 18px;
+    }
+}
+
 @media screen and (width <=600px) {
     #header .header-wrap {
         padding: 32px;
@@ -2088,12 +2367,6 @@
     #hot-recruit .container {
         padding-left: 0px;
     }
-
-    #hot-talent .list-grid {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
 
     #slide {
         margin-left: 20px;
@@ -2156,11 +2429,11 @@
     }
 
     #grand-banner .list-grid .list-item.large .item-content .item-desc {
-        margin-top: -10px !important;
+        margin-top: 0px !important;
     }
 
     .list-grid .list-item .item-content .item-tag {
-        font-size: 14px !important;
+        font-size: 11px !important;
         gap: 0 !important;
     }
 
@@ -2293,9 +2566,6 @@
             "item2";
     }
 
-    #hot-recruit {
-        padding-top: 55px;
-    }
 
     #hot-talent .drop-list-item-res {
         display: block;
@@ -2313,6 +2583,7 @@
     #bottom-nav .bottom-nav-wrap {
         padding: 0 22px;
     }
+
 }
 
 @media screen and (width <=480px) {
@@ -2343,6 +2614,10 @@
         font-size: 22px !important;
         margin: 10px 0 10px 0 !important;
         line-height: 28px !important;
+    }
+
+    #grand-banner .list-grid .list-item.large .item-content {
+        padding: 8px 24px;
     }
 
     .grand-banner-mobile .title,
@@ -2377,46 +2652,80 @@
         gap: 10px !important;
     }
 
-    .list-grid .scrollable-area .list-item {
-        width: 80% !important;
+    #enterprise .scrollable-area .list-item {
+        width: 85%;
+    }
+
+    #enterprise .list-grid .list-item .item-content .item-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #enterprise .list-grid .list-item .item-content .item-logo {
+        width: 300px;
+        height: auto;
+        object-fit: contain;
+        margin-right: 8px;
+        max-height: unset;
+    }
+
+    #hot-recruit .scrollable-area,
+    #enterprise .scrollable-area {
+        margin-top: 5px;
     }
 
     #enterprise .list-grid .item-tag {
-        font-size: 14px !important;
+        font-size: 10px !important;
     }
 
-    #enterprise .list-grid .item-title {
-        font-size: 27px !important;
-        margin-bottom: 26px;
-    }
-
-    #enterprise .list-grid .list-item .item-content .item-logo,
-    #enterprise .list-grid .list-item .item-content .item-logo img {
-        display: none;
-    }
-
+    #enterprise .list-grid .item-title,
     #enterprise .list-grid .item-desc {
-        font-size: 22px !important;
+        font-size: 16px !important;
+    }
+
+    #enterprise .list-grid .list-item .item-content .item-title {
+        margin-bottom: 0;
     }
 
     #enterprise .list-grid .item-title,
     #enterprise .list-grid .item-desc,
     #enterprise .list-grid .item-tag {
         width: unset;
+        margin: 0;
+    }
+
+    #hot-recruit {
+        padding-top: 10px;
+        padding-bottom: 0;
+        margin-top: -15px;
+    }
+
+    .list-grid .list-item .item-content,
+    .list-grid .list-item .item-content {
+        width: 160px;
+    }
+
+    #hot-recruit .scrollable-area .list-item {
+        width: 160px;
+    }
+
+    #hot-recruit .list-grid {
+        grid-template-rows: repeat(1, 160px);
     }
 
     #hot-recruit .list-grid .list-item .item-content .item-title {
-        font-size: 32px;
-        margin-bottom: 15px;
+        font-size: 24px;
+        margin: 0 auto 15px auto;
     }
 
     #hot-recruit .list-grid .list-item .item-content {
         justify-content: center;
     }
 
-    #premium-banner .list-grid .list-item .item-content .item-desc {
-        margin-top: 40px !important;
+    #premium-banner .list-grid .list-item .item-content .item-logo {
+        margin: -10px auto 0px auto;
     }
+
 
     #premium-banner .list-grid .list-item .item-content {
         width: 240px;
@@ -2425,12 +2734,21 @@
     #premium-banner .list-grid .list-item .item-content,
     #hot-recruit .list-grid .list-item .item-content,
     #enterprise .list-grid .list-item .item-content {
-        padding: 18px;
+        padding: 8px;
+    }
+
+    #enterprise {
+        margin-top: 20px;
+        padding-bottom: 0;
     }
 
     #hot-talent {
         padding: 16px 5% 0 5%;
         padding-bottom: 44px;
+    }
+
+    #hot-talent .list-grid {
+        grid-template-rows: repeat(3, 150px);
     }
 
     #hot-talent .list-grid .list-item .item-content {
@@ -2458,7 +2776,7 @@
 
     #hot-talent .list-grid .list-item .item-content .item-footer .item-position,
     #hot-talent .list-grid .list-item .item-content .item-tag {
-        font-size: 16px;
+        font-size: 12px !important;
         margin-top: 0px;
     }
 
@@ -2479,15 +2797,21 @@
     }
 
     #bottom-nav {
-        padding-bottom: 100px;
+        padding-bottom: 0;
     }
 
     #bottom-nav .bottom-nav-wrap .bottom-nav-item {
-        height: 49px
+        height: 42px;
+        max-width: max-content;
+        padding: 0 10px;
     }
 
     #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
-        font-size: 16px;
+        font-size: 12px;
+    }
+
+    #bottom-nav .bottom-nav-wrap {
+        flex-wrap: nowrap;
     }
 
     #bottom-nav .title-bottom-nav-res .phone-number-res {
@@ -2525,47 +2849,323 @@
     #premium-banner .list-grid {
         grid-template-rows: 135px 215px 215px;
     }
+
+    .list-grid .list-item .item-content .item-logo {
+        margin-bottom: 10px;
+        height: max-content;
+        max-height: 70px;
+        min-height: 50px;
+    }
+
+    .list-grid .list-item .item-content .item-tag .bookmark {
+        width: 8px;
+        height: 8px;
+        margin-top: 3px;
+    }
+
+    #grand-banner .list-grid .list-item .item-content {
+        padding: 8px 15px;
+    }
+
+    .list-grid .list-item .item-content .item-tag {
+        font-size: 10px !important;
+    }
+
+    #grand-banner .list-grid,
+    #premium-banner .list-grid {
+        grid-template-rows: repeat(2, 145px);
+    }
+
+    #header .header-wrap .header-left {
+        gap: 21px;
+    }
+
+    #header .header-wrap {
+        padding: 32px 20px 2px 20px;
+        position: relative;
+    }
+
+    .hero-nav-child {
+        margin-bottom: 35px;
+    }
+
+    #slide-news {
+        margin-top: -24px;
+    }
+
+    #grand-banner {
+        padding: 35px 0 10px 0;
+    }
+
+    #grand-banner .list-grid .list-item .item-content,
+    #premium-banner .list-grid .list-item .item-content {
+        width: 160px;
+    }
+
+    #grand-banner .scrollable-area,
+    #grand-banner .scrollable-area .list-item {
+        height: 160px !important;
+    }
+
+    .grand-banner-mobile .title,
+    .grand-banner-mobile .num-banner span {
+        font-size: 14px;
+    }
+
+    .grand-banner-mobile .num-banner {
+        padding: 2px 15px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+        margin-right: 0px;
+    }
+
+    #grand-banner .list-grid .list-item.large .item-content .item-tag {
+        font-size: 12px !important;
+    }
+
+    #grand-banner .list-grid .list-item .item-content .item-tag {
+        font-size: 10px !important;
+        gap: 0 !important;
+    }
+
+    .list-grid .list-item .item-content .item-tag li {
+        margin-right: 8px;
+    }
+
+    .list-grid .list-item .item-content .item-tag li::after {
+        height: 8px;
+        right: -5px;
+    }
+
+    #grand-banner .list-grid .list-item .item-content {
+        padding: 8px 6px;
+    }
+
+    .list-grid .list-item .item-content .item-desc {
+        font-size: 16px !important;
+        margin: 10px 0 5px 0 !important;
+        line-height: 22px !important;
+    }
+
+    #grand-banner .list-grid .list-item.large .item-content .item-logo {
+        margin: 0;
+    }
+
+    #grand-banner .list-grid .list-item .item-content .item-tag {
+        margin-top: 0;
+    }
+
+    .group-banner-mobile {
+        margin-top: 10px;
+    }
+
+    #premium-banner .list-grid .scrollable-area-1 {
+        margin-top: 0px;
+    }
+
+    .scrollable-area,
+    .scrollable-area .list-item {
+        height: 160px !important;
+    }
+
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+        margin: 0;
+    }
+
+    #footer .menu>ul {
+        justify-content: center;
+    }
+
+    #footer .container {
+        padding-top: 28px;
+    }
+
+    #footer .collab,
+    #footer {
+        padding: 0 30px;
+    }
 }
 
 @media screen and (width <=420px) {
     #premium-banner .list-grid {
-        grid-template-rows: 120px 215px 215px;
+        grid-template-rows: 140px 145px 160px;
     }
 
     #slide .scrollable-area .item-content {
         margin-right: 15px;
     }
+
+    #grand-banner .list-grid .list-item.large .item-content .item-tag,
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+        font-size: 10px !important;
+    }
+
+    #premium-banner {
+        padding-bottom: 20px;
+    }
+
+
+    #hot-talent .drop-list-item-res .btn-drop-list .drop-text {
+        font-size: 14px;
+    }
+
+
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item {
+        height: 32px;
+    }
+
+}
+
+@media screen and (width <=380px) {
+
+    #grand-banner .list-grid,
+    #premium-banner .list-grid {
+        grid-template-rows: repeat(2, 145px);
+    }
+
+    #enterprise .list-grid .item-tag,
+    #grand-banner .list-grid .list-item.large .item-content .item-tag,
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+        font-size: 9px !important;
+    }
+
+    .list-grid .list-item .item-content .item-tag,
+    #grand-banner .list-grid .list-item .item-content .item-tag {
+        font-size: 8px !important;
+    }
+
+    #grand-banner .list-grid .list-item.large .item-content .item-logo {
+        margin: 0;
+    }
+
+    #enterprise .list-grid .list-item .item-content .item-desc {
+        margin: 5px 0 5px 0 !important;
+        line-height: 22px !important;
+    }
+
+    #hot-talent .list-grid .list-item .item-content .item-footer .item-position,
+    #hot-talent .list-grid .list-item .item-content .item-tag {
+        font-size: 10px !important;
+        margin-top: 0px;
+    }
+
+    .list-grid .list-item .item-content .item-desc {
+        font-size: 14px !important;
+        margin: 10px 0 10px 0 !important;
+        line-height: 22px !important;
+    }
+
+    #grand-banner .list-grid .list-item .item-content .item-tag {
+        margin-top: 0;
+    }
+
+    #grand-banner .list-grid .list-item .item-content,
+    #premium-banner .list-grid .list-item .item-content {
+        width: 140px;
+    }
+
+    #grand-banner .scrollable-area,
+    #grand-banner .scrollable-area .list-item {
+        height: 140px !important;
+    }
+
+
 }
 
 @media screen and (width <=360px) {
-    .hero-nav-child .item a {
-        font-size: 12px;
-    }
-
     .grand-banner-mobile .title {
         padding-left: 24px;
-    }
-
-
-    #grand-banner .list-grid .list-item .item-content {
-        padding: 8px 15px;
     }
 
     #slide .scrollable-area .item-content {
         margin-right: 10px;
     }
 
-    #grand-banner .scrollable-area,
-    #grand-banner .scrollable-area .list-item {
-        height: 220px !important;
+    .scrollable-area,
+    .scrollable-area .list-item {
+        height: 140px !important;
     }
 
-    #grand-banner .list-grid .list-item .item-content {
-        width: 238px !important;
+    .list-grid .list-item .item-content {
+        width: 140px !important;
+    }
+
+    #hot-talent .list-grid .list-item .item-content {
+        width: 158px !important;
     }
 
     #grand-banner .list-grid .list-item.large .item-content,
     #premium-banner .list-grid .list-item.large .item-content {
         width: 50% !important;
+    }
+
+    #hot-recruit .list-grid .list-item .item-content .item-title {
+        font-size: 17px;
+        margin: 0 auto 15px auto;
+    }
+
+    .list-grid .list-item .item-content .item-desc {
+        margin: -5px 0 5px 0 !important;
+    }
+
+    #enterprise .list-grid .item-tag,
+    #grand-banner .list-grid .list-item.large .item-content .item-tag,
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+        font-size: 8px !important;
+    }
+
+    #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    #hot-talent .icon-star {
+        width: 14px;
+        height: 14px;
+    }
+
+    #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name {
+        font-size: 20px;
+    }
+
+    #grand-banner .list-grid,
+    #premium-banner .list-grid {
+        grid-template-rows: repeat(2, 140px);
+    }
+
+    #hot-recruit .list-grid {
+        grid-template-rows: repeat(1, 140px);
+    }
+
+    #premium-banner .list-grid .scrollable-area-1,
+    #premium-banner .list-grid .scrollable-area-2 {
+        margin-top: -10px;
+    }
+
+    #premium-banner {
+        padding-bottom: 0;
+    }
+
+    #hot-recruit {
+        padding-top: 0px;
+        margin-top: -30px;
+    }
+
+    #hot-talent {
+        padding: 10px 5%;
+        padding-bottom: 44px;
+        margin-top: -10px;
+    }
+
+    #grand-banner .list-grid .list-item.large .item-content .item-desc {
+        margin-top: -10px !important;
+    }
+
+    #footer .collab,
+    #footer .info {
+        padding: 0 20px;
     }
 }
