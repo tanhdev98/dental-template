@@ -343,6 +343,11 @@
     position: relative;
 }
 
+.table .wrap-link {
+    display: flex;
+    position: relative;
+}
+
 .table .wrap-block-link {
     display: flex;
     gap: 131px;
