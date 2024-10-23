@@ -120,20 +120,13 @@
 
 .table .wrap-position {
     display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .table .wrap-position li {
     font-size: 15px;
     color: #666;
-}
-
-.table .wrap-position li:after {
-    content: ',';
-    margin-right: 5px;
-}
-
-.table .wrap-position li:last-child:after {
-    display: none;
 }
 
 .table .room-name {
@@ -343,6 +336,11 @@
 .table .column-left .wrap-title .wrap-meta {
     display: inline-flex;
     gap: 8px;
+}
+
+.table .wrap-link {
+    display: flex;
+    position: relative;
 }
 
 .table .wrap-link {

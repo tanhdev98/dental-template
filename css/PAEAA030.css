@@ -15,8 +15,30 @@
 
 #support-now .wrap-table>li>div {
     display: grid;
-    grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
-    padding: 29px 0 0;
+    grid-template-columns: 21% calc(100% - 21% - 13% - 13%) 13% 13%;
+    padding: 25px 0 0;
+}
+
+#support-now .wrap-table .clinic-name {
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+#support-now .wrap-table .item.yellow .wrap-title,
+#support-now .wrap-table .item.yellow .clinic-name {
+    background-color: #fbffaa;
+}
+
+#support-now .wrap-table .item.blue .wrap-title h4,
+#support-now .wrap-table .item.blue .clinic-name {
+    color: #0055cc;
+}
+
+#support-now .wrap-table .wrap-meta {
+    margin-top: 8px;
 }
 
 /* Column 1 */
@@ -24,22 +46,15 @@
     justify-content: start;
 }
 
-.column-1 .clinic-name {
-    text-align: center;
-    font-size: 20px;
-    color: #333;
-}
-
 /* Column 2*/
 #support-now .wrap-table .column-2 {
-    padding-left: 25px;
+    padding-left: 0;
 }
 
 #support-now .wrap-table .column-2 .wrap-title {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+    justify-content: start;
+    width: 100%;
+    padding: 4px 0;
 }
 
 #support-now .wrap-table .column-2 .wrap-title+.wrap-link {
@@ -51,6 +66,11 @@
     font-size: 19px;
     font-weight: 700;
     color: #333;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #support-now .wrap-table .column-2 .wrap-title .wrap-meta {
@@ -59,14 +79,13 @@
 }
 
 #support-now .wrap-table .wrap-link+.wrap-position {
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 /* Column 3 */
 #support-now .wrap-table .column-3 {
-    padding-left: 35px;
-    display: flex;
-    align-items: center;
+    padding-left: 0;
+    align-items: start;
 }
 
 /* Column 4 */
@@ -95,10 +114,6 @@
     font-size: 16px;
     font-weight: 400;
 }
-
-/* .column-4 .price {} */
-
-
 
 @media screen and (width <=1320px) {
     #support-now .wrap-table>li>div {
@@ -135,4 +150,47 @@
     .column-4 .support+.room {
         margin-top: 0;
     }
+}
+
+[for="saved-conditions"] {
+    right: 0;
+    top: 63px;
+}
+
+[for="saved-conditions"] .table {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    width: 520px;
+}
+
+[for="saved-conditions"] .table>li {
+    display: grid;
+    grid-template-columns: calc(100% - 20% - 15%) 20% 15%;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+[for="saved-conditions"] .table>li:not(.row-name-column):hover {
+    background-color: #f8fcff;
+}
+
+[for="saved-conditions"] .table>li:not(.row-name-column):hover .delete {
+    text-decoration: underline;
+}
+
+[for="saved-conditions"] .table>li.row-name-column div.start {
+    align-items: start;
+}
+
+[for="saved-conditions"] .table>li.row-name-column div {
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+[for="saved-conditions"] .table>li .date {
+    font-size: 14px;
 }
