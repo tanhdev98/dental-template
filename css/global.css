@@ -1013,6 +1013,10 @@
     margin-bottom: 50px;
 }
 
+.line-after-tab>img {
+    height: 100%;
+}
+
 /* end tab-select-results*/
 
 /* statistic */
@@ -1148,6 +1152,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3px;
     border-radius: 22px;
     font-size: 19px;
     font-weight: 600;
