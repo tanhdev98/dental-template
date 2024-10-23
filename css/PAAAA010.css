@@ -390,7 +390,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 18px 25px;
+    padding: 18px;
 }
 
 .list-grid .list-item.nor:hover .item-content {
@@ -893,7 +893,7 @@
 }
 
 #hot-talent .list-grid .list-item .item-content {
-    padding: 25px;
+    padding: 22px 18px;
     border-top: 1px solid #ddd;
     justify-content: space-between;
 }
@@ -1012,9 +1012,9 @@
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     color: #111;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .phone-number,
@@ -1023,8 +1023,8 @@
 }
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-desc {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 #bottom-nav .bottom-nav-wrap .bottom-nav-item:hover {
