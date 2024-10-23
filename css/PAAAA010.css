@@ -1838,7 +1838,7 @@
 
     .group-banner-mobile #carouselExampleDark {
         width: 100%;
-        height: 200px;
+        height: max-content;
         position: relative;
     }
 
@@ -1893,7 +1893,7 @@
     }
 
     #slide {
-        margin-left: 70px;
+        margin-left: 60px;
         overflow: hidden;
     }
 
