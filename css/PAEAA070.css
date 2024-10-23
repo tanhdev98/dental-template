@@ -131,21 +131,31 @@
     right: 1px;
 }
 
+#content-detail .tabs li span {
+    font-weight: 400;
+}
+
 #content-detail .content-frame {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 30px 22px;
+    margin-top: 50px;
 }
 
 #content-detail .content-frame.content-tab {
     border-top: none;
     border-radius: 0 0 10px 10px;
+    margin-top: 0;
 }
 
 #content-detail .content-frame>h1 {
     font-size: 24px;
     color: #0068b7;
     font-weight: 500;
+}
+
+#content-detail .content-frame>h1:not(:first-child) {
+    margin-top: 30px;
 }
 
 #content-detail .content-frame .table-horizontal {
@@ -160,4 +170,40 @@
 
 #content-detail .content-frame .table-horizontal li .table-title {
     align-items: start;
+    background-color: #fafafa;
+    width: 160px;
+}
+
+#content-detail .content-frame .table-horizontal li .table-content>strong {
+    font-weight: 500;
+    color: #0068b7;
+}
+
+#content-detail .content-frame .table-horizontal li .table-content .map-container {
+    width: 408px;
+    height: 327px;
+}
+
+#content-detail .content-frame>ul.notes {
+    font-size: 19px;
+    color: #666;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 20px;
+}
+
+#content-detail .content-frame>ul.notes .bullet {
+    position: relative;
+    padding-left: 20px;
+}
+
+#content-detail .content-frame>ul.notes .bullet::before {
+    content: '※';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#content-detail .content-frame>ul.notes .bullet strong {
+    color: #0068b7;
 }
