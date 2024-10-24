@@ -547,9 +547,10 @@
     display: flex;
     justify-content: center;
     font-size: 11px;
-    line-height: 18px;
     font-weight: 300;
     outline: 1px solid #fff;
+    display: flex;
+    align-items: center;
 }
 
 #sub-header .header-wrap .header-right .profile-setting {
