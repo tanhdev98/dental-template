@@ -701,6 +701,7 @@
     #lock-info-subpage .frame-section.frame-table-horizontal .content-frame ul li label .require-input {
         flex: 1;
         line-height: 1.2;
+        margin-left: 0;
     }
 }
 
