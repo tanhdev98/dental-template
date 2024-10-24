@@ -359,7 +359,7 @@
 }
 
 #footer .popup {
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: 15px;
 }
@@ -1387,10 +1387,16 @@
 
 .popup .popup-close {
     position: absolute;
-    top: 14px;
+    top: 20px;
     right: 14px;
     width: 15px;
     height: 15px;
+}
+
+.popup.popup-support {
+    max-width: 610px;
+    border-color: #cecece;
+    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.46);
 }
 
 .popup .popup-close::after {
@@ -1418,9 +1424,187 @@
 .popup .popup-header {
     font-size: 22px;
     font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
 }
 
 .popup .popup-header span {
     font-size: 14px;
     font-weight: 100;
+}
+
+.popup .popup-header .popup-header-number-room {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.popup .popup-header .popup-header-number-room span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.popup .popup-header .popup-header-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+}
+
+.popup .popup-header .popup-header-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.popup .popup-content .popup-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 12px;
+}
+
+.popup .popup-content .popup-content-header .header-item-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup .popup-content .popup-content-header .header-item-top span {
+    font-size: 20px;
+}
+
+.popup .popup-content .popup-content-header button {
+    font-size: 16px;
+    position: relative;
+}
+
+.popup .popup-content .popup-content-header button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #333;
+    bottom: -2px;
+}
+
+.popup .popup-content .box-support {
+    border: 1px solid #cecece;
+    padding: 15px 15px 21px 15px;
+
+}
+
+.popup .date-box {
+    font-size: 14px;
+}
+
+.popup .box-support-title {
+    font-size: 20px;
+    margin: 31px 0;
+}
+
+.popup .box-support {
+    position: relative;
+}
+
+.popup .box-support-list {
+    display: flex;
+}
+
+.popup .box-support-list li+li {
+    margin-left: 21px;
+    padding-left: 21px;
+    position: relative;
+}
+
+.popup .box-support-list li span {
+    font-size: 14px;
+}
+
+.popup .box-support-list li+li::before {
+    content: "";
+    position: absolute;
+    height: 9px;
+    width: 1px;
+    background-color: #333;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.popup .box-support-edit {
+    position: absolute;
+    bottom: 20px;
+    right: 22px;
+}
+
+.popup .box-support-edit a {
+    text-decoration: underline;
+}
+
+.popup .popup-content-header-after-box {
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+.popup .group-radio {
+    width: 100%;
+}
+
+.popup .group-radio label {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #cecece;
+    position: relative;
+    padding: 12px 30px 24px;
+    cursor: pointer;
+}
+
+.popup .group-radio label:hover {
+    border-color: #076ecc;
+    background-color: #eef7fd;
+}
+
+.popup .group-radio label input {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.popup .group-radio label+label {
+    margin-top: 7px;
+}
+
+.popup .group-radio .radio-content .radio-content-date {
+    margin-bottom: 23px;
+}
+
+.popup .group-radio .radio-content .radio-content-title {
+    font-size: 20px;
+}
+
+.popup .accept-all {
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    border: 1px solid #666;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 9px;
+    font-size: 18px;
+}
+
+.popup .popup-footer {
+    text-align: center;
+}
+
+.popup .popup-footer .popup-footer-btn {
+    height: 62px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #076ecc;
+    border-radius: 10px;
+    padding: 0 57px;
+    margin-top: 38px;
 }

@@ -152,6 +152,17 @@
     }
 }
 
+#saved-conditions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#saved-conditions i {
+    width: 10px;
+    height: 8px;
+}
+
 [for="saved-conditions"] {
     right: 0;
     top: 63px;
