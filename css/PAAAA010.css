@@ -470,12 +470,13 @@
     display: flex;
     align-items: center;
     gap: 7px;
+    margin-right: 4px;
 }
 
 .list-grid .list-item .item-content .item-tag li::after {
     content: '';
     position: absolute;
-    right: -5px;
+    right: -9px;
     bottom: 0;
     top: 0;
     margin: auto;
@@ -1487,7 +1488,7 @@
         font-weight: 400;
         word-wrap: break-word;
         white-space: normal;
-        margin-bottom: 36px;
+        margin-bottom: 29px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -1609,7 +1610,7 @@
 
     #hot-recruit .list-grid .list-item .item-content {
         justify-content: unset;
-        padding: 18px 50px;
+        padding: 18px 40px;
     }
 
     #hot-recruit .list-grid .list-item .item-content .item-title {
@@ -1637,7 +1638,7 @@
 
     #hot-recruit .list-grid .list-item .item-content .item-tag {
         font-size: 27px;
-        margin-top: 35px;
+        margin-top: 23px;
     }
 }
 
