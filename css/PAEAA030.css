@@ -163,6 +163,12 @@
     height: 8px;
 }
 
+#saved-conditions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 [for="saved-conditions"] {
     right: 0;
     top: 63px;

@@ -362,6 +362,7 @@
     position: fixed;
     top: 15px;
     left: 15px;
+    width: 100%;
 }
 
 @media screen and (width <=1320px) {
@@ -1436,7 +1437,7 @@
 .popup .popup-header .popup-header-number-room {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .popup .popup-header .popup-header-number-room span {
@@ -1447,7 +1448,7 @@
 .popup .popup-header .popup-header-title {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 
 }
 
@@ -1460,7 +1461,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0 12px;
+    margin: 30px 0 11px;
 }
 
 .popup .popup-content .popup-content-header .header-item-top {
@@ -1475,6 +1476,25 @@
 .popup .popup-content .popup-content-header button {
     font-size: 16px;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    outline: none;
+}
+
+.popup .popup-content .popup-content-header button i {
+    width: 12px;
+    height: 8px;
+    transform: rotate(-90deg);
+}
+
+.popup .popup-content .popup-content-header button i.right {
+    transform: rotate(-90deg);
+}
+
+.popup .popup-content .popup-content-header button.active i {
+    transform: rotate(0deg) !important;
 }
 
 .popup .popup-content .popup-content-header button:after {
@@ -1499,7 +1519,15 @@
 
 .popup .box-support-title {
     font-size: 20px;
-    margin: 31px 0;
+}
+
+.popup .box-support-date+.box-support-title {
+    font-size: 20px;
+    margin-top: 28px;
+}
+
+.popup .box-support-title+.box-support-list {
+    margin-top: 28px;
 }
 
 .popup .box-support {
@@ -1538,7 +1566,7 @@
 }
 
 .popup .box-support-edit a {
-    text-decoration: underline;
+    border-bottom: 1px solid #878787;
 }
 
 .popup .popup-content-header-after-box {
@@ -1555,11 +1583,12 @@
     padding: 7px;
     border: 1px solid #cecece;
     position: relative;
-    padding: 12px 30px 24px;
+    padding: 10px 30px 25px;
     cursor: pointer;
 }
 
-.popup .group-radio label:hover {
+.popup .group-radio label:hover,
+.popup .group-radio label.active {
     border-color: #076ecc;
     background-color: #eef7fd;
 }
@@ -1575,7 +1604,7 @@
 }
 
 .popup .group-radio .radio-content .radio-content-date {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 }
 
 .popup .group-radio .radio-content .radio-content-title {
