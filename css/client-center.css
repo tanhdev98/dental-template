@@ -125,11 +125,11 @@
 }
 
 #icon-boxes .box-wapper .banner-card-box {
-    width: 370px;
+    width: 307px;
     height: 205px;
     background-image: url('../images/PAHAA010/card_contact.jpg');
     border-radius: 25px;
-    padding: 54px 0 48px 130px;
+    padding: 54px 0 48px 75px;
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-title {

@@ -3,3 +3,8 @@
     grid-template-columns: calc(100% - 27.15% - 13.88%) 27.15% 13.88%;
     padding: 28px 0 0;
 }
+
+#content .popup .table>li>div {
+    display: flex;
+    padding: 0;
+}

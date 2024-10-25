@@ -257,6 +257,10 @@
     color: #666;
 }
 
+.column .time {
+    color: #999;
+}
+
 @media screen and (width <=1320px) {
     .table>li>div {
         grid-template-columns: repeat(2, 1fr);
