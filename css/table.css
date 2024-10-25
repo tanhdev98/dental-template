@@ -342,12 +342,12 @@
     gap: 8px;
 }
 
-.table .wrap-link {
+.wrap-link {
     display: flex;
     position: relative;
 }
 
-.table .wrap-link {
+.wrap-link {
     display: flex;
     position: relative;
 }
@@ -357,25 +357,25 @@
     gap: 131px;
 }
 
-.table .wrap-link li a {
+.wrap-link li a {
     font-size: 15px;
     color: #666;
     white-space: nowrap;
     line-height: 20px;
 }
 
-.table .wrap-link li a:hover {
+.wrap-link li a:hover {
     font-size: 15px;
     color: #333;
 }
 
-.table .wrap-link li+li {
+.wrap-link li+li {
     margin-left: 9px;
     padding-left: 9px;
     position: relative;
 }
 
-.table .wrap-link li+li:before {
+.wrap-link li+li:before {
     content: "";
     width: 1px;
     height: 10px;
