@@ -373,3 +373,31 @@
 .icon-checklist::after {
     background-image: url('../images/icons/icon-checklist.png');
 }
+
+.icon-x {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-x::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 47%;
+    left: 0;
+}
+
+.icon-x::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 47%;
+    left: 0;
+}

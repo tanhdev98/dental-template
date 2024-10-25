@@ -45,7 +45,7 @@
 }
 
 .tabs li.active {
-    z-index: 12;
+    z-index: 1;
 }
 
 .tabs li.active span {
