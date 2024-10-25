@@ -218,7 +218,7 @@
 
 /* navbar */
 #navbar {
-    padding-bottom: 33px;
+    padding-bottom: 23px;
     box-shadow: 2px 3px 10px 0px rgba(6, 0, 1, 0.1);
     position: relative;
 }
@@ -269,6 +269,47 @@
 #navbar .navbar-wrap .auth {
     display: flex;
     gap: 25px;
+}
+
+#navbar .menu>a {
+    height: 30px;
+}
+
+#navbar .menu>ul>li {
+    position: relative;
+    height: 30px;
+    display: block;
+}
+
+#navbar .menu .submenu {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 13;
+    box-shadow: 2px 3px 10px 0px rgba(6, 0, 1, 0.1);
+    transition: transform 0.3s ease;
+    width: max-content;
+    max-width: 250px;
+    top: 30px;
+}
+
+#navbar .menu>ul li:hover .submenu,
+#navbar .menu .submenu:hover {
+    display: block;
+    height: max-content;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+}
+
+.submenu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
 @media screen and (width <=1320px) {
