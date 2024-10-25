@@ -15,7 +15,7 @@ $(document).ready(function () {
             if (!$(event.target).closest('.mega-menu').length && !$(event.target).closest('.icon-popup-mega-menu').length) {
                 $('.mega-menu').removeClass('active');
                 $('.icon-popup-mega-menu').removeClass('active');
-                $(this).find('i').removeClass('icon-x').addClass('icon-hamburger-bar');
+                $(this).find('i.icon-x').removeClass('icon-x').addClass('icon-hamburger-bar');
             }
         }
     });
