@@ -15,7 +15,8 @@
 
 #support-now .wrap-table>li>div {
     display: grid;
-    grid-template-columns: 21% calc(100% - 21% - 13% - 13%) 13% 13%;
+    /* grid-template-columns: 21% calc(100% - 21% - 13% - 13%) 13% 13%; */
+    grid-template-columns: 21% calc(100% - 21% - 15% - 13%) 15% 13%;
     padding: 25px 0 0;
 }
 
@@ -53,11 +54,15 @@
 
 #support-now .wrap-table .column-2 .wrap-title {
     justify-content: start;
-    width: 100%;
+    width: 95%;
     padding: 4px 0;
 }
 
 #support-now .wrap-table .column-2 .wrap-title+.wrap-link {
+    margin-top: 0px;
+}
+
+#support-now .wrap-table .table .wrap-link {
     margin-top: 8px;
 }
 
@@ -67,6 +72,7 @@
     font-weight: 700;
     color: #333;
     width: 100%;
+    max-width: max-content;
     overflow: hidden;
     display: inline-block;
     text-overflow: ellipsis;
@@ -76,6 +82,7 @@
 #support-now .wrap-table .column-2 .wrap-title .wrap-meta {
     display: inline-flex;
     gap: 8px;
+    margin-top: 0;
 }
 
 #support-now .wrap-table .wrap-link+.wrap-position {

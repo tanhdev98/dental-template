@@ -90,9 +90,9 @@
 
 #user-guide .item-content .item-text-arrow .line-item {
     width: 100%;
-    padding: 0 50px;
     display: flex;
-    gap: 32px;
+    padding: 0px;
+    gap: 12px;
 }
 
 #user-guide .user-guide-content-child-2 .item-text-arrow .line-item {
@@ -115,8 +115,8 @@
 #user-guide .item-content .item-arrow {
     line-height: 25px;
     position: relative;
-    width: 260px;
-    height: 85px;
+    width: 230px;
+    height: 78px;
     border-radius: 43px;
     background-color: #f4fbf1;
     font-size: 19px;
@@ -138,7 +138,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    right: -37px;
+    right: -28px;
     top: 50%;
     transform: translateY(-50%);
     width: 18px;
@@ -296,6 +296,7 @@
     padding: 0 10px;
     word-break: keep-all;
     line-height: 18px;
+    letter-spacing: -0.6px;
 }
 
 #user-guide #company-introduction .col {
@@ -361,16 +362,33 @@
         flex-wrap: wrap;
     }
 
-    #user-guide .item-content .item {
-        flex: 1 1 calc(50% - 64px);
-        display: flex;
-        justify-content: center;
+    #user-guide .line-1 {
+        margin-bottom: 12px;
     }
+
 
     #user-guide #company-introduction .content {
         padding: 0 10px;
     }
 
+}
+
+@media screen and (width <=1200px) {
+    #user-guide .item-content .item {
+        flex: 1 1 calc(50% - 64px);
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (width <=1024px) {
+    #user-guide .content br {
+        display: none;
+    }
+
+    #user-guide #company-introduction .title {
+        font-size: 19px;
+    }
 }
 
 @media screen and (width <=991px) {
@@ -438,5 +456,43 @@
     #company-introduction .col:nth-child(2),
     #company-introduction .col:nth-child(3) {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (width <=385px) {
+    #user-guide #company-introduction .content {
+        font-size: 14px;
+    }
+
+    #user-guide #company-introduction {
+        padding: 25px 14px;
+    }
+
+    #user-guide .title-content-child {
+        font-size: 32px;
+    }
+
+    #user-guide .text-content-title-child {
+        font-size: 20px;
+    }
+
+    #user-guide .vertical-line {
+        margin: 10px auto;
+        height: 18px;
+    }
+}
+
+@media screen and (width <=320px) {
+    #user-guide #company-introduction .content {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    #user-guide #company-introduction .title {
+        font-size: 16px;
+    }
+
+    #user-guide #company-introduction {
+        padding: 25px 14px;
     }
 }
