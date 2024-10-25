@@ -14,7 +14,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
     $(document).on('click', '[data-type="slideToggle"]', function () {
-        $('.box-support').slideToggle();
+        $(this).closest('.popup').find('.box-support').slideToggle();
         $(this).toggleClass('active');
     });
 

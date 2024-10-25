@@ -14,6 +14,7 @@
     <script src="js/side-ads.js"></script>
     <script src="js/close-top-banner.js"></script>
     <script src="js/close-top-banner.js"></script>
+    <script src="js/popup.js"></script>
 </head>
 
 <body>
@@ -130,14 +131,45 @@
             <div class="container">
                 <div class="top-form">
                     <h2>지역별(근무 지역)</h2>
-                    <div class="form-select-container">
-                        <select>
-                            <option class="option-placeholder">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                            <option value="#">저장한 조건 보기 </option>
-                        </select>
+                    <button id="saved-conditions" data-type="popup"><span>저장한 조건 보기</span><i
+                            class="icon icon-down"></i></button>
+                    <div class="popup" for="saved-conditions">
+                        <button class="popup-close"></button>
+                        <div class="popup-header">
+                            최근 저장한 검색 조건<span>(보관은 최대 5개까지 가능)</span>
+                        </div>
+                        <div class="popup-content">
+                            <ul class="table table-content">
+                                <li class="row-name-column">
+                                    <div class="column start">검색조건</div>
+                                    <div class="column start">검색일</div>
+                                    <div class="column">삭제</div>
+                                </li>
+                                <li>
+                                    <ul class="wrap-link">
+                                        <li>서울>강북구</li>
+                                        <li>진료실</li>
+                                        <li>상담</li>
+                                    </ul>
+                                    <span class="date">2024.08.01</span>
+                                    <button class="delete">삭제</button>
+                                </li>
+                                <li>
+                                    <ul class="wrap-link">
+                                        <li>서울>강북구</li>
+                                    </ul>
+                                    <span class="date">2024.08.01</span>
+                                    <button class="delete">삭제</button>
+                                </li>
+                                <li>
+                                    <ul class="wrap-link">
+                                        <li>서울>강북구</li>
+                                    </ul>
+                                    <span class="date">2024.08.01</span>
+                                    <button class="delete">삭제</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <ul class="tabs">
