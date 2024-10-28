@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(document).on('click', '.item-has-child', function (e) {
         e.stopPropagation();
-        $(this).toggleClass('active');
+        $(this).toggleClass('active-child');
         $(this).children('.sub-menu').slideToggle().toggleClass('active');
     });
 

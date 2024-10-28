@@ -469,6 +469,22 @@
     width: 100%;
 }
 
+#footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: all 0.3s ease;
+    visibility: hidden;
+}
+
+#footer .overlay.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: visible;
+}
+
 @media screen and (width <=1320px) {
 
     #footer .info>ul,
@@ -1821,18 +1837,20 @@
     z-index: 1;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    padding: 15px;
+    padding: 0 15px;
     position: absolute;
-    bottom: -110%;
+    bottom: -20px;
+    right: 0;
     transform: translateY(100%);
     width: 170px;
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 2;
 }
 
 .profile-setting-popup.active {
-    bottom: -90%;
+    bottom: -15px;
     opacity: 1;
     visibility: visible;
 }
@@ -1851,18 +1869,13 @@
 }
 
 .profile-setting-popup ul li a {
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #ddd;
     width: 100%;
     display: block;
 }
 
-.profile-setting-popup ul li:first-child a {
-    padding-top: 0;
-}
-
 .profile-setting-popup ul li:last-child a {
-    padding-bottom: 0;
     border-bottom: none;
 }
 
