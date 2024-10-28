@@ -14,7 +14,7 @@
     <script src="js/side-ads.js"></script>
     <script src="js/close-top-banner.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/sub-page.js"></script>
+    <script src="js/sub-nav-respon.js"></script>
 </head>
 
 
@@ -2844,24 +2844,6 @@
                 }
             });
         });
-        // nav responsive
-        $('.nav-wrap .icon-hamburger-bar').click(function () {
-            $('.side-nav-res').toggleClass('showMenu');
-            $(this).toggleClass('close active');
-            $('.full-screen-overlay').addClass('overlay-block');
-        });
-        $('.frame-section .icon-hamburger-bar,.full-screen-overlay').click(function () {
-            $('.full-screen-overlay').removeClass('overlay-block');
-            $('.side-nav-res').removeClass('showMenu');
-            $('.nav-wrap .icon-hamburger-bar').removeClass('close active');
-        });
-        ///
-        $('.side-nav-res .frame-section .menu-nav-child').click(function (e) {
-            e.stopPropagation();
-            $(this).toggleClass('active');
-            $(this).find('.submenu').slideToggle().toggleClass('active');
-        });
-
     </script>
 </body>
 

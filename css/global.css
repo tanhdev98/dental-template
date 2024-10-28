@@ -474,7 +474,7 @@ ul li:hover .submenu,
     }
 
     .side-nav-res {
-        width: 35vw;
+        width: 40vw;
         min-width: 250px;
         transform: translateX(100%);
         opacity: 0;
@@ -519,7 +519,7 @@ ul li:hover .submenu,
         height: 100%;
         background: #000;
         display: none;
-        z-index: 1;
+        z-index: 3;
     }
 
     .overlay-block {
