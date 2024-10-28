@@ -13,6 +13,10 @@
     gap: 30px;
 }
 
+#icon-side-nav {
+    position: absolute;
+}
+
 .frame-section {
     background: #fff;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
@@ -66,6 +70,7 @@
 #top-sub-page #side-nav {
     width: 270px;
     height: 100%;
+    top: 0;
 }
 
 #top-sub-page #side-nav .side-banner img {
@@ -99,6 +104,14 @@
     border-bottom-color: transparent;
 }
 
+#top-sub-page #side-nav>ul>li.active {
+    border-bottom-color: transparent;
+}
+
+#top-sub-page #side-nav>ul>li.active a {
+    color: #0068b7;
+}
+
 #top-sub-page #side-nav>ul>li.item-has-child.active::after {
     background-color: transparent;
 }
@@ -125,7 +138,7 @@
     transform: rotate(-90deg) translateX(50%);
 }
 
-#top-sub-page #side-nav>ul>li.item-has-child.active::before {
+#top-sub-page #side-nav>ul>li.item-has-child.active-child::before {
     transform: translateY(-50%);
 }
 
@@ -134,12 +147,13 @@
     color: #0068b7;
 }
 
-#top-sub-page #side-nav>ul>li.item-has-child:not(.active):hover {
+#top-sub-page #side-nav>ul>li.item-has-child.active-child:hover>a {
     border-bottom-color: transparent;
+    color: #0068b7;
 }
 
-#top-sub-page #side-nav>ul>li.item-has-child.active {
-    color: #0068b7;
+#top-sub-page #side-nav>ul>li.item-has-child.active-child:hover {
+    border-bottom-color: #ddd;
 }
 
 
@@ -161,6 +175,10 @@
     border-bottom: 1px solid #ddd;
     width: 205px;
     position: absolute;
+}
+
+#top-sub-page #side-nav ul li.active-child:hover .sub-menu::before {
+    border-bottom-color: transparent;
 }
 
 #top-sub-page #side-nav ul li .sub-menu li::after {
@@ -319,6 +337,20 @@
 }
 
 @media screen and (width <=1320px) {
+    #side-nav {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    #top-sub-page {
+        display: block;
+    }
+
+    #top-sub-page #side-nav .frame-section {
+        margin-top: 0;
+        padding-top: 70px;
+    }
+
     #top-sub-page #side-nav {
         position: fixed;
         transform: translateX(100%);
@@ -342,6 +374,7 @@
         width: 40px;
         height: 40px;
         z-index: 1;
+        cursor: pointer;
     }
 
     #icon-side-nav span {
