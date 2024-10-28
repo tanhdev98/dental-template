@@ -13,6 +13,7 @@
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/close-top-banner.js"></script>
+    <script src="js/sub-page.js"></script>
 </head>
 
 <body>
@@ -50,7 +51,13 @@
                 <div id="side-nav">
                     <ul class="frame-section">
                         <li><a href="#"><i class="icon icon-nav-docs"></i>치과정보 관리</a></li>
-                        <li><a href="#"><i class="icon icon-nav-list"></i>채용공고 관리</a></li>
+                        <li class="item-has-child">
+                            <a href="#"><i class="icon icon-nav-list"></i>채용공고 관리</a>
+                            <ul class="sub-menu">
+                                <li><a href="#"><i class="icon icon-nav-list"></i>이력서 등록</a></li>
+                                <li><a href=""><i class="icon icon-nav-list"></i>이력서 관리</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#"><i class="icon icon-nav-user"></i>지원자 관리</a></li>
                         <li><a href="#"><i class="icon icon-nav-promo"></i>덴탈잡 이용권 관리</a></li>
                         <li><a href="#"><i class="icon icon-nav-light"></i>스마트 매칭</a></li>
