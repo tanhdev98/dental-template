@@ -673,6 +673,10 @@
     padding: 0;
 }
 
+#premium-banner .list-grid .list-item.full .item-content a {
+    height: 100%;
+}
+
 #premium-banner .list-grid .list-item.full .item-content img {
     height: 100%;
     width: 100%;
@@ -2153,8 +2157,6 @@
         max-width: 80%;
         left: 0;
     }
-
-    #slide-news .slide-news-wrap .right-slide .control-container {}
 
     .list-item.large {
         max-width: calc(100% - 40px) !important;

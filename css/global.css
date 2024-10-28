@@ -236,6 +236,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    z-index: 2;
 }
 
 #navbar .navbar-wrap .menu {
@@ -344,6 +345,108 @@ ul li:hover .submenu,
 }
 
 
+.mega-menu {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    width: 100%;
+    bottom: -34px;
+    transform: translateY(105%);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.mega-menu.active {
+    transform: translateY(100%);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.mega-menu .row {
+    margin: 0;
+}
+
+.mega-menu .row>div {
+    padding: 0;
+}
+
+.mega-menu .row-question {
+    margin-bottom: 20px;
+}
+
+.mega-menu .row.row-question>div {
+    padding: 0 15px;
+}
+
+.mega-menu .row-menu h5 {
+    margin-bottom: 10px;
+    padding: 0 15px;
+    font-weight: 700;
+    cursor: default;
+}
+
+.mega-menu .row-menu ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 15px;
+}
+
+.mega-menu .row-question>div>span {
+    color: #0068b7;
+    padding: 5px 0;
+    cursor: default;
+}
+
+.mega-menu .row-menu ul li i {
+    font-weight: 300;
+    color: #02a5e3;
+    cursor: default;
+}
+
+.mega-menu .row-menu ul li span {
+    cursor: default;
+    line-height: 20px;
+}
+
+.mega-menu .row-menu ul li:hover {
+    background-color: #eef7fd;
+}
+
+.mega-menu .row-menu ul li>a {
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mega-menu .row-menu ul li a span {
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+}
+
+.mega-menu .row-menu ul li a span:after {
+    content: "";
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    position: absolute;
+}
+
+.mega-menu .row-menu>div+div {
+    border-left: 1px solid #ddd;
+}
+
+.mega-menu .row-menu .last-column-mega-menu ul li {
+    padding: 5px 15px;
+}
 
 @media screen and (width <=1320px) {
     @keyframes slideIn {
