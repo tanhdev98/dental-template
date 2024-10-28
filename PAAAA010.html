@@ -14,9 +14,12 @@
     <script src="js/side-ads.js"></script>
     <script src="js/close-top-banner.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/sub-page.js"></script>
 </head>
 
+
 <body>
+
     <!-- Top Ads -->
     <div id="topAds">
         <div class="topAds-wrap">
@@ -76,9 +79,13 @@
                         <i class="icon icon-hamburger-bar"></i>
                     </a>
                 </div>
+                <div class="full-screen-overlay"></div>
                 <div class="side-nav-res">
                     <ul class="frame-section">
-                        <li>
+                        <a href="#">
+                            <i class="icon icon-hamburger-bar close"></i>
+                        </a>
+                        <li class="menu-nav-child">
                             <ul class="sub-title-menu">
                                 <li><a href="#">채용정보</a></li>
                                 <li><i class="icon icon-down"></i></li>
@@ -88,7 +95,7 @@
                                 <li><a href="#">지역별</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="menu-nav-child">
                             <ul class="sub-title-menu">
                                 <li><a href="#">인재소식</a></li>
                                 <li><i class="icon icon-down"></i></li>
@@ -98,7 +105,7 @@
                                 <li><a href="#">지역별</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="menu-nav-child">
                             <ul class="sub-title-menu">
                                 <li><a href="#">덴탈플러스</a></li>
                                 <li><i class="icon icon-down"></i></li>
@@ -111,7 +118,7 @@
                                 <li><a href="#">문서서식</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="menu-nav-child">
                             <ul class="sub-title-menu">
                                 <li><a href="#">고객센터</a></li>
                                 <li><i class="icon icon-down"></i></li>
@@ -2840,20 +2847,34 @@
         // nav responsive
         $('.nav-wrap .icon-hamburger-bar').click(function () {
             $('.side-nav-res').toggleClass('showMenu');
-            $(this).toggleClass('close');
+            $(this).toggleClass('close active');
+            $('.full-screen-overlay').addClass('overlay-block');
+        });
+        $('.frame-section .icon-hamburger-bar,.full-screen-overlay').click(function () {
+            $('.full-screen-overlay').removeClass('overlay-block');
+            $('.side-nav-res').removeClass('showMenu');
+            $('.nav-wrap .icon-hamburger-bar').removeClass('close active');
         });
         ///
-        $('.side-nav-res .frame-section > li').click(function () {
-            if ($(this).hasClass('active')) {
-                $('.side-nav-res .frame-section > li').removeClass('active');
-                $('.side-nav-res .frame-section .submenu').removeClass('showMenuChild-res');
-            } else {
-                $('.side-nav-res .frame-section > li').removeClass('active');
-                $('.side-nav-res .frame-section .submenu').removeClass('showMenuChild-res');
-                $(this).addClass('active');
-                $(this).find('.submenu').addClass('showMenuChild-res');
-            }
+        $('.side-nav-res .frame-section .menu-nav-child').click(function (e) {
+            e.stopPropagation();
+            // $('.side-nav-res .frame-section > li').not(this).removeClass('active').find('.submenu').slideUp(1, function () {
+            //     $(this).removeClass('showMenuChild-res active');
+            // });
+            // const submenu = $(this).find('.submenu');
+            // const isActive = $(this).toggleClass('active').hasClass('active');
+
+            // if (isActive) {
+            //     submenu.slideDown(300).addClass('showMenuChild-res active');
+            // } else {
+            //     submenu.slideUp(300, function () {
+            //         $(this).removeClass('showMenuChild-res active');
+            //     });
+            // } 
+            $(this).toggleClass('active');
+            $(this).find('.submenu').slideToggle().toggleClass('active');
         });
+
     </script>
 </body>
 
