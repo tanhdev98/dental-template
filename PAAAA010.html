@@ -2858,19 +2858,6 @@
         ///
         $('.side-nav-res .frame-section .menu-nav-child').click(function (e) {
             e.stopPropagation();
-            // $('.side-nav-res .frame-section > li').not(this).removeClass('active').find('.submenu').slideUp(1, function () {
-            //     $(this).removeClass('showMenuChild-res active');
-            // });
-            // const submenu = $(this).find('.submenu');
-            // const isActive = $(this).toggleClass('active').hasClass('active');
-
-            // if (isActive) {
-            //     submenu.slideDown(300).addClass('showMenuChild-res active');
-            // } else {
-            //     submenu.slideUp(300, function () {
-            //         $(this).removeClass('showMenuChild-res active');
-            //     });
-            // } 
             $(this).toggleClass('active');
             $(this).find('.submenu').slideToggle().toggleClass('active');
         });
