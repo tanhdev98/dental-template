@@ -113,6 +113,14 @@
 }
 
 @media screen and (width <=1320px) {
+    .hover-background {
+        display: none;
+    }
+
+    .header-left a {
+        width: max-content;
+    }
+
     #hero .carousel-controller {
         display: flex;
     }
@@ -122,6 +130,7 @@
         display: none;
     }
 }
+
 
 /* hero menu */
 #hero-menu {
@@ -877,8 +886,15 @@
     .list-grid .list-item:hover {
         margin-top: 0;
         position: relative;
-        top: -5px;
         box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .list-grid .list-item.nor:hover {
+        margin-top: unset;
+    }
+
+    #grand-banner .list-grid .list-item.nor:hover .item-content {
+        outline: unset;
     }
 }
 
@@ -1139,7 +1155,7 @@
         border-radius: 30px;
         position: relative;
         max-width: 777px;
-        height: 113px;
+        height: 83px;
         background: #fff;
         left: 27px;
     }
@@ -1147,12 +1163,12 @@
     #slide-news .slide-news-wrap .left-slide {
         flex-direction: row;
         align-items: center;
-        gap: 41px;
+        gap: 25px;
     }
 
     #slide-news .slide-news-wrap .left-slide>h1,
     #slide-news .slide-news-wrap .left-slide>a {
-        font-size: 34px;
+        font-size: 24px;
     }
 
     #slide-news .slide-news-wrap .left-slide {
@@ -1177,7 +1193,7 @@
 
     #slide-news .slide-news-wrap .right-slide {
         position: absolute;
-        right: -170px;
+        right: -160px;
     }
 
     #slide-news .slide-news-wrap .right-slide>p {
@@ -1190,8 +1206,8 @@
 
     #slide-news .slide-news-wrap .right-slide .control-container .control {
         background: #ddd;
-        width: 56px;
-        height: 56px;
+        width: 46px;
+        height: 46px;
     }
 
     #slide-news .slide-news-wrap .right-slide .control-container .control i {
@@ -1285,7 +1301,7 @@
 
     #grand-banner {
         margin-top: 0;
-        padding: 95px 0 50px 0;
+        padding: 45px 0 50px 0;
     }
 
     #grand-banner .list-item-1,
@@ -2185,13 +2201,22 @@
 
 
 @media screen and (width <=875px) {
+    #slide-news .slide-news-wrap .right-slide .control-container .control {
+        width: 40px;
+        height: 40px;
+    }
+
+    #slide-news .slide-news-wrap {
+        height: 83px;
+    }
+
     #hot-recruit {
         padding-top: 45px;
     }
 
     #header .header-wrap .nav-wrap {
         right: 60px;
-        gap: 62px;
+        gap: 35px;
         align-items: center;
     }
 
@@ -2287,7 +2312,7 @@
 
 @media screen and (width <=770px) {
     #slide-news .slide-news-wrap .right-slide {
-        right: -160px;
+        right: -140px;
     }
 
     #hot-talent .list-grid .list-item .item-content .item-footer .item-position,
@@ -2337,6 +2362,10 @@
 
     #enterprise .scrollable-area {
         margin-top: 0;
+    }
+
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+        font-size: 16px;
     }
 }
 
@@ -2450,13 +2479,16 @@
         height: 59px;
     }
 
-    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
-        font-size: 18px;
+    #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name {
+        font-size: 28px;
     }
-
 }
 
 @media screen and (width <=600px) {
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .bottom-nav-title {
+        font-size: 15px;
+    }
+
     #slide-news .slide-news-wrap .right-slide {
         right: -95px;
     }
@@ -2690,8 +2722,8 @@
     }
 
     #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-avatar {
-        width: 49px;
-        height: 49px;
+        width: 39px;
+        height: 39px;
     }
 
     #hot-talent .icon-star {
@@ -2808,7 +2840,7 @@
     }
 
     #grand-banner .list-grid .list-item.large .item-content {
-        padding: 8px 24px;
+        padding: 8px 14px;
     }
 
     .grand-banner-mobile .title,
@@ -2968,7 +3000,7 @@
     }
 
     #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #hot-talent .icon-star {
@@ -3470,6 +3502,10 @@
 
     #enterprise .list-grid {
         grid-template-rows: repeat(1, 135px);
+    }
+
+    .hero-nav-child .item a {
+        font-size: 14px;
     }
 }
 
