@@ -1,8 +1,6 @@
 /* top ads */
 #topAds .topAds-wrap {
-    background: url('../images/top-ads.png') no-repeat center / cover;
-    height: 81px;
-    background-color: #f3f2ff;
+    height: 86px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -10,35 +8,9 @@
     justify-content: center;
 }
 
-#topAds .topAds-wrap .topAds-content {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-#topAds .topAds-wrap .text {
-    font-size: 24px;
-    pointer-events: none;
-    white-space: nowrap;
-}
-
-#topAds .topAds-wrap .btn-primary {
-    color: #fff;
-    background: #448aca;
-    padding: 10px 12px;
-    font-size: 19px;
-    border-radius: 17px;
-    width: auto;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-#topAds .topAds-wrap .topAds-img {
-    position: relative;
-    width: 120px;
-    height: 108px;
-    bottom: -30px;
-    pointer-events: none;
+#topAds .topAds-wrap>a>img,
+#topAds .topAds-wrap>a {
+    height: 100%;
 }
 
 #topAds .topAds-wrap .close-topAds-wrap {
@@ -271,6 +243,8 @@
     display: flex;
     gap: 25px;
     height: 21px;
+    font-size: 18px;
+    color: #666;
 }
 
 #navbar .menu>a {

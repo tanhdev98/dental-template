@@ -23,12 +23,9 @@
     <!-- Top Ads -->
     <div id="topAds">
         <div class="topAds-wrap">
-            <div class="topAds-content">
-                <a href="#" class="btn-primary">이력서 등록 이벤트</a>
-                <span class="text"><b>정성껏 이력서를 작성</b>하여 주신</span>
-                <img class="topAds-img" src="./images/coffee.png" alt="top ads imgage">
-                <span class="text">모든 분들께 <b>선물을 드립니다.</b></span>
-            </div>
+            <a href="#">
+                <img class="topApds-img" src="./images/top-banner-img.png" alt="top ads imgage">
+            </a>
             <div class="close-topAds-wrap">
                 <input type="checkbox" id="disappear" name="disappear">
                 <label for="disappear">오늘하루 이 창을 열지 않음</label>
@@ -75,7 +72,7 @@
                     <a href="#">
                         <i class="icon icon-bell"></i>
                     </a>
-                    <a>
+                    <a href="#">
                         <i class="icon icon-hamburger-bar"></i>
                     </a>
                 </div>
@@ -329,27 +326,9 @@
                         </div>
                         <div class="carousel-item">
                             <img src="./images/PAAAA010/slide-2.png" class="d-block w-100" alt="DentalJob Slide">
-
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/PAAAA010/slide-3.png" class="d-block w-100" alt="DentalJob Slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/PAAAA010/slide-4.png" class="d-block w-100" alt="DentalJob Slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/PAAAA010/slide-5.png" class="d-block w-100" alt="DentalJob Slide">
                         </div>
                     </div>
                     <div class="scrollable-area scrollable-area-1">
-                        <div class="item-content">
-                            <img src="./images/PAAAA010/slide-1-res.png" class="d-block carousel-img-res"
-                                alt="DentalJob Slide">
-                        </div>
-                        <div class="item-content">
-                            <img src="./images/PAAAA010/slide-1-res.png" class="d-block carousel-img-res"
-                                alt="DentalJob Slide">
-                        </div>
                         <div class="item-content">
                             <img src="./images/PAAAA010/slide-1-res.png" class="d-block carousel-img-res"
                                 alt="DentalJob Slide">
@@ -437,30 +416,40 @@
             <div class="container">
                 <h1 class="section-title">그랜드</h1>
                 <div class="list-grid">
-                    <div class="list-item list-item-1 large">
+                    <div class="list-item list-item-1 slide">
                         <div class="item-content">
-                            <div>
-                                <div class="item-logo">
-                                    <img src="./images/PAAAA010/banner-logo-8.png" alt="logo banner">
+                            <div id="grand-slide" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/PAAAA010/banner-slide-1.png" class="d-block w-100"
+                                            alt="DentalJob Slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/PAAAA010/banner-slide-2.png" class="d-block w-100"
+                                            alt="DentalJob Slide">
+                                    </div>
                                 </div>
-                                <div class="item-desc">
-                                    [플란치과 강남점/정규직&파트
-                                    타임] 진료팀 채용(간호조무사 간호조무사간호조무사
-                                </div>
-                                <ul class="item-tag">
-                                    <li>진료실</li>
-                                    <li>서울(강남구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
-                                </ul>
-                                <div class="item-image">
-                                    <img src="./images/PAAAA010/grand-banner-2.png" alt="grand banner">
-                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#grand-slide"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#grand-slide"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="list-item list-item-2 large">
+                        <div class="item-content">
+                            <img src="./images/PAAAA010/banner-slide-3.png" alt="DentalJob Grand Banner">
+                            <button class="bookmark">
+                                <i class="icon icon-star white"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list-item list-item-3 large-full">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -473,35 +462,14 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(송파구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                                 <div class="item-image">
                                     <img src="./images/PAAAA010/grand-banner-1.png" alt="grand banner">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-item list-item-3">
-                        <div class="item-content">
-                            <div>
-                                <div class="item-logo">
-                                    <img src="./images/PAAAA010/banner-logo-1.png" alt="logo banner">
-                                </div>
-                                <div class="item-desc">
-                                    서울시치과의사회와 함께 나와
-                                    맞는 치과, 꿀알바를 찾아보세요! 찾아보세요!
-                                </div>
-                                <ul class="item-tag">
-                                    <li>진료실 외</li>
-                                    <li>서울(강남구)</li>
-                                    <li>정규직 외 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -518,11 +486,11 @@
                                 <ul class="item-tag">
                                     <li>진료실 외</li>
                                     <li>서울(강서구)</li>
-                                    <li>정규직 외 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -533,43 +501,21 @@
                                     <img src="./images/PAAAA010/banner-logo-3.png" alt="logo banner">
                                 </div>
                                 <div class="item-desc">
-                                    ●서울숙면치과 부천 총괄/상담실
-                                    장, 진료실/데스크 신입/경력 치
+                                    ♥실장님, 진료실스탭, 데스크코
+                                    디네이터 모집합니다♥ 기숙 기숙 기숙
                                 </div>
                                 <ul class="item-tag">
                                     <li>진료실 외</li>
                                     <li>경기(부천시 오정구)</li>
-                                    <li>정규직 외
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="list-item list-item-6">
-                        <div class="item-content">
-                            <div>
-                                <div class="item-logo">
-                                    <img src="./images/PAAAA010/banner-logo-3.png" alt="logo banner">
-                                </div>
-                                <div class="item-desc">
-                                    ♥실장님, 진료실스탭, 데스크코
-                                    디네이터 모집합니다♥ 기숙 기숙기숙
-                                </div>
-                                <ul class="item-tag">
-                                    <li>진료실 외</li>
-                                    <li>서울(은평구)</li>
-                                    <li>정규직 외 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-item list-item-7">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -582,15 +528,15 @@
                                 <ul class="item-tag">
                                     <li>진료실 외</li>
                                     <li>서울(영등포구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-8">
+                    <div class="list-item list-item-7">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -603,16 +549,15 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(서초구)</li>
-                                    <li>정규직 외
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-9">
+                    <div class="list-item list-item-8">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -625,15 +570,15 @@
                                 <ul class="item-tag">
                                     <li>진료실 외</li>
                                     <li>서울(서구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-10">
+                    <div class="list-item list-item-9">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -646,15 +591,15 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(광진구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-11 nor">
+                    <div class="list-item list-item-10 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -667,15 +612,15 @@
                                 <ul class="item-tag">
                                     <li>진료실 외</li>
                                     <li>서울(서초구)</li>
-                                    <li>정규직 외 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-12 nor">
+                    <div class="list-item list-item-11 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -688,15 +633,15 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-13 nor">
+                    <div class="list-item list-item-12 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -709,15 +654,15 @@
                                 <ul class="item-tag">
                                     <li>진료실 외</li>
                                     <li>서울(관악구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-14 nor">
+                    <div class="list-item list-item-13 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -730,15 +675,15 @@
                                 <ul class="item-tag">
                                     <li>진료실 외</li>
                                     <li>경기(부천시 원미구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-15 nor">
+                    <div class="list-item list-item-14 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -751,15 +696,15 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-16 nor">
+                    <div class="list-item list-item-15 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -772,15 +717,15 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>인천(연수구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-17 nor">
+                    <div class="list-item list-item-16 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
@@ -793,19 +738,19 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(중구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item list-item-18 nor">
+                    <div class="list-item list-item-17 nor">
                         <div class="item-content">
                             <div>
                                 <div class="item-logo">
-                                    <img src="./images/PAAAA010/banner-logo-17.png" alt="logo banner">
+                                    <img src="./images/PAAAA010/banner-logo-18.png" alt="logo banner">
                                 </div>
                                 <div class="item-desc">
                                     ■2025년 신입 공채 치과위생사
@@ -814,14 +759,15 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(서초구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="group-banner-mobile">
                         <div class="grand-banner-mobile">
                             <div class="title">GRAND BANNER</div>
@@ -871,11 +817,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>서울(강남구)</li>
-                                        <li>정규직 외 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -892,11 +838,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>서울(강서구)</li>
-                                        <li>정규직 외 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -913,12 +859,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>경기(부천시 오정구)</li>
-                                        <li>정규직 외
-                                            <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -935,11 +880,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>서울(은평구)</li>
-                                        <li>정규직 외 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -956,11 +901,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>서울(영등포구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -977,11 +922,11 @@
                                     <ul class="item-tag">
                                         <li>진료실</li>
                                         <li>서울(서초구)</li>
-                                        <li>정규직 외 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -998,11 +943,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>서울(서구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1019,11 +964,11 @@
                                     <ul class="item-tag">
                                         <li>진료실</li>
                                         <li>서울(광진구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1042,11 +987,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>서울(서초구)</li>
-                                        <li>정규직 외 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1063,11 +1008,11 @@
                                     <ul class="item-tag">
                                         <li>진료실</li>
                                         <li>서울(강남구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1084,11 +1029,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>서울(관악구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1105,11 +1050,11 @@
                                     <ul class="item-tag">
                                         <li>진료실 외</li>
                                         <li>경기(부천시 원미구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1126,11 +1071,11 @@
                                     <ul class="item-tag">
                                         <li>진료실</li>
                                         <li>서울(강남구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1147,11 +1092,11 @@
                                     <ul class="item-tag">
                                         <li>진료실</li>
                                         <li>인천(연수구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1168,11 +1113,11 @@
                                     <ul class="item-tag">
                                         <li>진료실</li>
                                         <li>서울(중구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1189,11 +1134,11 @@
                                     <ul class="item-tag">
                                         <li>진료실</li>
                                         <li>서울(서초구)</li>
-                                        <li>정규직 <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
+                                        <li>정규직</li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1228,10 +1173,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>경기(고양시일산동구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1246,10 +1192,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(강서구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1264,10 +1211,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(동작구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1282,10 +1230,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(강남구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item full">
@@ -1307,10 +1256,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>인천(연수구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1320,15 +1270,16 @@
                             </div>
                             <div class="item-desc">
                                 ★ [입사 지원금/장기근속
-                                격려금] 스탭 이사예정( 이사예정(
+                                격려금] 스탭 이사예정 이사예정이사예정 이사예정
                             </div>
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>경기(용인시처인구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1343,10 +1294,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(서대문구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1361,10 +1313,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(관악구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1379,10 +1332,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>경기(용인시수지구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -1397,13 +1351,14 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(송파구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="list-item">
+                    <div class="list-item nor">
                         <div class="item-content">
                             <div class="item-logo">
                                 <img src="./images/PAAAA010/banner-logo-premium-11.png" alt="logo banner premium">
@@ -1415,10 +1370,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(서초구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item nor">
@@ -1433,10 +1389,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>경기(화성시)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item nor">
@@ -1451,10 +1408,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>인천(계양구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item nor">
@@ -1469,10 +1427,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>경기(성남시분당구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item nor">
@@ -1487,10 +1446,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>경기(부천시원미구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item nor">
@@ -1505,10 +1465,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울(강동구)</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button></li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item nor">
@@ -1523,11 +1484,11 @@
                             <ul class="item-tag">
                                 <li>진료실</li>
                                 <li>서울</li>
-                                <li>정규직 <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
+                                <li>정규직</li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item nor">
@@ -1543,12 +1504,10 @@
                                 <li>진료실</li>
                                 <li>서울(강남구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="group-banner-mobile">
@@ -1592,10 +1551,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>경기(고양시일산동구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1610,10 +1570,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(강서구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1628,10 +1589,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(동작구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1646,10 +1608,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1664,10 +1627,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>인천(연수구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1682,10 +1646,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>경기(용인시처인구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item nor">
@@ -1700,10 +1665,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>경기(화성시)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item nor">
@@ -1718,10 +1684,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>인천(계양구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item nor">
@@ -1736,10 +1703,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>경기(성남시분당구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1756,10 +1724,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(서대문구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1774,10 +1743,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(관악구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1792,10 +1762,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>경기(용인시수지구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1810,10 +1781,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(송파구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -1828,10 +1800,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(서초구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item nor">
@@ -1846,10 +1819,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>경기(부천시원미구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item nor">
@@ -1864,10 +1838,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울(강동구)</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button></li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item nor">
@@ -1882,11 +1857,11 @@
                                 <ul class="item-tag">
                                     <li>진료실</li>
                                     <li>서울</li>
-                                    <li>정규직 <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
+                                    <li>정규직</li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item nor">
@@ -1902,12 +1877,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1942,12 +1915,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1974,12 +1945,10 @@
                                         <li>진료실</li>
                                         <li>서울(강남구)</li>
                                         <li>정규직</li>
-                                        <li>
-                                            <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1998,12 +1967,10 @@
                                         <li>진료실</li>
                                         <li>서울(강남구)</li>
                                         <li>정규직</li>
-                                        <li>
-                                            <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2022,12 +1989,10 @@
                                         <li>진료실</li>
                                         <li>서울(강남구)</li>
                                         <li>정규직</li>
-                                        <li>
-                                            <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2046,12 +2011,10 @@
                                         <li>진료실</li>
                                         <li>서울(강남구)</li>
                                         <li>정규직</li>
-                                        <li>
-                                            <button class="bookmark">
-                                                <i class="icon icon-star"></i>
-                                            </button>
-                                        </li>
                                     </ul>
+                                    <button class="bookmark">
+                                        <i class="icon icon-star"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2083,12 +2046,10 @@
                                 <li>진료실</li>
                                 <li>서울(중랑구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -2101,12 +2062,10 @@
                                 <li>진료실</li>
                                 <li>경기(하남시)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -2120,12 +2079,10 @@
                                 <li>진료실</li>
                                 <li>서울(강남구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -2139,12 +2096,10 @@
                                 <li>진료실</li>
                                 <li>경기(시흥시)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -2158,12 +2113,10 @@
                                 <li>진료실</li>
                                 <li>서울(강남구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -2176,12 +2129,10 @@
                                 <li>진료실</li>
                                 <li>서울(서대문구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="list-item">
@@ -2194,15 +2145,13 @@
                                 <li>진료실</li>
                                 <li>서울(성북구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="list-item nor">
+                    <div class="list-item">
                         <div class="item-content">
                             <div class="item-title">365베스트치과의원</div>
                             <div class="item-desc">
@@ -2212,15 +2161,13 @@
                                 <li>진료실</li>
                                 <li>인천(부평구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="list-item nor">
+                    <div class="list-item">
                         <div class="item-content">
                             <div class="item-title">이석형치과</div>
                             <div class="item-desc">
@@ -2230,15 +2177,13 @@
                                 <li>진료실</li>
                                 <li>서울(강남구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="list-item nor">
+                    <div class="list-item">
                         <div class="item-content">
                             <div class="item-title">서울플러스치과</div>
                             <div class="item-desc">
@@ -2249,15 +2194,13 @@
                                 <li>진료실</li>
                                 <li>경기(성남시)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="list-item nor">
+                    <div class="list-item">
                         <div class="item-content">
                             <div class="item-title">젊어지는치과</div>
                             <div class="item-desc">
@@ -2267,15 +2210,13 @@
                                 <li>진료실</li>
                                 <li>서울(서초구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="list-item nor">
+                    <div class="list-item">
                         <div class="item-content">
                             <div class="item-title">김장한치과교정치과의원</div>
                             <div class="item-desc">
@@ -2286,12 +2227,10 @@
                                 <li>진료실</li>
                                 <li>서울(송파구)</li>
                                 <li>정규직</li>
-                                <li>
-                                    <button class="bookmark">
-                                        <i class="icon icon-star"></i>
-                                    </button>
-                                </li>
                             </ul>
+                            <button class="bookmark">
+                                <i class="icon icon-star"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="scrollable-area scrollable-area-1">
@@ -2306,12 +2245,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -2325,12 +2262,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -2344,12 +2279,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -2363,12 +2296,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2384,12 +2315,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -2403,12 +2332,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -2422,12 +2349,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="list-item">
@@ -2441,12 +2366,10 @@
                                     <li>진료실</li>
                                     <li>서울(강남구)</li>
                                     <li>정규직</li>
-                                    <li>
-                                        <button class="bookmark">
-                                            <i class="icon icon-star"></i>
-                                        </button>
-                                    </li>
                                 </ul>
+                                <button class="bookmark">
+                                    <i class="icon icon-star"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2479,8 +2402,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                이력서
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2507,8 +2429,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                남소윤 님의 이력서입니다.
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2535,8 +2456,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                김서하 님의 이력서입니다.
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2563,8 +2483,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                안녕하세요 구직신청합니다.
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2596,8 +2515,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                간호조무사 자격증있습니다
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2624,8 +2542,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                손정화 님의 이력서입니다.
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2652,8 +2569,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                강현아 님의 이력서입니다.
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2680,8 +2596,7 @@
                                 </button>
                             </div>
                             <div class="item-desc">
-                                손과 배움이 빠른 지원자입니다.
-                                데스크 희망합니다.
+                                임유나님의 이력서입니다.
                             </div>
                             <div class="item-footer">
                                 <div class="item-position">
@@ -2825,14 +2740,14 @@
     </div>
     <!-- End footer -->
     <script>
-        $('#grand-banner .list-item, #premium-banner .list-item').hover(
-            function () {
-                $(this).append('<div class="hover-background"></div>');
-            },
-            function () {
-                $(this).find('.hover-background').remove();
-            }
-        );
+        // $('#grand-banner .list-item, #premium-banner .list-item').hover(
+        //     function () {
+        //         $(this).append('<div class="hover-background"></div>');
+        //     },
+        //     function () {
+        //         $(this).find('.hover-background').remove();
+        //     }
+        // );
         $(document).ready(function () {
             $('.scrollable-area').on('scroll', function () {
                 var scrollableArea = $(this);

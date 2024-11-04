@@ -1,9 +1,7 @@
 $(document).ready(function () {
-
     var offsetTop = $('#topAds').outerHeight(true) +
         $('#header').outerHeight(true) +
-        $('#navbar').outerHeight(true) + 30;
-
+        $('#navbar').outerHeight(true) + 60;
 
     function calculateLeftPos() {
         var containerWidth = $('.container').width();
@@ -12,13 +10,11 @@ $(document).ready(function () {
         if ($(window).width() < 1720) {
             return containerWidth + 10 + marginLeft;
         } else {
-            return containerWidth + 30 + marginLeft;
+            return containerWidth + 20 + marginLeft;
         }
     }
 
-
     var leftPos = calculateLeftPos();
-
 
     $('#sideAds').css({
         position: 'fixed',
@@ -30,10 +26,10 @@ $(document).ready(function () {
         var scrollY = $(this).scrollTop();
         leftPos = calculateLeftPos();
 
-        if (scrollY > offsetTop - 30) {
+        if (scrollY > offsetTop - 60) {
             $('#sideAds').css({
                 position: 'fixed',
-                top: '30px',
+                top: '60px',
                 left: leftPos + 'px',
             });
         } else {
@@ -44,7 +40,6 @@ $(document).ready(function () {
             });
         }
     });
-
 
     $(window).resize(function () {
         leftPos = calculateLeftPos();

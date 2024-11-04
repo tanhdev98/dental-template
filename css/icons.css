@@ -70,6 +70,10 @@
     background-image: url('../images/icons/star-blank.png');
 }
 
+.icon-star.white::after {
+    background-image: url('../images/icons/star-blank-white.png');
+}
+
 .icon-star:hover::after,
 .icon-star.active::after {
     background-image: url('../images/icons/star-fill.png');
