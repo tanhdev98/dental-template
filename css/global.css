@@ -160,7 +160,7 @@
     flex-direction: column;
     align-items: start;
     gap: 5px;
-    width: 145px;
+    width: 95px;
 }
 
 #sideAds .side-ads-wrap .side-ads-item {
@@ -172,6 +172,31 @@
     width: auto;
     height: 100%;
     object-fit: contain;
+}
+
+#sideAds .back-to-top {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35px;
+}
+
+#sideAds .back-to-top a {
+    width: 52px;
+    height: 52px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+#sideAds .back-to-top i {
+    width: 52px;
+    height: 52px;
+    background-color: #eee;
+    border-radius: 50%;
+    height: 33px;
+    width: 22px;
 }
 
 @media screen and (width <=1790px) {
@@ -2028,7 +2053,7 @@ ul li:hover .submenu,
 
 [for="saved-conditions"] {
     right: 0;
-    top: 50px;
+    top: 63px;
 }
 
 [for="saved-conditions"] .table {

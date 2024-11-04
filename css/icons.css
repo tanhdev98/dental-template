@@ -405,3 +405,7 @@
     top: 47%;
     left: 0;
 }
+
+.icon-back-to-top::after {
+    background-image: url('../images/icons/icon-back-to-top.png');
+}
