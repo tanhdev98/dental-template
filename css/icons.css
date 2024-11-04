@@ -405,3 +405,12 @@
     top: 47%;
     left: 0;
 }
+
+.icon-trash {
+    width: 16px;
+    height: 17px;
+}
+
+.icon-trash::after {
+    background-image: url('../images/icons/icon-trash.png');
+}

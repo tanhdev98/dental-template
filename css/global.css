@@ -747,7 +747,7 @@ ul li:hover .submenu,
 
 .form-select-container>.form-select-cus {
     border: 1px solid #999;
-    border-radius: 10px;
+    border-radius: 3px;
     position: relative;
     height: 100%;
 }
@@ -788,7 +788,7 @@ ul li:hover .submenu,
     box-shadow: 2px 1px 16px rgba(0, 0, 0, 0.15);
     border: 1px solid #999;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     max-height: 400px;
     overflow: scroll;
 }
@@ -809,11 +809,11 @@ ul li:hover .submenu,
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder:hover {
-    border-radius: 10px 10px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option:last-child:hover {
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 3px 3px;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container {
@@ -836,7 +836,7 @@ ul li:hover .submenu,
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper {
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .form-select-container.open-upwards .form-select-cus .form-option-wrapper {
@@ -1383,7 +1383,7 @@ ul li:hover .submenu,
 
 .line-after-tab {
     display: block;
-    height: 180px;
+    height: 144px;
     width: 100%;
     border-radius: 10px;
     margin-top: 20px;
@@ -1745,7 +1745,7 @@ ul li:hover .submenu,
     display: none;
     position: absolute;
     border: 1px solid #333;
-    padding: 32px 20px;
+    padding: 42px 20px 32px;
     border-radius: 5px;
     background: #fff;
     z-index: 13;
@@ -1777,7 +1777,7 @@ ul li:hover .submenu,
     background-color: #333;
     transform: rotate(45deg);
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
 }
 
@@ -1788,20 +1788,23 @@ ul li:hover .submenu,
     background-color: #333;
     transform: rotate(-45deg);
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
 }
 
 .popup .popup-header {
     font-size: 22px;
     font-weight: 500;
+}
+
+.popup-support .popup-header {
     border-bottom: 1px solid #ddd;
     padding-bottom: 16px;
 }
 
 .popup .popup-header span {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .popup .popup-header .popup-header-number-room {
@@ -2034,7 +2037,7 @@ ul li:hover .submenu,
 [for="saved-conditions"] .table {
     border-top: 1px solid #333;
     margin-top: 20px;
-    width: 520px;
+    width: 544px;
 }
 
 [for="saved-conditions"] .table>li {
@@ -2045,6 +2048,10 @@ ul li:hover .submenu,
     height: 50px;
     font-size: 16px;
     font-weight: 100;
+}
+
+[for="saved-conditions"] .table>li.row-name-column {
+    background-color: #fafafa;
 }
 
 [for="saved-conditions"] .table>li:not(.row-name-column):hover {
@@ -2068,6 +2075,20 @@ ul li:hover .submenu,
 
 [for="saved-conditions"] .table>li .date {
     font-size: 14px;
+}
+
+[for="saved-conditions"] .table>li .icon {
+    margin: auto;
+}
+
+[for="saved-conditions"] .table>li .delete {
+    margin: auto;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+}
+
+[for="saved-conditions"] .table>li:hover .delete {
+    border-bottom: 1px solid #999;
 }
 
 /* Profile seting popup */
