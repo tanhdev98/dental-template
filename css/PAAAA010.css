@@ -809,6 +809,8 @@
     #premium-banner .list-grid .list-item:nth-last-child(6) {
         display: none;
     }
+
+
 }
 
 /* Enterprise */
@@ -1299,6 +1301,10 @@
     }
 }
 
+.top-grand-banner-mobile {
+    display: none;
+}
+
 @media screen and (width <=1080px) {
 
     #header,
@@ -1378,10 +1384,20 @@
         padding: 95px 0 50px 0;
     }
 
+    #grand-banner .top-grand-banner-mobile {
+        margin-bottom: 50px;
+        display: flex;
+    }
+
     #grand-banner .list-item-1,
     #grand-banner .list-item-2 {
         border-radius: 10px 10px 0 0;
         display: block !important;
+    }
+
+    #grand-banner .list-grid>.list-item-1,
+    #grand-banner .list-grid>.list-item-2 {
+        display: none !important;
     }
 
     #grand-banner .list-item-3,
@@ -1430,6 +1446,59 @@
         margin-left: -5%;
     }
 
+    .top-grand-banner-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 50px;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile {
+        background-color: #076ecc;
+        border-radius: 10px;
+        padding-top: 6px;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .item-content {
+        display: flex;
+        background-color: #fff;
+        border: 2px solid #ddd;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .left-item {
+        width: 50%;
+        padding: 25px 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .left-item img {
+        object-fit: contain;
+        height: 85px;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .left-item .desc {
+        font-size: 38px;
+        line-height: 52px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .item-right {
+        width: 50%;
+        height: inherit;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .item-right img {
+        object-fit: cover;
+        height: 100%;
+    }
+
     #grand-banner .list-grid .scrollable-area .list-item {
         display: block !important;
     }
@@ -1469,6 +1538,10 @@
     #grand-banner .scrollable-area,
     #grand-banner .scrollable-area .list-item {
         height: 440px;
+    }
+
+    #grand-banner .scrollable-area.scrollable-area-2 {
+        margin-top: 125px;
     }
 
     .list-grid .list-item {
@@ -2073,6 +2146,10 @@
         height: auto !important;
     }
 
+    #grand-banner .scrollable-area.scrollable-area-2 {
+        margin-top: 0;
+    }
+
     #grand-banner .list-grid .list-item .item-content .item-tag {
         font-size: 18px;
         margin-top: 15px;
@@ -2355,6 +2432,15 @@
         padding-left: 44px;
     }
 
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .left-item {
+        padding: 25px;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .left-item .desc {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
 }
 
 @media screen and (width <=847px) {
@@ -2586,6 +2672,7 @@
         height: auto !important;
     }
 
+
     #hot-talent .drop-list-item-res .btn-drop-list .drop-text {
         font-size: 22px;
     }
@@ -2815,7 +2902,11 @@
     }
 
     #hot-talent {
-        padding: 0px 60px 0 60px;
+        padding: 0px 30px 0 30px;
+    }
+
+    #grand-banner .top-grand-banner-mobile {
+        padding: 0 30px;
     }
 
     #hot-talent .drop-list-item-res {
@@ -2837,6 +2928,19 @@
 
     #footer .menu>ul {
         justify-content: center;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .item-content {
+        flex-direction: column;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .item-content .left-item {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .top-grand-banner-mobile .item-top-grand-banner-mobile .item-content .item-right {
+        width: 100%;
     }
 }
 
