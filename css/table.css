@@ -124,7 +124,7 @@
 .table .room-name {
     font-size: 16px;
     font-weight: 600;
-    margin-top: 6px;
+    margin: 12px 0 6px;
     color: #666;
 }
 

@@ -57,7 +57,7 @@
 #info-dashboard .common-user-info .info-setting h1 {
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
 }
 
 #info-dashboard .common-user-info .info-setting .box-gray {
@@ -67,7 +67,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 23px;
-    height: 123px;
+    height: 115px;
     font-size: 18px;
 }
 
@@ -326,7 +326,6 @@
 }
 
 #notification-tab .table .room-name {
-    margin-top: 5px;
     font-size: 17px;
     line-height: 16px;
 }
@@ -334,4 +333,16 @@
 #notification-tab .table .time {
     font-size: 17px;
     line-height: 16px;
+}
+
+#notification-tab .tabs li span {
+    background-color: #f9f9f9;
+    color: #999;
+    font-weight: 300
+}
+
+#notification-tab .tabs li.active span {
+    background-color: #fff;
+    font-weight: 600;
+    color: #0068b7;
 }
