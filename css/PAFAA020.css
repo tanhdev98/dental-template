@@ -8,3 +8,25 @@
     display: flex;
     padding: 0;
 }
+
+@media screen and (width <=991px) {
+    #content .table>li>div {
+        display: grid;
+        grid-template-columns: 50% calc(100% - 50% - 15px);
+        padding: 28px 0 0;
+    }
+
+    .table .column-left {
+        padding: 0;
+    }
+}
+
+@media screen and (width <=767px) {
+    #content .table>li>div {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 28px 0 0;
+    }
+
+
+}
