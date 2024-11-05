@@ -215,3 +215,70 @@
         margin-top: 0;
     }
 }
+
+@media screen and (width <=1320px) {
+    #support-now .wrap-table>li>div {
+        grid-template-columns: 30% calc(100% - 30% - 15px);
+        gap: 15px;
+    }
+
+    #support-now .top-table {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+
+    .column-1 .clinic-name {
+        text-align: left;
+    }
+
+    #support-now .wrap-table .column-2 {
+        padding-left: 0;
+    }
+
+    #support-now .wrap-table .column-3 {
+        padding: 0;
+    }
+
+    .column-4 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .column-4 .support+.room {
+        margin-top: 0;
+    }
+
+    .table-header {
+        display: none;
+    }
+}
+
+@media screen and (width <=1200px) {
+    #support-now .top-table {}
+}
+
+@media screen and (width <=767px) {
+    #support-now .wrap-table>li {
+        height: fit-content;
+        padding: 15px;
+    }
+
+    #support-now .wrap-table>li>div {
+        grid-template-columns: 100%;
+    }
+
+    #support-now .wrap-table>li>div>div {
+        justify-content: center;
+    }
+
+    .top-table .wrap-dropDown {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+}

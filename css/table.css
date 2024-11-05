@@ -850,3 +850,12 @@
 .wrap-table.table {
     border-top: 1px solid #333;
 }
+
+
+@media screen and (width <=1320px) {
+    .more-infomation {
+        height: fit-content;
+        padding: 15px;
+        align-items: flex-start;
+    }
+}
