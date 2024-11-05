@@ -179,6 +179,11 @@
     font-weight: 400;
 }
 
+#support-now .wrap-dropDown .dropDowns {
+    display: flex;
+    gap: 5px;
+}
+
 @media screen and (width <=1320px) {
     #support-now .wrap-table>li>div {
         grid-template-columns: repeat(2, 1fr);
@@ -279,6 +284,11 @@
         height: auto;
         flex-wrap: wrap;
         justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .top-table .wrap-dropDown .dropDowns {
+        flex-wrap: wrap;
     }
 
 }

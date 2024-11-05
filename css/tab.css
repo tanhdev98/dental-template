@@ -435,6 +435,10 @@ li.dot::before {
     #tabs-form .tabs li.active:before {
         background-color: #000;
     }
+
+    .line-after-tab {
+        height: auto;
+    }
 }
 
 @media screen and (width <=767px) {
@@ -478,7 +482,7 @@ li.dot::before {
 
     #tabs-form .wrap-option-search {
         flex-direction: column;
-        bottom: -70px;
+        bottom: -60px;
         gap: 15px;
     }
 }
