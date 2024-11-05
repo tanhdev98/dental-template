@@ -1386,8 +1386,7 @@ ul li:hover .submenu,
     height: 144px;
     width: 100%;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin: 18px 0;
 }
 
 .line-after-tab>img {
@@ -1614,7 +1613,7 @@ ul li:hover .submenu,
     gap: 5px;
 }
 
-.subway-tag>div {
+.subway-tag .subway {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1622,122 +1621,55 @@ ul li:hover .submenu,
     color: #fff;
     font-size: 11px;
     border-radius: 9px;
-    padding: 0 6px 0 2px;
-}
-
-.subway-tag .subway-number::before {
-    background-color: #fff;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.subway-tag .subway-number::after {
-    content: '호선';
-}
-
-.subway-tag .subway-number.subway-1 {
-    background-color: #003499;
-}
-
-.subway-tag .subway-number.subway-1::before {
-    content: '1';
-    color: #003499;
-}
-
-.subway-tag .subway-number.subway-2 {
-    background-color: #37b22d;
-}
-
-.subway-tag .subway-number.subway-2::before {
-    content: '2';
-    color: #37b22d;
-}
-
-.subway-tag .subway-number.subway-3 {
-    background-color: #d1673c;
-}
-
-.subway-tag .subway-number.subway-3::before {
-    content: '3';
-    color: #d1673c;
-}
-
-.subway-tag .subway-number.subway-4 {
-    background-color: #02a5e3;
-}
-
-.subway-tag .subway-number.subway-4::before {
-    content: '4';
-    color: #02a5e3;
-}
-
-.subway-tag .subway-number.subway-5 {
-    background-color: #6d528b;
-}
-
-.subway-tag .subway-number.subway-5::before {
-    content: '5';
-    color: #6d528b;
-}
-
-.subway-tag .subway-number.subway-6 {
-    background-color: #5b4234;
-}
-
-.subway-tag .subway-number.subway-6::before {
-    content: '6';
-    color: #5b4234;
-}
-
-.subway-tag .subway-number.subway-7 {
-    background-color: #606d00;
-}
-
-.subway-tag .subway-number.subway-7::before {
-    content: '7';
-    color: #606d00;
-}
-
-.subway-tag .subway-number.subway-8 {
-    background-color: #c73b6b;
-}
-
-.subway-tag .subway-number.subway-8::before {
-    content: '8';
-    color: #c73b6b;
-}
-
-.subway-tag .subway-number.subway-9 {
-    background-color: #bfa122;
-}
-
-.subway-tag .subway-number.subway-9::before {
-    content: '9';
-    color: #bfa122;
-}
-
-.subway-tag .subway-text {
     padding: 0 6px;
 }
 
-.subway-tag .subway-suin-bundang-line {
+.subway-tag .subway-1 {
+    background-color: #003499;
+}
+
+.subway-tag .subway-2 {
+    background-color: #37b22d;
+}
+
+.subway-tag .subway-3 {
+    background-color: #d1673c;
+}
+
+.subway-tag .subway-4 {
+    background-color: #02a5e3;
+}
+
+.subway-tag .subway-5 {
+    background-color: #6d528b;
+}
+
+.subway-tag .subway-6 {
+    background-color: #713a1c;
+}
+
+.subway-tag .subway-7 {
+    background-color: #606d00;
+}
+
+.subway-tag .subway-8 {
+    background-color: #e50069;
+}
+
+.subway-tag .subway-9 {
+    background-color: #a49d87;
+}
+
+.subway-tag .subway-orange {
     background-color: #ffbf17;
 }
 
-.subway-tag .subway-suin-bundang-line::after {
-    content: '분당선';
-}
-
-.subway-tag .subway-gyeongui-jungang-line {
+.subway-tag .subway-turquoise {
     background-color: #32c6a6;
 }
 
-.subway-tag .subway-gyeongui-jungang-line::after {
-    content: '경의중앙';
+.subway-tag .subway-red {
+    background-color: #c12b2f;
 }
 
 /* popup */

@@ -8,29 +8,80 @@
     font-weight: 500;
 }
 
+#support-now .table-header .column.column-2 {
+    flex-direction: column;
+    width: calc(100% - 230px);
+}
+
+#support-now .table-header .column.column-2>div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#support-now .table-header .column.column-2>div:first-child {
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+#support-now .table-header .column.column-2>div.column.column-3 {
+    font-size: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(100% - 230px - 122px) 230px 122px;
+}
+
+#support-now .table-header .column.column-3>div:first-child {
+    justify-content: start;
+    padding: 0 12px;
+}
+
+#support-now .table-header .column.column-3>div {
+    display: flex;
+    justify-content: center;
+    color: #666;
+}
+
 /* Content Table */
 #support-now .wrap-table>li {
-    padding-bottom: 34px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    background-color: #fefff2;
+    position: relative;
+}
+
+#support-now .wrap-table.table-yellow>li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid #89a9fc;
+    border-left: 16px solid transparent;
 }
 
 #support-now .wrap-table>li>div {
     display: grid;
-    /* grid-template-columns: 21% calc(100% - 21% - 13% - 13%) 13% 13%; */
-    grid-template-columns: 21% calc(100% - 21% - 15% - 13%) 15% 13%;
-    padding: 25px 0 0;
+    grid-template-columns: 230px calc(100% - 230px - 230px - 122px) 230px 122px;
+    width: 100%;
 }
 
 #support-now .wrap-table .clinic-name {
     font-weight: 600;
     display: flex;
     width: 100%;
+    height: 100%;
+    align-items: center;
     justify-content: center;
     padding: 5px 0;
 }
 
-#support-now .wrap-table .item.yellow .wrap-title,
-#support-now .wrap-table .item.yellow .clinic-name {
+#support-now .wrap-table .item.yellow .wrap-title {
     background-color: #fbffaa;
+    height: 30px;
 }
 
 #support-now .wrap-table .item.blue .wrap-title h4,
@@ -38,8 +89,9 @@
     color: #0055cc;
 }
 
-#support-now .wrap-table .wrap-meta {
-    margin-top: 8px;
+#support-now .wrap-table .item.purple .wrap-title h4,
+#support-now .wrap-table .item.purple .clinic-name {
+    color: #7600d1;
 }
 
 /* Column 1 */
@@ -54,16 +106,17 @@
 
 #support-now .wrap-table .column-2 .wrap-title {
     justify-content: start;
-    width: 95%;
+    width: 100%;
     padding: 4px 0;
 }
 
-#support-now .wrap-table .column-2 .wrap-title+.wrap-link {
-    margin-top: 0px;
-}
-
-#support-now .wrap-table .table .wrap-link {
-    margin-top: 8px;
+#support-now .wrap-table .table .wrap-row {
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 8px 0;
 }
 
 #support-now .wrap-table .column-2 .wrap-title .item-title {
@@ -77,6 +130,7 @@
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding: 0 12px;
 }
 
 #support-now .wrap-table .column-2 .wrap-title .wrap-meta {
@@ -89,10 +143,13 @@
     margin-top: 8px;
 }
 
+#support-now .wrap-table .wrap-position {
+    padding: 0 12px;
+}
+
 /* Column 3 */
 #support-now .wrap-table .column-3 {
     padding-left: 0;
-    align-items: start;
 }
 
 /* Column 4 */
@@ -113,7 +170,7 @@
 }
 
 .column-4 .room-name {
-    margin-top: 6px;
+    margin: 12px 0 6px;
 }
 
 .column-4 .time {
