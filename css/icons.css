@@ -415,6 +415,10 @@
     height: 17px;
 }
 
+.icon-home::after {
+    background-image: url('../images/icons/icon-home.png');
+}
+
 .icon-trash::after {
     background-image: url('../images/icons/icon-trash.png');
 }
