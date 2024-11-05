@@ -48,8 +48,11 @@
     height: 145px;
     display: flex;
     align-items: center;
-    background-color: #fefff2;
     position: relative;
+}
+
+#support-now .wrap-table.table-yellow>li {
+    background-color: #fefff2;
 }
 
 #support-now .wrap-table.table-yellow>li::after {
@@ -76,7 +79,8 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 5px 0;
+    padding: 5px;
+    line-height: 30px;
 }
 
 #support-now .wrap-table .item.yellow .wrap-title {

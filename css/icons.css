@@ -418,3 +418,15 @@
 .icon-trash::after {
     background-image: url('../images/icons/icon-trash.png');
 }
+
+.icon-hot {
+    width: 56px;
+    height: 20px;
+    display: inline-flex;
+    bottom: -4px;
+    margin-right: 10px;
+}
+
+.icon-hot::after {
+    background-image: url('../images/icons/icon-hot.png');
+}
