@@ -9,7 +9,7 @@
 }
 
 #wrap-search .border-bottom-blue {
-  border: 1px solid #00467b;
+  border-bottom: 1px solid #00467b;
 }
 
 #instruct {
@@ -72,24 +72,32 @@
 #wrap-search .tabs li span {
   border-color: transparent;
   border-bottom: 1px solid #333;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   height: 100%;
   position: relative;
+  color: #999999;
+  font-weight: 300;
 }
 
 #wrap-search .tabs li.active span {
   background-color: #fff;
   border-color: #030303;
   border-bottom: 1px solid transparent;
-}
-
-#wrap-search .icon-magnifying-glass {
-  width: 25px;
-  height: 25px;
+  color: #333333;
+  font-weight: 500;
 }
 
 #wrap-search .tabs li .icon {
-  display: none;
+  background-image: url("../images/icons/icon-magnifying-glass-blur.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 20px;
+  margin-right: 5px;
+}
+#wrap-search .tabs li.active .icon {
+  background-image: url("../images/icons/icon-magnifying-glass.png");
 }
 
 #wrap-search .submit-form {
@@ -98,7 +106,13 @@
   left: 0;
   right: 0;
 }
-
+.form-row input:not([type="radio"]) {
+  font-size: 15px;
+  color: #999999;
+}
+.form-row .form-select-container > .form-select-cus > .form-option-placeholder {
+  color: #333333;
+}
 #tab-search .tabs li.active .icon {
   display: flex !important;
 }
@@ -112,6 +126,7 @@
   width: 110px;
   font-size: 20px;
   font-weight: 600;
+  color: #333333;
 }
 
 #wrap-search .tab-content-item .form-phone input {
@@ -143,12 +158,12 @@
 }
 
 #wrap-search .tab-content-item .form-phone .group-phone button {
-  width: 145px;
+  width: 120px;
   border-radius: 3px;
   border: 1px solid #999;
   background-color: #f5f5f5;
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   white-space: nowrap;
   padding: 0 15px;
 }
@@ -159,9 +174,8 @@
   font-weight: 300;
 }
 
-#wrap-search .tab-content-item .form-otp .time-remaining-otp,
-#wrap-search .tab-content-item .form-otp .time-remaining-otp .time-count {
-  font-size: 19px;
+#wrap-search .tab-content-item .form-otp .time-remaining-otp {
+  font-size: 14px;
   color: #e60012;
   margin-left: 13px;
   font-weight: 300;
@@ -175,9 +189,6 @@
 @media (min-width: 1920px) {
   #wrap-search .container {
     max-width: 1440px;
-  }
-  #sideAds {
-    /* left: 2157px !important; */
   }
 }
 @media screen and (width <=1320px) {
