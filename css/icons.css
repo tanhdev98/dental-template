@@ -409,3 +409,12 @@
 .icon-back-to-top::after {
     background-image: url('../images/icons/icon-back-to-top.png');
 }
+
+.icon-trash {
+    width: 16px;
+    height: 17px;
+}
+
+.icon-trash::after {
+    background-image: url('../images/icons/icon-trash.png');
+}

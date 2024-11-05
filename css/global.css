@@ -861,7 +861,7 @@ ul li:hover .submenu,
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper {
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .form-select-container.open-upwards .form-select-cus .form-option-wrapper {
@@ -1829,7 +1829,7 @@ ul li:hover .submenu,
 
 .popup .popup-header span {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .popup .popup-header .popup-header-number-room {
