@@ -15,7 +15,7 @@
 
 #user-guide .content-title {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     margin-top: 64px;
@@ -26,29 +26,28 @@
 }
 
 #user-guide .outer-circle {
-    width: 23px;
-    height: 23px;
-    background-color: #48b805;
+    width: 27px;
+    height: 27px;
+    border: 10px solid #eb9b00;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#user-guide .user-guide-content-child-2 .outer-circle {
-    background-color: #eb9b00;
+#user-guide .outer-circle.green {
+    width: 27px;
+    height: 27px;
+    border: 10px solid #48b805;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#user-guide .outer-circle::after {
-    content: "";
-    width: 7px;
-    height: 7px;
-    background-color: #ffffff;
-    border-radius: 50%;
-}
 
 #user-guide .text-content-title {
-    font-size: 33px;
+    font-size: 38px;
     color: #48b805;
     font-weight: 500;
 }
@@ -92,7 +91,7 @@
     width: 100%;
     display: flex;
     padding: 0px;
-    gap: 12px;
+    gap: 24px;
 }
 
 #user-guide .user-guide-content-child-2 .item-text-arrow .line-item {
@@ -115,8 +114,8 @@
 #user-guide .item-content .item-arrow {
     line-height: 25px;
     position: relative;
-    width: 230px;
-    height: 78px;
+    width: 258px;
+    height: 86px;
     border-radius: 43px;
     background-color: #f4fbf1;
     font-size: 19px;
@@ -125,7 +124,7 @@
     align-items: center;
     text-align: center;
     font-weight: 700;
-    margin-right: 21px;
+    margin-right: 20px;
 }
 
 #user-guide .user-guide-content-child-2 .item-content .item-arrow {
@@ -141,8 +140,8 @@
     right: -28px;
     top: 50%;
     transform: translateY(-50%);
-    width: 18px;
-    height: 20px;
+    width: 10px;
+    height: 16px;
 }
 
 #user-guide .user-guide-content-child-2 .line-2 .item:last-child .item-arrow::after {
@@ -360,6 +359,8 @@
     #user-guide .item-content .item-text-arrow .line-item {
         justify-content: center;
         flex-wrap: wrap;
+        max-width: 750px;
+        margin: 0 auto 24px;
     }
 
     #user-guide .line-1 {
