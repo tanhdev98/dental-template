@@ -32,12 +32,14 @@ $(document).ready(function () {
                 top: '60px',
                 left: leftPos + 'px',
             });
+            $('.back-to-top').show();
         } else {
             $('#sideAds').css({
                 position: 'absolute',
                 top: offsetTop + 'px',
                 left: leftPos + 'px',
             });
+            $('.back-to-top').hide();
         }
     });
 
