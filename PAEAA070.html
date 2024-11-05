@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/client-center.css">
+    <link rel="stylesheet" href="css/PAEAA070.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/accodion.js"></script>
+    <script src="js/sub-nav-respon.js"></script>
+</head>
+
+<body>
+    <!-- Top Ads -->
+    <div id="topAds">
+        <div class="topAds-wrap">
+            <a href="#">
+                <img class="topApds-img" src="./images/top-banner-img.png" alt="top ads imgage">
+            </a>
+            <div class="close-topAds-wrap">
+                <input type="checkbox" id="disappear" name="disappear">
+                <label for="disappear">오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
+            </div>
+        </div>
+    </div>
+    <!-- End top ads -->
+    <!-- Side ads -->
+    <div id="sideAds">
+        <div class="side-ads-wrap">
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-1.png" alt="side ads">
+                </a>
+            </div>
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-2.png" alt="side ads">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End side ads -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo.png" alt="Logo">
+                    </a>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
+                        <a href="#">
+                            <i class="icon icon-find"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <img src="./images/intro-logo.png" alt="intro-logo">
+                </div>
+                <div class="nav-wrap">
+                    <a href="#">
+                        <i class="icon icon-bell"></i>
+                    </a>
+                    <a href="#">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                </div>
+                <div class="full-screen-overlay"></div>
+                <div class="side-nav-res">
+                    <ul class="frame-section">
+                        <a href="#">
+                            <i class="icon icon-hamburger-bar close"></i>
+                        </a>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">채용정보</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">인재소식</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">덴탈플러스</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">덴탈잡 매거진</a></li>
+                                <li><a href="#">덴탈잡 모바일앱</a></li>
+                                <li><a href="#">문서서식</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">고객센터</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">채용광고 상품안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">이메일 문의</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">공지/소식</a></li>
+                                <li><a href="#">사이트 소개</a></li>
+                                <li><a href="#">약관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar-wrap">
+                <div class="menu">
+                    <a href="#" class="icon-popup-mega-menu">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                    <div class="total-menu"></div>
+                    <ul>
+                        <li>
+                            <a href="#">채용정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인재소식</a>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">덴탈플러스</a>
+                            <ul class="submenu">
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">덴탈잡 매거진</a></li>
+                                <li><a href="#">덴탈잡 모바일앱</a></li>
+                                <li><a href="#">문서서식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">채용광고 상품안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">이메일 문의</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">공지/소식</a></li>
+                                <li><a href="#">사이트 소개</a></li>
+                                <li><a href="#">약관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth">
+                    <a href="./PACAA010.html">로그인</a>
+                    <a href="./PACAA010.html">회원가입</a>
+                </div>
+                <div class="mega-menu">
+                    <div class="container">
+                        <div class="row row-question">
+                            <div class="col-xl-2">
+                                <span>채용 공고를 찾는다면?!</span>
+                            </div>
+                            <div class="col-xl-2">
+                                <span>인재정보를 찾는다면?!</span>
+                            </div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2">
+                                <span>덴탈잡 이용 안내</span>
+                            </div>
+                        </div>
+                        <div class="row row-menu">
+                            <div class="col-xl-2">
+                                <h5>채용정보</h5>
+                                <ul>
+                                    <li><a href="#">업무별</a></li>
+                                    <li><a href="#">지역별</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>인재정보</h5>
+                                <ul>
+                                    <li><a href="#">업무별</a></li>
+                                    <li><a href="#">지역별</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>덴탈플러스</h5>
+                                <ul>
+                                    <li><a href="#">자원봉사</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">덴탈잡 매거진</a></li>
+                                    <li><a href="#">덴탈잡 모바일앱</a></li>
+                                    <li><a href="#">문서서식</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>고객센터</h5>
+                                <ul>
+                                    <li><a href="#">채용광고</a></li>
+                                    <li><a href="#">상품안내</a></li>
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">이메일 문의</a></li>
+                                    <li><a href="#">자주 묻는 질문</a></li>
+                                    <li><a href="#">공지/소식</a></li>
+                                    <li><a href="#">사이트 소개</a></li>
+                                    <li><a href="#">약관</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>마이 페이지</h5>
+                                <ul>
+                                    <li><a href="#">마이 페이지</a></li>
+                                    <li><a href="#">이력서 등록</a></li>
+                                    <li><a href="#">이력서 관리</a></li>
+                                    <li><a href="#">지원현황</a></li>
+                                    <li><a href="#">스마트 매칭</a></li>
+                                    <li><a href="#">스크랩</a></li>
+                                    <li><a href="#">쪽지</a></li>
+                                    <li><a href="#">DIV 포인트 조회</a></li>
+                                    <li><a href="#">내 정보 수정</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2 last-column-mega-menu">
+                                <h5></h5>
+                                <ul>
+                                    <li>
+                                        <i class="top-menu">
+                                            개인 회원이라면?
+                                        </i>
+                                        <h6><a href="#">이력서 등록 <span></span></a></h6>
+                                        <span>기본 이력서 등록으로 편한 채용서비스를 이용할 수 있어요.</span>
+                                    </li>
+                                    <li>
+                                        <i class="top-text">
+                                            치과 회원이라면?
+                                        </i>
+                                        <h6><a href="#">채용공고 관리 <span></span></a></h6>
+                                        <span>
+                                            우리 치과 채용공고를 한눈에 관리할 수 있어요
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">스마트 매칭 <span></span></a></h6>
+                                        <span>
+                                            내게 맞는 공고를 확인할 수 있어요
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">이용안내 <span></span></a></h6>
+                                        <span>
+                                            회원가입부터 각 메뉴에 대한 간단한 설명을 들을 수 있어요.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">사이트 소개 <span></span></a></h6>
+                                        <span>
+                                            덴탈잡 사이트 서비스에 대한 간략한 설명을 들을 수 있어요
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End navbar -->
+    <!-- Content -->
+    <div id="content">
+        <div class="container">
+            <div id="job-detail">
+                <!-- Top Detail -->
+                <div id="summary-job">
+                    <div class="nav-job">
+                        <h1>채용정보</h1>
+                        <div class="button-container">
+                            <button class="button button-white">인쇄하기</button>
+                            <button class="button button-white">쪽지보내기</button>
+                            <button class="button button-white">목록</button>
+                        </div>
+                    </div>
+                    <div class="job-content">
+                        <div class="job-info">
+                            <div class="job-name">
+                                <h2>♥♥서울하이안치과♥♥</h2>
+                                <h1>♥[주4.5일/35시간]♥최고대우♥진료실 선생님(4년차이상) 모십니다.</h1>
+                            </div>
+                            <div class="job-detail-container">
+                                <div class="job-detail-item">
+                                    <h3>지원자격</h3>
+                                    <ul>
+                                        <li>
+                                            <span class="title-row">경력</span>
+                                            <span class="content-row blue-text">경력(4~15년)</span>
+                                        </li>
+                                        <li>
+                                            <span class="title-row">학력</span>
+                                            <span class="content-row blue-text">무관</span>
+                                        </li>
+                                        <li>
+                                            <span class="title-row">필요자격</span>
+                                            <span class="content-row blue-text">치과위생사</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="job-detail-item">
+                                    <h3>근무조건</h3>
+                                    <ul>
+                                        <li>
+                                            <span class="title-row">근무형태</span>
+                                            <span class="content-row blue-text">정규직</span>
+                                        </li>
+                                        <li>
+                                            <span class="title-row">급여</span>
+                                            <span class="content-row">협의 후 결정</span>
+                                        </li>
+                                        <li>
+                                            <span class="title-row">지역</span>
+                                            <span class="content-row">서울시 관악구
+                                                <button class="button button-white">지도 ></button></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="company-info">
+                            <img src="./images/PAEAA070/job-detail-logo-company.png" alt="Dental Job Logo Company">
+                            <h3>기본정보</h3>
+                            <ul>
+                                <li>
+                                    <span class="title-row">사업장명</span>
+                                    <span class="content-row">♥♥서울하이안치과♥♥</span>
+                                </li>
+                                <li>
+                                    <span class="title-row">사업장구분</span>
+                                    <span class="content-row">치과의원</span>
+                                </li>
+                                <li>
+                                    <span class="title-row">대표자명</span>
+                                    <span class="content-row">이경욱</span>
+                                </li>
+                                <li>
+                                    <span class="title-row">홈페이지</span>
+                                    <span class="content-row">
+                                        <a href="http://www.highan.com" target="_blank">http://www.highan.com</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="title-row">주소</span>
+                                    <span class="content-row">서울 관악구 난곡로 368번지 3층</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <a href="./PADAD010.html" class="button button-blue">덴탈잡 이력서로 입사지원</a>
+                        <a href="./PADAB010.html" class="button button-white"><i class="icon icon-star"></i> 초이스 저장</a>
+                    </div>
+                </div>
+                <!-- End Top Detail -->
+                <!-- Content Detail Job -->
+                <div id="content-detail">
+                    <ul class="tabs">
+                        <li class="active">
+                            <span>상세채용정보</span>
+                        </li>
+                        <li>
+                            <span>근무환경/복리후생</span>
+                        </li>
+                        <li>
+                            <span>접수방법</span>
+                        </li>
+                        <li>
+                            <span>사업장소개</span>
+                        </li>
+                    </ul>
+                    <div class="content-tab content-frame">
+                        <h1>상세채용정보</h1>
+                        <ul class="table-horizontal">
+                            <li>
+                                <div class="table-title">담당업무</div>
+                                <div class="table-content">진료실</div>
+                            </li>
+                            <li>
+                                <div class="table-title">모집인원</div>
+                                <div class="table-content">1명</div>
+                            </li>
+                            <li>
+                                <div class="table-title">직급</div>
+                                <div class="table-content">무관</div>
+                            </li>
+                            <li>
+                                <div class="table-title">세부사항</div>
+                                <div class="table-content">
+                                    <p>안녕하세요.</p>
+                                    <p>서울하이안치과 신대방점입니다.</p>
+                                    <p>진료실 선생님을 모집합니다. ^^</p>
+                                    <p></p>
+                                    <p>▶ 진료실 선생님</p>
+                                    <p>자격요건 : 치위생사(4년차 이상)</p>
+                                    <p>▶진료시간</p>
+                                    <p>- 월/화/수/금 : 오전 10시 ~ 오후 6시30분</p>
+                                    <p>- 목 요 일 : 오후 02시 ~ 오후 8시30분 (전체 오전 off)</p>
+                                    <p>- 토 요 일 : 오전 10시 ~ 오후 2시</p>
+                                    <p>- 점심시간 : 1시 ~ 2시</p>
+                                    <p>(진료가 일찍 마치면 이른 식사, 빠른 퇴근을 합니다.)</p>
+                                    <p></p>
+                                    <p>▶근무조건</p>
+                                    <p>- 주 4.5일(주 1회 원하는날 off -직원들끼리 상의해서 사용, 주말끼고 이어서 사용 가능해요~)</p>
+                                    <p>- 주 근무시간은 진료준비시간 포함해서 평균 35시간 가량으로근무시간이 적습니다.</p>
+                                    <p>- 연차 15일(공휴일제외)</p>
+                                    <p>- 오버타임거의없습니다.</p>
+                                    <p></p>
+                                    <p>▶ 위치</p>
+                                    <p>- 2호선 신대방역 1번 출구부터걸어서 1분거리입니다. 지하철역 바로앞이라 출근 편해요~</p>
+                                    <p></p>
+                                    <p>▶ 직원혜택</p>
+                                    <p>- 연차별 최고대우</p>
+                                    <p>- 연차 15일</p>
+                                    <p>- 4대보험 100%지원 및 퇴직연금가입</p>
+                                    <p>- 수습기간 중 급여 100% 지급</p>
+                                    <p>- 점심식사제공 (배민,쿠팡이츠로 다양하게 배달시켜 먹어요~)</p>
+                                    <p>- 저녁식사 제공 (원할시, 식비를 수당으로 전환가능)</p>
+                                    <p>- 유니폼제공</p>
+                                    <p>- 자기계발비 지원(세미나 등)</p>
+                                    <p>- 생일축하금, 명절 상여금, 경조사비 등 지원</p>
+                                    <p>- 직원 및 직원가족 치료비할인 혜택</p>
+                                    <p>- 청소이모님 있음</p>
+                                    <p></p>
+                                    <p>이력서와 자기소개서를 이메일로 보내주시면 확인 후 전화드려요.</p>
+                                    <p>이메일 : highandent@hanmail.net</p>
+                                    <p>(메일 보내신 후 치과로 전화주시면 빠른 확인 가능합니다.)</p>
+                                    <p>궁금한 점이 있으시면 부담없이 02-858-2879로 연락주세요~</p>
+                                    <p>좋은 인연으로 만나기를 기대합니다^^</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-frame">
+                        <h1>근무환경 / 복리후생</h1>
+                        <ul class="table-horizontal">
+                            <li>
+                                <div class="table-title">근무요일</div>
+                                <div class="table-content">월 ~ 토</div>
+                            </li>
+                            <li>
+                                <div class="table-title">근무시간</div>
+                                <div class="table-content">
+                                    <p>▶ 주 1회 off + 목요일 오전 off</p>
+                                    <p>-월/화/수/금 : 오전 10시 ~ 오후 6시30분</p>
+                                    <p>-목 요 일 : 오후 02시 ~ 오후 8시30분 (전체 오전 off)</p>
+                                    <p>-토 요 일 : 오전 10시 ~ 오후 2시</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="table-title">생활편의지원</div>
+                                <div class="table-content">식대지원</div>
+                            </li>
+                            <li>
+                                <div class="table-title">경조사지원</div>
+                                <div class="table-content">경조사지원</div>
+                            </li>
+                            <li>
+                                <div class="table-title">교육여가지원</div>
+                                <div class="table-content">사기계발비지원, 연월차지원, 휴가비지원</div>
+                            </li>
+                            <li>
+                                <div class="table-title">보험지원</div>
+                                <div class="table-content">4대보험지원</div>
+                            </li>
+                            <li>
+                                <div class="table-title">보상수당지원</div>
+                                <div class="table-content">연봉제, 퇴직금 지원</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-frame">
+                        <h1>접수방법</h1>
+                        <ul class="table-horizontal">
+                            <li>
+                                <div class="table-title">모집기간</div>
+                                <div class="table-content"><strong>2024-10-21 ~ 2024-11-03</strong></div>
+                            </li>
+                            <li>
+                                <div class="table-title">접수방법</div>
+                                <div class="table-content">
+                                    <p>덴탈잡온라인 채용시스템 접수</p>
+                                    <p>이메일 접수 highandent@hanmail.net</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="table-title">제출서류</div>
+                                <div class="table-content">이력서(사진첨부)</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-frame">
+                        <h1>근무위치</h1>
+                        <ul class="table-horizontal">
+                            <li>
+                                <div class="table-title">인근 지하철역</div>
+                                <div class="table-content">2호선 신대방</div>
+                            </li>
+                            <li>
+                                <div class="table-title">위치설명</div>
+                                <div class="table-content">2호선 신대방역 1번 출구 바로앞</div>
+                            </li>
+                            <li>
+                                <div class="table-title">상세지도</div>
+                                <div class="table-content">
+                                    <div class="map-container">
+                                        <img src="./images/PAEAA070/maps-demo-image.png" alt="maps demo image">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-frame">
+                        <h1>사업장소개</h1>
+                        <ul class="table-horizontal">
+                            <li>
+                                <div class="table-title">총 구성원수</div>
+                                <div class="table-content">5명</div>
+                            </li>
+                            <li>
+                                <div class="table-title">구성원 설명</div>
+                                <div class="table-content">
+                                    <p>원장 1인</p>
+                                    <p>정직원 스텝 선생님 3명</p>
+                                    <p>파트타임 선생님 1명 (전원 치위생사)</p>
+                                    <p>청소이모님 1명 으로 구성된 치과입니다. ^^</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="table-title">사업장 소개</div>
+                                <div class="table-content">
+                                    <p>저희 치과는 보철, 보존 및 임플란트 진료 위주인 치과입니다.</p>
+                                    <p>서울대 외래교수 원장님이 정석적으로 진료하며 3D 구강스캐너 인상과 교정치료도 배울 수 있어요~</p>
+                                    <p>많은 선생님드릐 적극적인 지원 바랍니다~</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <h1>채용담당자 정보</h1>
+                        <ul class="table-horizontal">
+                            <li>
+                                <div class="table-title">담당자명</div>
+                                <div class="table-content">이경욱</div>
+                            </li>
+                            <li>
+                                <div class="table-title">담당자 이메일</div>
+                                <div class="table-content">highandent@hanmail.net</div>
+                            </li>
+                            <li>
+                                <div class="table-title">전화번호</div>
+                                <div class="table-content">02-858-2879</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-frame">
+                        <ul class="notes">
+                            <li class="bullet">덴탈잡에서는 남녀고용평등과 일•가정 양 지원에 관한 법률에 의거 성별 및 나이에 대한 정보를 표시하지 않습니다.</li>
+                            <li class="bullet">본 정보는 <strong>♥♥서울하이안치과♥♥</strong> 에서 제공한 자료이며 덴탈잡은 기재된 내용에 대한 오류와 사용자가
+                                이를 신뢰하여
+                                취한 조치에 대한 책임을 지지 않습니다.</li>
+                            <li class="bullet">본 정보는 어떠한 경우라도 덴탈잡이나 <strong>♥♥서울하이안치과♥♥</strong>의 동의없이 무단전재 및 재배포할 수
+                                없으며,
+                                채용 목적 이외의 용도로 사용할 수 없습니다.</li>
+                            <li class="bullet">본 정보를 출력, 복사, 유출한 경우 개인정보보호에 대한 책임은 출력, 복사, 유출 행위를 한 당사자에게 있으며
+                                정보통신부 고 시 제2005-18호에 따라 법에 의해 책임을 지게 됨을 양지하시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Content Detail Job -->
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주) 신흥 100-858 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+    <script type="text/javascript">
+        document.querySelectorAll('.tabs li').forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tabs li').forEach(item => item.classList.remove('active'));
+                document.querySelectorAll('.tab-content-item').forEach(child => child.classList.remove('active'));
+                tab.classList.add('active');
+                document.querySelectorAll('.tab-content-item')[index].classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
