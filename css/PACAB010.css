@@ -244,6 +244,11 @@
 }
 @media screen and (width <=360px) {
   #wrap-search .titleText {
+    font-size: 34px;
+  }
+}
+@media screen and (width <=320px) {
+  #wrap-search .titleText {
     font-size: 32px;
   }
 }
