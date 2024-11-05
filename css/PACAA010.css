@@ -27,17 +27,26 @@
 #back-to-home {
     text-align: right;
     margin-bottom: 20px;
+
 }
 
 #back-to-home a {
     color: #666;
     font-size: 19px;
     font-weight: 300;
+    display: flex;
+    justify-content: end;
+}
+
+#back-to-home a .icon {
+    margin-left: 4px;
+    width: 22px;
+    height: 18px;
 }
 
 .wrap-auth {
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 75px 120px;
 }
 
@@ -70,12 +79,14 @@
 #auth .tabs li span {
     border-bottom: 1px solid #000;
     font-size: 19px;
-    background-color: #f3f7f8;
+    height: 50px;
+    color: #999;
 }
 
 #auth .tabs li.active span {
     border-bottom: 1px solid transparent;
     background-color: #fff;
+    color: #333;
 }
 
 .hide {
@@ -107,7 +118,26 @@
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+}
 
+
+
+.form-login .item-checkBox {
+    margin-left: 22px;
+}
+
+.form-login .item-checkBox input[type="checkbox"]+span,
+.form-login .tab-check-box input[type="checkbox"]+span {
+    left: -22px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.form-login .item-checkBox label {
+    color: #666;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .form-login form .form-group input:not(input[type="checkbox"]) {
@@ -118,6 +148,11 @@
     padding: 0 15px 0 40px;
     font-size: 17px;
     color: #333;
+    font-weight: 300;
+}
+
+.form-login form .form-group input:not(input[type="checkbox"])::placeholder {
+    color: #999;
 }
 
 .form-login form .form-group button {
@@ -128,8 +163,8 @@
     border-radius: 10px;
     height: 100%;
     color: #fff;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .wrap-input {
@@ -220,12 +255,11 @@
 }
 
 .wrap-question a.btn {
-    padding: 0 15px;
+    padding: 0 21px;
     border-radius: 35px;
-    background-color: #80b156;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    background-color: #eef7fd;
+    color: #0068b7;
+    font-size: 16px;
     height: 35px;
     display: flex;
     align-items: center;
@@ -235,9 +269,9 @@
 /* Copyright */
 .after-form p {
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
     color: #666;
-    margin-top: 37px;
+    margin-top: 38px;
     font-weight: 300;
 }
 
