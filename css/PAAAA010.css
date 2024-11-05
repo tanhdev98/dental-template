@@ -1059,7 +1059,7 @@
 }
 
 #hot-talent .list-grid .list-item .item-content .item-tag {
-    max-width: 50%;
+    font-size: 11px;
 }
 
 @media screen and (width <=1320px) {
