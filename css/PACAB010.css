@@ -1,271 +1,307 @@
 #wrap-search {
-    margin-bottom: 95px;
+  margin-bottom: 95px;
 }
 
 #wrap-search .titleText {
-    font-size: 40px;
-    margin-bottom: 16px;
-    font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 16px;
+  font-weight: 500;
 }
 
 #wrap-search .border-bottom-blue {
-    border: 1px solid #00467b;
+  border-bottom: 1px solid #00467b;
 }
 
 #instruct {
-    width: 100%;
-    max-width: 1100px;
-    min-height: 250px;
-    max-width: 1100px;
-    height: 250px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    margin: 39px auto 11px auto;
+  width: 100%;
+  max-width: 1100px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin: 39px auto 11px auto;
 }
 
 #wrap-search .group-notifi {
-    padding: 0 100px 0 80px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 48px 100px 56px 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
 }
 
 #wrap-search .title-notifi {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 19px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 19px;
 }
 
 #wrap-search .title-notifi-child li {
-    position: relative;
-    padding-left: 15px;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 300;
+  position: relative;
+  padding-left: 15px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 #wrap-search .title-notifi-child li::before {
-    content: "";
-    background-color: #8898a4;
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    left: 0;
-    top: 11px;
-    border-radius: 50px;
+  content: "";
+  background-color: #8898a4;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 11px;
+  border-radius: 50px;
 }
 
 #wrap-search #tab-search {
-    width: 1100px;
-    margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 #wrap-search .tabs {
-    border-bottom: transparent;
-    height: 49px;
+  border-bottom: transparent;
+  height: 49px;
 }
 
 #wrap-search .tabs li {
-    cursor: pointer;
-    height: 100%;
+  cursor: pointer;
+  height: 100%;
 }
 
 #wrap-search .tabs li span {
-    border-color: transparent;
-    border-bottom: 1px solid #333;
-    background-color: #f9f9f9;
-    height: 100%;
-    position: relative;
+  border-color: transparent;
+  border-bottom: 1px solid #333;
+  background-color: #ffffff;
+  height: 100%;
+  position: relative;
+  color: #999999;
+  font-weight: 300;
 }
 
 #wrap-search .tabs li.active span {
-    background-color: #fff;
-    border-color: #030303;
-    border-bottom: 1px solid transparent;
-}
-
-#wrap-search .icon-magnifying-glass {
-    width: 25px;
-    height: 25px;
+  background-color: #fff;
+  border-color: #030303;
+  border-bottom: 1px solid transparent;
+  color: #333333;
+  font-weight: 500;
 }
 
 #wrap-search .tabs li .icon {
-    display: none;
+  background-image: url("../images/icons/icon-magnifying-glass-blur.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#wrap-search .tabs li.active .icon {
+  background-image: url("../images/icons/icon-magnifying-glass.png");
 }
 
 #wrap-search .submit-form {
-    position: absolute;
-    bottom: -75px;
-    left: 0;
-    right: 0;
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  right: 0;
+}
+
+.form-row input:not([type="radio"]) {
+  font-size: 15px;
+  color: #999999;
+}
+
+.form-row .form-select-container>.form-select-cus>.form-option-placeholder {
+  color: #333333;
 }
 
 #tab-search .tabs li.active .icon {
-    display: flex !important;
+  display: flex !important;
 }
 
 #tab-search .tab-content-item {
-    border-radius: 0 0 10px 10px;
-    padding: 39px 80px 53px;
+  border-radius: 0 0 10px 10px;
+  padding: 39px 80px 53px;
 }
 
 #wrap-search .tab-content-item .title-form {
-    width: 110px;
-    font-size: 20px;
-    font-weight: 600;
+  width: 110px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
 }
 
 #wrap-search .tab-content-item .form-phone input {
-    width: 250px;
+  width: 250px;
 }
 
 #wrap-search .tab-content-item .form-otp input {
-    width: 135px;
+  width: 135px;
 }
 
 #wrap-search .tab-content-item .form-birth .group-birth {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 #wrap-search .tab-content-item .form-phone .group-phone {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 #wrap-search .tab-content-item .form-phone input {
-    width: 250px;
+  width: 250px;
 }
 
 #wrap-search .tab-content-item .form-phone .group-phone input {
-    font-size: 15px;
-    color: #999;
+  font-size: 15px;
+  color: #999;
 }
 
 #wrap-search .tab-content-item .form-phone .group-phone button {
-    width: 145px;
-    border-radius: 3px;
-    border: 1px solid #999;
-    background-color: #f5f5f5;
-    font-size: 19px;
-    font-weight: 600;
-    white-space: nowrap;
-    padding: 0 15px;
+  width: 120px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 0 15px;
 }
 
 #wrap-search .tab-content-item .form-phone .note-form-phone {
-    color: #076ecc;
-    margin-left: 16px;
-    font-weight: 300;
+  color: #076ecc;
+  margin-left: 16px;
+  font-weight: 300;
 }
 
-#wrap-search .tab-content-item .form-otp .time-remaining-otp,
-#wrap-search .tab-content-item .form-otp .time-remaining-otp .time-count {
-    font-size: 19px;
-    color: #e60012;
-    margin-left: 13px;
-    font-weight: 300;
+#wrap-search .tab-content-item .form-otp .time-remaining-otp {
+  font-size: 14px;
+  color: #e60012;
+  margin-left: 13px;
+  font-weight: 300;
 }
 
 #wrap-search .tab-content-item .form-otp .time-remaining-otp .time-count {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 /* Responsive */
+@media (min-width: 1920px) {
+  #wrap-search .container {
+    max-width: 1440px;
+  }
+}
+
 @media screen and (width <=1320px) {
-    #content {
-        padding: 30px 0 50px;
-    }
+  #content {
+    padding: 30px 0 50px;
+  }
 
-    #wrap-search .tab-content-item .form-radio .title-value-radio {
-        word-break: keep-all;
-    }
+  #wrap-search .tab-content-item .form-radio .title-value-radio {
+    word-break: keep-all;
+  }
 
-    #wrap-search .group-notifi {
-        padding: 30px;
-    }
+  #wrap-search .group-notifi {
+    padding: 30px;
+  }
 
-    #wrap-search .title-notifi-child {
-        font-size: 16px;
-    }
+  #wrap-search .title-notifi-child {
+    font-size: 16px;
+  }
 
-    #wrap-search .tab-content-item {
-        padding: 20px 20px;
-    }
+  #wrap-search .tab-content-item {
+    padding: 20px 20px;
+  }
 
-    #wrap-search .tab-content-item .form-row {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
+  #wrap-search .tab-content-item .form-row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
-    #wrap-search .tab-content-item .title-form {
-        margin-bottom: 8px;
-    }
+  #wrap-search .tab-content-item .title-form {
+    margin-bottom: 8px;
+  }
 
-    #wrap-search .tab-content-item .form-id input,
-    #wrap-search .tab-content-item .form-phone input,
-    #wrap-search .tab-content-item .form-otp input,
-    #wrap-search .tab-content-item .form-name input {
-        width: 100%;
-    }
+  #wrap-search .tab-content-item .form-id input,
+  #wrap-search .tab-content-item .form-phone input,
+  #wrap-search .tab-content-item .form-otp input,
+  #wrap-search .tab-content-item .form-name input {
+    width: 100%;
+  }
 
-    #wrap-search .tab-content-item .form-phone .note-form-phone,
-    #wrap-search .tab-content-item .form-otp .time-remaining-otp,
-    #wrap-search .tab-content-item .form-otp .time-remaining-otp .time-count {
-        margin: 10px 0;
-        font-size: 16px;
-    }
+  #wrap-search .tab-content-item .form-phone .note-form-phone,
+  #wrap-search .tab-content-item .form-otp .time-remaining-otp,
+  #wrap-search .tab-content-item .form-otp .time-remaining-otp .time-count {
+    margin: 10px 0;
+    font-size: 16px;
+  }
 
-    #wrap-search .tab-content-item.active::before {
-        width: calc(50% + 1px);
-    }
+  #wrap-search .tab-content-item.active::before {
+    width: calc(50% + 1px);
+  }
 
-    #wrap-search .tab-content-item-1.active::before {
-        transform: translateX(0%);
-    }
+  #wrap-search .tab-content-item-1.active::before {
+    transform: translateX(0%);
+  }
 
-    #wrap-search .tab-content-item-2.active::before {
-        transform: translateX(-100%);
-    }
+  #wrap-search .tab-content-item-2.active::before {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (width <=520px) {
+  .form-radio .group-radio label {
+    line-height: 28px;
+  }
+}
+
+@media screen and (width <=320px) {
+  #wrap-search .titleText {
+    font-size: 32px;
+  }
 }
 
 #wrap-search .form-select-container {
-    width: 130px;
+  width: 130px;
 }
 
 #wrap-search .form-select-container>.form-select-cus {
-    border-radius: 3px;
-    border-color: #ddd;
+  border-radius: 3px;
+  border-color: #ddd;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option,
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder,
 .form-select-container>.form-select-cus>.form-option-placeholder {
-    padding: 0 19px;
+  padding: 0 19px;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder:hover {
-    border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option:last-child:hover {
-    border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container>.form-option,
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder,
 .form-select-container>.form-select-cus>.form-option-placeholder {
-    border-radius: 0 0 3px 3px;
-    font-size: 19px;
-    font-weight: 300;
+  border-radius: 0 0 3px 3px;
+  font-size: 19px;
+  font-weight: 300;
 }
 
 .form-select-container>.form-select-cus>.form-option-placeholder::after {
-    right: 23px;
+  right: 23px;
 }
