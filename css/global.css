@@ -153,6 +153,7 @@
 #sideAds {
     position: fixed;
     top: 30px;
+    z-index: 1;
 }
 
 #sideAds .side-ads-wrap {
@@ -161,6 +162,7 @@
     align-items: start;
     gap: 5px;
     width: 95px;
+
 }
 
 #sideAds .side-ads-wrap .side-ads-item {
