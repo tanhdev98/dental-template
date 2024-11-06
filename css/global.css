@@ -178,7 +178,7 @@
 
 #sideAds .back-to-top {
     position: relative;
-    left: 50%;
+    left: 36%;
     transform: translateX(-50%);
     margin-top: 35px;
 }
