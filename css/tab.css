@@ -65,6 +65,7 @@
     font-weight: 400;
     background-color: #076ecc;
     transition: all 0.2s linear;
+    position: relative;
 }
 
 .tabs.border-active-blue li.active {
