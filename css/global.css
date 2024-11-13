@@ -1401,6 +1401,9 @@ ul li:hover .submenu,
     background-color: #0068b7;
     color: #fff;
     font-weight: 500;
+    font-size: 18px;
+    align-items: center;
+    width: 140px;
 }
 
 .count-results>span {
@@ -1646,7 +1649,6 @@ ul li:hover .submenu,
 
 .popup .popup-header span {
     font-size: 14px;
-    font-weight: 300;
 }
 
 .popup .popup-header .popup-header-number-room {
@@ -1873,7 +1875,7 @@ ul li:hover .submenu,
 
 [for="saved-conditions"] {
     right: 0;
-    top: 63px;
+    top: 45px;
 }
 
 [for="saved-conditions"] .table {
@@ -1889,7 +1891,7 @@ ul li:hover .submenu,
     padding: 0 20px;
     height: 50px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 [for="saved-conditions"] .table>li.row-name-column {
@@ -1898,10 +1900,6 @@ ul li:hover .submenu,
 
 [for="saved-conditions"] .table>li:not(.row-name-column):hover {
     background-color: #f8fcff;
-}
-
-[for="saved-conditions"] .table>li:not(.row-name-column):hover .delete {
-    text-decoration: underline;
 }
 
 [for="saved-conditions"] .table>li.row-name-column div.start {

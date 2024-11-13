@@ -6294,7 +6294,7 @@ h1.title {
 }
 
 #wrap-search .titleText {
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 16px;
     font-weight: 500;
 }
@@ -6362,7 +6362,6 @@ h1.title {
 }
 
 #wrap-search .tabs li span {
-    border-color: transparent;
     border-bottom: 1px solid #333;
     background-color: #ffffff;
     height: 100%;
