@@ -24,7 +24,7 @@
 #topAds .topAds-wrap .close-topAds-wrap>label {
     margin-right: 39px;
     margin-left: 5px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #topAds .topAds-wrap .close-topAds-wrap .close-ads {
@@ -159,7 +159,7 @@
 #sideAds .side-ads-wrap {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 5px;
     width: 95px;
 
@@ -178,8 +178,6 @@
 
 #sideAds .back-to-top {
     position: relative;
-    left: 36%;
-    transform: translateX(-50%);
     margin-top: 35px;
 }
 
@@ -1387,15 +1385,16 @@ ul li:hover .submenu,
 }
 
 .count-results {
-    font-weight: 300;
+    font-weight: 600;
     color: #666;
     height: 30px;
     border-radius: 15px;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 22px;
+    gap: 5px;
 }
 
 .count-results.blue {
@@ -1406,7 +1405,7 @@ ul li:hover .submenu,
 
 .count-results>span {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 600;
     color: #666;
 }
 
@@ -1418,7 +1417,7 @@ ul li:hover .submenu,
 
 .title-results {
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 500;
     color: #000;
     margin-bottom: 19px;
 }
@@ -1890,7 +1889,7 @@ ul li:hover .submenu,
     padding: 0 20px;
     height: 50px;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 [for="saved-conditions"] .table>li.row-name-column {
