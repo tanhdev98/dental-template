@@ -79,6 +79,10 @@
     gap: 15px 32px;
 }
 
+.tabs-no-border.center {
+    justify-content: center;
+}
+
 .tabs-no-border li:last-child {
     padding-right: 0;
 }

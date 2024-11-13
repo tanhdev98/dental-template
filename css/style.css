@@ -9295,3 +9295,327 @@ h1.title {
         padding: 30px 0 10px;
     }
 }
+
+/* recruitment-adv */
+
+#recruitment-adv .headLine {
+    font-size: 36px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 19px;
+    margin-top: 55px;
+}
+
+#recruitment-adv .tabs {
+    margin-top: 40px;
+    border-bottom-color: #076ecc;
+}
+
+#recruitment-adv .tabs.short-tab li {
+    max-width: 200px;
+}
+
+#recruitment-adv .tabs.short-tab li span {
+    max-width: 200px;
+    border-radius: 0;
+    border: none;
+    background-color: #eee;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#recruitment-adv .tabs.short-tab li.active span {
+    background-color: #076ecc;
+    color: #fff;
+    font-weight: 400;
+}
+
+#recruitment-adv .tabs.short-tab li:first-child span {
+    border-top-left-radius: 10px;
+}
+
+#recruitment-adv .tabs.short-tab li:last-child span {
+    border-top-right-radius: 10px;
+}
+
+#recruitment-adv .tab-item {
+    display: none;
+}
+
+#recruitment-adv .tab-item.active {
+    display: block;
+}
+
+#recruitment-adv .tab-item .tab-list-desc {
+    margin-top: 35px;
+}
+
+#recruitment-adv .tab-item .tab-list-desc li {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#recruitment-adv .tab-item .tab-list-desc li+li {
+    margin-top: 10px;
+}
+
+#recruitment-adv .tab-item .tab-content {
+    display: flex;
+}
+
+#recruitment-adv .tab-item .tab-content {
+    display: flex;
+    gap: 32px;
+    margin-top: 38px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-left {
+    flex: 0 0 40.3%;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right {
+    flex: 1;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step {
+    position: relative;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step+.step {
+    margin-top: 41px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #076ecc;
+    margin-bottom: 10px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title .step-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #076ecc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc {
+    padding-left: 26px;
+    margin-bottom: 29px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc.no-space {
+    padding-left: 0px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc li {
+    padding-left: 12px;
+    position: relative;
+
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc li::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-radius: 50%;
+    background-color: #666;
+    left: 0;
+    top: 5px;
+    position: absolute;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc li+li {
+    margin-top: 10px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table {
+    border: 1px solid #a1cdf5;
+    border-radius: 10px;
+    background-color: #f0f6fb;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div+div {
+    border-left: 1px solid #a1cdf5;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li+li {
+    border-top: 1px solid #a1cdf5;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li .item-checkBox {
+    margin-left: 0;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li .item-checkBox>span {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li .item-checkBox input[type="checkbox"]:checked+span {
+    background-color: #076ecc;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li .item-checkBox input[type="checkbox"]:checked+span::before {
+    background: url('../images/icons/icon-checked-white.png') no-repeat center / 100%;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li .item-checkBox>span {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(1) {
+    width: 34.5%;
+    padding-left: 22px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(1).long-text {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2) {
+    width: 13.87%;
+    padding-left: 16px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(3) {
+    width: 21.49%;
+    padding-left: 16px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(4) {
+    width: calc(100% - 34.5% - 13.87% - 21.49%);
+    justify-content: center;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div.profit {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div.profit span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #076ecc;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table {
+    border: 1px solid #a1cdf5;
+    border-radius: 10px;
+    background-color: #f0f6fb;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table .step-title {
+    margin-bottom: 13px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li {
+    display: flex;
+    align-items: center;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li+li {
+    border-top: 1px solid #a1cdf5
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:first-child {
+    width: 24.85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child {
+    width: calc(100% - 24.85%);
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table div:last-child {
+    border-left: 1px solid #a1cdf5;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child ul li {
+    display: flex;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child ul li div {
+    height: 49px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child ul li+li {
+    border-top: 1px solid #a1cdf5;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child ul li div:first-child {
+    width: 60%;
+    padding: 0 22px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child ul li div:last-child {
+    width: 40%;
+    padding: 0 22px;
+}
+
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table li>div.profit {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table li>div.profit span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #076ecc;
+}
+
+@media screen and (width<=1200px) {
+    #recruitment-adv .tab-item .tab-content {
+        flex-direction: column;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-left {
+        width: 100%;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right {
+        width: 100%;
+    }
+}
+
+@media screen and (width<=1080px) {
+    #recruitment-adv .container {
+        padding: 0 12px;
+    }
+}
