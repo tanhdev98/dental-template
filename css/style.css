@@ -782,22 +782,13 @@ h1.title {
 }
 
 #client-center-child .content-tab .print-item {
-    border-bottom-color: transparent;
-    /* height: 1296px; */
+    height: 430px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     background-color: #fafafa;
     border-radius: 0 0 10px 10px;
     padding: 10px;
-}
-
-@media screen and (width <=1440px) {
-    #client-center-child .content-tab .print-item {
-        height: 500px;
-    }
+    overflow-y: scroll;
 }
 
 /* Common member setting */
