@@ -208,6 +208,10 @@
     align-items: center;
 }
 
+.table.table-three-column .column-3 {
+    align-items: end;
+}
+
 /* Column 4 */
 .column {
     display: flex;
@@ -539,7 +543,6 @@
     font-weight: 300;
 }
 
-
 .table-has-more-infomation>li {
     padding-bottom: 10px;
     border-bottom-color: #333;
@@ -554,8 +557,8 @@
 
 .table.table-three-column>li>div {
     display: grid;
-    grid-template-columns: calc(100% - 22.57% - 29.51%) 22.57% 29.51%;
-    padding: 29px 0 35px;
+    grid-template-columns: 230px calc(100% - 230px - 230px) 230px;
+    padding: 30px 20px 35px 0;
 }
 
 /* Column left */
