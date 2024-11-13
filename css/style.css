@@ -6037,6 +6037,10 @@ h1.title {
     font-weight: 500;
 }
 
+.form-login form .form-group button:hover {
+    background-color: #023e75;
+}
+
 .wrap-input {
     width: 66.66%;
     display: grid;
@@ -6088,6 +6092,10 @@ h1.title {
     color: #666;
 }
 
+.wrap-forward a:hover {
+    color: #0068b7;
+}
+
 .wrap-forward a+a {
     font-size: 18px;
     font-weight: 400;
@@ -6126,13 +6134,17 @@ h1.title {
 
 .wrap-question a.btn {
     padding: 0 21px;
-    border-radius: 35px;
+    border-radius: 10px;
     background-color: #eef7fd;
     color: #0068b7;
     font-size: 16px;
     height: 35px;
     display: flex;
     align-items: center;
+}
+
+.wrap-question a.btn:hover {
+    background-color: #e5f0f8;
 }
 
 
@@ -9312,7 +9324,6 @@ h1.title {
     max-width: 200px;
     border-radius: 0;
     border: none;
-    background-color: #eee;
     height: 45px;
     font-size: 18px;
 }

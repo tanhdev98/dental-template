@@ -211,7 +211,7 @@ li.dot::before {
 
 .tabs li span.active:before,
 .tabs li a.active:before {
-    position: absolute;
+    position: relative;
     content: "";
     height: 1px;
     background-color: #076ecc;
