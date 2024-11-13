@@ -9304,7 +9304,6 @@ h1.title {
     background-color: #eee;
     height: 45px;
     font-size: 18px;
-    font-weight: 100;
 }
 
 #recruitment-adv .tabs.short-tab li.active span {
@@ -9477,30 +9476,45 @@ h1.title {
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(1).long-text {
     font-size: 13px;
-    font-weight: 100;
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2) {
-    width: 13.87%;
+    width: calc(100% - 34.5%);
     padding-left: 16px;
 }
 
-#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(3) {
-    width: 21.49%;
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(1) {
+    width: 21%;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(2) {
+    width: 32.5%;
     padding-left: 16px;
 }
 
-#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(4) {
-    width: calc(100% - 34.5% - 13.87% - 21.49%);
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(3) {
+    width: calc(100% - 32.5% - 21%);
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div.profit {
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div+div {
+    border-left: 1px solid #a1cdf5;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table .profit {
     font-size: 15px;
     font-weight: 300;
 }
 
-#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div.profit span {
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table .profit span {
     font-size: 20px;
     font-weight: 600;
     color: #076ecc;
@@ -9600,5 +9614,71 @@ h1.title {
 @media screen and (width<=1080px) {
     #recruitment-adv .container {
         padding: 0 12px;
+    }
+}
+
+@media screen and (width<=676px) {
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        flex-direction: column;
+        height: 100px;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(1) {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2) {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #a1cdf5;
+        padding-left: 0;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(1) {
+        width: 20%;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(2) {
+        width: 40%;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(3) {
+        width: 40%;
+        padding-left: 0;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li {
+        flex-direction: column;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:first-child {
+        width: 100%;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #a1cdf5;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child ul li div:first-child {
+        width: 50%;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #recruitment-adv .tab-item .tab-content .tab-content-right .step .more-step-table>li>div:last-child ul li div:last-child {
+        width: 50%;
+        padding: 0;
+        justify-content: center;
     }
 }
