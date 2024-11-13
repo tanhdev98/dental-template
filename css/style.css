@@ -370,6 +370,7 @@
 /* Request Email */
 h1.title {
     margin: 45px 0 21px;
+    font-size: 36px;
 }
 
 #request-email .request {
@@ -386,7 +387,7 @@ h1.title {
 
 #request-email .request span {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     color: #696969;
 }
 
@@ -411,10 +412,10 @@ h1.title {
 #request-email .table-horizontal li .table-title {
     width: 252px;
     font-size: 20px;
-    font-weight: 300;
     color: #666;
     padding: 20px 0 20px 45px;
     background-color: #fafafa;
+    font-weight: 400;
 }
 
 #request-email .table-horizontal li.custom-title .table-title span {
@@ -541,21 +542,21 @@ h1.title {
 }
 
 #request-email .item-checkBox>span {
-    height: 23px;
-    width: 23px;
+    height: 15px;
+    width: 15px;
     border-radius: 3px;
     border-color: #666;
 }
 
 #request-email .item-checkBox label span {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     color: #666;
-    padding-left: 39px;
+    padding-left: 20px;
 }
 
 #request-email .item-checkBox strong {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 400;
     color: #ff0000;
     margin-left: 5px;
@@ -582,12 +583,8 @@ h1.title {
     border-bottom: 1px solid #d3d3d3;
 }
 
-#request-email table tr:last-child {
-    display: none;
-}
-
 #request-email table thead th {
-    font-size: 22px;
+    font-size: 18px;
     color: #666;
     padding: 20px 0 21px;
     font-weight: 400;
@@ -597,8 +594,12 @@ h1.title {
     border-bottom: 1px solid #d3d3d3;
     text-align: left;
     padding: 20px 0 17px;
-    font-size: 22px;
+    font-size: 18px;
     color: #666;
+}
+
+#request-email table tbody tr:last-child {
+    display: none;
 }
 
 #request-email table .column1 {
@@ -614,7 +615,6 @@ h1.title {
     width: 31.25%;
     padding-left: 30px;
     position: relative;
-
 }
 
 #request-email table .column3 ul {
@@ -628,15 +628,14 @@ h1.title {
 }
 
 #request-email .column3 ul li {
-    font-size: 22px;
+    font-size: 18px;
     color: #666;
 }
 
 #request-email .require-form {
-    font-size: 22px;
+    font-size: 13px;
     color: #076ecc;
-    margin-top: 20px;
-    padding-left: 51px;
+    margin-top: 12px;
 }
 
 #request-email .button-group {
@@ -738,10 +737,6 @@ h1.title {
 
 /* Client Center Child  */
 
-#client-center-child .tabs {
-    border-bottom: none;
-}
-
 #client-center-child .tabs.short-tab li {
     max-width: 252px;
     box-sizing: border-box;
@@ -781,28 +776,22 @@ h1.title {
 #client-center-child .content-tab {
     width: 100%;
     height: 100%;
-    padding: 10px;
-    border: 1px solid #999;
     border-radius: 0 0 10px 10px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
 }
 
 #client-center-child .content-tab .print-item {
-    border: 1px solid #0068b7;
     border-bottom-color: transparent;
-    height: 1296px;
+    /* height: 1296px; */
     box-sizing: border-box;
-    border: 1px solid #999;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #eee;
+    background-color: #fafafa;
     border-radius: 0 0 10px 10px;
-}
-
-#client-center-child .content-tab .print-item span {
-    font-size: 40px;
-    color: #333;
+    padding: 10px;
 }
 
 @media screen and (width <=1440px) {
@@ -810,7 +799,6 @@ h1.title {
         height: 500px;
     }
 }
-
 
 /* Common member setting */
 /* info dashboard */
@@ -1654,10 +1642,10 @@ h1.title {
 #summary-job .nav-job .button-container .button {
     font-size: 14px;
     font-weight: 300;
-    box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.33) inset;
     width: 80px;
     height: 100%;
     border-radius: 3px;
+    border: 1px solid #ddd;
 }
 
 #summary-job .job-content {
@@ -1741,7 +1729,7 @@ h1.title {
 }
 
 #summary-job .button-group {
-    margin-top: 55px;
+    margin-top: 30px;
 }
 
 /* content detail */
@@ -1768,7 +1756,7 @@ h1.title {
 }
 
 #content-detail .content-frame {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 10px;
     padding: 30px 22px;
     margin-top: 50px;
@@ -1816,7 +1804,11 @@ h1.title {
     height: 327px;
 }
 
-#content-detail .content-frame>ul.notes {
+#content-detail .content-frame.notes {
+    border: 1px solid #ddd;
+}
+
+#content-detail .content-frame.notes>ul {
     font-size: 19px;
     color: #666;
     font-weight: 300;
@@ -1824,19 +1816,19 @@ h1.title {
     padding: 0 20px;
 }
 
-#content-detail .content-frame>ul.notes .bullet {
+#content-detail .content-frame.notes>ul .bullet {
     position: relative;
     padding-left: 20px;
 }
 
-#content-detail .content-frame>ul.notes .bullet::before {
+#content-detail .content-frame.notes>ul .bullet::before {
     content: '※';
     position: absolute;
     left: 0;
     top: 0;
 }
 
-#content-detail .content-frame>ul.notes .bullet strong {
+#content-detail .content-frame.notes>ul .bullet strong {
     color: #0068b7;
 }
 
