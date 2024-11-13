@@ -55,13 +55,16 @@
 }
 
 .tabs li span.active,
-.tabs li a.active {
+.tabs li a.active,
+.tabs li:hover span,
+.tabs li:hover a {
     border: none;
     outline: none;
     border-bottom: none;
-    color: #fff;
+    color: #fff !important;
     font-weight: 400;
     background-color: #076ecc;
+    transition: all 0.2s linear;
 }
 
 .tabs.border-active-blue li.active {
