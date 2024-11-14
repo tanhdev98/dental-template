@@ -6470,10 +6470,15 @@ h1.title {
     font-weight: 300;
 }
 
+#wrap-search .tab-content-item .form-otp .group-otp {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
 #wrap-search .tab-content-item .form-otp .time-remaining-otp {
     font-size: 14px;
     color: #e60012;
-    margin-left: 13px;
     font-weight: 300;
 }
 
