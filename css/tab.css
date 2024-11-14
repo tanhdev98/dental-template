@@ -1,7 +1,7 @@
 /* Tab */
 .tabs {
     display: flex;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #076ecc;
     padding: 0;
 }
 
@@ -17,22 +17,22 @@
 }
 
 .tabs.short-tab li {
-    max-width: 140px;
+    max-width: 200px;
 }
 
 .tabs li+li {
     margin-left: -1px;
 }
 
-.tabs li span {
+.tabs li span,
+.tabs li a {
     display: block;
     border: none;
     outline: none;
-    border: 1px solid #ddd;
     border-bottom: none;
-    border-radius: 10px 10px 0 0;
+    background-color: #eee;
     color: #666;
-    font-size: 20px;
+    font-size: 18px;
     height: 44px;
     text-align: center;
     display: flex;
@@ -40,22 +40,32 @@
     align-items: center;
 }
 
+.tabs li:first-child span,
+.tabs li:first-child a {
+    border-top-left-radius: 10px;
+}
+
+.tabs li:last-child span,
+.tabs li:last-child a {
+    border-top-right-radius: 10px;
+}
+
 .tabs.border-active-blue li {
     border-bottom: 1px solid #0068b7;
 }
 
-.tabs li.active {
-    z-index: 1;
-}
-
-.tabs li.active span {
+.tabs li span.active,
+.tabs li a.active,
+.tabs li:hover span,
+.tabs li:hover a {
     border: none;
     outline: none;
-    border: 1px solid #000;
     border-bottom: none;
-    color: #000;
-    font-weight: 500;
-    background-color: #fff;
+    color: #fff !important;
+    font-weight: 400;
+    background-color: #076ecc;
+    transition: all 0.2s linear;
+    position: relative;
 }
 
 .tabs.border-active-blue li.active {
@@ -76,6 +86,10 @@
     border-bottom: 1px solid #ddd;
     flex-wrap: wrap;
     gap: 15px 32px;
+}
+
+.tabs-no-border.center {
+    justify-content: center;
 }
 
 .tabs-no-border li:last-child {
@@ -177,29 +191,30 @@ li.dot::before {
     position: relative;
 }
 
-#tabs-form .tabs li span {
+#tabs-form .tabs li span,
+#tabs-form .tabs li a {
     text-align: left;
     padding-left: 25px;
     position: relative;
-    color: #999;
     height: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 7px;
+    color: #666;
 }
 
-#tabs-form .tabs li.active span {
-    font-weight: 400;
-    color: #333;
-    font-size: 20px;
+#tabs-form .tabs li span.active,
+#tabs-form .tabs li a.active {
+    color: #fff;
 }
 
-#tabs-form .tabs li.active:before {
-    position: absolute;
+.tabs li span.active:before,
+.tabs li a.active:before {
+    position: relative;
     content: "";
     height: 1px;
-    background-color: #fff;
+    background-color: #076ecc;
     bottom: -1px;
     left: 1px;
     right: 1px;

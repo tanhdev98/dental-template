@@ -24,7 +24,7 @@
 #topAds .topAds-wrap .close-topAds-wrap>label {
     margin-right: 39px;
     margin-left: 5px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #topAds .topAds-wrap .close-topAds-wrap .close-ads {
@@ -159,7 +159,7 @@
 #sideAds .side-ads-wrap {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 5px;
     width: 95px;
 
@@ -178,8 +178,6 @@
 
 #sideAds .back-to-top {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     margin-top: 35px;
 }
 
@@ -272,6 +270,10 @@
     height: 21px;
     font-size: 18px;
     color: #666;
+}
+
+#navbar .navbar-wrap .auth a:hover {
+    color: #0068b7;
 }
 
 #navbar .menu>a {
@@ -1387,26 +1389,30 @@ ul li:hover .submenu,
 }
 
 .count-results {
-    font-weight: 300;
+    font-weight: 600;
     color: #666;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 6px;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 22px;
+    gap: 5px;
 }
 
 .count-results.blue {
     background-color: #0068b7;
     color: #fff;
     font-weight: 500;
+    font-size: 18px;
+    align-items: center;
+    width: 140px;
 }
 
 .count-results>span {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 600;
     color: #666;
 }
 
@@ -1418,7 +1424,7 @@ ul li:hover .submenu,
 
 .title-results {
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 500;
     color: #000;
     margin-bottom: 19px;
 }
@@ -1445,14 +1451,26 @@ ul li:hover .submenu,
     font-weight: 600;
 }
 
+.button-group .button.border-radius-10 {
+    border-radius: 10px;
+}
+
 .button-group .button-blue {
     background-color: #076ecc;
     color: #fff;
 }
 
+.button-group .button-blue:hover {
+    background-color: #023e75;
+}
+
 .button-group .button-white {
     border: 1px solid #bbb;
     background-color: #fff;
+}
+
+.button-group .button-white:hover {
+    background-color: #bbb;
 }
 
 .button-group .button-red {
@@ -1647,7 +1665,6 @@ ul li:hover .submenu,
 
 .popup .popup-header span {
     font-size: 14px;
-    font-weight: 300;
 }
 
 .popup .popup-header .popup-header-number-room {
@@ -1874,7 +1891,7 @@ ul li:hover .submenu,
 
 [for="saved-conditions"] {
     right: 0;
-    top: 63px;
+    top: 45px;
 }
 
 [for="saved-conditions"] .table {
@@ -1890,7 +1907,7 @@ ul li:hover .submenu,
     padding: 0 20px;
     height: 50px;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 [for="saved-conditions"] .table>li.row-name-column {
@@ -1899,10 +1916,6 @@ ul li:hover .submenu,
 
 [for="saved-conditions"] .table>li:not(.row-name-column):hover {
     background-color: #f8fcff;
-}
-
-[for="saved-conditions"] .table>li:not(.row-name-column):hover .delete {
-    text-decoration: underline;
 }
 
 [for="saved-conditions"] .table>li.row-name-column div.start {

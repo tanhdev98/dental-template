@@ -80,6 +80,7 @@ button {
 }
 
 @media (min-width: 1400px) {
+
   .container-xxl,
   .container-xl,
   .container-lg,
@@ -114,4 +115,8 @@ input[type="number"] {
 
 strong {
   font-weight: inherit;
+}
+
+.table> :not(caption)>*>* {
+  color: inherit;
 }

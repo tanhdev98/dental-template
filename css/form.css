@@ -42,7 +42,7 @@ input[type='radio'] {
 .submit-form {
     width: 160px;
     height: 45px;
-    background-color: #0068b7;
+    background-color: #076ecc;
     border-radius: 22px;
     font-weight: 600;
     font-size: 19px;
@@ -52,6 +52,14 @@ input[type='radio'] {
     justify-content: center;
     align-items: center;
     margin-top: 16px;
+}
+
+.submit-form:hover {
+    background-color: #023e75;
+}
+
+.submit-form.border-radius-10 {
+    border-radius: 10px;
 }
 
 /* select */
