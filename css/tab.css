@@ -209,15 +209,20 @@ li.dot::before {
     color: #fff;
 }
 
-.tabs li span.active:before,
-.tabs li a.active:before {
+.tabs li span:before,
+.tabs li a:before {
     position: relative;
     content: "";
     height: 1px;
-    background-color: #076ecc;
+    background-color: transparent;
     bottom: -1px;
     left: 1px;
     right: 1px;
+}
+
+.tabs li span.active:before,
+.tabs li a.active:before {
+    background-color: #076ecc;
 }
 
 #tabs-form .tabs li .icon {

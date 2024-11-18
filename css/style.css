@@ -7610,9 +7610,18 @@ h1.title {
 /* PAEAA040 */
 
 /* Start tabs-select-plus */
+#tabs-form .tabs-select,
+#tabs-form .tabs-content {
+    display: none;
+}
+
+#tabs-form .tabs-content.show-tab,
+#tabs-form .tabs-select.show-tab {
+    display: flex;
+}
+
 #tabs-form .tabs-select-plus {
     padding: 21px 26px 19px;
-    display: flex;
     flex-direction: column;
     gap: 35px;
     border-radius: 0px;
