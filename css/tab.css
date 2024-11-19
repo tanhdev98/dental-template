@@ -73,7 +73,7 @@
     color: #666;
 }
 
-.tabs-no-border li.active a {
+.tabs-no-border li a.active {
     color: #0068b7;
     font-weight: 500;
 }
