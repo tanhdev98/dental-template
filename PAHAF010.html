@@ -171,8 +171,9 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">고객센터</a>
+                            <a href="#" class="active">고객센터</a>
                             <ul class="submenu">
+                                <li><a href="#">홈</a></li>
                                 <li><a href="#">채용광고 상품안내</a></li>
                                 <li><a href="#">이용안내</a></li>
                                 <li><a href="#">이메일 문의</a></li>
@@ -302,172 +303,181 @@
         </div>
     </div>
     <!-- End navbar -->
-    <!-- Content -->
+    <!-- Start Content -->
     <div id="content">
-        <!-- ... -->
-        <div id="request-email">
+        <div id="tab-follow">
             <div class="container">
                 <ul class="tabs-no-border">
                     <li><a href="#">홈</a></li>
                     <li><a href="#">채용광고 상품안내</a></li>
                     <li><a href="#">이용안내</a></li>
-                    <li><a href="#" class="active">이메일 문의</a></li>
+                    <li><a href="#">이메일 문의</a></li>
                     <li><a href="#">자주 묻는 질문</a></li>
-                    <li><a href="#">공지/정보</a></li>
+                    <li><a href="#" class="active">공지/정보</a></li>
                     <li><a href="#">사이트 소개</a></li>
                     <li><a href="#">약관</a></li>
                 </ul>
-                <h1 class="title">이메일 문의</h1>
-                <div class="request">
-                    <span>덴탈잡은 자주 묻는 질문에 대한 답변을 제공하고 있습니다. 문의 전 꼭 확인해주세요.</span>
-                    <button>자주 묻는 질문</button>
-                </div>
 
-                <ul class="form table-horizontal">
-                    <li>
-                        <div class="table-title require">이름</div>
-                        <div class="table-content"><input type="text"></div>
-                    </li>
-                    <li class="custom-title">
-                        <div class="table-title require"><span>근무처</span><span>(소속)</span></div>
-                        <div class="table-content"><input type="text"></div>
-                    </li>
-                    <li class="row-has-require-bottom">
-                        <div class="table-title require">이메일</div>
-                        <div class="table-content form-email">
-                            <input type="text">
-                            <span>@</span>
-                            <input type="text">
-                            <div class="form-select-container select-phone">
-                                <select>
-                                    <option value="" class="option-placeholder" selected="" disabled="" hidden="">선택
-                                    </option>
-                                    <option value="chol.com">chol.com</option>
-                                    <option value="dreamwiz.com">dreamwiz.com</option>
-                                    <option value="gmail.com">gmail.com</option>
-                                    <option value="hanmail.net">hanmail.net</option>
-                                    <option value="hotmail.com">hotmail.com</option>
-                                    <option value="msn.com">msn.com</option>
-                                    <option value="nate.com">nate.com</option>
-                                    <option value="naver.com">naver.com</option>
-                                    <option value="netian.com">netian.com</option>
-                                    <option value="yahoo.com">yahoo.com</option>
-                                    <option value="zdirect">직접입력</option>
-                                </select>
-                            </div>
-                            <p class="require-input">※ hanmail, gmail은 수신에 제한이 있을 수 있습니다. 다른 이메일을 입력해주세요</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="table-title require">연락처</div>
-                        <div class="table-content content-form form-phone">
-                            <div class="form-select-container select-phone">
-                                <select>
-                                    <option class="option-placeholder">02</option>
-                                    <option value="02">02</option>
-                                    <option value="031">031</option>
-                                    <option value="032">032</option>
-                                    <option value="033">033</option>
-                                    <option value="041">041</option>
-                                    <option value="042">042</option>
-                                    <option value="043">043</option>
-                                    <option value="044">044</option>
-                                    <option value="051">051</option>
-                                    <option value="052">052</option>
-                                    <option value="053">053</option>
-                                    <option value="054">054</option>
-                                    <option value="055">055</option>
-                                    <option value="061">061</option>
-                                    <option value="062">062</option>
-                                    <option value="063">063</option>
-                                    <option value="064">064</option>
-                                    <option value="070">070</option>
-                                    <option value="010">010</option>
-                                    <option value="011">011</option>
-                                    <option value="016">016</option>
-                                    <option value="017">017</option>
-                                    <option value="018">018</option>
-                                    <option value="019">019</option>
-                                </select>
-                            </div>
-                            <span>-</span>
-                            <input type="number" maxlength="4">
-                            <span>-</span>
-                            <input type="number" maxlength="4">
-                        </div>
-                    </li>
-                    <li class="border-none">
-                        <div class="table-title require">제목</div>
-                        <div class="table-content"><input type="text" class="input-title"></div>
-                    </li>
-                    <li>
-                        <div class="table-title require">내용</div>
-                        <div class="table-content">
-                            <textarea type="text"></textarea>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="table-title">아이디</div>
-                        <div class="table-content"><input type="text"></div>
-                    </li>
-                </ul>
-                <div class="item-checkBox">
-                    <input type="checkbox" class="checkbox" id="accept-role">
-                    <span></span>
-                    <label for="accept-role"><span>개인정보 수집 및 이용 동의합니다.</span></label><strong>[필수]</strong>
-                </div>
-                <div class="table table-content">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="column1">목적</th>
-                                <th class="column2">항목</th>
-                                <th class="column3">보유기간</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="column1" data-label="목적">이용자식별 및 본인여부 확인</td>
-                                <td class="column2" data-label="항목">이름, 사업자명, 아이디(로그인 회원인 경우만)</td>
-                                <td class="column3" data-label="보유기간" rowspan="2">
-                                    <ul>
-                                        <li>
-                                            비회원: 접수일부터 3개월까지
-                                        </li>
-                                        <li>
-                                            회원: 탈퇴시까지
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="column1" data-label="목적">고객 상담 처리</td>
-                                <td class="column2" data-label="항목">이메일, 연락처</td>
-                            </tr>
-                            <tr>
-                                <td data-label="보유기간">
-                                    <ul>
-                                        <li>
-                                            비회원: 접수일부터 3개월까지
-                                        </li>
-                                        <li>
-                                            회원: 탈퇴시까지
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+        </div>
 
-                    <p class="require-form">※ 이메일문의 답변처리를 위해 필요한 최소한의 개인정보이므로 동의를해 주셔야 서비스를 이용할 수 있습니다.</p>
-                    <div class="button-group">
-                        <button href="#" class="button button-blue">문의하기</button>
+        <div id="notification" style="margin-top: 39px;">
+            <div class="container">
+                <div class="section-wrapper">
+                    <div class="left-item">
+                        <div class="header-frame">
+                            <div class="titleText">공지/정보</div>
+                            <a href="#"><span>더보기</span><i class="icon icon-plus"></i></a>
+                        </div>
+                        <div class="content-frame">
+                            <ul class="table content-table">
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트 - 2024년 7월</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">덴탈잡 단가 변경 공지</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status green">정보</div>
+                                        <h4 class="item-title"><a href="#">(재)신흥연송학술재단, 덴탈이마트로부터 기부금 3억 전달 받아</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">결제 시스템 점검 안내 (2024년 8월 25일 2시 ~ 9시)</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status green">정보</div>
+                                        <h4 class="item-title"><a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트 - 2024년 6월</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">결제 시스템 점검 안내 (2024년 8월 25일 2시 ~ 9시)</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트 - 2024년 7월 </a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">덴탈잡 단가 변경 공지</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status green">정보</div>
+                                        <h4 class="item-title"><a href="#">(재)신흥연송학술재단, 덴탈이마트로부터 기부금 3억 전달 받아</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">결제 시스템 점검 안내 (2024년 8월 25일 2시 ~ 9시)</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status green">정보</div>
+                                        <h4 class="item-title"><a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트 - 2024년 6월</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">결제 시스템 점검 안내 (2024년 8월 25일 2시 ~ 9시)</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트 - 2024년 7월</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">덴탈잡 단가 변경 공지</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status green">정보</div>
+                                        <h4 class="item-title"><a href="#">(재)신흥연송학술재단, 덴탈이마트로부터 기부금 3억 전달 받아</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">결제 시스템 점검 안내 (2024년 8월 25일 2시 ~ 9시)</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status green">정보</div>
+                                        <h4 class="item-title"><a href="#">[당첨자 발표] 덴탈잡 이력서 등록 이벤트 - 2024년 6월</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                                <li class="flex wrap-item">
+                                    <div class="flex wrap-left">
+                                        <div class="status blue">공지</div>
+                                        <h4 class="item-title"><a href="#">결제 시스템 점검 안내 (2024년 8월 25일 2시 ~ 9시)</a></h4>
+                                    </div>
+                                    <div class="date">2024.08.30</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li class="more">...</li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End notices news -->
-        <!-- End ... -->
     </div>
     <!-- End Content -->
 

@@ -154,6 +154,13 @@
 }
 
 /* Accodion */
+#accordion .titleText {
+    font-size: 40px;
+    margin-top: 44px;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    padding-bottom: 22px;
+}
 
 #accordion .header-frame {
     padding-bottom: 21px;
@@ -225,6 +232,11 @@
 
 #notification .header-frame h1 {
     font-size: 28px;
+}
+
+#notification .header-frame .titleText {
+    font-size: 40px;
+    font-weight: 400;
 }
 
 #notification .header-frame a,
