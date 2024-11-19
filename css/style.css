@@ -6387,7 +6387,6 @@ h1.title {
 
 #wrap-search .tabs {
     border-bottom: transparent;
-    height: 49px;
 }
 
 #wrap-search .tabs li {
@@ -6636,10 +6635,6 @@ h1.title {
 }
 
 /* Register */
-#register-page {
-    padding: 30px 0 15px 0;
-}
-
 #register-page .titleText {
     font-size: 36px;
     font-weight: 400;
@@ -6696,10 +6691,6 @@ h1.title {
     height: 52px;
 }
 
-#register-page .button-group {
-    height: 52px;
-}
-
 /* member register */
 .register-container {
     padding: 0 100px;
@@ -6714,11 +6705,11 @@ h1.title {
 
 /* step 1 */
 #register-check h1 {
-    font-size: 34px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 #register-check h1 .icon {
@@ -6731,6 +6722,7 @@ h1.title {
 }
 
 #register-check ul.notes li {
+    font-size: 15px;
     font-weight: 400;
     color: #555;
 }
@@ -6816,7 +6808,6 @@ h1.title {
 #register-page #register-check .form-select-container .form-select-cus {
     border-radius: 5px;
     border-color: #bbb;
-    background-color: #fafafa;
 }
 
 #register-page #register-check .form-select-container .form-select-cus .form-option-wrapper {
@@ -6865,7 +6856,6 @@ h1.title {
     line-height: 28px;
 }
 
-
 #register-complete p {
     font-size: 15px;
     margin-top: 34px;
@@ -6873,7 +6863,6 @@ h1.title {
 
 #register-page .tabs {
     border-bottom: transparent;
-    height: 81px;
 }
 
 #register-page .tabs li span {

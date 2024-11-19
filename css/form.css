@@ -97,7 +97,7 @@ input[type='radio'] {
 }
 
 .register-form .form-row .title-form {
-    font-size: 24px;
+    font-size: 15px;
     text-align: end;
     flex: 1;
 }
@@ -112,7 +112,6 @@ input[type='radio'] {
 
 .register-form .form-row .group-form input {
     border: 1px solid #bbb;
-    background-color: #fafafa;
     border-radius: 5px;
     padding: 0 12px;
     width: 100%;
@@ -146,7 +145,6 @@ input[type='radio'] {
 .register-form .form-select-container .form-select-cus {
     border-radius: 5px;
     border-color: #bbb;
-    background-color: #fafafa;
 }
 
 .register-form .form-row .form-select-container.select-month,
