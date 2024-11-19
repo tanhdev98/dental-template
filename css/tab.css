@@ -10,8 +10,28 @@
     cursor: pointer;
 }
 
+.tabs.short-tab {
+    border-bottom: 1px solid #000;
+}
+
 .tabs.short-tab li {
     max-width: 200px;
+}
+
+.tabs.short-tab li a {
+    border-bottom: none;
+    position: relative;
+
+}
+
+.tabs.short-tab li a.active::before {
+    content: "";
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 1px;
+    position: absolute;
 }
 
 .tabs li+li {
