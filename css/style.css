@@ -8663,13 +8663,12 @@ h1.title {
     position: absolute;
     top: 30px;
     transform: translateY(-50%);
-    right: 0px;
+    right: 28px;
     z-index: 1;
-    transform: rotate(-90deg) translateX(50%);
 }
 
 #top-sub-page #side-nav>ul>li.item-has-child.active-child::before {
-    transform: translateY(-50%);
+    transform: rotate(-90deg) translateX(50%);
 }
 
 #top-sub-page #side-nav>ul>li:not(.item-has-child):hover {
@@ -8749,8 +8748,13 @@ h1.title {
 }
 
 #top-sub-page #side-nav ul li .icon {
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
+}
+
+#top-sub-page #side-nav ul li .icon.icon-light-bulb {
+    width: 19px;
+    height: 19px;
 }
 
 .frame-section .top-link {
@@ -8759,6 +8763,8 @@ h1.title {
     padding-right: 15px;
     right: 40px;
     top: 30px;
+    font-size: 19px;
+    color: #0068b7;
 }
 
 .frame-section .top-link::after {
