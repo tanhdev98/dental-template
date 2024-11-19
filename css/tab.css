@@ -64,6 +64,7 @@
     position: relative;
     border-bottom: 0;
     border-color: #000;
+    z-index: 1;
 }
 
 .tabs li:hover a:not(.active) {
@@ -197,6 +198,7 @@ li.dot::before {
 
 #tabs-form .tabs li a.active {
     color: #fff;
+    z-index: 1;
 }
 
 #tabs-form .tabs li .icon {
