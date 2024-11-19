@@ -263,13 +263,15 @@
         </div>
         <div id="recruitment-adv">
             <div class="container">
-                <h1 class="headLine">채용광고 상품안내</h1>
+                <div class="top-form">
+                    <h2>채용광고 상품안내</h2>
+                </div>
                 <ul class="tabs short-tab">
-                    <li class="active">
-                        <span>덴탈잡 홈(메인) 메뉴</span>
+                    <li>
+                        <a class="active">덴탈잡 홈(메인) 메뉴</a>
                     </li>
                     <li>
-                        <span>채용정보 메뉴</span>
+                        <a>채용정보 메뉴</a>
                     </li>
                 </ul>
                 <div class="tab-items">
@@ -722,9 +724,9 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function () {
-                $(document).on('click', '.tabs li', function () {
+                $(document).on('click', '.tabs li a', function () {
                     const _index = $(this).index() + 1;
-                    $(this).closest('.tabs').find('li').removeClass('active');
+                    $(this).closest('.tabs').find('li a').removeClass('active');
                     $(this).addClass('active');
                     $(this).closest('.tabs').next().find('.tab-item').removeClass('active');
                     $(this).closest('.tabs').next().find('.tab-item:nth-child(' + _index + ')').addClass('active');
