@@ -206,7 +206,7 @@
 #accordion .accodion-item .accordion-ans {
     display: none;
     padding: 5px 78px 35px;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 300;
     color: #666;
     line-height: 24px;
@@ -221,6 +221,10 @@
 
 #notification .header-frame {
     color: #333;
+}
+
+#notification .header-frame h1 {
+    font-size: 28px;
 }
 
 #notification .header-frame a,
@@ -284,8 +288,13 @@
 }
 
 #notification .content-table li .item-title {
+    font-weight: 300;
     font-size: 18px;
     line-height: 1;
+    width: 420px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #notification .content-table li .item-title:hover a {
@@ -6647,8 +6656,7 @@ h1.title {
 
 /* member step */
 #register-step {
-    margin-top: 25px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 #register-step ul {
@@ -6693,6 +6701,7 @@ h1.title {
 
 #register-page .button-group {
     height: 52px;
+    gap: 6px;
 }
 
 /* member register */
@@ -6836,7 +6845,10 @@ h1.title {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 543px;
+}
+
+#register-complete .button-group {
+    margin-top: 73px;
 }
 
 #register-complete>img {
