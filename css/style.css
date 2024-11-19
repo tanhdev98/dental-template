@@ -6658,6 +6658,7 @@ h1.title {
 }
 
 #register-step ul li {
+    color: #666;
     background: #ececec;
     border-radius: 10px;
     height: 50px;
@@ -6683,7 +6684,7 @@ h1.title {
 }
 
 #register-step ul li.active {
-    background: #002060;
+    background: #00467b;
     color: #fff;
 }
 
@@ -6697,7 +6698,7 @@ h1.title {
 }
 
 .register-container .content-wrap {
-    padding: 41px 50px 44px 50px;
+    padding: 50px 50px 69px;
     border: 1px solid #ddd;
     border-radius: 10px;
     position: relative;
@@ -6774,7 +6775,7 @@ h1.title {
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .register-form .form:last-child {
