@@ -5755,6 +5755,10 @@ h1.title {
     border-top: 1px solid #ddd;
 }
 
+#view-news .content-table li:not(:last-child) {
+    border-bottom: 0;
+}
+
 #view-news .content-table li .wrapImg {
     display: inline;
     height: 100%;
@@ -8048,7 +8052,6 @@ h1.title {
     align-items: center;
 }
 
-
 #user-guide .text-content-title {
     font-size: 38px;
     color: #48b805;
@@ -9751,4 +9754,8 @@ h1.title {
         padding: 0;
         justify-content: center;
     }
+}
+
+#recruitment-news .top-table {
+    margin-top: 27px;
 }

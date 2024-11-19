@@ -1023,6 +1023,7 @@ ul li:hover .submenu,
     align-items: center;
     border-radius: 50%;
     font-weight: 300;
+    transition: .2s linear;
 }
 
 .pagination-number li.active a {
