@@ -448,7 +448,8 @@
   background-image: url("../images/icons/icon-trash.png");
 }
 
-.icon-hot {
+.icon-hot,
+.icon-note {
   width: 56px;
   height: 20px;
   display: inline-flex;
@@ -458,6 +459,10 @@
 
 .icon-hot::after {
   background-image: url("../images/icons/icon-hot.png");
+}
+
+.icon-note::after {
+  background-image: url("../images/icons/icon-note.png");
 }
 
 .icon-phone {
@@ -474,12 +479,14 @@
 }
 
 .icon-magnifying-glass-line {
-  width: 17px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   display: inline-flex;
   position: absolute;
   right: 12px;
-  top: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .icon-magnifying-glass-line::after {
