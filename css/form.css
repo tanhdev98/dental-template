@@ -173,7 +173,7 @@ input[type='radio'] {
 
 .form-select-container.disabled .form-select-cus,
 input:disabled {
-    background-color: #e4e4e4 !important;
+    background-color: #eee !important;
     pointer-events: none !important;
 }
 
