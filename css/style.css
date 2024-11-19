@@ -2294,6 +2294,10 @@ h1.title {
     padding: 18px;
 }
 
+.list-grid .list-item:hover .item-content {
+    border-width: 2px;
+}
+
 .list-grid .list-item .item-content>div {
     display: flex;
     flex-direction: column;
