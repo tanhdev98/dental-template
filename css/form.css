@@ -23,13 +23,14 @@ input[type='radio'] {
 }
 
 .title-value-radio {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
+    cursor: pointer;
 }
 
 /* input */
 .form-row input:not([type="radio"]) {
-    padding: 0 16px;
+    padding: 0 15px;
     width: 400px;
     height: 40px;
     border-radius: 3px;
@@ -179,7 +180,7 @@ input:disabled {
 }
 
 .content-form .form-select-container {
-    background-color: #fafafa;
+    background-color: transparent;
 }
 
 .content-form .form-select-container>.form-select-cus>.form-option-placeholder {

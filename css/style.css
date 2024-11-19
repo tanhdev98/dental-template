@@ -6406,7 +6406,7 @@ h1.title {
 }
 
 .form-row .form-select-container>.form-select-cus>.form-option-placeholder {
-    color: #333333;
+    color: #333;
 }
 
 #tab-search .tabs li.active .icon {
@@ -6608,23 +6608,23 @@ h1.title {
 }
 
 #register-page .titleText {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 400;
     border-bottom: 1px solid #333;
-    padding-bottom: 17px;
+    padding-bottom: 22px;
 }
 
 /* member step */
 #register-step {
     margin-top: 25px;
-    margin-bottom: 73px;
+    margin-bottom: 40px;
 }
 
 #register-step ul {
     display: flex;
     width: 100%;
     padding: 0 33px;
-    gap: 58px;
+    gap: 44px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -6632,12 +6632,12 @@ h1.title {
 #register-step ul li {
     background: #ececec;
     border-radius: 10px;
-    height: 70px;
-    width: 300px;
+    height: 50px;
+    width: 205px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -6645,9 +6645,9 @@ h1.title {
     content: '';
     position: absolute;
     background: url('../images/icons/icon-next-step.png') no-repeat center / contain;
-    height: 16px;
-    width: 23px;
-    left: -40px;
+    height: 13px;
+    width: 20px;
+    left: -32px;
 }
 
 #register-step ul li:last-child::after {
@@ -6659,13 +6659,21 @@ h1.title {
     color: #fff;
 }
 
+#register-page .button-group {
+    height: 52px;
+}
+
+#register-page .button-group {
+    height: 52px;
+}
+
 /* member register */
 .register-container {
     padding: 0 100px;
 }
 
 .register-container .content-wrap {
-    padding: 50px;
+    padding: 41px 50px 44px 50px;
     border: 1px solid #ddd;
     border-radius: 10px;
     position: relative;
@@ -6800,13 +6808,18 @@ h1.title {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 630px;
+    height: 543px;
+}
+
+#register-complete>img {
+    width: 155px;
+    margin-bottom: 17px;
 }
 
 #register-complete h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
-    margin-bottom: 127px;
+    margin-bottom: 23px;
 }
 
 #register-complete h1 b {
@@ -6814,14 +6827,15 @@ h1.title {
     font-weight: 400;
 }
 
-#register-complete h2 {
-    font-size: 34px;
-    text-align: center;
-    margin-bottom: 38px;
+#register-complete span {
+    font-size: 18px;
+    line-height: 28px;
 }
 
+
 #register-complete p {
-    font-size: 24px;
+    font-size: 15px;
+    margin-top: 34px;
 }
 
 #register-page .tabs {
@@ -6936,8 +6950,12 @@ h1.title {
 /* register form */
 #register-page .content-wrap .require-input {
     color: #076ecc;
-    font-size: 16px;
-    margin-left: 20px;
+    font-size: 13px;
+    margin-left: 11px;
+}
+
+#register-page .content-wrap .radio-group+.require-input {
+    margin-left: 26px;
 }
 
 #register-page .content-wrap>.require-input {
@@ -6948,16 +6966,17 @@ h1.title {
 
 #register-dental-form,
 #register-invidual-form {
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 #register-invidual-form .type-register {
-    color: #d29132;
+    color: #076ecc;
+    font-size: 15px;
 }
 
 #register-invidual-form .form-select-container>.form-select-cus>.form-option-placeholder,
 #register-dental-form .form-select-container>.form-select-cus>.form-option-placeholder {
-    padding: 0 14px;
+    padding: 0 13px;
 }
 
 #register-dental-form .type-register {
@@ -6966,11 +6985,11 @@ h1.title {
 
 #register-page .form li {
     display: flex;
-    font-size: 22px;
-    margin-bottom: 25px;
-    height: 37px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    height: 35px;
     position: relative;
-    padding-left: 17px;
+    padding-left: 12px;
 }
 
 #register-page .form li:last-child {
@@ -6985,62 +7004,68 @@ h1.title {
     top: 10px;
 }
 
+#register-page .form li.not-require::before {
+    display: none;
+}
+
 #register-page .form li.blue::before {
     color: #076ecc;
 }
 
 #register-page .form .title-form {
-    min-width: 200px;
-    width: 200px;
-    color: #666;
+    min-width: 150px;
+    width: 150px;
+    color: #333;
+    font-size: 15px;
 }
 
 #register-page .form .content-form input {
-    font-size: 18px;
-    width: 200px;
+    font-size: 14px;
+    width: 130px;
     height: 100%;
-    background-color: #fafafa;
     border-radius: 5px;
-    border-color: #bbb;
+    font-weight: 300;
+    height: 35px;
+    border: 1px solid #ddd;
+    color: #333;
 }
 
 #register-page .content-form .button-gray {
-    background-color: #f5f5f5;
+    background-color: #eee;
     border: 1px solid #999;
     border-radius: 5px;
-    width: 90px;
+    width: 82px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 35px;
+    color: #666;
 }
 
-#register-page .form-select-container.disabled .form-select-cus,
 #register-page input:disabled {
-    background-color: #e4e4e4 !important;
+    background-color: #eee !important;
     pointer-events: none !important;
 }
 
-#register-page .content-form .form-select-container {
-    background-color: #fafafa;
-}
-
 #register-page .content-form .form-select-container>.form-select-cus>.form-option-placeholder {
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 #register-page .content-form .form-select-container.select-year {
-    width: 110px;
+    width: 90px;
 }
 
 #register-page .content-form .form-select-container.select-month,
 #register-page .content-form .form-select-container.select-day {
-    width: 90px;
+    width: 75px;
 }
 
 #register-page .content-form .form-select-container .form-select-cus {
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 5px;
 }
 
@@ -7049,7 +7074,7 @@ h1.title {
 }
 
 .row-has-check-box .content-form {
-    gap: 10px 25px;
+    gap: 10px 17px;
 }
 
 #register-page .content-form>label {
@@ -7059,27 +7084,27 @@ h1.title {
 }
 
 #register-page .content-form>label input[type="checkbox"] {
-    width: max-content;
+    width: 12px;
 }
 
 #register-page .content-form .form-select-container.select-phone {
-    width: 97px;
+    width: 90px;
 }
 
 #register-page .content-form.form-phone {
-    gap: 11px;
+    gap: 5px;
 }
 
 #register-page .content-form.form-phone input[type="number"] {
-    width: 67px;
+    width: 75px;
 }
 
 #register-page .content-form.form-email {
-    gap: 8px;
+    gap: 7px;
 }
 
 #register-page .content-form.form-email input {
-    width: 150px;
+    width: 130px;
 }
 
 #register-page .content-form.form-email .select-phone {
@@ -7094,7 +7119,7 @@ h1.title {
 
 #register-page .form .form-address {
     margin-top: 60px;
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 #register-page .form .form-address .content-form {
@@ -7116,14 +7141,14 @@ h1.title {
 }
 
 #register-page .form .form-address .content-form .button-gray {
-    width: 120px;
+    width: 100px;
 }
 
 #register-page .radio-group {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 55px;
 }
 
 #register-page .item-radioBox label {
@@ -7131,7 +7156,7 @@ h1.title {
 }
 
 #register-page .item-radioBox label span {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1;
     white-space: nowrap;
@@ -7139,13 +7164,12 @@ h1.title {
 
 #register-page .content-wrap .form-sms .require-input {
     line-height: 1;
-    margin-top: 36px;
     word-break: keep-all;
-    white-space: normal;
+    white-space: nowrap;
 }
 
 #register-page .content-form .form-select-container.select-school {
-    width: 160px;
+    width: 131px;
 }
 
 #register-page .form-business-number input[maxlength="3"] {
@@ -7158,6 +7182,10 @@ h1.title {
 
 #register-page .form-business-number input[maxlength="5"] {
     width: 113px;
+}
+
+#register-page .form li.form-row-radio {
+    margin-bottom: 7px;
 }
 
 @media screen and (width <=1440px) {
@@ -7233,6 +7261,7 @@ h1.title {
 
     #register-page .content-wrap .form-sms .require-input {
         margin-top: 5px;
+        white-space: normal;
     }
 
 
@@ -7257,8 +7286,9 @@ h1.title {
     #register-page .form .form-address .content-form .button-gray,
     #register-page .form .content-form input,
     #register-page .content-form .button-gray {
-        height: 33px;
+        height: 35px;
         max-width: 400px;
+        box-sizing: border-box;
     }
 
     #register-dental-form,
@@ -7322,7 +7352,7 @@ h1.title {
 }
 
 #support-now .form-select-container>.form-select-cus>.form-option-placeholder::after {
-    right: 14px;
+    right: 13px;
 }
 
 #support-now .table-header .column.column-2>div {
