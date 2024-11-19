@@ -7130,7 +7130,7 @@ h1.title {
   display: flex;
 }
 #terms-and-conditions ul li .title-terms p .view-more-btn .star {
-    margin-right: 5px;
+  margin-right: 5px;
   line-height: 1;
 }
 #terms-and-conditions ul li .content-terms {
@@ -7143,7 +7143,7 @@ h1.title {
   background-color: #eee;
   border-bottom: 1px solid #333;
   padding: 22px 21px 17px;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 30px;
   height: 305px;
   overflow-y: scroll;
