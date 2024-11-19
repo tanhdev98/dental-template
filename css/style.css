@@ -6698,7 +6698,7 @@ h1.title {
 }
 
 .register-container .content-wrap {
-    padding: 50px 50px 69px;
+    padding: 40px 50px 70px;
     border: 1px solid #ddd;
     border-radius: 10px;
     position: relative;
@@ -7141,7 +7141,7 @@ h1.title {
 }
 
 #register-page .form .form-address {
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
