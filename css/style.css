@@ -1102,6 +1102,8 @@ h1.title {
 
 #notification-tab .table {
     margin-bottom: 5px;
+    margin-top: 29px;
+    border-top: 1px solid #000;
 }
 
 #notification-tab .table>li {
