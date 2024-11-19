@@ -2241,6 +2241,7 @@ h1.title {
     height: 100%;
     border-radius: 10px;
     position: relative;
+    transition: margin 0.3s ease;
 }
 
 .list-grid .list-item .item-content::before {
