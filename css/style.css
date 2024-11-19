@@ -538,6 +538,7 @@ h1.title {
 
 #request-email .item-checkBox {
     margin: 72px 0 14px 0;
+    max-width: 1152px;
 }
 
 #request-email .item-checkBox label {
@@ -7506,14 +7507,32 @@ h1.title {
     height: 30px;
 }
 
-.wrap-table .item.blue .wrap-title h4,
-.wrap-table .item.blue .clinic-name {
+#support-now .wrap-table .item.yellow .wrap-title h4 {
+    background-color: #fbffaa;
+    font-weight: 600;
+}
+
+#support-now .wrap-table .item.blue .wrap-title h4,
+#support-now .wrap-table .item.blue .clinic-name {
     color: #0055cc;
 }
 
-.wrap-table .item.purple .wrap-title h4,
-.wrap-table .item.purple .clinic-name {
+#support-now .wrap-table .item.purple .wrap-title h4,
+#support-now .wrap-table .item.purple .clinic-name {
     color: #7600d1;
+    font-weight: 600;
+}
+
+#support-now .subway-tag {
+    margin-left: 0;
+}
+
+#support-now .table .wrap-position li {
+    color: #333;
+}
+
+#support-now .wrap-link li a {
+    color: #333;
 }
 
 /* Column 1 */
@@ -7902,7 +7921,7 @@ h1.title {
 
 #support-now .wrap-table .column-2 .wrap-title {
     display: inline-flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 12px;
 }
@@ -7913,9 +7932,8 @@ h1.title {
 
 #support-now .wrap-table .column-2 .wrap-title .item-title {
     margin-bottom: 0;
-    font-size: 19px;
-    font-weight: 700;
-    color: #333;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 #support-now .wrap-table .column-2 .wrap-title .wrap-meta {
@@ -9087,8 +9105,6 @@ h1.title {
     resize: none;
     line-height: 25px;
     border: 1px solid #ddd;
-    margin-left: -6px;
-    margin-right: -6px;
     padding: 10px;
     font-weight: 600;
 }
