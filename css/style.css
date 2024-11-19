@@ -1994,6 +1994,13 @@ h1.title {
     }
 }
 
+@media screen and (width <=1080px) {
+    #slide {
+        flex: 1;
+        height: 620px;
+    }
+}
+
 /* hero menu */
 #hero-menu {
     width: 168px;
@@ -3452,7 +3459,7 @@ h1.title {
         -webkit-line-clamp: 2;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-height: 2.5em;
+        max-height: 3em;
     }
 
     #grand-banner .list-grid .list-item.large .item-content .item-desc {
@@ -3656,7 +3663,7 @@ h1.title {
         -webkit-line-clamp: 2;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-height: 2.5em;
+        max-height: 3em;
     }
 
     #hot-recruit .list-grid .list-item .item-content .item-tag {
@@ -3946,6 +3953,7 @@ h1.title {
     #slide {
         margin-left: 60px;
         overflow: hidden;
+        height: 610px;
     }
 
     #slide .scrollable-area {
@@ -4210,6 +4218,10 @@ h1.title {
 @media screen and (width <=875px) {
     #hot-recruit {
         padding-top: 45px;
+    }
+
+    #slide {
+        height: 390px;
     }
 
     #header .header-wrap .nav-wrap {
@@ -4530,6 +4542,9 @@ h1.title {
         height: auto !important;
     }
 
+    #slide {
+        height: 385px;
+    }
 
     #hot-talent .drop-list-item-res .btn-drop-list .drop-text {
         font-size: 22px;
@@ -4760,7 +4775,7 @@ h1.title {
     }
 
     #hot-talent {
-        padding: 0px 30px 0 30px;
+        padding: 0px 30px 50px 30px;
     }
 
     #grand-banner .top-grand-banner-mobile {
@@ -4803,6 +4818,10 @@ h1.title {
 }
 
 @media screen and (width <=480px) {
+    #slide {
+        height: 205px;
+    }
+
     #slide-news .slide-news-wrap .right-slide {
         right: -85px;
     }
@@ -4822,6 +4841,11 @@ h1.title {
     #grand-banner .list-grid .list-item .item-content,
     #premium-banner .list-grid .list-item .item-content {
         width: 280px;
+    }
+
+    #premium-banner .list-grid .list-item .item-content .bookmark {
+        right: 9px;
+        bottom: 14px;
     }
 
     #enterprise .grand-banner-mobile .title,
