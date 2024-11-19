@@ -439,3 +439,28 @@
 .icon-hot::after {
   background-image: url("../images/icons/icon-hot.png");
 }
+
+.icon-phone {
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  margin-right: 5px;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.icon-phone::after {
+  background-image: url("../images/icons/icon-phone.png");
+}
+.icon-magnifying-glass-line {
+  width: 17px;
+  height: 15px;
+  display: inline-flex;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.icon-magnifying-glass-line::after {
+  background-image: url("../images/icons/icon-magnifying-glass-line.png");
+}
