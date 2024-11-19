@@ -6941,11 +6941,17 @@ h1.title {
     display: flex;
     align-items: start;
     flex: 1;
+    gap: 5px;
+
 }
 
 #terms-and-conditions ul li .title-terms .flex p {
-    max-width: 15px;
+    max-width: 10px;
     line-height: 1;
+}
+
+#terms-and-conditions ul li .title-terms p .flex {
+    flex: unset;
 }
 
 /* #terms-and-conditions ul li .title-terms p::before,
@@ -6987,6 +6993,8 @@ h1.title {
 }
 
 #terms-and-conditions ul li .title-terms p .view-more-btn .star {
+    margin-right: 5px;
+    max-width: 15px;
     margin-right: 5px;
     line-height: 1;
 }
