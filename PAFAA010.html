@@ -93,7 +93,7 @@
                         </li>
                         <li class="menu-nav-child">
                             <ul class="sub-title-menu">
-                                <li><a href="#">인재소식</a></li>
+                                <li><a href="#">인재정보</a></li>
                                 <li><i class="icon icon-down"></i></li>
                             </ul>
                             <ul class="submenu">
@@ -124,7 +124,7 @@
                                 <li><a href="#">이용안내</a></li>
                                 <li><a href="#">이메일 문의</a></li>
                                 <li><a href="#">자주 묻는 질문</a></li>
-                                <li><a href="#">공지/소식</a></li>
+                                <li><a href="#">공지/정보</a></li>
                                 <li><a href="#">사이트 소개</a></li>
                                 <li><a href="#">약관</a></li>
                             </ul>
@@ -148,15 +148,49 @@
                     <ul>
                         <li>
                             <a href="#">채용정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">통합</a></li>
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">자격증별</a></li>
+                                <li><a href="#">지역별</a></li>
+                                <li><a href="#">역세권별</a></li>
+                                <li><a href="#">채용형태별</a></li>
+                                <li><a href="#">사업장별</a></li>
+                                <li><a href="#">복리후생별</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">인재소식</a>
+                            <a href="#" class="active">인재정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">지역별</a></li>
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">자격증별</a></li>
+                                <li><a href="#">채용형태별</a></li>
+                                <li><a href="#">경력별</a></li>
+                                <li><a href="#">직급</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">덴탈플러스</a>
+                            <ul class="submenu">
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">덴탈잡 매거진</a></li>
+                                <li><a href="#">덴탈잡 모바일앱</a></li>
+                                <li><a href="#">문서서식</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">채용광고 상품안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">이메일 문의</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">공지/정보</a></li>
+                                <li><a href="#">사이트 소개</a></li>
+                                <li><a href="#">약관</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -213,7 +247,7 @@
                                     <li><a href="#">이용안내</a></li>
                                     <li><a href="#">이메일 문의</a></li>
                                     <li><a href="#">자주 묻는 질문</a></li>
-                                    <li><a href="#">공지/소식</a></li>
+                                    <li><a href="#">공지/정보</a></li>
                                     <li><a href="#">사이트 소개</a></li>
                                     <li><a href="#">약관</a></li>
                                 </ul>
@@ -285,8 +319,12 @@
         <div id="tab-follow">
             <div class="container">
                 <ul class="tabs-no-border">
-                    <li class="active"><a href="#">지역별</a></li>
+                    <li><a href="#" class="active">지역별</a></li>
                     <li><a href="#">업무별</a></li>
+                    <li><a href="#">자격증별</a></li>
+                    <li><a href="#">채용형태별</a></li>
+                    <li><a href="#">경력별</a></li>
+                    <li><a href="#">직급</a></li>
                 </ul>
 
             </div>
@@ -295,6 +333,15 @@
             <div class="container">
                 <div class="top-form">
                     <h2>지역별(근무 지역)</h2>
+                    <!-- <div class="form-select-container">
+                        <select>
+                            <option class="option-placeholder">저장한 조건 보기 </option>
+                            <option value="#">저장한 조건 보기 </option>
+                            <option value="#">저장한 조건 보기 </option>
+                            <option value="#">저장한 조건 보기 </option>
+                            <option value="#">저장한 조건 보기 </option>
+                        </select>
+                    </div> -->
                     <button id="saved-conditions" data-type="popup"><span>저장한 조건 보기</span><i
                             class="icon icon-down"></i></button>
                     <div class="popup" for="saved-conditions">
@@ -311,7 +358,7 @@
                                 </li>
                                 <li>
                                     <ul class="wrap-link">
-                                        <li>서울>강북구</li>
+                                        <li>서울&gt;강북구</li>
                                         <li>진료실</li>
                                         <li>상담</li>
                                     </ul>
@@ -320,14 +367,14 @@
                                 </li>
                                 <li>
                                     <ul class="wrap-link">
-                                        <li>서울>강북구</li>
+                                        <li>서울&gt;강북구</li>
                                     </ul>
                                     <span class="date">2024.08.01</span>
                                     <button class="delete">삭제</button>
                                 </li>
                                 <li>
                                     <ul class="wrap-link">
-                                        <li>서울>강북구</li>
+                                        <li>서울&gt;강북구</li>
                                     </ul>
                                     <span class="date">2024.08.01</span>
                                     <button class="delete">삭제</button>
@@ -338,20 +385,20 @@
                 </div>
                 <ul class="tabs">
                     <li>
-                        <a class="active"><i class="icon icon-location"></i>지역 선택</a>
+                        <a class="active" data-id="1"><i class="icon icon-location"></i>지역 선택</a>
                     </li>
                     <li>
-                        <a><i class="icon icon-bag"></i>업무 선택</a>
+                        <a data-id="2" class=""><i class="icon icon-bag"></i>업무 선택</a>
                     </li>
                     <li>
-                        <a><i class="icon icon-search"></i>검색어 입력</a>
+                        <a data-id="3"><i class="icon icon-search"></i>검색어 입력</a>
                     </li>
                     <li>
-                        <a><i class="icon icon-plus"></i>상세조건</a>
+                        <a data-id="4"><i class="icon icon-plus"></i>상세조건</a>
                     </li>
                 </ul>
 
-                <div class="tabs-select">
+                <div class="tab tabs-select show-tab" data-tab="1">
                     <div class="tabs-left">
                         <ul>
                             <li><span class="city-name"><span>전체</span></span> (00,000)</li>
@@ -528,6 +575,334 @@
                         </form>
                     </div>
                 </div>
+
+                <div class="tab tabs-select tabs-select-bag" data-tab="2">
+                    <ul>
+                        <li>전체</li>
+                        <li class="active">진료실</li>
+                        <li>데스크 </li>
+                        <li>상담</li>
+                        <li>보험청구</li>
+                        <li>기타</li>
+                        <li>치과내기공실</li>
+                        <li>치과기공소</li>
+                        <li>관리 및 경영지원</li>
+                        <li class="isEmpty"></li>
+                    </ul>
+                </div>
+
+                <div class="tab tabs-select tabs-select-bag" data-tab="3">
+                    <ul>
+                        <li>전체</li>
+                        <li class="active">진료실</li>
+                        <li>데스크 </li>
+                        <li>상담</li>
+                        <li>보험청구</li>
+                        <li>기타</li>
+                        <li>치과내기공실</li>
+                        <li>치과기공소</li>
+                        <li>관리 및 경영지원</li>
+                        <li class="isEmpty"></li>
+                    </ul>
+                </div>
+
+                <div class="tab tabs-content tabs-select-plus" data-tab="4">
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">자격증</div>
+                        <ul class="tab-check-box">
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox1" id="checkbox1"><span></span><label
+                                    for="checkbox1"><span>치과위생사</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox2" id="checkbox2"><span></span><label
+                                    for="checkbox2"><span>치과기공사</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox3" id="checkbox3"><span></span><label
+                                    for="checkbox3"><span>간호조무사</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox4" id="checkbox4"><span></span><label
+                                    for="checkbox4"><span>보험청구사</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox5" id="checkbox5"><span></span><label
+                                    for="checkbox5"><span>코디네이터</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox6" id="checkbox6"><span></span><label
+                                    for="checkbox6"><span>의료관광 코디네이터</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox7" id="checkbox7"><span></span><label
+                                    for="checkbox7"><span>무관</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox8" id="checkbox8"><span></span><label
+                                    for="checkbox8"><span>기타</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">근무형태</div>
+                        <ul class="tab-check-box">
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox9" id="checkbox9"><span></span><label
+                                    for="checkbox9"><span>정규직</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox10" id="checkbox10"><span></span><label
+                                    for="checkbox10"><span>계약직</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox11" id="checkbox11"><span></span><label
+                                    for="checkbox11"><span>아르바이트</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">직급</div>
+                        <ul class="tab-check-box">
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox12" id="checkbox12"><span></span><label
+                                    for="checkbox12"><span>팀장</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox13" id="checkbox13"><span></span><label
+                                    for="checkbox13"><span>실장</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox14" id="checkbox14"><span></span><label
+                                    for="checkbox14"><span>스탭</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox15" id="checkbox15"><span></span><label
+                                    for="checkbox15"><span>무관</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">급여</div>
+                        <ul class="tab-check-box">
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox16" id="checkbox16"><span></span><label
+                                    for="checkbox16"><span>협의 후 결정</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox17" id="checkbox17"><span></span><label
+                                    for="checkbox17"><span>내규에 따름</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox18" id="checkbox18"><span></span><label
+                                    for="checkbox18"><span>연봉제</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox19" id="checkbox19"><span></span><label
+                                    for="checkbox19"><span>기타</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">경력</div>
+                        <div class="group">
+                            <fieldset id="radio-group1" class="radio-group">
+                                <div class="item-radioBox">
+                                    <input type="radio" name="options" value="option1" id="radio1" checked="">
+                                    <span></span>
+                                    <label for="radio1"><span>신입</span></label>
+                                </div>
+                                <div class="item-radioBox">
+                                    <input type="radio" name="options" value="option1" id="radio2">
+                                    <span></span>
+                                    <label for="radio2"><span>경력</span></label>
+                                </div>
+                            </fieldset>
+                            <div class="form-select-container">
+                                <select>
+                                    <option class="option-placeholder" selected="" disabled="" hidden="">경력선택</option>
+                                    <option value="#">경력선택</option>
+                                    <option value="#">경력선택</option>
+                                    <option value="#">경력선택</option>
+                                    <option value="#">경력선택</option>
+                                </select>
+                                <div class="form-select-cus">
+                                    <div class="form-option-placeholder" data-default="경력선택">경력선택</div>
+                                    <div class="form-option-wrapper">
+                                        <div class="form-option-placeholder-container">
+                                            <div class="form-option-placeholder" data-default="경력선택">경력선택</div>
+                                        </div>
+                                        <div class="form-option-container">
+                                            <div class="form-option">경력선택</div>
+                                            <div class="form-option">경력선택</div>
+                                            <div class="form-option">경력선택</div>
+                                            <div class="form-option">경력선택</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-select-plus-child benefit">
+                        <div class="title-detailed">복리후생</div>
+                        <ul class="tab-check-box">
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox20" id="checkbox20"><span></span><label
+                                    for="checkbox20"><span>기숙사지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox21" id="checkbox21"><span></span><label
+                                    for="checkbox21"><span>식대지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox22" id="checkbox22"><span></span><label
+                                    for="checkbox22"><span>경조사지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox23" id="checkbox23"><span></span><label
+                                    for="checkbox23"><span>자기계발비지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox24" id="checkbox24"><span></span><label
+                                    for="checkbox24"><span>연월차지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox25" id="checkbox25"><span></span><label
+                                    for="checkbox25"><span>휴가비지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox26" id="checkbox26"><span></span><label
+                                    for="checkbox26"><span>4대보험지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox27" id="checkbox27"><span></span><label
+                                    for="checkbox27"><span>연봉제</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox28" id="checkbox28"><span></span><label
+                                    for="checkbox28"><span>인센티브제</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox29" id="checkbox29"><span></span><label
+                                    for="checkbox29"><span>퇴직금지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox30" id="checkbox30"><span></span><label
+                                    for="checkbox30"><span>야근수당지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox31" id="checkbox31"><span></span><label
+                                    for="checkbox31"><span>기타</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">근무요일</div>
+                        <ul class="tab-check-box">
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox32" id="checkbox32"><span></span><label
+                                    for="checkbox32"><span>월~금(주5일)</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox33" id="checkbox33"><span></span><label
+                                    for="checkbox33"><span>월~금(주40시간)</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox34" id="checkbox34"><span></span><label
+                                    for="checkbox34"><span>월~토(토요일격주휴무)</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox35" id="checkbox35"><span></span><label
+                                    for="checkbox35"><span>월~토</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox36" id="checkbox36"><span></span><label
+                                    for="checkbox36"><span>직접입력</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">접수방법</div>
+                        <ul class="tab-check-box">
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox37" id="checkbox37"><span></span><label
+                                    for="checkbox37"><span>온라인 즉시지원</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox38" id="checkbox38"><span></span><label
+                                    for="checkbox38"><span>전화접수</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox39" id="checkbox39"><span></span><label
+                                    for="checkbox39"><span>이메일접수</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox40" id="checkbox40"><span></span><label
+                                    for="checkbox40"><span>FAX접수</span>
+                                </label>
+                            </li>
+                            <li class="item-checkBox">
+                                <input type="checkbox" class="checkbox checkbox41" id="checkbox41"><span></span><label
+                                    for="checkbox41"><span>우편접수</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-select-plus-child">
+                        <div class="title-detailed">채용기간</div>
+                        <div class="group-datepicker">
+                            <div class="datepicker-child">
+                                <input type="date" id="start-date" name="start-date">
+                                <i class="icon icon-date" id="start-date-icon"></i>
+                            </div>
+                            <span>~</span>
+                            <div class="datepicker-child">
+                                <input type="date" id="end-date">
+                                <i class="icon icon-date" id="end-date-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="tab-select-results">
                     <ul class="results-area">
                         <li>
@@ -547,9 +922,6 @@
                         <div class="option-save icon icon-pin">조건 저장</div>
                     </div>
                 </div>
-                <div class="line-after-tab">
-                    <img src="./images/PAEAA030/banner-1.png" alt="Dental Job Banner">
-                </div>
             </div>
         </div>
         <!-- End Form Search -->
@@ -557,44 +929,50 @@
         <div id="content-table">
             <div class="container">
                 <div class="wrap-table">
-                    <div class="top-table">
-                        <div class="count-results"><span class="high-light">100,000건</span>의 이력서가 등록되어 있습니다.
+                    <div class="header-table-container">
+                        <div class="top-table">
+                            <div class="top-table-title">
+                                <h1>검색결과</h1>
+                                <span>Search Results</span>
+                            </div>
+                            <div class="wrap-dropDown">
+                                <div class="dropDowns">
+                                    <div class="form-select-container">
+                                        <select>
+                                            <option class="option-placeholder">업데이트순</option>
+                                            <option value="">업데이트순 1</option>
+                                            <option value="">업데이트순 2</option>
+                                            <option value="">업데이트순 3</option>
+                                            <option value="">업데이트순 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-select-container">
+                                        <select>
+                                            <option class="option-placeholder">50개 씩 보기</option>
+                                            <option value="">50개 씩 보기 1</option>
+                                            <option value="">50개 씩 보기 2</option>
+                                            <option value="">50개 씩 보기 3</option>
+                                            <option value="">50개 씩 보기 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="wrap-dropDown">
-                            <div class="collab">
-                                <div class="form-select-container">
-                                    <select>
-                                        <option class="option-placeholder">업데이트순</option>
-                                        <option value="">업데이트순 1</option>
-                                        <option value="">업데이트순 2</option>
-                                        <option value="">업데이트순 3</option>
-                                        <option value="">업데이트순 4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="collab">
-                                <div class="form-select-container">
-                                    <select>
-                                        <option class="option-placeholder">50개 씩 보기</option>
-                                        <option value="">50개 씩 보기 1</option>
-                                        <option value="">50개 씩 보기 2</option>
-                                        <option value="">50개 씩 보기 3</option>
-                                        <option value="">50개 씩 보기 4</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <div class="table table-header table-results">
+                            <div class="column column-1">제목</div>
+                            <div class="column column-2">경력/형태/자격증</div>
+                            <div class="column column-3">수정</div>
                         </div>
                     </div>
+                    <a href="#" class="line-after-tab">
+                        <img src="./images/PAEAA030/banner-1.png" alt="Dental Job Banner">
+                    </a>
                     <ul class="table table-has-more-infomation">
                         <li>
                             <div class="wrap-column">
                                 <div class="column-left">
                                     <div class="wrap-title">
                                         <a href="#" class="item-title">항상 성실한 자세로 임하겠습니다.</a>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-link">
                                         <li><a href="#">진료실</a></li>
@@ -602,20 +980,24 @@
                                         <li><a href="#">보험청구</a></li>
                                         <li><a href="#">기타</a></li>
                                     </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울시 > 강남구</li>
+                                    </ul>
                                 </div>
                                 <div class="column-center">
                                     <ul class="wrap-link">
                                         <li><a href="#">경력</a></li>
                                         <li><a href="#">정규직 외</a></li>
                                         <li><a href="#">치위생사 외</a></li>
-                                    </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
                                     </ul>
                                 </div>
                                 <div class="column-right">
                                     <div class="date update">update</div>
                                     <div class="price">홍OO</div>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="more-infomation">
@@ -639,16 +1021,16 @@
                                     <div class="wrap-title">
                                         <a href="#" class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자
                                             김수재입니다.</a>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
+
                                     </div>
                                     <ul class="wrap-link">
                                         <li><a href="#">진료실</a></li>
                                         <li><a href="#">상담</a></li>
                                         <li><a href="#">보험청구</a></li>
                                         <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울 > 서초구, 서울 > 영등포구, 서울 > 마포구</li>
                                     </ul>
                                 </div>
                                 <div class="column-center">
@@ -657,15 +1039,14 @@
                                         <li><a href="#">정규직 외</a></li>
                                         <li><a href="#">치위생사 외</a></li>
                                     </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                    </ul>
                                 </div>
                                 <div class="column-right">
                                     <div class="date">2024.08.31</div>
                                     <div class="price">홍OO</div>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="more-infomation">
@@ -689,16 +1070,16 @@
                                     <div class="wrap-title">
                                         <a href="#" class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자
                                             김수재입니다.</a>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
+
                                     </div>
                                     <ul class="wrap-link">
                                         <li><a href="#">진료실</a></li>
                                         <li><a href="#">상담</a></li>
                                         <li><a href="#">보험청구</a></li>
                                         <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울 > 서초구, 서울 > 영등포구, 서울 > 마포구</li>
                                     </ul>
                                 </div>
                                 <div class="column-center">
@@ -707,15 +1088,14 @@
                                         <li><a href="#">정규직 외</a></li>
                                         <li><a href="#">치위생사 외</a></li>
                                     </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                    </ul>
                                 </div>
                                 <div class="column-right">
                                     <div class="date">2024.08.31</div>
                                     <div class="price">홍OO</div>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="more-infomation">
@@ -738,10 +1118,7 @@
                                 <div class="column-left">
                                     <div class="wrap-title">
                                         <a href="#" class="item-title">항상 성실한 자세로 임하겠습니다.</a>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
+
                                     </div>
                                     <ul class="wrap-link">
                                         <li><a href="#">진료실</a></li>
@@ -749,20 +1126,24 @@
                                         <li><a href="#">보험청구</a></li>
                                         <li><a href="#">기타</a></li>
                                     </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울 ＞ 강남구</li>
+                                    </ul>
                                 </div>
                                 <div class="column-center">
                                     <ul class="wrap-link">
                                         <li><a href="#">경력</a></li>
                                         <li><a href="#">정규직 외</a></li>
                                         <li><a href="#">치위생사 외</a></li>
-                                    </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
                                     </ul>
                                 </div>
                                 <div class="column-right">
                                     <div class="date update">update</div>
                                     <div class="price">홍OO</div>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="more-infomation">
@@ -786,16 +1167,16 @@
                                     <div class="wrap-title">
                                         <a href="#" class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자
                                             김수재입니다.</a>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
+
                                     </div>
                                     <ul class="wrap-link">
                                         <li><a href="#">진료실</a></li>
                                         <li><a href="#">상담</a></li>
                                         <li><a href="#">보험청구</a></li>
                                         <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울 > 서초구, 서울 > 영등포구, 서울 > 마포구</li>
                                     </ul>
                                 </div>
                                 <div class="column-center">
@@ -804,15 +1185,14 @@
                                         <li><a href="#">정규직 외</a></li>
                                         <li><a href="#">치위생사 외</a></li>
                                     </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                    </ul>
                                 </div>
                                 <div class="column-right">
                                     <div class="date">2024.08.31</div>
                                     <div class="price">홍OO</div>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="more-infomation">
@@ -836,16 +1216,16 @@
                                     <div class="wrap-title">
                                         <a href="#" class="item-title">종합병원 성형외과/신경외과 경력 2년, 준비된 데스크 코디네이터 지원자
                                             김수재입니다.</a>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
+
                                     </div>
                                     <ul class="wrap-link">
                                         <li><a href="#">진료실</a></li>
                                         <li><a href="#">상담</a></li>
                                         <li><a href="#">보험청구</a></li>
                                         <li><a href="#">기타</a></li>
+                                    </ul>
+                                    <ul class="wrap-position">
+                                        <li>서울 > 서초구, 서울 > 영등포구, 서울 > 마포구</li>
                                     </ul>
                                 </div>
                                 <div class="column-center">
@@ -854,15 +1234,14 @@
                                         <li><a href="#">정규직 외</a></li>
                                         <li><a href="#">치위생사 외</a></li>
                                     </ul>
-                                    <ul class="wrap-position">
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                        <li>서울시 강남구</li>
-                                    </ul>
                                 </div>
                                 <div class="column-right">
                                     <div class="date">2024.08.31</div>
                                     <div class="price">홍OO</div>
+                                    <div class="wrap-meta">
+                                        <a href="#"><i class="icon icon-star"></i></a>
+                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="more-infomation">
@@ -930,7 +1309,7 @@
             </div>
             <div class="info">
                 <ul class="info-company">
-                    <li>(주) 신흥 100-858 서울시 중구 청파로 450 (중림동)</li>
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
                     <li>대표 이용익</li>
                     <li>사업자등록번호 114-81-43063</li>
                     <li>통신판매업신고 제2012-서울중구-0983호</li>
@@ -960,6 +1339,18 @@
         </div>
     </div>
     <!-- End footer -->
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', '.tabs a', function (e) {
+                e.preventDefault();
+                const targetTab = $(this).attr('data-id');
+                $('.tabs a').removeClass('active');
+                $(this).addClass('active');
+                $('.tab').removeClass('show-tab');
+                $('.tab[data-tab="' + targetTab + '"]').addClass('show-tab');
+            });
+        });
+    </script>
 </body>
 
 </html>

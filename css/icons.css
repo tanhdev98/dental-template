@@ -242,6 +242,26 @@
   background-image: url("../images/icons/icon-nav-lock_hover.png");
 }
 
+#top-sub-page #side-nav ul li.active .icon-user-subpage::after,
+#top-sub-page #side-nav ul li:hover .icon-user-subpage::after {
+  background-image: url("../images/icons/icon-user-subpage-active.png");
+}
+
+#top-sub-page #side-nav ul li.active .icon-light-bulb::after,
+#top-sub-page #side-nav ul li:hover .icon-light-bulb::after {
+  background-image: url("../images/icons/icon-light-bulb-active.png");
+}
+
+#top-sub-page #side-nav ul li.active .icon-document-subpage::after,
+#top-sub-page #side-nav ul li:hover .icon-document-subpage::after {
+  background-image: url("../images/icons/icon-document-subpage-active.png");
+}
+
+#top-sub-page #side-nav ul li.active .icon-list-two::after,
+#top-sub-page #side-nav ul li:hover .icon-list-two::after {
+  background-image: url("../images/icons/icon-list-two-active.png");
+}
+
 .icon-location::after {
   background-image: url("../images/icons/icon-location.png");
 }
@@ -428,7 +448,8 @@
   background-image: url("../images/icons/icon-trash.png");
 }
 
-.icon-hot {
+.icon-hot,
+.icon-note {
   width: 56px;
   height: 20px;
   display: inline-flex;
@@ -438,4 +459,52 @@
 
 .icon-hot::after {
   background-image: url("../images/icons/icon-hot.png");
+}
+
+.icon-note::after {
+  background-image: url("../images/icons/icon-note.png");
+}
+
+.icon-phone {
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  margin-right: 5px;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.icon-phone::after {
+  background-image: url("../images/icons/icon-phone.png");
+}
+
+.icon-magnifying-glass-line {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.icon-magnifying-glass-line::after {
+  background-image: url("../images/icons/icon-magnifying-glass-line.png");
+}
+
+.icon-user-subpage::after {
+  background-image: url("../images/icons/icon-user-subpage.png");
+}
+
+.icon-light-bulb::after {
+  background-image: url("../images/icons/icon-light-bulb.png");
+}
+
+.icon-list-two::after {
+  background-image: url("../images/icons/icon-list-two.png");
+}
+
+.icon-document-subpage::after {
+  background-image: url("../images/icons/icon-document-subpage.png");
 }

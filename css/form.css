@@ -23,13 +23,14 @@ input[type='radio'] {
 }
 
 .title-value-radio {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
+    cursor: pointer;
 }
 
 /* input */
 .form-row input:not([type="radio"]) {
-    padding: 0 16px;
+    padding: 0 15px;
     width: 400px;
     height: 40px;
     border-radius: 3px;
@@ -96,7 +97,7 @@ input[type='radio'] {
 }
 
 .register-form .form-row .title-form {
-    font-size: 24px;
+    font-size: 15px;
     text-align: end;
     flex: 1;
 }
@@ -111,14 +112,13 @@ input[type='radio'] {
 
 .register-form .form-row .group-form input {
     border: 1px solid #bbb;
-    background-color: #fafafa;
     border-radius: 5px;
     padding: 0 12px;
     width: 100%;
 }
 
 .register-form .form-row.form-phone .group-form input {
-    width: 70px;
+    width: 85px;
     text-align: center;
 }
 
@@ -145,7 +145,6 @@ input[type='radio'] {
 .register-form .form-select-container .form-select-cus {
     border-radius: 5px;
     border-color: #bbb;
-    background-color: #fafafa;
 }
 
 .register-form .form-row .form-select-container.select-month,
@@ -174,12 +173,12 @@ input[type='radio'] {
 
 .form-select-container.disabled .form-select-cus,
 input:disabled {
-    background-color: #e4e4e4 !important;
+    background-color: #eee !important;
     pointer-events: none !important;
 }
 
 .content-form .form-select-container {
-    background-color: #fafafa;
+    background-color: transparent;
 }
 
 .content-form .form-select-container>.form-select-cus>.form-option-placeholder {
