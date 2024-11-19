@@ -7461,7 +7461,7 @@ h1.title {
 }
 
 .wrap-table .clinic-name {
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     width: 100%;
     height: 100%;
@@ -7469,6 +7469,10 @@ h1.title {
     justify-content: center;
     padding: 5px;
     line-height: 30px;
+}
+
+.wrap-table .item.yellow .clinic-name {
+    font-weight: 600;
 }
 
 .wrap-table .item.yellow .wrap-title {
@@ -7560,6 +7564,10 @@ h1.title {
 /* Column 3 */
 .wrap-table .column-3 {
     padding-left: 0;
+}
+
+#support-now .column-3 .wrap-link li a {
+    color: #666;
 }
 
 /* Column 4 */
