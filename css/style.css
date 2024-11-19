@@ -10398,11 +10398,15 @@ h1.title {
 }
 
 /* PAGAA010 */
+#volunteerBannerImg {
+  padding: 0 20px;
+}
 #volunteerBannerImg .bannerImg {
   background: url("../images/PAGAA010/bannerImg.png") no-repeat center center;
   width: 780px;
   height: 475px;
-  background-size: cover;
+  width: 100%;
+  background-size: contain;
   margin: 55px auto 0 auto;
 }
 #volunteerBannerImg .titleBannerImg {
@@ -10410,6 +10414,7 @@ h1.title {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 #volunteerBannerImg .titleBannerImg .title-child1,
 #volunteerBannerImg .titleBannerImg .title-child2 {
@@ -10434,6 +10439,7 @@ h1.title {
 #tableVolunteer .header-table {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #tableVolunteer .header-table .header-left {
   display: flex;
@@ -10533,3 +10539,27 @@ h1.title {
   box-sizing: border-box;
   padding: 0 8px;
 }
+@media screen and (max-width: 768px) {
+  #volunteerBannerImg .bannerImg {
+    height: 0;
+    padding-top: 60.9%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #tableVolunteer .header-table {
+    justify-content: center;
+  }
+  .pagination-number {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 345px) {
+    #volunteerBannerImg .titleBannerImg .title-child1,
+    #volunteerBannerImg .titleBannerImg .title-child2 {
+      font-size: 16px;
+    }#volunteerBannerImg .titleBannerImg .title-child3 {
+        font-size: 18px;
+    }
+  }
