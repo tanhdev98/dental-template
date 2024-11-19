@@ -6902,87 +6902,105 @@ h1.title {
 }
 
 #register-page .tabs-content .tab-content-item {
-    padding: 120px 60px 130px;
+    padding: 120px 30px 130px;
 }
-
 /* terms and conditions */
 #terms-and-conditions {
-    padding: 0;
-    border: none;
+  padding: 0;
+  border: none;
 }
 
+#terms-and-conditions .tabs li a {
+  font-size: 28px;
+  height: 60px;
+}
+#terms-and-conditions .tabs li a.active {
+  color: #80b156 !important;
+}
 #terms-and-conditions .tabs-content ul li {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #terms-and-conditions .tabs-content ul li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #terms-and-conditions ul li .title-terms {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #terms-and-conditions ul li .title-terms label {
-    width: 120px;
+  width: 90px;
 }
-
-#terms-and-conditions ul li .title-terms p::before,
+#terms-and-conditions ul li .title-terms .flex {
+  display: flex;
+  align-items: start;
+  flex: 1;
+}
+#terms-and-conditions ul li .title-terms .flex p {
+  max-width: 15px;
+  line-height: 1;
+}
+/* #terms-and-conditions ul li .title-terms p::before,
 #terms-and-conditions ul li .title-terms h1::before {
-    content: '※';
-    margin-right: 5px;
-}
+  content: "※";
+  margin-right: 5px;
+} */
 
 #terms-and-conditions ul li .title-terms h1 {
-    font-size: 24px;
-    flex: 1;
+  font-size: 20px;
+  flex: 1;
 }
 
 #terms-and-conditions ul li .title-terms p {
-    font-size: 22px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    word-break: keep-all;
-    white-space: normal;
+  font-size: 18px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  word-break: keep-all;
+  white-space: normal;
 }
 
 #terms-and-conditions ul li .title-terms p strong {
-    color: #ff0000;
-    font-size: 18px;
-    margin-left: 20px;
-    white-space: nowrap;
+  color: #ff0000;
+  font-size: 18px;
+  margin-left: 20px;
+  white-space: nowrap;
 }
 
 #terms-and-conditions ul li .title-terms p .view-more-btn {
-    font-size: 18px;
-    color: #666;
-    margin-left: 10px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  font-size: 18px;
+  color: #666;
+  margin-left: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
 }
-
+#terms-and-conditions ul li .title-terms p .view-more-btn .star {
+  margin-right: 5px;
+  line-height: 1;
+}
 #terms-and-conditions ul li .content-terms {
-    padding: 0 25px;
-    margin-top: 17px;
-    display: none;
+  padding: 0 25px;
+  margin-top: 17px;
+  display: none;
 }
 
 #terms-and-conditions ul li .content-terms p {
-    background-color: #eee;
-    border-bottom: 1px solid #333;
-    padding: 22px 21px 17px;
-    font-size: 20px;
-    line-height: 30px;
-    height: 305px;
-    overflow-y: scroll;
+  background-color: #eee;
+  border-bottom: 1px solid #333;
+  padding: 22px 21px 17px;
+  font-size: 18px;
+  line-height: 30px;
+  height: 305px;
+  overflow-y: scroll;
 }
 
 #terms-and-conditions ul li .content-terms p .space {
-    display: block;
+  display: block;
 }
 
 /* register form */
