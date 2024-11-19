@@ -1526,6 +1526,11 @@ ul li:hover .submenu,
     height: 8px;
 }
 
+.header-frame .icon.icon-magnifying-glass-line {
+    width: 17px;
+    height: 15px;
+}
+
 .header-frame .icon::before {
     width: 2px;
 }

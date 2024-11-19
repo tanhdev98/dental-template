@@ -9998,3 +9998,19 @@ h1.title {
     box-sizing: border-box;
     padding: 0 8px;
 }
+
+.search-form {
+    position: relative;
+}
+
+.search-form input {
+    max-width: 260px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #999999;
+    padding: 0 7px 0 11px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+}
