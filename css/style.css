@@ -1114,6 +1114,8 @@ h1.title {
 
 #notification-tab .table {
     margin-bottom: 5px;
+    margin-top: 29px;
+    border-top: 1px solid #000;
 }
 
 #notification-tab .table>li {
@@ -5638,7 +5640,7 @@ h1.title {
     padding: 0;
 }
 
-#talent-news .table .column-center {
+.table .column-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7425,6 +7427,14 @@ h1.title {
     font-weight: 500;
 }
 
+#content-table .table .column-left .wrap-title .item-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    max-width: 670px;
+    white-space: nowrap;
+}
+
 #support-now .table-header .column.column-2 {
     flex-direction: column;
     width: calc(100% - 230px);
@@ -7514,6 +7524,10 @@ h1.title {
     line-height: 30px;
 }
 
+.wrap-table .item.yellow .clinic-name {
+    font-weight: 600;
+}
+
 .wrap-table .item.yellow .wrap-title {
     background-color: #fbffaa;
     height: 30px;
@@ -7596,13 +7610,13 @@ h1.title {
     margin-top: 8px;
 }
 
-.wrap-table .wrap-position {
-    padding: 0 12px;
-}
-
 /* Column 3 */
 .wrap-table .column-3 {
     padding-left: 0;
+}
+
+#support-now .column-3 .wrap-link li a {
+    color: #666;
 }
 
 /* Column 4 */
@@ -7628,7 +7642,7 @@ h1.title {
     font-weight: 400;
 }
 
-#support-now .wrap-dropDown .dropDowns {
+.wrap-dropDown .dropDowns {
     display: flex;
     gap: 5px;
 }
@@ -7904,6 +7918,17 @@ h1.title {
     font-weight: 500;
 }
 
+#content-table .table-results {
+    grid-template-columns: calc(100% - 27.15% - 13.88%) 27.15% 13.88%;
+    height: 40px;
+}
+
+#content-table .table-results .column-2 {
+    padding-left: 35px;
+    text-align: left;
+    align-items: start;
+}
+
 /* Content Table */
 #support-now .wrap-table>li {
     padding-bottom: 34px;
@@ -7945,7 +7970,7 @@ h1.title {
 #support-now .wrap-table .column-2 .wrap-title .item-title {
     margin-bottom: 0;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #support-now .wrap-table .column-2 .wrap-title .wrap-meta {
@@ -9987,4 +10012,28 @@ h1.title {
 #tableVolunteer .flex.wrap-item div {
     box-sizing: border-box;
     padding: 0 8px;
+}
+
+#notification .search-form {
+    position: relative;
+}
+
+#notification .search-form input {
+    max-width: 250px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #999999;
+    padding: 0 7px 0 14px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+}
+
+#notification .search-form .icon {
+    background-color: transparent;
+}
+
+#notification .header-frame .search-form .icon::after {
+    background-color: transparent;
+    height: 17px;
 }

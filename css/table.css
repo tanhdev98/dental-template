@@ -446,7 +446,7 @@
     font-size: 18px;
     color: #333;
     font-weight: 600;
-    margin-top: 8px;
+    margin: 10px 0;
 }
 
 @media screen and (width <=1320px) {
@@ -509,7 +509,6 @@
     height: 50px;
     align-items: center;
     border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     background-color: #f9f9f9;
     margin-top: 30px;
     padding-left: 25px;
@@ -543,15 +542,18 @@
     font-weight: 300;
 }
 
+.table-has-more-infomation>li:first-child {
+    border-top: 1px solid #333;
+}
+
 .table-has-more-infomation>li {
-    padding-bottom: 10px;
     border-bottom-color: #333;
 }
 
 .table-has-more-infomation>li:last-child {
-    border-bottom-color: transparent;
-    padding-bottom: 22px;
+    border-bottom-color: #333;
 }
+
 
 /* Table 3 column with: left 690px, center 265px, right 425px*/
 
