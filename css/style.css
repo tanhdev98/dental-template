@@ -7756,17 +7756,8 @@ h1.title {
 /* PAEAA040 */
 
 /* Start tabs-select-plus */
-#tabs-form .tabs-select,
-#tabs-form .tabs-content {
-    display: none;
-}
-
-#tabs-form .tabs-content.show-tab,
-#tabs-form .tabs-select.show-tab {
-    display: flex;
-}
-
 #tabs-form .tabs-select-plus {
+    display: flex;
     padding: 21px 26px 19px;
     flex-direction: column;
     gap: 35px;
@@ -7780,16 +7771,15 @@ h1.title {
 
 #tabs-form .tabs-select-plus .wrap-select-plus-child .group {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 #tabs-form .tabs-select-plus .wrap-select-plus-child .group .radio-group {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 52px;
+    column-gap: 52px;
+    flex-wrap: wrap;
 }
 
 #tabs-form .tabs-select-plus .wrap-select-plus-child li {
@@ -7867,7 +7857,7 @@ h1.title {
     position: relative;
 }
 
-#tabs-form .tabs-select-plus .wrap-select-plus-child input[type="date"] {
+#tabs-form .tabs-select-plus .wrap-select-plus-child .datepicker-child input {
     width: 180px;
     height: 30px;
     border: 1px solid #ccc;
@@ -10036,4 +10026,8 @@ h1.title {
 #notification .header-frame .search-form .icon::after {
     background-color: transparent;
     height: 17px;
+}
+
+.react-datepicker-popper {
+    z-index: 2 !important;
 }

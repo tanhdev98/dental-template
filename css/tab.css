@@ -283,6 +283,7 @@ li.dot::before {
 .results-area {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 5px;
 }
 
 .results-area li {
@@ -302,12 +303,12 @@ li.dot::before {
     font-size: 16px;
 }
 
-.results-area li>.item-search+.item-search::before {
+/* .results-area li>.item-search+.item-search::before {
     content: '>';
     position: relative;
     top: -1px;
     margin: 0 2px;
-}
+} */
 
 .results-area li>span.icon-x {
     width: 11px;

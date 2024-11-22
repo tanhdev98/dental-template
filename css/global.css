@@ -819,7 +819,7 @@ ul li:hover .submenu,
     background-color: #fff;
     border-radius: 3px;
     max-height: 400px;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .form-select-container.active>.form-select-cus>.form-option-wrapper {
@@ -860,12 +860,7 @@ ul li:hover .submenu,
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container {
     padding-top: 0;
     padding-bottom: 0;
-    height: 0;
     overflow: hidden;
-}
-
-.form-select-container>.form-select-cus>.form-option-wrapper {
-    border-radius: 3px;
 }
 
 .form-select-container.open-upwards .form-select-cus .form-option-wrapper {
@@ -1237,6 +1232,7 @@ ul li:hover .submenu,
     line-height: 1;
     display: flex;
     align-items: center;
+    white-space: nowrap;
     position: relative;
 }
 
