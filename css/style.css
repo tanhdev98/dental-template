@@ -8122,14 +8122,14 @@ h1.title {
 
 /* PAHAC010 */
 #user-guide {
-    padding: 30px 0 15px 0;
+    padding: 30px 0 5px 0;
 }
 
 #user-guide .titleText {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 500;
     border-bottom: 1px solid #00467b;
-    padding-bottom: 17px;
+    padding-bottom: 13px;
 }
 
 #user-guide .border-bottom-blue {
@@ -8141,35 +8141,33 @@ h1.title {
     gap: 12px;
     justify-content: center;
     align-items: center;
-    margin-top: 64px;
-}
-
-#user-guide .user-guide-content-child-2 .content-title {
     margin-top: 75px;
+    line-height: 0;
 }
 
 #user-guide .outer-circle {
-    width: 27px;
-    height: 27px;
-    border: 10px solid #eb9b00;
+    width: 20px;
+    height: 20px;
+    background-color: #eb9b00;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 #user-guide .outer-circle.green {
-    width: 27px;
-    height: 27px;
-    border: 10px solid #48b805;
+    background-color: #48b805;
+}
+
+#user-guide .outer-circle::before {
+    content: '';
+    background-color: #fff; 
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 8px;
+    height: 8px;
 }
 
 #user-guide .text-content-title {
-    font-size: 38px;
+    font-size: 32px;
     color: #48b805;
     font-weight: 500;
 }
@@ -8179,26 +8177,26 @@ h1.title {
 }
 
 #user-guide .text-content-title-child {
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
-    margin-top: 13px;
+    margin-top: 30px;
     color: #666666;
     font-weight: 300;
     word-break: keep-all;
 }
 
 #user-guide .vertical-line {
-    margin: 25px auto;
+    margin: 26px auto 30px auto;
     width: 1px;
     height: 24px;
     background-color: #666666;
 }
 
 #user-guide .title-content-child {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
 }
 
 .line-item {
@@ -8206,7 +8204,7 @@ h1.title {
 }
 
 #user-guide .item-text-arrow {
-    margin-bottom: 67px;
+    margin-bottom: 100px;
 }
 
 #user-guide .item-content .item-text-arrow .line-item {
@@ -8219,15 +8217,42 @@ h1.title {
 #user-guide .user-guide-content-child-2 .item-text-arrow .line-item {
     justify-content: center;
 }
-
-#user-guide .line-1 {
-    margin-bottom: 32px;
+#user-guide .item-content .item-text-arrow .line-item.line-1 {
+    display: grid;
+    gap: 24px; 
+    grid-template-columns: repeat(3, 1fr); 
+    width: max-content;
+    margin: auto;
+}
+#user-guide .item-content .item-text-arrow .line-item .item:nth-child(1),#user-guide .item-content .item-text-arrow .line-item .item:nth-child(2),#user-guide .item-content .item-text-arrow .line-item .item:nth-child(3){
+margin-bottom: 11px;
+position: relative;
+left: -28px;
 }
 
-#user-guide .line-2 {
-    justify-content: flex-end;
+#user-guide .item-content .item-text-arrow .line-item .item:nth-child(4),#user-guide .item-content .item-text-arrow .line-item .item:nth-child(5),#user-guide .item-content .item-text-arrow .line-item .item:nth-child(6){
+    position: relative;
+    right: -45px;
 }
-
+#user-guide .item-content .item-text-arrow .line-item.line-2 {
+    display: grid;
+    gap: 24px; 
+    grid-template-columns: repeat(4, 1fr); 
+    width: max-content;
+    margin: auto;
+}
+#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(1),#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(2),#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(3),#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(4){
+    margin-bottom: 11px;
+    position: relative;
+    left: -28px;
+}
+#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(5),#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(6),#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(7),#user-guide .item-content .item-text-arrow .line-item.line-2 .item:nth-child(8){
+    position: relative;
+    right: -45px;
+}
+#user-guide .item-content .item-text-arrow .line-item.line-2 .item:last-child .item-arrow::after{
+    background-image: none;
+}
 #user-guide .user-guide-content-child-2 .line-1,
 #user-guide .user-guide-content-child-2 .line-2 {
     justify-content: center;
@@ -8236,17 +8261,17 @@ h1.title {
 #user-guide .item-content .item-arrow {
     line-height: 25px;
     position: relative;
-    width: 258px;
-    height: 86px;
-    border-radius: 43px;
+    width: 240px;
+    height: 67px;
+    border-radius: 33px;
     background-color: #f4fbf1;
-    font-size: 19px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-weight: 700;
-    margin-right: 20px;
+    margin-right: 14px;
 }
 
 #user-guide .user-guide-content-child-2 .item-content .item-arrow {
@@ -8259,7 +8284,7 @@ h1.title {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    right: -28px;
+    right: -24px;
     top: 50%;
     transform: translateY(-50%);
     width: 10px;
@@ -8294,7 +8319,7 @@ h1.title {
 
 #user-guide .btn-recommend-use .text-rcm-use {
     color: #ffffff;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 28px;
 }
@@ -8309,22 +8334,27 @@ h1.title {
 
 #user-guide .title-item {
     text-align: center;
-    font-size: 20px;
-    margin-top: 11px;
+    font-size: 18px;
+    margin-top: 24px;
     color: #666666;
     padding: 0 15px;
     word-break: keep-all;
 }
 
 #user-guide #company-introduction {
-    margin-top: 67px;
+    margin-top: 100px;
     border: 1px solid #dddddd;
     border-radius: 10px;
-    padding: 55px 14px;
+    height: auto;
+    min-height: 200px;
+    display: flex;
+}#user-guide #company-introduction .row{
+    margin: auto;
+    width: 100%;
 }
 
 #user-guide .user-guide-content-child-1 .content-child #company-introduction {
-    margin-top: 10px;
+    margin-top: 35px;
 
 }
 
@@ -8403,20 +8433,20 @@ h1.title {
 
 #user-guide #company-introduction .title {
     text-align: center;
-    font-size: 20px;
-    margin-top: 11px;
+    font-size: 16px;
+    margin-top: 10px;
     font-weight: 700;
 }
 
 #user-guide #company-introduction .content {
-    font-size: 16px;
-    margin-top: 11px;
+    font-size: 13px;
+    margin-top: 7px;
     color: #666666;
     text-align: center;
     font-weight: 300;
     padding: 0 10px;
     word-break: keep-all;
-    line-height: 18px;
+    line-height: 16px;
     letter-spacing: -0.6px;
 }
 
@@ -8430,8 +8460,8 @@ h1.title {
     color: #0068b7;
     text-align: center;
     font-weight: 500;
-    margin-top: 14px;
-    margin-bottom: 22px;
+    margin-top: 15px;
+    margin-bottom: 23px;
     word-break: keep-all;
 }
 
@@ -8450,7 +8480,7 @@ h1.title {
     background-repeat: no-repeat;
     width: 282px;
     height: 27px;
-    margin: 80px auto 0 auto;
+    margin: 105px auto 0 auto;
     position: relative;
 }
 
@@ -8462,7 +8492,7 @@ h1.title {
     width: 85px;
     height: 87px;
     position: absolute;
-    left: -269px;
+    left: -249px;
 }
 
 #user-guide .bottom-note .img-text-bottom::after {
@@ -8473,14 +8503,13 @@ h1.title {
     width: 135px;
     height: 150px;
     position: absolute;
-    left: 459px;
+    left: 445px;
     top: 23px;
 }
 
 @media screen and (width <=1320px) {
     #user-guide .item-content .item-text-arrow .line-item {
         justify-content: center;
-        flex-wrap: wrap;
         max-width: 750px;
         margin: 0 auto 24px;
     }
@@ -8495,15 +8524,29 @@ h1.title {
     }
 
 }
-
 @media screen and (width <=1200px) {
-    #user-guide .item-content .item {
-        flex: 1 1 calc(50% - 64px);
-        display: flex;
-        justify-content: center;
+    #user-guide .item-content .item-text-arrow .line-item.line-2 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        width: max-content;
+        margin: auto;
+    }
+    #user-guide .item-content .item-text-arrow .line-item.line-2 .item{
+        position: unset !important;
     }
 }
-
+@media screen and (width <=1080px) {
+    #user-guide .titleText {
+        width: calc(100% - 40px);
+        margin: auto;
+    }
+       #user-guide #company-introduction {
+        width: calc(100% - 40px);
+        margin: auto;
+        margin-top: 100px;
+    }
+}
 @media screen and (width <=1024px) {
     #user-guide .content br {
         display: none;
@@ -8514,15 +8557,11 @@ h1.title {
     }
 }
 
-@media screen and (width <=991px) {
 
+@media screen and (width <=991px) {
     #user-guide .bottom-note .img-text-bottom::after,
     #user-guide .bottom-note .img-text-bottom::before {
         display: none;
-    }
-
-    #user-guide #company-introduction .content {
-        padding: 0 5px;
     }
 
     #company-introduction .col {
@@ -8539,19 +8578,24 @@ h1.title {
     #company-introduction .col:nth-child(3) {
         margin-bottom: 20px;
     }
-}
-
-@media screen and (width <=767px) {
-    #user-guide .item-content .item-arrow::after {
-        top: unset;
-        right: unset;
-        bottom: -37px;
-        transform: rotate(90deg);
+    #user-guide #company-introduction .row {
+        padding: 20px 0;
     }
-
     #user-guide .item-content .item-text-arrow .line-item {
-        gap: 53px;
-        margin-bottom: 53px;
+        grid-template-columns: repeat(2, 1fr) !important; 
+    }
+    #user-guide .item-content .item-text-arrow .line-item .item{
+        position: unset !important;
+    }
+}
+@media screen and (width <=860px) {
+    #user-guide .item-content .item-text-arrow .line-item {
+    flex-wrap: wrap;
+    }
+}
+@media screen and (width <=767px) {
+    #user-guide .item-content .item-text-arrow .line-item {
+        gap: 33px;
     }
 
     #user-guide .item-content .item-arrow {
@@ -8581,14 +8625,32 @@ h1.title {
         margin-bottom: 20px;
     }
 }
-
+@media screen and (width <=650px) {
+    #user-guide .item-content .item-text-arrow .line-item {
+        grid-template-columns: repeat(1, 1fr) !important; 
+    }
+    #user-guide .item-content .item-text-arrow .line-item .item{
+     margin-bottom: 0 !important;
+    }
+    #user-guide .item-content .item-arrow::after {
+        top: unset;
+        right: unset;
+        bottom: -30px;
+        transform: rotate(90deg);
+    } 
+    #user-guide .item-content .item-text-arrow .line-item {
+        gap: 43px;
+    } #user-guide .bottom-note .content-bottom-note {
+        padding: 0 20px;
+    }
+}
 @media screen and (width <=385px) {
     #user-guide #company-introduction .content {
         font-size: 14px;
     }
 
     #user-guide #company-introduction {
-        padding: 25px 14px;
+        padding: 0;
     }
 
     #user-guide .title-content-child {
@@ -8603,6 +8665,7 @@ h1.title {
         margin: 10px auto;
         height: 18px;
     }
+   
 }
 
 @media screen and (width <=320px) {
@@ -8613,10 +8676,6 @@ h1.title {
 
     #user-guide #company-introduction .title {
         font-size: 16px;
-    }
-
-    #user-guide #company-introduction {
-        padding: 25px 14px;
     }
 }
 
