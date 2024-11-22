@@ -164,6 +164,7 @@
 
 #accordion .header-frame {
     padding-bottom: 21px;
+    align-items: end;
 }
 
 #accordion .header-frame a,
@@ -228,6 +229,7 @@
 
 #notification .header-frame {
     color: #333;
+    align-items: end;
 }
 
 #notification .header-frame h1 {
@@ -1860,7 +1862,7 @@ h1.title {
 
 /* hero */
 #hero {
-    margin-top: 30px;
+    margin-top: -10px;
 }
 
 #hero .container {
@@ -2059,6 +2061,26 @@ h1.title {
     color: #076ecc;
 }
 
+#hero-menu>ul>li:hover i.icon-check:after {
+    background-image: url('../images/icons/icon-check-active.png');
+}
+
+#hero-menu>ul>li:hover i.icon-mess:after {
+    background-image: url('../images/icons/icon-mess-active.png');
+}
+
+#hero-menu>ul>li:hover i.icon-phone:after {
+    background-image: url('../images/icons/icon-phone-active.png');
+}
+
+#hero-menu>ul>li:hover i.icon-edu:after {
+    background-image: url('../images/icons/icon-edu-active.png');
+}
+
+#hero-menu>ul>li:hover i.icon-heart:after {
+    background-image: url('../images/icons/icon-heart-active.png');
+}
+
 #hero-menu>ul>li a {
     display: flex;
     align-items: center;
@@ -2159,15 +2181,15 @@ h1.title {
 /* Grand Banner */
 #grand-banner {
     background-color: #f7faff;
-    padding: 55px 0;
-    margin-top: 52px;
+    padding: 20px 0 32px;
+    margin-top: 30px;
 }
 
 .section-title {
-    font-size: 26px;
+    font-size: 20px;
     color: #555;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 21px;
 }
 
 #grand-banner .list-grid {
@@ -2277,7 +2299,7 @@ h1.title {
     background-clip: content-box, border-box;
     background-origin: border-box;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     right: 0;
     height: 10px;
@@ -2292,6 +2314,10 @@ h1.title {
 
 #grand-banner .list-grid .list-item:hover .item-content {
     border-color: #076ecc;
+}
+
+#grand-banner .list-grid .list-item.large-full:hover {
+    margin-top: 0;
 }
 
 .list-grid .list-item.nor .item-content::before {
@@ -2320,10 +2346,18 @@ h1.title {
     display: flex;
     flex-direction: column;
     padding: 18px;
+    position: relative;
 }
 
-.list-grid .list-item:hover .item-content {
-    border-width: 2px;
+.list-grid .list-item:hover .item-content::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    border: 1px solid #076ecc;
+    border-radius: 9px;
 }
 
 .list-grid .list-item .item-content>div {
@@ -2583,7 +2617,7 @@ h1.title {
 
 /* Premium Banner */
 #premium-banner {
-    padding: 45px 0;
+    padding: 28px 0 40px;
 }
 
 #premium-banner .list-grid {
@@ -2703,7 +2737,7 @@ h1.title {
 /* Enterprise */
 #enterprise {
     background-color: #f7faff;
-    padding: 45px 0;
+    padding: 20px 0 30px;
 }
 
 #enterprise .list-grid {
@@ -2778,7 +2812,7 @@ h1.title {
 
 /* Hot Recruit */
 #hot-recruit {
-    padding: 45px 0;
+    padding: 30px 0 59px 0;
 }
 
 #hot-recruit .list-grid {
@@ -6382,7 +6416,7 @@ h1.title {
 }
 
 #wrap-search .title-notifi {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 19px;
 }
@@ -6390,7 +6424,7 @@ h1.title {
 #wrap-search .title-notifi-child li {
     position: relative;
     padding-left: 15px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 28px;
     font-weight: 300;
 }
@@ -6448,6 +6482,16 @@ h1.title {
     margin-right: 5px;
 }
 
+#wrap-search .tabs li a.active .icon {
+    background-image: url("../images/icons/icon-magnifying-glass-blur-active.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 17px;
+    height: 20px;
+    margin-right: 5px;
+}
+
 #wrap-search .tabs li.active .icon {
     background-image: url("../images/icons/icon-magnifying-glass.png");
 }
@@ -6475,6 +6519,10 @@ h1.title {
 #tab-search .tab-content-item {
     border-radius: 0 0 10px 10px;
     padding: 39px 80px 53px;
+}
+
+#tab-search .title-value-radio {
+    font-size: 16px;
 }
 
 #wrap-search .tab-content-item .title-form {
@@ -6653,7 +6701,7 @@ h1.title {
 #search_id .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-placeholder-container>.form-option-placeholder,
 #search_id .form-select-container>.form-select-cus>.form-option-placeholder {
     border-radius: 0 0 3px 3px;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -6725,7 +6773,7 @@ h1.title {
 }
 
 .register-container .content-wrap {
-    padding: 50px 50px 69px;
+    padding: 30px 50px 69px;
     border: 1px solid #ddd;
     border-radius: 10px;
     position: relative;
@@ -7052,7 +7100,7 @@ h1.title {
 
 #register-dental-form,
 #register-invidual-form {
-    padding-bottom: 70px;
+    padding-bottom: 35px;
 }
 
 #register-invidual-form .type-register {
@@ -7066,7 +7114,7 @@ h1.title {
 }
 
 #register-dental-form .type-register {
-    color: #80b156;
+    color: #076ecc;
 }
 
 #register-page .form li {
@@ -7078,8 +7126,16 @@ h1.title {
     padding-left: 12px;
 }
 
-#register-page .form li:last-child {
-    margin-bottom: 0;
+#register-page .form li .content-form-hidden {
+    display: none;
+}
+
+#register-page .form li .content-form-hidden input {
+    height: 35px;
+}
+
+#register-page .form li.form-sms {
+    margin-top: -10px;
 }
 
 #register-page .form li::before {
@@ -7107,7 +7163,7 @@ h1.title {
 
 #register-page .form .content-form input {
     font-size: 14px;
-    width: 130px;
+    width: 170px;
     height: 100%;
     border-radius: 5px;
     font-weight: 300;
@@ -7199,12 +7255,12 @@ h1.title {
 
 #register-page .content-form.form-email .require-input {
     position: absolute;
-    bottom: -25px;
+    bottom: -22px;
     margin-left: 0;
 }
 
 #register-page .form .form-address {
-    margin-top: 60px;
+    margin-top: 43px;
     margin-bottom: 100px;
 }
 
@@ -7217,12 +7273,12 @@ h1.title {
     align-items: center;
     gap: 4px;
     height: 100%;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
-#register-page .form .form-address .content-form>input {
+#register-page .form .form-address .content-form>input:not(:last-child) {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     width: 650px;
 }
 
@@ -7270,8 +7326,12 @@ h1.title {
     width: 113px;
 }
 
+.form-business-number label {
+    margin-left: 14px;
+}
+
 #register-page .form li.form-row-radio {
-    margin-bottom: 7px;
+    margin-bottom: 11px;
 }
 
 @media screen and (width <=1440px) {

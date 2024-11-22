@@ -160,7 +160,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
     width: 95px;
 
 }
@@ -184,16 +184,17 @@
 #sideAds .back-to-top a {
     width: 52px;
     height: 52px;
-    background-color: #eee;
+    background-color: #f9f9f9;
     border-radius: 50%;
     display: grid;
     place-content: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 #sideAds .back-to-top i {
     width: 52px;
     height: 52px;
-    background-color: #eee;
+    background-color: #f9f9f9;
     border-radius: 50%;
     height: 33px;
     width: 22px;

@@ -156,7 +156,7 @@ input[type='radio'] {
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 3px;
+    gap: 5px;
 }
 
 .content-form .button-gray {

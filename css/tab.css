@@ -259,6 +259,8 @@ li.dot::before {
 }
 
 
+#tabs-form .tabs-select-bag ul li:hover,
+#tabs-form .tabs-select-bag ul li.active,
 #tabs-form .tabs-select-bag ul li:hover {
     background-color: #eef7fd;
     color: #0068b7;

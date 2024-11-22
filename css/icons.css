@@ -435,6 +435,10 @@
   background-image: url("../images/icons/icon-back-to-top.png");
 }
 
+.icon-up::after {
+  background-image: url("../images/icons/icon-up.png");
+}
+
 .icon-trash {
   width: 16px;
   height: 17px;
