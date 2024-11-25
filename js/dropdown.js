@@ -105,23 +105,34 @@ $(document).ready(function () {
             select_html.selectedIndex = 0;
             options.forEach(o => o.classList.remove("active"));
         } else if (e.currentTarget.classList.contains("form-option")) {
-            select_html.selectedIndex = Array.prototype.indexOf.call(options, e.target);
+            select_html.selectedIndex = Array.prototype.indexOf.call(options, e.currentTarget);
 
             options.forEach(o => o.classList.remove("active"));
             e.currentTarget.classList.add("active");
         }
+
         if (select_html.classList.contains('link')) {
             console.log('aaa');
         }
 
-        // Log the selected option's value
         console.log("Selected Option Value:", select_html.value);
+
+        let hasInput = e.currentTarget.closest('.has-input');
+        if (hasInput && select_html.value == hasInput.getAttribute('data-require')) {
+            hasInput.style.display = 'none';
+
+            let nextElement = hasInput.nextElementSibling;
+            if (nextElement) {
+                nextElement.style.display = 'block';
+            }
+        }
 
         if (select_html.value.startsWith("http://") || select_html.value.startsWith("https://")) {
             let url = select_html.value;
             window.open(url, "_blank");
         }
     }
+
 
     document.addEventListener("click", function (e) {
         document.querySelectorAll(".form-select-container").forEach(f_s_c => {

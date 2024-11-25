@@ -347,11 +347,11 @@
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 13px;
   background: #fff;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
   pointer-events: auto;
 }
 
@@ -433,6 +433,10 @@
 
 .icon-back-to-top::after {
   background-image: url("../images/icons/icon-back-to-top.png");
+}
+
+.icon-up::after {
+  background-image: url("../images/icons/icon-up.png");
 }
 
 .icon-trash {

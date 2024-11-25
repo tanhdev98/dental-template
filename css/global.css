@@ -160,7 +160,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
     width: 95px;
 
 }
@@ -184,16 +184,17 @@
 #sideAds .back-to-top a {
     width: 52px;
     height: 52px;
-    background-color: #eee;
+    background-color: #f9f9f9;
     border-radius: 50%;
     display: grid;
     place-content: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 #sideAds .back-to-top i {
     width: 52px;
     height: 52px;
-    background-color: #eee;
+    background-color: #f9f9f9;
     border-radius: 50%;
     height: 33px;
     width: 22px;
@@ -819,7 +820,7 @@ ul li:hover .submenu,
     background-color: #fff;
     border-radius: 3px;
     max-height: 400px;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .form-select-container.active>.form-select-cus>.form-option-wrapper {
@@ -860,12 +861,7 @@ ul li:hover .submenu,
 .form-select-container>.form-select-cus>.form-option-wrapper>.form-option-container {
     padding-top: 0;
     padding-bottom: 0;
-    height: 0;
     overflow: hidden;
-}
-
-.form-select-container>.form-select-cus>.form-option-wrapper {
-    border-radius: 3px;
 }
 
 .form-select-container.open-upwards .form-select-cus .form-option-wrapper {
@@ -1237,6 +1233,7 @@ ul li:hover .submenu,
     line-height: 1;
     display: flex;
     align-items: center;
+    white-space: nowrap;
     position: relative;
 }
 
