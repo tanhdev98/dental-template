@@ -229,7 +229,7 @@ li.dot::before {
 }
 
 #tabs-form .tabs-select-bag ul li {
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     line-height: 1;
     display: flex;
     justify-content: center;
@@ -250,14 +250,18 @@ li.dot::before {
     border-bottom: unset;
 }
 
+#tabs-form .tabs-select-bag ul li:nth-child(n + 5) {
+    border-bottom: 1px solid #ddd;
+}
+
 #tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
     border-right: unset;
 }
 
+#tabs-form .tabs-select-bag ul li:last-child,
 #tabs-form .tabs-select-bag ul li:nth-child(10) {
-    border-right: 1px solid #dddddd;
+    border-right: 1px solid #ddd;
 }
-
 
 #tabs-form .tabs-select-bag ul li:hover,
 #tabs-form .tabs-select-bag ul li.active,
