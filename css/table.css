@@ -116,6 +116,10 @@
     gap: 5px;
 }
 
+#support-now .table .wrap-position {
+    margin-left: 12px;
+}
+
 .table .wrap-position li {
     font-size: 15px;
     color: #666;
@@ -124,8 +128,12 @@
 .table .room-name {
     font-size: 16px;
     font-weight: 600;
-    margin: 12px 0 6px;
+    margin: 8px 0;
     color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
 }
 
 .table .room-name.red {
@@ -195,6 +203,10 @@
 .table .wrap-meta {
     display: inline-flex;
     gap: 8px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .table .wrap-link+.wrap-position {
@@ -204,8 +216,13 @@
 /* Column 3 */
 .table .column-3 {
     padding-left: 35px;
-    display: flex;
-    align-items: center;
+    display: block;
+}
+
+.table .column-3 .wrap-link {
+    height: 20px;
+    margin: 8px 0;
+    justify-content: start;
 }
 
 .table.table-three-column .column-3 {
@@ -367,12 +384,10 @@
 
 .wrap-link {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-}
-
-.wrap-link {
-    display: flex;
-    position: relative;
+    max-width: 100%;
+    justify-content: center;
 }
 
 .table .wrap-block-link {
@@ -380,33 +395,36 @@
     gap: 131px;
 }
 
-.wrap-link li a {
-    font-size: 15px;
-    color: #666;
-    white-space: nowrap;
-    line-height: 20px;
-}
-
-.wrap-link li a:hover {
-    font-size: 15px;
-    color: #333;
-}
-
-.wrap-link li+li {
-    margin-left: 9px;
-    padding-left: 9px;
+.wrap-link li {
+    margin-right: 9px;
+    padding-right: 9px;
     position: relative;
 }
 
-.wrap-link li+li:before {
+.wrap-link li:before {
     content: "";
     width: 1px;
     height: 10px;
     background-color: #999;
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 0;
     transform: translateY(-50%);
+}
+
+.wrap-link li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.wrap-link li:last-child::before {
+    display: none;
+}
+
+.wrap-link li span {
+    font-size: 15px;
+    color: #666;
+    line-height: 20px;
 }
 
 /* Column center */

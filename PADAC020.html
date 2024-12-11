@@ -401,10 +401,10 @@
                             </li>
                             <li class="form-row">
                                 <div class="title-form">학교 정보</div>
-                                <div class="content-form has-input" data-require="999">
+                                <div class="content-form has-input">
                                     <div class="form-select-container select-school">
                                         <select>
-                                            <option class="option-placeholder has-other-case">졸업 학교 선택 </option>
+                                            <option class="option-placeholder has-other-case">졸업 학교 선택</option>
                                             <option value="110">치과의사</option>
                                             <option value="201">치과기공사(소장)</option>
                                             <option value="202">치과기공사(기사)</option>
@@ -415,19 +415,7 @@
                                             <option value="999">기타</option>
                                         </select>
                                     </div>
-                                    <div class="form-select-container select-school">
-                                        <select>
-                                            <option class="option-placeholder has-other-case">학교명 입력</option>
-                                            <option value="110">치과의사</option>
-                                            <option value="201">치과기공사(소장)</option>
-                                            <option value="202">치과기공사(기사)</option>
-                                            <option value="310">치과위생사 및 진료스탭</option>
-                                            <option value="401">학생(치의학과)</option>
-                                            <option value="402">학생(치위생과)</option>
-                                            <option value="403">학생(치기공과)</option>
-                                            <option value="999">기타</option>
-                                        </select>
-                                    </div>
+                                    <input type="text" placeholder="직접 입력" disabled>
                                     <div class="form-select-container select-school">
                                         <select>
                                             <option class="option-placeholder has-other-case">졸업 년도 선택</option>
@@ -543,7 +531,6 @@
                                             <option value="zdirect">직접입력</option>
                                         </select>
                                     </div>
-                                    <p class="require-input">※ hanmail, gmail은 수신에 제한이 있을 수 있습니다. 다른 이메일을 입력해주세요</p>
                                 </div>
                             </li>
                             <li class="form-row form-address">
@@ -665,15 +652,12 @@
     </div>
     <!-- End footer -->
     <script type="text/javascript">
-        $('.form-option-container .content-form.has-input .form-option-placeholder').each(function () {
-
-            const intervalId = setInterval(() => {
-                if ($(this).text() === "기타") {
-                    $('.content-form.has-input').hide();
-                    $('.content-form-hidden').show();
-                    clearInterval(intervalId);
-                }
-            }, 100);
+        $(document).on('click', '.form-select-container.select-school:first-child', function () {
+            if ($(this).find('.form-option-placeholder').text() === '기타졸업 학교 선택') {
+                $(this).parents('.has-input').find('input').removeAttr('disabled');
+            } else {
+                $(this).parents('.has-input').find('input').attr('disabled', 'disabled');
+            }
         });
     </script>
 </body>

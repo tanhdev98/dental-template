@@ -1165,7 +1165,7 @@ ul li:hover .submenu,
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .item-checkBox input[type="checkbox"],
@@ -1553,7 +1553,7 @@ ul li:hover .submenu,
 .subway-tag {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 5px;
     gap: 5px;
 }
 
@@ -1564,6 +1564,7 @@ ul li:hover .submenu,
     height: 16px;
     color: #fff;
     font-size: 11px;
+    line-height: 0;
     border-radius: 9px;
     padding: 0 6px;
 }
@@ -1919,8 +1920,7 @@ ul li:hover .submenu,
     display: grid;
     grid-template-columns: calc(100% - 20% - 15%) 20% 15%;
     align-items: center;
-    padding: 0 20px;
-    height: 50px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: 400;
 }
@@ -1960,6 +1960,12 @@ ul li:hover .submenu,
 
 [for="saved-conditions"] .table>li:hover .delete {
     border-bottom: 1px solid #999;
+}
+
+[for="saved-conditions"] .table>li .wrap-link {
+    justify-content: start;
+    row-gap: 5px;
+    margin-right: 5px;
 }
 
 /* Profile seting popup */
