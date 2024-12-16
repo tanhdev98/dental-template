@@ -241,6 +241,12 @@ li.dot::before {
     cursor: pointer;
 }
 
+#tabs-form .tabs-select-bag ul li.isEmpty {
+    border: none !important;
+    border-left: 1px solid #ddd !important;
+    border-top: 1px solid #ddd !important;
+}
+
 #tabs-form .tabs-select-bag ul li:nth-child(-n+4) {
     border-right: unset;
     border-bottom: unset;
@@ -250,9 +256,6 @@ li.dot::before {
     border-bottom: unset;
 }
 
-#tabs-form .tabs-select-bag ul li:nth-child(n + 5) {
-    border-bottom: 1px solid #ddd;
-}
 
 #tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
     border-right: unset;

@@ -1613,6 +1613,10 @@ ul li:hover .submenu,
     background-color: #32c6a6;
 }
 
+.subway-tag .bondi-blue {
+    background-color: #00638f;
+}
+
 .subway-tag .subway-red {
     background-color: #c12b2f;
 }
