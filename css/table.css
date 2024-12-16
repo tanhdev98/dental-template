@@ -222,7 +222,7 @@
 .table .column-3 .wrap-link {
     height: 20px;
     margin: 8px 0;
-    justify-content: start;
+    justify-content: end;
 }
 
 .table.table-three-column .column-3 {
