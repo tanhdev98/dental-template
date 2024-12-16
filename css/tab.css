@@ -123,6 +123,7 @@ li.dot::before {
     border: 1px solid #000000;
     border-top: none;
     border-radius: 0 0 10px 10px;
+    border-bottom-color: #b5b5b5;
 }
 
 .tab-content-item {

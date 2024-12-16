@@ -122,7 +122,7 @@
 
 .table .wrap-position li {
     font-size: 15px;
-    color: #666;
+    color: #333;
 }
 
 .table .room-name {
@@ -423,7 +423,7 @@
 
 .wrap-link li span {
     font-size: 15px;
-    color: #666;
+    color: #333;
     line-height: 20px;
 }
 

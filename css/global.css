@@ -1309,6 +1309,33 @@ ul li:hover .submenu,
 
 
 /* end tab-select-results*/
+/* Tab select search */
+.tab-select-search {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 24px 25px;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.tab-select-search input {
+    height: 40px;
+    border: 1px solid #ddd;
+    width: 525px;
+    border-radius: 3px;
+    padding: 0 15px;
+}
+
+#tabs-form .tab-select-search .form-select-container>.form-select-cus>.form-option-placeholder {
+    color: #333 !important;
+}
+
+#tabs-form .tab-select-search .form-select-container>.form-select-cus>.form-option-placeholder:after {
+    background: url(../images/arrow-down-black.png) no-repeat center / contain;
+    width: 10px;
+    height: 7px;
+}
 
 /* statistic */
 #statistic {
