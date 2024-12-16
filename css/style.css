@@ -7503,7 +7503,7 @@ h1.title {
 #support-now .wrap-table>li>div {
     display: grid;
     grid-template-columns: 18.75% calc(100% - 18.75% - 17.22% - 13.88%) 17.22% 13.88%;
-    padding: 29px 0 34px;
+    padding: 37px 0 0px;
     width: 100%;
 }
 
@@ -7550,8 +7550,11 @@ h1.title {
     justify-content: center;
 }
 
+#support-now .count-results.blue {
+    border-radius: 50px;
+}
+
 #support-now .table-header .column.column-2>div:first-child {
-    background-color: #f0f0f0;
     width: 100%;
 }
 
@@ -7569,6 +7572,11 @@ h1.title {
 #support-now .table-header .column.column-3>div:first-child {
     justify-content: start;
     padding: 0 12px;
+    align-items: end;
+}
+
+#support-now .table-header .column.column-3>div:first-child>span {
+    font-size: 18px;
 }
 
 #support-now .table-header .column.column-3>div {
@@ -7712,6 +7720,12 @@ h1.title {
     color: #666;
 }
 
+#support-now .column-3 .wrap-icon-support {
+    background-color: #fbffaa;
+    width: 100%;
+    text-align: right;
+}
+
 /* Column 4 */
 .column-4 {
     display: block;
@@ -7730,6 +7744,7 @@ h1.title {
     color: #999;
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
 }
 
 .wrap-dropDown .dropDowns {
@@ -7977,6 +7992,14 @@ h1.title {
 }
 
 /* Content Table */
+#support-now .table-header {
+    height: 40px;
+}
+
+#support-now .wrap-table.table {
+    border-top: none;
+}
+
 #support-now .wrap-table>li {
     padding-bottom: 34px;
 }
@@ -7984,6 +8007,11 @@ h1.title {
 /* Column 2*/
 #support-now .wrap-table .column-2 {
     padding-left: 25px;
+    justify-content: flex-start;
+}
+
+#support-now .wrap-table .column-2 .wrap-row {
+    margin-top: 18px;
 }
 
 #support-now .wrap-table .column-2 .wrap-title {
@@ -8017,6 +8045,18 @@ h1.title {
     padding-left: 10px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    align-items: end;
+}
+
+#support-now .wrap-table .column-3 .wrap-link {
+    margin-top: 18px;
+}
+
+#support-now .wrap-table .column-3 .update {
+    color: #80b156;
+    font-size: 15px;
 }
 
 /* PAFAA010 */
