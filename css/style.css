@@ -185,7 +185,7 @@
     border-bottom: 1px solid #ddd;
 }
 
-#accordion .accordion-question {
+#accordion .accodion-item .accordion-question {
     font-size: 20px;
     font-weight: 300;
     padding: 20px 0 19px;
@@ -195,6 +195,20 @@
     gap: 27px;
     padding-left: 32px;
     cursor: pointer;
+    position: relative;
+}
+
+#accordion .accodion-item .accordion-question::after {
+    content: '';
+    background: url('../images/icons/arrow-down-gray.png') no-repeat center / 100%;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .2s linear;
 }
 
 #accordion .accodion-item.active {
@@ -203,6 +217,10 @@
 
 #accordion .accodion-item.active .accordion-question {
     font-weight: 600;
+}
+
+#accordion .accodion-item.active .accordion-question::after {
+    transform: rotate(180deg);
 }
 
 #accordion .accodion-item .accordion-question .accordion-feature {
