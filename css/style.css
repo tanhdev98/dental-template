@@ -9632,6 +9632,13 @@ h1.title {
 
 /* recruitment-adv */
 
+#recruitment-adv .top-form h2 {
+    width: 100%;
+    font-size: 36px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #000;
+}
+
 #recruitment-adv .headLine {
     font-size: 36px;
     padding-bottom: 19px;

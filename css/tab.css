@@ -19,9 +19,15 @@
 }
 
 .tabs.short-tab li a {
-    border-bottom: none;
-    position: relative;
+    border-bottom: 1px solid #eee;
+    background-color: #eee;
+    border: none;
+}
 
+.tabs.short-tab li a.active {
+    border-bottom: 1px solid #076ecc;
+    background-color: #076ecc;
+    border: none;
 }
 
 .tabs.short-tab li a.active::before {
@@ -69,6 +75,18 @@
 
 .tabs li:hover a:not(.active) {
     background-color: #eee;
+}
+
+.tabs li:hover a:not(.active) {
+    background-color: #eee;
+}
+
+.tabs li:hover a.tab-search {
+    background-color: transparent;
+}
+
+.tabs li a.tab-search {
+    padding-right: 24px;
 }
 
 /* Tab no border */
