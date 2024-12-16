@@ -226,10 +226,10 @@ li.dot::before {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    border: 1px solid #ddd;
 }
 
 #tabs-form .tabs-select-bag ul li {
-    border: 1px solid #ddd;
     line-height: 1;
     display: flex;
     justify-content: center;
@@ -241,29 +241,27 @@ li.dot::before {
     cursor: pointer;
 }
 
-#tabs-form .tabs-select-bag ul li.isEmpty {
-    border: none !important;
-    border-left: 1px solid #ddd !important;
-    border-top: 1px solid #ddd !important;
-}
 
-#tabs-form .tabs-select-bag ul li:nth-child(-n+4) {
-    border-right: unset;
-    border-bottom: unset;
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(5) {
-    border-bottom: unset;
-}
-
-
-#tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
-    border-right: unset;
-}
-
-#tabs-form .tabs-select-bag ul li:last-child,
-#tabs-form .tabs-select-bag ul li:nth-child(10) {
+#tabs-form .tabs-select-bag ul li:nth-child(5n+1),
+#tabs-form .tabs-select-bag ul li:nth-child(5n+2),
+#tabs-form .tabs-select-bag ul li:nth-child(5n+3),
+#tabs-form .tabs-select-bag ul li:nth-child(5n+4) {
     border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#tabs-form .tabs-select-bag ul li:nth-child(5n) {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabs-form .tabs-select-bag ul li:nth-last-child(1),
+#tabs-form .tabs-select-bag ul li:nth-last-child(2),
+#tabs-form .tabs-select-bag ul li:nth-last-child(3),
+#tabs-form .tabs-select-bag ul li:nth-last-child(4),
+#tabs-form .tabs-select-bag ul li:last-child {
+    border-bottom: none;
 }
 
 #tabs-form .tabs-select-bag ul li:hover,
@@ -434,9 +432,6 @@ li.dot::before {
         padding: 10px;
     }
 
-    #tabs-form .tabs-select-bag ul li.isEmpty {
-        display: none;
-    }
 
     #tabs-form .tabs li.active:before {
         background-color: #000;
@@ -452,10 +447,6 @@ li.dot::before {
         width: 48%;
         border: 1px solid #ddd !important;
         padding: 10px;
-    }
-
-    #tabs-form .tabs-select-bag ul li.isEmpty {
-        display: none;
     }
 
     #tabs-form .tabs li span {

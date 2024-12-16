@@ -1083,7 +1083,7 @@ ul li:hover .submenu,
 
 #tabs-form .tabs-left ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-height: 190px;
     overflow: hidden;
     overflow-y: scroll;
@@ -1125,7 +1125,7 @@ ul li:hover .submenu,
     height: 8px;
     background: url('../images/icons/icon-right-blue.png') no-repeat center / 100%;
     position: absolute;
-    right: 19px;
+    right: 13px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1136,8 +1136,12 @@ ul li:hover .submenu,
     padding: 20px 0 0;
 }
 
+#tabs-form .item-checkBox {
+    margin-left: 48px;
+}
+
 #tabs-form .tabs-right form .notification {
-    padding-left: 25px;
+    padding-left: 48px;
     font-size: 13px;
     font-weight: 300;
     color: #0068b7;
@@ -1152,7 +1156,7 @@ ul li:hover .submenu,
 
 #tabs-form .tabs-right ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     max-height: 180px;
     overflow: hidden;
     overflow-y: scroll;
