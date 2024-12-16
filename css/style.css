@@ -195,6 +195,23 @@
     gap: 27px;
     padding-left: 32px;
     cursor: pointer;
+    position: relative;
+}
+
+#accordion .accordion-question:after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    background: url('../images/icons/arrow-down-gray.png') no-repeat center / contain;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#accordion .accordion-question.active:after {
+    background: url('../images/icons/arrow-down-black.png') no-repeat center / contain;
+    transform: translateY(-50%) scaleY(-1);
 }
 
 #accordion .accodion-item.active {
