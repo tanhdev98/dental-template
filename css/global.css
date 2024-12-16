@@ -1094,7 +1094,7 @@ ul li:hover .submenu,
 
 #tabs-form .tabs-left ul li {
     padding-left: 25px;
-    line-height: 32px;
+    line-height: 30px;
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
@@ -1325,6 +1325,10 @@ ul li:hover .submenu,
     width: 525px;
     border-radius: 3px;
     padding: 0 15px;
+}
+
+#tabs-form .tab-select-search .form-select-container {
+    width: 135px;
 }
 
 #tabs-form .tab-select-search .form-select-container>.form-select-cus>.form-option-placeholder {
