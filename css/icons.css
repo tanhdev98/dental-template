@@ -29,6 +29,11 @@
   background-size: 100% 100%;
 }
 
+.icon-right-bold::after {
+  background-image: url("../images/icons/icon-right-bold.png");
+  background-size: 100% 100%;
+}
+
 .icon-bell {
   width: 30px;
   height: 30px;

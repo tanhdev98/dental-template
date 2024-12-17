@@ -9645,12 +9645,61 @@ h1.title {
     margin-top: 55px;
 }
 
+#recruitment-adv .wrap-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#recruitment-adv .wrap-button .button {
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+}
+
+#recruitment-adv .wrap-button .button span {
+    font-size: 13px;
+    color: #fff;
+}
+
+#recruitment-adv .wrap-button .button.red {
+    background-color: #e73827;
+}
+
+#recruitment-adv .wrap-button .button.blue {
+    background-color: #076ecc;
+}
+
 #recruitment-adv .tab-item {
     display: none;
 }
 
 #recruitment-adv .tab-item.active {
     display: block;
+}
+
+#recruitment-adv .tab-item .wrap-tab-description {
+    position: relative;
+}
+
+#recruitment-adv .tab-item .wrap-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#recruitment-adv .tab-item .wrap-button .icon-right-bold {
+    width: 7px;
+    height: 8px;
+    margin-left: 4px;
 }
 
 #recruitment-adv .tab-item .tab-list-desc {
@@ -9673,7 +9722,7 @@ h1.title {
 #recruitment-adv .tab-item .tab-content {
     display: flex;
     gap: 32px;
-    margin-top: 38px;
+    margin-top: 55px;
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-left {
@@ -9711,9 +9760,69 @@ h1.title {
     margin-right: 8px;
 }
 
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.dark-green {
+    color: #0a2478;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.dark-green .step-number {
+    background-color: #0a2478;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.blue {
+    color: #076bc7;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.blue .step-number {
+    background-color: #076bc7;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.green {
+    color: #567e34;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.green .step-number {
+    background-color: #567e34;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.jade-green {
+    color: #00827b;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.jade-green .step-number {
+    background-color: #00827b;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.red {
+    color: #aa0000;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-title.red .step-number {
+    background-color: #aa0000;
+}
+
+#recruitment-adv .count-day {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 14px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #076ecc;
+    color: #076ecc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc {
     padding-left: 26px;
     margin-bottom: 29px;
+}
+
+#recruitment-adv .tab-item .tab-content:last-child .tab-content-right .step .step-desc {
+    margin: 0;
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc.no-space {
@@ -9724,6 +9833,10 @@ h1.title {
     padding-left: 12px;
     position: relative;
 
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc li.blue {
+    color: #448aca;
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-desc li::before {
@@ -9751,7 +9864,38 @@ h1.title {
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 50px;
+    line-height: 20px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li .note {
+    font-size: 13px;
+    width: 100%;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li.two-line {
+    height: 70px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li.two-line>div:first-child {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li:first-child>div {
+    padding: 0 !important;
+    justify-content: center;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li:first-child>div>div {
+    padding: 0 !important;
+    justify-content: center;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li:first-child {
+    text-align: center;
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div {
@@ -9793,10 +9937,11 @@ h1.title {
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(1) {
-    width: 34.5%;
-    padding-left: 22px;
+    width: 46%;
+    padding-left: 36px;
     font-size: 15px;
     font-weight: 500;
+
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(1).long-text {
@@ -9804,25 +9949,19 @@ h1.title {
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2) {
-    width: calc(100% - 34.5%);
-    padding-left: 16px;
+    width: calc(100% - 46%);
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(1) {
-    width: 21%;
+    width: 50%;
+    justify-content: center;
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(2) {
-    width: 32.5%;
-    padding-left: 16px;
+    width: 50%;
+    justify-content: center;
 }
 
-#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div:nth-child(3) {
-    width: calc(100% - 32.5% - 21%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table li>div:nth-child(2)>div {
     height: 100%;
@@ -9837,6 +9976,27 @@ h1.title {
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table .profit {
     font-size: 15px;
     font-weight: 300;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table .profit.none {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .require-step {
+    color: #076ecc;
+    font-size: 13px;
+    margin-top: 12px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+#recruitment-adv .tab-item .tab-content .tab-content-right .step .title-step-details {
+    color: #076ecc;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0 10px 0;
+    line-height: 24px;
 }
 
 #recruitment-adv .tab-item .tab-content .tab-content-right .step .step-table .profit span {
