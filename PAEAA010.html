@@ -390,7 +390,10 @@
                         <a data-id="2"><i class="icon icon-bag"></i>업무 선택</a>
                     </li>
                     <li>
-                        <a data-id="3"><i class="icon icon-search"></i>검색어 입력</a>
+                        <a class="tab-search disabled" data-id="3">
+                            <i class="icon icon-search"></i>
+                            <input type="text" placeholder="검색어 입력">
+                        </a>
                     </li>
                     <li>
                         <a data-id="4"><i class="icon icon-plus"></i>상세조건</a>
@@ -2634,12 +2637,14 @@
     <script>
         $(document).ready(function () {
             $(document).on('click', '.tabs a', function (e) {
-                e.preventDefault();
-                const targetTab = $(this).attr('data-id');
-                $('.tabs a').removeClass('active');
-                $(this).addClass('active');
-                $('.tab').removeClass('show-tab');
-                $('.tab[data-tab="' + targetTab + '"]').addClass('show-tab');
+                if (!$(this).hasClass('disabled')) {
+                    e.preventDefault();
+                    const targetTab = $(this).attr('data-id');
+                    $('.tabs a').removeClass('active');
+                    $(this).addClass('active');
+                    $('.tab').removeClass('show-tab');
+                    $('.tab[data-tab="' + targetTab + '"]').addClass('show-tab');
+                }
             });
         });
     </script>
