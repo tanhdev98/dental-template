@@ -1808,6 +1808,9 @@ h1.title {
     /* border: 1px solid #ddd; */
     border-radius: 10px;
     padding: 30px 22px;
+}
+
+#content-detail .content-frame:not(:nth-child(2)) {
     margin-top: 50px;
 }
 
@@ -7748,13 +7751,16 @@ h1.title {
 }
 
 #support-now .column-3 .wrap-icon-support {
-    background-color: #fbffaa;
     width: 100%;
     text-align: right;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.item.yellow .wrap-icon-support {
+    background-color: #fbffaa;
 }
 
 #support-now .column-3 .support {
