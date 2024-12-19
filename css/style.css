@@ -6762,6 +6762,7 @@ h1.title {
     font-weight: 400;
     border-bottom: 1px solid #333;
     padding-bottom: 22px;
+    padding-top: 30px;
 }
 
 /* member step */
@@ -6829,6 +6830,7 @@ h1.title {
 /* step 1 */
 #register-check h1 {
     font-size: 30px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -6846,7 +6848,7 @@ h1.title {
 
 #register-check ul.notes li {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     color: #555;
 }
 
@@ -6879,6 +6881,7 @@ h1.title {
     font-size: 16px;
     font-weight: 400;
     padding: 0 14px;
+    color: #bbb !important;
 }
 
 #register-check .form-select-container>.form-select-cus>.form-option-placeholder::after {
@@ -6930,7 +6933,7 @@ h1.title {
 
 #register-page #register-check .form-select-container .form-select-cus {
     border-radius: 5px;
-    border-color: #bbb;
+    border-color: #ddd;
 }
 
 #register-page #register-check .form-select-container .form-select-cus .form-option-wrapper {

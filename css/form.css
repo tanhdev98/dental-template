@@ -110,15 +110,30 @@ input[type='radio'] {
     gap: 7px;
 }
 
+#mmbrs.register-form .form-row .group-form {
+    width: 275px;
+    gap: 5px;
+}
+
+#mmbrs.register-form .form-row .group-form--gap3 {
+    gap: 2px;
+}
+
 .register-form .form-row .group-form input {
-    border: 1px solid #bbb;
+    border: 1px solid #ddd;
     border-radius: 5px;
     padding: 0 12px;
     width: 100%;
 }
 
+.register-form .form-row .group-form input::placeholder {
+    color: #bbb;
+}
+
 .register-form .form-row.form-phone .group-form input {
-    width: 85px;
+    display: inline-block;
+    width: 100%;
+    max-width: 85px;
     text-align: center;
 }
 
