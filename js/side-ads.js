@@ -9,7 +9,7 @@ $(document).ready(function () {
     var containerWidth = $(".container").width();
     var marginLeft = parseInt($(".container").css("margin-left"), 10);
     if ($(window).width() < 1920) {
-      return containerWidth + 10 + marginLeft;
+      return containerWidth + 30 + marginLeft;
     } else {
       return containerWidth + 175 + marginLeft;
     }

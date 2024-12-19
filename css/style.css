@@ -3332,7 +3332,7 @@ h1.title {
     }
 
     .container {
-        padding: 0;
+        padding: 0 20px;
         max-width: 100%;
     }
 
@@ -5671,7 +5671,7 @@ h1.title {
 }
 
 #search-content .results-text span {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #666;
 }
@@ -5687,6 +5687,9 @@ h1.title {
 /* Column left */
 #talent-news .table .column-left {
     padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #talent-news .table .column-left .wrap-title {
@@ -5701,7 +5704,7 @@ h1.title {
 }
 
 #talent-news .table .column-left .wrap-title+.wrap-link {
-    margin-top: 8px;
+    margin-top: 13px;
 }
 
 #talent-news .table .wrap-link+.wrap-position {
@@ -5734,6 +5737,7 @@ h1.title {
 #talent-news .table .column-right .wrap-meta {
     margin: 0 10px 9px 0;
     align-items: center;
+    justify-content: flex-end;
 }
 
 #talent-news .table .column-right .wrap-meta .icon-star {
@@ -5761,6 +5765,10 @@ h1.title {
 
 #talent-news .table .item-info .item-name {
     font-size: 18px;
+}
+
+#talent-news .wrap-pagination {
+    margin-bottom: 66px;
 }
 
 @media screen and (width <=1320px) {
@@ -5858,6 +5866,10 @@ h1.title {
     padding-top: 0;
 }
 
+#notices-news .wrap-pagination {
+    margin-bottom: 66px;
+}
+
 /* View news */
 #view-news .table>li>div {
     display: block;
@@ -5926,6 +5938,10 @@ h1.title {
 #view-news .content-table li .result-item .wrap-content .wrapMeta .wrap-date span.start-date+span.end-date:before {
     content: "~";
     margin-right: 3px;
+}
+
+#view-news .wrap-pagination {
+    margin-bottom: 66px;
 }
 
 /* Responsive */
@@ -7608,7 +7624,7 @@ h1.title {
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 0 30px;
     line-height: 30px;
 }
 
@@ -7671,12 +7687,12 @@ h1.title {
 }
 
 .wrap-table.table .wrap-row {
-    padding: 0 12px;
+    padding: 0 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 8px 0;
+    margin: 6px 0 10px;
 }
 
 .wrap-table .column-2 .wrap-title .item-title {
@@ -7686,11 +7702,13 @@ h1.title {
     color: #333;
     width: 100%;
     max-width: max-content;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    display: inline-block;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    padding: 0 12px;
+    padding: 0 6px;
 }
 
 .wrap-table .column-2 .wrap-title .wrap-meta {
@@ -9887,17 +9905,20 @@ h1.title {
 
 #recruitment-news .wrap-table>li>div {
     display: grid;
-    grid-template-columns: 18% calc(100% - 18% - 17% - 9%) 17% 9%;
+    grid-template-columns: 240px 1fr 220px 130px;
     padding: 29px 0 34px;
     width: 100%;
 }
 
 #recruitment-news .wrap-position {
-    padding: 0 12px;
+    padding: 0 8px;
 }
 
 #recruitment-news .wrap-table .item.yellow .clinic-name {
     font-size: 18px;
+}
+#recruitment-news .wrap-pagination {
+    margin-bottom: 66px;
 }
 
 .blank-row {

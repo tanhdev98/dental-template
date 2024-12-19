@@ -42,8 +42,8 @@
     display: block;
     background-color: #fff;
     font-weight: 300;
-    color: #666;
-    font-size: 18px;
+    color: #666 !important;
+    font-size: 20px;
     height: 44px;
     text-align: center;
     display: flex;

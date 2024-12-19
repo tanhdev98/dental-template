@@ -29,4 +29,39 @@ $(document).ready(function () {
     $(this).toggleClass("active");
     $(this).children(".sub-menu").slideToggle().toggleClass("active");
   });
+
+  // search tabs evenet
+  $('#searchTabs li a').click(function(e) {
+    e.preventDefault();
+    $('#searchTabs li a').removeClass('active');
+    $(this).addClass('active');
+
+    var elIndex = $(this).parent().index();
+    if (elIndex === 0) {
+      $('#recruitment-news').stop().show();
+      $('#talent-news').stop().show();
+      $('#notices-news').stop().show();
+      $('#view-news').stop().show();
+    } else if (elIndex === 1) {
+      $('#recruitment-news').stop().show();
+      $('#talent-news').stop().hide();
+      $('#notices-news').stop().hide();
+      $('#view-news').stop().hide();
+    } else if (elIndex === 2) {
+      $('#recruitment-news').stop().hide();
+      $('#talent-news').stop().show();
+      $('#notices-news').stop().hide();
+      $('#view-news').stop().hide();
+    } else if (elIndex === 3) {
+      $('#recruitment-news').stop().hide();
+      $('#talent-news').stop().hide();
+      $('#notices-news').stop().show();
+      $('#view-news').stop().hide();
+    } else if (elIndex === 4) {
+      $('#recruitment-news').stop().hide();
+      $('#talent-news').stop().hide();
+      $('#notices-news').stop().hide();
+      $('#view-news').stop().show();
+    }
+  });
 });
