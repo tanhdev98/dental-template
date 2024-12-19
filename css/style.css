@@ -7365,7 +7365,7 @@ h1.title {
 }
 
 #register-page .form-business-number input[maxlength="3"] {
-    width: 80px;
+    width: 76px;
 }
 
 #register-page .form-business-number input[maxlength="2"] {
@@ -7373,7 +7373,7 @@ h1.title {
 }
 
 #register-page .form-business-number input[maxlength="5"] {
-    width: 113px;
+    width: 100px;
 }
 
 .form-business-number label {
