@@ -944,7 +944,6 @@ ul li:hover .submenu,
 .auth .letter-notify .count-notify,
 #sub-header .header-wrap .header-right .letter-notify .count-notify {
     position: absolute;
-    padding: 0 6px;
     height: 15px;
     bottom: 0;
     right: -25%;
@@ -953,11 +952,16 @@ ul li:hover .submenu,
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 300;
     outline: 1px solid #fff;
     display: flex;
     align-items: center;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    white-space: nowrap;
 }
 
 .auth .profile-setting,

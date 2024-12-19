@@ -961,6 +961,7 @@ h1.title {
     color: #666;
     font-size: 18px;
     line-height: 27px;
+    font-weight: 400;
 }
 
 #status-support .top-link {
@@ -999,7 +1000,7 @@ h1.title {
 
 #status-support .table .name-clinic {
     font-size: 19px;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
 }
 
@@ -1052,7 +1053,7 @@ h1.title {
 
 #status-support .table .status-progress .status-text {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 20px;
     color: #111;
 }
@@ -1066,21 +1067,21 @@ h1.title {
 
 #status-support .table .view .view-status {
     font-size: 19px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 20px;
     color: #111;
 }
 
 #status-support .table .view .view-time {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 20px;
     color: #0068b7;
 }
 
 #status-support .table .application-result .application-result-status {
     font-size: 19px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 20px;
     color: #111;
 }
@@ -1135,6 +1136,12 @@ h1.title {
 #notification-tab .table>li>div:not(:last-child) {
     text-align: left;
     align-items: flex-start;
+    padding-right: 30px;
+}
+#notification-tab .table>li>div:first-child {
+    text-align: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
 #notification-tab .table .name-dental {
@@ -1142,11 +1149,20 @@ h1.title {
 }
 
 #notification-tab .table .wrap-title {
-    gap: 10px;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
 }
 
 #notification-tab .table .wrap-title .item-title {
+    flex: 1;
     font-size: 20px;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #notification-tab .table .wrap-title .wrap-meta {
@@ -1159,7 +1175,10 @@ h1.title {
 }
 
 #notification-tab .table .wrap-block-link {
-    margin-top: 8px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 4px;
 }
 
 #notification-tab .table .wrap-block-link a {
@@ -1179,6 +1198,8 @@ h1.title {
 #notification-tab .table .room-name {
     font-size: 17px;
     line-height: 16px;
+    margin-top: 16px;
+    margin-bottom: 10px;
 }
 
 #notification-tab .table .time {
