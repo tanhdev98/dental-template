@@ -6,3 +6,15 @@
     });
 
 })(jQuery);
+
+$(function() {
+    $('#loginTabs li a').click(function() {
+        var elIndex = $(this).parent().index();
+
+        $('#loginTabs li a').removeClass('active');
+        $(this).addClass('active');
+        
+        if (elIndex === 0) {
+        } else {}
+    })
+})
