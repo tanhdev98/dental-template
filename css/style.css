@@ -7213,7 +7213,7 @@ h1.title {
 
 #register-page .form .content-form input {
     font-size: 14px;
-    width: 170px;
+    width: 166px;
     height: 100%;
     border-radius: 5px;
     font-weight: 300;
@@ -7248,12 +7248,12 @@ h1.title {
 }
 
 #register-page .content-form .form-select-container.select-year {
-    width: 90px;
+    width: 100%;
 }
 
 #register-page .content-form .form-select-container.select-month,
 #register-page .content-form .form-select-container.select-day {
-    width: 75px;
+    width: 100%;
 }
 
 #register-page .content-form .form-select-container .form-select-cus {
@@ -7296,7 +7296,7 @@ h1.title {
 }
 
 #register-page .content-form.form-email input {
-    width: 130px;
+    width: 123px;
 }
 
 #register-page .content-form.form-email .select-phone {
@@ -7320,14 +7320,14 @@ h1.title {
 #register-page .form .form-address .content-form .address-code-group {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
     height: 100%;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
 }
 
 #register-page .form .form-address .content-form>input {
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
     width: 650px;
 }
 
@@ -7382,6 +7382,10 @@ h1.title {
 
 #register-page .form li.form-row-radio {
     margin-bottom: 11px;
+}
+
+#register-page .form li:last-child {
+    margin-top: 10px;
 }
 
 @media screen and (width <=1440px) {
