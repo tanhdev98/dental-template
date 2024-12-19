@@ -815,6 +815,8 @@ h1.title {
     font-size: 15px;
     line-height: 1.3;
     white-space: pre-line;
+    height: 430px;
+    overflow-y: auto;
 }
 
 #client-center-child .content-tab .print-item.active {
@@ -6058,6 +6060,11 @@ h1.title {
     text-align: center;
 }
 
+#auth .logo img {
+    display: inline-block;
+    width: 230px;
+}
+
 #back-to-home {
     text-align: right;
     margin-bottom: 20px;
@@ -6430,6 +6437,7 @@ h1.title {
     font-size: 18px;
     line-height: 26px;
     margin: 26px 0 34px 0;
+    font-weight: 700;
 }
 
 #after-successful-login button {
@@ -7272,9 +7280,18 @@ h1.title {
     width: 100%;
 }
 
+#register-page .content-form .form-select-container.select-year .form-option-placeholder {
+    color: #333 !important;
+}
+
 #register-page .content-form .form-select-container.select-month,
 #register-page .content-form .form-select-container.select-day {
     width: 100%;
+}
+
+#register-page .content-form .form-select-container.select-month .form-option-placeholder,
+#register-page .content-form .form-select-container.select-day .form-option-placeholder {
+    color: #333 !important;
 }
 
 #register-page .content-form .form-select-container .form-select-cus {
@@ -7646,7 +7663,7 @@ h1.title {
 } */
 
 .wrap-table .clinic-name {
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     width: 100%;
     height: 100%;
@@ -7726,7 +7743,7 @@ h1.title {
 .wrap-table .column-2 .wrap-title .item-title {
     margin-bottom: 0;
     font-size: 19px;
-    font-weight: 700;
+    font-weight: 500;
     color: #333;
     width: 100%;
     max-width: max-content;
@@ -7737,6 +7754,10 @@ h1.title {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0 6px;
+}
+
+.wrap-table .item.yellow .column-2 .wrap-title .item-title {
+    font-weight: 600;
 }
 
 .wrap-table .column-2 .wrap-title .wrap-meta {
