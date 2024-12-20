@@ -776,6 +776,10 @@ ul li:hover .submenu,
     height: 40px;
 }
 
+.form-select-container--ver2 {
+    width: 150px;
+}
+
 #mmbrs .form-select-container {
     width: 100%;
     max-width: 85px;
@@ -798,6 +802,10 @@ ul li:hover .submenu,
     height: 100%;
 }
 
+.form-select-container--ver2>.form-select-cus {
+    border: 1px solid #666;
+}
+
 .form-select-container.active>.form-select-cus {
     border-color: transparent;
 }
@@ -811,6 +819,10 @@ ul li:hover .submenu,
     height: 100%;
 }
 
+.form-select-container--ver2>.form-select-cus>.form-option-placeholder {
+    color: #666 !important;
+}
+
 .form-select-container>.form-select-cus>.form-option-placeholder::after {
     content: "";
     display: block;
@@ -822,6 +834,10 @@ ul li:hover .submenu,
     margin: auto;
     right: 14px;
     background: url('../images/arrow-down.png') no-repeat center / contain;
+}
+
+.form-select-container--ver2>.form-select-cus>.form-option-placeholder::after {
+    background: url('../images/arrow-down-black.png') no-repeat center / contain;
 }
 
 .form-select-container>.form-select-cus>.form-option-wrapper {
@@ -1103,7 +1119,7 @@ ul li:hover .submenu,
 
 #tabs-form .tabs-left ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-height: 190px;
     overflow: hidden;
     overflow-y: scroll;
@@ -1410,11 +1426,11 @@ ul li:hover .submenu,
     font-weight: 600;
     color: #666;
     height: 30px;
-    border-radius: 6px;
+    border-radius: 30px;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
-    padding: 0 10px 0 0;
+    padding: 0 10px;
     font-size: 22px;
     gap: 5px;
 }

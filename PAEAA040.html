@@ -328,7 +328,7 @@
         <div id="tabs-form">
             <div class="container">
                 <div class="top-form">
-                    <h2>지역별(근무 지역)</h2>
+                    <h2>통합</h2>
                     <button id="saved-conditions" data-type="popup"><span>저장한 조건 보기</span><i
                             class="icon icon-down"></i></button>
                     <div class="popup" for="saved-conditions">
@@ -701,7 +701,7 @@
             <div class="container">
                 <div class="wrap-table">
                     <div class="header-table-container">
-                        <div class="top-table">
+                        <div class="top-table top-table--mt45">
                             <div class="top-table-title">
                                 <h1>검색결과</h1>
                                 <span>Search Results</span>
@@ -709,7 +709,7 @@
                             <div class="wrap-dropDown">
                                 <div class="count-results blue">즉시지원만 보기</div>
                                 <div class="dropDowns">
-                                    <div class="form-select-container">
+                                    <div class="form-select-container form-select-container--ver2">
                                         <select>
                                             <option class="option-placeholder">업데이트순</option>
                                             <option value="">업데이트순 1</option>
@@ -718,7 +718,7 @@
                                             <option value="">업데이트순 4</option>
                                         </select>
                                     </div>
-                                    <div class="form-select-container">
+                                    <div class="form-select-container form-select-container--ver2">
                                         <select>
                                             <option class="option-placeholder">50개 씩 보기</option>
                                             <option value="">50개 씩 보기 1</option>
@@ -732,19 +732,16 @@
                         </div>
                         <div class="table table-header">
                             <div class="column column-1">사업장명</div>
-                            <div class="column column-2">
-                                <div>제목</div>
-                                <div class="column column-3">
-                                    <div>담당업무/위치</div>
-                                    <div>경력/형태</div>
-                                    <div>마감일</div>
+                            <div class="column column-3">
+                                <div>
+                                    <span class="text-bold">제목</span>
+                                    /담당업무/위치
                                 </div>
+                                <div>경력/형태/자격증/수정</div>
+                                <div>마감일</div>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="line-after-tab">
-                        <img src="./images/PAEAA030/banner-1.png" alt="Dental Job Banner">
-                    </a>
                     <ul class="table wrap-table table-yellow">
                         <li class="item yellow">
                             <div class="wrap-column">
@@ -755,19 +752,15 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">진료실/급여최고대우,워라벨확실,야간×,오버타임×,조기퇴근,주36시간,법정연차+a</h4>
+                                        <h4 class="item-title">강남역/주32-36시간(주4.5)/치과위생사 선생님 모십니다(보철과) (9시-5시)</h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 영등포구</li>
+                                        <li>서울 > 영등폭구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-9">9호선</div>
@@ -775,16 +768,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
-                                    <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
+                                    <div class="room-name">D-2</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/01(금)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -801,15 +805,11 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                             <div class="subway subway-orange">분당선</div>
@@ -817,16 +817,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-2" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-2" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-10</div>
-                                    <div class="time">~ 11/01(금)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/01(금)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -843,15 +854,11 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중구</li>
+                                        <li>서울 > 중구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-3">3호선</div>
                                             <div class="subway subway-turquoise">경의중앙</div>
@@ -859,15 +866,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-3" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-3" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name red">내일 마감</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date"></span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -880,19 +899,15 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">♥[주4.5일/35시간]♥최고대우♥ 진료실 선생님(4년차이상) 모십니다.</h4>
+                                        <h4 class="item-title">♥연,월차부여,인센티브,1인기숙사♥ 성실하고 친절한 진료실선생님 모십니다.(토</h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-7">7호선</div>
@@ -900,16 +915,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-4" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-4" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -926,31 +952,38 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강서구</li>
+                                        <li>서울 > 강서구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-5" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-5" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -967,32 +1000,39 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-7">7호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-2</div>
-                                    <div class="time">~ 11/24(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1009,19 +1049,14 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
-                                            <li><a href="#">기타</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중랑구</li>
+                                        <li>서울 > 중랑구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-7">7호선</div>
                                             <div class="subway subway-turquoise">경의중앙</div>
@@ -1029,16 +1064,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-7" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-7" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-6</div>
-                                    <div class="time">~ 10/28(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1055,34 +1101,41 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-1">1호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-8" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1099,18 +1152,14 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-red">신분당</div>
@@ -1118,16 +1167,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-9" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-10</div>
-                                    <div class="time">~ 11/01(금)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1144,18 +1204,14 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중구</li>
+                                        <li>서울 > 중구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-3">3호선</div>
                                             <div class="subway subway-6">6호선</div>
@@ -1163,15 +1219,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name red">내일 마감</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date"></span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1188,34 +1256,41 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-8">8호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1223,8 +1298,7 @@
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        ■파크에비뉴치과의원■
-                                        (강남구 언주역 도보1분)
+                                        ■파크에비뉴치과의원■ (강남구 언주역 도보1분)
                                     </div>
                                 </div>
                                 <div class="column start column-2">
@@ -1233,34 +1307,41 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강서구</li>
+                                        <li>서울 > 강서구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1273,42 +1354,50 @@
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        연세스위트치과병원<br>
-                                        서울본원
+                                        연세스위트치과병원<br>서울본원
                                     </div>
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title"><i class="icon icon-hot"></i>[서울중구/1인기숙사] 경력 치위생사 선생님을
-                                            모십니다.</h4>
+                                        <h4 class="item-title">
+                                            <i class="icon icon-hot"></i>
+                                            [서울중구/1인기숙사] 경력 치위생사 선생님을 모십니다.
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 영등포구</li>
+                                        <li>서울 > 영등포구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-1">1호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1316,26 +1405,23 @@
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        연세스위트치과병원<br>
-                                        서울본원
+                                        연세스위트치과병원<br>서울본원
                                     </div>
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title"><i class="icon icon-hot"></i>[서울중구/최고대우] 총괄 실장님을 모십니다.
+                                        <h4 class="item-title">
+                                            <i class="icon icon-hot"></i>
+                                            [서울중구/최고대우] 총괄 실장님을 모십니다.
                                         </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 영등포구</li>
+                                        <li>서울 > 영등포구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-red">신분당</div>
@@ -1343,16 +1429,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-10</div>
-                                    <div class="time">~ 11/01(금)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/01(금)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1365,35 +1462,44 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">(부천역) 교정선생님 구인합니다 / 주4일(35.5시간) 주5대우/ 신입-실수신입-실수신입-실수
+                                        <h4 class="item-title">
+                                            (부천역) 교정선생님 구인합니다 / 주4일(35.5시간) 주5대우/ 신입-실수신입-실수신입-실수
                                         </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중구</li>
+                                        <li>서울 > 중구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-1">1호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name red">내일 마감</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date"></span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1406,20 +1512,18 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title"><i class="icon icon-note"></i>☆★[단원구 선부동]진료실 1~7년차 선생님
-                                            구인합니다~ :) ☆★</h4>
+                                        <h4 class="item-title">
+                                            <i class="icon icon-note"></i>
+                                            ☆★[단원구 선부동]진료실 1~7년차 선생님 구인합니다~ :) ☆★
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-5">5호선</div>
                                             <div class="subway subway-2">2호선</div>
@@ -1427,16 +1531,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1449,19 +1564,17 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)</h4>
+                                        <h4 class="item-title">
+                                            ★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-9">9호선</div>
@@ -1469,16 +1582,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1491,20 +1615,18 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)</h4>
+                                        <h4 class="item-title">
+                                            ★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                             <div class="subway subway-orange">분당선</div>
@@ -1512,16 +1634,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-2</div>
-                                    <div class="time">~ 10/24(목)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 10/24(목)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1534,23 +1667,21 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">★★선정릉역 강남에이든치과★★ 실장님 모십니다. (9호선급행,역에역에역에역에)</h4>
+                                        <h4 class="item-title">
+                                            ★★선정릉역 강남에이든치과★★ 실장님 모십니다. (9호선급행,역에역에역에역에)
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
-                                            <li><a href="#">기타</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
+                                            <li><span>기타</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-3">3호선</div>
                                             <div class="subway subway-turquoise">경의중앙</div>
@@ -1558,16 +1689,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-6</div>
-                                    <div class="time">~ 10/28(월)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 10/28(월)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>

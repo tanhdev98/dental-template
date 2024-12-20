@@ -117,7 +117,7 @@
 }
 
 #support-now .table .wrap-position {
-    margin-left: 12px;
+    margin-left: 9px;
 }
 
 .table .wrap-position li {
@@ -220,9 +220,10 @@
 }
 
 .table .column-3 .wrap-link {
+    width: 100%;
     height: 20px;
     margin: 8px 0;
-    justify-content: start;
+    justify-content: end;
 }
 
 .table.table-three-column .column-3 {
@@ -318,6 +319,10 @@
     margin-bottom: 16px;
     align-items: center;
     margin-top: 27px;
+}
+
+.top-table--mt45 {
+    margin-top: 45px;
 }
 
 .top-table .top-table-title {
@@ -857,10 +862,10 @@
 .table-header {
     display: grid;
     background-color: #fafafa;
-    height: 70px;
+    height: 40px;
     border-top: 1px solid #999;
     border-bottom: 1px solid #ddd;
-    grid-template-columns: 230px 100%;
+    grid-template-columns: 240px calc(100% - 240px);
 }
 
 .table-header .column {
@@ -869,6 +874,7 @@
     justify-content: center;
     font-size: 18px;
     height: 100%;
+    font-weight: 500;
 }
 
 .wrap-table.table {

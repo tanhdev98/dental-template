@@ -176,7 +176,7 @@ li.dot::before {
 /* Wrap Tab Form Search Position*/
 .top-form {
     display: flex;
-    margin: 44px 0 29px;
+    margin: 60px 0 29px;
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
@@ -224,20 +224,48 @@ li.dot::before {
 }
 
 #tabs-form .tabs-select {
-    display: flex;
     border: 1px solid #333;
-    border-top: transparent;
+    border-top: 0;
+}
+
+#tabs-form .tabs-select--none {
+    border-top: 1px solid #333;
+    border-radius: 10px 10px 0 0;
+}
+
+#tabs-form .tabs-flex {
+    display: flex;
+}
+
+#tabs-form .bsns-srch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 25px;
+    border-top: 1px solid #b5b5b5;
+}
+
+#tabs-form .bsns-srch > input {
+    display: inline-block;
+    width: 100%;
+    max-width: 525px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 0 11px;
 }
 
 /* Start tabs-select-bag */
 #tabs-form .tabs-select-bag {
-    padding: 24px;
+    padding: 0px;
 }
 
 #tabs-form .tabs-select-bag ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 24px;
 }
 
 #tabs-form .tabs-select-bag ul li {
@@ -248,7 +276,7 @@ li.dot::before {
     align-items: center;
     width: 20%;
     padding: 17px 0;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 400;
     cursor: pointer;
 }
@@ -262,7 +290,7 @@ li.dot::before {
     border-bottom: unset;
 }
 
-#tabs-form .tabs-select-bag ul li:nth-child(n + 5) {
+#tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
     border-bottom: 1px solid #ddd;
 }
 
@@ -306,6 +334,7 @@ li.dot::before {
 
 .results-area li {
     display: flex;
+    gap: 3px;
     margin-right: 27px;
     align-items: center;
     cursor: pointer;
@@ -329,9 +358,19 @@ li.dot::before {
 } */
 
 .results-area li>span.icon-x {
-    width: 11px;
-    height: 11px;
+    width: 15px;
+    height: 15px;
     margin-left: 4px;
+}
+
+.results-area li>span.icon-x::before {
+    height: 1px;
+    background-color: #999;
+}
+
+.results-area li>span.icon-x::after {
+    height: 1px;
+    background-color: #999;
 }
 
 .tab-select-results button {

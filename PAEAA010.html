@@ -314,10 +314,10 @@
         <div id="tab-follow">
             <div class="container">
                 <ul class="tabs-no-border">
-                    <li><a href="#" class="active">통합</a></li>
+                    <li><a href="#">통합</a></li>
                     <li><a href="#">업무별</a></li>
                     <li><a href="#">자격증별</a></li>
-                    <li><a href="#">지역별</a></li>
+                    <li><a href="#" class="active">지역별</a></li>
                     <li><a href="#">역세권별</a></li>
                     <li><a href="#">채용형태별</a></li>
                     <li><a href="#">사업장별</a></li>
@@ -379,509 +379,191 @@
                         </div>
                     </div>
                 </div>
-                <ul class="tabs">
-                    <li>
-                        <a class="active" data-id="1"><i class="icon icon-location"></i>지역 선택</a>
-                    </li>
-                    <li>
-                        <a data-id="2"><i class="icon icon-bag"></i>업무 선택</a>
-                    </li>
-                    <li>
-                        <a data-id="3"><i class="icon icon-search"></i>검색어 입력</a>
-                    </li>
-                    <li>
-                        <a data-id="4"><i class="icon icon-plus"></i>상세조건</a>
-                    </li>
-                </ul>
 
-                <div class="tab tabs-select show-tab" data-tab="1">
-                    <div class="tabs-left">
-                        <ul>
-                            <li><span class="city-name"><span>전체</span></span> (00,000)</li>
-                            <li class="active"><span class="city-name">서울</span> (00,000)</li>
-                            <li><span class="city-name">경기</span> (00,000)</li>
-                            <li><span class="city-name">인천</span> (00,000)</li>
-                            <li><span class="city-name">강원</span> (00,000)</li>
-                            <li><span class="city-name">대전</span> (00,000)</li>
-                            <li><span class="city-name">세종</span> (00,000)</li>
-                            <li><span class="city-name">충남</span> (00,000)</li>
-                            <li><span class="city-name">충북</span> (00,000)</li>
-                            <li><span class="city-name">부산</span> (00,000)</li>
-                            <li><span class="city-name">대구</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                            <li><span class="city-name">울산</span> (00,000)</li>
-                        </ul>
-                    </div>
-                    <div class="tabs-right">
-                        <form action="">
-                            <p class="notification">지역은 최대 <span>10</span>개까지 선택 가능합니다.</p>
+                <div class="tab tabs-select show-tab tabs-select--none" data-tab="1">
+                    <div class="tabs-flex">
+                        <div class="tabs-left">
                             <ul>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox1"
-                                        id="checkbox1"><span></span><label for="checkbox1"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox2"
-                                        id="checkbox2"><span></span><label for="checkbox2"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox3"
-                                        id="checkbox3"><span></span><label for="checkbox3"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox4"
-                                        id="checkbox4"><span></span><label for="checkbox4"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox5"
-                                        id="checkbox5"><span></span><label for="checkbox5"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox6"
-                                        id="checkbox6"><span></span><label for="checkbox6"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox7"
-                                        id="checkbox7"><span></span><label for="checkbox7"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox8"
-                                        id="checkbox8"><span></span><label for="checkbox8"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox9"
-                                        id="checkbox9"><span></span><label for="checkbox9"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox10"
-                                        id="checkbox10"><span></span><label for="checkbox10"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox11"
-                                        id="checkbox11"><span></span><label for="checkbox11"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox12"
-                                        id="checkbox12"><span></span><label for="checkbox12"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox13"
-                                        id="checkbox13"><span></span><label for="checkbox13"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox14"
-                                        id="checkbox14"><span></span><label for="checkbox14"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox15"
-                                        id="checkbox15"><span></span><label for="checkbox15"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox16"
-                                        id="checkbox16"><span></span><label for="checkbox16"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox17"
-                                        id="checkbox17"><span></span><label for="checkbox17"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox18"
-                                        id="checkbox18"><span></span><label for="checkbox18"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox19"
-                                        id="checkbox19"><span></span><label for="checkbox19"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox20"
-                                        id="checkbox20"><span></span><label for="checkbox20"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox21"
-                                        id="checkbox21"><span></span><label for="checkbox21"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox22"
-                                        id="checkbox22"><span></span><label for="checkbox22"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox23"
-                                        id="checkbox23"><span></span><label for="checkbox23"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox24"
-                                        id="checkbox24"><span></span><label for="checkbox24"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox25"
-                                        id="checkbox25"><span></span><label for="checkbox25"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox26"
-                                        id="checkbox26"><span></span><label for="checkbox26"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox27"
-                                        id="checkbox27"><span></span><label for="checkbox27"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox28"
-                                        id="checkbox28"><span></span><label for="checkbox28"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox29"
-                                        id="checkbox29"><span></span><label for="checkbox29"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox30"
-                                        id="checkbox30"><span></span><label for="checkbox30"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox31"
-                                        id="checkbox31"><span></span><label for="checkbox31"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox32"
-                                        id="checkbox32"><span></span><label for="checkbox32"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox33"
-                                        id="checkbox33"><span></span><label for="checkbox33"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox34"
-                                        id="checkbox34"><span></span><label for="checkbox34"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox35"
-                                        id="checkbox35"><span></span><label for="checkbox35"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox36"
-                                        id="checkbox36"><span></span><label for="checkbox36"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox37"
-                                        id="checkbox37"><span></span><label for="checkbox37"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox38"
-                                        id="checkbox38"><span></span><label for="checkbox38"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox39"
-                                        id="checkbox39"><span></span><label for="checkbox39"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox40"
-                                        id="checkbox40"><span></span><label for="checkbox40"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox41"
-                                        id="checkbox41"><span></span><label for="checkbox41"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox42"
-                                        id="checkbox42"><span></span><label for="checkbox42"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox43"
-                                        id="checkbox43"><span></span><label for="checkbox43"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox44"
-                                        id="checkbox44"><span></span><label for="checkbox44"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox45"
-                                        id="checkbox45"><span></span><label for="checkbox45"><span>강남구</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox46"
-                                        id="checkbox46"><span></span><label for="checkbox46"><span>전체</span> (00,000)
-                                    </label></li>
-                                <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox47"
-                                        id="checkbox47"><span></span><label for="checkbox47"><span>강남구</span> (00,000)
-                                    </label></li>
+                                <li><span class="city-name"><span>전체</span></span></li>
+                                <li class="active"><span class="city-name">서울</span></li>
+                                <li><span class="city-name">경기</span></li>
+                                <li><span class="city-name">인천</span></li>
+                                <li><span class="city-name">대전</span></li>
+                                <li><span class="city-name">세종</span></li>
+                                <li><span class="city-name">충남</span></li>
+                                <li><span class="city-name">충북</span></li>
+                                <li><span class="city-name">광주</span></li>
+                                <li><span class="city-name">전남</span></li>
+                                <li><span class="city-name">전북</span></li>
+                                <li><span class="city-name">대구</span></li>
+                                <li><span class="city-name">경북</span></li>
+                                <li><span class="city-name">부산</span></li>
+                                <li><span class="city-name">울산</span></li>
+                                <li><span class="city-name">경남</span></li>
+                                <li><span class="city-name">제주</span></li>
+                                <li><span class="city-name">강원</span></li>
                             </ul>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="tab tabs-select tabs-select-bag" data-tab="2">
-                    <ul>
-                        <li>전체</li>
-                        <li class="active">진료실</li>
-                        <li>데스크 </li>
-                        <li>상담</li>
-                        <li>보험청구</li>
-                        <li>기타</li>
-                        <li>치과내기공실</li>
-                        <li>치과기공소</li>
-                        <li>관리 및 경영지원</li>
-                        <li class="isEmpty"></li>
-                    </ul>
-                </div>
-
-                <div class="tab tabs-select tabs-select-bag" data-tab="3">
-                    <ul>
-                        <li>전체</li>
-                        <li class="active">진료실</li>
-                        <li>데스크 </li>
-                        <li>상담</li>
-                        <li>보험청구</li>
-                        <li>기타</li>
-                        <li>치과내기공실</li>
-                        <li>치과기공소</li>
-                        <li>관리 및 경영지원</li>
-                        <li class="isEmpty"></li>
-                    </ul>
-                </div>
-
-                <div class="tab tabs-content tabs-select-plus" data-tab="4">
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">자격증</div>
-                        <ul class="tab-check-box">
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox1" id="checkbox1"><span></span><label
-                                    for="checkbox1"><span>치과위생사</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox2" id="checkbox2"><span></span><label
-                                    for="checkbox2"><span>치과기공사</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox3" id="checkbox3"><span></span><label
-                                    for="checkbox3"><span>간호조무사</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox4" id="checkbox4"><span></span><label
-                                    for="checkbox4"><span>보험청구사</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox5" id="checkbox5"><span></span><label
-                                    for="checkbox5"><span>코디네이터</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox6" id="checkbox6"><span></span><label
-                                    for="checkbox6"><span>의료관광 코디네이터</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox7" id="checkbox7"><span></span><label
-                                    for="checkbox7"><span>무관</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox8" id="checkbox8"><span></span><label
-                                    for="checkbox8"><span>기타</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">근무형태</div>
-                        <ul class="tab-check-box">
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox9" id="checkbox9"><span></span><label
-                                    for="checkbox9"><span>정규직</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox10" id="checkbox10"><span></span><label
-                                    for="checkbox10"><span>계약직</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox11" id="checkbox11"><span></span><label
-                                    for="checkbox11"><span>아르바이트</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">직급</div>
-                        <ul class="tab-check-box">
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox12" id="checkbox12"><span></span><label
-                                    for="checkbox12"><span>팀장</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox13" id="checkbox13"><span></span><label
-                                    for="checkbox13"><span>실장</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox14" id="checkbox14"><span></span><label
-                                    for="checkbox14"><span>스탭</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox15" id="checkbox15"><span></span><label
-                                    for="checkbox15"><span>무관</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">급여</div>
-                        <ul class="tab-check-box">
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox16" id="checkbox16"><span></span><label
-                                    for="checkbox16"><span>협의 후 결정</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox17" id="checkbox17"><span></span><label
-                                    for="checkbox17"><span>내규에 따름</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox18" id="checkbox18"><span></span><label
-                                    for="checkbox18"><span>연봉제</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox19" id="checkbox19"><span></span><label
-                                    for="checkbox19"><span>기타</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">경력</div>
-                        <div class="group">
-                            <fieldset id="radio-group1" class="radio-group">
-                                <div class="item-radioBox">
-                                    <input type="radio" name="options" value="option1" id="radio1" checked>
-                                    <span></span>
-                                    <label for="radio1"><span>신입</span></label>
-                                </div>
-                                <div class="item-radioBox">
-                                    <input type="radio" name="options" value="option1" id="radio2">
-                                    <span></span>
-                                    <label for="radio2"><span>경력</span></label>
-                                </div>
-                            </fieldset>
-                            <div class="form-select-container">
-                                <select>
-                                    <option class="option-placeholder">경력선택</option>
-                                    <option value="#">경력선택</option>
-                                    <option value="#">경력선택</option>
-                                    <option value="#">경력선택</option>
-                                    <option value="#">경력선택</option>
-                                </select>
-                            </div>
+                        </div>
+                        <div class="tabs-right">
+                            <form action="">
+                                <p class="notification">지역은 최대 <span>10</span>개까지 선택 가능합니다.</p>
+                                <ul>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox1"
+                                            id="checkbox1"><span></span><label for="checkbox1"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox2"
+                                            id="checkbox2"><span></span><label for="checkbox2"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox3"
+                                            id="checkbox3"><span></span><label for="checkbox3"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox4"
+                                            id="checkbox4"><span></span><label for="checkbox4"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox5"
+                                            id="checkbox5"><span></span><label for="checkbox5"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox6"
+                                            id="checkbox6"><span></span><label for="checkbox6"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox7"
+                                            id="checkbox7"><span></span><label for="checkbox7"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox8"
+                                            id="checkbox8"><span></span><label for="checkbox8"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox9"
+                                            id="checkbox9"><span></span><label for="checkbox9"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox10"
+                                            id="checkbox10"><span></span><label for="checkbox10"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox11"
+                                            id="checkbox11"><span></span><label for="checkbox11"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox12"
+                                            id="checkbox12"><span></span><label for="checkbox12"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox13"
+                                            id="checkbox13"><span></span><label for="checkbox13"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox14"
+                                            id="checkbox14"><span></span><label for="checkbox14"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox15"
+                                            id="checkbox15"><span></span><label for="checkbox15"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox16"
+                                            id="checkbox16"><span></span><label for="checkbox16"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox17"
+                                            id="checkbox17"><span></span><label for="checkbox17"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox18"
+                                            id="checkbox18"><span></span><label for="checkbox18"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox19"
+                                            id="checkbox19"><span></span><label for="checkbox19"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox20"
+                                            id="checkbox20"><span></span><label for="checkbox20"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox21"
+                                            id="checkbox21"><span></span><label for="checkbox21"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox22"
+                                            id="checkbox22"><span></span><label for="checkbox22"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox23"
+                                            id="checkbox23"><span></span><label for="checkbox23"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox24"
+                                            id="checkbox24"><span></span><label for="checkbox24"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox25"
+                                            id="checkbox25"><span></span><label for="checkbox25"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox26"
+                                            id="checkbox26"><span></span><label for="checkbox26"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox27"
+                                            id="checkbox27"><span></span><label for="checkbox27"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox28"
+                                            id="checkbox28"><span></span><label for="checkbox28"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox29"
+                                            id="checkbox29"><span></span><label for="checkbox29"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox30"
+                                            id="checkbox30"><span></span><label for="checkbox30"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox31"
+                                            id="checkbox31"><span></span><label for="checkbox31"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox32"
+                                            id="checkbox32"><span></span><label for="checkbox32"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox33"
+                                            id="checkbox33"><span></span><label for="checkbox33"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox34"
+                                            id="checkbox34"><span></span><label for="checkbox34"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox35"
+                                            id="checkbox35"><span></span><label for="checkbox35"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox36"
+                                            id="checkbox36"><span></span><label for="checkbox36"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox37"
+                                            id="checkbox37"><span></span><label for="checkbox37"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox38"
+                                            id="checkbox38"><span></span><label for="checkbox38"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox39"
+                                            id="checkbox39"><span></span><label for="checkbox39"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox40"
+                                            id="checkbox40"><span></span><label for="checkbox40"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox41"
+                                            id="checkbox41"><span></span><label for="checkbox41"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox42"
+                                            id="checkbox42"><span></span><label for="checkbox42"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox43"
+                                            id="checkbox43"><span></span><label for="checkbox43"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox44"
+                                            id="checkbox44"><span></span><label for="checkbox44"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox45"
+                                            id="checkbox45"><span></span><label for="checkbox45"><span>강남구</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox46"
+                                            id="checkbox46"><span></span><label for="checkbox46"><span>전체</span>
+                                        </label></li>
+                                    <li class="item-checkBox"><input type="checkbox" class="checkbox checkbox47"
+                                            id="checkbox47"><span></span><label for="checkbox47"><span>강남구</span>
+                                        </label></li>
+                                </ul>
+                            </form>
                         </div>
                     </div>
-                    <div class="wrap-select-plus-child benefit">
-                        <div class="title-detailed">복리후생</div>
-                        <ul class="tab-check-box">
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox20" id="checkbox20"><span></span><label
-                                    for="checkbox20"><span>기숙사지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox21" id="checkbox21"><span></span><label
-                                    for="checkbox21"><span>식대지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox22" id="checkbox22"><span></span><label
-                                    for="checkbox22"><span>경조사지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox23" id="checkbox23"><span></span><label
-                                    for="checkbox23"><span>자기계발비지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox24" id="checkbox24"><span></span><label
-                                    for="checkbox24"><span>연월차지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox25" id="checkbox25"><span></span><label
-                                    for="checkbox25"><span>휴가비지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox26" id="checkbox26"><span></span><label
-                                    for="checkbox26"><span>4대보험지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox27" id="checkbox27"><span></span><label
-                                    for="checkbox27"><span>연봉제</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox28" id="checkbox28"><span></span><label
-                                    for="checkbox28"><span>인센티브제</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox29" id="checkbox29"><span></span><label
-                                    for="checkbox29"><span>퇴직금지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox30" id="checkbox30"><span></span><label
-                                    for="checkbox30"><span>야근수당지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox31" id="checkbox31"><span></span><label
-                                    for="checkbox31"><span>기타</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">근무요일</div>
-                        <ul class="tab-check-box">
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox32" id="checkbox32"><span></span><label
-                                    for="checkbox32"><span>월~금(주5일)</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox33" id="checkbox33"><span></span><label
-                                    for="checkbox33"><span>월~금(주40시간)</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox34" id="checkbox34"><span></span><label
-                                    for="checkbox34"><span>월~토(토요일격주휴무)</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox35" id="checkbox35"><span></span><label
-                                    for="checkbox35"><span>월~토</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox36" id="checkbox36"><span></span><label
-                                    for="checkbox36"><span>직접입력</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">접수방법</div>
-                        <ul class="tab-check-box">
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox37" id="checkbox37"><span></span><label
-                                    for="checkbox37"><span>온라인 즉시지원</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox38" id="checkbox38"><span></span><label
-                                    for="checkbox38"><span>전화접수</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox39" id="checkbox39"><span></span><label
-                                    for="checkbox39"><span>이메일접수</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox40" id="checkbox40"><span></span><label
-                                    for="checkbox40"><span>FAX접수</span>
-                                </label>
-                            </li>
-                            <li class="item-checkBox">
-                                <input type="checkbox" class="checkbox checkbox41" id="checkbox41"><span></span><label
-                                    for="checkbox41"><span>우편접수</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="wrap-select-plus-child">
-                        <div class="title-detailed">채용기간</div>
-                        <div class="group-datepicker">
-                            <div class="datepicker-child">
-                                <input type="date" id="start-date" name="start-date" />
-                                <i class="icon icon-date" id="start-date-icon"></i>
-                            </div>
-                            <span>~</span>
-                            <div class="datepicker-child">
-                                <input type="date" id="end-date">
-                                <i class="icon icon-date" id="end-date-icon"></i>
-                            </div>
+                    <div class="bsns-srch">
+                        <div class="form-select-container">
+                            <select>
+                                <option class="option-placeholder">사업자명</option>
+                                <option value="">업데이트순 1</option>
+                                <option value="">업데이트순 2</option>
+                                <option value="">업데이트순 3</option>
+                                <option value="">업데이트순 4</option>
+                            </select>
                         </div>
+                        <input type="text">
                     </div>
                 </div>
 
@@ -889,11 +571,13 @@
                     <ul class="results-area">
                         <li>
                             <div class="item-search">서울</div>
+                            &gt;
                             <div class="item-search">강북구</div>
                             <span class="item-remove icon icon-x"></span>
                         </li>
                         <li>
                             <div class="item-search">서울</div>
+                            &gt;
                             <div class="item-search">강동구</div>
                             <span class="item-remove icon icon-x"></span>
                         </li>
@@ -911,7 +595,7 @@
             <div class="container">
                 <div class="wrap-table">
                     <div class="header-table-container">
-                        <div class="top-table">
+                        <div class="top-table top-table--mt45">
                             <div class="top-table-title">
                                 <h1>검색결과</h1>
                                 <span>Search Results</span>
@@ -919,7 +603,7 @@
                             <div class="wrap-dropDown">
                                 <div class="count-results blue">즉시지원만 보기</div>
                                 <div class="dropDowns">
-                                    <div class="form-select-container">
+                                    <div class="form-select-container form-select-container--ver2">
                                         <select>
                                             <option class="option-placeholder">업데이트순</option>
                                             <option value="">업데이트순 1</option>
@@ -928,7 +612,7 @@
                                             <option value="">업데이트순 4</option>
                                         </select>
                                     </div>
-                                    <div class="form-select-container">
+                                    <div class="form-select-container form-select-container--ver2">
                                         <select>
                                             <option class="option-placeholder">50개 씩 보기</option>
                                             <option value="">50개 씩 보기 1</option>
@@ -942,19 +626,16 @@
                         </div>
                         <div class="table table-header">
                             <div class="column column-1">사업장명</div>
-                            <div class="column column-2">
-                                <div>제목</div>
-                                <div class="column column-3">
-                                    <div>담당업무/위치</div>
-                                    <div>경력/형태</div>
-                                    <div>마감일</div>
+                            <div class="column column-3">
+                                <div>
+                                    <span class="text-bold">제목</span>
+                                    /담당업무/위치
                                 </div>
+                                <div>경력/형태/자격증/수정</div>
+                                <div>마감일</div>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="line-after-tab">
-                        <img src="./images/PAEAA030/banner-1.png" alt="Dental Job Banner">
-                    </a>
                     <ul class="table wrap-table table-yellow">
                         <li class="item yellow">
                             <div class="wrap-column">
@@ -965,19 +646,15 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">진료실/급여최고대우,워라벨확실,야간×,오버타임×,조기퇴근,주36시간,법정연차+a</h4>
+                                        <h4 class="item-title">강남역/주32-36시간(주4.5)/치과위생사 선생님 모십니다(보철과) (9시-5시)</h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 영등포구</li>
+                                        <li>서울 > 영등폭구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-9">9호선</div>
@@ -985,16 +662,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
-                                    <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
+                                    <div class="room-name">D-2</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/01(금)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1011,15 +699,11 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                             <div class="subway subway-orange">분당선</div>
@@ -1027,16 +711,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-2" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-2" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-10</div>
-                                    <div class="time">~ 11/01(금)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/01(금)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1053,15 +748,11 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중구</li>
+                                        <li>서울 > 중구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-3">3호선</div>
                                             <div class="subway subway-turquoise">경의중앙</div>
@@ -1069,15 +760,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-3" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-3" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name red">내일 마감</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date"></span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1090,19 +793,15 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">♥[주4.5일/35시간]♥최고대우♥ 진료실 선생님(4년차이상) 모십니다.</h4>
+                                        <h4 class="item-title">♥연,월차부여,인센티브,1인기숙사♥ 성실하고 친절한 진료실선생님 모십니다.(토</h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-7">7호선</div>
@@ -1110,16 +809,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-4" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-4" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1136,31 +846,38 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강서구</li>
+                                        <li>서울 > 강서구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-5" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-5" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1177,32 +894,39 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-7">7호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-2</div>
-                                    <div class="time">~ 11/24(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1219,19 +943,14 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
-                                            <li><a href="#">기타</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중랑구</li>
+                                        <li>서울 > 중랑구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-7">7호선</div>
                                             <div class="subway subway-turquoise">경의중앙</div>
@@ -1239,16 +958,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-7" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-7" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-6</div>
-                                    <div class="time">~ 10/28(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1265,34 +995,41 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-1">1호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-8" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1309,18 +1046,14 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강남구</li>
+                                        <li>서울 > 강남구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-red">신분당</div>
@@ -1328,16 +1061,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-9" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-10</div>
-                                    <div class="time">~ 11/01(금)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1354,18 +1098,14 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중구</li>
+                                        <li>서울 > 중구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-3">3호선</div>
                                             <div class="subway subway-6">6호선</div>
@@ -1373,15 +1113,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name red">내일 마감</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date"></span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1398,34 +1150,41 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-8">8호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1433,8 +1192,7 @@
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        ■파크에비뉴치과의원■
-                                        (강남구 언주역 도보1분)
+                                        ■파크에비뉴치과의원■ (강남구 언주역 도보1분)
                                     </div>
                                 </div>
                                 <div class="column start column-2">
@@ -1443,34 +1201,41 @@
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 강서구</li>
+                                        <li>서울 > 강서구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1483,42 +1248,50 @@
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        연세스위트치과병원<br>
-                                        서울본원
+                                        연세스위트치과병원<br>서울본원
                                     </div>
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title"><i class="icon icon-hot"></i>[서울중구/1인기숙사] 경력 치위생사 선생님을
-                                            모십니다.</h4>
+                                        <h4 class="item-title">
+                                            <i class="icon icon-hot"></i>
+                                            [서울중구/1인기숙사] 경력 치위생사 선생님을 모십니다.
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 영등포구</li>
+                                        <li>서울 > 영등포구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-1">1호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1526,26 +1299,23 @@
                             <div class="wrap-column">
                                 <div class="column column-1">
                                     <div class="clinic-name">
-                                        연세스위트치과병원<br>
-                                        서울본원
+                                        연세스위트치과병원<br>서울본원
                                     </div>
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title"><i class="icon icon-hot"></i>[서울중구/최고대우] 총괄 실장님을 모십니다.
+                                        <h4 class="item-title">
+                                            <i class="icon icon-hot"></i>
+                                            [서울중구/최고대우] 총괄 실장님을 모십니다.
                                         </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 영등포구</li>
+                                        <li>서울 > 영등포구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-red">신분당</div>
@@ -1553,16 +1323,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-10</div>
-                                    <div class="time">~ 11/01(금)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/01(금)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1575,35 +1356,44 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">(부천역) 교정선생님 구인합니다 / 주4일(35.5시간) 주5대우/ 신입-실수신입-실수신입-실수
+                                        <h4 class="item-title">
+                                            (부천역) 교정선생님 구인합니다 / 주4일(35.5시간) 주5대우/ 신입-실수신입-실수신입-실수
                                         </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 중구</li>
+                                        <li>서울 > 중구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-1">1호선</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name red">내일 마감</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date"></span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1616,20 +1406,18 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title"><i class="icon icon-note"></i>☆★[단원구 선부동]진료실 1~7년차 선생님
-                                            구인합니다~ :) ☆★</h4>
+                                        <h4 class="item-title">
+                                            <i class="icon icon-note"></i>
+                                            ☆★[단원구 선부동]진료실 1~7년차 선생님 구인합니다~ :) ☆★
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-5">5호선</div>
                                             <div class="subway subway-2">2호선</div>
@@ -1637,16 +1425,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1659,19 +1458,17 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)</h4>
+                                        <h4 class="item-title">
+                                            ★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
+                                            <li><span>진료실</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-2">2호선</div>
                                             <div class="subway subway-9">9호선</div>
@@ -1679,16 +1476,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-12</div>
-                                    <div class="time">~ 11/03(일)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 11/03(일)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1701,20 +1509,18 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)</h4>
+                                        <h4 class="item-title">
+                                            ★검단신도시 예온치과병원 진료실/교정/기공실/코디★(저년차도 가능)
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-9">9호선</div>
                                             <div class="subway subway-orange">분당선</div>
@@ -1722,16 +1528,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-2</div>
-                                    <div class="time">~ 10/24(목)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 10/24(목)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1744,23 +1561,21 @@
                                 </div>
                                 <div class="column start column-2">
                                     <div class="wrap-title">
-                                        <h4 class="item-title">★★선정릉역 강남에이든치과★★ 실장님 모십니다. (9호선급행,역에역에역에역에)</h4>
+                                        <h4 class="item-title">
+                                            ★★선정릉역 강남에이든치과★★ 실장님 모십니다. (9호선급행,역에역에역에역에)
+                                        </h4>
                                     </div>
                                     <div class="wrap-row">
                                         <ul class="wrap-link">
-                                            <li><a href="#">진료실</a></li>
-                                            <li><a href="#">데스크</a></li>
-                                            <li><a href="#">상담</a></li>
-                                            <li><a href="#">보험청구</a></li>
-                                            <li><a href="#">기타</a></li>
+                                            <li><span>진료실</span></li>
+                                            <li><span>데스크</span></li>
+                                            <li><span>상담</span></li>
+                                            <li><span>보험청구</span></li>
+                                            <li><span>기타</span></li>
                                         </ul>
-                                        <div class="wrap-meta">
-                                            <a href="#" class="icon icon-star"></a>
-                                            <a href="#" class="icon icon-blank"></a>
-                                        </div>
                                     </div>
                                     <ul class="wrap-position">
-                                        <li>서울시 > 관악구</li>
+                                        <li>서울 > 관악구</li>
                                         <li class="subway-tag">
                                             <div class="subway subway-3">3호선</div>
                                             <div class="subway subway-turquoise">경의중앙</div>
@@ -1768,16 +1583,27 @@
                                     </ul>
                                 </div>
                                 <div class="column column-3">
+                                    <div class="blank-row">
+                                        <button class="support" id="support-6" data-type="popup">즉시지원</button>
+                                    </div>
                                     <ul class="wrap-link">
-                                        <li><a href="#">무관</a></li>
-                                        <li><a href="#">정규직</a></li>
-                                        <li><a href="#">치과위생사</a></li>
+                                        <li><span>무관</span></li>
+                                        <li><span>정규직</span></li>
+                                        <li><span>치과위생사</span></li>
                                     </ul>
+                                    <div class="blank-row">
+                                        <span class="text-update">update</span>
+                                    </div>
                                 </div>
                                 <div class="column column-4">
-                                    <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                    <div class="wrap-meta">
+                                        <a href="#" class="icon icon-star"></a>
+                                        <a href="#" class="icon icon-blank"></a>
+                                    </div>
                                     <div class="room-name">D-6</div>
-                                    <div class="time">~ 10/28(월)</div>
+                                    <div class="blank-row blank-row--center">
+                                        <span class="text-dday-date">~ 10/28(월)</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
