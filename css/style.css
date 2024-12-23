@@ -7817,6 +7817,12 @@ h1.title {
     white-space: nowrap;
 }
 
+#content-table .table.table-has-more-infomation .column-left .wrap-title .item-title {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
 #support-now .table-header .column.column-2 {
     flex-direction: column;
     width: calc(100% - 230px);
@@ -8284,6 +8290,11 @@ h1.title {
     padding-left: 35px;
     text-align: left;
     align-items: start;
+}
+
+#content-table .table-results2 {
+    grid-template-columns: calc(100% - 27.15% - 13.88%) 27.15% 13.88%;
+    height: 40px;
 }
 
 #content-table .table .wrap-position li::after {

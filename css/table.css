@@ -363,6 +363,10 @@
     padding-left: 25px;
 }
 
+.table.table-has-more-infomation .column-left {
+    align-self: end;
+}
+
 .table .column-left .wrap-title {
     display: inline-flex;
     justify-content: center;
@@ -372,6 +376,12 @@
 
 .table .column-left .wrap-title+.wrap-link {
     margin-top: 5px;
+}
+
+.table.table-has-more-infomation .column-left .wrap-title+.wrap-link {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #666;
 }
 
 .table .column-left .wrap-title .item-title {
@@ -437,6 +447,11 @@
     padding-left: 35px;
 }
 
+.table.table-has-more-infomation .column-center {
+    font-size: 15px;
+    color: #666;
+}
+
 .table .column-center .wrap-position li {
     font-size: 15px;
     color: #666;
@@ -452,17 +467,13 @@
 }
 
 .column-right .date {
-    font-size: 13px;
+    font-size: 14px;
     color: #999;
 }
 
 .column-right .date.update {
-    font-size: 16px;
+    font-size: 14px;
     color: #80b156;
-    padding: 0 7px;
-    border: 1px solid #80b156;
-    border-radius: 15px;
-    height: 20px;
 }
 
 .column-right .price {
@@ -529,12 +540,10 @@
 /* More Information */
 .more-infomation {
     display: flex;
-    height: 50px;
     align-items: center;
-    border-top: 1px solid #ddd;
-    background-color: #f9f9f9;
-    margin-top: 30px;
+    margin-top: 15px;
     padding-left: 25px;
+    padding-bottom: 30px;
 }
 
 .more-infomation li {
@@ -553,7 +562,7 @@
     margin-bottom: 0;
     font-weight: 600;
     white-space: nowrap;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .more-infomation li .title-info:after {
@@ -565,16 +574,8 @@
     font-weight: 300;
 }
 
-.table-has-more-infomation>li:first-child {
-    border-top: 1px solid #333;
-}
-
 .table-has-more-infomation>li {
-    border-bottom-color: #333;
-}
-
-.table-has-more-infomation>li:last-child {
-    border-bottom-color: #333;
+    border-bottom: 1px solid #ddd;
 }
 
 
@@ -875,6 +876,19 @@
     font-size: 18px;
     height: 100%;
     font-weight: 500;
+}
+
+#content-table .table-results2 .column {
+    font-size: 16px;
+    color: #666;
+}
+
+#content-table .table-results2 .column.column-1 {
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 150px;
+    font-size: 18px;
+    color: #333;
 }
 
 .wrap-table.table {
