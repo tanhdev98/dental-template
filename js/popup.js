@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.popup-close', function () {
-        $(this).parent().removeClass('active');
+        $(this).parents('.popup').removeClass('active');
     });
 
     $(document).on('click', '.group-radio label', function () {
