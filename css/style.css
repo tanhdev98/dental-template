@@ -2710,8 +2710,8 @@ h1.title {
 }
 
 .list-grid .list-item .item-content .item-logo img {
-    max-width: 100%;
-    width: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -2730,6 +2730,7 @@ h1.title {
     position: relative;
     z-index: 1;
     flex: 1;
+    letter-spacing: -0.5px;
 }
 
 .list-grid .list-item .item-content .item-tag {
