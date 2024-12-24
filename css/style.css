@@ -10982,3 +10982,18 @@ h1.title {
     border-bottom: 1px solid #ddd;
     min-height: 545px;
 }
+
+.vln-mbl {
+    border-top: 1px solid #111;
+}
+
+.vln-mbl__img {
+    padding: 25px;
+}
+
+.vln-mbl__img img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
