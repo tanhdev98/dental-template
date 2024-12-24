@@ -10750,3 +10750,60 @@ h1.title {
     font-weight: 600;
     cursor: pointer;
 }
+
+.vln__tit {
+    font-size: 36px;
+    padding-top: 58px;
+    margin-bottom: 26px;
+}
+
+.vln-event {
+    padding: 25px 0;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #ddd;
+}
+
+.vln-event__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.vln-event__link {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+.vln-event__link > img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.vln-event__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #666;
+}
+
+.vln-event__date span.blue {
+    color: #076ecc;
+}
+
+.vln-event__tit {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    display:-webkit-box;
+    word-wrap:break-word;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-top: 11px;
+}
