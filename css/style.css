@@ -6639,6 +6639,7 @@ h1.title {
     font-size: 36px;
     border-bottom: 1px solid #000;
     padding-bottom: 22px;
+    padding-top: 30px;
 }
 
 /* after-successful-login content */
