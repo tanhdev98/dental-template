@@ -10807,3 +10807,56 @@ h1.title {
     text-overflow:ellipsis;
     margin-top: 11px;
 }
+
+.vln-edtl {
+    border-top: 1px solid #111;
+}
+
+.vln-edtl__tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.vln-edtl-lf {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vln-edtl-lf > span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    min-width: 80px;
+    background: #076ecc;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.vln-edtl-lf > p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.vln-edtl__date {
+    font-size: 15px;
+    color: #666;
+    font-weight: 300;
+}
+
+.vln-edtl__cnt {
+    padding: 25px;
+}
+
+.vln-edtl__cnt img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
