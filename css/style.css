@@ -187,7 +187,7 @@
 
 #accordion .accordion-question {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 20px 0 19px;
     display: flex;
     justify-content: flex-start;
@@ -195,6 +195,7 @@
     gap: 27px;
     padding-left: 32px;
     cursor: pointer;
+    position: relative;
 }
 
 #accordion .accodion-item.active {
@@ -11588,4 +11589,50 @@ h1.title {
 
 .ticket__smpl-trn.trn11 {
     background: #6ac2b2;
+}
+
+.arrow-icon {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+#accordion .accodion-item.active .arrow-icon {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.arrow-icon::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 1px;
+    background: #b6b6b6;
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    transform: rotate(-45deg);
+}
+
+#accordion .accodion-item.active .arrow-icon::before {
+    background: #686868;
+}
+
+.arrow-icon::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 1px;
+    background: #b6b6b6;
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    transform: rotate(45deg);
+}
+
+#accordion .accodion-item.active .arrow-icon::after {
+    background: #686868;
 }
