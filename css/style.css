@@ -504,6 +504,23 @@ h1.title {
     margin: 0;
 }
 
+#request-email .form .table-content input.wd336 {
+    width: 336px;
+}
+
+#request-email .form .table-content input.wd193 {
+    width: 193px;
+}
+
+#request-email .form .table-content input.wd157 {
+    width: 157px;
+}
+
+#request-email .form .table-content input.input-title {
+    width: 100%;
+    max-width: 800px;
+}
+
 #request-email .form .table-content textarea {
     font-size: 18px;
     width: 100%;
@@ -514,11 +531,15 @@ h1.title {
 }
 
 #request-email .content-form.form-phone {
-    gap: 11px;
+    gap: 7px;
 }
 
 #request-email .content-form.form-phone input[type="number"] {
     width: 67px;
+}
+
+#request-email .content-form.form-phone input[type="number"].wd120 {
+    width: 116px;
 }
 
 #request-email .content-form.form-email {
@@ -532,6 +553,11 @@ h1.title {
 #request-email .content-form .form-select-container.select-phone {
     width: 97px;
     background-color: transparent;
+}
+
+#request-email .content-form .form-select-container.select-phone.wd110 {
+    width: 110px;
+    height: 37px;
 }
 
 #request-email input.input-title {
@@ -669,6 +695,10 @@ h1.title {
 #request-email .button-group button {
     font-size: 19px;
     background-color: #0068b7;
+}
+
+#request-email .button-group button.radius50 {
+    border-radius: 30px;
 }
 
 @media screen and (width <=1440px) {}

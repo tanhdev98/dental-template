@@ -785,6 +785,11 @@ ul li:hover .submenu,
     width: 150px;
 }
 
+.form-select-container.wd158 {
+    width: 158px;
+    height: 37px;
+}
+
 #mmbrs .form-select-container {
     width: 100%;
     max-width: 85px;
@@ -805,6 +810,10 @@ ul li:hover .submenu,
     border-radius: 3px;
     position: relative;
     height: 100%;
+}
+
+.form-select-container.wd158>.form-select-cus {
+    border-radius: 5px;
 }
 
 .form-select-container--ver2>.form-select-cus {
