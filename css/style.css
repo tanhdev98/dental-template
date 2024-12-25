@@ -155,7 +155,7 @@
 
 /* Accodion */
 #accordion .titleText {
-    font-size: 40px;
+    font-size: 36px;
     margin-top: 44px;
     font-weight: 400;
     border-bottom: 1px solid #333;
@@ -238,7 +238,7 @@
 }
 
 #notification .header-frame .titleText {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
 }
 
@@ -267,13 +267,13 @@
 }
 
 #notification .table li.wrap-item+.wrap-item {
-    padding: 10px 30px 9px;
+    padding: 15px 30px;
 }
 
 #notification .table li.wrap-item {
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px 9px;
+    padding: 15px 30px;
 }
 
 #notification .table li.wrap-item+.wrap-item {
@@ -303,7 +303,7 @@
 }
 
 #notification .content-table li .item-title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1;
     width: 420px;
@@ -10796,6 +10796,10 @@ h1.title {
     margin-bottom: 26px;
 }
 
+.vln__tit--pt44 {
+    padding-top: 44px;
+}
+
 .vln-event {
     padding: 25px 0;
     border-top: 1px solid #111;
@@ -10970,6 +10974,12 @@ h1.title {
 .vln-mgzn__gb.orange {
     color: #f19149;
     border: 1px solid #f19149;
+}
+
+.vln-mgzn__gb.blue {
+    padding: 6px 15px;
+    color: #0068b7;
+    border: 1px solid #0068b7;
 }
 
 .vln-mgzn__nt {
