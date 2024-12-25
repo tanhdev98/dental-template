@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/accodion.js"></script>
+    <script src="js/sub-nav-respon.js"></script>
+</head>
+
+<body>
+    <!-- Top Ads -->
+    <div id="topAds">
+        <div class="topAds-wrap">
+            <a href="#">
+                <img class="topApds-img" src="./images/top-banner-img.png" alt="top ads imgage">
+            </a>
+            <div class="close-topAds-wrap">
+                <input type="checkbox" id="disappear" name="disappear">
+                <label for="disappear">오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
+            </div>
+        </div>
+    </div>
+    <!-- End top ads -->
+    <!-- Side ads -->
+    <div id="sideAds">
+        <div class="side-ads-wrap">
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-1.png" alt="side ads">
+                </a>
+            </div>
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-2.png" alt="side ads">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End side ads -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo.png" alt="Logo">
+                    </a>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
+                        <a href="#">
+                            <i class="icon icon-find"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <img src="./images/intro-logo.png" alt="intro-logo">
+                </div>
+                <div class="nav-wrap">
+                    <a href="#">
+                        <i class="icon icon-bell"></i>
+                    </a>
+                    <a href="#">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                </div>
+                <div class="full-screen-overlay"></div>
+                <div class="side-nav-res">
+                    <ul class="frame-section">
+                        <a href="#">
+                            <i class="icon icon-hamburger-bar close"></i>
+                        </a>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">채용정보</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">인재정보</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">덴탈플러스</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">덴탈잡 매거진</a></li>
+                                <li><a href="#">덴탈잡 모바일앱</a></li>
+                                <li><a href="#">문서서식</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-nav-child">
+                            <ul class="sub-title-menu">
+                                <li><a href="#">고객센터</a></li>
+                                <li><i class="icon icon-down"></i></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">채용광고 상품안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">이메일 문의</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">공지/소식</a></li>
+                                <li><a href="#">사이트 소개</a></li>
+                                <li><a href="#">약관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar-wrap">
+                <div class="menu">
+                    <a href="#" class="icon-popup-mega-menu">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                    <div class="total-menu"></div>
+                    <ul>
+                        <li>
+                            <a href="#">채용정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인재정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">덴탈플러스</a>
+                            <ul class="submenu">
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">덴탈잡 매거진</a></li>
+                                <li><a href="#">덴탈잡 모바일앱</a></li>
+                                <li><a href="#">문서서식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="active">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">홈</a></li>
+                                <li><a href="#">채용광고 상품안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">이메일 문의</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">공지/소식</a></li>
+                                <li><a href="#">사이트 소개</a></li>
+                                <li><a href="#">약관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth">
+                    <a href="./PACAA010.html">로그인</a>
+                    <a href="./PACAA010.html">회원가입</a>
+                </div>
+                <div class="mega-menu">
+                    <div class="container">
+                        <div class="row row-question">
+                            <div class="col-xl-2">
+                                <span>채용 공고를 찾는다면?!</span>
+                            </div>
+                            <div class="col-xl-2">
+                                <span>인재정보를 찾는다면?!</span>
+                            </div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2">
+                                <span>덴탈잡 이용 안내</span>
+                            </div>
+                        </div>
+                        <div class="row row-menu">
+                            <div class="col-xl-2">
+                                <h5>채용정보</h5>
+                                <ul>
+                                    <li><a href="#">업무별</a></li>
+                                    <li><a href="#">지역별</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>인재정보</h5>
+                                <ul>
+                                    <li><a href="#">업무별</a></li>
+                                    <li><a href="#">지역별</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>덴탈플러스</h5>
+                                <ul>
+                                    <li><a href="#">자원봉사</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">덴탈잡 매거진</a></li>
+                                    <li><a href="#">덴탈잡 모바일앱</a></li>
+                                    <li><a href="#">문서서식</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>고객센터</h5>
+                                <ul>
+                                    <li><a href="#">채용광고</a></li>
+                                    <li><a href="#">상품안내</a></li>
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">이메일 문의</a></li>
+                                    <li><a href="#">자주 묻는 질문</a></li>
+                                    <li><a href="#">공지/소식</a></li>
+                                    <li><a href="#">사이트 소개</a></li>
+                                    <li><a href="#">약관</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>마이 페이지</h5>
+                                <ul>
+                                    <li><a href="#">마이 페이지</a></li>
+                                    <li><a href="#">이력서 등록</a></li>
+                                    <li><a href="#">이력서 관리</a></li>
+                                    <li><a href="#">지원현황</a></li>
+                                    <li><a href="#">스마트 매칭</a></li>
+                                    <li><a href="#">스크랩</a></li>
+                                    <li><a href="#">쪽지</a></li>
+                                    <li><a href="#">DIV 포인트 조회</a></li>
+                                    <li><a href="#">내 정보 수정</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2 last-column-mega-menu">
+                                <h5></h5>
+                                <ul>
+                                    <li>
+                                        <i class="top-menu">
+                                            개인 회원이라면?
+                                        </i>
+                                        <h6><a href="#">이력서 등록 <span></span></a></h6>
+                                        <span>기본 이력서 등록으로 편한 채용서비스를 이용할 수 있어요.</span>
+                                    </li>
+                                    <li>
+                                        <i class="top-text">
+                                            치과 회원이라면?
+                                        </i>
+                                        <h6><a href="#">채용공고 관리 <span></span></a></h6>
+                                        <span>
+                                            우리 치과 채용공고를 한눈에 관리할 수 있어요
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">스마트 매칭 <span></span></a></h6>
+                                        <span>
+                                            내게 맞는 공고를 확인할 수 있어요
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">이용안내 <span></span></a></h6>
+                                        <span>
+                                            회원가입부터 각 메뉴에 대한 간단한 설명을 들을 수 있어요.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">사이트 소개 <span></span></a></h6>
+                                        <span>
+                                            덴탈잡 사이트 서비스에 대한 간략한 설명을 들을 수 있어요
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End navbar -->
+    <!-- Start Content -->
+    <div id="content">
+        <div id="tab-follow">
+            <div class="container">
+                <ul class="tabs-no-border">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">채용광고 상품안내</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이메일 문의</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">공지/소식</a></li>
+                    <li><a href="#" class="active">사이트 소개</a></li>
+                    <li><a href="#">약관</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="notification" style="margin-top: 39px;">
+            <div class="container">
+                <div class="section-wrapper">
+                    <div class="left-item">
+                        <div class="header-frame">
+                            <div class="titleText">사이트 소개</div>
+                        </div>
+                        <div class="sitro">
+                            <div class="sitro__inner">
+                                <div class="sitro__top">
+                                    <h3>
+                                        <span>대한민국 치과계 No.1</span>
+                                        구인 구직 네트워크
+                                        <img src="./images/new-logo.png" alt="">
+                                    </h3>
+                                    <p>
+                                        치과인을 위한 전문 정보 사이트 <img src="./images/new-logo.png" alt="">은 21세기형 채용문화를 선도하고자 기존의 구인, 구직 방식에서 탈피하여 보다 발전적이고 체계적인<br>
+                                        온라인&nbsp;채용 시스템을 구축하고 고객 중심의 차별화된 서비스를 실현함으로써 명실상부한 <span>치과계 최대의 전문 구인구직 토탈 사이트</span>로 자리잡고 있습니다.
+                                    </p>
+                                </div>
+                                <ul class="sitro__list">
+                                    <li class="sitro__item">
+                                        <div class="sitro__sbj">
+                                            <span class="sitro__num">1</span>
+                                            <span class="sitro__stg">치과계의 No.1</span>
+                                            &nbsp;구인구직 사이트
+                                        </div>
+                                        <div class="sitro__desc">
+                                            <img src="./images/new-logo.png" alt=""> 은 치과위생사와 치과기공사, 간호조무사 등 철저히 치과인을 위한 구인구직 사이트로서 현재 <span>회원수 4만명 이상, 하루 평균 1,000여 명 이상의 방문자 수</span>
+                                            그리고 하루 평균 5,000여 건의 접속 횟수를 자랑하는 치과계 No.1 구인구직 사이트 입니다. 또한 지역별, 역세권별, 직종별, 채용형태별로 다양한 검색을 통하여 한차원 높은 구인구직 맞춤 정보를 제공하고 있습니다.
+                                        </div>
+                                    </li>
+                                    <li class="sitro__item">
+                                        <div class="sitro__sbj">
+                                            <span class="sitro__num">2</span>
+                                            <span class="sitro__stg">고객중심</span>
+                                            의 차별화된 서비스
+                                        </div>
+                                        <div class="sitro__desc">
+                                            <img src="./images/new-logo.png" alt=""> 은 구인구직 정보뿐 아니라 개인정보 관리 서비스를 운영함으로써 희망하는 구인, 구직 대상자간의 쪽지 교환 서비스를 제공하는 <span>My 쪽지,</span>
+                                            고객이 원하는 채용소식, 인재소식을 My 초이스에 보관하여 나중에 다시 볼 수 있는 <span>My 초이스,</span> 덴탈잡 이용에 궁금한 사항들을 친절히 상담해주는
+                                            <span>1:1 친절상담</span>등 고객중심의 편리한 서비스를 제공하고 있습니다.
+                                        </div>
+                                    </li>
+                                    <li class="sitro__item">
+                                        <div class="sitro__sbj">
+                                            <span class="sitro__num">3</span>
+                                            치과인&nbsp;
+                                            <span class="sitro__stg">전문 도우미</span>
+                                        </div>
+                                        <div class="sitro__desc">
+                                            <img src="./images/new-logo.png" alt=""> 은 <span>덴탈매거진</span>을 통해 최신 치과계 이슈와 각종 유용한 벙보를 엄선하여 제공하고 있으며, 치과/기공사에서 운영이 이용할 수 있는 기본 문서 및
+                                            구직자들을 위한 이력서 양식을 제공하는 <span>문서서식,</span> 치과관련 임대 양도 정보 게시판 <span>덴탈 벼룩 시장</span> 등 회원님들을 위한 다양한 서비스를 제공하고 있습니다.
+                                        </div>
+                                    </li>
+                                    <li class="sitro__item">
+                                        <div class="sitro__sbj">
+                                            <span class="sitro__num">4</span>
+                                            최대&nbsp;
+                                            <span class="sitro__stg">덴탈</span>
+                                            &nbsp;커뮤니케이션
+                                        </div>
+                                        <div class="sitro__desc">
+                                            <img src="./images/new-logo.png" alt=""> 은 치과, 기공소, 인재 간의 가교 역활을 충실히 수행하는 덴탈 커뮤니케이션 장이 될 수 있도록 항상 새로운 서비스와 다양한 컨텐츠를 끊임없이 창조해 나갈 수 있도록 노력하고 있습니다.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>

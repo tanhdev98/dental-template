@@ -11646,3 +11646,89 @@ h1.title {
 #accordion .accodion-item.active .arrow-icon::after {
     background: #686868;
 }
+
+.sitro__inner {
+    width: 100%;
+    max-width: 853px;
+    letter-spacing: -0.5px;
+}
+
+.sitro__top {
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.sitro__top h3 {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sitro__top h3 span {
+    font-size: 18px;
+    color: #295da6;
+}
+
+.sitro__top h3 img {
+    display: inline-block;
+    width: 120px;
+}
+
+.sitro__top p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.sitro__top p img {
+    display: inline-block;
+    width: 65px;
+    position: relative;
+    top: -4px;
+}
+
+.sitro__top p span {
+    color: #0f5ac2;
+}
+
+.sitro__item {
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sitro__sbj {
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+}
+
+.sitro__num {
+    font-size: 24px;
+    font-weight: 500;
+    color: #0f5ac2;
+    margin-right: 12px;
+}
+
+.sitro__stg {
+    color: #0f5ac2;
+}
+
+.sitro__desc {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.sitro__desc img {
+    display: inline-block;
+    width: 65px;
+    position: relative;
+    top: -4px;
+}
+
+.sitro__desc span {
+    font-weight: 500;
+}
