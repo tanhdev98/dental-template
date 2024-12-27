@@ -1412,6 +1412,7 @@ ul li:hover .submenu,
     font-weight: 500;
     color: #0068b7;
     margin-bottom: 0;
+    margin-top: 10px;
 }
 
 /* notification */

@@ -161,6 +161,11 @@ li.dot::before {
     border-radius: 0 0 10px 10px;
 }
 
+.tabs-content.ver2 {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
 .tab-content-item {
     position: relative;
     padding: 39px 80px 53px;

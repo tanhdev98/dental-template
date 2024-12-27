@@ -39,6 +39,10 @@ input[type='radio'] {
     font-weight: 300;
 }
 
+.form-row input.wd249:not([type="radio"]) {
+    width: 249px;
+}
+
 /* button submit */
 .submit-form {
     width: 160px;
