@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/sub-page.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/dropdown-profile.js"></script>
+    <script src="js/side-nav.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="sub-header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo-sub.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="letter-notify">
+                        <a href="#" class="icon icon-letter"></a>
+                        <div class="count-notify">13</div>
+                    </div>
+                    <a href="#" class="profile-setting">
+                        <div class="avatar">
+                            <img src="./images/default-avatar-header.png" alt="avatar">
+                        </div>
+                        <div class="name">pdsoft 님</div>
+                    </a>
+                    <div class="profile-setting-popup">
+                        <ul>
+                            <li><a href="#">마이 페이지</a></li>
+                            <li><a href="#">이력서 관리</a></li>
+                            <li><a href="#">지원현황</a></li>
+                            <li><a href="#">스마트 매칭</a></li>
+                            <li><a href="#">스크랩</a></li>
+                            <li><a href="#">내 정보 수정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Content -->
+    <div id="content" class="sub-page">
+        <div class="container">
+            <!-- Top Sub Page -->
+            <div id="top-sub-page">
+                <!-- Side Nav -->
+                <div id="icon-side-nav"><span></span></div>
+                <div id="side-nav">
+                    <ul class="frame-section">
+                        <li><a href="#"><i class="icon icon-user-subpage"></i>마이 홈</a></li>
+                        <li class="item-has-child">
+                            <a href="#"><i class="icon icon-document-subpage"></i>이력서관리</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">이력서 등록</a></li>
+                                <li><a href="">이력서 관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon icon-list-two"></i>지원현황</a></li>
+                        <li><a href="#"><i class="icon icon-light-bulb"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                    </ul>
+                </div>
+                <!-- End Side Nav -->
+                <!-- resume -->
+                <div class="resume">
+                    <div class="resume__inner">
+                        <h3 class="resume__tit">이력서 등록</h3>
+                        <div class="resume__block">
+                            <input type="text" class="resume__sbj">
+                            <div class="resume__placeholer">
+                                이력서 제목을 입력하세요.
+                                <span>(필수입력사항)</span>
+                            </div>
+                            <script>
+                                $(function() {
+                                    $('.resume__sbj').change(function() {
+                                        if ($(this).val() !== '') {
+                                            $(this).css('background', '#fff');
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+
+                        <div class="resume__tit-box">
+                            <h4 class="resume__tit2">이력서 공개여부<span>*</span></h4>
+                            <div class="resume__check resume__check--gap50">
+                                <label class="resume__label">
+                                    <input type="checkbox" class="resume__checkbox">
+                                    <span>공개</span>
+                                </label>
+                                <label class="resume__label">
+                                    <input type="checkbox" class="resume__checkbox">
+                                    <span>비공개</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="resume__desc">
+                            <span>이력서의 최대 공개기간은 120일이며, 이후에는 자동으로 비공개 처리됩니다.</span>
+                            <span>비공개처리된 이력서는 [스마트 매칭]과 [인재 소식] 에 등록되지 않으며, 회원님만 보실 수 있습니다. </span>
+                        </div>
+
+                        <div class="resume__tit-box resume__tit-box--between">
+                            <h4 class="resume__tit2">인적사항</h4>
+                            <div class="resume__wrn">
+                                <span>*</span> 필수 입력정보 입니다.
+                            </div>
+                        </div>
+                        <div class="resume__block">
+                            <div class="resume__grid">
+                                <div class="resume__input-box">
+                                    <label for="name" class="esn">이름</label>
+                                    <input class="resume__input" type="text" id="name">
+                                </div>
+                                <div class="resume__input-box">
+                                    <label for="phone" class="esn">휴대폰</label>
+                                    <input class="resume__input" type="text" id="phone">
+                                </div>
+                                <div class="resume__input-box">
+                                    <label for="portfolio" class="esn">포트폴리오</label>
+                                    <input class="resume__input" type="text" id="portfolio" placeholder="https://">
+                                </div>
+                                <div class="resume__input-box">
+                                    <label for="email" class="esn">이메일</label>
+                                    <input class="resume__input" type="text" id="email">
+                                </div>
+                                <div class="resume__file">
+                                    <input type="file" class="resume__fileinput" id="imageFile">
+                                    <label for="imageFile">+ 사진등록</label>
+                                    <div class="resume__preview"></div>
+                                    <button type="button" class="resume__delete-btn"></button>
+                                </div>
+                            </div>
+                            <div class="resume__grid">
+                                <div class="resume__col">
+                                    <h4 class="resume__tit3 resume__tit3--esn">희망연락방법</h4>
+                                    <div class="resume__check">
+                                        <label class="resume__label">
+                                            <input type="checkbox" class="resume__checkbox">
+                                            <span>휴대폰</span>
+                                        </label>
+                                        <label class="resume__label">
+                                            <input type="checkbox" class="resume__checkbox">
+                                            <span>이메일</span>
+                                        </label>
+                                        <label class="resume__label">
+                                            <input type="checkbox" class="resume__checkbox">
+                                            <span>덴탈잡 쪽지</span>
+                                        </label>
+                                    </div>
+                                    <p class="resume__ps">선택하신 연락방법은 '공개'로 설정됩니다.</p>
+                                </div>
+                                <div class="resume__col">
+                                    <h4 class="resume__tit3 resume__tit3--esn">덴탈잡 쪽지 SMS 알림</h4>
+                                    <div class="resume__check">
+                                        <label class="resume__label">
+                                            <input type="checkbox" class="resume__checkbox">
+                                            <span>수신허용</span>
+                                        </label>
+                                        <label class="resume__label">
+                                            <input type="checkbox" class="resume__checkbox">
+                                            <span>수신불가</span>
+                                        </label>
+                                    </div>
+                                    <p class="resume__ps">'수신허용'을 선택하시면 구인기관에서 덴탈잡 쪽지를 보낼시 회원님의<br>핸드폰으로 문자 알림을 받을 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume__tit-box">
+                            <h4 class="resume__tit2">희망근무조건</h4>
+                        </div>
+                        <div class="resume__block">
+                            <div class="resume__div">
+                                <h4 class="resume__tit3 resume__tit3--esn">희망업무</h4>
+                                <div class="resume__check">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>진료실</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>데스크</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>상담</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>보험청구</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>치과내기공실</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>치과기공소</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>관리 및 경영지원</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>기타</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="resume__div">
+                                <h4 class="resume__tit3 resume__tit3--esn">소지 자격/면허증</h4>
+                                <div class="resume__check">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>치과위생사</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>치과기공사</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>감호조무사</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>보험청구사</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>코디네이터</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>의료관광코디네이터</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>기타</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="resume__div">
+                                <h4 class="resume__tit3 resume__tit3--esn">희망 근무형태</h4>
+                                <div class="resume__check">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>정규직</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>계약직</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>아르바이트</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="resume__div">
+                                <h4 class="resume__tit3 resume__tit3--esn">희망 근무지역</h4>
+                                <div class="resume__flex">
+                                    <div class="resume__select">
+                                        <div class="resume__name">1순위</div>
+                                        <div class="form-select-container">
+                                            <select>
+                                                <option class="option-placeholder">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="resume__select resume__select--bdl0">
+                                        <div class="form-select-container">
+                                            <select>
+                                                <option class="option-placeholder">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="resume__flex">
+                                    <div class="resume__select">
+                                        <div class="resume__name">2순위</div>
+                                        <div class="form-select-container">
+                                            <select>
+                                                <option class="option-placeholder">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="resume__select resume__select--bdl0">
+                                        <div class="form-select-container">
+                                            <select>
+                                                <option class="option-placeholder">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="resume__flex">
+                                    <div class="resume__select">
+                                        <div class="resume__name">3순위</div>
+                                        <div class="form-select-container">
+                                            <select>
+                                                <option class="option-placeholder">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                                <option value="">시/도 선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="resume__select resume__select--bdl0">
+                                        <div class="form-select-container">
+                                            <select>
+                                                <option class="option-placeholder">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                                <option value="">군/구</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume__div">
+                                <h4 class="resume__tit3 resume__tit3--esn">희망 급여</h4>
+                                <div class="resume__check">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>협의 후 결정</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>내규에 따름</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>연봉제</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>직접입력</span>
+                                    </label>
+                                    <div class="resume__won">
+                                        <input type="text" class="resume__woninput">
+                                        <span>만원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume__div">
+                                <h4 class="resume__tit3 resume__tit3--esn">희망 직급</h4>
+                                <div class="resume__check">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>팀장</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>실장</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>스텝</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>무관</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="resume__div">
+                                <h4 class="resume__tit3 resume__tit3--esn">희망 근무요일</h4>
+                                <div class="resume__check">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>월~금(주5일)</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>월~금(주40시간)</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>월~토(토요일격주휴무)</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>월~토</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>직접입력</span>
+                                    </label>
+                                    <div class="resume__won">
+                                        <input type="text" class="resume__woninput">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume__tit-box">
+                            <h4 class="resume__tit2">학력사항<span>*</span></h4>
+                        </div>
+                        <div class="resume__block">
+                            <div class="resume__div">
+                                <div class="resume__check">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>고등학교 졸업</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>전문대/대학 졸업</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>대학원 이상 졸업</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <ul class="resume__list2">
+                                <li class="resume__item2">
+                                    <div class="resume__grid3">
+                                        <div class="resume__select">
+                                            <div class="resume__name">학교구분</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">고등학교</option>
+                                                    <option value="">대학(2~3년)</option>
+                                                    <option value="">대학(4년)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="resume__input-box resume__input-box--bdl0">
+                                            <label for="school-1">학교명</label>
+                                            <input class="resume__input" type="text" id="school-1">
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid4">
+                                        <div class="resume__input-box">
+                                            <label for="grdtn-1">졸업년도</label>
+                                            <input class="resume__input" type="text" id="grdtn-1">
+                                        </div>
+                                        <div class="resume__select resume__select--bdl0">
+                                            <div class="resume__name">졸업상태</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">졸업</option>
+                                                    <option value="">졸업</option>
+                                                    <option value="">졸업</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="resume__item2">
+                                    <div class="resume__grid3">
+                                        <div class="resume__select">
+                                            <div class="resume__name">학교구분</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">고등학교</option>
+                                                    <option value="">대학(2~3년)</option>
+                                                    <option value="">대학(4년)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="resume__input-box resume__input-box--bdl0">
+                                            <label for="school-2">학교명</label>
+                                            <input class="resume__input" type="text" id="school-2">
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid4">
+                                        <div class="resume__input-box">
+                                            <label for="mtcltn-1">입학년도</label>
+                                            <input class="resume__input" type="text" id="mtcltn-1">
+                                        </div>
+                                        <div class="resume__input-box resume__input-box--bdl0">
+                                            <label for="grdtn-2">졸업년도</label>
+                                            <input class="resume__input" type="text" id="grdtn-2">
+                                        </div>
+                                        <div class="resume__select resume__select--bdl0">
+                                            <div class="resume__name">졸업상태</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">졸업</option>
+                                                    <option value="">졸업</option>
+                                                    <option value="">졸업</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="resume__item2">
+                                    <div class="resume__grid3 resume__grid3--one">
+                                        <div class="resume__input-box">
+                                            <label for="major-1">전공명</label>
+                                            <input class="resume__input" type="text" id="major-1">
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid4">
+                                        <div class="resume__input-box">
+                                            <label for="grade-1">학점</label>
+                                            <input class="resume__input" type="text" id="grade-1">
+                                        </div>
+                                        <div class="resume__select resume__select--bdl0">
+                                            <div class="resume__name">총점</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">4.5</option>
+                                                    <option value="">4.0</option>
+                                                    <option value="">4.5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="resume__item2">
+                                    <div class="resume__grid3">
+                                        <div class="resume__select">
+                                            <div class="resume__name">학교구분</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">고등학교</option>
+                                                    <option value="">대학(2~3년)</option>
+                                                    <option value="">대학(4년)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="resume__input-box resume__input-box--bdl0">
+                                            <label for="school-3">학교명</label>
+                                            <input class="resume__input" type="text" id="school-3">
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid4">
+                                        <div class="resume__input-box">
+                                            <label for="mtcltn-2">입학년도</label>
+                                            <input class="resume__input" type="text" id="mtcltn-2">
+                                        </div>
+                                        <div class="resume__input-box resume__input-box--bdl0">
+                                            <label for="grdtn-3">졸업년도</label>
+                                            <input class="resume__input" type="text" id="grdtn-3">
+                                        </div>
+                                        <div class="resume__select resume__select--bdl0">
+                                            <div class="resume__name">졸업상태</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">졸업</option>
+                                                    <option value="">졸업</option>
+                                                    <option value="">졸업</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="resume__item2">
+                                    <div class="resume__grid3 resume__grid3--one">
+                                        <div class="resume__input-box">
+                                            <label for="major-2">전공명</label>
+                                            <input class="resume__input" type="text" id="major-2">
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid4">
+                                        <div class="resume__input-box">
+                                            <label for="grade-2">학점</label>
+                                            <input class="resume__input" type="text" id="grade-2">
+                                        </div>
+                                        <div class="resume__select resume__select--bdl0">
+                                            <div class="resume__name">총점</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">4.5</option>
+                                                    <option value="">4.0</option>
+                                                    <option value="">4.5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="resume__tit-box">
+                            <h4 class="resume__tit2">경력사항<span>*</span></h4>
+                        </div>
+                        <div class="resume__block resume__block--pdlr0">
+                            <div class="resume__div resume__div--pdlr20">
+                                <div class="resume__check resume__check--gap75">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>신입</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>경력</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <ul class="resume__list">
+                                <li class="resume__item">
+                                    <button type="button" class="resume__delete-btn"></button>
+                                    <div class="resume__grid2">
+                                        <div class="resume__input-box">
+                                            <label for="insNm-1">기관명</label>
+                                            <input class="resume__input" type="text" id="insNm-1">
+                                        </div>
+                                        <div class="resume__rt">
+                                            <div class="resume__input-box">
+                                                <label for="join-1">입사년원</label>
+                                                <input class="resume__input" type="text" id="join-1">
+                                            </div>
+                                            <div class="resume__input-box resume__input-box--bdl0">
+                                                <label for="rsgntn-1">퇴사년원</label>
+                                                <input class="resume__input" type="text" id="rsgntn-1">
+                                            </div>
+                                            <div class="resume__radio-box">
+                                                <input type="radio" id="working-1">
+                                                <label for="working-1">재직중</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid2">
+                                        <div class="resume__rt">
+                                            <div class="resume__select">
+                                                <div class="resume__name">근무지역</div>
+                                                <div class="form-select-container">
+                                                    <select>
+                                                        <option class="option-placeholder">서울</option>
+                                                        <option value="">인천</option>
+                                                        <option value="">경기</option>
+                                                        <option value="">강원</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="resume__select resume__select--bdl0">
+                                                <div class="resume__name">직급/직책</div>
+                                                <div class="form-select-container">
+                                                    <select>
+                                                        <option class="option-placeholder">실장</option>
+                                                        <option value="">부장</option>
+                                                        <option value="">과장</option>
+                                                        <option value="">대리</option>
+                                                        <option value="">주임</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="resume__select">
+                                            <div class="resume__name">퇴사사유</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="resume__input-box resume__input-box--mt10 resume__input-box--auto">
+                                        <label for="rsp-1">담당업무(500자 이내)</label>
+                                        <textarea name="" id="rsp-1" class="resume__textarea"></textarea>
+                                    </div>
+                                </li>
+                                <li class="resume__item">
+                                    <button type="button" class="resume__delete-btn"></button>
+                                    <div class="resume__grid2">
+                                        <div class="resume__input-box">
+                                            <label for="insNm-2">기관명</label>
+                                            <input class="resume__input" type="text" id="insNm-2">
+                                        </div>
+                                        <div class="resume__rt">
+                                            <div class="resume__input-box">
+                                                <label for="join-2">입사년원</label>
+                                                <input class="resume__input" type="text" id="join-2">
+                                            </div>
+                                            <div class="resume__input-box resume__input-box--bdl0">
+                                                <label for="rsgntn-2">퇴사년원</label>
+                                                <input class="resume__input" type="text" id="rsgntn-2">
+                                            </div>
+                                            <div class="resume__radio-box">
+                                                <input type="radio" id="working-2">
+                                                <label for="working-2">재직중</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid2">
+                                        <div class="resume__rt">
+                                            <div class="resume__select">
+                                                <div class="resume__name">근무지역</div>
+                                                <div class="form-select-container">
+                                                    <select>
+                                                        <option class="option-placeholder">서울</option>
+                                                        <option value="">인천</option>
+                                                        <option value="">경기</option>
+                                                        <option value="">강원</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="resume__select resume__select--bdl0">
+                                                <div class="resume__name">직급/직책</div>
+                                                <div class="form-select-container">
+                                                    <select>
+                                                        <option class="option-placeholder">실장</option>
+                                                        <option value="">부장</option>
+                                                        <option value="">과장</option>
+                                                        <option value="">대리</option>
+                                                        <option value="">주임</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="resume__select">
+                                            <div class="resume__name">퇴사사유</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                    <option value="">개인사정</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="resume__input-box resume__input-box--mt10 resume__input-box--auto">
+                                        <label for="rsp-2">담당업무(500자 이내)</label>
+                                        <textarea name="" id="rsp-2" class="resume__textarea"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="resume__add">
+                                <div class="resume__add-icon"></div>
+                                경력사항 추가
+                            </button>
+
+                            <div class="resume__flex resume__flex--pd20 resume__flex--mt20">
+                                <div class="resume__input-box">
+                                    <label for="career">총 경력</label>
+                                    <input class="resume__input" type="text" id="career">
+                                </div>
+                            </div>
+                            <div class="resume__flex resume__flex--pd20">
+                                <div class="resume__input-box resume__input-box--auto">
+                                    <label for="crrDsc">기타경력사항 및 기술서 300자 이내 (생략가능)</label>
+                                    <textarea name="" id="crrDsc" class="resume__textarea resume__textarea--h80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume__tit-box">
+                            <h4 class="resume__tit2">자격/면허정보</h4>
+                        </div>
+                        <div class="resume__block resume__block--pdlr0">
+                            <div class="resume__div resume__div--pdlr20">
+                                <div class="resume__check resume__check--gap75">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>없음</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>보유</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <ul class="resume__list">
+                                <li class="resume__item">
+                                    <button type="button" class="resume__delete-btn"></button>
+                                    <div class="resume__grid5">
+                                        <div class="resume__select">
+                                            <div class="resume__name">구분</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">면허</option>
+                                                    <option value="">면허</option>
+                                                    <option value="">면허</option>
+                                                    <option value="">면허</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="licenseName-1">자격/면허명</label>
+                                            <input class="resume__input" type="text" id="licenseName-1">
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="licenseNumber-1">자격/면허번호</label>
+                                            <input class="resume__input" type="text" id="licenseNumber-1">
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid6">
+                                        <div class="resume__input-box">
+                                            <label for="pblc-1">발행처</label>
+                                            <input class="resume__input" type="text" id="pblc-1">
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="acquire-1">취득년월</label>
+                                            <input class="resume__input" type="text" id="acquire-1">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="resume__item">
+                                    <button type="button" class="resume__delete-btn"></button>
+                                    <div class="resume__grid5">
+                                        <div class="resume__select">
+                                            <div class="resume__name">구분</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">면허</option>
+                                                    <option value="">면허</option>
+                                                    <option value="">면허</option>
+                                                    <option value="">면허</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="licenseName-2">자격/면허명</label>
+                                            <input class="resume__input" type="text" id="licenseName-2">
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="licenseNumber-2">자격/면허번호</label>
+                                            <input class="resume__input" type="text" id="licenseNumber-2">
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid6">
+                                        <div class="resume__input-box">
+                                            <label for="pblc-2">발행처</label>
+                                            <input class="resume__input" type="text" id="pblc-2">
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="acquire-2">취득년월</label>
+                                            <input class="resume__input" type="text" id="acquire-2">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="resume__add">
+                                <div class="resume__add-icon"></div>
+                                경력사항 추가
+                            </button>
+
+                        </div>
+
+                        <div class="resume__tit-box">
+                            <h4 class="resume__tit2">기타활동/사회경험</h4>
+                        </div>
+                        <div class="resume__block resume__block--pdlr0">
+                            <div class="resume__div resume__div--pdlr20">
+                                <div class="resume__check resume__check--gap75">
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>없음</span>
+                                    </label>
+                                    <label class="resume__label">
+                                        <input type="checkbox" class="resume__checkbox">
+                                        <span>보유</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <ul class="resume__list">
+                                <li class="resume__item">
+                                    <button type="button" class="resume__delete-btn"></button>
+                                    <div class="resume__grid5">
+                                        <div class="resume__select">
+                                            <div class="resume__name">활동종류</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">교육</option>
+                                                    <option value="">교육</option>
+                                                    <option value="">교육</option>
+                                                    <option value="">교육</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="place-1">기관/장소</label>
+                                            <input class="resume__input" type="text" id="place-1">
+                                        </div>
+                                        <div class="resume__flex">
+                                            <div class="resume__input-box">
+                                                <label for="startDate-1">시작년월</label>
+                                                <input class="resume__input" type="text" id="startDate-1">
+                                            </div>
+                                            <div class="resume__input-box resume__input-box--bdl0">
+                                                <label for="endDate-1">종료년월</label>
+                                                <input class="resume__input" type="text" id="endDate-1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid7">
+                                        <div class="resume__input-box resume__input-box--mt10 resume__input-box--auto">
+                                            <label for="activity-1">활동내용(300자 이내)</label>
+                                            <textarea name="" id="activity-1" class="resume__textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="resume__item">
+                                    <button type="button" class="resume__delete-btn"></button>
+                                    <div class="resume__grid5">
+                                        <div class="resume__select">
+                                            <div class="resume__name">활동종류</div>
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">교육</option>
+                                                    <option value="">교육</option>
+                                                    <option value="">교육</option>
+                                                    <option value="">교육</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="resume__input-box">
+                                            <label for="place-2">기관/장소</label>
+                                            <input class="resume__input" type="text" id="place-2">
+                                        </div>
+                                        <div class="resume__flex">
+                                            <div class="resume__input-box">
+                                                <label for="startDate-2">시작년월</label>
+                                                <input class="resume__input" type="text" id="startDate-2">
+                                            </div>
+                                            <div class="resume__input-box resume__input-box--bdl0">
+                                                <label for="endDate-2">종료년월</label>
+                                                <input class="resume__input" type="text" id="endDate-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="resume__grid7">
+                                        <div class="resume__input-box resume__input-box--mt10 resume__input-box--auto">
+                                            <label for="activity-2">활동내용(300자 이내)</label>
+                                            <textarea name="" id="activity-2" class="resume__textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="resume__add">
+                                <div class="resume__add-icon"></div>
+                                경력사항 추가
+                            </button>
+
+                        </div>
+
+                        <div class="resume__tit-box">
+                            <h4 class="resume__tit2">자기소개서</h4>
+                        </div>
+                        <div class="resume__block">
+                            <textarea name="" class="resume__textarea resume__textarea--h590" placeholder="자기소개, 성격 장단점, 입사 후 포부 등의 내용을 적어주세요."></textarea>
+                        </div>
+                        <p class="resume__btm-text">
+                            위의 모든 내용은 사실과 다름 없음을 확인합니다.<br />
+                            이력서 관리 메뉴에서 이력서의 공개 여부를 설정할 수 있습니다.
+                        </p>
+                        <p class="resume__btm-text">
+                            *이력서 공개 여부를 변경하시려면 이 페이지의 맨 상단 부분에서 수정하실 수 있습니다.
+                        </p>
+                        <div class="resume__btbx">
+                            <button type="button" class="resume__btn">취소</button>
+                            <button type="button" class="resume__btn resume__btn--blue">저장완료</button>
+                        </div>
+                        <div class="resume__tmp">
+                            <span>임시 저장이 완료되었습니다</span>
+                        </div>
+                        <div class="resume__snpts">
+                            <span>입력한 이력서 제목이 표시됩니다.</span>
+                            <div class="resume__btbx2">
+                                <button type="button" class="resume__btn2">미리보기</button>
+                                <button type="button" class="resume__btn2">임시저장</button>
+                                <button type="button" class="resume__btn2 resume__btn2--blk">이력서 최종 저장</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End resume -->
+            </div>
+            <!-- End Top Sub Page -->
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-1">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>1</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options1" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options1" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options1" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-2">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>2</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        지원한 이력서가 없습니다.<br>
+                        아래 이력서 공개 목록에서 이력서를 선택해주세요.
+                    </div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-2">
+                    <label class="active">
+                        <input type="radio" name="options2" value="option4" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options2" value="option5">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options2" value="option6">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-3">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>3</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        지원한 이력서가 없습니다.
+                    </div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        공개된 이력서가 없습니다.<br>
+                        이력서 관리 목록에서 이력서를 확인해주세요.
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-4">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>4</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options4" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options4" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options4" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-5">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>5</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options5" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options5" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options5" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-6">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>6</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options6" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options6" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options6" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>
