@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/sub-page.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/dropdown-profile.js"></script>
+    <script src="js/side-nav.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="sub-header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo-sub.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="letter-notify">
+                        <a href="#" class="icon icon-letter"></a>
+                        <div class="count-notify">13</div>
+                    </div>
+                    <a href="#" class="profile-setting">
+                        <div class="avatar">
+                            <img src="./images/default-avatar-header.png" alt="avatar">
+                        </div>
+                        <div class="name">pdsoft 님</div>
+                    </a>
+                    <div class="profile-setting-popup">
+                        <ul>
+                            <li><a href="#">마이 페이지</a></li>
+                            <li><a href="#">이력서 관리</a></li>
+                            <li><a href="#">지원현황</a></li>
+                            <li><a href="#">스마트 매칭</a></li>
+                            <li><a href="#">스크랩</a></li>
+                            <li><a href="#">내 정보 수정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Content -->
+    <div id="content" class="sub-page">
+        <div class="container">
+            <!-- Top Sub Page -->
+            <div id="top-sub-page">
+                <!-- Side Nav -->
+                <div id="icon-side-nav"><span></span></div>
+                <div id="side-nav">
+                    <ul class="frame-section">
+                        <li><a href="#"><i class="icon icon-user-subpage"></i>마이 홈</a></li>
+                        <li class="item-has-child">
+                            <a href="#"><i class="icon icon-document-subpage"></i>이력서관리</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">이력서 등록</a></li>
+                                <li><a href="">이력서 관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon icon-list-two"></i>지원현황</a></li>
+                        <li><a href="#"><i class="icon icon-light-bulb"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                    </ul>
+                </div>
+                <!-- End Side Nav -->
+                <!-- resume -->
+                <div class="resume">
+                    <div class="resume__inner">
+                        <h3 class="resume__tit">
+                            스크랩
+                            <span>* 최근 3개월 이내 스크랩한 채용정보를 확인할 수 있습니다.</span>
+                        </h3>
+                        
+                        <div class="scrap__select">
+                            <div class="form-select-container">
+                                <select>
+                                    <option class="option-placeholder">스크랩 오래된순</option>
+                                    <option value="">스크랩 최신순</option>
+                                    <option value="">스크랩 오래된순</option>
+                                    <option value="">스크랩 오래된순</option>
+                                    <option value="">스크랩 오래된순</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="notification-tab" class="mtch__list mtch__list--mt10">
+                            <ul class="table">
+                                <li>
+                                    <div class="column">
+                                        <div class="name-dental">강남애프터치과의원</div>
+                                    </div>
+                                    <div class="column info-details">
+                                        <div class="wrap-title">
+                                            <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
+                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                        </div>
+                                        <div class="wrap-block-link">
+                                            <ul class="wrap-link">
+                                                <li><a href="#">치위생사</a></li>
+                                                <li><a href="#">진료실</a></li>
+                                                <li><a href="#">상담</a></li>
+                                                <li><a href="#">보험청구</a></li>
+                                                <li><a href="#">기타</a></li>
+                                            </ul>
+                                            <ul class="wrap-link">
+                                                <li><a href="#">경력</a></li>
+                                                <li><a href="#">정규직 외</a></li>
+                                                <li><a href="#">치위생사 외</a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="wrap-position">
+                                            <li>서울시 &gt; 강남구</li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <div class="wrap-meta">
+                                            <a href="#"><i class="icon icon-star"></i></a>
+                                            <a href="#"><i class="icon icon-blank"></i></a>
+                                        </div>
+                                        <div class="room-name">D-12</div>
+                                        <div class="time">~ 08.30(금)</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="column">
+                                        <div class="name-dental">강남애프터치과의원</div>
+                                    </div>
+                                    <div class="column info-details">
+                                        <div class="wrap-title">
+                                            <h4 class="item-title">★[강남구청역]★진료실 선생님 연차무관★ 정직원 / 알바★ 모집★</h4>
+                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                        </div>
+                                        <div class="wrap-block-link">
+                                            <ul class="wrap-link">
+                                                <li><a href="#">치위생사</a></li>
+                                                <li><a href="#">진료실</a></li>
+                                                <li><a href="#">상담</a></li>
+                                                <li><a href="#">보험청구</a></li>
+                                                <li><a href="#">기타</a></li>
+                                            </ul>
+                                            <ul class="wrap-link">
+                                                <li><a href="#">경력</a></li>
+                                                <li><a href="#">정규직 외</a></li>
+                                                <li><a href="#">치위생사 외</a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="wrap-position">
+                                            <li>서울시 &gt; 강남구</li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <div class="wrap-meta">
+                                            <a href="#"><i class="icon icon-star"></i></a>
+                                            <a href="#"><i class="icon icon-blank"></i></a>
+                                        </div>
+                                        <div class="room-name red">오늘 마감</div>
+                                        <div class="time">&nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="column">
+                                        <div class="name-dental">강남애프터치과의원</div>
+                                    </div>
+                                    <div class="column info-details">
+                                        <div class="wrap-title">
+                                            <h4 class="item-title">■■ 강남 아인스치과 ■■ - ■주33시간/최고연봉/복지수당 [진료실/데스크]인재영입,주</h4>
+                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                        </div>
+                                        <div class="wrap-block-link">
+                                            <ul class="wrap-link">
+                                                <li><a href="#">치위생사</a></li>
+                                                <li><a href="#">진료실</a></li>
+                                                <li><a href="#">상담</a></li>
+                                                <li><a href="#">보험청구</a></li>
+                                                <li><a href="#">기타</a></li>
+                                            </ul>
+                                            <ul class="wrap-link">
+                                                <li><a href="#">경력</a></li>
+                                                <li><a href="#">정규직 외</a></li>
+                                                <li><a href="#">치위생사 외</a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="wrap-position">
+                                            <li>서울시 &gt; 강남구</li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <div class="wrap-meta">
+                                            <a href="#"><i class="icon icon-star"></i></a>
+                                            <a href="#"><i class="icon icon-blank"></i></a>
+                                        </div>
+                                        <div class="room-name">D-8</div>
+                                        <div class="time">~ 08.30(금)</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="column">
+                                        <div class="name-dental">강남애프터치과의원</div>
+                                    </div>
+                                    <div class="column info-details">
+                                        <div class="wrap-title">
+                                            <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
+                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                        </div>
+                                        <div class="wrap-block-link">
+                                            <ul class="wrap-link">
+                                                <li><a href="#">치위생사</a></li>
+                                                <li><a href="#">진료실</a></li>
+                                                <li><a href="#">상담</a></li>
+                                                <li><a href="#">보험청구</a></li>
+                                                <li><a href="#">기타</a></li>
+                                            </ul>
+                                            <ul class="wrap-link">
+                                                <li><a href="#">경력</a></li>
+                                                <li><a href="#">정규직 외</a></li>
+                                                <li><a href="#">치위생사 외</a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="wrap-position">
+                                            <li>서울시 &gt; 강남구</li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <div class="wrap-meta">
+                                            <a href="#"><i class="icon icon-star"></i></a>
+                                            <a href="#"><i class="icon icon-blank"></i></a>
+                                        </div>
+                                        <div class="room-name red">내일 마감</div>
+                                        <div class="time">&nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="column">
+                                        <div class="name-dental">강남애프터치과의원</div>
+                                    </div>
+                                    <div class="column info-details">
+                                        <div class="wrap-title">
+                                            <h4 class="item-title">다온미소치과 - [강북미아] 진료실선생님 모십니다~(매달 인센티브,주36시간)</h4>
+                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
+                                        </div>
+                                        <div class="wrap-block-link">
+                                            <ul class="wrap-link">
+                                                <li><a href="#">치위생사</a></li>
+                                                <li><a href="#">진료실</a></li>
+                                                <li><a href="#">상담</a></li>
+                                                <li><a href="#">보험청구</a></li>
+                                                <li><a href="#">기타</a></li>
+                                            </ul>
+                                            <ul class="wrap-link">
+                                                <li><a href="#">경력</a></li>
+                                                <li><a href="#">정규직 외</a></li>
+                                                <li><a href="#">치위생사 외</a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="wrap-position">
+                                            <li>서울시 &gt; 강남구</li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <div class="wrap-meta">
+                                            <a href="#"><i class="icon icon-star"></i></a>
+                                            <a href="#"><i class="icon icon-blank"></i></a>
+                                        </div>
+                                        <div class="room-name">D-2</div>
+                                        <div class="time">~ 08.30(금)</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End resume -->
+            </div>
+            <!-- End Top Sub Page -->
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-1">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>1</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options1" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options1" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options1" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-2">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>2</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        지원한 이력서가 없습니다.<br>
+                        아래 이력서 공개 목록에서 이력서를 선택해주세요.
+                    </div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-2">
+                    <label class="active">
+                        <input type="radio" name="options2" value="option4" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options2" value="option5">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options2" value="option6">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-3">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>3</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        지원한 이력서가 없습니다.
+                    </div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        공개된 이력서가 없습니다.<br>
+                        이력서 관리 목록에서 이력서를 확인해주세요.
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-4">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>4</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options4" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options4" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options4" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-5">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>5</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options5" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options5" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options5" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-6">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>6</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options6" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options6" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options6" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>

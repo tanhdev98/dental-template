@@ -1160,6 +1160,10 @@ h1.title {
     border-top: 1px solid #000;
 }
 
+#notification-tab.mtch__list--mt10 .table {
+    margin-top: 10px;
+}
+
 #notification-tab .table>li {
     display: grid;
     grid-template-columns: 20.67% calc(100% - 20.67% - 10.93%) 10.93%;
@@ -13589,4 +13593,25 @@ h1.title {
 
 .mtch-pop__show.active {
     display: block;
+}
+
+.scrap__select {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 17px;
+}
+
+.scrap__select .form-select-container {
+    height: 35px;
+}
+
+.scrap__select .form-select-container>.form-select-cus {
+    border: 1px solid #999;
+    background: #fff;
+}
+
+.scrap__select .form-select-container>.form-select-cus>.form-option-placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    color: #999 !important;
 }
