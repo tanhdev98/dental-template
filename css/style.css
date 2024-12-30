@@ -12483,6 +12483,10 @@ h1.title {
     background: #f5f5f5;
 }
 
+.resume__snpts--mt60 {
+    margin-top: 60px;
+}
+
 .resume__snpts span {
     font-size: 20px;
     font-weight: 600;
@@ -12700,4 +12704,218 @@ h1.title {
     height: 4px;
     border-radius: 50%;
     background: #b5b5b5;
+}
+
+.rsm-dtl__grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+}
+
+.rsm-dtl__img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.rsm-dtl__table {
+    width: 100%;
+    border-top: 1px solid #333;
+    line-height: 1.3;
+}
+
+.rsm-dtl__table th {
+    width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+    white-space: nowrap;
+}
+
+.rsm-dtl__table--top th {
+    width: 120px;
+}
+
+.rsm-dtl__table td {
+    font-size: 16px;
+    padding: 18px;
+    text-align: left;
+    vertical-align: middle;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    word-break: break-all;
+    height: 50px;
+}
+
+.rsm-dtl__table2 {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    line-height: 1.3;
+}
+
+.rsm-dtl__table2--mt0 {
+    margin-top: 0;
+}
+
+.rsm-dtl__table2 thead th {
+    font-size: 16px;
+    padding: 18px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+    white-space: nowrap;
+}
+
+.rsm-dtl__table2 thead th.empty {
+    width: 45%;
+}
+
+.rsm-dtl__table2 thead th.wd180 {
+    width: 180px;
+}
+
+.rsm-dtl__table2 thead th.wd251 {
+    width: 251px;
+}
+
+.rsm-dtl__table2 tbody th {
+    padding: 18px 25px;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-top: 0;
+    width: 180px;
+}
+
+.rsm-dtl__table2 tbody th.first {
+    text-align: center;
+    border-left: 0;
+}
+
+.rsm-dtl__table2 tbody td {
+    font-size: 16px;
+    padding: 16px ;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    word-break: break-all;
+    height: 50px;
+}
+
+.rsm-dtl__table2 tbody th + td {
+    text-align: left;
+}
+
+.rsm-dtl__intro {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    min-height: 255px;
+}
+
+.rsm-prv {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    overflow-y: auto;
+}
+
+.rsm-prv.active {
+    display: block;
+}
+
+.rsm-prv__inner {
+    width: 100%;
+    max-width: 1260px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 100px;
+}
+
+.rsm-prv__top {
+    padding: 20px 40px 10px;
+}
+
+.rsm-prv__btbx {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3px;
+}
+
+.rsm-prv__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 12px;
+    min-width: 135px;
+    white-space: nowrap;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.rsm-prv__btn:hover {
+    background: #ddd;
+}
+
+.rsm-prv__btn img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.rsm-prv__close {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.rsm-prv__close::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #141414;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.rsm-prv__close::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #141414;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
 }
