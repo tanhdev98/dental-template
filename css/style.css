@@ -12526,7 +12526,7 @@ h1.title {
     justify-content: center;
     align-items: center;
     min-width: 150px;
-    padding: 13px;
+    padding: 13px 22px;
     font-size: 16px;
     color: #fff;
     font-weight: 500;
@@ -12914,6 +12914,429 @@ h1.title {
     width: 90%;
     height: 1px;
     background: #141414;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.rsm-stt {
+    margin-top: 15px;
+}
+
+.rsm-stt__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #ddd;
+    background: #eef7fd;
+    border-radius: 10px;
+}
+
+.rsm-stt__item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 0;
+    position: relative;
+}
+
+.rsm-stt__item + .rsm-stt__item::before {
+    content: '';
+    width: 2px;
+    height: 57%;
+    background: #0068b7;
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    transform: translateY(-50%);
+}
+
+.rsm-stt__item span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #0068b7;
+    text-align: center;
+}
+
+.rsm-stt__num {
+    font-size: 49px;
+    font-weight: 500;
+    color: #0068b7;
+    text-align: center;
+}
+
+.rsm-stt__srh {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.rsm-stt__lf {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.rsm-stt__lf input[type='radio'] {
+    display: none;
+}
+
+.rsm-stt__label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    height: 40px;
+    padding: 15px;
+    font-size: 15px;
+    color: #fff;
+    background: #c9c9c9;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.rsm-stt__lf input[type='radio']:checked + .rsm-stt__label {
+    background: #666;
+}
+
+.rsm-stt__rt {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.rsm-stt__rang {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.rsm-stt__date-input {
+    display: block;
+    width: 153px;
+    height: 40px;
+    padding: 12px 17px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    color: #666;
+    position: relative;
+}
+
+.rsm-stt__date-input::-webkit-calendar-picker-indicator {
+    background: url('../images/icons/icon-date.png') no-repeat center/16px;
+    position: absolute;
+    right: 14px;
+}
+
+.rsm-stt__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    background: #333;
+    padding: 15px;
+    min-width: 70px;
+    height: 40px;
+}
+
+.rsm-stt__table {
+    width: 100%;
+}
+
+.rsm-stt__table th {
+    padding: 17px 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.rsm-stt__table td {
+    padding: 26px 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.rsm-stt__table td:first-child {
+    font-size: 17px;
+    width: 125px;
+    white-space: unset;
+}
+
+.rsm-stt__table td.text-left {
+    text-align: left;
+    white-space: unset;
+}
+
+.rsm-stt__tit {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.rsm-stt__link {
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 82%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rsm-stt__view {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    position: relative;
+}
+
+.rsm-stt__view::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.rsm-stt__view-date {
+    color: #0068b7;
+}
+
+.rsm-stt__delete {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 13px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    background: #666;
+    border-radius: 20px;
+    min-width: 80px;
+}
+
+.rsm-stt__delete--pink {
+    background: #eb6877;
+}
+
+.rsm-stt__result-pass {
+    color: #0068b7;
+}
+
+.rsm-stt__result-fail {
+    color: #e60012;
+}
+
+.rsm-print {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    overflow-y: auto;
+}
+
+.rsm-print.active {
+    display: block;
+}
+
+.rsm-print__inner {
+    width: 990px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rsm-print__container {
+    border: 5px solid #1577cf;
+    padding: 45px 55px 25px;
+    position: relative;
+}
+
+.rsm-print__date {
+    font-size: 13px;
+    color: #999;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.rsm-print__tit {
+    font-family: "Jeju Myeongjo", serif;
+    font-size: 36px;
+    color: #1577cf;
+    text-align: center;
+}
+
+.rsm-print__grid {
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 10px;
+    row-gap: 3px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 25px 0;
+}
+
+.rsm-print__dt {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.rsm-print__dd {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.rsm-print__sbj {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.rsm-print__table {
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+.rsm-print__table th {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.rsm-print__table th:nth-child(1) { width: 16%; }
+.rsm-print__table th:nth-child(2) { width: 19%; }
+.rsm-print__table th:nth-child(3) { width: 32%; }
+.rsm-print__table th:nth-child(4) { width: 20%; }
+.rsm-print__table th:nth-child(5) { width: 14%; }
+
+.rsm-print__table td {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.rsm-print__info {
+    margin-top: 28px;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.rsm-print__info b {
+    font-weight: 600;
+}
+
+.rsm-print__btm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.rsm-print__btm img {
+    display: block;
+    width: 110px;
+}
+
+.rsm-print__btbx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.rsm-print__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #1577cf;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 145px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.rsm-print__close {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: calc(100% + 18px);
+    right: 0;
+}
+
+.rsm-print__close::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.rsm-print__close::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #f1f1f1;
     position: absolute;
     top: 50%;
     left: 50%;
