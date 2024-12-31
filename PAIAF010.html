@@ -84,206 +84,320 @@
                 <div class="resume">
                     <div class="resume__inner">
                         <h3 class="resume__tit">
-                            스크랩
-                            <span>* 최근 3개월 이내 스크랩한 채용정보를 확인할 수 있습니다.</span>
+                            쪽지
                         </h3>
                         
-                        <div class="scrap__select">
-                            <div class="form-select-container">
-                                <select>
-                                    <option class="option-placeholder">스크랩 오래된순</option>
-                                    <option value="">스크랩 최신순</option>
-                                    <option value="">스크랩 오래된순</option>
-                                    <option value="">스크랩 오래된순</option>
-                                    <option value="">스크랩 오래된순</option>
-                                </select>
+                        <div class="rsm-stt__srh">
+                            <div class="rsm-stt__lf">
+                                <input type="radio" name="term" value="oneMonth" id="oneMonth">
+                                <label for="oneMonth" class="rsm-stt__label">1개월</label>
+                                <input type="radio" name="term" value="threeMonth" id="threeMonth">
+                                <label for="threeMonth" class="rsm-stt__label">3개월</label>
+                                <input type="radio" name="term" value="sixMonth" id="sixMonth">
+                                <label for="sixMonth" class="rsm-stt__label">6개월</label>
+                                <input type="radio" name="term" value="directMonth" id="directMonth">
+                                <label for="directMonth" class="rsm-stt__label">직접입력</label>
+                            </div>
+                            <div class="rsm-stt__rt">
+                                <div class="rsm-stt__rang">
+                                    <input type="date" class="rsm-stt__date-input">
+                                    ~
+                                    <input type="date" class="rsm-stt__date-input">
+                                </div>
+                                <button type="button" class="rsm-stt__btn">조회</button>
                             </div>
                         </div>
 
-                        <div id="notification-tab" class="mtch__list mtch__list--mt10">
-                            <ul class="table">
-                                <li>
-                                    <div class="column">
-                                        <div class="name-dental">강남애프터치과의원</div>
-                                    </div>
-                                    <div class="column info-details">
-                                        <div class="wrap-title">
-                                            <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
-                                        </div>
-                                        <div class="wrap-block-link">
-                                            <ul class="wrap-link">
-                                                <li><a href="#">치위생사</a></li>
-                                                <li><a href="#">진료실</a></li>
-                                                <li><a href="#">상담</a></li>
-                                                <li><a href="#">보험청구</a></li>
-                                                <li><a href="#">기타</a></li>
-                                            </ul>
-                                            <ul class="wrap-link">
-                                                <li><a href="#">경력</a></li>
-                                                <li><a href="#">정규직 외</a></li>
-                                                <li><a href="#">치위생사 외</a></li>
-                                            </ul>
-                                        </div>
-                                        <ul class="wrap-position">
-                                            <li>서울시 &gt; 강남구</li>
-                                        </ul>
-                                    </div>
-                                    <div class="column">
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                        <div class="room-name">D-12</div>
-                                        <div class="time">~ 08.30(금)</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="column">
-                                        <div class="name-dental">강남애프터치과의원</div>
-                                    </div>
-                                    <div class="column info-details">
-                                        <div class="wrap-title">
-                                            <h4 class="item-title">★[강남구청역]★진료실 선생님 연차무관★ 정직원 / 알바★ 모집★</h4>
-                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
-                                        </div>
-                                        <div class="wrap-block-link">
-                                            <ul class="wrap-link">
-                                                <li><a href="#">치위생사</a></li>
-                                                <li><a href="#">진료실</a></li>
-                                                <li><a href="#">상담</a></li>
-                                                <li><a href="#">보험청구</a></li>
-                                                <li><a href="#">기타</a></li>
-                                            </ul>
-                                            <ul class="wrap-link">
-                                                <li><a href="#">경력</a></li>
-                                                <li><a href="#">정규직 외</a></li>
-                                                <li><a href="#">치위생사 외</a></li>
-                                            </ul>
-                                        </div>
-                                        <ul class="wrap-position">
-                                            <li>서울시 &gt; 강남구</li>
-                                        </ul>
-                                    </div>
-                                    <div class="column">
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                        <div class="room-name red">오늘 마감</div>
-                                        <div class="time">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="column">
-                                        <div class="name-dental">강남애프터치과의원</div>
-                                    </div>
-                                    <div class="column info-details">
-                                        <div class="wrap-title">
-                                            <h4 class="item-title">■■ 강남 아인스치과 ■■ - ■주33시간/최고연봉/복지수당 [진료실/데스크]인재영입,주</h4>
-                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
-                                        </div>
-                                        <div class="wrap-block-link">
-                                            <ul class="wrap-link">
-                                                <li><a href="#">치위생사</a></li>
-                                                <li><a href="#">진료실</a></li>
-                                                <li><a href="#">상담</a></li>
-                                                <li><a href="#">보험청구</a></li>
-                                                <li><a href="#">기타</a></li>
-                                            </ul>
-                                            <ul class="wrap-link">
-                                                <li><a href="#">경력</a></li>
-                                                <li><a href="#">정규직 외</a></li>
-                                                <li><a href="#">치위생사 외</a></li>
-                                            </ul>
-                                        </div>
-                                        <ul class="wrap-position">
-                                            <li>서울시 &gt; 강남구</li>
-                                        </ul>
-                                    </div>
-                                    <div class="column">
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                        <div class="room-name">D-8</div>
-                                        <div class="time">~ 08.30(금)</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="column">
-                                        <div class="name-dental">강남애프터치과의원</div>
-                                    </div>
-                                    <div class="column info-details">
-                                        <div class="wrap-title">
-                                            <h4 class="item-title">[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h4>
-                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
-                                        </div>
-                                        <div class="wrap-block-link">
-                                            <ul class="wrap-link">
-                                                <li><a href="#">치위생사</a></li>
-                                                <li><a href="#">진료실</a></li>
-                                                <li><a href="#">상담</a></li>
-                                                <li><a href="#">보험청구</a></li>
-                                                <li><a href="#">기타</a></li>
-                                            </ul>
-                                            <ul class="wrap-link">
-                                                <li><a href="#">경력</a></li>
-                                                <li><a href="#">정규직 외</a></li>
-                                                <li><a href="#">치위생사 외</a></li>
-                                            </ul>
-                                        </div>
-                                        <ul class="wrap-position">
-                                            <li>서울시 &gt; 강남구</li>
-                                        </ul>
-                                    </div>
-                                    <div class="column">
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                        <div class="room-name red">내일 마감</div>
-                                        <div class="time">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="column">
-                                        <div class="name-dental">강남애프터치과의원</div>
-                                    </div>
-                                    <div class="column info-details">
-                                        <div class="wrap-title">
-                                            <h4 class="item-title">다온미소치과 - [강북미아] 진료실선생님 모십니다~(매달 인센티브,주36시간)</h4>
-                                            <button class="support" id="support-1" data-type="popup">즉시지원</button>
-                                        </div>
-                                        <div class="wrap-block-link">
-                                            <ul class="wrap-link">
-                                                <li><a href="#">치위생사</a></li>
-                                                <li><a href="#">진료실</a></li>
-                                                <li><a href="#">상담</a></li>
-                                                <li><a href="#">보험청구</a></li>
-                                                <li><a href="#">기타</a></li>
-                                            </ul>
-                                            <ul class="wrap-link">
-                                                <li><a href="#">경력</a></li>
-                                                <li><a href="#">정규직 외</a></li>
-                                                <li><a href="#">치위생사 외</a></li>
-                                            </ul>
-                                        </div>
-                                        <ul class="wrap-position">
-                                            <li>서울시 &gt; 강남구</li>
-                                        </ul>
-                                    </div>
-                                    <div class="column">
-                                        <div class="wrap-meta">
-                                            <a href="#"><i class="icon icon-star"></i></a>
-                                            <a href="#"><i class="icon icon-blank"></i></a>
-                                        </div>
-                                        <div class="room-name">D-2</div>
-                                        <div class="time">~ 08.30(금)</div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="mtch__block mtch__block--pt20">
+                            <a href="#" class="mtch__cnd active">전체 (5)</a>
+                            <a href="#" class="mtch__cnd">NEW (1)</a>
+                            <a href="#" class="mtch__cnd">읽은 쪽지 (4)</a>
                         </div>
+
+                        <table class="msg__table">
+                            <thead>
+                                <tr>
+                                    <th>기관명</th>
+                                    <th>쪽지내용</th>
+                                    <th>발송일시</th>
+                                    <th>관리</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울>서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
+
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">아름치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type msg__type--blue">[보낸쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__read">읽음</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울>서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
+
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울>서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
+
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울>서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
+
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울>서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
+                            </tbody>
+                        </table>
+
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li class="more">...</li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+
                     </div>
                 </div>
                 <!-- End resume -->
