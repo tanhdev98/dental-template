@@ -117,7 +117,7 @@
                                     <div class="mdf__div">
                                         <div class="mdf__item">
                                             <input type="password" class="mdf__input" placeholder="비밀번호 입력">
-                                            <button type="button" class="mdf__change">비밀번호 변경</button>
+                                            <button type="button" class="mdf__change" id="pwChange">비밀번호 변경</button>
                                         </div>
                                     </div>
                                 </div>
@@ -345,6 +345,64 @@
         </div>
     </div>
     <!-- End Content -->
+
+    <div class="mdf-pop" id="pwChangePop">
+        <div class="mdf-pop__container">
+            <h3 class="mdf-pop__tit">비밀번호 변경</h3>
+            <button type="button" class="mdf-pop__close pwChangePopClose"></button>
+            <div class="mdf-pop__block">
+                <div class="mdf__grid2">
+                    <div class="mdf__sbj">
+                        <span class="mdf__red">*</span>
+                        현재 비밀번호
+                    </div>
+                    <div class="mdf__div">
+                        <div class="mdf__item">
+                            <input type="password" class="mdf__input wd-full" value="111111111">
+                        </div>
+                    </div>
+                </div>
+                <div class="mdf__grid2">
+                    <div class="mdf__sbj">
+                        <span class="mdf__red">*</span>
+                        신규 비밀번호
+                    </div>
+                    <div class="mdf__div">
+                        <div class="mdf__item">
+                            <input type="password" class="mdf__input wd-full" placeholder="4~12자리의 영문과 숫자 혼합만 가능">
+                        </div>
+                    </div>
+                </div>
+                <div class="mdf__grid2">
+                    <div class="mdf__sbj">
+                        <span class="mdf__red">*</span>
+                        신규 비밀번호 확인
+                    </div>
+                    <div class="mdf__div">
+                        <div class="mdf__item">
+                            <input type="password" class="mdf__input wd-full" placeholder="신규 비밀번호를 한번 더 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdf-pop__btbx">
+                <button type="button" class="mdf-pop__btn mdf-pop__btn--blue">수정</button>
+                <button type="button" class="mdf-pop__btn pwChangePopClose">취소</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $('#pwChange').click(function() {
+                $('#pwChangePop').addClass('active');
+            });
+
+            $('.pwChangePopClose').click(function() {
+                $('#pwChangePop').removeClass('active');
+            });
+        });
+    </script>
 
     <!-- Footer -->
     <div id="footer">
