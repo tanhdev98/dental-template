@@ -13,6 +13,7 @@
     <script src="js/dropdown.js"></script>
     <script src="js/close-top-banner.js"></script>
     <script src="js/sub-page.js"></script>
+    <script src="js/popup.js"></script>
     <script src="js/dropdown-profile.js"></script>
     <script src="js/side-nav.js"></script>
 </head>
@@ -57,65 +58,59 @@
     <!-- Content -->
     <div id="content" class="sub-page">
         <div class="container">
+            <!-- Top Sub Page -->
             <div id="top-sub-page">
                 <!-- Side Nav -->
                 <div id="icon-side-nav"><span></span></div>
                 <div id="side-nav">
                     <ul class="frame-section">
-                        <li><a href="#"><i class="icon icon-nav-docs"></i>치과정보 관리</a></li>
+                        <li><a href="#"><i class="icon icon-user-subpage"></i>마이 홈</a></li>
                         <li class="item-has-child">
-                            <a href="#"><i class="icon icon-nav-list"></i>채용공고 관리</a>
+                            <a href="#"><i class="icon icon-document-subpage"></i>이력서관리</a>
                             <ul class="sub-menu">
                                 <li><a href="#">이력서 등록</a></li>
                                 <li><a href="">이력서 관리</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><i class="icon icon-nav-light"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-list-two"></i>지원현황</a></li>
+                        <li><a href="#"><i class="icon icon-light-bulb"></i>스마트 매칭</a></li>
                         <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
                         <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
-                        <li><a href="#"><i class="icon icon-nav-coins"></i>DV 포인트 조회</a></li>
-                        <li class="active"><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
                     </ul>
-                    <a href="#" class="side-banner">
-                        <img src="./images/side-banner-sub-page.png" alt="Banner DentailJob">
-                    </a>
                 </div>
-                <!-- ... -->
-                <div id="password-subpage">
-                    <div class="main-section">
-                        <h1 class="title-sub-page">내 정보 수정</h1>
-                        <div class="frame-section frame-gray-header">
-                            <div class="header-frame">
-                                <h1>회원정보확인</h1>
-                            </div>
-                            <div class="content-frame">
-                                <h1>회원님의 개인정보보호를 위해 비밀번호를 한 번 더 입력해 주세요.</h1>
-                                <form>
-                                    <div class="form-container">
-                                        <div class="input-container">
-                                            <div class="form-group">
-                                                <label for="username">아이디:</label>
-                                                <span>pdsoft</span>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="password">비밀번호:</label>
-                                                <input id="password" type="password" placeholder="비밀번호 입력">
-                                            </div>
-                                        </div>
-                                        <div class="button-group">
-                                            <button class="button button-blue">확인</button>
-                                        </div>
+                <!-- End Side Nav -->
+                <!-- resume -->
+                <div class="resume">
+                    <div class="resume__inner">
+                        <h3 class="resume__tit">
+                            쪽지
+                        </h3>
+                        
+                        <div class="mdf">
+                            <h4 class="mdf__tit">회원 정보 확인</h4>
+                            <div class="mdf__block">
+                                <div class="mdf__top">
+                                    회원님의 개인정보보호를 위해 비밀번호를 한번 더 입력해 주세요.
+                                </div>
+                                <div class="mdf__ipbx">
+                                    <div class="mdf__grid">
+                                        <span>아이디:</span>
+                                        <span class="mdf__id">pdsoft</span>
+                                        <span>비밀번호:</span>
+                                        <input type="password" class="mdf__pswd" placeholder="비밀번호 입력">
+                                        <button type="button" class="mdf__confirm">확인</button>
                                     </div>
-                                </form>
-                                <strong>※ 개인정보는 외부에 유출되지 않도록 아이디 및 비밀번호 관리를 철저히 해 주시기를 바랍니다.</strong>
+                                </div>
+                                <p class="mdf__ps">※ 개인정보는 외부에 유출되지 않도록 아이디 및 비밀번호 관리를 철저히 해 주시기 바랍니다.</p>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-                <!-- End ... -->
+                <!-- End resume -->
             </div>
-
-
+            <!-- End Top Sub Page -->
         </div>
     </div>
     <!-- End Content -->
