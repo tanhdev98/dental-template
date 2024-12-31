@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/sub-page.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/dropdown-profile.js"></script>
+    <script src="js/side-nav.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="sub-header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo-sub.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="letter-notify">
+                        <a href="#" class="icon icon-letter"></a>
+                        <div class="count-notify">13</div>
+                    </div>
+                    <a href="#" class="profile-setting">
+                        <div class="avatar">
+                            <img src="./images/default-avatar-header.png" alt="avatar">
+                        </div>
+                        <div class="name">pdsoft 님</div>
+                    </a>
+                    <div class="profile-setting-popup">
+                        <ul>
+                            <li><a href="#">마이 페이지</a></li>
+                            <li><a href="#">이력서 관리</a></li>
+                            <li><a href="#">지원현황</a></li>
+                            <li><a href="#">스마트 매칭</a></li>
+                            <li><a href="#">스크랩</a></li>
+                            <li><a href="#">내 정보 수정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Content -->
+    <div id="content" class="sub-page">
+        <div class="container">
+            <!-- Top Sub Page -->
+            <div id="top-sub-page">
+                <!-- Side Nav -->
+                <div id="icon-side-nav"><span></span></div>
+                <div id="side-nav">
+                    <ul class="frame-section">
+                        <li><a href="#"><i class="icon icon-user-subpage"></i>마이 홈</a></li>
+                        <li class="item-has-child">
+                            <a href="#"><i class="icon icon-document-subpage"></i>이력서관리</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">이력서 등록</a></li>
+                                <li><a href="">이력서 관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon icon-list-two"></i>지원현황</a></li>
+                        <li><a href="#"><i class="icon icon-light-bulb"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                    </ul>
+                </div>
+                <!-- End Side Nav -->
+                <!-- resume -->
+                <div class="resume">
+                    <div class="resume__inner">
+                        <h3 class="resume__tit">
+                            내 정보 수정
+                        </h3>
+                        
+                        <div class="mdf mdf--mt18">
+                            <div class="mdf__container">
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj pt0">
+                                        <span class="mdf__blue">*</span>
+                                        회원그룹구분
+                                    </div>
+                                    <div class="mdf__div">
+                                        <span class="mdf__blue">개인회원</span>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj pt0">
+                                        <span class="mdf__red">*</span>
+                                        아이디
+                                    </div>
+                                    <div class="mdf__div">
+                                        <span class="mdf__blue">pdsoft(통합회원)</span>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        비밀번호
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <input type="password" class="mdf__input" placeholder="비밀번호 입력">
+                                            <button type="button" class="mdf__change">비밀번호 변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__blue">*</span>
+                                        이름
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <input type="text" class="mdf__input" value="신미경" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__blue">*</span>
+                                        생년월일
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <div class="mdf__select-readonly wd90">1983</div>
+                                            <div class="mdf__select-readonly">8</div>
+                                            <div class="mdf__select-readonly">17</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        회원구분
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <div class="form-select-container">
+                                                <select>
+                                                    <option class="option-placeholder">선택</option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        면허번호
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <input type="text" class="mdf__input">
+                                            <label class="mdf__label" for="noneLicense">
+                                                <input type="checkbox" id="noneLicense">
+                                                없음
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        근무처(소속)
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <input type="text" class="mdf__input">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        연락처
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <div class="form-select-container wd90">
+                                                <select>
+                                                    <option class="option-placeholder">02</option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <span class="mdf__oh">-</span>
+                                            <input type="text" class="mdf__input wd75">
+                                            <span class="mdf__oh">-</span>
+                                            <input type="text" class="mdf__input wd75">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        휴대폰
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <div class="form-select-container wd90">
+                                                <select>
+                                                    <option class="option-placeholder">010</option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <span class="mdf__oh">-</span>
+                                            <input type="text" class="mdf__input wd75">
+                                            <span class="mdf__oh">-</span>
+                                            <input type="text" class="mdf__input wd75">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        이메일
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <input type="text" class="mdf__input wd130">
+                                            <span class="mdf__oh">@</span>
+                                            <input type="text" class="mdf__input wd130">
+                                            <div class="form-select-container wd130">
+                                                <select>
+                                                    <option class="option-placeholder">010</option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <p class="mdf__note">※ hanmail, gmail은 수신에 제한이 있을 수 있습니다. 다른 이메일을 입력해주세요.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        주소
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item">
+                                            <input type="text" class="mdf__input wd130" placeholder="우편번호">
+                                            <button type="button" class="mdf__adr-btn">우편번호 검색</button>
+                                        </div>
+                                        <div class="mdf__item">
+                                            <input type="text" class="mdf__input wd-full" placeholder="기본 주소">
+                                        </div>
+                                        <div class="mdf__item">
+                                            <input type="text" class="mdf__input wd-full" placeholder="상세 주소">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        비타민 메일수신
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item gap30">
+                                            <label class="mdf__radio-label" for="mailY">
+                                                <input type="radio" name="mailYn" id="mailY" >
+                                                예
+                                            </label>
+                                            <label class="mdf__radio-label" for="mailN">
+                                                <input type="radio" name="mailYn" id="mailN" >
+                                                아니오
+                                            </label>
+                                            <p class="mdf__note">※ 비타민메일링은 매일매일 유용한 치과정보 이메일로 발송해 드리는 서비스 입니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdf__grid2">
+                                    <div class="mdf__sbj">
+                                        <span class="mdf__red">*</span>
+                                        SMS 수신
+                                    </div>
+                                    <div class="mdf__div">
+                                        <div class="mdf__item gap30">
+                                            <label class="mdf__radio-label" for="smsY">
+                                                <input type="radio" name="smsYn" id="smsY" >
+                                                예
+                                            </label>
+                                            <label class="mdf__radio-label" for="smsN">
+                                                <input type="radio" name="smsYn" id="smsN" >
+                                                아니오
+                                            </label>
+                                            <p class="mdf__note">※ 문자 수신 동의 시 덴탈비타민, 덴탈잡, DVmall 사이트의 다양한 할인 혜택을 받으실 수 있습니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mdf__bottom">
+                                회원 탈퇴를 원하실 경우 "<a href="#" class="mdf__scs">회원탈퇴</a>" 버튼을 클릭해주세요.
+                            </div>
+
+                            <div class="mdf__btbx">
+                                <button type="button" class="mdf__btn mdf__btn--blue">회원정보 수정</button>
+                                <button type="button" class="mdf__btn">취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End resume -->
+            </div>
+            <!-- End Top Sub Page -->
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>

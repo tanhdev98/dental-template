@@ -13922,6 +13922,10 @@ h1.title {
     margin-bottom: 50px;
 }
 
+.mdf--mt18 {
+    margin-top: 18px;
+}
+
 .mdf__tit {
     font-size: 18px;
     margin-bottom: 23px;
@@ -14006,4 +14010,256 @@ h1.title {
     text-align: center;
     font-size: 15px;
     color: #a40000;
+}
+
+.mdf__container {
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mdf__grid2 {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.mdf__sbj {
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.mdf__sbj.pt0 {
+    padding-top: 0;
+}
+
+.mdf__blue {
+    font-size: 15px;
+    color: #076ecc;
+}
+
+.mdf__red {
+    font-size: 15px;
+    color: #e60012;
+}
+
+.mdf__item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.mdf__item.gap30 {
+    gap: 30px;
+}
+
+.mdf__item + .mdf__item {
+    margin-top: 3px;
+}
+
+.mdf__input {
+    width: 170px;
+    height: 35px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.mdf__input.wd75 {
+    width: 75px;
+}
+
+.mdf__input.wd130 {
+    width: 130px;
+}
+
+.mdf__input.wd-full {
+    width: 100%;
+}
+
+.mdf__input::placeholder {
+    font-size: 14px;
+    color: #bbb;
+    font-weight: 300;
+}
+
+.mdf__input:read-only {
+    background: #eeeeee;
+}
+
+.mdf__change {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    padding: 10px 15px;
+    height: 35px;
+    white-space: nowrap;
+}
+
+.mdf__select-readonly {
+    width: 75px;
+    height: 35px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #eeeeee;
+    position: relative;
+}
+
+.mdf__select-readonly.wd90 {
+    width: 90px;
+}
+
+.mdf__select-readonly::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.mdf__item .form-select-container {
+    width: 246px;
+    height: 35px;
+}
+
+.mdf__item .form-select-container.wd90 {
+    width: 90px;
+}
+
+.mdf__item .form-select-container.wd130 {
+    width: 130px;
+}
+
+.mdf__item .form-select-container>.form-select-cus {
+    border-radius: 5px;
+}
+
+.mdf__item .form-select-container>.form-select-cus>.form-option-placeholder {
+    font-size: 15px;
+    color: #666 !important;
+    padding: 0 15px;
+}
+
+.mdf__item .form-select-container>.form-select-cus>.form-option-placeholder::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) rotate(45deg);
+    background: unset;
+    margin: 0;
+}
+
+.mdf__label {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    gap: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.mdf__oh {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.mdf__note {
+    font-size: 13px;
+    color: #076ecc;
+    line-height: 1.3;
+}
+
+.mdf__item + .mdf__note {
+    margin-top: 10px;
+}
+
+.mdf__adr-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 13px;
+    height: 35px;
+    border: 1px solid #999;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+}
+
+.mdf__radio-label {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.mdf__bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mdf__scs {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.mdf__btbx {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.mdf__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #999;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 30px;
+    min-width: 120px;
+}
+
+.mdf__btn--blue {
+    border: 0;
+    color: #fff;
+    background: #076ecc;
 }
