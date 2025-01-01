@@ -14694,7 +14694,16 @@ h1.title {
     margin-top: 20px;
 }
 
-.dntInf__table th {
+.dntInf__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
+}
+
+.dntInf__grid.bg-white {
+    background-color: #fff;
+}
+
+.dntInf__head li {
     padding: 17px;
     text-align: center;
     vertical-align: middle;
@@ -14702,6 +14711,17 @@ h1.title {
     font-weight: 600;
     white-space: nowrap;
     border-bottom: 1px solid #ddd;
+}
+
+.dtnInf__body li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .dntInf__stt-info {
@@ -14714,4 +14734,115 @@ h1.title {
     display: inline-block;
     width: 16px;
     cursor: pointer;
+}
+
+.dntInf__cnd {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 7px 18px;
+    white-space: nowrap;
+    border-radius: 20px;
+    background: #88abda;
+}
+
+.dntInf__dl {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.dntInf__dt {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.dntInf__dd {
+    margin-top: 9px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+}
+
+.dntInf__dd > span {
+    font-weight: 700;
+    color: #0068b7;
+}
+
+.dntInf__jump {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 9px 12px;
+    white-space: nowrap;
+    border-radius: 25px;
+    background: #f39800;
+}
+
+.dntInf__aplc {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.dntInf__aplc span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.dntInf__aplc span.bold {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dntInf__view {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.dntInf__reset {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #ddd;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    white-space: nowrap;
+}
+
+.dntInf__mng {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.dntInf__mng-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    padding: 8px;
+    min-width: 90px;
+    background: #999;
+    border-radius: 30px;
+}
+
+.dntInf__mng-btn.blue {
+    background: #0068b7;
 }
