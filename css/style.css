@@ -13066,6 +13066,10 @@ h1.title {
     margin-top: 20px;
 }
 
+.rsm-stt__srh.mt10 {
+    margin-top: 10px;
+}
+
 .rsm-stt__lf {
     display: flex;
     align-items: center;
@@ -14682,4 +14686,32 @@ h1.title {
 .dntInf__textarea.full {
     max-width: unset;
     height: 240px;
+}
+
+.dntInf__table {
+    width: 100%;
+    border-top: 1px solid #00467b;
+    margin-top: 20px;
+}
+
+.dntInf__table th {
+    padding: 17px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 1px solid #ddd;
+}
+
+.dntInf__stt-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.dntInf__stt-info > img {
+    display: inline-block;
+    width: 16px;
+    cursor: pointer;
 }
