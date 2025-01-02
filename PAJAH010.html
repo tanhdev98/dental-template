@@ -73,10 +73,10 @@
                                 <li><a href="">이력서 관리</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><i class="icon icon-nav-user"></i>지원자 관리</a></li>
+                        <li class="active"><a href="#"><i class="icon icon-nav-user"></i>지원자 관리</a></li>
                         <li><a href="#"><i class="icon icon-nav-promo"></i>덴탈잡 이용권 관리</a></li>
                         <li><a href="#"><i class="icon icon-nav-light"></i>스마트 매칭</a></li>
-                        <li class="active"><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
                         <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
                         <li><a href="#"><i class="icon icon-nav-coins"></i>DV 포인트 조회</a></li>
                         <li><a href="#"><i class="icon icon-nav-lock"></i>내 정보 잠금 설정</a></li>
@@ -91,234 +91,316 @@
                 <div class="resume">
                     <div class="resume__inner">
                         <h3 class="resume__tit">
-                            스크랩
+                            쪽지
                         </h3>
-                        <h3 class="resume__tit col">
-                            <span>* 최근 3개월 이내 스크랩한 인재의 이력서 중 공개중인 이력서만 열람 가능합니다.</span>
-                            <span>* 스크랩 한 후 회원이 비공개 처리 하였다면 해당 정보는 스크랩 목록에서 확인 불가능합니다.</span>
-                        </h3>
-                        <div class="scrap__select">
-                            <div class="form-select-container">
-                                <select>
-                                    <option class="option-placeholder" selected="" disabled="" hidden="">스크랩 오래된순</option>
-                                    <option value="">스크랩 최신순</option>
-                                    <option value="">스크랩 오래된순</option>
-                                    <option value="">스크랩 오래된순</option>
-                                    <option value="">스크랩 오래된순</option>
-                                </select>
+                        <div class="rsm-stt__srh">
+                            <div class="rsm-stt__lf">
+                                <input type="radio" name="term" value="oneMonth" id="oneMonth">
+                                <label for="oneMonth" class="rsm-stt__label">1개월</label>
+                                <input type="radio" name="term" value="threeMonth" id="threeMonth">
+                                <label for="threeMonth" class="rsm-stt__label">3개월</label>
+                                <input type="radio" name="term" value="sixMonth" id="sixMonth">
+                                <label for="sixMonth" class="rsm-stt__label">6개월</label>
+                                <input type="radio" name="term" value="directMonth" id="directMonth">
+                                <label for="directMonth" class="rsm-stt__label">직접입력</label>
+                            </div>
+                            <div class="rsm-stt__rt">
+                                <div class="rsm-stt__rang">
+                                    <input type="date" class="rsm-stt__date-input">
+                                    ~
+                                    <input type="date" class="rsm-stt__date-input">
+                                </div>
+                                <button type="button" class="rsm-stt__btn">조회</button>
                             </div>
                         </div>
-                        <div class="rsm-stt">
+                        <div class="mtch__block mtch__block--pt20">
+                            <a href="#" class="mtch__cnd active">전체 (5)</a>
+                            <a href="#" class="mtch__cnd">NEW (1)</a>
+                            <a href="#" class="mtch__cnd">읽은 쪽지 (4)</a>
+                        </div>
 
-                            <div class="cndd">
-                                <div class="cndd__block mt10">
-                                    <div class="cndd__top2">
-                                        <div class="cndd__info">
-                                            <div class="cndd__name">
-                                                홍길동
-                                                <img src="./images/icons/icon-letter.png" alt="">
-                                            </div>
-                                            <div class="cndd__cntn">
-                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
-                                                <div class="table">
-                                                    <div class="wrap-meta">
-                                                        <a href="#"><i class="icon icon-star"></i></a>
-                                                        <a href="#"><i class="icon icon-blank"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
-                                        </div>
-                                        
-                                        <div class="cndd__end">
-                                            <ul class="cndd__list">
-                                                <li class="cndd__item">경력</li>
-                                                <li class="cndd__item">정규직 외</li>
-                                                <li class="cndd__item">치위생사 외</li>
-                                            </ul>
-                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
-                                        </div>
-                                    </div>
-                                    <div class="cndd__bottom">
-                                        <div class="cndd__lf">
-                                            <span>매칭일: 2024.08.21</span>
-                                        </div>
-                                        <button type="button" class="cndd__delete">
-                                            <img src="./images/icons/icon-delete.png" alt="">
-                                        </button>
-                                    </div>
-                                </div>
+                        <table class="msg__table">
+                            <thead>
+                                <tr>
+                                    <th>기관명</th>
+                                    <th>쪽지내용</th>
+                                    <th>발송일시</th>
+                                    <th>관리</th>
+                                </tr>
+                            </thead>
 
-                                <div class="cndd__block">
-                                    <div class="cndd__top2">
-                                        <div class="cndd__info">
-                                            <div class="cndd__name">
-                                                홍길동
-                                                <img src="./images/icons/icon-letter.png" alt="">
+                            <tbody>
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
                                             </div>
-                                            <div class="cndd__cntn">
-                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
-                                                <div class="table">
-                                                    <div class="wrap-meta">
-                                                        <a href="#"><i class="icon icon-star"></i></a>
-                                                        <a href="#"><i class="icon icon-blank"></i></a>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울&gt;서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
                                             </div>
-                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
                                         </div>
-                                        
-                                        <div class="cndd__end">
-                                            <ul class="cndd__list">
-                                                <li class="cndd__item">경력</li>
-                                                <li class="cndd__item">정규직 외</li>
-                                                <li class="cndd__item">치위생사 외</li>
-                                            </ul>
-                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
                                         </div>
-                                    </div>
-                                    <div class="cndd__bottom">
-                                        <div class="cndd__lf">
-                                            <span>매칭일: 2024.08.21</span>
-                                        </div>
-                                        <button type="button" class="cndd__delete">
-                                            <img src="./images/icons/icon-delete.png" alt="">
-                                        </button>
-                                    </div>
-                                </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
 
-                                <div class="cndd__block">
-                                    <div class="cndd__top2">
-                                        <div class="cndd__info">
-                                            <div class="cndd__name">
-                                                홍길동
-                                                <img src="./images/icons/icon-letter.png" alt="">
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">아름치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type msg__type--blue">[보낸쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
                                             </div>
-                                            <div class="cndd__cntn">
-                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
-                                                <div class="table">
-                                                    <div class="wrap-meta">
-                                                        <a href="#"><i class="icon icon-star"></i></a>
-                                                        <a href="#"><i class="icon icon-blank"></i></a>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__read">읽음</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울&gt;서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
                                             </div>
-                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
                                         </div>
-                                        
-                                        <div class="cndd__end">
-                                            <ul class="cndd__list">
-                                                <li class="cndd__item">경력</li>
-                                                <li class="cndd__item">정규직 외</li>
-                                                <li class="cndd__item">치위생사 외</li>
-                                            </ul>
-                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
                                         </div>
-                                    </div>
-                                    <div class="cndd__bottom">
-                                        <div class="cndd__lf">
-                                            <span>매칭일: 2024.08.21</span>
-                                        </div>
-                                        <button type="button" class="cndd__delete">
-                                            <img src="./images/icons/icon-delete.png" alt="">
-                                        </button>
-                                    </div>
-                                </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
 
-                                <div class="cndd__block">
-                                    <div class="cndd__top2">
-                                        <div class="cndd__info">
-                                            <div class="cndd__name">
-                                                홍길동
-                                                <img src="./images/icons/icon-letter.png" alt="">
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
                                             </div>
-                                            <div class="cndd__cntn">
-                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
-                                                <div class="table">
-                                                    <div class="wrap-meta">
-                                                        <a href="#"><i class="icon icon-star"></i></a>
-                                                        <a href="#"><i class="icon icon-blank"></i></a>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울&gt;서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
                                             </div>
-                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
                                         </div>
-                                        
-                                        <div class="cndd__end">
-                                            <ul class="cndd__list">
-                                                <li class="cndd__item">경력</li>
-                                                <li class="cndd__item">정규직 외</li>
-                                                <li class="cndd__item">치위생사 외</li>
-                                            </ul>
-                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
                                         </div>
-                                    </div>
-                                    <div class="cndd__bottom">
-                                        <div class="cndd__lf">
-                                            <span>매칭일: 2024.08.21</span>
-                                        </div>
-                                        <button type="button" class="cndd__delete">
-                                            <img src="./images/icons/icon-delete.png" alt="">
-                                        </button>
-                                    </div>
-                                </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
 
-                                <div class="cndd__block">
-                                    <div class="cndd__top2">
-                                        <div class="cndd__info">
-                                            <div class="cndd__name">
-                                                홍길동
-                                                <img src="./images/icons/icon-letter.png" alt="">
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
                                             </div>
-                                            <div class="cndd__cntn">
-                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
-                                                <div class="table">
-                                                    <div class="wrap-meta">
-                                                        <a href="#"><i class="icon icon-star"></i></a>
-                                                        <a href="#"><i class="icon icon-blank"></i></a>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울&gt;서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
                                             </div>
-                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
                                         </div>
-                                        
-                                        <div class="cndd__end">
-                                            <ul class="cndd__list">
-                                                <li class="cndd__item">경력</li>
-                                                <li class="cndd__item">정규직 외</li>
-                                                <li class="cndd__item">치위생사 외</li>
-                                            </ul>
-                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
                                         </div>
-                                    </div>
-                                    <div class="cndd__bottom">
-                                        <div class="cndd__lf">
-                                            <span>매칭일: 2024.08.21</span>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
+
+                                <!-- message set -->
+                                <tr>
+                                    <td>
+                                        <span class="msg__name">연세치과</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__block">
+                                            <span class="msg__type">[받은쪽지]</span>
+                                            <div class="msg__txt">
+                                                네 저희 담당자가 월, 화, 수 오후 중 시간 확정해서 연락 드리겠습니다. <br>
+                                                그때 뵙겠습니다. 감사합니다.
+                                            </div>
                                         </div>
-                                        <button type="button" class="cndd__delete">
-                                            <img src="./images/icons/icon-delete.png" alt="">
-                                        </button>
-                                    </div>
-                                </div>
+                                    </td>
+                                    <td>
+                                        오늘<br>
+                                        오후 4:21:15<br>
+                                        <span class="msg__new">NEW</span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="msg__delete">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr class="msg__bottom">
+                                    <td>
+                                        <span class="msg__rcr">채용중</span>
+                                    </td>
+                                    <td>
+                                        <div class="msg__info">
+                                            <a href="#" class="msg__link">치위생사, 치기공사 모집</a>
+                                            <div class="msg__div">
+                                                <div>서울&gt;서초구</div>
+                                                <ul>
+                                                    <li>진료실</li>
+                                                    <li>경력</li>
+                                                    <li>정규직</li>
+                                                    <li>치과위생사 자격증</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" class="text-right">
+                                        <div class="msg__last">
+                                            마감일<br>
+                                            <span class="msg__dday">D-4</span><br>
+                                            2024.05.04
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- // message set -->
+                            </tbody>
+                        </table>
 
-                            </div>
-
-                            <div class="wrap-pagination">
-                                <div class="pagination-arrow icon icon-prev disable"></div>
-                                <ul class="pagination-number">
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li class="more">...</li>
-                                    <li><a href="#">7</a></li>
-                                    <li><a href="#">8</a></li>
-                                    <li><a href="#">9</a></li>
-                                    <li><a href="#">10</a></li>
-                                </ul>
-                                <div class="pagination-arrow icon icon-next"></div>
-                            </div>
-
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li class="more">...</li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
                         </div>
                     </div>
                 </div>
