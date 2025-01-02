@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/sub-page.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/dropdown-profile.js"></script>
+    <script src="js/side-nav.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="sub-header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo-sub.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="letter-notify">
+                        <a href="#" class="icon icon-letter"></a>
+                        <div class="count-notify">13</div>
+                    </div>
+                    <a href="#" class="profile-setting">
+                        <div class="avatar">
+                            <img src="./images/default-avatar-header.png" alt="avatar">
+                        </div>
+                        <div class="name">pdsoft 님</div>
+                    </a>
+                    <div class="profile-setting-popup">
+                        <ul>
+                            <li><a href="#">마이 페이지</a></li>
+                            <li><a href="#">이력서 관리</a></li>
+                            <li><a href="#">지원현황</a></li>
+                            <li><a href="#">스마트 매칭</a></li>
+                            <li><a href="#">스크랩</a></li>
+                            <li><a href="#">내 정보 수정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Content -->
+    <div id="content" class="sub-page">
+        <div class="container">
+            <!-- Top Sub Page -->
+            <div id="top-sub-page">
+                <!-- Side Nav -->
+                <div id="icon-side-nav"><span></span></div>
+                <div id="side-nav">
+                    <ul class="frame-section">
+                        <li><a href="#"><i class="icon icon-user-subpage"></i>마이 홈</a></li>
+                        <li class="item-has-child">
+                            <a href="#"><i class="icon icon-document-subpage"></i>이력서관리</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">이력서 등록</a></li>
+                                <li><a href="">이력서 관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon icon-list-two"></i>지원현황</a></li>
+                        <li><a href="#"><i class="icon icon-light-bulb"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                    </ul>
+                </div>
+                <!-- End Side Nav -->
+                <!-- resume -->
+                <div class="resume">
+                    <div class="resume__inner">
+                        <h3 class="resume__tit">
+                            스마트 매칭
+                        </h3>
+                        <div class="rsm-stt">
+                            <div class="rsm-mng">
+                                <div class="rsm-mng__btbx">
+                                    <button type="button" id="mtchPopOpen" class="rsm-mng__btn">스마트 매칭 조건 설정</button>
+                                </div>
+                            </div>
+                            <div class="mtch">
+                                <div class="mtch__block">
+                                    <a href="#" class="mtch__cnd active">매칭조건 1 (10)</a>
+                                    <a href="#" class="mtch__cnd">매칭조건 2 (10)</a>
+                                    <a href="#" class="mtch__cnd">매칭조건 3 (10)</a>
+                                    <a href="#" class="mtch__cnd">매칭조건 4 (10)</a>
+                                    <a href="#" class="mtch__cnd">매칭조건 5 (10)</a>
+                                </div>
+                                <ul class="mtch__state">
+                                    <li>서울&gt;강남구</li>
+                                    <li>서울&gt;서초구</li>
+                                    <li>진료실</li>
+                                    <li>치과위생사</li>
+                                </ul>
+                            </div>
+
+                            <div class="cndd">
+                                <div class="cndd__block">
+                                    <div class="cndd__top2">
+                                        <div class="cndd__info">
+                                            <div class="cndd__name">
+                                                홍길동
+                                                <img src="./images/icons/icon-letter.png" alt="">
+                                            </div>
+                                            <div class="cndd__cntn">
+                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                                <div class="table">
+                                                    <div class="wrap-meta">
+                                                        <a href="#"><i class="icon icon-star"></i></a>
+                                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                        </div>
+                                        
+                                        <div class="cndd__end">
+                                            <ul class="cndd__list">
+                                                <li class="cndd__item">경력</li>
+                                                <li class="cndd__item">정규직 외</li>
+                                                <li class="cndd__item">치위생사 외</li>
+                                            </ul>
+                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__bottom">
+                                        <div class="cndd__lf">
+                                            <span>매칭일: 2024.08.21</span>
+                                        </div>
+                                        <button type="button" class="cndd__delete">
+                                            <img src="./images/icons/icon-delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cndd__block">
+                                    <div class="cndd__top2">
+                                        <div class="cndd__info">
+                                            <div class="cndd__name">
+                                                홍길동
+                                                <img src="./images/icons/icon-letter.png" alt="">
+                                            </div>
+                                            <div class="cndd__cntn">
+                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                                <div class="table">
+                                                    <div class="wrap-meta">
+                                                        <a href="#"><i class="icon icon-star"></i></a>
+                                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                        </div>
+                                        
+                                        <div class="cndd__end">
+                                            <ul class="cndd__list">
+                                                <li class="cndd__item">경력</li>
+                                                <li class="cndd__item">정규직 외</li>
+                                                <li class="cndd__item">치위생사 외</li>
+                                            </ul>
+                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__bottom">
+                                        <div class="cndd__lf">
+                                            <span>매칭일: 2024.08.21</span>
+                                        </div>
+                                        <button type="button" class="cndd__delete">
+                                            <img src="./images/icons/icon-delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cndd__block">
+                                    <div class="cndd__top2">
+                                        <div class="cndd__info">
+                                            <div class="cndd__name">
+                                                홍길동
+                                                <img src="./images/icons/icon-letter.png" alt="">
+                                            </div>
+                                            <div class="cndd__cntn">
+                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                                <div class="table">
+                                                    <div class="wrap-meta">
+                                                        <a href="#"><i class="icon icon-star"></i></a>
+                                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                        </div>
+                                        
+                                        <div class="cndd__end">
+                                            <ul class="cndd__list">
+                                                <li class="cndd__item">경력</li>
+                                                <li class="cndd__item">정규직 외</li>
+                                                <li class="cndd__item">치위생사 외</li>
+                                            </ul>
+                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__bottom">
+                                        <div class="cndd__lf">
+                                            <span>매칭일: 2024.08.21</span>
+                                        </div>
+                                        <button type="button" class="cndd__delete">
+                                            <img src="./images/icons/icon-delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cndd__block">
+                                    <div class="cndd__top2">
+                                        <div class="cndd__info">
+                                            <div class="cndd__name">
+                                                홍길동
+                                                <img src="./images/icons/icon-letter.png" alt="">
+                                            </div>
+                                            <div class="cndd__cntn">
+                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                                <div class="table">
+                                                    <div class="wrap-meta">
+                                                        <a href="#"><i class="icon icon-star"></i></a>
+                                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                        </div>
+                                        
+                                        <div class="cndd__end">
+                                            <ul class="cndd__list">
+                                                <li class="cndd__item">경력</li>
+                                                <li class="cndd__item">정규직 외</li>
+                                                <li class="cndd__item">치위생사 외</li>
+                                            </ul>
+                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__bottom">
+                                        <div class="cndd__lf">
+                                            <span>매칭일: 2024.08.21</span>
+                                        </div>
+                                        <button type="button" class="cndd__delete">
+                                            <img src="./images/icons/icon-delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cndd__block">
+                                    <div class="cndd__top2">
+                                        <div class="cndd__info">
+                                            <div class="cndd__name">
+                                                홍길동
+                                                <img src="./images/icons/icon-letter.png" alt="">
+                                            </div>
+                                            <div class="cndd__cntn">
+                                                <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                                <div class="table">
+                                                    <div class="wrap-meta">
+                                                        <a href="#"><i class="icon icon-star"></i></a>
+                                                        <a href="#"><i class="icon icon-blank"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                        </div>
+                                        
+                                        <div class="cndd__end">
+                                            <ul class="cndd__list">
+                                                <li class="cndd__item">경력</li>
+                                                <li class="cndd__item">정규직 외</li>
+                                                <li class="cndd__item">치위생사 외</li>
+                                            </ul>
+                                            <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__bottom">
+                                        <div class="cndd__lf">
+                                            <span>매칭일: 2024.08.21</span>
+                                        </div>
+                                        <button type="button" class="cndd__delete">
+                                            <img src="./images/icons/icon-delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="wrap-pagination">
+                                <div class="pagination-arrow icon icon-prev disable"></div>
+                                <ul class="pagination-number">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li class="more">...</li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                </ul>
+                                <div class="pagination-arrow icon icon-next"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End resume -->
+            </div>
+            <!-- End Top Sub Page -->
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-1">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>1</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options1" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options1" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options1" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-2">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>2</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        지원한 이력서가 없습니다.<br>
+                        아래 이력서 공개 목록에서 이력서를 선택해주세요.
+                    </div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-2">
+                    <label class="active">
+                        <input type="radio" name="options2" value="option4" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options2" value="option5">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options2" value="option6">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-3">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>3</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        지원한 이력서가 없습니다.
+                    </div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-title">
+                        공개된 이력서가 없습니다.<br>
+                        이력서 관리 목록에서 이력서를 확인해주세요.
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-4">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>4</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options4" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options4" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options4" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-5">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>5</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options5" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options5" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options5" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="popup popup-support" for="support-6">
+            <button class="popup-close"></button>
+            <div class="popup-header">
+                <p class="popup-header-number-room">서울<span>6</span>치과</p>
+                <div class="popup-header-title">치위생사, 치기공사 모집</div>
+                <ul class="wrap-link">
+                    <li><a href="#">경력</a></li>
+                    <li><a href="#">정규직 외</a></li>
+                    <li><a href="#">치위생사 외</a></li>
+                </ul>
+            </div>
+            <div class="popup-content">
+                <div class="popup-content-header">
+                    <div class="header-item-top">
+                        <span>최근 지원한 이력서</span>
+                    </div>
+                    <button class="saved-conditions active" data-type="slideToggle"><span>이력서 변경</span><i
+                            class="icon icon-down"></i></button>
+                </div>
+                <div class="box-support">
+                    <div class="box-support-date date-box">2024.05.20 오후 3:26:06</div>
+                    <div class="box-support-title">안녕하세요. 잘 부탁드립니다.</div>
+                    <ul class="box-support-list">
+                        <li>
+                            <span class="box-support-list-title">이메일</span>
+                            <span class="box-support-list-content">akgr@daum.net</span>
+                        </li>
+                        <li>
+                            <span class="box-support-list-title">휴대폰</span>
+                            <span class="box-support-list-content">010-0000-0000</span>
+                        </li>
+                    </ul>
+                    <div class="box-support-edit"><a href="#">수정</a></div>
+                </div>
+
+                <div class="popup-content-header popup-content-header-after-box">
+                    <div class="header-item-top">
+                        <span>이력서 공개 목록</span>
+                    </div>
+                    <button classs="saved-conditions" class="right"><span>이력서 관리</span><i
+                            class="icon icon-down right"></i></button>
+                </div>
+                <div class="group-radio group-radio-1">
+                    <label class="active">
+                        <input type="radio" name="options6" value="option1" checked>
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options6" value="option2">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="options6" value="option3">
+                        <div class="radio-content">
+                            <div class="radio-content-date date-box">2024.05.20 오후 3:26:06</div>
+                            <span class="radio-content-title">안녕하세요. 잘 부탁드립니다.</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="accept-all">이력서 선택 완료</button>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-footer-btn">지원하기</button>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>

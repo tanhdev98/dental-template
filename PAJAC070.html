@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/sub-page.js"></script>
+    <script src="js/side-nav.js"></script>
+    <script src="js/dropdown-profile.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="sub-header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo-sub-dental.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="letter-notify">
+                        <a href="#" class="icon icon-letter"></a>
+                        <div class="count-notify">13</div>
+                    </div>
+                    <a href="#" class="profile-setting">
+                        <div class="avatar">
+                            <img src="./images/default-avatar-header.png" alt="avatar">
+                        </div>
+                        <div class="name">pdsoft 님</div>
+                    </a>
+                    <div class="profile-setting-popup">
+                        <ul>
+                            <li><a href="#">마이 페이지</a></li>
+                            <li><a href="#">채용 공고 관리</a></li>
+                            <li><a href="#">지원자 관리</a></li>
+                            <li><a href="#">덴탈잡 이용권 관리</a></li>
+                            <li><a href="#">스마트 매칭</a></li>
+                            <li><a href="#">스크랩</a></li>
+                            <li><a href="#">내 정보 수정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Content -->
+    <div id="content" class="sub-page">
+        <div class="container">
+            <div id="top-sub-page">
+                <!-- Side Nav -->
+                <div id="icon-side-nav"><span></span></div>
+                <div id="side-nav">
+                    <ul class="frame-section">
+                        <li class="active"><a href="#"><i class="icon icon-nav-docs"></i>치과정보 관리</a></li>
+                        <li class="item-has-child">
+                            <a href="#"><i class="icon icon-nav-list"></i>채용공고 관리</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">이력서 등록</a></li>
+                                <li><a href="">이력서 관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon icon-nav-user"></i>지원자 관리</a></li>
+                        <li><a href="#"><i class="icon icon-nav-promo"></i>덴탈잡 이용권 관리</a></li>
+                        <li><a href="#"><i class="icon icon-nav-light"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
+                        <li><a href="#"><i class="icon icon-nav-coins"></i>DV 포인트 조회</a></li>
+                        <li><a href="#"><i class="icon icon-nav-lock"></i>내 정보 잠금 설정</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                    </ul>
+                    <a href="#" class="side-banner">
+                        <img src="./images/side-banner-sub-page.png" alt="Banner DentailJob">
+                    </a>
+                </div>
+                <!-- End Side Nav -->
+                <!-- Main Section -->
+                <div class="resume">
+                    <div class="resume__inner">
+                        <h3 class="resume__tit">
+                            채용공고 관리
+                        </h3>
+                        <div class="rsm-mng">
+                            <div class="rsm-mng__btbx">
+                                <button type="button" class="rsm-mng__btn">채용공고 등록</button>
+                            </div>
+                        </div>
+
+                        <div class="rsm-stt__srh mt10">
+                            <div class="rsm-stt__lf">
+                                <input type="radio" name="term" value="oneMonth" id="oneMonth">
+                                <label for="oneMonth" class="rsm-stt__label">1개월</label>
+                                <input type="radio" name="term" value="threeMonth" id="threeMonth">
+                                <label for="threeMonth" class="rsm-stt__label">3개월</label>
+                                <input type="radio" name="term" value="sixMonth" id="sixMonth">
+                                <label for="sixMonth" class="rsm-stt__label">6개월</label>
+                                <input type="radio" name="term" value="directMonth" id="directMonth">
+                                <label for="directMonth" class="rsm-stt__label">직접입력</label>
+                            </div>
+                            <div class="rsm-stt__rt">
+                                <div class="rsm-stt__rang">
+                                    <input type="date" class="rsm-stt__date-input">
+                                    ~
+                                    <input type="date" class="rsm-stt__date-input">
+                                </div>
+                                <button type="button" class="rsm-stt__btn">조회</button>
+                            </div>
+                        </div>
+
+                        <div class="mtch">
+                            <div class="mtch__block">
+                                <a href="#" class="mtch__cnd active">전체 (10)</a>
+                                <a href="#" class="mtch__cnd">보관중인 공고 (10)</a>
+                                <a href="#" class="mtch__cnd">게재중인 공고 (10)</a>
+                                <a href="#" class="mtch__cnd">입금/등록 대기 공고 (10)</a>
+                                <a href="#" class="mtch__cnd">마감 공고 (10)</a>
+                            </div>
+                        </div>
+
+                        <div class="dntInf__table">
+                            <ul class="dntInf__grid dntInf__head">
+                                <li>등록일</li>
+                                <li>
+                                    <div class="dntInf__stt-info">
+                                        상태
+                                        <img src="./images/icons/icon-info-th.png" alt="">
+                                        <div class="tlt">
+                                            <div class="tlt__tit">채용소식 FLOW</div>
+                                            <div class="tlt__step">
+                                                <div class="tlt__step-item">
+                                                    <div class="tlt__step-top">
+                                                        STEP <span>01</span>
+                                                    </div>
+                                                    <div class="tlt__step-name">입금대기</div>
+                                                </div>
+                                                <img src="./images/PAJAC010/icon-step-arrow.png" alt="">
+                                                <div class="tlt__step-item">
+                                                    <div class="tlt__step-top">
+                                                        STEP <span>02</span>
+                                                    </div>
+                                                    <div class="tlt__step-name">승인대기</div>
+                                                </div>
+                                                <img src="./images/PAJAC010/icon-step-arrow.png" alt="">
+                                                <div class="tlt__step-item">
+                                                    <div class="tlt__step-top">
+                                                        STEP <span>03</span>
+                                                    </div>
+                                                    <div class="tlt__step-name">게재중</div>
+                                                </div>
+                                                <img src="./images/PAJAC010/icon-step-arrow.png" alt="">
+                                                <div class="tlt__step-item">
+                                                    <div class="tlt__step-top">
+                                                        STEP <span>04</span>
+                                                    </div>
+                                                    <div class="tlt__step-name">기간마감</div>
+                                                </div>
+                                            </div>
+                                            <ul class="tlt__list">
+                                                <li class="tlt__item">
+                                                    <div class="tlt__item-lf">입금대기</div>
+                                                    <span class="tlt__item-rt">채용소식 내용은 등록하였지만 결제가 되지 않은 상태(채용소식 미등록된 상태)</span>
+                                                </li>
+                                                <li class="tlt__item">
+                                                    <div class="tlt__item-lf">승인대기</div>
+                                                    <span class="tlt__item-rt">채용소식은 결제는 되었지만, 덴탈잡 관리자가 공고 미승인 상태(채용공고 미등록된 상태)</span>
+                                                </li>
+                                                <li class="tlt__item">
+                                                    <div class="tlt__item-lf">게재중</div>
+                                                    <span class="tlt__item-rt">채용소식이 덴탈잡 홈페이지에 등록된 상태</span>
+                                                </li>
+                                                <li class="tlt__item">
+                                                    <div class="tlt__item-lf">기간마감</div>
+                                                    <span class="tlt__item-rt">채용소식 서비스 일자가 마감되어 완료된 상태</span>
+                                                </li>
+                                                <li class="tlt__item">
+                                                    <div class="tlt__item-lf">채용마감</div>
+                                                    <span class="tlt__item-rt">서비스일자 중간에 회원님께서 채용소식을 강제 마감한 상태</span>
+                                                </li>
+                                                <li class="tlt__item">
+                                                    <div class="tlt__item-lf">등록대기</div>
+                                                    <span class="tlt__item-rt">채용소식 결제가 완료되었고 덴탈잡 승인도 완료되었으며, 서비스 일자가 아직 아니어서 채용소식은 미등록된 상태</span>
+                                                </li>
+                                            </ul>
+                                            <svg class="tlt__svg" width="28" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <polyline
+                                                  points="18 16 0 8 18 0"
+                                                  stroke-width="1"
+                                                  stroke="#88abda"
+                                                  fill="#e6effa"
+                                                  paint-order="fill" />
+                                                <rect x="18" y="0" width="10" height="16" fill="#e6effa"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>채용공고 내용</li>
+                                <li>
+                                    <div class="dntInf__stt-info">
+                                        Jump up
+                                        <img src="./images/icons/icon-info-th.png" alt="">
+                                        <div class="tlt tlt--jump">
+                                            <div class="tlt__jump">
+                                                <span>Jump Up 버튼을 클릭</span>하시면 뒤로 밀렸던 회원님의 채용정보 내용이
+                                            </div>
+                                            <ul class="tlt__list2">
+                                                <li class="tlt__item2">
+                                                    1)'고정옵션-채용정보'상품을 이용중이시라면 [채용정보]메뉴의 1페이지에서<br>
+                                                    &nbsp;&nbsp;맨 첫번째 줄로 이동합니다.
+                                                </li>
+                                                <li class="tlt__item2">
+                                                    그렇지 않다면 [채용정보] 메뉴의 2페이지에서 맨 첫번째 줄로 이동합니다.
+                                                </li>
+                                            </ul>
+                                            <div class="tlt__jump">
+                                                <span>덴탈잡 모바일 앱</span>에서도 Jump Up이 가능하며, 하루에 여러 번 Jump Up을 하시면<br>
+                                                회원님의 채용정보가 구직자에게 노출될 확률이 높습니다!
+                                            </div>
+                                            <svg class="tlt__svg" width="28" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <polyline
+                                                  points="18 16 0 8 18 0"
+                                                  stroke-width="1"
+                                                  stroke="#88abda"
+                                                  fill="#e6effa"
+                                                  paint-order="fill" />
+                                                <rect x="18" y="0" width="10" height="16" fill="#e6effa"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>지원자</li>
+                                <li>조회수</li>
+                                <li>관리</li>
+                            </ul>
+
+                            <div class="dntInf__item">
+                                <ul class="dntInf__grid dtnInf__body bg-white">
+                                    <li>2024.08.04</li>
+                                    <li>
+                                        <span class="dntInf__cnd">승인대기</span>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__dl">
+                                            <div class="dntInf__dt">치위생사 모집</div>
+                                            <div class="dntInf__dd">
+                                                <span>채용중</span>
+                                                2024.04.25~2024.05.10
+                                            </div>
+                                            <div class="dntInf__dd">모집직종 : 진료실, 데스크, 상담, 기타</div>
+                                            <div class="dntInf__dd">모집인원 : 3명</div>
+                                            <div class="dntInf__dd">직급 : 무관</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dntInf__jump">Jump UP</button>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__aplc">
+                                            <span class="bold">17</span>
+                                            <span>미열람 3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__view">
+                                            1,234
+                                            <button type="button" class="dntInf__reset">초기화</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__mng">
+                                            <button type="button" class="dntInf__mng-btn blue">수정</button>
+                                            <button type="button" class="dntInf__mng-btn">마감</button>
+                                            <button type="button" class="dntInf__mng-btn">복사</button>
+                                            <button type="button" class="dntInf__mng-btn">강조/옵션</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                                <div class="rcp">
+                                    <div class="rcp__block">
+                                        <div class="rcp__lf">
+                                            결제완료
+                                            <button type="button" class="rcp__print">영수증출력</button>
+                                        </div>
+                                        <div class="rcp__rt">
+                                            <ul class="rcp__list">
+                                                <li class="rcp__item red">
+                                                    <span>결제일 : 2024.12.26</span>
+                                                </li>
+                                                <li class="rcp__item">
+                                                    <span>결제금액 : 118,000원</span>
+                                                </li>
+                                                <li class="rcp__item">
+                                                    <span>공고기간 : 24.12.26~25.01.30</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="rcp__list">
+                                                <li class="rcp__item">
+                                                    <span>메인상품 : 그랜드배너</span>
+                                                </li>
+                                                <li class="rcp__item">
+                                                    <span>고정상품 : 없음</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="rcp__list">
+                                                <li class="rcp__item">
+                                                    <span>강조상품</span>
+                                                    <ul>
+                                                        <li>고정옵션</li>
+                                                        <li>컬러강조</li>
+                                                        <li>하이라이트강조 2</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="rcp__more">
+                                        <span>결제내역 더보기</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="dntInf__item">
+                                <ul class="dntInf__grid dtnInf__body bg-white">
+                                    <li>2024.08.04</li>
+                                    <li>
+                                        <span class="dntInf__cnd">입금대기</span>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__dl">
+                                            <div class="dntInf__dt">치위생사 모집</div>
+                                            <div class="dntInf__dd">
+                                                <span>채용중</span>
+                                                2024.04.25~2024.05.10
+                                            </div>
+                                            <div class="dntInf__dd">모집직종 : 진료실, 데스크, 상담, 기타</div>
+                                            <div class="dntInf__dd">모집인원 : 3명</div>
+                                            <div class="dntInf__dd">직급 : 무관</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dntInf__jump">Jump UP</button>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__aplc">
+                                            <span class="bold">17</span>
+                                            <span>미열람 3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__view">
+                                            1,234
+                                            <button type="button" class="dntInf__reset">초기화</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__mng">
+                                            <button type="button" class="dntInf__mng-btn blue">수정</button>
+                                            <button type="button" class="dntInf__mng-btn">마감</button>
+                                            <button type="button" class="dntInf__mng-btn">복사</button>
+                                            <button type="button" class="dntInf__mng-btn">강조/옵션</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dntInf__item">
+                                <ul class="dntInf__grid dtnInf__body bg-white">
+                                    <li>2024.08.04</li>
+                                    <li>
+                                        <span class="dntInf__cnd">입금대기</span>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__dl">
+                                            <div class="dntInf__dt">치위생사 모집</div>
+                                            <div class="dntInf__dd">
+                                                <span>채용중</span>
+                                                2024.04.25~2024.05.10
+                                            </div>
+                                            <div class="dntInf__dd">모집직종 : 진료실, 데스크, 상담, 기타</div>
+                                            <div class="dntInf__dd">모집인원 : 3명</div>
+                                            <div class="dntInf__dd">직급 : 무관</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dntInf__jump">Jump UP</button>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__aplc">
+                                            <span class="bold">17</span>
+                                            <span>미열람 3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__view">
+                                            1,234
+                                            <button type="button" class="dntInf__reset">초기화</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dntInf__mng">
+                                            <button type="button" class="dntInf__mng-btn blue">수정</button>
+                                            <button type="button" class="dntInf__mng-btn">마감</button>
+                                            <button type="button" class="dntInf__mng-btn">복사</button>
+                                            <button type="button" class="dntInf__mng-btn">강조/옵션</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li class="more">...</li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <div class="jobPop">
+        <div class="jobPop__container">
+            <button type="button" class="jobPop__close"></button>
+            <nav class="jobPop__nav">
+                <h2 class="jobPop__tit">
+                    <img src="./images/logo.png" alt="">
+                    <span>덴탈치과</span>
+                </h2>
+                <ul class="jobPop__list">
+                    <li class="jobPop__item">
+                        <a href="#" class="jobPop__link">채용공고 상세</a>
+                    </li>
+                    <li class="jobPop__item">
+                        <a href="#" class="jobPop__link">지원자 목록</a>
+                    </li>
+                    <li class="jobPop__item active">
+                        <a href="#" class="jobPop__link">스마트 매칭 목록</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="resume__inner pt0">
+                <h3 class="resume__tit size24">
+                    스마트 매칭 목록
+                </h3>
+                <div class="rsm-stt">
+                    <div class="cndd pt8">
+                        <div class="cndd__block">
+                            <div class="cndd__top2">
+                                <div class="cndd__info">
+                                    <div class="cndd__name">
+                                        홍길동
+                                        <img src="./images/icons/icon-letter.png" alt="">
+                                    </div>
+                                    <div class="cndd__cntn">
+                                        <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                        <div class="table">
+                                            <div class="wrap-meta">
+                                                <a href="#"><i class="icon icon-star"></i></a>
+                                                <a href="#"><i class="icon icon-blank"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                </div>
+                                
+                                <div class="cndd__end">
+                                    <ul class="cndd__list">
+                                        <li class="cndd__item">경력</li>
+                                        <li class="cndd__item">정규직 외</li>
+                                        <li class="cndd__item">치위생사 외</li>
+                                    </ul>
+                                    <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                </div>
+                            </div>
+                            <div class="cndd__bottom">
+                                <div class="cndd__lf">
+                                    <span>매칭일: 2024.08.21</span>
+                                </div>
+                                <button type="button" class="cndd__delete">
+                                    <img src="./images/icons/icon-delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cndd__block">
+                            <div class="cndd__top2">
+                                <div class="cndd__info">
+                                    <div class="cndd__name">
+                                        홍길동
+                                        <img src="./images/icons/icon-letter.png" alt="">
+                                    </div>
+                                    <div class="cndd__cntn">
+                                        <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                        <div class="table">
+                                            <div class="wrap-meta">
+                                                <a href="#"><i class="icon icon-star"></i></a>
+                                                <a href="#"><i class="icon icon-blank"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                </div>
+                                
+                                <div class="cndd__end">
+                                    <ul class="cndd__list">
+                                        <li class="cndd__item">경력</li>
+                                        <li class="cndd__item">정규직 외</li>
+                                        <li class="cndd__item">치위생사 외</li>
+                                    </ul>
+                                    <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                </div>
+                            </div>
+                            <div class="cndd__bottom">
+                                <div class="cndd__lf">
+                                    <span>매칭일: 2024.08.21</span>
+                                </div>
+                                <button type="button" class="cndd__delete">
+                                    <img src="./images/icons/icon-delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cndd__block">
+                            <div class="cndd__top2">
+                                <div class="cndd__info">
+                                    <div class="cndd__name">
+                                        홍길동
+                                        <img src="./images/icons/icon-letter.png" alt="">
+                                    </div>
+                                    <div class="cndd__cntn">
+                                        <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                        <div class="table">
+                                            <div class="wrap-meta">
+                                                <a href="#"><i class="icon icon-star"></i></a>
+                                                <a href="#"><i class="icon icon-blank"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                </div>
+                                
+                                <div class="cndd__end">
+                                    <ul class="cndd__list">
+                                        <li class="cndd__item">경력</li>
+                                        <li class="cndd__item">정규직 외</li>
+                                        <li class="cndd__item">치위생사 외</li>
+                                    </ul>
+                                    <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                </div>
+                            </div>
+                            <div class="cndd__bottom">
+                                <div class="cndd__lf">
+                                    <span>매칭일: 2024.08.21</span>
+                                </div>
+                                <button type="button" class="cndd__delete">
+                                    <img src="./images/icons/icon-delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cndd__block">
+                            <div class="cndd__top2">
+                                <div class="cndd__info">
+                                    <div class="cndd__name">
+                                        홍길동
+                                        <img src="./images/icons/icon-letter.png" alt="">
+                                    </div>
+                                    <div class="cndd__cntn">
+                                        <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                        <div class="table">
+                                            <div class="wrap-meta">
+                                                <a href="#"><i class="icon icon-star"></i></a>
+                                                <a href="#"><i class="icon icon-blank"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                </div>
+                                
+                                <div class="cndd__end">
+                                    <ul class="cndd__list">
+                                        <li class="cndd__item">경력</li>
+                                        <li class="cndd__item">정규직 외</li>
+                                        <li class="cndd__item">치위생사 외</li>
+                                    </ul>
+                                    <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                </div>
+                            </div>
+                            <div class="cndd__bottom">
+                                <div class="cndd__lf">
+                                    <span>매칭일: 2024.08.21</span>
+                                </div>
+                                <button type="button" class="cndd__delete">
+                                    <img src="./images/icons/icon-delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cndd__block">
+                            <div class="cndd__top2">
+                                <div class="cndd__info">
+                                    <div class="cndd__name">
+                                        홍길동
+                                        <img src="./images/icons/icon-letter.png" alt="">
+                                    </div>
+                                    <div class="cndd__cntn">
+                                        <a href="#">창의적이고 열정적인 인재 홍길동입니다.</a>
+                                        <div class="table">
+                                            <div class="wrap-meta">
+                                                <a href="#"><i class="icon icon-star"></i></a>
+                                                <a href="#"><i class="icon icon-blank"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cndd__oth">진료실, 상담, 보험청구, 기타</div>
+                                </div>
+                                
+                                <div class="cndd__end">
+                                    <ul class="cndd__list">
+                                        <li class="cndd__item">경력</li>
+                                        <li class="cndd__item">정규직 외</li>
+                                        <li class="cndd__item">치위생사 외</li>
+                                    </ul>
+                                    <div class="cndd__oth">서울>서초구, 서울>영등포구, 서울>마포구</div>
+                                </div>
+                            </div>
+                            <div class="cndd__bottom">
+                                <div class="cndd__lf">
+                                    <span>매칭일: 2024.08.21</span>
+                                </div>
+                                <button type="button" class="cndd__delete">
+                                    <img src="./images/icons/icon-delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="wrap-pagination">
+                        <div class="pagination-arrow icon icon-prev disable"></div>
+                        <ul class="pagination-number">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li class="more">...</li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                        </ul>
+                        <div class="pagination-arrow icon icon-next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $('html, body').css('overflow', 'hidden');
+        });
+    </script>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>

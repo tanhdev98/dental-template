@@ -1758,6 +1758,10 @@ h1.title {
     font-weight: 500;
 }
 
+.jobPop #summary-job .nav-job>h1 {
+    font-size: 24px;
+}
+
 #summary-job .nav-job .button-container {
     display: flex;
     gap: 7px;
@@ -1784,6 +1788,7 @@ h1.title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 90px;
     padding: 28px 25px 35px;
     border-radius: 10px;
     border: 1px solid #e1e1e1;
@@ -1851,6 +1856,7 @@ h1.title {
 #summary-job .job-content .job-info .job-name h1 {
     font-size: 27px;
     font-weight: 600;
+    line-height: 1.3;
 }
 
 #summary-job .job-content .job-info .job-detail-container {
@@ -11910,8 +11916,17 @@ h1.title {
     padding-bottom: 70px;
 }
 
+.resume__inner.pt0 {
+    padding-top: 0;
+}
+
 .resume__tit {
     font-size: 34px;
+}
+
+.resume__tit.size24 {
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .resume__tit > span {
@@ -13441,6 +13456,10 @@ h1.title {
 
 .mtch__block--pt20 {
     padding-top: 20px;
+}
+
+.mtch__block--rp4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .mtch__cnd {
@@ -16189,4 +16208,371 @@ h1.title {
     font-weight: 300;
     line-height: 1.6;
     text-align: center;
+}
+
+.jobPop {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    overflow-y: auto;
+}
+
+.jobPop__container {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1260px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    position: absolute;
+    top: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.jobPop__nav {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: -wdbkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.jobPop__tit {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 15px;
+}
+
+.jobPop__tit > img {
+    display: block;
+    width: 95px;
+}
+
+.jobPop__tit span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.jobPop__list {
+    width: 100%;
+}
+
+.jobPop__item {
+    padding: 0 15px;
+}
+
+.jobPop__item.active {
+    background: #0068b7;
+}
+
+.jobPop__link {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.jobPop__item.active .jobPop__link {
+    color: #fff;
+    border-bottom: 0;
+}
+
+.jobPop__date {
+    font-size: 13px;
+    font-weight: 300;
+    text-align: right;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.jobPop__close {
+    display: block;
+    width:24px;
+    height: 24px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.jobPop__close::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #141414;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.jobPop__close::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #141414;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.cndd.pt8 {
+    padding-top: 8px;
+}
+
+.cndd__block {
+    margin-top: 10px;
+}
+
+.cndd__block:first-child {
+    margin-top: 20px;
+}
+
+.cndd__top {
+    display: grid;
+    grid-template-columns: 1fr auto auto 100px;
+    align-items: center;
+    gap: 60px;
+    padding: 28px 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.cndd__top2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 28px 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.cndd__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cndd__name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cndd__name > img {
+    width: 16px;
+}
+
+.cndd__cntn {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cndd__cntn .table {
+    width: auto;
+}
+
+.cndd__cntn .table .wrap-meta {
+    height: auto;
+    width: auto;
+}
+
+.cndd__cntn a {
+    display: block;
+    font-size: 17px;
+}
+
+.cndd__list {
+    display: flex;
+    align-items: center;
+}
+
+.cndd__item {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+}
+
+.cndd__item + .cndd__item {
+    padding-left: 20px;
+    position: relative;
+}
+
+.cndd__item + .cndd__item::before {
+    content: '';
+    width: 1px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: #999;
+}
+
+.cndd__preview {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: #666;
+}
+
+.cndd__preview img {
+    width: 16px;
+}
+
+.cndd__date {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.cndd__date span {
+    font-size: 15px;
+    font-weight: 300;
+    color: #666;
+}
+
+.cndd__date span.text-bold {
+    font-weight: 600;
+    color: #333;
+}
+
+.cndd__end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.cndd__select {
+    display: inline-block;
+    width: 100px;
+}
+
+.cndd__select .form-select-container {
+    width: 100%;
+    height: 35px;
+}
+
+.cndd__select .form-select-container>.form-select-cus {
+    border-radius: 3px;
+    background: #fff;
+}
+
+.cndd__select .form-select-container>.form-select-cus>.form-option-placeholder {
+    font-size: 14px;
+    color: #333 !important;
+    padding: 0 8px;
+}
+
+.cndd__select .form-select-container>.form-select-cus>.form-option-placeholder::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    position: absolute;
+    top: 47%;
+    right: 8px;
+    transform: translateY(-50%) rotate(45deg);
+    background: unset;
+    margin: 0;
+}
+
+.cndd__input {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 300;
+}
+
+.cndd__input::placeholder {
+    color: #999;
+}
+
+.cndd__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 17px 40px;
+    background: #ddd;
+}
+
+.cndd__lf {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.cndd__lf span {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.cndd__lf span.blue {
+    color: #0068b7;
+    font-weight: 600;
+}
+
+.cndd__lf span.date {
+    font-size: 13px;
+    color: #666;
+    padding-left: 20px;   
+}
+
+.cndd__delete {
+    width: 16px;
+    height: 16px;
+}
+
+.cndd__delete img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.cndd__yn {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.cndd__yn--y {
+    color: #0068b7;
+}
+
+.cndd__yn--n {
+    color: #a40000;
+}
+
+.cndd__oth {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
 }
