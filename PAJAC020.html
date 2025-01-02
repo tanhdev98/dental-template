@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/sub-page.js"></script>
+    <script src="js/side-nav.js"></script>
+    <script src="js/dropdown-profile.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="sub-header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo-sub-dental.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="letter-notify">
+                        <a href="#" class="icon icon-letter"></a>
+                        <div class="count-notify">13</div>
+                    </div>
+                    <a href="#" class="profile-setting">
+                        <div class="avatar">
+                            <img src="./images/default-avatar-header.png" alt="avatar">
+                        </div>
+                        <div class="name">pdsoft 님</div>
+                    </a>
+                    <div class="profile-setting-popup">
+                        <ul>
+                            <li><a href="#">마이 페이지</a></li>
+                            <li><a href="#">채용 공고 관리</a></li>
+                            <li><a href="#">지원자 관리</a></li>
+                            <li><a href="#">덴탈잡 이용권 관리</a></li>
+                            <li><a href="#">스마트 매칭</a></li>
+                            <li><a href="#">스크랩</a></li>
+                            <li><a href="#">내 정보 수정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Content -->
+    <div id="content" class="sub-page">
+        <div class="container">
+            <div id="top-sub-page">
+                <!-- Side Nav -->
+                <div id="icon-side-nav"><span></span></div>
+                <div id="side-nav">
+                    <ul class="frame-section">
+                        <li class="active"><a href="#"><i class="icon icon-nav-docs"></i>치과정보 관리</a></li>
+                        <li class="item-has-child">
+                            <a href="#"><i class="icon icon-nav-list"></i>채용공고 관리</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">이력서 등록</a></li>
+                                <li><a href="">이력서 관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon icon-nav-user"></i>지원자 관리</a></li>
+                        <li><a href="#"><i class="icon icon-nav-promo"></i>덴탈잡 이용권 관리</a></li>
+                        <li><a href="#"><i class="icon icon-nav-light"></i>스마트 매칭</a></li>
+                        <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
+                        <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
+                        <li><a href="#"><i class="icon icon-nav-coins"></i>DV 포인트 조회</a></li>
+                        <li><a href="#"><i class="icon icon-nav-lock"></i>내 정보 잠금 설정</a></li>
+                        <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                    </ul>
+                    <a href="#" class="side-banner">
+                        <img src="./images/side-banner-sub-page.png" alt="Banner DentailJob">
+                    </a>
+                </div>
+                <!-- End Side Nav -->
+                <!-- Main Section -->
+                <div class="resume">
+                    <div class="resume__inner">
+                        <h3 class="resume__tit">
+                            채용공고 등록
+                        </h3>
+                        
+                        <div class="rgst">
+                            <div class="rgst-step">
+                                <ul class="rgst-step__list">
+                                    <li class="rgst-step__item active">
+                                        <div class="rgst-step__crc">
+                                            STEP<br>01
+                                        </div>
+                                        <div class="rgst-step__txt">
+                                            step 1<br>
+                                            채용공고 내용 입력
+                                        </div>
+                                    </li>
+                                    <li class="rgst-step__item">
+                                        <div class="rgst-step__crc">
+                                            STEP<br>02
+                                        </div>
+                                        <div class="rgst-step__txt">
+                                            step 2<br>
+                                            상품 선택/결제
+                                        </div>
+                                    </li>
+                                    <li class="rgst-step__item">
+                                        <div class="rgst-step__crc">
+                                            STEP<br>03
+                                        </div>
+                                        <div class="rgst-step__txt">
+                                            step 3<br>
+                                            등록완료
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="rgst__top">
+                                <img class="rgst__logo" src="./images/logo.png" alt="">
+                                <dl class="rgst__dl">
+                                    <dt class="rgst__dt">덴탈치과</dt>
+                                    <dd class="rgst__dd">서울특별시 광진구 천호대로 537 15층 / 박대표</dd>
+                                </dl>
+                                <button type="button" class="rsm-mng__btn">치과정보 관리</button>
+                            </div>
+
+                            <input type="text" class="rgst__tit-input" placeholder="채용공고 제목을 입력하세요.">
+
+                            <h4 class="rgst__sbj">근무위치</h4>
+                            <table class="rgst__table">
+                                <tbody>
+                                    <tr>
+                                        <th>주소</th>
+                                        <td>
+                                            <div class="rgst__adr">
+                                                <button type="button" class="rgst__adr-btn">주소찾기</button>
+                                                <input type="text" class="rgst__input" value="(21378)" readonly>
+                                                <input type="text" class="rgst__input" value="서울특별시 광진구 천호대로 537" readonly>
+                                                <input type="text" class="rgst__input" placeholder="동이하 주소 입력">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>인근지하철역</th>
+                                        <td>
+                                            <ul class="rgst-sbwy">
+                                                <li class="rgst-sbwy__item">
+                                                    1.
+                                                    <div class="rgst__select">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rgst__select">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rgst__desc pl10">*인근 지하철역은 최대 3군데까지 입력하실 수 있습니다.</div>
+                                                </li>
+                                                <li class="rgst-sbwy__item">
+                                                    2.
+                                                    <div class="rgst__select">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rgst__select">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="rgst-sbwy__item">
+                                                    3.
+                                                    <div class="rgst__select">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rgst__select">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                                <option value="">호선선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>위치설명</th>
+                                        <td>
+                                            <input type="text" class="rgst__input">
+                                            <div class="rgst__desc mt10">*예) 홈플러스 맞은편 국민은행 5층</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            상세지도 서비스 이용<br>
+                                            <div class="rgst__select">
+                                                <div class="form-select-container">
+                                                    <select>
+                                                        <option class="option-placeholder">호선선택</option>
+                                                        <option value="">호선선택</option>
+                                                        <option value="">호선선택</option>
+                                                        <option value="">호선선택</option>
+                                                        <option value="">호선선택</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="rgst-map">
+                                                <button type="button" class="rgst-map__btn">
+                                                    <i></i>
+                                                    위치정보등록
+                                                </button>
+                                                <div class="rgst-map__info">
+                                                    <div class="rgst-map__tit">등록된 위치 정보</div>
+                                                    <div class="rgst-map__block">
+                                                        <div class="rgst-map__adr">
+                                                            <span>- 주소 : </span>
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="rgst-map__xy">
+                                                            <span>- 위도(y) : </span>
+                                                            <span class="rgst-map__span"></span>
+                                                            <span>/ 경도(x) : </span>
+                                                            <span class="rgst-map__span"></span>
+                                                        </div>
+                                                        <div class="rgst__desc font-light mt10">• 상세지도서비스의 등록방법이 변경되었습니다. 상세지도서비스 설정창에서 위치를 선택한 후 위치정보를 저장해 주세요.</div>
+                                                        <div class="rgst__desc font-bold mt10">• 정확한 지도정보가 등록되지 않은 경우 덴틸잡 앱 및 구글지도 등에서 다르게 보일 수 있습니다.</div>
+                                                        <button type="button" class="rgst-map__btn2">지도미리보기</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 class="rgst__sbj">채용 정보</h4>
+                            <table class="rgst__table">
+                                <tbody>
+                                    <tr>
+                                        <th>담당업무<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__grid">
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    진료실
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    데스크
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    상담
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    보험청구
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    치과내기공실
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    치과기공소
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    관리및경영지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    교정부문
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    기타
+                                                </label>
+                                            </div>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th>자격증 소지<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__grid">
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    치과위생사
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    치과기공사
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    간호조무사
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    보험청구사
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    코디네이터
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    의료관공코디네이터
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    기타
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    무관
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    기타
+                                                </label>
+                                            </div>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th>근무형태<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__grid">
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    정규직
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    계약직
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    아르바이트
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    실습생
+                                                </label>
+                                            </div>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th>모집인원<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__num">
+                                                <input type="text" class="rgst__input">
+                                                명
+                                            </div>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th>직급<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__select">
+                                                <div class="form-select-container">
+                                                    <select>
+                                                        <option class="option-placeholder">직급선택</option>
+                                                        <option value="">직급선택</option>
+                                                        <option value="">직급선택</option>
+                                                        <option value="">직급선택</option>
+                                                        <option value="">직급선택</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th>급여선택<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__pay">
+                                                <div class="rgst__select">
+                                                    <div class="form-select-container">
+                                                        <select>
+                                                            <option class="option-placeholder">급여선택</option>
+                                                            <option value="">급여선택</option>
+                                                            <option value="">급여선택</option>
+                                                            <option value="">급여선택</option>
+                                                            <option value="">급여선택</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="rgst__input">
+                                                <div class="rgst__desc pl10">*급여항목이 직접입력인 경우 입력하세요.   </div>
+                                            </div>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th>자격요건<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__qlf">
+                                                <div class="rgst__qlf-lf">
+                                                    학력 :
+                                                    <div class="rgst__select wd160">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">학력선택</option>
+                                                                <option value="">학력선택</option>
+                                                                <option value="">학력선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    이상
+                                                </div>
+                                                <div class="rgst__qlf-rt">
+                                                    (기타 학력조건&nbsp;&nbsp;
+                                                    <input type="text" class="rgst__input">
+                                                    )
+                                                </div>
+                                            </div>
+                                            <div class="rgst__qlf gap25">
+                                                <div class="rgst__qlf-lf">
+                                                    경력 :
+                                                    <div class="rgst__select wd160">
+                                                        <div class="form-select-container">
+                                                            <select>
+                                                                <option class="option-placeholder">경력선택</option>
+                                                                <option value="">경력선택</option>
+                                                                <option value="">경력선택</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rgst__qlf-rt">
+                                                    (경력년수&nbsp;&nbsp;
+                                                    <input type="text" class="rgst__input wd70">
+                                                    년 ~
+                                                    <input type="text" class="rgst__input wd70">
+                                                    년)
+                                                    <div class="rgst__desc">(*경력항목이 경력인 경우 입력하세요.)</div>
+                                                </div>
+                                            </div>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th>세부사항</th>
+                                        <td>
+                                            <textarea name="" id="" class="rgst__textarea"></textarea>
+                                            <div class="rgst__desc mt10">*예) 관리자의 포부를 갖고 계신 분, 스켈링 가능하신 분 환영합니다.</div>
+                                            <div class="rgst__desc mt10 red">*특수문자(&)기호는 사용하 실 수 없습니다.</div>
+                                        </td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 class="rgst__sbj">근무환경/복리후생</h4>
+                            <table class="rgst__table">
+                                <tbody>
+                                    <tr>
+                                        <th>근무요일<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__day">
+                                                <label class="rgst__label2" for="">
+                                                    <input type="radio">
+                                                    월~금(주5일)
+                                                </label>
+                                                <label class="rgst__label2" for="">
+                                                    <input type="radio">
+                                                    월~금(주40시간)
+                                                </label>
+                                                <label class="rgst__label2" for="">
+                                                    <input type="radio">
+                                                    월~토(토요일격주휴무)
+                                                </label>
+                                                <label class="rgst__label2" for="">
+                                                    <input type="radio">
+                                                    월~토
+                                                </label>
+                                            </div>
+                                            <div class="rgst__day2">
+                                                <label class="rgst__label2" for="">
+                                                    <input type="radio">
+                                                    직접입력
+                                                </label>
+                                                <input type="text" class="rgst__input">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>근무시간</th>
+                                        <td>
+                                            <input type="text" class="rgst__input" placeholder="예) 월~금 : 오전 9시 ~ 오후6시, 수요일 야간진료(오후 10시까지), 주말 격주 근무 선택 가능 등 (200자 이내)">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>복리후생</th>
+                                        <td>
+                                            <div class="rgst__grid">
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    기숙사지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    식대지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    경조사지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    자기계발비지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    연월차지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    휴가비지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    4대보험지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    연봉제
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    인센티브제
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    퇴직금지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    야근수당지원
+                                                </label>
+                                                <label class="rgst__label" for="">
+                                                    <input type="checkbox" class="rgst__checkbox">
+                                                    기타
+                                                </label>
+                                            </div>
+                                            <input type="text" class="rgst__input" placeholder="예) 연차 2회, 우수직원 포상, 세미나비 지원 등 (200자 이내)">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 class="rgst__sbj">접수 방법</h4>
+                            <table class="rgst__table">
+                                <tbody>
+                                    <tr>
+                                        <th>접수방법<span>*</span></th>
+                                        <td>
+                                            <label class="rgst__label blue-bold" for="">
+                                                <input type="checkbox" class="rgst__checkbox" checked>
+                                                덴탈잡 온라인시스템 접수
+                                            </label>
+                                            <ul class="rgst__way">
+                                                <li>덴탈잡 [마이페이지 덴탈잡 지원자 관리] 메뉴에서 내용을 확인할 수 있습니다.</li>
+                                                <li>구직자들이 가장 희망하는 접수 방법이며, 이력서 수신시 문자로 안내(선택사항) 받을 수 있습니다.</li>
+                                            </ul>
+                                            <div class="rgst__sbm">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    전화접수
+                                                </label>
+                                                <input type="text" class="rgst__input" placeholder="접수받을 전화번호를 기입해 주세요.">
+                                            </div>
+                                            <div class="rgst__sbm">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    이메일
+                                                </label>
+                                                <input type="text" class="rgst__input" placeholder="접수받을 이메일 기입해 주세요.">
+                                            </div>
+                                            <div class="rgst__sbm">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    FAX접수
+                                                </label>
+                                                <input type="text" class="rgst__input" placeholder="접수받을 FAX번호를 기입해 주세요.">
+                                            </div>
+                                            <div class="rgst__sbm">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    우편접수
+                                                </label>
+                                                <input type="text" class="rgst__input" placeholder="접수받을 주소를 기입해 주세요.">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제출서류</th>
+                                        <td>
+                                            <div class="rgst__paper">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    이력서(사진첨부)
+                                                </label>
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    자기소개서
+                                                </label>
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    면허증/자격증사본(합격시)
+                                                </label>
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    직접입력
+                                                </label>
+                                            </div>
+                                            <textarea name="" id="" class="rgst__textarea hi100" placeholder="(100자 이내)"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제출서류</th>
+                                        <td>
+                                            <div class="rgst__type">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    1차
+                                                </label>
+                                                <div class="rgst__select">
+                                                    <div class="form-select-container">
+                                                        <select>
+                                                            <option class="option-placeholder">서류전형</option>
+                                                            <option value="">서류전형</option>
+                                                            <option value="">서류전형</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rgst__type">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    2차
+                                                </label>
+                                                <div class="rgst__select">
+                                                    <div class="form-select-container">
+                                                        <select>
+                                                            <option class="option-placeholder">면접</option>
+                                                            <option value="">면접</option>
+                                                            <option value="">면접</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rgst__type">
+                                                <label class="rgst__label blk" for="">
+                                                    <input type="checkbox" class="rgst__checkbox blk">
+                                                    3차
+                                                </label>
+                                                <div class="rgst__select">
+                                                    <div class="form-select-container">
+                                                        <select>
+                                                            <option class="option-placeholder">최종 면접</option>
+                                                            <option value="">최종 면접</option>
+                                                            <option value="">최종 면접</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 class="rgst__sbj">채용 담당자 정보</h4>
+                            <table class="rgst__table">
+                                <tbody>
+                                    <tr>
+                                        <th>담당자명<span>*</span></th>
+                                        <td>
+                                            <input type="text" class="rgst__input max-330" value="홍길동">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>담당자 이메일<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__mail">
+                                                <input type="text" class="rgst__input" value="hongildong">
+                                                <span>@</span>
+                                                <input type="text" class="rgst__input" value="gmail.com">
+                                                <div class="rgst__select">
+                                                    <div class="form-select-container">
+                                                        <select>
+                                                            <option class="option-placeholder">선택</option>
+                                                            <option value="">선택</option>
+                                                            <option value="">선택</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rgst__desc mt10">*hanmail, gmail은 수신에 제한이 있을 수 있습니다.</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>전화번호</th>
+                                        <td>
+                                            <div class="rgst__phone">
+                                                <div class="rgst__select">
+                                                    <div class="form-select-container">
+                                                        <select>
+                                                            <option class="option-placeholder">032</option>
+                                                            <option value="">02</option>
+                                                            <option value="">031</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <span>-</span>
+                                                <input type="text" class="rgst__input">
+                                                <span>-</span>
+                                                <input type="text" class="rgst__input">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>핸드폰<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__phone">
+                                                <div class="rgst__select">
+                                                    <div class="form-select-container">
+                                                        <select>
+                                                            <option class="option-placeholder">010</option>
+                                                            <option value="">02</option>
+                                                            <option value="">031</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <span>-</span>
+                                                <input type="text" class="rgst__input">
+                                                <span>-</span>
+                                                <input type="text" class="rgst__input">
+                                            </div>
+                                            <div class="rgst__desc mt10">*이력서, 쪽지 수신 및 채용광고 결제시 회신연락처로만 사용(비공개 항목)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>덴탈잡 쪽지 SMS<br>알림<span>*</span></th>
+                                        <td>
+                                            <div class="rgst__sms">
+                                                <label class="rgst__label2" for="">
+                                                    <input type="radio">
+                                                    수신허용
+                                                </label>
+                                                <label class="rgst__label2" for="">
+                                                    <input type="radio">
+                                                    수신불가
+                                                </label>
+                                            </div>
+                                            <div class="rgst__desc mt10">*'수신허용'을 선택하시면 이력서 및 덴탈잡 쪽지 수신시 채용담당자의 핸드폰으로 문자 알림을 받을 수 있습니다.</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="resume__tmp">
+                                <span>임시 저장이 완료되었습니다</span>
+                            </div>
+
+                            <div class="resume__snpts">
+                                <span>입력한 이력서 제목이 표시됩니다.</span>
+                                <div class="resume__btbx2">
+                                    <button type="button" class="resume__btn2">미리보기</button>
+                                    <button type="button" class="resume__btn2">임시저장</button>
+                                    <button type="button" class="resume__btn2 resume__btn2--blk">작성 완료(다음 단계)</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>
