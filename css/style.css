@@ -15719,3 +15719,337 @@ h1.title {
     align-items: center;
     gap: 30px;
 }
+
+.pym {
+    display: grid;
+    grid-template-columns: 1fr 210px;
+    gap: 15px;
+    align-items: start;
+}
+
+.pym__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.pym__hean {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pym__desc {
+    font-size: 15px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.4;
+}
+
+.pym__guide {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 25px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 10px;
+    background: #666;
+}
+
+.pym__tit {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.pym__table {
+    width: 100%;
+    border-top: 1px solid #333;
+    margin-top: 10px;
+}
+
+.pym__table thead th {
+    padding: 11px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 600;
+    background: #f4f6f8;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.pym__table thead th:last-child {
+    border-right: 0;
+}
+
+.pym__table tbody th {
+    padding: 11px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 600;
+    background: #f4f6f8;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    line-height: 1.3;
+}
+
+.pym__table tbody th.pd5 {
+    padding: 5px 11px;
+}
+
+.pym__table tbody td {
+    padding: 15px 18px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 300;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    height: 50px;
+}
+
+.pym__table tbody td.pd9 {
+    padding: 9px;
+}
+
+.pym__table tbody td.center {
+    width: 45px;
+    text-align: center;
+}
+
+.pym__table tbody .option td {
+    color: #666;
+}
+
+.pym__select {
+    display: inline-block;
+    width: 85px;
+}
+
+.pym__select .form-select-container {
+    width: 100%;
+    height: 30px;
+}
+
+.pym__select .form-select-container>.form-select-cus {
+    border-radius: 0px;
+    background: #fff;
+}
+
+.pym__select .form-select-container>.form-select-cus>.form-option-placeholder {
+    font-size: 14px;
+    color: #333 !important;
+    padding: 0 8px;
+}
+
+.pym__select .form-select-container>.form-select-cus>.form-option-placeholder::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    position: absolute;
+    top: 47%;
+    right: 8px;
+    transform: translateY(-50%) rotate(45deg);
+    background: unset;
+    margin: 0;
+}
+
+.pym__list {
+    padding: 20px 0;
+}
+
+.pym__item {
+    display: flex;
+    gap: 3px;
+    font-size: 14px;
+}
+
+.pym__item::before {
+    content: '·';
+}
+
+.pym__item + .pym__item {
+    margin-top: 9px;
+}
+
+.pym__btbx {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.pym__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 13px 20px;
+    background: #666;
+    font-size: 14px;
+    color: #fff;
+}
+
+.byn {
+    position: -wdbkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.byn__container {
+    padding: 18px 15px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.byn__tit {
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.byn__block + .byn__block {
+    margin-top: 20px;
+}
+
+.byn__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.byn__top .size13 {
+    font-size: 13px;
+}
+
+.byn__top .bold {
+    font-weight: 600;
+}
+
+.byn__info {
+    padding: 17px 10px;
+    border-radius: 10px;
+    background: #f4f6f8;
+}
+
+.byn__sbj {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.byn__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.byn__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.byn__item.col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.byn__item span {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.byn__item span.light {
+    font-weight: 300;
+}
+
+.byn__item span.blue {
+    color: #0068b7;
+}
+
+.byn__item span.bold {
+    color: #333;
+    font-weight: 600;
+}
+
+.byn__div {
+    position: relative;
+}
+
+.byn__div span {
+    font-size: 15px;
+    color: #999;
+    font-weight: 300;
+    position: absolute;
+    top: 49%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.byn__input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px 20px 5px 10px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 300;
+    text-align: right;
+}
+
+.byn__desc {
+    display: flex;
+    gap: 3px;
+    margin-top: 9px;
+}
+
+.byn__desc span {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.byn__desc span a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 4px;
+}
+
+.byn__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: #0068b7;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 5px;
+}
