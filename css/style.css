@@ -11924,6 +11924,13 @@ h1.title {
     font-size: 34px;
 }
 
+.resume__tit.col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 0;
+}
+
 .resume__tit.size24 {
     font-size: 24px;
     font-weight: 500;
@@ -16339,6 +16346,10 @@ h1.title {
 
 .cndd__block:first-child {
     margin-top: 20px;
+}
+
+.cndd__block.mt10:first-child {
+    margin-top: 10px;
 }
 
 .cndd__top {
