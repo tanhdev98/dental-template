@@ -14113,10 +14113,40 @@ h1.title {
     gap: 5px;
 }
 
+.mdf__container.gap10 {
+    gap: 10px;
+}
+
+.mdf__container.mb40 {
+    margin-bottom: 40px;
+}
+
+.mdf__container.pd20 {
+    padding: 20px;
+}
+
 .mdf__div--flex {
     display: flex;
     align-items: center;
     min-height: 35px;
+}
+
+.mdf__notice {
+    display: flex;
+    gap: 10px;
+}
+
+.mdf__notice > img {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.mdf__notice span {
+    font-size: 15px;
+    color: #076ecc;
+    line-height: 1.4;
 }
 
 .mdf__grid2 {
