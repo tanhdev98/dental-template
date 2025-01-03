@@ -13076,6 +13076,13 @@ h1.title {
     text-align: center;
 }
 
+.rsm-stt__srh-desc {
+    font-size: 13px;
+    color: #999;
+    text-align: right;
+    margin-top: 20px;
+}
+
 .rsm-stt__srh {
     display: flex;
     align-items: center;
@@ -16730,4 +16737,114 @@ h1.title {
 .acs__table td.acs__name {
     width: 360px;
     text-align: left;
+}
+
+.acs-pnt {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.acs-pnt__use {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.acs-pnt__num {
+    font-size: 48px;
+    color: #1577cf;
+}
+
+.acs-pnt__num.red {
+    color: #a40000;
+}
+
+.acs-pnt__num > b {
+    font-weight: 600;
+    color: #1577cf;
+}
+
+.acs-pnt__num.red > b {
+    color: #a40000;
+}
+
+.hst {
+    padding-top: 10px;
+}
+
+.hst__tab {
+    width: 100%;
+    display: flex;
+    margin-bottom: -1px;
+}
+
+.hst__tab-item {
+    width: 100%;
+}
+
+.hst__tab-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    background: #f4f6f8;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #999;
+}
+
+.hst__tab-item a.active {
+    color: #333;
+    background: #fff;
+    border-bottom: 0;
+}
+
+.hst__block {
+    padding: 20px 15px 50px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+
+.hst__table {
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+.hst__table th {
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.hst__table td {
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.hst__plus {
+    color: #1577cf;
+}
+
+.hst__minus {
+    color: #a40000;
 }
