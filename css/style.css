@@ -13465,6 +13465,10 @@ h1.title {
     padding-top: 20px;
 }
 
+.mtch__block--pt10 {
+    padding-top: 10px;
+}
+
 .mtch__block--rp4 {
     grid-template-columns: repeat(4, 1fr);
 }
@@ -16586,4 +16590,144 @@ h1.title {
     font-size: 14px;
     font-weight: 300;
     color: #666;
+}
+
+.acs__block {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+    letter-spacing: -0.5px;
+    margin-top: 20px;
+}
+
+.acs__lf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.acs__info {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.acs__info > span {
+    font-weight: 600;
+}
+
+.acs__point {
+    font-size: 40px;
+}
+
+.acs__point > span {
+    font-weight: 700;
+}
+
+.acs__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    border-radius: 30px;
+    background: #db3c29;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.acs__rt {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.acs__tit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.acs__more {
+    font-size: 13px;
+    color: #666;
+}
+
+.acs__grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.acs__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.acs__item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+.acs__item span {
+    font-size: 14px;
+    color: #666;
+}
+
+.acs__item span b {
+    font-weight: 600;
+    color: #0068b7;
+}
+
+.acs__table {
+    width: 100%;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.acs__table th {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background: #f4f6f8;
+}
+
+.acs__table th + th {
+    border-left: 1px solid #ddd;
+}
+
+.acs__table td {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 11px;
+    border-bottom: 1px solid #ddd;
+    background: #f4f6f8;
+}
+
+.acs__table td + td {
+    border-left: 1px solid #ddd;
+}
+
+.acs__table td.acs__name {
+    width: 360px;
+    text-align: left;
 }
