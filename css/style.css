@@ -17030,7 +17030,7 @@ h1.title {
 .lck__label2 {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    padding: 15px;
     font-size: 15px;
     font-weight: 300;
     width: 100%;
