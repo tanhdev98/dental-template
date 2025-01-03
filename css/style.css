@@ -14113,22 +14113,11 @@ h1.title {
     gap: 5px;
 }
 
-.mdf__container.gap10 {
-    gap: 10px;
-}
-
-.mdf__container.mb40 {
-    margin-bottom: 40px;
-}
-
-.mdf__container.pd20 {
-    padding: 20px;
-}
-
-.mdf__div--flex {
+.mdf__container2 {
     display: flex;
-    align-items: center;
-    min-height: 35px;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 40px;
 }
 
 .mdf__notice {
@@ -14136,17 +14125,19 @@ h1.title {
     gap: 10px;
 }
 
-.mdf__notice > img {
+.mdf__notice > i {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    object-fit: contain;
+    color: #1577cf;
 }
 
 .mdf__notice span {
     font-size: 15px;
-    color: #076ecc;
+    font-weight: 300;
     line-height: 1.4;
+}
+
+.mdf__notice span b {
+    color: #1577cf;
 }
 
 .mdf__grid2 {
