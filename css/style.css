@@ -219,6 +219,13 @@
     font-weight: 300;
     color: #666;
     line-height: 24px;
+    height: 0;
+    transition: all 0.3s ease;
+}
+
+#accordion .accodion-item .accordion-ans.active {
+    display: block;
+    height: 100%;
 }
 
 /* Notification */
@@ -848,6 +855,10 @@ h1.title {
     white-space: pre-line;
     height: 430px;
     overflow-y: auto;
+}
+
+#client-center-child .content-tab .print-item p {
+    margin-bottom: 20px;
 }
 
 #client-center-child .content-tab .print-item.active {
