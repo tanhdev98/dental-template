@@ -7631,16 +7631,18 @@ h1.title {
 }
 
 #register-page .content-form .form-select-container.select-year {
-    width: 100%;
+    width: auto;
 }
 
 #register-page .content-form .form-select-container.select-year .form-option-placeholder {
     color: #333 !important;
 }
-
+.form-select-container-PADAC020 .form-select-container{
+    width: 89px;
+}
 #register-page .content-form .form-select-container.select-month,
 #register-page .content-form .form-select-container.select-day {
-    width: 100%;
+    width: auto;
 }
 
 #register-page .content-form .form-select-container.select-month .form-option-placeholder,
@@ -7656,7 +7658,9 @@ h1.title {
 #register-page .content-form .form-select-container.select-class {
     width: 278px;
 }
-
+.form-select-container.select-class .select-nameClass{
+    width: 278px;
+}
 .row-has-check-box .content-form {
     gap: 10px 17px;
 }
@@ -7693,6 +7697,9 @@ h1.title {
 
 #register-page .content-form.form-email .select-phone {
     width: 173px;
+}
+.form-select-container.select-phone .form-select-container{
+    width: auto;
 }
 
 #register-page .content-form.form-email .require-input {
@@ -17082,4 +17089,7 @@ h1.title {
     font-size: 14px;
     font-weight: 300;
     color: #1577cf;
+}
+.button{
+    cursor: pointer;
 }
