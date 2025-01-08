@@ -7637,9 +7637,11 @@ h1.title {
 #register-page .content-form .form-select-container.select-year .form-option-placeholder {
     color: #333 !important;
 }
-.form-select-container-PADAC020 .form-select-container{
+
+.form-select-container-PADAC020 .form-select-container {
     width: 89px;
 }
+
 #register-page .content-form .form-select-container.select-month,
 #register-page .content-form .form-select-container.select-day {
     width: auto;
@@ -7658,9 +7660,11 @@ h1.title {
 #register-page .content-form .form-select-container.select-class {
     width: 278px;
 }
-.form-select-container.select-class .select-nameClass{
+
+.form-select-container.select-class .select-nameClass {
     width: 278px;
 }
+
 .row-has-check-box .content-form {
     gap: 10px 17px;
 }
@@ -7698,7 +7702,8 @@ h1.title {
 #register-page .content-form.form-email .select-phone {
     width: 173px;
 }
-.form-select-container.select-phone .form-select-container{
+
+.form-select-container.select-phone .form-select-container {
     width: auto;
 }
 
@@ -12773,6 +12778,7 @@ h1.title {
     display: inline-flex;
     align-items: center;
     gap: 15px;
+    position: relative;
 }
 
 .rsm-mng__lf {
@@ -12803,6 +12809,7 @@ h1.title {
     gap: 4px;
     align-items: center;
     width: 10px;
+    cursor: pointer;
 }
 
 .rsm-mng__menu i {
@@ -12811,6 +12818,27 @@ h1.title {
     height: 4px;
     border-radius: 50%;
     background: #b5b5b5;
+}
+
+.rsm-mng__popup {
+    position: absolute;
+    right: -160px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.rsm-mng__popup ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.rsm-mng__popup ul li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .rsm-dtl__grid {
@@ -13537,13 +13565,20 @@ h1.title {
     border-radius: 10px;
 }
 
-.mtch__cnd:hover {
+.mtch__cnd:hover,
+.mtch__cnd:focus,
+.mtch__cnd:active {
     background: #999;
     color: #fff;
 }
 
 .mtch__cnd.active {
     background: #666;
+}
+
+.mtch__cnd.disabled {
+    pointer-events: none;
+    cursor: default;
 }
 
 .mtch__state {
@@ -17094,6 +17129,7 @@ h1.title {
     font-weight: 300;
     color: #1577cf;
 }
-.button{
+
+.button {
     cursor: pointer;
 }
