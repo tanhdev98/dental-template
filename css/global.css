@@ -746,7 +746,7 @@ ul li:hover .submenu,
     border: 0;
     padding: 0;
     border-radius: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #footer .overlay {
@@ -1432,9 +1432,10 @@ ul li:hover .submenu,
 }
 
 #notification .content-frame ul li .notify-image {
-    height: 150px;
+    /* height: 150px; */
     border-radius: 10px;
     background-color: #f4f6f8;
+    padding: 15px;
 }
 
 .count-results {
@@ -1620,53 +1621,149 @@ ul li:hover .submenu,
     padding: 0 6px;
 }
 
-.subway-tag .subway-1 {
+.subway-tag .subway-df {
+    background-color: #ddd;
+    color: #333;
+}
+
+.subway-tag .subway-101 {
     background-color: #003499;
 }
 
-.subway-tag .subway-2 {
+.subway-tag .subway-102 {
     background-color: #37b22d;
 }
 
-.subway-tag .subway-3 {
+.subway-tag .subway-103 {
     background-color: #d1673c;
 }
 
-.subway-tag .subway-4 {
+.subway-tag .subway-104 {
     background-color: #02a5e3;
 }
 
-.subway-tag .subway-5 {
+.subway-tag .subway-105 {
     background-color: #6d528b;
 }
 
-.subway-tag .subway-6 {
+.subway-tag .subway-106 {
     background-color: #713a1c;
 }
 
-.subway-tag .subway-7 {
+.subway-tag .subway-107 {
     background-color: #606d00;
 }
 
-.subway-tag .subway-8 {
+.subway-tag .subway-108 {
     background-color: #e50069;
 }
 
-.subway-tag .subway-9 {
-    background-color: #a49d87;
+.subway-tag .subway-109 {
+    background-color: #FFB811;
 }
 
-.subway-tag .subway-orange {
-    background-color: #ffbf17;
+.subway-tag .subway-10A {
+    background-color: #e6a354;
 }
 
-.subway-tag .subway-turquoise {
-    background-color: #32c6a6;
+.subway-tag .subway-10B {
+    background-color: #305d72;
 }
 
-.subway-tag .subway-red {
+.subway-tag .subway-10C {
+    background-color: #78b9a1;
+}
+
+.subway-tag .subway-10D {
+    background-color: #0b9fab;
+}
+
+.subway-tag .subway-10E {
+    background-color: #3E8A47;
+}
+
+.subway-tag .subway-10F {
+    background-color: #D50032;
+}
+
+.subway-tag .subway-10G {
+    background-color: #eba54d;
+}
+
+.subway-tag .subway-10H {
+    background-color: #ec782f;
+}
+
+.subway-tag .subway-10I {
+    background-color: #00A9E0;
+}
+
+.subway-tag .subway-10J {
+    background-color: #43354e;
+}
+
+.subway-tag .subway-10K {
+    background-color: #aec143;
+}
+
+.subway-tag .subway-10L {
+    background-color: #6b9c40;
+}
+
+.subway-tag .subway-10M {
+    background-color: #FFD700;
+}
+
+.subway-tag .subway-201 {
+    background-color: #ff7f00;
+}
+
+.subway-tag .subway-202 {
+    background-color: #3ed93a;
+}
+
+.subway-tag .subway-203 {
+    background-color: #e8ab57;
+}
+
+.subway-tag .subway-204 {
+    background-color: #2cafff;
+}
+
+.subway-tag .subway-205 {
+    background-color: #9DCB4F;
+}
+
+.subway-tag .subway-301 {
+    background-color: #72B8D4;
+}
+
+.subway-tag .subway-302 {
+    background-color: #9B6BBE;
+}
+
+.subway-tag .subway-401 {
+    background-color: #f05e37;
+}
+
+.subway-tag .subway-402 {
+    background-color: #41b353;
+}
+
+.subway-tag .subway-403 {
+    background-color: #febf56;
+}
+
+.subway-tag .subway-501 {
+    background-color: #038c84;
+}
+
+.subway-tag .subway-601 {
     background-color: #c12b2f;
 }
+
+
+
 
 /* popup */
 .popup {
@@ -1726,7 +1823,7 @@ ul li:hover .submenu,
     background-color: #4e4e4e;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .popup .popup-close::before {
@@ -1745,7 +1842,7 @@ ul li:hover .submenu,
     background-color: #4e4e4e;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .popup .popup-header {
@@ -1869,7 +1966,7 @@ ul li:hover .submenu,
 
 .popup .popup-content .popup-top {
     background: #fff;
-    border: 1px solid #076ecc; 
+    border: 1px solid #076ecc;
 }
 
 .popup .popup-content .popup-top .popup-content-header {
@@ -2069,7 +2166,8 @@ ul li:hover .submenu,
     height: 17.5px;
 }
 
-.popup .popup-bottom .group-radio label:hover, .popup .popup-bottom .group-radio label.active {
+.popup .popup-bottom .group-radio label:hover,
+.popup .popup-bottom .group-radio label.active {
     background: #fff;
 }
 
@@ -2265,4 +2363,8 @@ ul li:hover .submenu,
 
 .profile-setting-popup ul li:hover a {
     color: #0068b7;
+}
+
+.pointer {
+    cursor: pointer;
 }
