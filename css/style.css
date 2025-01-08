@@ -10475,6 +10475,10 @@ h1.title {
     white-space: nowrap;
 }
 
+#tableVolunteer .header-table .header-left .item-header span {
+    pointer-events: none;
+}
+
 #tableVolunteer .header-table .header-left .item-header.active {
     font-size: 15px;
     font-weight: 500;
