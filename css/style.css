@@ -16488,6 +16488,11 @@ h1.title {
     padding-top: 8px;
 }
 
+.cndd>.no-data {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .cndd__block {
     margin-top: 10px;
 }
