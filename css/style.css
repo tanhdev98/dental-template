@@ -12767,6 +12767,11 @@ h1.title {
     white-space: nowrap;
     border-radius: 10px;
     background: #f8b551;
+    cursor: pointer;
+}
+
+.rsm-mng__jump-up:hover {
+    opacity: .8;
 }
 
 .rsm-mng__date {
