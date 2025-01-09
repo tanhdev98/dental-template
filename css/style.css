@@ -1175,7 +1175,7 @@ h1.title {
     margin-top: 10px;
 }
 
-/* #notification-tab .table>li>div {
+#notification-tab .table>li>div {
     display: grid;
     grid-template-columns: 240px 1fr 220px 130px;
     padding: 29px 0 34px;
@@ -1184,9 +1184,9 @@ h1.title {
 
 #notification-tab .table .wrap-position {
     margin-left: 9px;
-} */
+}
 
-#notification-tab .table>li {
+/* #notification-tab .table>li {
     display: grid;
     grid-template-columns: 20.67% calc(100% - 20.67% - 10.93%) 10.93%;
     padding: 32px 0 35px;
@@ -1196,7 +1196,7 @@ h1.title {
     text-align: left;
     align-items: flex-start;
     padding-right: 30px;
-}
+} */
 
 #notification-tab .table>li>div:first-child {
     text-align: center;
