@@ -12913,6 +12913,10 @@ h1.title {
     border-left: 0;
 }
 
+.rsm-dtl__table td.pd0 {
+    padding: 0;
+}
+
 .rsm-dtl__table td.pre-line {
     white-space: pre-line;
 }
@@ -14625,6 +14629,12 @@ h1.title {
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    padding: 18px;
+}
+
+.dntInf__adr--detail {
+    padding: 18px;
+    border-top: 1px solid #ddd;
 }
 
 .dntInf__adr>button {
