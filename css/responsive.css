@@ -5310,6 +5310,11 @@
     #bottom-nav .bottom-nav-wrap {
         gap: 10px;
     }
+
+    #auth .container {
+        bottom: unset;
+        right: unset;
+    }
 }
 
 @media (min-width: 300px) {
