@@ -4020,6 +4020,23 @@
         font-size: 20px;
     }
 
+    #grand-banner .list-grid .list-item .item-content .item-desc {
+        font-size: 20px;
+    }
+
+    #grand-banner .list-grid .list-item .item-content .item-tag {
+        font-size: 16px;
+    }
+
+    #premium-banner .list-grid .list-item .item-content .item-desc {
+        font-size: 20px;
+        max-height: unset;
+    }
+
+    #bottom-nav .title-bottom-nav-res {
+        padding-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -5276,6 +5293,22 @@
 
     .form-login form .form-group button {
         padding: 10px 20px;
+    }
+
+    #grand-banner .list-grid, #premium-banner .list-grid {
+        grid-template-rows: repeat(2, auto);
+    }
+
+    #premium-banner .list-grid .list-item .item-content .item-desc {
+        max-height: 2.5rem;
+    }
+
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item {
+        width: 100%;
+    }
+
+    #bottom-nav .bottom-nav-wrap {
+        gap: 10px;
     }
 }
 
