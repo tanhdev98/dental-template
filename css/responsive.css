@@ -5315,6 +5315,14 @@
         bottom: unset;
         right: unset;
     }
+
+    #tabs-form .bsns-srch .form-select-container {
+        width: 250px;
+    }
+
+    #tabs-form .bsns-srch .form-select-container>.form-select-cus>.form-option-placeholder {
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 300px) {
