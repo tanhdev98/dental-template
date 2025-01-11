@@ -13336,19 +13336,15 @@ h1.title {
 }
 
 .rsm-print {
-    display: none;
     width: 100%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
     overflow-y: auto;
-}
-
-.rsm-print.active {
-    display: block;
+    overscroll-behavior: contain;
 }
 
 .rsm-print__inner {
