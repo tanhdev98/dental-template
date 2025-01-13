@@ -17142,3 +17142,8 @@ h1.title {
 .button {
     cursor: pointer;
 }
+
+.mtch-pop__select .tab-check-box #ResumeCareer {
+    display: flex;
+    gap: 30px;
+}
