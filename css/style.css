@@ -1233,6 +1233,7 @@ h1.title {
     grid-template-columns: 240px 1fr 220px 130px;
     padding: 29px 0 34px;
     width: 100%;
+    background: #fff;
 }
 
 #notification-tab .table .wrap-position {
@@ -14241,7 +14242,7 @@ h1.title {
     display: flex;
     justify-content: flex-start;
     gap: 74px;
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 .msg__you-name {
@@ -14250,8 +14251,13 @@ h1.title {
     padding-top: 23px;
 }
 
+.msg__you-name img {
+    display: block;
+    width: 90px;
+}
+
 .msg__you-ans {
-    width: 390px;
+    min-width: 130px;
     min-height: 78px;
     padding: 25px 65px 34px 25px;
     background: #fff;
@@ -14293,11 +14299,11 @@ h1.title {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 25px 70px 25px 0;
+    padding: 15px 70px 15px 0;
 }
 
 .msg__me-ans {
-    width: 390px;
+    min-width: 130px;
     min-height: 78px;
     padding: 25px 65px 34px 25px;
     background: #fff;
@@ -14337,7 +14343,6 @@ h1.title {
 .msg__textarea {
     width: 100%;
     height: 110px;
-    padding-right: 90px;
 }
 
 .msg__send-btn {
@@ -14352,8 +14357,8 @@ h1.title {
     font-weight: 600;
     color: #fff;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    top: calc(100% + 20px);
+    right: 0px;
 }
 
 .mdf {
