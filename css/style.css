@@ -12875,6 +12875,10 @@ h1.title {
     align-items: center;
 }
 
+.rsm-mng__btbx.mt10 {
+    margin-top: 10px;
+}
+
 .rsm-mng__btn {
     display: inline-flex;
     justify-content: center;
@@ -13122,6 +13126,10 @@ h1.title {
     line-height: 1.3;
 }
 
+.rsm-dtl__table.mt20 {
+    margin-top: 20px;
+}
+
 .rsm-dtl__table th {
     width: 140px;
     font-size: 16px;
@@ -13132,6 +13140,10 @@ h1.title {
     border-bottom: 1px solid #ddd;
     background: #f5f5f5;
     white-space: nowrap;
+}
+
+.rsm-dtl__table th.wd180 {
+    width: 180px;
 }
 
 .rsm-dtl__table--top th {
@@ -13214,6 +13226,10 @@ h1.title {
 
 .rsm-dtl__table2 thead th.wd251 {
     width: 251px;
+}
+
+.rsm-dtl__table2 thead th.wd120 {
+    width: 120px;
 }
 
 .rsm-dtl__table2 tbody th {
