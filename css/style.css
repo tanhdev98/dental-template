@@ -11276,7 +11276,7 @@ h1.title {
 .vln-mgzn__lf {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 30px;
 }
 
 .vln-mgzn__tit h3 {
@@ -11288,7 +11288,7 @@ h1.title {
     font-size: 15px;
     color: #666;
     font-weight: 500;
-    margin-top: 7px;
+    margin-top: 15px;
 }
 
 .vln-mgzn__view {
