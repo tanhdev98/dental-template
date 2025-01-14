@@ -14534,7 +14534,7 @@ h1.title {
     display: flex;
     gap: 5px;
     font-size: 15px;
-    padding-top: 10px;
+    min-height: 35px;
 }
 
 .mdf__sbj.pt0 {
