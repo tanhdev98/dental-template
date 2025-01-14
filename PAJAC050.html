@@ -477,10 +477,12 @@
                         <div class="job-left">
                             <div class="job-name">
                                 <h2>
-                                    <span>서울안심치과</span>
+                                    <!-- <span>서울안심치과</span> -->
+                                    <img src="./images/logo.png" alt="">
                                     <div class="button-container">
                                         <button type="button" class="button-scrap">스크랩</button>
                                         <button type="button" class="button-msg">쪽지보내기</button>
+                                        <button type="button" class="button-print">인쇄하기</button>
                                     </div>
                                 </h2>
                                 <h1>[진료실, 기숙사, 최고 복지, 좋은 분위기, 최고 급여] 함께 할 선생님을 모집합니다.</h1>
@@ -503,11 +505,72 @@
                             <a href="./PADAD010.html" class="job-aplct-btn">입사지원</a>
                         </div>
                     </div>
-        
+
                     <div class="company-info">
                         <h3>기본정보</h3>
                         <div class="job-div">
-                            <img src="./images/PAEAA070/image-sample2.png" alt="Dental Job Logo Company">
+                            <div class="job-imgbox">
+                                <div>
+                                    <div>
+                                        <img src="./images/PAEAA070/image-sample2.png" alt="Dental Job Logo Company">
+                                        <img src="./images/PACAA020/poster-introduction.png" alt="Dental Job Logo Company">
+                                        <img src="./images/PAEAA070/image-sample2.png" alt="Dental Job Logo Company">
+                                        <img src="./images/PAEAA070/image-sample2.png" alt="Dental Job Logo Company">
+                                    </div>
+                                </div>
+                                <button type="button" id="prevImageBtn" class="disabled"></button>
+                                <button type="button" id="nextImageBtn"></button>
+                            </div>
+                            <div class="job-image-pop">
+                                <button type="button" id="imageViewClose"></button>
+                                <img id="imageView" src="./images/PAEAA070/image-sample2.png" alt="Dental Job Logo Company">
+                            </div>
+                            <script>
+                                $(function() {
+                                    var imageCount = 0;
+                                    var imageSize = $('#summary-job .job-content .job-div img').length;
+
+                                    if (imageSize > 1) {
+                                        $('#summary-job .job-content .job-div .job-imgbox > div > div').css('width', imageSize * 100 + '%');
+                                        $('#summary-job .job-content .job-div img').css('width', 100/imageSize + '%');
+                                    }
+                                    
+                                    $('#nextImageBtn').click(function() {
+                                        if (imageCount < imageSize-1) {
+                                            imageCount++;
+                                            $('#summary-job .job-content .job-div .job-imgbox > div > div').stop().animate({'left': (imageCount*100*-1)+'%'});
+                                            $('#prevImageBtn').removeClass('disabled');
+
+                                            if (imageCount === imageSize-1) {
+                                                $(this).addClass('disabled');
+                                            }
+                                        }
+                                    });
+
+                                    $('#prevImageBtn').click(function() {
+                                        if (imageCount > 0) {
+                                            imageCount--;
+                                            $('#summary-job .job-content .job-div .job-imgbox > div > div').stop().animate({'left': (imageCount*100*-1)+'%'});
+                                            $('#nextImageBtn').removeClass('disabled');
+
+                                            if (imageCount === 0) {
+                                                $(this).addClass('disabled');
+                                            }
+                                        }
+                                    });
+
+                                    $('#summary-job .job-content .job-div img').click(function() {
+                                        var imageInfo = $(this).attr('src');
+                                        
+                                        $('.job-image-pop').stop().show();
+                                        $('#imageView').attr('src', imageInfo);
+                                    });
+
+                                    $('#imageViewClose').click(function() {
+                                        $('.job-image-pop').stop().hide();
+                                    });
+                                });
+                            </script>
                             <table class="job-table">
                                 <tbody>
                                     <tr>
@@ -535,9 +598,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-        
-                    <div class="company-info">
+
                         <h3>상세채용정보</h3>
                         <table class="job-table">
                             <tbody>
@@ -581,11 +642,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-        
-                    <div class="company-info">
-                        <h3 class="border0">근무환경/복리후생</h3>
-                        <div class="job-div job-div--gap50">
+
+                        <div class="job-div job-div--gap50 pt30">
                             <div class="job-column">
                                 <h4>근무환경</h4>
                                 <table class="job-table">
@@ -608,7 +666,7 @@
                                 </table>
                             </div>
                             <div class="job-column">
-                                <h4>근무환경</h4>
+                                <h4>복리후생</h4>
                                 <table class="job-table">
                                     <tbody>
                                         <tr>
@@ -635,9 +693,7 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
-        
-                    <div class="company-info">
+
                         <h3>접수방법</h3>
                         <table class="job-table">
                             <tbody>
@@ -666,7 +722,7 @@
                             </tbody>
                         </table>
                         <div class="job-column job-column--mt20">
-                            <h4>채용담당자 정보</h4>
+                            <h4 class="info">채용담당자 정보</h4>
                             <table class="job-table">
                                 <tbody>
                                     <tr>
@@ -684,9 +740,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-        
-                    <div class="company-info">
+
                         <h3>근무위치</h3>
                         <table class="job-table">
                             <tbody>
@@ -709,7 +763,7 @@
                             </tbody>
                         </table>
                     </div>
-        
+
                     <div class="company-info">
                         <div class="job-point">
                             <p><span>덴탈잡에서는 남녀고용평등과 일·가정 양립 지원에 관한 법률에 의거 성별 및 나이에 대한 정보를 표시하지 않습니다.</span></p>
@@ -719,7 +773,7 @@
                             책임을 지게 됨을 양지하시기 바랍니다.</span>
                         </div>
                     </div>
-        
+
                 </div>
             </div>
         </div>
