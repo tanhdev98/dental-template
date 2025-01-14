@@ -13666,10 +13666,10 @@ h1.title {
     display: grid;
     grid-template-columns: 100px 1fr;
     column-gap: 10px;
-    row-gap: 3px;
+    row-gap: 15px;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 .rsm-print__dt {
@@ -13680,10 +13680,11 @@ h1.title {
 .rsm-print__dd {
     font-size: 15px;
     font-weight: 300;
+    margin-bottom: 0;
 }
 
 .rsm-print__sbj {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     font-weight: 600;
     margin-bottom: 20px;
