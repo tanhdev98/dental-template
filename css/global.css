@@ -194,7 +194,7 @@
     border-radius: 50%;
     display: grid;
     place-content: center;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
 }
 
 #sideAds .back-to-top i {
@@ -1202,7 +1202,7 @@ ul li:hover .submenu,
 
 #tabs-form .tabs-right ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     max-height: 180px;
     overflow: hidden;
     overflow-y: scroll;

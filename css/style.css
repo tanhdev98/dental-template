@@ -134,14 +134,31 @@
 #icon-boxes .box-wapper .banner-card-box {
     width: 307px;
     height: 205px;
-    background-image: url('../images/PAHAA010/card_contact.jpg');
     border-radius: 25px;
-    padding: 54px 0 48px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background: #eeeeee;
+}
+
+#icon-boxes .box-wapper .banner-card-box::before {
+    content: '';
+    width: 40%;
+    height: 100%;
+    background: url('../images/icons/icon-phone-white.png') no-repeat center/contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-title {
     font-size: 23px;
     line-height: 18px;
+    position: relative;
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-time {
@@ -149,6 +166,8 @@
     line-height: 25px;
     color: #333;
     margin-top: 13px;
+    position: relative;
+    text-align: center;
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-phone-number {
@@ -156,6 +175,7 @@
     line-height: 25px;
     color: #333;
     font-weight: 600;
+    position: relative;
 }
 
 /* Accodion */
@@ -225,7 +245,18 @@
     color: #666;
     line-height: 24px;
     height: 0;
-    transition: all 0.3s ease;
+    position: relative;
+}
+
+#accordion .accodion-item .accordion-ans::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 20px;
+    background: url('../images/icons/icon-reply.png') no-repeat center/contain;
+    position: absolute;
+    top: 3px;
+    left: 46px;
 }
 
 #accordion .accodion-item .accordion-ans.active {
@@ -284,7 +315,7 @@
 
 #notification .table li.wrap-item {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 15px 30px;
 }
 
@@ -297,7 +328,7 @@
 #notification .table li .wrap-left {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 31px;
     padding-top: 0;
 }
@@ -1848,6 +1879,13 @@ h1.title {
     background-color: #f2f2f2;
 }
 
+#summary-job .job-content .job-info .job-name h2>img {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    object-fit: contain;
+}
+
 .button-container button.button-scrap::before {
     content: '';
     display: inline-block;
@@ -1862,6 +1900,14 @@ h1.title {
     width: 13px;
     height: 13px;
     background: url('../images/icons/icon-nav-letter.png') no-repeat center / contain;
+}
+
+.button-container button.button-print::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url('../images/icons/icon-print.png') no-repeat center / contain;
 }
 
 #summary-job .job-content .job-info .job-name h1 {
@@ -1929,10 +1975,15 @@ h1.title {
 }
 
 #summary-job .job-content h3 {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 600;
     padding-bottom: 15px;
     border-bottom: 1px solid #111;
+    margin-top: 30px;
+}
+
+#summary-job .job-content h3:first-child {
+    margin-top: 0;
 }
 
 #summary-job .job-content h3.border0 {
@@ -1947,12 +1998,128 @@ h1.title {
     gap: 50px;
 }
 
-#summary-job .job-content .job-div img {
+#summary-job .job-content .job-div--gap50.pt30 {
+    padding-top: 30px;
+}
+
+#summary-job .job-content .job-div .job-imgbox {
     display: block;
     width: 337px;
     padding: 15px;
-    object-fit: cover;
     border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+#summary-job .job-content .job-div .job-imgbox>div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#summary-job .job-content .job-div .job-imgbox>div>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#summary-job .job-content .job-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#summary-job .job-content .job-div .job-imgbox>button {
+    width: 20px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+#summary-job .job-content .job-div .job-imgbox>button.disabled {
+    display: none;
+}
+
+#summary-job .job-content .job-div .job-imgbox>button#nextImageBtn {
+    left: unset;
+    right: 15px;
+}
+
+#summary-job .job-content .job-div .job-imgbox>button::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #666;
+    border-bottom: 1px solid #666;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -55%) rotate(45deg);
+}
+
+#summary-job .job-content .job-div .job-imgbox>button#nextImageBtn::after {
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.job-image-pop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    overflow-y: auto;
+}
+
+.job-image-pop img {
+    width: calc(100% - 40px) !important;
+    max-width: 800px;
+    height: auto !important;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#imageViewClose {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#imageViewClose::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#imageViewClose::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 #summary-job .job-content .job-column {
@@ -1967,8 +2134,7 @@ h1.title {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 17px;
-    color: #076ecc;
+    font-size: 19px;
     font-weight: 600;
     padding-bottom: 13px;
     border-bottom: 1px solid #111;
@@ -1981,6 +2147,12 @@ h1.title {
     height: 13px;
     border: 3px solid #076ecc;
     border-radius: 50%;
+}
+
+#summary-job .job-content .job-column>h4.info::before {
+    border-radius: 0;
+    width: 12px;
+    height: 12px;
 }
 
 #summary-job .job-content ul li {
@@ -2097,7 +2269,7 @@ h1.title {
 
 .job-point {
     font-size: 17px;
-    line-height: 1.4;
+    line-height: 2;
 }
 
 .job-point p {
@@ -2402,6 +2574,10 @@ h1.title {
     width: 15px;
     height: 15px;
     margin-left: 25px;
+}
+
+#hero-menu .icon.icon-phone {
+    margin-right: 0;
 }
 
 #hero-menu>ul>li {
@@ -7623,6 +7799,10 @@ h1.title {
     font-weight: 300;
 }
 
+#register-page .content-form.form-phone .form-select-container>.form-select-cus>.form-option-placeholder {
+    color: #333 !important;
+}
+
 #register-page .content-form .form-select-container.select-year {
     width: auto;
 }
@@ -8004,9 +8184,9 @@ h1.title {
 }
 
 #support-now .table-header .column.column-3>div .text-bold {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    color: #333;
+    color: #666;
 }
 
 /* Content Table */
@@ -10402,6 +10582,10 @@ h1.title {
     justify-content: center;
 }
 
+#support-now .wrap-table .column-3 .blank-row--center {
+    justify-content: flex-end;
+}
+
 .blank-row--center .text-dday-date {
     font-size: 15px;
     color: #999;
@@ -10412,7 +10596,7 @@ h1.title {
     background: url("../images/PAGAA010/bannerImg.png") no-repeat center center;
     width: 100%;
     max-width: 780px;
-    height: 475px;
+    height: 280px;
     background-size: cover;
     margin: 20px auto 0 auto;
 }
@@ -10454,9 +10638,14 @@ h1.title {
     justify-content: space-between;
 }
 
+#tableVolunteer .header-table.mt10 {
+    margin-top: 10px;
+}
+
 #tableVolunteer .header-table .header-left {
     display: flex;
     gap: 8px;
+    margin-bottom: 10px;
 }
 
 #tableVolunteer .header-table .header-left .item-header {
@@ -10847,6 +11036,7 @@ h1.title {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 7px;
     font-size: 15px;
     font-weight: 300;
@@ -10955,11 +11145,12 @@ h1.title {
     font-weight: 600;
     display: -webkit-box;
     word-wrap: break-word;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: 11px;
+    line-height: 1.4;
 }
 
 .vln-edtl {
@@ -11037,7 +11228,7 @@ h1.title {
 .vln-mgzn__table td {
     padding: 20px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: bottom;
     border-bottom: 1px solid #ddd;
     letter-spacing: -0.5px;
 }
@@ -11116,7 +11307,7 @@ h1.title {
 .vln-mgzn__lf {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 30px;
 }
 
 .vln-mgzn__tit h3 {
@@ -11128,7 +11319,7 @@ h1.title {
     font-size: 15px;
     color: #666;
     font-weight: 500;
-    margin-top: 7px;
+    margin-top: 15px;
 }
 
 .vln-mgzn__view {
@@ -11185,7 +11376,7 @@ h1.title {
 }
 
 .vln-dcm__pop {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     text-align: left;
     margin-top: 5px;
@@ -11212,18 +11403,18 @@ h1.title {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    padding: 8px 15px;
+    padding: 5px 8px;
     white-space: nowrap;
     border-radius: 20px;
     border: 1px solid #999;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
 }
 
 .vln-dcm__down-btn>img {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     object-fit: contain;
 }
 
@@ -12634,6 +12825,14 @@ h1.title {
     background: #1577cf;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.rsm-mng__btbx.mb10 {
+    margin-bottom: 10px;
+}
+
+.rsm-mng__btbx.mb10 .rsm-mng__btn {
+    min-width: 100px;
 }
 
 .rsm-mng__btn--wd120 {
@@ -17143,4 +17342,17 @@ h1.title {
 
 .button {
     cursor: pointer;
+}
+
+.mtch-pop__select .tab-check-box #ResumeCareer {
+    display: flex;
+    gap: 30px;
+}
+
+.custom-table-recruit .blank-row:first-child {
+    height: 0;
+}
+
+.custom-table-recruit.table .column-3 .wrap-link {
+    height: unset;
 }

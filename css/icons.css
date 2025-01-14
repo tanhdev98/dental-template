@@ -436,7 +436,14 @@
 }
 
 .icon-up::after {
-  background-image: url("../images/icons/icon-up.png");
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-left: 2px solid #999;
+  border-top: 2px solid #999;
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
 }
 
 .icon-trash {
