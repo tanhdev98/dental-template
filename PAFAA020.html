@@ -310,8 +310,12 @@
         <div id="tab-follow">
             <div class="container">
                 <ul class="tabs-no-border">
-                    <li><a href="#" class="active">지역별</a></li>
-                    <li><a href="#">업무별</a></li>
+                    <li><a href="#">지역별</a></li>
+                    <li><a href="#" class="active">업무별</a></li>
+                    <li><a href="#">자격증별</a></li>
+                    <li><a href="#">채용형태별</a></li>
+                    <li><a href="#">경력별</a></li>
+                    <li><a href="#">직급</a></li>
                 </ul>
 
             </div>
@@ -319,7 +323,7 @@
         <div id="tabs-form">
             <div class="container">
                 <div class="top-form">
-                    <h2>지역별(근무 지역)</h2>
+                    <h2>업무별</h2>
                     <button id="saved-conditions" data-type="popup"><span>저장한 조건 보기</span><i
                             class="icon icon-down"></i></button>
                     <div class="popup" for="saved-conditions">
@@ -361,21 +365,8 @@
                         </div>
                     </div>
                 </div>
-                <ul class="tabs">
-                    <li>
-                        <a><i class="icon icon-location"></i>지역 선택</a>
-                    </li>
-                    <li>
-                        <a class="active"><i class="icon icon-bag"></i>업무 선택</a>
-                    </li>
-                    <li>
-                        <a><i class="icon icon-search"></i>검색어 입력</a>
-                    </li>
-                    <li>
-                        <a><i class="icon icon-plus"></i>상세조건</a>
-                    </li>
-                </ul>
-                <div class="tabs-select tabs-select-bag">
+                
+                <div class="tabs-select tabs-select-bag tabs-select--none">
                     <ul>
                         <li>전체</li>
                         <li>진료실</li>
@@ -388,7 +379,20 @@
                         <li>관리 및 경영지원</li>
                         <li></li>
                     </ul>
+                    <div class="bsns-srch">
+                        <div class="form-select-container">
+                            <select>
+                                <option class="option-placeholder" selected="" disabled="" hidden="">사업자명</option>
+                                <option value="">업데이트순 1</option>
+                                <option value="">업데이트순 2</option>
+                                <option value="">업데이트순 3</option>
+                                <option value="">업데이트순 4</option>
+                            </select>
+                        </div>
+                        <input type="text">
+                    </div>
                 </div>
+                
                 <div class="tab-select-results">
                     <ul class="results-area">
                         <li>
