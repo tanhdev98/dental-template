@@ -8008,9 +8008,9 @@ h1.title {
 }
 
 #support-now .table-header .column.column-3>div .text-bold {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    color: #333;
+    color: #666;
 }
 
 /* Content Table */
@@ -10404,6 +10404,10 @@ h1.title {
 
 .blank-row--center {
     justify-content: center;
+}
+
+#support-now .wrap-table .column-3 .blank-row--center {
+    justify-content: flex-end;
 }
 
 .blank-row--center .text-dday-date {
