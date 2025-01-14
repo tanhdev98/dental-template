@@ -360,10 +360,20 @@
 }
 
 #notification .content-table li .date {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     color: #999;
     padding-top: 0;
+}
+
+#notification .content-table li.notice-table-head {
+    display: grid;
+    grid-template-columns: 60px 1fr 80px;
+    align-items: center;
+    justify-items: center;
+    padding: 15px 30px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #333;
 }
 
 #notification .section-wrapper {

@@ -4033,6 +4033,10 @@
         margin-top: 0;
     }
 
+    #notification .content-table li.notice-table-head {
+        display: none;
+    }
+
 }
 
 @media (max-width: 600px) {
