@@ -13536,12 +13536,6 @@ h1.title {
     white-space: nowrap;
 }
 
-.rsm-stt__table td:first-child {
-    font-size: 17px;
-    width: 125px;
-    white-space: unset;
-}
-
 .rsm-stt__table td.text-left {
     text-align: left;
     white-space: unset;
@@ -13618,6 +13612,7 @@ h1.title {
 }
 
 .rsm-print {
+    display: none;
     width: 100%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.7);
@@ -13627,6 +13622,10 @@ h1.title {
     z-index: 9;
     overflow-y: auto;
     overscroll-behavior: contain;
+}
+
+.rsm-print.active {
+    display: block;
 }
 
 .rsm-print__inner {
