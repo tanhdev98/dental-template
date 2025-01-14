@@ -152,7 +152,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-title {
@@ -1879,7 +1879,7 @@ h1.title {
     background-color: #f2f2f2;
 }
 
-#summary-job .job-content .job-info .job-name h2 > img {
+#summary-job .job-content .job-info .job-name h2>img {
     display: inline-block;
     width: 100px;
     height: 45px;
@@ -2010,14 +2010,14 @@ h1.title {
     position: relative;
 }
 
-#summary-job .job-content .job-div .job-imgbox > div {
+#summary-job .job-content .job-div .job-imgbox>div {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
 
-#summary-job .job-content .job-div .job-imgbox > div > div {
+#summary-job .job-content .job-div .job-imgbox>div>div {
     width: 100%;
     height: 100%;
     display: flex;
@@ -2032,7 +2032,7 @@ h1.title {
     object-fit: cover;
 }
 
-#summary-job .job-content .job-div .job-imgbox > button {
+#summary-job .job-content .job-div .job-imgbox>button {
     width: 20px;
     height: 30px;
     background: rgba(255, 255, 255, 0.5);
@@ -2042,16 +2042,16 @@ h1.title {
     transform: translateY(-50%);
 }
 
-#summary-job .job-content .job-div .job-imgbox > button.disabled {
+#summary-job .job-content .job-div .job-imgbox>button.disabled {
     display: none;
 }
 
-#summary-job .job-content .job-div .job-imgbox > button#nextImageBtn {
+#summary-job .job-content .job-div .job-imgbox>button#nextImageBtn {
     left: unset;
     right: 15px;
 }
 
-#summary-job .job-content .job-div .job-imgbox > button::after {
+#summary-job .job-content .job-div .job-imgbox>button::after {
     content: '';
     width: 10px;
     height: 10px;
@@ -2060,12 +2060,12 @@ h1.title {
     position: absolute;
     top: 50%;
     left: 55%;
-    transform: translate(-50%,-55%) rotate(45deg);
+    transform: translate(-50%, -55%) rotate(45deg);
 }
 
-#summary-job .job-content .job-div .job-imgbox > button#nextImageBtn::after {
+#summary-job .job-content .job-div .job-imgbox>button#nextImageBtn::after {
     left: 45%;
-    transform: translate(-50%,-50%) rotate(-135deg);
+    transform: translate(-50%, -50%) rotate(-135deg);
 }
 
 .job-image-pop {
@@ -2107,7 +2107,7 @@ h1.title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 #imageViewClose::after {
@@ -2119,7 +2119,7 @@ h1.title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 #summary-job .job-content .job-column {
@@ -17345,4 +17345,12 @@ h1.title {
 .mtch-pop__select .tab-check-box #ResumeCareer {
     display: flex;
     gap: 30px;
+}
+
+.custom-table-recruit .blank-row:first-child {
+    height: 0;
+}
+
+.custom-table-recruit.table .column-3 .wrap-link {
+    height: unset;
 }
