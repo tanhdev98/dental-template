@@ -14558,7 +14558,11 @@ h1.title {
 .mdf__item {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 7px;
+}
+
+.mdf__item.max-wd246 {
+    max-width: 281px;
 }
 
 .mdf__item.gap30 {
@@ -14566,11 +14570,12 @@ h1.title {
 }
 
 .mdf__item+.mdf__item {
-    margin-top: 3px;
+    margin-top: 7px;
 }
 
 .mdf__input {
-    width: 170px;
+    width: 100%;
+    max-width: 170px;
     height: 35px;
     border: 1px solid #ddd;
     background: #fff;
@@ -14583,12 +14588,13 @@ h1.title {
     width: 75px;
 }
 
-.mdf__input.wd130 {
-    width: 130px;
+.mdf__input.wd127 {
+    width: 127px;
 }
 
 .mdf__input.wd-full {
     width: 100%;
+    max-width: unset;
 }
 
 .mdf__input::placeholder {
@@ -14632,7 +14638,7 @@ h1.title {
 }
 
 .mdf__select-readonly {
-    width: 75px;
+    width: 100%;
     height: 35px;
     border: 1px solid #ddd;
     background: #fff;
@@ -14661,7 +14667,8 @@ h1.title {
 }
 
 .mdf__item .form-select-container {
-    width: 246px;
+    width: 100%;
+    min-width: 70px;
     height: 35px;
 }
 
@@ -14713,7 +14720,6 @@ h1.title {
 
 .mdf__oh {
     display: inline-block;
-    padding: 0 3px;
 }
 
 .mdf__note {

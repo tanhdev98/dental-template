@@ -5329,6 +5329,15 @@
     #tabs-form .bsns-srch .form-select-container>.form-select-cus>.form-option-placeholder {
         font-size: 13px;
     }
+
+    .mdf__item--grid {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+    }
+
+    .mdf__input.wd127 {
+        width: 100%;
+    }
 }
 
 @media (min-width: 300px) {
