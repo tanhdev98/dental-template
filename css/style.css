@@ -1848,6 +1848,13 @@ h1.title {
     background-color: #f2f2f2;
 }
 
+#summary-job .job-content .job-info .job-name h2 > img {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    object-fit: contain;
+}
+
 .button-container button.button-scrap::before {
     content: '';
     display: inline-block;
@@ -1862,6 +1869,14 @@ h1.title {
     width: 13px;
     height: 13px;
     background: url('../images/icons/icon-nav-letter.png') no-repeat center / contain;
+}
+
+.button-container button.button-print::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url('../images/icons/icon-print.png') no-repeat center / contain;
 }
 
 #summary-job .job-content .job-info .job-name h1 {
@@ -12646,6 +12661,14 @@ h1.title {
     background: #1577cf;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.rsm-mng__btbx.mb10 {
+    margin-bottom: 10px;
+}
+
+.rsm-mng__btbx.mb10 .rsm-mng__btn {
+    min-width: 100px;
 }
 
 .rsm-mng__btn--wd120 {
