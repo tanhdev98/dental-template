@@ -10565,7 +10565,7 @@ h1.title {
     background: url("../images/PAGAA010/bannerImg.png") no-repeat center center;
     width: 100%;
     max-width: 780px;
-    height: 475px;
+    height: 280px;
     background-size: cover;
     margin: 20px auto 0 auto;
 }
@@ -10610,6 +10610,7 @@ h1.title {
 #tableVolunteer .header-table .header-left {
     display: flex;
     gap: 8px;
+    margin-bottom: 10px;
 }
 
 #tableVolunteer .header-table .header-left .item-header {
