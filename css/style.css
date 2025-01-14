@@ -13293,7 +13293,8 @@ h1.title {
     position: absolute;
     top: 65px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: top;
     padding-bottom: 100px;
 }
 
