@@ -11345,7 +11345,7 @@ h1.title {
 }
 
 .vln-dcm__pop {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     text-align: left;
     margin-top: 5px;
@@ -11372,18 +11372,18 @@ h1.title {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    padding: 8px 15px;
+    padding: 5px 8px;
     white-space: nowrap;
     border-radius: 20px;
     border: 1px solid #999;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
 }
 
 .vln-dcm__down-btn>img {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     object-fit: contain;
 }
 
