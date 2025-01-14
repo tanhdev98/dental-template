@@ -7623,6 +7623,10 @@ h1.title {
     font-weight: 300;
 }
 
+#register-page .content-form.form-phone .form-select-container>.form-select-cus>.form-option-placeholder {
+    color: #333 !important;
+}
+
 #register-page .content-form .form-select-container.select-year {
     width: auto;
 }
