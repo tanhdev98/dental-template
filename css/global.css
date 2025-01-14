@@ -1202,7 +1202,7 @@ ul li:hover .submenu,
 
 #tabs-form .tabs-right ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     max-height: 180px;
     overflow: hidden;
     overflow-y: scroll;
