@@ -2413,6 +2413,14 @@
     #accordion .accodion-item .accordion-ans {
         font-size: 14px;
         padding: 20px;
+        padding-left: 40px;
+    }
+
+    #accordion .accodion-item .accordion-ans::before {
+        width: 10px;
+        height: 15px;
+        top: 23px;
+        left: 17px;
     }
 
     #request-email .request span {
@@ -2655,23 +2663,7 @@
     }
 
     #icon-boxes .box-wapper .banner-card-box::before {
-        content: '';
-        width: 50%;
-        height: 15px;
-        background: #eee;
-        position: absolute;
-        top: 0;
-        left: 30%;
-    }
-
-    #icon-boxes .box-wapper .banner-card-box::after {
-        content: '';
-        width: 50%;
-        height: 15px;
-        background: #eee;
-        position: absolute;
-        bottom: 0;
-        left: 30%;
+        height: 70%;
     }
 
     #icon-boxes .box-wapper .item-icon {

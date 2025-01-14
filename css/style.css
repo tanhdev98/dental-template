@@ -134,14 +134,31 @@
 #icon-boxes .box-wapper .banner-card-box {
     width: 307px;
     height: 205px;
-    background-image: url('../images/PAHAA010/card_contact.jpg');
     border-radius: 25px;
-    padding: 54px 0 48px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background: #eeeeee;
+}
+
+#icon-boxes .box-wapper .banner-card-box::before {
+    content: '';
+    width: 40%;
+    height: 100%;
+    background: url('../images/icons/icon-phone-white.png') no-repeat center/contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-title {
     font-size: 23px;
     line-height: 18px;
+    position: relative;
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-time {
@@ -149,6 +166,8 @@
     line-height: 25px;
     color: #333;
     margin-top: 13px;
+    position: relative;
+    text-align: center;
 }
 
 #icon-boxes .box-wapper .banner-card-box .item-phone-number {
@@ -156,6 +175,7 @@
     line-height: 25px;
     color: #333;
     font-weight: 600;
+    position: relative;
 }
 
 /* Accodion */
@@ -225,7 +245,18 @@
     color: #666;
     line-height: 24px;
     height: 0;
-    transition: all 0.3s ease;
+    position: relative;
+}
+
+#accordion .accodion-item .accordion-ans::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 20px;
+    background: url('../images/icons/icon-reply.png') no-repeat center/contain;
+    position: absolute;
+    top: 3px;
+    left: 46px;
 }
 
 #accordion .accodion-item .accordion-ans.active {
@@ -284,7 +315,7 @@
 
 #notification .table li.wrap-item {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 15px 30px;
 }
 
@@ -297,7 +328,7 @@
 #notification .table li .wrap-left {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 31px;
     padding-top: 0;
 }
