@@ -12509,6 +12509,10 @@ h1.title {
     display: flex;
 }
 
+.resume__flex.pl40 {
+    padding-left: 40px;
+}
+
 .resume__flex+.resume__flex {
     margin-top: 10px;
 }
@@ -12536,6 +12540,10 @@ h1.title {
     color: #333 !important;
 }
 
+.resume__select>.form-select-container.pt0>.form-select-cus>.form-option-placeholder {
+    padding: 0 16px 0;
+}
+
 .resume__select>.form-select-container>.form-select-cus {
     border-radius: 0;
 }
@@ -12557,6 +12565,10 @@ h1.title {
     position: absolute;
     top: 10px;
     left: 16px;
+}
+
+.resume__name.opp {
+    left: -35px;
 }
 
 .resume__won {
@@ -12636,6 +12648,11 @@ h1.title {
 }
 
 .resume__radio-box input[type='radio'] {
+    width: 15px;
+    height: 15px;
+}
+
+.resume__radio {
     width: 15px;
     height: 15px;
 }
