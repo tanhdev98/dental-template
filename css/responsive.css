@@ -4029,6 +4029,10 @@
         padding-bottom: 20px;
     }
 
+    .ticket__img.mt358 {
+        margin-top: 0;
+    }
+
 }
 
 @media (max-width: 600px) {
