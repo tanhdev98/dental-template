@@ -17459,3 +17459,146 @@ h1.title {
 .custom-table-recruit.table .column-3 .wrap-link {
     height: unset;
 }
+
+.sendPop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sendPop.active {
+    display: block;
+}
+
+.sendPop__container {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+}
+
+.sendPop__tit {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.sendPop__desc {
+    text-align: center;
+    font-size: 15px;
+    color: #004b84;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    line-height: 1.3;
+}
+
+.sendPop__table {
+    width: 100%;
+}
+
+.sendPop__table tbody {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    background: #e9ecef;
+}
+
+.sendPop__table tbody tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sendPop__table tbody tr th {
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.sendPop__table tbody tr th span {
+    color: #0055cc;
+}
+
+.sendPop__input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.sendPop__textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.sendPop__btbx {
+    padding: 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sendPop__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #0055cc;
+    border-radius: 10px;;
+}
+
+.sendPop__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sendPop__close::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 2px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.sendPop__close::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 2px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
