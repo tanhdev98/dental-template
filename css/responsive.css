@@ -5338,6 +5338,27 @@
     .mdf__input.wd127 {
         width: 100%;
     }
+
+    .cmnt__img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cmnt__lf span {
+        font-size: 16px;
+    }
+
+    .cmnt__content {
+        font-size: 14px;
+    }
+
+    .cmnt__date {
+        font-size: 12px;
+    }
+
+    .cmnt__reply {
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 300px) {

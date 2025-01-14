@@ -17602,3 +17602,186 @@ h1.title {
     left: 50%;
     transform: translate(-50%,-50%) rotate(-45deg);
 }
+
+.cmnt {
+    padding-top: 30px;
+}
+
+.cmnt__block {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.cmnt__tit {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cmnt__reg {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    background: #004b84;
+    white-space: nowrap;
+}
+
+.cmnt__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.cmnt__item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-right: 10px;
+}
+
+.cmnt__item--reply {
+    background: #f3f3f3;
+    padding-left: 50px;
+}
+
+.cmnt__item--reply::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 13px;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    left: 15px;
+    top: 22px;
+}
+
+.cmnt__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cmnt__lf {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cmnt__lf span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cmnt__img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #f2f2f2;
+    object-fit: cover;
+}
+
+.cmnt__rt {
+    position: relative;
+}
+
+.cmnt__menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.cmnt__menu i {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #999;
+}
+
+.cmnt__pop {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.cmnt__pop.active {
+    display: block;
+}
+
+.cmnt__delet {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.cmnt__delet + .cmnt__delet {
+    border-top: 1px solid #ddd;
+}
+
+.cmnt__content {
+    font-size: 16px;
+    padding: 20px 0;
+    line-height: 1.4;
+}
+
+.cmnt__bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cmnt__date {
+    font-size: 13px;
+    color: #999;
+}
+
+.cmnt__reply {
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+    text-decoration: underline;
+}
+
+.cmnt__like {
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+.cmnt__like img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cmnt__like img.filled {
+    display: none;
+}
+
+.cmnt__like.active img.filled {
+    display: block;
+}
+
+.cmnt__like.active img {
+    display: none;
+}
