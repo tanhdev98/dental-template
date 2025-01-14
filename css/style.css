@@ -10607,6 +10607,10 @@ h1.title {
     justify-content: space-between;
 }
 
+#tableVolunteer .header-table.mt10 {
+    margin-top: 10px;
+}
+
 #tableVolunteer .header-table .header-left {
     display: flex;
     gap: 8px;
@@ -11193,7 +11197,7 @@ h1.title {
 .vln-mgzn__table td {
     padding: 20px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: bottom;
     border-bottom: 1px solid #ddd;
     letter-spacing: -0.5px;
 }
