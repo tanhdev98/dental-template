@@ -1944,10 +1944,15 @@ h1.title {
 }
 
 #summary-job .job-content h3 {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 600;
     padding-bottom: 15px;
     border-bottom: 1px solid #111;
+    margin-top: 30px;
+}
+
+#summary-job .job-content h3:first-child {
+    margin-top: 0;
 }
 
 #summary-job .job-content h3.border0 {
@@ -1962,12 +1967,128 @@ h1.title {
     gap: 50px;
 }
 
-#summary-job .job-content .job-div img {
+#summary-job .job-content .job-div--gap50.pt30 {
+    padding-top: 30px;
+}
+
+#summary-job .job-content .job-div .job-imgbox {
     display: block;
     width: 337px;
     padding: 15px;
-    object-fit: cover;
     border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+#summary-job .job-content .job-div .job-imgbox > div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#summary-job .job-content .job-div .job-imgbox > div > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#summary-job .job-content .job-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#summary-job .job-content .job-div .job-imgbox > button {
+    width: 20px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+#summary-job .job-content .job-div .job-imgbox > button.disabled {
+    display: none;
+}
+
+#summary-job .job-content .job-div .job-imgbox > button#nextImageBtn {
+    left: unset;
+    right: 15px;
+}
+
+#summary-job .job-content .job-div .job-imgbox > button::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #666;
+    border-bottom: 1px solid #666;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-55%) rotate(45deg);
+}
+
+#summary-job .job-content .job-div .job-imgbox > button#nextImageBtn::after {
+    left: 45%;
+    transform: translate(-50%,-50%) rotate(-135deg);
+}
+
+.job-image-pop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    overflow-y: auto;
+}
+
+.job-image-pop img {
+    width: calc(100% - 40px) !important;
+    max-width: 800px;
+    height: auto !important;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#imageViewClose {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#imageViewClose::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+#imageViewClose::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
 }
 
 #summary-job .job-content .job-column {
@@ -1982,8 +2103,7 @@ h1.title {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 17px;
-    color: #076ecc;
+    font-size: 19px;
     font-weight: 600;
     padding-bottom: 13px;
     border-bottom: 1px solid #111;
@@ -1996,6 +2116,12 @@ h1.title {
     height: 13px;
     border: 3px solid #076ecc;
     border-radius: 50%;
+}
+
+#summary-job .job-content .job-column>h4.info::before {
+    border-radius: 0;
+    width: 12px;
+    height: 12px;
 }
 
 #summary-job .job-content ul li {
@@ -2112,7 +2238,7 @@ h1.title {
 
 .job-point {
     font-size: 17px;
-    line-height: 1.4;
+    line-height: 2;
 }
 
 .job-point p {
