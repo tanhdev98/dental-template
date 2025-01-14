@@ -14934,6 +14934,7 @@ h1.title {
 .dntInf__dt {
     font-size: 17px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .dntInf__dd {
@@ -16423,6 +16424,7 @@ h1.title {
 
 .jobPop__item {
     padding: 0 15px;
+    cursor: pointer;
 }
 
 .jobPop__item.active {
