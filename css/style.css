@@ -2404,6 +2404,10 @@ h1.title {
     margin-left: 25px;
 }
 
+#hero-menu .icon.icon-phone {
+    margin-right: 0;
+}
+
 #hero-menu>ul>li {
     height: 40px;
     display: flex;
