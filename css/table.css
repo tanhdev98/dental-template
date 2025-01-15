@@ -576,8 +576,14 @@
 
 .table-has-more-infomation>li {
     border-bottom: 1px solid #ddd;
+    position: relative;
 }
 
+.table-has-more-infomation>li button {
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
 
 /* Table 3 column with: left 690px, center 265px, right 425px*/
 

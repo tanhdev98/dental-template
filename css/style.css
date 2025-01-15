@@ -11252,6 +11252,7 @@ h1.title {
 }
 
 .vln-mgzn__table td.text-left {
+    vertical-align: middle;
     text-align: left;
 }
 
@@ -11261,6 +11262,7 @@ h1.title {
 
 .vln-mgzn__table td.wd165 {
     width: 165px;
+    vertical-align: middle;
 }
 
 .vln-mgzn__table td.wd260 {
@@ -11808,7 +11810,7 @@ h1.title {
     padding-left: 30px;
 }
 
-.ticket__add-txt + .ticket__desc {
+.ticket__add-txt+.ticket__desc {
     margin-top: 0;
 }
 
@@ -12427,7 +12429,7 @@ h1.title {
     position: relative;
 }
 
-.resume__fileinput {
+.resume__file input {
     display: none;
 }
 
@@ -12440,6 +12442,12 @@ h1.title {
     font-size: 13px;
     font-weight: 300;
     cursor: pointer;
+}
+
+.resume__file .resume__preview img,
+.resume__file .resume__preview {
+    width: 100%;
+    height: 100%;
 }
 
 .resume__delete-btn {
@@ -13493,6 +13501,23 @@ h1.title {
     position: relative;
 }
 
+.rsm-stt__rang .datepicker-child {
+    position: relative;
+}
+
+.rsm-stt__rang .datepicker-child i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rsm-stt__rang .react-datepicker-wrapper input {
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 0 12px;
+    width: 180px;
+}
+
 .rsm-stt__date-input::-webkit-calendar-picker-indicator {
     background: url('../images/icons/icon-date.png') no-repeat center/16px;
     position: absolute;
@@ -13613,7 +13638,6 @@ h1.title {
 }
 
 .rsm-print {
-    display: none;
     width: 100%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.7);
@@ -13625,9 +13649,6 @@ h1.title {
     overscroll-behavior: contain;
 }
 
-.rsm-print.active {
-    display: block;
-}
 
 .rsm-print__inner {
     width: 990px;
@@ -15816,6 +15837,20 @@ h1.title {
     font-weight: 300;
 }
 
+.form-select-container .option-placeholder {
+    text-align: center;
+}
+
+.form-select-container .option-placeholder .form-option-placeholder {
+    justify-content: start;
+    padding: 0 10px !important;
+}
+
+.form-select-container .option-placeholder .form-option {
+    padding: 0 10px !important;
+    justify-content: center;
+}
+
 .rgst__select .form-select-container>.form-select-cus>.form-option-placeholder::after {
     content: '';
     display: block;
@@ -17458,6 +17493,7 @@ h1.title {
 
 .custom-table-recruit.table .column-3 .wrap-link {
     height: unset;
+    margin-top: 20px;
 }
 
 .sendPop {
@@ -17568,7 +17604,8 @@ h1.title {
     font-weight: 600;
     color: #fff;
     background: #0055cc;
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
 }
 
 .sendPop__close {
@@ -17588,7 +17625,7 @@ h1.title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .sendPop__close::after {
@@ -17600,7 +17637,7 @@ h1.title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .cmnt {
@@ -17732,7 +17769,7 @@ h1.title {
     white-space: nowrap;
 }
 
-.cmnt__delet + .cmnt__delet {
+.cmnt__delet+.cmnt__delet {
     border-top: 1px solid #ddd;
 }
 
@@ -17784,4 +17821,8 @@ h1.title {
 
 .cmnt__like.active img {
     display: none;
+}
+
+#content-table .top-table.j-end {
+    justify-content: end;
 }
