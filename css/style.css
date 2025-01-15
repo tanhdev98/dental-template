@@ -1975,6 +1975,7 @@ h1.title {
     top: -13px;
     left: 50%;
     transform: translateX(-50%);
+    width: max-content;
 }
 
 #summary-job .job-content .job-info .job-right .job-aplct-btn {
