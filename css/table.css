@@ -574,6 +574,16 @@
     font-weight: 300;
 }
 
+.more-infomation li .desc-info.text-to-dot {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 600px;
+}
+
 .table-has-more-infomation>li {
     border-bottom: 1px solid #ddd;
     position: relative;
