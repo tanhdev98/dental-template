@@ -528,7 +528,19 @@
         grid-template-columns: calc(100% - 27.15% - 13.88%) 27.15% 13.88%;
     }
 }
-
+@media (max-width: 965px) {
+    #status-support .table li > div:not(.support-details),
+    #status-support .table .view .view-status,
+    #status-support .table .application-result .application-result-status {
+        font-size: 15px;
+    }
+    #status-support .table .item-title,
+    #status-support .table .status-progress .status-text,
+    #status-support .table .view .view-time,
+    #status-support .table .management .management-button {
+        font-size: 14px;
+    }
+}
 @media (max-width: 768px) {
     #sub-header .header-left img {
         display: none;
@@ -567,6 +579,7 @@
     #icon-side-nav {
         width: 20px;
         height: 20px;
+        top: -15px;
     }
 
     #icon-side-nav span {
@@ -4042,7 +4055,13 @@
     #notification .content-table li.notice-table-head {
         display: none;
     }
-
+    .rsm-stt__rang .react-datepicker-wrapper input {
+        width: 100%;
+    }
+    .rsm-stt__rang .react-datepicker-wrapper input {
+        width: 100%;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -4059,6 +4078,7 @@
         height: 30px;
         border-radius: 5px;
         white-space: nowrap;
+        padding: 0 5px;
     }
 
     .msg__table thead {
@@ -4128,9 +4148,34 @@
     .msg__div ul {
         flex-wrap: wrap;
     }
+    #status-support .table li > div:not(.support-details),
+    #status-support .table .view .view-status,
+    #status-support .table .application-result .application-result-status {
+        font-size: 12px;
+    }
+    #status-support .table .item-title,
+    #status-support .table .status-progress .status-text,
+    #status-support .table .view .view-time,
+    #status-support .table .support-details .link-to-details a {
+        font-size: 11px;
+    }
+    #status-support .table .management .management-button {
+        font-size: 11px;
+    }
+    .table li.row-name-column div:nth-child(2) {
+        padding-left: 58px;
+    }
+    #status-support .table .management .management-button{
+        width: 60px;
+    }
 }
 
 @media (max-width: 480px) {
+    .table li.row-name-column div:nth-child(2) {
+        padding-left: 38px;
+    }    #status-support .table .management .management-button {
+        width: 40px;
+    }
     #footer .info>ul>li {
         font-size: 12px;
     }
@@ -5358,6 +5403,11 @@
 
     .cmnt__reply {
         font-size: 13px;
+    }
+}
+@media (max-width: 400px) {
+    .table .column-3 .wrap-link{
+        height: auto;
     }
 }
 
