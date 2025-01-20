@@ -1913,6 +1913,10 @@ h1.title {
     background: url('../images/icons/icon-nav-star.png') no-repeat center / contain;
 }
 
+.button-container button.button-scrap.active::before {
+    background: url('../images/icons/icon-nav-star_hover.png') no-repeat center / contain;
+}
+
 .button-container button.button-msg::before {
     content: '';
     display: inline-block;
@@ -12581,6 +12585,7 @@ h1.title {
     position: absolute;
     top: 10px;
     left: 16px;
+    z-index: 1;
 }
 
 .resume__name.opp {
