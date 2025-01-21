@@ -17838,3 +17838,14 @@ h1.title {
 #content-table .top-table.j-end {
     justify-content: end;
 }
+
+#search_id .group-form,
+#search_password .group-form {
+    display: flex;
+    gap: 5px;
+}
+
+#search_id .form-row .form-select-container>.form-select-cus>.form-option-placeholder,
+#search_password .form-row .form-select-container>.form-select-cus>.form-option-placeholder {
+    width: 139px;
+}
