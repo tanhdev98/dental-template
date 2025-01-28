@@ -6,1132 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            border: 0;
-            font-family: "Pretendard";
-            vertical-align: baseline;
-            color: #333;
-            font-size: 100%;
-            box-sizing: border-box;
-        }
 
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-        .resume {
-            width: 100%;
-        }
-
-        .resume__inner {
-            padding-top: 20px;
-            padding-bottom: 70px;
-        }
-
-        .resume__inner.pt0 {
-            padding-top: 0;
-        }
-
-        .resume__tit {
-            font-size: 28px;
-            font-weight: inherit;
-        }
-
-        .resume__tit.col {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            padding: 20px 0;
-        }
-
-        .resume__tit.size24 {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
-        .resume__tit>span {
-            font-size: 16px;
-            font-weight: 500;
-            color: #999;
-        }
-
-        .resume__block {
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: #fff;
-            position: relative;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .resume__block--pdlr0 {
-            padding: 20px 0;
-        }
-
-        .resume__sbj {
-            width: 100%;
-            height: 30px;
-            font-size: 28px;
-            font-weight: 600;
-            position: relative;
-            z-index: 2;
-            background: transparent;
-            padding-left: 5px;
-        }
-
-        .resume__placeholer {
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            font-size: 28px;
-            font-weight: 400;
-            color: #999;
-            display: flex;
-            align-items: flex-end;
-            padding-left: 25px;
-        }
-
-        .resume__placeholer span {
-            font-size: 16px;
-            color: #999;
-        }
-
-        .resume__sbj:focus {
-            background: #fff;
-        }
-
-        .resume__tit-box {
-            margin-top: 40px;
-            display: flex;
-            align-items: center;
-            gap: 100px;
-        }
-
-        .resume__tit-box.mb12 {
-            margin-bottom: 12px;
-        }
-
-        .resume__tit-box--between {
-            justify-content: space-between;
-        }
-
-        .resume__tit2 {
-            font-size: 22px;
-            font-weight: 600;
-        }
-
-        .resume__tit2 span {
-            color: #e60012;
-        }
-
-        .resume__check {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .resume__check--gap50 {
-            gap: 50px;
-        }
-
-        .resume__check--gap75 {
-            gap: 75px;
-        }
-
-        .resume__label {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .resume__label span {
-            font-size: 17px;
-            font-weight: 300;
-        }
-
-        .resume__checkbox {
-            display: inline-block;
-            width: 14.5px;
-            height: 14.5px;
-            appearance: none;
-            border: 1px solid #9b9b9b;
-            background: #fff;
-            margin: 0;
-            position: relative;
-            transition: all 0.3s;
-        }
-
-        .resume__checkbox::before {
-            content: '';
-            display: block;
-            width: 7px;
-            height: 4px;
-            border: 1.5px solid #fff;
-            border-top: 0;
-            border-right: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -35%) rotate(-45deg);
-            transform-origin: 25% 25%;
-        }
-
-        .resume__checkbox:checked {
-            background: #076ecc;
-            border: 1px solid #076ecc;
-        }
-
-        .resume__desc {
-            margin-top: 20px;
-        }
-
-        .resume__desc span {
-            display: flex;
-            gap: 3px;
-            align-items: flex-start;
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 1.4;
-        }
-
-        .resume__desc span::before {
-            content: '-';
-        }
-
-        .resume__wrn {
-            font-size: 15px;
-            font-weight: 300;
-            color: #999;
-        }
-
-        .resume__wrn span {
-            color: #e60012;
-        }
-
-        .resume__grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 120px;
-            gap: 10px;
-        }
-
-        .resume__grid+.resume__grid {
-            margin-top: 23px;
-        }
-
-        .resume__input-box {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #ddd;
-            padding: 10px 16px 7px;
-            height: 60px;
-            width: 100%;
-        }
-
-        .resume__input-box--bdl0 {
-            border-left: 0;
-        }
-
-        .resume__input-box--mt10 {
-            margin-top: 10px;
-        }
-
-        .resume__input-box--auto {
-            height: auto;
-        }
-
-        .resume__input-box label {
-            font-size: 13px;
-            font-weight: 300;
-            color: #999;
-            margin-bottom: 5px;
-        }
-
-        .resume__input-box label.esn::after {
-            content: ' *';
-            color: #e60012;
-        }
-
-        .resume__input {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        .resume__input::placeholder {
-            color: #999;
-        }
-
-        .resume__file {
-            grid-column: 3 / 4;
-            grid-row: 1 / 3;
-            width: 100%;
-            height: 100%;
-            border: 1px solid #ddd;
-            position: relative;
-        }
-
-        .resume__file input {
-            display: none;
-        }
-
-        .resume__file label {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            font-size: 13px;
-            font-weight: 300;
-            cursor: pointer;
-        }
-
-        .resume__file .resume__preview img,
-        .resume__file .resume__preview {
-            width: 100%;
-            height: 100%;
-        }
-
-        .resume__delete-btn {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border: 0;
-            padding: 0;
-            background: #ddd;
-            position: absolute;
-            top: 0;
-            right: 0;
-            cursor: pointer;
-        }
-
-        .resume__delete-btn::before {
-            content: '';
-            display: block;
-            width: 60%;
-            height: 1px;
-            background: #666;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-        }
-
-        .resume__delete-btn::after {
-            content: '';
-            display: block;
-            width: 60%;
-            height: 1px;
-            background: #666;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-45deg);
-        }
-
-        .resume__tit3 {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 14px;
-        }
-
-        .resume__tit3--esn::after {
-            content: '*';
-            color: #e60012;
-        }
-
-        .resume__ps {
-            font-size: 13px;
-            color: #666;
-            font-weight: 300;
-            margin-top: 8px;
-            line-height: 1.3;
-        }
-
-        .resume__div--pdlr20 {
-            padding: 0 20px;
-        }
-
-        .resume__div+.resume__div {
-            margin-top: 30px;
-        }
-
-        .resume__flex {
-            display: flex;
-        }
-
-        .resume__flex.pl40 {
-            padding-left: 40px;
-        }
-
-        .resume__flex+.resume__flex {
-            margin-top: 10px;
-        }
-
-        .resume__flex--pd20 {
-            padding: 0 20px;
-        }
-
-        .resume__flex--mt20 {
-            margin-top: 20px;
-        }
-
-        .resume__select {
-            width: 100%;
-            position: relative;
-        }
-
-        .resume__select>.form-select-container {
-            width: 100%;
-            height: 60px;
-        }
-
-        .resume__select>.form-select-container>.form-select-cus>.form-option-placeholder {
-            padding: 22px 16px 0;
-            color: #333 !important;
-        }
-
-        .resume__select>.form-select-container.pt0>.form-select-cus>.form-option-placeholder {
-            padding: 0 16px 0;
-        }
-
-        .resume__select>.form-select-container>.form-select-cus {
-            border-radius: 0;
-        }
-
-        .resume__select--bdl0>.form-select-container>.form-select-cus {
-            border-left: 0;
-        }
-
-        .resume__select>.form-select-container>.form-select-cus>.form-option-placeholder::after {
-            background: url(../images/icons/icon-arrow-blk.png) no-repeat center / contain;
-            width: 12px;
-            height: auto;
-        }
-
-        .resume__name {
-            font-size: 13px;
-            font-weight: 300;
-            color: #999;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-            z-index: 1;
-        }
-
-        .resume__name.opp {
-            left: -35px;
-        }
-
-        .resume__won {
-            width: 170px;
-            height: 32px;
-            border: 1px solid #ddd;
-            padding: 8px 14px;
-            position: relative;
-        }
-
-        .resume__woninput {
-            width: 100%;
-            height: 100%;
-            font-size: 16px;
-            font-weight: 600;
-            padding-right: 36px;
-        }
-
-        .resume__won span {
-            position: absolute;
-            top: 50%;
-            right: 14px;
-            transform: translateY(-50%);
-            font-size: 13px;
-            font-weight: 300;
-            color: #999;
-        }
-
-        .resume__list {
-            margin-top: 20px;
-            padding: 0 20px;
-        }
-
-        .resume__item {
-            position: relative;
-        }
-
-        .resume__item+.resume__item {
-            margin-top: 14px;
-            border-top: 1px solid #ddd;
-            padding-top: 14px;
-        }
-
-        .resume__item+.resume__item .resume__delete-btn {
-            top: 14px;
-        }
-
-        .resume__item:last-child {
-            margin-bottom: 19px;
-        }
-
-        .resume__grid2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .resume__grid2+.resume__grid2 {
-            margin-top: 10px;
-        }
-
-        .resume__rt {
-            display: flex;
-        }
-
-        .resume__radio-box {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px;
-        }
-
-        .resume__radio-box label {
-            font-size: 13px;
-            font-weight: 300;
-        }
-
-        .resume__radio-box input[type='radio'] {
-            width: 15px;
-            height: 15px;
-        }
-
-        .resume__radio {
-            width: 15px;
-            height: 15px;
-        }
-
-        .resume__textarea {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 500;
-            height: 90px;
-        }
-
-        .resume__textarea::placeholder {
-            font-size: 16px;
-            font-weight: 300;
-            color: #999;
-        }
-
-        .resume__textarea--h80 {
-            height: 80px;
-        }
-
-        .resume__textarea--h590 {
-            height: 590px;
-        }
-
-        .resume__add {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            padding: 15px;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            font-size: 16px;
-            font-weight: 500;
-            color: #666;
-        }
-
-        .resume__add:hover {
-            background: #ddd;
-        }
-
-        .resume__add-icon {
-            width: 16px;
-            height: 16px;
-            background: #2196f3;
-            position: relative;
-            border-radius: 50%;
-        }
-
-        .resume__add-icon::before {
-            content: '';
-            display: block;
-            width: 50%;
-            height: 1px;
-            background: #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .resume__add-icon::after {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 50%;
-            background: #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .resume__list2 {
-            padding-top: 20px;
-        }
-
-        .resume__item2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .resume__item2+.resume__item2 {
-            margin-top: 10px;
-        }
-
-        .resume__grid3 {
-            display: grid;
-            grid-template-columns: 150px 1fr;
-        }
-
-        .resume__grid3--one {
-            grid-template-columns: 1fr;
-        }
-
-        .resume__grid4 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .resume__grid5 {
-            display: grid;
-            grid-template-columns: 150px 1fr 1fr;
-            gap: 10px;
-            padding-right: 50px;
-        }
-
-        .resume__grid6 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 150px;
-            gap: 10px;
-            padding-right: 50px;
-            margin-top: 10px;
-        }
-
-        .resume__btm-text {
-            margin-top: 32px;
-            font-size: 16px;
-            text-align: center;
-            line-height: 1.6;
-        }
-
-        .resume__btm-text+.resume__btm-text {
-            margin-top: 0;
-            padding-top: 10px;
-        }
-
-        .resume__btbx {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .resume__btn {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 125px;
-            padding: 18px;
-            font-size: 20px;
-            font-weight: 600;
-            color: #fff;
-            background: #333;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .resume__btn--blue {
-            background: #1577cf;
-        }
-
-        .resume__tmp {
-            width: 100%;
-            height: 130px;
-            position: relative;
-        }
-
-        .resume__tmp span {
-            display: inline-block;
-            font-size: 15px;
-            font-weight: 300;
-            color: #fff;
-            padding: 10px;
-            background: #333;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .resume__snpts {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 18px 20px;
-            border: 1px solid #ddd;
-            background: #f5f5f5;
-        }
-
-        .resume__snpts--mt60 {
-            margin-top: 60px;
-        }
-
-        .resume__snpts span {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .resume__btn2 {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #999;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 17px;
-            font-weight: 600;
-            padding: 15px 26px;
-            white-space: nowrap;
-            cursor: pointer;
-        }
-
-        .resume__btn2--blk {
-            color: #fff;
-            background: #333;
-        }
-
-        .rsm-mng {
-            padding-top: 20px;
-        }
-
-        .rsm-mng__btbx {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .rsm-mng__btbx.mt10 {
-            margin-top: 10px;
-        }
-
-        .rsm-mng__btn {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 150px;
-            padding: 13px 22px;
-            font-size: 16px;
-            color: #fff;
-            font-weight: 500;
-            background: #1577cf;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .rsm-mng__btbx.mb10 {
-            margin-bottom: 10px;
-        }
-
-        .rsm-mng__btbx.mb10 .rsm-mng__btn {
-            min-width: 100px;
-        }
-
-        .rsm-mng__btn--wd120 {
-            min-width: 120px;
-        }
-
-        .rsm-mng__block {
-            border-top: 1px solid #333;
-            margin-top: 10px;
-        }
-
-        .rsm-mng__table {
-            width: 100%;
-        }
-
-        .rsm-mng__table th {
-            padding: 20px 10px;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 15px;
-            font-weight: 600;
-            border-bottom: 1px solid #ddd;
-            white-space: nowrap;
-        }
-
-        .rsm-mng__table th.wd37 {
-            width: 37%;
-        }
-
-        .rsm-mng__table th:first-child {
-            padding-left: 20px;
-        }
-
-        .rsm-mng__thflx {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-        }
-
-        .rsm-mng__thflx img {
-            display: inline-block;
-            width: 12px;
-        }
-
-        .rsm-mng__table td {
-            padding: 20px;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 15px;
-            font-weight: 400;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .rsm-mng__table td.text-left {
-            text-align: left;
-            line-height: 1.3;
-        }
-
-        .rsm-mng__table td.text-left a {
-            font-size: 20px;
-        }
-
-        .rsm-mng__col {
-            display: inline-flex;
-            flex-direction: column;
-            gap: 9px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .rsm-mng__open {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            padding: 7px;
-            white-space: nowrap;
-            min-width: 70px;
-            background: #fff;
-            border: 1px solid #999;
-            border-radius: 30px;
-            transition: all 0.3s;
-        }
-
-        .rsm-mng__open.active {
-            color: #1577cf;
-            border: 1px solid #1577cf;
-        }
-
-        .rsm-mng__toggle {
-            display: inline-block;
-            width: 45px;
-            height: 20px;
-            background: #eee;
-            border-radius: 20px;
-            position: relative;
-            transition: all 0.3s;
-        }
-
-        .rsm-mng__toggle::after {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #666;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: all 0.3s;
-        }
-
-        .rsm-mng__toggle.active {
-            justify-content: flex-end;
-            background: #d3e6f7;
-        }
-
-        .rsm-mng__toggle.active::after {
-            background: #1577cf;
-            left: calc(100% - 20px);
-        }
-
-        .rsm-mng__jump-up {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            padding: 6px 10px;
-            font-size: 12px;
-            white-space: nowrap;
-            border-radius: 5px;
-            background: #f8b551;
-            cursor: pointer;
-        }
-
-        .rsm-mng__jump-up:hover {
-            opacity: .8;
-        }
-
-        .rsm-mng__date {
-            white-space: nowrap;
-            line-height: 1.3;
-        }
-
-        .rsm-mng__btbx2 {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            position: relative;
-        }
-
-        .rsm-mng__lf {
-            display: inline-flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-
-        .rsm-mng__btn2 {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 6px 16px;
-            white-space: nowrap;
-            border-radius: 10px;
-            font-size: 14px;
-            color: #fff;
-            background: #999;
-        }
-
-        .rsm-mng__btn2--blue {
-            background: #1577cf;
-        }
-
-        .rsm-mng__menu {
-            display: inline-flex;
-            flex-direction: column;
-            gap: 4px;
-            align-items: center;
-            width: 10px;
-            cursor: pointer;
-        }
-
-        .rsm-mng__menu i {
-            display: block;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            background: #b5b5b5;
-        }
-
-        .rsm-mng__popup {
-            position: absolute;
-            right: -160px;
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-
-        .rsm-mng__popup ul li {
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
-        }
-
-        .rsm-mng__popup ul li:last-child {
-            margin-bottom: 0;
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .rsm-dtl__grid {
-            display: grid;
-            grid-template-columns: 140px 1fr;
-        }
-
-        .rsm-dtl__img {
-            display: block;
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .rsm-dtl__table {
-            width: 100%;
-            border-top: 1px solid #333;
-            line-height: 1.3;
-        }
-
-        .rsm-dtl__table.mt20 {
-            margin-top: 20px;
-        }
-
-        .rsm-dtl__table th {
-            width: 140px;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 18px;
-            text-align: left;
-            vertical-align: middle;
-            border-bottom: 1px solid #ddd;
-            background: #f5f5f5;
-            white-space: nowrap;
-        }
-
-        .rsm-dtl__table th.wd180 {
-            width: 180px;
-        }
-
-        .rsm-dtl__table--top th {
-            width: 120px;
-        }
-
-        .rsm-dtl__table td {
-            font-size: 16px;
-            padding: 18px;
-            text-align: left;
-            vertical-align: middle;
-            border-left: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            word-break: break-all;
-        }
-
-        .rsm-dtl__table td.hi260 {
-            height: 260px;
-            vertical-align: top;
-        }
-
-        .rsm-dtl__table td.wd36per {
-            width: 36%;
-        }
-
-        .rsm-dtl__table--ver2 td {
-            background: #fff;
-        }
-
-        .rsm-dtl__table.modify td {
-            padding: 7px 15px;
-        }
-
-        .rsm-dtl__table td.pl0 {
-            padding-left: 0;
-            border-left: 0;
-        }
-
-        .rsm-dtl__table td.pd0 {
-            padding: 0;
-        }
-
-        .rsm-dtl__table td.pre-line {
-            white-space: pre-line;
-        }
-
-        .rsm-dtl__table--ver2 td+th {
-            border-left: 1px solid #ddd;
-        }
-
-        .rsm-dtl__table2 {
-            width: 100%;
-            margin-top: 20px;
-            border-top: 1px solid #333;
-            line-height: 1.3;
-        }
-
-        .rsm-dtl__table2--mt0 {
-            margin-top: 0;
-        }
-
-        .rsm-dtl__table2 thead th {
-            font-size: 16px;
-            padding: 18px;
-            text-align: center;
-            vertical-align: middle;
-            border-bottom: 1px solid #ddd;
-            background: #f5f5f5;
-            white-space: nowrap;
-        }
-
-        .rsm-dtl__table2 thead th.empty {
-            width: 45%;
-        }
-
-        .rsm-dtl__table2 thead th.wd180 {
-            width: 180px;
-        }
-
-        .rsm-dtl__table2 thead th.wd251 {
-            width: 251px;
-        }
-
-        .rsm-dtl__table2 thead th.wd120 {
-            width: 120px;
-        }
-
-        .rsm-dtl__table2 tbody th {
-            padding: 18px 25px;
-            font-size: 16px;
-            text-align: left;
-            vertical-align: middle;
-            background: #f5f5f5;
-            border: 1px solid #ddd;
-            border-top: 0;
-            width: 180px;
-        }
-
-        .rsm-dtl__table2 tbody th.first {
-            text-align: center;
-            border-left: 0;
-        }
-
-        .rsm-dtl__table2 tbody td {
-            font-size: 16px;
-            padding: 16px;
-            text-align: center;
-            vertical-align: middle;
-            border-bottom: 1px solid #ddd;
-            word-break: break-all;
-            height: 50px;
-        }
-
-        .rsm-dtl__table2 tbody th+td {
-            text-align: left;
-        }
-
-        .rsm-dtl__intro {
-            padding: 20px;
-            font-size: 16px;
-            font-weight: 300;
-            min-height: 255px;
-        }
-    </style>
 </head>
 
 
@@ -1145,8 +20,7 @@
                     <div class="rsm-dtl">
                         <div class="resume__block"
                             style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-top: 20px;">
-                            <div class="rsm-dtl__grid"
-                                style="display: grid; grid-template-columns: 140px 1fr;">
+                            <div class="rsm-dtl__grid" style="display: grid; grid-template-columns: 140px 1fr;">
                                 <img class="rsm-dtl__img" src="./images/PAIAB030/image-sample.png" alt=""
                                     style="width: 100%; height: 180px; object-fit: cover;">
                                 <table class="rsm-dtl__table rsm-dtl__table--top"
@@ -1189,7 +63,8 @@
                         </div>
                         <div class="resume__block"
                             style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-top: 20px;">
-                            <table class="rsm-dtl__table" style="width: 100%; border-collapse: collapse;">
+                            <table class="rsm-dtl__table"
+                                style="width: 100%; border-collapse: collapse; border-top: 1px solid #333; line-height: 1.3;">
                                 <tbody>
                                     <tr>
                                         <th
@@ -1231,132 +106,178 @@
                             </table>
                         </div>
 
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">학력사항 -> (resumeSchoolInfo)</h4>
+                        <div class="resume__tit-box" style="margin-top:40px;">
+                            <h4 class="resume__tit2" style="font-size:22px;font-weight:600;">학력사항 -> (resumeSchoolInfo)
+                            </h4>
                         </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table">
+                        <div class="resume__block"
+                            style="width:100%;border:1px solid #ddd;border-radius:10px;background:#fff;position:relative;padding:20px;margin-top:20px;">
+                            <table class="rsm-dtl__table"
+                                style="width:100%;border-collapse:collapse;border-top:1px solid #333;">
                                 <tbody>
                                     <tr>
-                                        <th>최종학력</th>
-                                        <td>고등학교 졸업</td>
+                                        <th
+                                            style="width:125px;font-size:16px;font-weight:600;padding:18px;text-align:left;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            최종학력</th>
+                                        <td
+                                            style="font-size:16px;padding:18px;text-align:left;vertical-align:middle;border-left:1px solid #ddd;border-bottom:1px solid #ddd;word-break:break-all;">
+                                            고등학교 졸업</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <table class="rsm-dtl__table2">
+                            <table class="rsm-dtl__table2"
+                                style="width:100%;margin-top:20px;border-top:1px solid #333;border-collapse:collapse;border-spacing:0;">
                                 <thead>
                                     <tr>
-                                        <th>재학기간</th>
-                                        <th>학교명</th>
-                                        <th class="empty"></th>
-                                        <th>전공</th>
-                                        <th>학점</th>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;"
+                                            class="wd180">재학기간</th>
+                                        <th
+                                            style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            학교명</th>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;width:45%;"
+                                            class="empty"></th>
+                                        <th
+                                            style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            전공</th>
+                                        <th
+                                            style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            학점</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="resume__tit-box" style="margin-top:40px;">
+                            <h4 class="resume__tit2" style="font-size:22px;font-weight:600;">경력사항 -> (resumeCareerInfo)
+                            </h4>
+                        </div>
+                        <div class="resume__block"
+                            style="width:100%;border:1px solid #ddd;border-radius:10px;background:#fff;position:relative;padding:20px;margin-top:20px;">
+                            <table class="rsm-dtl__table"
+                                style="width:100%;border-collapse:collapse;border-top:1px solid #333;line-height:1.3;">
+                                <tbody>
+                                    <tr>
+                                        <th
+                                            style="width:140px;font-size:16px;font-weight:600;padding:18px;text-align:left;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            경력사항</th>
+                                        <td
+                                            style="font-size:16px;padding:18px;text-align:left;vertical-align:middle;border-left:1px solid #ddd;border-bottom:1px solid #ddd;word-break:break-all;">
+                                            경력 (n년 n개월)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="rsm-dtl__table2"
+                                style="width:100%;margin-top:20px;border-collapse:collapse;border-top:1px solid #333;line-height:1.3;">
+                                <thead>
+                                    <tr>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;width:180px;"
+                                            class="wd180">근무기간</th>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;"
+                                            colspan="2">상세경력</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                            <table class="rsm-dtl__table mt20"
+                                style="width:100%;border-top:1px solid #333;line-height:1.3;border-collapse:collapse;border-spacing:0;margin-top:20px;">
+                                <tbody>
+                                    <tr>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;width:180px;"
+                                            class="wd180">기타경력사항 및<br>기술서</th>
+                                        <td
+                                            style="font-size:16px;padding:18px;text-align:left;vertical-align:middle;border-left:1px solid #ddd;border-bottom:1px solid #ddd;word-break:break-all;">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="resume__tit-box" style="margin-top:40px;">
+                            <h4 class="resume__tit2" style="font-size:22px;font-weight:600;">자격/면허정보 ->
+                                (resumeLicenseInfo)</h4>
+                        </div>
+                        <div class="resume__block"
+                            style="border:1px solid #ddd;border-radius:10px;padding:20px;margin-top:20px;">
+                            <table class="rsm-dtl__table2 rsm-dtl__table2--mt0"
+                                style="width:100%;margin-top:0px;border-top:1px solid #333;line-height:1.3;border-collapse:collapse;border-spacing:0;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            구분</th>
+                                        <th
+                                            style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            자격증/면허증</th>
+                                        <th
+                                            style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            발행처/발행기관</th>
+                                        <th
+                                            style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;">
+                                            최득일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="resume__tit-box" style="margin-top:40px;">
+                            <h4 class="resume__tit2" style="font-size:22px;font-weight:600;">기타활동/사회경험 ->
+                                (resumeActiveInfo)</h4>
+                        </div>
+                        <div class="resume__block"
+                            style="width:100%;border:1px solid #ddd;border-radius:10px;background:#fff;position:relative;padding:20px;margin-top:20px;">
+                            <table class="rsm-dtl__table2 rsm-dtl__table2--mt0"
+                                style="width:100%;margin-top:0px;border-top:1px solid #333;line-height:1.3;border-collapse:collapse;border-spacing:0;">
+                                <thead>
+                                    <tr>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;width:251px;"
+                                            class="wd251">활동기간</th>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;width:120px;"
+                                            class="wd120">활동종류</th>
+                                        <th style="font-size:16px;padding:18px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;background:#f5f5f5;white-space:nowrap;"
+                                            colspan="2">상세활동</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td style="font-size:16px;padding:16px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;word-break:break-all;height:50px;"
+                                            rowspan="2">2024.12.23~2024.12.23</td>
+                                        <td style="font-size:16px;padding:16px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;word-break:break-all;height:50px;"
+                                            rowspan="2"></td>
+                                        <th
+                                            style="padding:18px 25px;font-size:16px;text-align:left;vertical-align:middle;background:#f5f5f5;border:1px solid #ddd;border-top:0;width:180px;">
+                                            기관/장소</th>
+                                        <td
+                                            style="font-size:16px;padding:16px;text-align:center;vertical-align:middle;border-bottom:1px solid #ddd;word-break:break-all;height:50px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th
+                                            style="padding:18px 25px;font-size:16px;text-align:left;vertical-align:middle;background:#f5f5f5;border:1px solid #ddd;border-top:0;width:180px;text-align:left;">
+                                            활동내용</th>
+                                        <td
+                                            style="font-size:16px;padding:16px;text-align:left;vertical-align:middle;border-bottom:1px solid #ddd;word-break:break-all;height:50px;">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">경력사항 -> (resumeCareerInfo)</h4>
+                        <div class="resume__tit-box" style="margin-top:40px;">
+                            <h4 class="resume__tit2" style="font-size:22px;font-weight:600;">자기소개서 -> (resumeContent)
+                            </h4>
                         </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table">
-                                <tbody>
-                                    <tr>
-                                        <th>경력사항</th>
-                                        <td>경력 (n년 n개월)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="rsm-dtl__table2">
-                                <thead>
-                                    <tr>
-                                        <th class="wd180">근무기간</th>
-                                        <th colspan="2">상세경력</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-                            <table class="rsm-dtl__table mt20">
-                                <tbody>
-                                    <tr>
-                                        <th class="wd180">기타경력사항 및<br>기술서</th>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">자격/면허정보 -> (resumeLicenseInfo)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table2 rsm-dtl__table2--mt0">
-                                <thead>
-                                    <tr>
-                                        <th>구분</th>
-                                        <th>자격증/면허증</th>
-                                        <th>발행처/발행기관</th>
-                                        <th>최득일</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">기타활동/사회경험 -> (resumeActiveInfo)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table2 rsm-dtl__table2--mt0">
-                                <thead>
-                                    <tr>
-                                        <th class="wd251">활동기간</th>
-                                        <th class="wd120">활동종류</th>
-                                        <th colspan="2">상세활동</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td rowspan="2">2024.12.23~2024.12.23</td>
-                                        <td rowspan="2"></td>
-                                        <th>기관/장소</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>활동내용</th>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">자기소개서 -> (resumeContent)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <p class="rsm-dtl__intro">
-                                안녕하세요.
-                            </p>
+                        <div class="resume__block"
+                            style="width:100%;border:1px solid #ddd;border-radius:10px;background:#fff;position:relative;padding:20px;margin-top:20px;">
+                            <p class="rsm-dtl__intro"
+                                style="padding:20px;font-size:16px;font-weight:300;min-height:255px;">안녕하세요.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- End resume -->
+            </div><!-- End resume -->
         </div>
     </div>
 </body>
