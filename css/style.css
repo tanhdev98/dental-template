@@ -3560,7 +3560,7 @@ h1.title {
     position: relative;
 }
 
-#hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name::after {
+#hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name.hideName::after {
     content: '';
     display: inline-block;
     background: url('../images/PAAAA010/hide-name.png') no-repeat center / 100%;
@@ -3575,7 +3575,7 @@ h1.title {
     line-height: 18px;
     font-weight: 400;
     -webkit-line-clamp: 1;
-    overflow: unset;
+    overflow: hidden;
 }
 
 #hot-talent .list-grid .list-item .item-content .item-footer {
@@ -4350,7 +4350,7 @@ h1.title {
             "item6 item7";
     }
 
-    #hot-talent .list-grid .list-item:nth-last-child(-n+3),
+    #hot-talent .list-grid .list-item:nth-last-child(-n+2),
     #hot-talent .list-grid .list-item.full {
         display: none;
     }
@@ -14190,6 +14190,10 @@ h1.title {
 .msg__table .msg__bottom td {
     border-bottom: 1px solid #ddd;
     background: #f4ecdf;
+}
+
+.msg__table .msg__border-bottom td {
+    border-bottom: 1px solid #ddd;
 }
 
 .msg__name {
