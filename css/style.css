@@ -7451,7 +7451,6 @@ h1.title {
     font-size: 16px;
     font-weight: 400;
     padding: 0 14px;
-    color: #bbb !important;
 }
 
 #register-check .form-select-container>.form-select-cus>.form-option-placeholder::after {
@@ -7693,10 +7692,35 @@ h1.title {
     line-height: 1;
 }
 
-#terms-and-conditions ul li .content-terms {
+/* #terms-and-conditions ul li .content-terms {
     margin-top: 17px;
     display: none;
     border: 1px solid #ddd;
+    padding: 20px 25px 25px;
+}
+#terms-and-conditions ul li .content-terms.active {
+   display: block;
+} */
+
+#terms-and-conditions ul li .content-terms {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    border: 1px solid #ddd;
+    border-width: 0;
+    padding: 0 25px;
+    transition:
+        max-height 0.4s ease,
+        opacity 0.4s ease,
+        border-width 0.4s ease,
+        padding 0.4s ease;
+}
+
+#terms-and-conditions ul li .content-terms.active {
+    max-height: 1000px;
+    opacity: 1;
+    border-width: 1px;
+    margin-top: 17px;
     padding: 20px 25px 25px;
 }
 
@@ -7712,28 +7736,6 @@ h1.title {
     display: block;
 }
 
-/* content-terms reactjs*/
-#terms-and-conditions ul li .content-terms {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    border: 1px solid #ddd;
-    border-width: 0;
-    padding: 0 25px;
-    transition: 
-        max-height 0.4s ease,
-        opacity 0.4s ease,
-        border-width 0.4s ease,
-        padding 0.4s ease;
-}
-
-#terms-and-conditions ul li .content-terms.active {
-    max-height: 1000px; 
-    opacity: 1;
-    border-width: 1px;
-    margin-top: 17px;
-    padding: 20px 25px 25px;
-}
 /* register form */
 #register-page .content-wrap .require-input {
     color: #076ecc;
@@ -8178,6 +8180,10 @@ h1.title {
     font-size: 20px;
     color: #333;
     font-weight: 600;
+}
+
+#content-table .table.table-has-more-infomation .column-left .wrap-title .item-title+.icon-envelope {
+    width: 16px;
 }
 
 #support-now .table-header .column.column-2 {
@@ -9474,6 +9480,11 @@ h1.title {
 
 #top-sub-page #side-nav>ul>li.item-has-child.active:hover::after {
     background-color: #eef7fd;
+    border-bottom-color: transparent;
+}
+
+#top-sub-page #side-nav>ul>li.item-has-child:hover {
+    border-bottom-color: transparent;
 }
 
 #top-sub-page #side-nav>ul>li.item-has-child.active:hover .sub-menu:before {
@@ -9507,8 +9518,12 @@ h1.title {
     color: #0068b7;
 }
 
-#top-sub-page #side-nav>ul>li.item-has-child.active-child:hover {
+/* #top-sub-page #side-nav>ul>li.item-has-child.active-child:hover {
     border-bottom-color: #ddd;
+} */
+
+#top-sub-page #side-nav>ul>li.item-has-child.active-child .active {
+    display: block;
 }
 
 
@@ -11014,6 +11029,15 @@ h1.title {
     color: #666;
     margin-right: 23px;
     position: relative;
+}
+
+.rsm__list li:nth-child(2) span:last-child {
+    line-height: 17px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 300px;
 }
 
 .rsm__list li+li::before {
