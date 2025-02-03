@@ -3560,7 +3560,7 @@ h1.title {
     position: relative;
 }
 
-#hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name::after {
+#hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name.hideName::after {
     content: '';
     display: inline-block;
     background: url('../images/PAAAA010/hide-name.png') no-repeat center / 100%;
@@ -3568,14 +3568,21 @@ h1.title {
     width: 24px;
     height: 11px;
 }
-
+.item-name.hideName .cir{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: inline-block;
+    margin-left: 2px;
+}
 #hot-talent .list-grid .list-item .item-content .item-desc {
     margin: 12px 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     -webkit-line-clamp: 1;
-    overflow: unset;
+    overflow: hidden;
 }
 
 #hot-talent .list-grid .list-item .item-content .item-footer {
@@ -4350,7 +4357,7 @@ h1.title {
             "item6 item7";
     }
 
-    #hot-talent .list-grid .list-item:nth-last-child(-n+3),
+    #hot-talent .list-grid .list-item:nth-last-child(-n+2),
     #hot-talent .list-grid .list-item.full {
         display: none;
     }
