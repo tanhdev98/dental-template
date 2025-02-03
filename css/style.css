@@ -14199,6 +14199,10 @@ h1.title {
     background: #f4ecdf;
 }
 
+.msg__table .msg__border-bottom td {
+    border-bottom: 1px solid #ddd;
+}
+
 .msg__name {
     font-size: 18px;
     font-weight: 500;
