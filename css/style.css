@@ -2686,6 +2686,9 @@ h1.title {
     margin-bottom: 0;
     font-weight: 700;
     white-space: nowrap;
+    width: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 #slide-news .slide-news-wrap .right-slide {
