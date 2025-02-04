@@ -932,6 +932,7 @@ h1.title {
 
 #info-dashboard.col #notification {
     margin-top: 20px;
+    height: 100%;
 }
 
 #info-dashboard.col {
@@ -1812,6 +1813,7 @@ h1.title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 #summary-job .nav-job>h1 {
@@ -2169,7 +2171,7 @@ h1.title {
     display: inline-block;
     width: 13px;
     height: 13px;
-    border: 3px solid #076ecc;
+    border: 3px solid #388bd6;
     border-radius: 50%;
 }
 
@@ -2266,6 +2268,7 @@ h1.title {
 .job-table td.job-timeinfo {
     height: 228px;
     vertical-align: top;
+    line-height: 1.5;
 }
 
 .job-table td a:hover {
@@ -7886,10 +7889,19 @@ h1.title {
 
 #register-page .content-form .form-select-container.select-year .form-option-placeholder {
     color: #333 !important;
+    justify-content: center;
 }
 
-.form-select-container-PADAC020 .form-select-container {
-    width: 89px;
+.form-select-container-PADAC020.select-year .form-select-container {
+    width: 70px;
+}
+
+.form-select-container-PADAC020.select-month .form-select-container {
+    width: 43px;
+}
+
+.form-select-container-PADAC020.select-day .form-select-container {
+    width: 43px;
 }
 
 #register-page .content-form .form-select-container.select-month,
@@ -7900,6 +7912,7 @@ h1.title {
 #register-page .content-form .form-select-container.select-month .form-option-placeholder,
 #register-page .content-form .form-select-container.select-day .form-option-placeholder {
     color: #333 !important;
+    justify-content: center;
 }
 
 #register-page .content-form .form-select-container .form-select-cus {
@@ -13936,6 +13949,10 @@ h1.title {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.mtch__block--rp3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .mtch__cnd {
     display: inline-flex;
     justify-content: center;
@@ -14777,6 +14794,7 @@ h1.title {
     width: 100%;
     min-width: 70px;
     height: 35px;
+    width: 284px;
 }
 
 .mdf__item .form-select-container.wd90 {
@@ -15436,12 +15454,12 @@ h1.title {
 
 .rcp {
     background: #f5f5f5;
-    padding: 20px 15px;
+    padding: 20px 10px 20px 15px;
 }
 
 .rcp__block {
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 7fr 1fr;
 }
 
 .rcp__lf {
@@ -15451,6 +15469,7 @@ h1.title {
     align-items: center;
     gap: 9px;
     font-size: 15px;
+    padding: 0 10px;
 }
 
 .rcp__print {
@@ -15469,6 +15488,11 @@ h1.title {
 .rcp__rt {
     display: flex;
     gap: 70px;
+    padding: 0 25px;
+}
+
+.rcp-action {
+    text-align: center;
 }
 
 .rcp__list {
@@ -16801,7 +16825,7 @@ h1.title {
 
 .jobPop__container {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    /* grid-template-columns: 170px 1fr; */
     gap: 20px;
     width: 100%;
     max-width: 1260px;
@@ -16931,7 +16955,7 @@ h1.title {
 
 .cndd__top {
     display: grid;
-    grid-template-columns: 1fr auto auto 100px;
+    grid-template-columns: 1fr auto 100px 10px;
     align-items: center;
     gap: 60px;
     padding: 28px 40px;
@@ -16963,7 +16987,7 @@ h1.title {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -17458,6 +17482,7 @@ h1.title {
     font-size: 15px;
     color: #333;
     font-weight: 300;
+    text-align: center;
 }
 
 .inq__input::placeholder {
