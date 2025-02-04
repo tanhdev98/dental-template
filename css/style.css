@@ -3568,7 +3568,8 @@ h1.title {
     width: 24px;
     height: 11px;
 }
-.item-name.hideName .cir{
+
+.item-name.hideName .cir {
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -3576,6 +3577,7 @@ h1.title {
     display: inline-block;
     margin-left: 2px;
 }
+
 #hot-talent .list-grid .list-item .item-content .item-desc {
     margin: 12px 0;
     font-size: 14px;
@@ -7868,6 +7870,18 @@ h1.title {
 
 #register-page .content-form .form-select-container.select-year {
     width: auto;
+}
+
+#register-page .content-form .form-select-container.select-year .form-option-placeholder,
+#register-page .content-form .form-select-container.select-month .form-option-placeholder,
+#register-page .content-form .form-select-container.select-day .form-option-placeholder {
+    padding: 0 15px;
+}
+
+#register-page .content-form .form-select-container.select-year .form-option-placeholder::after,
+#register-page .content-form .form-select-container.select-month .form-option-placeholder::after,
+#register-page .content-form .form-select-container.select-day .form-option-placeholder::after {
+    display: none;
 }
 
 #register-page .content-form .form-select-container.select-year .form-option-placeholder {
