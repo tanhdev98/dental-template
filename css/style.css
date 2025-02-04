@@ -10739,6 +10739,8 @@ h1.title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 58px;
+    margin-bottom: 26px;
 }
 
 #tableVolunteer .header-table.mt10 {
@@ -11205,8 +11207,6 @@ h1.title {
 
 .vln__tit {
     font-size: 36px;
-    padding-top: 58px;
-    margin-bottom: 26px;
 }
 
 .vln__tit--pt44 {
@@ -12054,6 +12054,7 @@ h1.title {
     top: 50%;
     right: 32px;
     transform: translateY(-50%) rotate(180deg);
+    transition: all 0.3s ease;
 }
 
 #accordion .accodion-item.active .arrow-icon {
