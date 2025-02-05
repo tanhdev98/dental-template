@@ -15375,12 +15375,12 @@ h1.title {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
-    color: #fff;
-    padding: 9px 12px;
+    padding: 6px 10px;
+    font-size: 12px;
     white-space: nowrap;
-    border-radius: 25px;
-    background: #f39800;
+    border-radius: 5px;
+    background: #f8b551;
+    cursor: pointer;
 }
 
 .dntInf__aplc {
