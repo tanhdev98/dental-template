@@ -18,4 +18,7 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+    $(document).on('click', '#rsmPrintViewClose', function () {
+        $('.rsm-print').hide();
+    })
 });
