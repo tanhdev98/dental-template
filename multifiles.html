@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa một file đã chọn</title>
+</head>
+
+<body>
+
+    <input type="file" id="fileInput" multiple>
+    <ul id="fileList"></ul>
+
+    <script>
+        const fileInput = document.getElementById("fileInput");
+        const fileList = document.getElementById("fileList");
+        let selectedFiles = [];
+
+        fileInput.addEventListener("change", function (event) {
+            selectedFiles = Array.from(event.target.files);
+            renderFileList();
+        });
+
+        function renderFileList() {
+            fileList.innerHTML = "";
+            selectedFiles.forEach((file, index) => {
+                const li = document.createElement("li");
+                li.textContent = file.name + " ";
+
+                const deleteBtn = document.createElement("button");
+                deleteBtn.textContent = "Xóa";
+                deleteBtn.onclick = () => removeFile(index);
+
+                li.appendChild(deleteBtn);
+                fileList.appendChild(li);
+            });
+        }
+
+        function removeFile(index) {
+            selectedFiles.splice(index, 1);
+
+            // Tạo một DataTransfer object mới để cập nhật input file
+            const dataTransfer = new DataTransfer();
+            selectedFiles.forEach(file => dataTransfer.items.add(file));
+            fileInput.files = dataTransfer.files;
+
+            renderFileList();
+        }
+    </script>
+
+</body>
+
+</html>
