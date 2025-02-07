@@ -11296,6 +11296,19 @@ h1.title {
     border-radius: 20px;
 }
 
+.vln-edtl-lf>span.gray {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    min-width: 80px;
+    background: #9199a1;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+}
+
 .vln-edtl-lf>p {
     font-size: 20px;
     font-weight: 600;
