@@ -678,21 +678,23 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>제출서류</th>
+                                        <th>진행방법</th>
                                         <td>
                                             <div class="rgst__type">
                                                 <label class="rgst__label blk" for="">
                                                     <input type="checkbox" class="rgst__checkbox blk">
                                                     1차
                                                 </label>
-                                                <div class="rgst__select">
-                                                    <div class="form-select-container">
+                                                <div class="rgst__select has-input">
+                                                    <div class="form-select-container st">
                                                         <select>
                                                             <option class="option-placeholder">서류전형</option>
                                                             <option value="">서류전형</option>
                                                             <option value="">서류전형</option>
+                                                            <option value="">직접 입력</option>
                                                         </select>
                                                     </div>
+                                                    <input type="text" class="rgst__input max-330">
                                                 </div>
                                             </div>
                                             <div class="rgst__type">
@@ -700,14 +702,16 @@
                                                     <input type="checkbox" class="rgst__checkbox blk">
                                                     2차
                                                 </label>
-                                                <div class="rgst__select">
-                                                    <div class="form-select-container">
+                                                <div class="rgst__select has-input">
+                                                    <div class="form-select-container nd">
                                                         <select>
                                                             <option class="option-placeholder">면접</option>
                                                             <option value="">면접</option>
                                                             <option value="">면접</option>
+                                                            <option value="">직접 입력</option>
                                                         </select>
                                                     </div>
+                                                    <input type="text" class="rgst__input max-330">
                                                 </div>
                                             </div>
                                             <div class="rgst__type">
@@ -715,14 +719,16 @@
                                                     <input type="checkbox" class="rgst__checkbox blk">
                                                     3차
                                                 </label>
-                                                <div class="rgst__select">
-                                                    <div class="form-select-container">
+                                                <div class="rgst__select has-input">
+                                                    <div class="form-select-container rd">
                                                         <select>
                                                             <option class="option-placeholder">최종 면접</option>
                                                             <option value="">최종 면접</option>
                                                             <option value="">최종 면접</option>
+                                                            <option value="">직접 입력</option>
                                                         </select>
                                                     </div>
+                                                    <input type="text" class="rgst__input max-330">
                                                 </div>
                                             </div>
                                         </td>
@@ -900,6 +906,20 @@
         <div class="overlay"></div>
     </div>
     <!-- End footer -->
+    <script type="text/javascript">
+        $(document).on('click', '.form-option-container .form-option', function () {
+            var $input = $(this).closest('.rgst__select').find('.rgst__input');
+            if ($(this).text() === '직접 입력') {
+                $input.show();
+            } else {
+                $input.hide();
+            }
+        });
+
+        $(document).ready(function () {
+            $('.rgst__input').hide();
+        });
+    </script>
 </body>
 
 </html>

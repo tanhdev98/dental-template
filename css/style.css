@@ -11296,6 +11296,19 @@ h1.title {
     border-radius: 20px;
 }
 
+.vln-edtl-lf>span.gray {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    min-width: 80px;
+    background: #9199a1;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+}
+
 .vln-edtl-lf>p {
     font-size: 20px;
     font-weight: 600;
@@ -12285,6 +12298,7 @@ h1.title {
 
 .resume__tit {
     font-size: 34px;
+    margin-top: 33px;
 }
 
 .resume__tit.col {
@@ -15925,6 +15939,19 @@ h1.title {
     max-width: 160px;
 }
 
+.rgst__select.has-input {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+}
+
+.rgst__select.has-input .form-select-container {
+    max-width: 160px;
+}
+
+
+
 .rgst__select.wd160 {
     width: 160px;
 }
@@ -17332,6 +17359,13 @@ h1.title {
     padding: 15px 11px;
     border-bottom: 1px solid #ddd;
     background: #f4f6f8;
+}
+
+.acs__table td:first-child,
+.acs__table th:first-child,
+.acs__table td:nth-child(2),
+.acs__table th:nth-child(2) {
+    background: #edf0f3;
 }
 
 .acs__table td+td {
