@@ -436,7 +436,7 @@
 }
 
 .icon-up::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   border-left: 2px solid #999;
@@ -515,4 +515,18 @@
 
 .icon-document-subpage::after {
   background-image: url("../images/icons/icon-document-subpage.png");
+}
+
+.icon-link,
+.icon-zip {
+  width: 30px;
+  height: 50px;
+  object-fit: contain;
+}
+.icon-link::after {
+  background-image: url("../images/icons/icon-link.png");
+}
+
+.icon-zip::after {
+  background-image: url("../images/icons/icon-zip.png");
 }
