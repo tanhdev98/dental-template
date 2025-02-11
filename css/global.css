@@ -1276,14 +1276,12 @@ ul li:hover .submenu,
     color: #666666;
     padding-left: 25px;
 }
-
-.rgst__grid .item-checkBox {
+.rgst__grid .item-checkBox{
     width: max-content;
     height: 15px;
     margin-left: 0px;
 }
-
-.rgst__grid .item-checkBox>span {
+.rgst__grid .item-checkBox>span{
     width: 15px;
     height: 15px;
 }
