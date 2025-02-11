@@ -1061,9 +1061,8 @@ ul li:hover .submenu,
 }
 
 .pagination-number li a {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: max-content;
+    padding: 12px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1272,10 +1271,21 @@ ul li:hover .submenu,
 .item-checkBox label span {
     cursor: pointer;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 31px;
-    color: #333;
+    color: #666666;
     padding-left: 25px;
+}
+
+.rgst__grid .item-checkBox {
+    width: max-content;
+    height: 15px;
+    margin-left: 0px;
+}
+
+.rgst__grid .item-checkBox>span {
+    width: 15px;
+    height: 15px;
 }
 
 /* Radio box */
@@ -2073,6 +2083,7 @@ ul li:hover .submenu,
 .popup .box-support-list li span.box-support-list-title {
     font-weight: 400;
     color: #666;
+    margin-right: 5px;
 }
 
 .popup .box-support-list li+li::before {
