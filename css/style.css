@@ -11149,6 +11149,19 @@ h1.title {
     display: block;
     width: 200px;
     object-fit: contain;
+    height: 200px;
+}
+
+.vln-top__img img {
+    height: fit-content;
+    object-fit: contain;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: flex;
+    align-items: center;
 }
 
 .vln-top__info {
