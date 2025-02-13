@@ -2512,7 +2512,7 @@ h1.title {
     height: 100%;
 }
 
-.carousel-item img {
+#slide .carousel-item img {
     border-radius: 9px;
 }
 
