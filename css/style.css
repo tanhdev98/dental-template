@@ -2929,6 +2929,11 @@ h1.title {
     border-radius: 9px;
 }
 
+.list-grid .list-item.slide:hover .item-content::after,
+.list-grid .list-item.no-after:hover .item-content::after {
+    z-index: -1;
+}
+
 #premium-banner .list-grid .list-item:hover .item-content::after {
     border-color: #80b156;
 }
@@ -11464,6 +11469,7 @@ h1.title {
 
 .vln-mbl {
     border-top: 1px solid #111;
+    margin-top: 30px;
 }
 
 .vln-mbl__img {
@@ -16307,6 +16313,12 @@ h1.title {
     padding-bottom: 13px;
 }
 
+.rgst__day #recruitDay.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .rgst__way {
     display: flex;
     flex-direction: column;
@@ -16328,7 +16340,7 @@ h1.title {
 .rgst__sbm {
     display: grid;
     grid-template-columns: 85px 1fr;
-    gap: 5px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -16339,7 +16351,6 @@ h1.title {
 .rgst__paper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     padding: 13px 0;
 }
 
