@@ -181,6 +181,11 @@
 
 #top-sub-page #side-nav ul li.active .icon-nav-star::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-star::after {
+  background: url("../images/icons/icon-nav-star_hover_border.png");
+}
+
+#summary-job .button-container .button-scrap:hover::before,
+#summary-job .button-container .button-scrap:active::before {
   background-image: url("../images/icons/icon-nav-star_hover.png");
 }
 
@@ -215,6 +220,27 @@
   background-image: url("../images/icons/icon-nav-setting_hover.png");
 }
 
+.icon-nav-logout::after {
+  background-image: url("../images/icons/icon-nav-logout.png");
+  width: 18px;
+}
+
+#top-sub-page #side-nav ul li.active .icon-nav-logout::after,
+#top-sub-page #side-nav ul li:hover .icon-nav-logout::after {
+  background-image: url("../images/icons/icon-nav-logout_hover.png");
+}
+
+.icon-nav-ticket::after {
+  background-image: url("../images/icons/icon-nav-ticket.png");
+  width: 18px;
+}
+
+
+#top-sub-page #side-nav ul li.active .icon-nav-ticket::after,
+#top-sub-page #side-nav ul li:hover .icon-nav-ticket::after {
+  background-image: url("../images/icons/icon-nav-ticket_hover.png");
+}
+
 .icon-nav-user::after {
   background-image: url("../images/icons/icon-nav-user.png");
 }
@@ -222,6 +248,11 @@
 #top-sub-page #side-nav ul li.active .icon-nav-user::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-user::after {
   background-image: url("../images/icons/icon-nav-user_hover.png");
+}
+
+#top-sub-page #side-nav ul li.active .icon-nav-ticket::after,
+#top-sub-page #side-nav ul li:hover .icon-nav-ticket::after {
+  background-image: url("../images/icons/icon-nav-ticket-active.png");
 }
 
 .icon-nav-promo::after {
@@ -260,6 +291,11 @@
 #top-sub-page #side-nav ul li.active .icon-list-two::after,
 #top-sub-page #side-nav ul li:hover .icon-list-two::after {
   background-image: url("../images/icons/icon-list-two-active.png");
+}
+
+#top-sub-page #side-nav ul li.active .icon-nav-logout::after,
+#top-sub-page #side-nav ul li:hover .icon-nav-logout::after {
+  background-image: url("../images/icons/icon-nav-logout-active.png");
 }
 
 .icon-location::after {
@@ -436,7 +472,7 @@
 }
 
 .icon-up::after {
-  content: "";
+  content: '';
   width: 15px;
   height: 15px;
   border-left: 2px solid #999;
@@ -523,6 +559,7 @@
   height: 50px;
   object-fit: contain;
 }
+
 .icon-link::after {
   background-image: url("../images/icons/icon-link.png");
 }

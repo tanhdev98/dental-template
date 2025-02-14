@@ -9629,6 +9629,11 @@ h1.title {
     background-color: #eef7fd;
 }
 
+#top-sub-page #side-nav ul li.active::after,
+#top-sub-page #side-nav ul li:hover::after {
+    background-color: #eef7fd;
+}
+
 #top-sub-page #side-nav ul li a {
     display: flex;
     align-items: center;
