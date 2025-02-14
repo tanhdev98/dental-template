@@ -17695,6 +17695,7 @@ h1.title {
 
 .sendPop.active {
     display: block;
+    z-index: 999;
 }
 
 .sendPop__container {
