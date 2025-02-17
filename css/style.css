@@ -13977,6 +13977,10 @@ h1.title {
     padding-top: 10px;
 }
 
+.mtch__block.repeat-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .mtch__block .dropDowns {
     display: flex;
     gap: 5px;
@@ -15390,6 +15394,10 @@ h1.title {
     white-space: nowrap;
     border-radius: 20px;
     background: #88abda;
+}
+
+.dntInf__cnd.ipgum {
+    background: #98da88;
 }
 
 .dntInf__dl {
@@ -17343,6 +17351,17 @@ h1.title {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    position: relative;
+}
+
+.acs__grid .acs__list:not(:last-child)::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #b5b5b5;
+    position: absolute;
+    top: 0%;
+    left: 106%;
 }
 
 .acs__item {
