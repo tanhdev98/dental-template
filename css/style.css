@@ -316,7 +316,7 @@
 
 #notification .table li.wrap-item {
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 15px 30px;
 }
 
@@ -329,7 +329,7 @@
 #notification .table li .wrap-left {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 31px;
     padding-top: 0;
 }
@@ -354,6 +354,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin-top: 2px;
 }
 
 #notification .content-table li .item-title:hover a {
@@ -365,6 +366,7 @@
     font-weight: 300;
     color: #999;
     padding-top: 0;
+    margin-top: 2px;
 }
 
 #notification .content-table li.notice-table-head {
@@ -18414,9 +18416,10 @@ table.table_training_courses {
     transition: background-color 0.3s ease;
     z-index: 1;
 }
-.popupMap__close::after{
+
+.popupMap__close::after {
     content: "×";
-    font-size: 24px; 
+    font-size: 24px;
     top: -2px;
     position: relative;
 }

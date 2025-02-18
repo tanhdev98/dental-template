@@ -424,7 +424,7 @@
                                     </label>
                                     <label class="resume__label">
                                         <input type="checkbox" class="resume__checkbox">
-                                        <span>월~토</span>
+                                        <span>월~토(주 6일)</span>
                                     </label>
                                     <label class="resume__label">
                                         <input type="checkbox" class="resume__checkbox">
@@ -450,20 +450,20 @@
                         </div>
                         <div class="resume__block">
                             <div class="resume__div">
-                                <div class="resume__check">
+                                <fieldset name="resumeGrade" class="resume__check resume__check--gap75">
                                     <label class="resume__label">
-                                        <input type="checkbox" class="resume__checkbox">
+                                        <input type="radio" class="resume__radio" name="resumeGrade" checked>
                                         <span>고등학교 졸업</span>
                                     </label>
                                     <label class="resume__label">
-                                        <input type="checkbox" class="resume__checkbox">
+                                        <input type="radio" class="resume__radio" name="resumeGrade">
                                         <span>전문대/대학 졸업</span>
                                     </label>
                                     <label class="resume__label">
-                                        <input type="checkbox" class="resume__checkbox">
+                                        <input type="radio" class="resume__radio" name="resumeGrade">
                                         <span>대학원 이상 졸업</span>
                                     </label>
-                                </div>
+                                </fieldset>
                             </div>
 
                             <ul class="resume__list2">
@@ -487,11 +487,12 @@
                                     <div class="resume__grid4">
                                         <div class="resume__input-box">
                                             <label for="mtcltn-0">입학년도</label>
-                                            <input class="resume__input" type="text" id="mtcltn-0">
+                                            <input class="resume__input" type="text" id="mtcltn-0"
+                                                placeholder="YYYY-MM">
                                         </div>
                                         <div class="resume__input-box">
                                             <label for="grdtn-1">졸업년도</label>
-                                            <input class="resume__input" type="text" id="grdtn-1">
+                                            <input class="resume__input" type="text" id="grdtn-1" placeholder="YYYY-MM">
                                         </div>
                                         <div class="resume__select resume__select--bdl0">
                                             <div class="resume__name">졸업상태</div>
@@ -526,11 +527,12 @@
                                     <div class="resume__grid4">
                                         <div class="resume__input-box">
                                             <label for="mtcltn-1">입학년도</label>
-                                            <input class="resume__input" type="text" id="mtcltn-1">
+                                            <input class="resume__input" type="text" id="mtcltn-1"
+                                                placeholder="YYYY-MM">
                                         </div>
                                         <div class="resume__input-box resume__input-box--bdl0">
                                             <label for="grdtn-2">졸업년도</label>
-                                            <input class="resume__input" type="text" id="grdtn-2">
+                                            <input class="resume__input" type="text" id="grdtn-2" placeholder="YYYY-MM">
                                         </div>
                                         <div class="resume__select resume__select--bdl0">
                                             <div class="resume__name">졸업상태</div>
@@ -590,11 +592,12 @@
                                     <div class="resume__grid4">
                                         <div class="resume__input-box">
                                             <label for="mtcltn-2">입학년도</label>
-                                            <input class="resume__input" type="text" id="mtcltn-2">
+                                            <input class="resume__input" type="text" id="mtcltn-2"
+                                                placeholder="YYYY-MM">
                                         </div>
                                         <div class="resume__input-box resume__input-box--bdl0">
                                             <label for="grdtn-3">졸업년도</label>
-                                            <input class="resume__input" type="text" id="grdtn-3">
+                                            <input class="resume__input" type="text" id="grdtn-3" placeholder="YYYY-MM">
                                         </div>
                                         <div class="resume__select resume__select--bdl0">
                                             <div class="resume__name">졸업상태</div>
@@ -641,16 +644,16 @@
                         </div>
                         <div class="resume__block resume__block--pdlr0">
                             <div class="resume__div resume__div--pdlr20">
-                                <div class="resume__check resume__check--gap75">
+                                <fieldset name="resume" class="resume__check resume__check--gap75">
                                     <label class="resume__label">
-                                        <input type="radio" class="resume__radio">
+                                        <input type="radio" class="resume__radio" name="resume_item" checked>
                                         <span>신입</span>
                                     </label>
                                     <label class="resume__label">
-                                        <input type="radio" class="resume__radio">
+                                        <input type="radio" class="resume__radio" name="resume_item">
                                         <span>경력</span>
                                     </label>
-                                </div>
+                                </fieldset>
                             </div>
 
                             <ul class="resume__list">
@@ -664,11 +667,13 @@
                                         <div class="resume__rt">
                                             <div class="resume__input-box">
                                                 <label for="join-1">입사년원</label>
-                                                <input class="resume__input" type="text" id="join-1">
+                                                <input class="resume__input" type="text" id="join-1"
+                                                    placeholder="YYYY-MM">
                                             </div>
                                             <div class="resume__input-box resume__input-box--bdl0">
                                                 <label for="rsgntn-1">퇴사년원</label>
-                                                <input class="resume__input" type="text" id="rsgntn-1">
+                                                <input class="resume__input" type="text" id="rsgntn-1"
+                                                    placeholder="YYYY-MM">
                                             </div>
                                             <div class="resume__radio-box">
                                                 <input type="radio" id="working-1">
@@ -781,7 +786,8 @@
                                         </div>
                                         <div class="resume__input-box">
                                             <label for="acquire-2">취득년월</label>
-                                            <input class="resume__input" type="text" id="acquire-2">
+                                            <input class="resume__input" type="text" id="acquire-2"
+                                                placeholder="YYYY-MM">
                                         </div>
                                     </div>
                                 </li>
@@ -841,7 +847,8 @@
                                         <div class="resume__flex">
                                             <div class="resume__input-box">
                                                 <label for="startDate-1">시작년월</label>
-                                                <input class="resume__input" type="text" id="startDate-1">
+                                                <input class="resume__input" type="text" id="startDate-1"
+                                                    placeholder="YYYY-MM">
                                             </div>
                                             <div class="resume__input-box resume__input-box--bdl0">
                                                 <label for="endDate-1">종료년월</label>
