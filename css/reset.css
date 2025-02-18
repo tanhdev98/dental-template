@@ -121,3 +121,7 @@ strong {
 .table> :not(caption)>*>* {
   color: inherit;
 }
+
+.fade:not(.show) {
+  opacity: 1;
+}

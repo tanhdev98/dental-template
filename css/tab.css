@@ -274,7 +274,7 @@ li.dot::before {
     border-top: 1px solid #b5b5b5;
 }
 
-#tabs-form .bsns-srch > input {
+#tabs-form .bsns-srch>input {
     display: inline-block;
     width: 100%;
     max-width: 525px;
@@ -298,7 +298,6 @@ li.dot::before {
 }
 
 #tabs-form .tabs-select-bag ul li {
-    border: 1px solid #ddd;
     line-height: 1;
     display: flex;
     justify-content: center;
@@ -308,28 +307,27 @@ li.dot::before {
     font-size: 15px;
     font-weight: 400;
     cursor: pointer;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
 
-#tabs-form .tabs-select-bag ul li:nth-child(-n+4) {
-    border-right: unset;
-    border-bottom: unset;
-}
 
-#tabs-form .tabs-select-bag ul li:nth-child(5) {
-    border-bottom: unset;
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
+#tabs-form .tabs-select-bag ul li:nth-last-child(2),
+#tabs-form .tabs-select-bag ul li:nth-last-child(3),
+#tabs-form .tabs-select-bag ul li:nth-last-child(4),
+#tabs-form .tabs-select-bag ul li:nth-last-child(5) {
     border-bottom: 1px solid #ddd;
 }
 
-#tabs-form .tabs-select-bag ul li:nth-child(n + 6) {
-    border-right: unset;
+#tabs-form .tabs-select-bag ul li:last-child {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    width: calc(20% + 1px);
 }
 
-#tabs-form .tabs-select-bag ul li:last-child,
-#tabs-form .tabs-select-bag ul li:nth-child(10) {
+#tabs-form .tabs-select-bag ul li:nth-child(5n) {
     border-right: 1px solid #ddd;
+    width: 20%;
 }
 
 #tabs-form .tabs-select-bag ul li:hover,

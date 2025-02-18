@@ -1468,7 +1468,9 @@
         column-gap: 20px;
         row-gap: 10px;
     }
-
+    .rgst__day #recruitDay.radio-group{
+        gap: 10px;
+    }
     .rgst__label2 {
         font-size: 13px;
     }

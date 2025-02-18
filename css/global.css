@@ -225,6 +225,7 @@
     padding-bottom: 10px;
     box-shadow: 2px 3px 10px 0px rgba(6, 0, 1, 0.1);
     position: relative;
+    z-index: 3;
 }
 
 #navbar::before {
@@ -362,7 +363,7 @@ ul li:hover .submenu,
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     padding: 20px 0;
     width: 100%;
-    bottom: -34px;
+    bottom: -24px;
     transform: translateY(105%);
     opacity: 0;
     visibility: hidden;
@@ -1271,17 +1272,21 @@ ul li:hover .submenu,
 .item-checkBox label span {
     cursor: pointer;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 31px;
-    color: #666666;
+    color: #333333;
     padding-left: 25px;
+    width: max-content;
+    display: inline-block;
 }
-.rgst__grid .item-checkBox{
+
+.rgst__grid .item-checkBox {
     width: max-content;
     height: 15px;
     margin-left: 0px;
 }
-.rgst__grid .item-checkBox>span{
+
+.rgst__grid .item-checkBox>span {
     width: 15px;
     height: 15px;
 }
@@ -2239,6 +2244,7 @@ ul li:hover .submenu,
     padding: 16px;
     min-width: 205px;
     font-weight: 600;
+    text-align: center;
 }
 
 /* saved-conditions */
