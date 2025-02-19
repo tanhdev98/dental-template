@@ -78,6 +78,7 @@
                         <li><a href="#"><i class="icon icon-nav-star"></i>스크랩</a></li>
                         <li><a href="#"><i class="icon icon-nav-letter"></i>쪽지</a></li>
                         <li><a href="#"><i class="icon icon-nav-setting"></i>내 정보 수정</a></li>
+                        <li><a href="#"><i class="icon icon-nav-logout"></i>회원탈퇴</a></li>
                     </ul>
                 </div>
                 <!-- End Side Nav -->
@@ -163,7 +164,8 @@
                                                 결과대기중
                                             </td>
                                             <td>
-                                                <button type="button" class="rsm-stt__delete rsm-stt__delete--pink">지원취소</button>
+                                                <button type="button"
+                                                    class="rsm-stt__delete rsm-stt__delete--pink">지원취소</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -343,14 +345,14 @@
     </div>
 
     <script>
-        $(function() {
+        $(function () {
             $('html, body').css('overflow', 'hidden');
-            $('#jbsrActvBtn').click(function() {
+            $('#jbsrActvBtn').click(function () {
                 $('#rsmPrintView').addClass('active');
                 $('html, body').css('overflow', 'hidden');
             });
 
-            $('#rsmPrintViewClose').click(function() {
+            $('#rsmPrintViewClose').click(function () {
                 $('#rsmPrintView').removeClass('active');
                 $('html, body').css('overflow', 'visible');
             });
