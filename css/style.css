@@ -15348,6 +15348,7 @@ h1.title {
 .dntInf__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #ccc;
 }
 
 .dntInf__grid.bg-white {
@@ -15565,11 +15566,15 @@ h1.title {
     flex-direction: column;
     gap: 7px;
 }
-
+.rcp__item{
+    font-size: 14px; 
+    line-height: 1.2;
+}
 .rcp__item>span {
     display: flex;
     gap: 5px;
     font-size: 14px;
+    line-height: 1.2;
 }
 
 .rcp__item.red>span {
@@ -17634,7 +17639,7 @@ h1.title {
 
 .lck__set {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 230px 1fr;
     align-items: center;
     justify-items: start;
     padding: 18px;
@@ -17660,7 +17665,7 @@ h1.title {
 
 .lck__set2 {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 255px 1fr;
     align-items: center;
     justify-items: start;
     border-bottom: 1px solid #ddd;
