@@ -28,6 +28,7 @@
             justify-content: center;
             align-items: center;
             padding: 100px 0;
+            min-height: 100vh;
         }
 
         .container {
@@ -37,25 +38,35 @@
         }
 
         .wrap-box-mail {
-            width: 100%;
+            width: 800px;
+            height: 400px;
             margin: 0 auto;
-            border-radius: 15px;
+            border-radius: 5px;
             background-color: #fff;
-            padding: 60px 90px;
-            box-shadow: 0 1px 72px 0 rgba(0, 0, 0, 0.1);
+            padding: 80px 45px 30px;
+            box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .logo {
-            margin-bottom: 40px;
+            margin-bottom: 0px;
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .logo img {
-            max-width: 100px;
+            max-width: 90px;
         }
 
         .title {
             color: #333;
-            font-size: 28px;
+            font-size: 17px;
             font-weight: 700;
         }
 
@@ -69,20 +80,27 @@
 
         .content {
             padding: 30px;
-            border-radius: 10px;
-            background-color: #f2f2f2;
-            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #f2f2f278;
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 13px;
         }
 
         .btn {
             position: relative;
             width: fit-content;
-            padding: 10px 30px;
-            margin: 30px auto 0;
+            padding: 10px 20px;
+            margin: 20px auto 0;
             background-color: #509ec4;
             color: #fff;
             text-decoration: none;
             display: block;
+            font-size: 14px;
+            border-radius: 5px;
         }
 
         .btn:hover {
@@ -98,12 +116,12 @@
                 <div class="logo text-center"><img src="./images/mail.png" alt="Icon Email"></div>
                 <div class="title text-center">환영합니다! <span class="highlight">이메일 주소</span>를 인증해 주세요.</div>
                 <div class="content">
-                    <p><strong>이름:</strong> </p>
-                    <p><strong>근무처(소속):</strong> </p>
-                    <p><strong>이메일:</strong> </p>
-                    <p><strong>연락처:</strong> </p>
-                    <p><strong>제목:</strong> </p>
-                    <p><strong>내용:</strong> </p>
+                    <p>이름: </p>
+                    <p>근무처(소속): </p>
+                    <p>이메일: </p>
+                    <p>연락처: </p>
+                    <p>제목: </p>
+                    <p>내용: </p>
                 </div>
                 <a href="#" class="btn">이메일 다시 보내기</a>
             </div>
