@@ -377,7 +377,6 @@ ul li:hover .submenu,
     visibility: visible;
 }
 
-
 .mega-menu .row {
     margin: 0;
 }
@@ -1775,9 +1774,6 @@ ul li:hover .submenu,
     background-color: #c12b2f;
 }
 
-
-
-
 /* popup */
 .popup {
     display: none;
@@ -2340,7 +2336,7 @@ ul li:hover .submenu,
     right: 0;
     transform: translateY(100%);
     width: 220px;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
     opacity: 0;
     visibility: hidden;
     z-index: 2;

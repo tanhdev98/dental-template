@@ -669,11 +669,11 @@ h1.title {
     padding-left: 20px;
 }
 
-#request-email .item-checkBox strong {
+#request-email strong {
     font-size: 15px;
     font-weight: 400;
     color: #ff0000;
-    margin-left: 5px;
+    margin: 80px 0 14px 5px;
 }
 
 #request-email .table>li {
