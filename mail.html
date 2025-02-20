@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            font-family: "Pretendard";
+            vertical-align: baseline;
+            color: #333;
+            font-size: 100%;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        body {
+            /* background-color: #eee; */
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .wrap-box-mail {
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 60px 90px;
+            box-shadow: 0 1px 72px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        .title {
+            color: #333;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .title .highlight {
+            color: #509ec4;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .content {
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            margin-top: 20px;
+        }
+
+        .btn {
+            position: relative;
+            width: fit-content;
+            padding: 10px 30px;
+            margin: 30px auto 0;
+            background-color: #509ec4;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="wrap-box-mail">
+                <div class="logo text-center"><img src="./images/mail.png" alt="Icon Email"></div>
+                <div class="title text-center">환영합니다! <span class="highlight">이메일 주소</span>를 인증해 주세요.</div>
+                <div class="content">
+                    <p><strong>이름:</strong> </p>
+                    <p><strong>근무처(소속):</strong> </p>
+                    <p><strong>이메일:</strong> </p>
+                    <p><strong>연락처:</strong> </p>
+                    <p><strong>제목:</strong> </p>
+                    <p><strong>내용:</strong> </p>
+                </div>
+                <a href="#" class="btn">이메일 다시 보내기</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
