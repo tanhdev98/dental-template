@@ -15566,11 +15566,15 @@ h1.title {
     flex-direction: column;
     gap: 7px;
 }
-
+.rcp__item{
+    font-size: 14px; 
+    line-height: 1.2;
+}
 .rcp__item>span {
     display: flex;
     gap: 5px;
     font-size: 14px;
+    line-height: 1.2;
 }
 
 .rcp__item.red>span {
