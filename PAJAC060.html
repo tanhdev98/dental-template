@@ -526,9 +526,9 @@
                                     <div class="cndd__select">
                                         <div class="form-select-container">
                                             <select>
-                                                <option class="option-placeholder">결과 대기</option>
-                                                <option value="">결과 대기</option>
-                                                <option value="">결과 대기</option>
+                                                <option class="option-placeholder">면접불참</option>
+                                                <option value="">연락두절</option>
+                                                <option value="">결직접입력</option>
                                             </select>
                                         </div>
                                     </div>
@@ -807,6 +807,22 @@
         <div class="overlay"></div>
     </div>
     <!-- End footer -->
+     <script>
+         $(document).on('click', '.form-option-container .form-option', function () {
+            var $input = $(this).closest('.cndd__end').find('.cndd__input');
+            console.log($(this).text() );
+            
+            if ($(this).text() === '결직접입력') {
+                $input.show();
+            } else {
+                $input.hide();
+            }
+        });
+
+        $(document).ready(function () {
+            $('.cndd__input').hide();
+        });
+     </script>
 </body>
 
 </html>
