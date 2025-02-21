@@ -669,11 +669,11 @@ h1.title {
     padding-left: 20px;
 }
 
-#request-email .item-checkBox strong {
+#request-email strong {
     font-size: 15px;
     font-weight: 400;
     color: #ff0000;
-    margin-left: 5px;
+    margin: 80px 0 14px 5px;
 }
 
 #request-email .table>li {
@@ -15566,10 +15566,12 @@ h1.title {
     flex-direction: column;
     gap: 7px;
 }
-.rcp__item{
-    font-size: 14px; 
+
+.rcp__item {
+    font-size: 14px;
     line-height: 1.2;
 }
+
 .rcp__item>span {
     display: flex;
     gap: 5px;
@@ -18431,4 +18433,51 @@ table.table_training_courses {
 
 .popupMap__close:hover {
     background-color: #d9363e;
+}
+
+.ticket-pop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+}
+
+.ticket-pop__block {
+    max-width: 656px;
+    margin: auto;
+    background: #f0f6fb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 35px;
+    overflow: hidden;
+}
+
+.ticket-pop__block .ticket__table {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.ticket-pop__block .ticket__table .ticket__grid--head>span {
+    font-weight: 600;
+}
+
+.ticket-pop__block .ticket__table img {
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.ticket-pop__block>img {
+    padding: 0 30px;
+}
+
+.ticket-pop__block .byn__btn {
+    max-width: 130px;
 }

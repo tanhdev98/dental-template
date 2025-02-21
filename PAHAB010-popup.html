@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/side-ads.js"></script>
+    <script src="js/close-top-banner.js"></script>
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+    <!-- Top Ads -->
+    <div id="topAds">
+        <div class="topAds-wrap">
+            <a href="#">
+                <img class="topApds-img" src="./images/top-banner-img.png" alt="top ads imgage">
+            </a>
+            <div class="close-topAds-wrap">
+                <input type="checkbox" id="disappear" name="disappear">
+                <label for="disappear">오늘하루 이 창을 열지 않음</label>
+                <button class="close-ads"></button>
+            </div>
+        </div>
+    </div>
+    <!-- End top ads -->
+    <!-- Side ads -->
+    <div id="sideAds">
+        <div class="side-ads-wrap">
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-1.png" alt="side ads">
+                </a>
+            </div>
+            <div class="side-ads-item">
+                <a href="#">
+                    <img src="./images/side-ads-2.png" alt="side ads">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End side ads -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="#">
+                        <img class="logo" src="./images/logo.png" alt="Logo">
+                    </a>
+                    <div class="search-wrap">
+                        <input type="text" placeholder="#대한민국 치과계 No.1 덴탈잡">
+                        <a href="#">
+                            <i class="icon icon-find"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <img src="./images/intro-logo.png" alt="intro-logo">
+                </div>
+                <div class="nav-wrap">
+                    <a href="#">
+                        <i class="icon icon-bell"></i>
+                    </a>
+                    <a href="">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar-wrap">
+                <div class="menu">
+                    <a href="#" class="icon-popup-mega-menu">
+                        <i class="icon icon-hamburger-bar"></i>
+                    </a>
+                    <div class="total-menu"></div>
+                    <ul>
+                        <li>
+                            <a href="#">채용정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인재정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">업무별</a></li>
+                                <li><a href="#">지역별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">덴탈플러스</a>
+                            <ul class="submenu">
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">덴탈잡 매거진</a></li>
+                                <li><a href="#">덴탈잡 모바일앱</a></li>
+                                <li><a href="#">문서서식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">채용광고 상품안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">이메일 문의</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">공지/소식</a></li>
+                                <li><a href="#">사이트 소개</a></li>
+                                <li><a href="#">약관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth">
+                    <a href="./PACAA010.html">로그인</a>
+                    <a href="./PACAA010.html">회원가입</a>
+                </div>
+                <div class="mega-menu">
+                    <div class="container">
+                        <div class="row row-question">
+                            <div class="col-xl-2">
+                                <span>채용 공고를 찾는다면?!</span>
+                            </div>
+                            <div class="col-xl-2">
+                                <span>인재정보를 찾는다면?!</span>
+                            </div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-2">
+                                <span>덴탈잡 이용 안내</span>
+                            </div>
+                        </div>
+                        <div class="row row-menu">
+                            <div class="col-xl-2">
+                                <h5>채용정보</h5>
+                                <ul>
+                                    <li><a href="#">업무별</a></li>
+                                    <li><a href="#">지역별</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>인재정보</h5>
+                                <ul>
+                                    <li><a href="#">업무별</a></li>
+                                    <li><a href="#">지역별</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>덴탈플러스</h5>
+                                <ul>
+                                    <li><a href="#">자원봉사</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">덴탈잡 매거진</a></li>
+                                    <li><a href="#">덴탈잡 모바일앱</a></li>
+                                    <li><a href="#">문서서식</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>고객센터</h5>
+                                <ul>
+                                    <li><a href="#">채용광고</a></li>
+                                    <li><a href="#">상품안내</a></li>
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">이메일 문의</a></li>
+                                    <li><a href="#">자주 묻는 질문</a></li>
+                                    <li><a href="#">공지/소식</a></li>
+                                    <li><a href="#">사이트 소개</a></li>
+                                    <li><a href="#">약관</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2">
+                                <h5>마이 페이지</h5>
+                                <ul>
+                                    <li><a href="#">마이 페이지</a></li>
+                                    <li><a href="#">이력서 등록</a></li>
+                                    <li><a href="#">이력서 관리</a></li>
+                                    <li><a href="#">지원현황</a></li>
+                                    <li><a href="#">스마트 매칭</a></li>
+                                    <li><a href="#">스크랩</a></li>
+                                    <li><a href="#">쪽지</a></li>
+                                    <li><a href="#">DIV 포인트 조회</a></li>
+                                    <li><a href="#">내 정보 수정</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2 last-column-mega-menu">
+                                <h5></h5>
+                                <ul>
+                                    <li>
+                                        <i class="top-menu">
+                                            개인 회원이라면?
+                                        </i>
+                                        <h6><a href="#">이력서 등록 <span></span></a></h6>
+                                        <span>기본 이력서 등록으로 편한 채용서비스를 이용할 수 있어요.</span>
+                                    </li>
+                                    <li>
+                                        <i class="top-text">
+                                            치과 회원이라면?
+                                        </i>
+                                        <h6><a href="#">채용공고 관리 <span></span></a></h6>
+                                        <span>
+                                            우리 치과 채용공고를 한눈에 관리할 수 있어요
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">스마트 매칭 <span></span></a></h6>
+                                        <span>
+                                            내게 맞는 공고를 확인할 수 있어요
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">이용안내 <span></span></a></h6>
+                                        <span>
+                                            회원가입부터 각 메뉴에 대한 간단한 설명을 들을 수 있어요.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <h6><a href="#">사이트 소개 <span></span></a></h6>
+                                        <span>
+                                            덴탈잡 사이트 서비스에 대한 간략한 설명을 들을 수 있어요
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End navbar -->
+    <!-- Content -->
+    <div id="content">
+        <!-- ... -->
+        <div id="tab-follow">
+            <div class="container">
+                <ul class="tabs-no-border center">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#" class="active">채용광고 상품안내</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이메일 문의</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">공지/소식</a></li>
+                    <li><a href="#">사이트 소개</a></li>
+                    <li><a href="#">약관</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="recruitment-adv">
+            <div class="container">
+                <div class="top-form">
+                    <h2>채용광고 상품안내</h2>
+                </div>
+                <ul class="tabs short-tab blue">
+                    <li>
+                        <a class="ver2 left active">덴탈잡 홈(메인) 메뉴</a>
+                    </li>
+                    <li>
+                        <a class="ver2 right">채용정보 메뉴</a>
+                    </li>
+                </ul>
+                <div class="tab-items">
+                    <div class="tab-item active">
+                        <div class="ticket">
+                            <ul class="tab-list-desc">
+                                <li>＊모든 상품은 1회 비용이며, 서비스 기간 중간에 채용마감을 하시면 남은 기간은 소멸됩니다.</li>
+                                <li>＊상품 신청일과 결제일이 동일한 일자일 경우 신청일자부터 공고 1일 째가 됩니다.</li>
+                                <li>＊옵션 및 강조 상품은 해당 공고 기간 내에서만 서비스가 가능하며, 공고 종료일을 초과할 수 없습니다.</li>
+                                <li>＊온라인 상품의 특성상 한번 게재되면 상품을 사용하신 것으로 간주되어 환불이 어려우니, 신중하게 신청해주시면 감사하겠습니다.</li>
+                            </ul>
+                            <div class="ticket__btbx">
+                                <button type="button" class="ticket__btn ticket__btn--red">
+                                    DVmall<span>[덴탈잡 이용권]</span>
+                                </button>
+                                <button type="button" class="ticket__btn">가격표 보기</button>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <ul class="ticket__list">
+                                <li class="ticket__item">
+                                    <img class="ticket__img" src="./images/PAHAB010/image-sample1.png" alt="">
+                                    <div class="ticket__block">
+                                        <div class="ticket__head">
+                                            <div class="ticket__lf">
+                                                <h3 class="ticket__tit">
+                                                    <span>1</span>
+                                                    비즈니스 배너
+                                                </h3>
+                                                <div class="ticket__desc">
+                                                    <span>노출위치: 메인페이지 상단 3개 배너(그랜드 배너 세로2칸 영역)</span>
+                                                    <span>추가 서비스: 채용정보 상품 서비스</span>
+                                                    <span>이용대상: 치과병(의)원</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket__rt">이용기간: 7일</div>
+                                        </div>
+                                        <div class="ticket__table">
+                                            <div class="ticket__grid ticket__grid--head">
+                                                <span>광고 상품 / 덴탈잡 이용권</span>
+                                                <span>덴탈잡</span>
+                                                <span>DVmall</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">비지니스 배너</span>
+                                                <span><b>800,000</b>원</span>
+                                                <span><b>800,000</b>원</span>
+                                            </div>
+                                        </div>
+                                        <p class="ticket__ps">※ 메인페이지 최상단 3개에 위치됩니다.</p>
+                                    </div>
+                                </li>
+
+                                <li class="ticket__item">
+                                    <img class="ticket__img" src="./images/PAHAB010/image-sample2.png" alt="">
+                                    <div class="ticket__block">
+                                        <div class="ticket__head">
+                                            <div class="ticket__lf">
+                                                <h3 class="ticket__tit ticket__tit--sky">
+                                                    <span>2</span>
+                                                    그랜드 배너
+                                                </h3>
+                                                <div class="ticket__desc">
+                                                    <span>노출위치: 메인페이지 상단, 채용정보 모든 서브 페이지</span>
+                                                    <span>추가 서비스: 채용정보 상품 서비스</span>
+                                                    <span>이용대상: 치과병(의)원</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket__rt">이용기간: 7일</div>
+                                        </div>
+                                        <div class="ticket__table">
+                                            <div class="ticket__grid ticket__grid--head">
+                                                <span>광고 상품 / 덴탈잡 이용권</span>
+                                                <span>덴탈잡</span>
+                                                <span>DVmall</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">그랜드 배너</span>
+                                                <span><b>400,000</b>원</span>
+                                                <span><b>350,000</b>원</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">그랜드 배너 - 고정옵션</span>
+                                                <span><b>60,000</b>원</span>
+                                                <span><b>50,000</b>원</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">
+                                                    <span>
+                                                        그랜드 배너 + 채용광고 디자인 서비스
+                                                    </span>
+                                                </span>
+                                                <span>-</span>
+                                                <span><b>400,000</b>원</span>
+                                            </div>
+                                        </div>
+                                        <p class="ticket__ps">※ DVmall에서 그랜드배너 구매 시, 채용광고 디자인 서비스를 함께 구매하실 수 있습니다.</p>
+                                        <div class="ticket__add">
+                                            <div class="ticket__add-txt">
+                                                [추가상품]<br>
+                                                ※ 그랜드 배너-고정옵션
+                                            </div>
+                                            <div class="ticket__desc">
+                                                <span>노출위치: 모든 그랜드 배너 영역의 상단 부분에 고정으로 노출</span>
+                                                <span>기간: 그랜드 배너 게재 일자와 동일한 기간에 사용가능</span>
+                                                <span>이용조건: 그랜드 배너 상품을 선택하신 후에 추가로 이용할 수 있는 상품입니다.</span>
+                                                <span class="sky">좌측 이미지는 예시 이미지로 실제 고정옵션의 갯수는 제한이 없으며, 신청하신 순서에 따라 신청
+                                                    건수 모두 게재됩니다.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="ticket__item">
+                                    <img class="ticket__img mt358" src="./images/PAHAB010/image-sample3.png" alt="">
+                                    <div class="ticket__block">
+                                        <div class="ticket__head">
+                                            <div class="ticket__lf">
+                                                <h3 class="ticket__tit ticket__tit--green">
+                                                    <span>3</span>
+                                                    프리미엄 배너
+                                                </h3>
+                                                <div class="ticket__desc">
+                                                    <span>노출위치: 메인페이지 그랜드 배너 아래 위치</span>
+                                                    <span>추가 서비스: 채용정보 상품 서비스</span>
+                                                    <span>이용대상: 치과병(의)원</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket__rt">이용기간: 7일</div>
+                                        </div>
+                                        <div class="ticket__table">
+                                            <div class="ticket__grid ticket__grid--head">
+                                                <span>광고 상품 / 덴탈잡 이용권</span>
+                                                <span>덴탈잡</span>
+                                                <span>DVmall</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">프리미엄 배너</span>
+                                                <span><b>210,000</b>원</span>
+                                                <span><b>180,000</b>원</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">프리미엄 배너 - 고정옵션</span>
+                                                <span><b>60,000</b>원</span>
+                                                <span><b>50,000</b>원</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">
+                                                    <span>
+                                                        프리미엄 배너 + 채용광고 디자인 서비스
+                                                    </span>
+                                                </span>
+                                                <span>-</span>
+                                                <span><b>210,000</b>원</span>
+                                            </div>
+                                        </div>
+                                        <p class="ticket__ps">※ DVmall에서 프리미엄배너 2개 구매 시, 채용광고 디자인 서비스를 무료로 제공받으실 수 있습니다.
+                                        </p>
+                                        <div class="ticket__add">
+                                            <div class="ticket__add-txt">
+                                                [추가상품]<br>
+                                                ※ 프리미엄 배너-고정옵션
+                                            </div>
+                                            <div class="ticket__desc">
+                                                <span>노출위치: 모든 프리미엄 배너 영역의 상단 부분에 고정으로 노출</span>
+                                                <span>기간: 프리미엄 배너 게재 일자와 동일한 기간에 사용가능</span>
+                                                <span>이용조건: 프리미엄 배너 상품을 선택하신 후에 추가로 이용할 수 있는 상품입니다.</span>
+                                                <span class="sky">좌측 이미지는 예시 이미지로 실제 고정옵션의 갯수는 제한이 없으며, 신청하신 순서에 따라 신청
+                                                    건수 모두 게재됩니다.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="ticket__item">
+                                    <img class="ticket__img" src="./images/PAHAB010/image-sample4.png" alt="">
+                                    <div class="ticket__block">
+                                        <div class="ticket__head">
+                                            <div class="ticket__lf">
+                                                <h3 class="ticket__tit ticket__tit--cyan">
+                                                    <span>4</span>
+                                                    기업 배너
+                                                </h3>
+                                                <div class="ticket__desc">
+                                                    <span>노출위치: 메인페이지 프리미엄 배너 아래 위치</span>
+                                                    <span>이용대상: 치과병(의)원</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket__rt">이용기간: 7일</div>
+                                        </div>
+                                        <div class="ticket__table">
+                                            <div class="ticket__grid ticket__grid--head">
+                                                <span>광고 상품 / 덴탈잡 이용권</span>
+                                                <span>덴탈잡</span>
+                                                <span>DVmall</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">기업 배너</span>
+                                                <span><b>440,000</b>원</span>
+                                                <span>-</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="ticket__item">
+                                    <img class="ticket__img" src="./images/PAHAB010/image-sample5.png" alt="">
+                                    <div class="ticket__block">
+                                        <div class="ticket__head">
+                                            <div class="ticket__lf">
+                                                <h3 class="ticket__tit ticket__tit--red">
+                                                    <span>5</span>
+                                                    핫리쿠르트 배너
+                                                </h3>
+                                                <div class="ticket__desc">
+                                                    <span>노출위치: 메인페이지 기업 배너 아래 위치</span>
+                                                    <span>추가 서비스: 채용정보 상품 서비스</span>
+                                                    <span>이용대상: 치과병(의)원</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket__rt">이용기간: 7일</div>
+                                        </div>
+                                        <div class="ticket__table">
+                                            <div class="ticket__grid ticket__grid--head">
+                                                <span>광고 상품 / 덴탈잡 이용권</span>
+                                                <span>덴탈잡</span>
+                                                <span>DVmall</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">핫리쿠르트 배너</span>
+                                                <span><b>135,000</b>원</span>
+                                                <span><b>120,000</b>원</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">핫리쿠르트 배너 - 고정옵션</span>
+                                                <span><b>60,000</b>원</span>
+                                                <span><b>50,000</b>원</span>
+                                            </div>
+                                        </div>
+                                        <div class="ticket__add">
+                                            <div class="ticket__add-txt">
+                                                [추가상품]<br>
+                                                ※ 핫리쿠르트 배너-고정옵션
+                                            </div>
+                                            <div class="ticket__desc">
+                                                <span>노출위치: 모든 핫리쿠르트 배너 영역의 상단 부분에 고정으로 노출</span>
+                                                <span>기간: 핫리쿠르트 배너 게재 일자와 동일한 기간에 사용가능</span>
+                                                <span>이용조건: 핫리쿠르트 배너 상품을 선택하신 후에 추가로 이용할 수 있는 상품입니다.</span>
+                                                <span class="sky">좌측 이미지는 예시 이미지로 실제 고정옵션의 갯수는 제한이 없으며, 신청하신 순서에 따라 신청
+                                                    건수 모두 게재됩니다.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-item">
+                        <div class="ticket end">
+                            <div class="ticket__btbx">
+                                <button type="button" class="ticket__btn ticket__btn--red">
+                                    DVmall<span>[덴탈잡 이용권]</span>
+                                </button>
+                                <button type="button" class="ticket__btn">가격표 보기</button>
+                            </div>
+                        </div>
+                        <ul class="ticket__list ticket__list--pt35">
+                            <li class="ticket__item">
+                                <div class="ticket__empty"></div>
+                                <div class="ticket__block">
+                                    <div class="ticket__head">
+                                        <div class="ticket__lf">
+                                            <h3 class="ticket__tit2">
+                                                채용소식
+                                                <span>(60,000원/14일)</span>
+                                            </h3>
+                                            <div class="ticket__desc ticket__desc--pd0">
+                                                <span>노출위치: 채용정보 메뉴 모든 서브 페이지</span>
+                                                <span>이용대상: 치과병(의)원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="ticket__ps2">
+                                        <span>채용소식은 1회 비용이며, 서비스 기간 중간에 채용마감을 하시면, 남은 기간은 소멸됩니다.</span>
+                                        <span>채용소식 신청일과 결제일이 동일한 일자일 경우 신청일자 부터 채용소식 1일째가 됩니다.</span>
+                                    </p>
+                                    <div class="ticket__add">
+                                        <div class="ticket__add-txt pl0">[추가상품]</div>
+                                        <p class="ticket__ps3">위의 기본상품 (배너 또는 채용소식)을 선택하신 후에 추가로 이용할 수 있는 상품입니다. </p>
+                                        <p class="ticket__ps2 ticket__ps2--mt8">
+                                            <span>채용소식은 1회 비용이며, 서비스 기간 중간에 채용마감을 하시면, 남은 기간은 소멸됩니다.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ticket__item">
+                                <img class="ticket__img" src="./images/PAHAB010/image-sample7.png" alt="">
+                                <div class="ticket__block">
+                                    <div class="ticket__div">
+                                        <h3 class="ticket__tit3">채용소식-고정옵션</h3>
+                                        <div class="ticket__smpl yellow">
+                                            <div class="ticket__smpl-lf">덴탈잡 치과</div>
+                                            <div class="ticket__smpl-rt">
+                                                <div class="ticket__smpl-tit">9호선가양역 ★3~6년차 진료실 선생님★ 모십니다.</div>
+                                                <ul class="ticket__smpl-list">
+                                                    <li>진료실</li>
+                                                </ul>
+                                                <div class="ticket__smpl-lc">
+                                                    <div>서울시 > 강서구</div>
+                                                    <span class="ticket__smpl-trn">9호선</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket__add">
+                                            <div class="ticket__desc ticket__desc--pd0">
+                                                <span>효과 : 채용정보 메뉴 리스트 첫페이지에 고정 노출, 각 항목 검색결과 리스트 첫페이지에 고정 노출</span>
+                                                <span>노출위치 : 채용정보 메뉴 첫페이지, 각 항목 검색결과 리스트 첫페이지에 고정 노출</span>
+                                            </div>
+                                        </div>
+                                        <div class="ticket__table">
+                                            <div class="ticket__grid ticket__grid--head">
+                                                <span>광고 상품 / 덴탈잡 이용권</span>
+                                                <span>덴탈잡</span>
+                                                <span>DVmall</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">고정옵션 1주</span>
+                                                <span><b>60,000</b>원</span>
+                                                <span><b>50,000</b>원</span>
+                                            </div>
+                                            <div class="ticket__grid">
+                                                <span class="left">고정옵션 2주</span>
+                                                <span><b>100,000</b>원</span>
+                                                <span><b>100,000</b>원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ticket__item">
+                                <img class="ticket__img" src="./images/PAHAB010/image-sample8.png" alt="">
+                                <div class="ticket__div">
+                                    <h3 class="ticket__tit3">하이라이트 강조</h3>
+                                    <div class="ticket__smpl">
+                                        <div class="ticket__smpl-lf bold">덴탈잡 치과</div>
+                                        <div class="ticket__smpl-rt">
+                                            <div class="ticket__smpl-tit bold">진료실선생님 모십니다~(매달 인세니브,주36시간)</div>
+                                            <ul class="ticket__smpl-list">
+                                                <li>진료실</li>
+                                                <li>데스크</li>
+                                                <li>상담</li>
+                                                <li>보험청구</li>
+                                            </ul>
+                                            <div class="ticket__smpl-lc">
+                                                <div>서울시 > 구로구</div>
+                                                <span class="ticket__smpl-trn trn1">1호선</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__add">
+                                        <div class="ticket__desc ticket__desc--pd0">
+                                            <span>효과 : 사업장명 + 광고 제목을 굵은 글씨체로 표시하며, 형광펜 효과로 강조 표시</span>
+                                            <span>노출위치 : 채용정보 메뉴 페이지</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__table">
+                                        <div class="ticket__grid ticket__grid--head">
+                                            <span>광고 상품 / 덴탈잡 이용권</span>
+                                            <span>덴탈잡</span>
+                                            <span>DVmall</span>
+                                        </div>
+                                        <div class="ticket__grid">
+                                            <span class="left">하이라이트 강조 1주</span>
+                                            <span><b>12,000</b>원</span>
+                                            <span><b>11,000</b>원</span>
+                                        </div>
+                                        <div class="ticket__grid">
+                                            <span class="left">하이라이트 강조 2주</span>
+                                            <span><b>18,000</b>원</span>
+                                            <span><b>17,000</b>원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ticket__item">
+                                <img class="ticket__img" src="./images/PAHAB010/image-sample9.png" alt="">
+                                <div class="ticket__div">
+                                    <h3 class="ticket__tit3">컬러 강조</h3>
+                                    <div class="ticket__smpl">
+                                        <div class="ticket__smpl-lf purple">덴탈잡 치과</div>
+                                        <div class="ticket__smpl-rt">
+                                            <div class="ticket__smpl-tit purple">▶▶ (주37시간이하) 최고 대우로 진료실 선생님을 모십니다.◀◀
+                                            </div>
+                                            <ul class="ticket__smpl-list">
+                                                <li>진료실</li>
+                                                <li>데스크</li>
+                                                <li>상담</li>
+                                                <li>보험청구</li>
+                                                <li>기타</li>
+                                            </ul>
+                                            <div class="ticket__smpl-lc">
+                                                <div>서울시 > 중랑구</div>
+                                                <span class="ticket__smpl-trn trn7">7호선</span>
+                                                <span class="ticket__smpl-trn trn11">경의중앙</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__add">
+                                        <div class="ticket__desc ticket__desc--pd0">
+                                            <span>효과 : 사업장명 + 광고 제목을 굵은 글씨체로 표시하며, 형광펜 효과로 강조 표시</span>
+                                            <span>노출위치 : 채용정보 메뉴 페이지</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__table">
+                                        <div class="ticket__grid ticket__grid--head">
+                                            <span>광고 상품 / 덴탈잡 이용권</span>
+                                            <span>덴탈잡</span>
+                                            <span>DVmall</span>
+                                        </div>
+                                        <div class="ticket__grid">
+                                            <span class="left">컬러 강조 1주</span>
+                                            <span><b>10,000</b>원</span>
+                                            <span><b>9,000</b>원</span>
+                                        </div>
+                                        <div class="ticket__grid">
+                                            <span class="left">컬러 강조 2주</span>
+                                            <span><b>15,000</b>원</span>
+                                            <span><b>14,000</b>원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ticket__item">
+                                <img class="ticket__img" src="./images/PAHAB010/image-sample10.png" alt="">
+                                <div class="ticket__div">
+                                    <h3 class="ticket__tit3">아이콘(HOT or 주목)강조</h3>
+                                    <div class="ticket__smpl">
+                                        <div class="ticket__smpl-lf">덴탈잡 치과</div>
+                                        <div class="ticket__smpl-rt">
+                                            <div class="ticket__smpl-tit">
+                                                <img src="./images/icons/icon-hot.png" alt="">
+                                                [서울중구/1인기숙사] 경력 치위생사 선생님을 모십니다.
+                                            </div>
+                                            <ul class="ticket__smpl-list">
+                                                <li>진료실</li>
+                                            </ul>
+                                            <div class="ticket__smpl-lc">
+                                                <div>서울시 > 영등포구</div>
+                                                <span class="ticket__smpl-trn trn1">1호선</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__smpl">
+                                        <div class="ticket__smpl-lf">덴탈잡 치과</div>
+                                        <div class="ticket__smpl-rt">
+                                            <div class="ticket__smpl-tit">
+                                                <img src="./images/icons/icon-note.png" alt="">
+                                                [서울중구/최고대우] 총괄 실장님을 모십니다.
+                                            </div>
+                                            <ul class="ticket__smpl-list">
+                                                <li>진료실</li>
+                                            </ul>
+                                            <div class="ticket__smpl-lc">
+                                                <div>서울시 > 강남구</div>
+                                                <span class="ticket__smpl-trn trn2">2호선</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__add">
+                                        <div class="ticket__desc ticket__desc--pd0">
+                                            <span>효과 : 채용광고 제목 앞에 붉은색 [HOT] 아이콘이나 초록색 [주목] 아이콘을 추가하여 강조 표시</span>
+                                            <span>노출위치 : 채용정보 메뉴 페이지</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__table">
+                                        <div class="ticket__grid ticket__grid--head">
+                                            <span>광고 상품 / 덴탈잡 이용권</span>
+                                            <span>덴탈잡</span>
+                                            <span>DVmall</span>
+                                        </div>
+                                        <div class="ticket__grid">
+                                            <span class="left">아이콘 강조 1주</span>
+                                            <span><b>8,000</b>원</span>
+                                            <span><b>7,000</b>원</span>
+                                        </div>
+                                        <div class="ticket__grid">
+                                            <span class="left">아이콘 강조 2주</span>
+                                            <span><b>12,000</b>원</span>
+                                            <span><b>11,000</b>원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket-pop">
+            <div class="ticket-pop__block">
+                <div class="ticket__table">
+                    <div class="ticket__grid ticket__grid--head">
+                        <span>광고 상품 / 덴탈잡 이용권</span>
+                        <span><img src="./images/PAHAB010/popticket_dentalJob.png" alt="popticket_dentalJob" /></span>
+                        <span><img src="./images/PAHAB010/popticket_dvmall.png" alt="popticket_dvmall" /></span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">비지니스 배너</span>
+                        <span><b>800,000</b>원</span>
+                        <span><b>800,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">비지니스 배너 - 고정옵션</span>
+                        <span><b>60,000</b>원</span>
+                        <span><b>50,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">그랜드 배너</span>
+                        <span><b>400,000</b>원</span>
+                        <span><b>350,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">그랜드 배너 - 고정옵션</span>
+                        <span><b>60,000</b>원</span>
+                        <span><b>50,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left d-block">그랜드 배너<br>
+                            <small>+채용광고 디자인 서비스</small>
+                        </span>
+                        <span>-</span>
+                        <span><b>400,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">프리미엄 배너</span>
+                        <span><b>210,000</b>원</span>
+                        <span><b>180,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">프리미엄 배너 - 고정옵션</span>
+                        <span><b>60,000</b>원</span>
+                        <span><b>50,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left d-block">프리미엄 배너<br>
+                            <small>+채용광고 디자인 서비스</small>
+                        </span>
+                        <span>-</span>
+                        <span><b>210,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">기업</span>
+                        <span><b>440,000</b>원</span>
+                        <span>-</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">핫리쿠르트 배너</span>
+                        <span><b>135,000</b>원</span>
+                        <span><b>120,000</b>원</span>
+                    </div>
+                    <div class="ticket__grid">
+                        <span class="left">핫리쿠르트 배너 - 고정옵션</span>
+                        <span><b>60,000</b>원</span>
+                        <span><b>50,000</b>원</span>
+                    </div>
+                </div>
+                <img src="./images/PAHAB010/popticket_footer.png" alt="popticket_footer">
+                <button class="byn__btn">가격표 닫기</button>
+            </div>
+        </div>
+
+        <!-- End ... -->
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">사이트 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일주소수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-company">
+                    <li>(주)신흥 04510 서울시 중구 청파로 450 (중림동)</li>
+                    <li>대표 이용익</li>
+                    <li>사업자등록번호 114-81-43063</li>
+                    <li>통신판매업신고 제2012-서울중구-0983호</li>
+                    <li>직업정보제공사업신고 서울형제 2018-11호</li>
+                </ul>
+                <ul class="info-contact">
+                    <li><a href="mailto:admin@dentaljob.co.kr">E-mail : admin@dentaljob.co.kr</a></li>
+                    <li><a href="tel:0808011580">Tel. 080-801-1580</a></li>
+                    <li>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다</li>
+                </ul>
+                <ul class="copyright">
+                    <li>Copyright ⓒ <p>2024</p> (주)신흥 All right reserved</li>
+                </ul>
+            </div>
+            <div class="collab">
+                <img src="./images/logo-collab.png" alt="Logo collab">
+                <div class="form-select-container">
+                    <select>
+                        <option class="option-placeholder">패밀리사이트</option>
+                        <option value="http://www.dentalalba.com/">덴달 알바</option>
+                        <option value="http://www.dentalvitamin.com/">덴탈 비타민</option>
+                        <option value="https://www.DVmall.co.kr/">DVmall</option>
+                        <option value="https://www.dentalseminar.co.kr/">덴탈 세미나</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(document).on('click', '.tabs li a', function () {
+                    const _index = $(this).parent().index() + 1;
+                    $(this).closest('.tabs').find('li a').removeClass('active');
+                    $(this).addClass('active');
+                    $(this).closest('.tabs').next().find('.tab-item').removeClass('active');
+                    $(this).closest('.tabs').next().find('.tab-item:nth-child(' + _index + ')').addClass('active');
+                    console.log(_index);
+                });
+            });
+        </script>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>
