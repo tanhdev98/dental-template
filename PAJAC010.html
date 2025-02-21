@@ -250,8 +250,10 @@
                                     </li>
                                     <li>
                                         <div class="dntInf__dl">
-                                            <div class="dntInf__dt">치위생사 모집</div>
-                                            <div class="dntInf__dd">
+                                            <div class="dntInf__dt">
+                                                <a href="#" onclick="openPopup(event)">치위생사 모집</a>
+                                            </div>
+                                            <div class=" dntInf__dd">
                                                 <!-- <span>채용중</span> -->
                                                 2024.04.25~2024.05.10
                                             </div>
@@ -342,7 +344,9 @@
                                     </li>
                                     <li>
                                         <div class="dntInf__dl">
-                                            <div class="dntInf__dt">치위생사 모집</div>
+                                            <div class="dntInf__dt">
+                                                <a href="./PAJAC050-windows.html" target="_self">치위생사 모집</a>
+                                            </div>
                                             <div class="dntInf__dd">
                                                 <!-- <span>채용중</span> -->
                                                 2024.04.25~2024.05.10
@@ -606,6 +610,16 @@
         <div class="overlay"></div>
     </div>
     <!-- End footer -->
+    <script>
+
+        function openPopup(event) {
+            event.preventDefault();
+            let url = "./PAJAC050-windows.html";
+            let windowFeatures = "width=800,height=800,left=100,top=100,resizable=no,scrollbars=yes";
+
+            let popup = window.open(url, "popupWindow", windowFeatures);
+        }
+    </script>
 </body>
 
 </html>
