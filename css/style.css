@@ -3463,6 +3463,7 @@ h1.title {
     line-height: 18px;
     font-weight: 400;
     -webkit-line-clamp: 1;
+    cursor: default;
 }
 
 #hot-recruit .list-grid .list-item .item-content .bookmark {
