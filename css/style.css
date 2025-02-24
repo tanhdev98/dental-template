@@ -2057,7 +2057,7 @@ h1.title {
 #summary-job .job-content .job-div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 #summary-job .job-content .job-div .job-imgbox>button {
@@ -3079,6 +3079,10 @@ h1.title {
     height: 100%;
 }
 
+.list-grid .list-item .item-content .bookmark .icon-star.none {
+    display: none;
+}
+
 .list-grid .list-item.slide {
     padding: 0;
     overflow: hidden;
@@ -3443,6 +3447,13 @@ h1.title {
     font-size: 18px;
     font-weight: 600;
     color: #aa0000;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    z-index: 1;
 }
 
 #hot-recruit .list-grid .list-item .item-content .item-desc {
@@ -3452,6 +3463,7 @@ h1.title {
     line-height: 18px;
     font-weight: 400;
     -webkit-line-clamp: 1;
+    cursor: default;
 }
 
 #hot-recruit .list-grid .list-item .item-content .bookmark {
@@ -3568,6 +3580,14 @@ h1.title {
     font-weight: 600;
     font-size: 16px;
     position: relative;
+    width: 100%;
+    max-width: calc(100% - 65px);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name.hideName::after {
