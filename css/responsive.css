@@ -5449,6 +5449,9 @@
     .cmnt__reply {
         font-size: 13px;
     }
+    .adsInfoPop__item_title{
+        gap: 10px;
+    }
 }
 
 @media (max-width: 400px) {
