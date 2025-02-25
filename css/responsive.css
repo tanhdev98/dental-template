@@ -1468,9 +1468,11 @@
         column-gap: 20px;
         row-gap: 10px;
     }
-    .rgst__day #recruitDay.radio-group{
+
+    .rgst__day #recruitDay.radio-group {
         gap: 10px;
     }
+
     .rgst__label2 {
         font-size: 13px;
     }
@@ -4093,6 +4095,18 @@
         width: 100%;
         font-size: 12px;
     }
+
+    #tabs-form .tabs-select-plus .tab-check-box fieldset {
+        grid-template-columns: repeat(4, 1fr);
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    #tabs-form .tab-check-box:last-child {
+        grid-template-columns: repeat(4, 1fr);
+        max-height: 300px;
+        overflow-y: scroll;
+    }
 }
 
 @media (max-width: 600px) {
@@ -4209,6 +4223,17 @@
 }
 
 @media (max-width: 480px) {
+
+    #tabs-form .tabs-select-plus .tab-check-box fieldset {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 200px;
+    }
+
+    #tabs-form .tab-check-box:last-child {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 250px;
+    }
+
     .table li.row-name-column div:nth-child(2) {
         padding-left: 38px;
     }
@@ -5449,15 +5474,21 @@
     .cmnt__reply {
         font-size: 13px;
     }
-    .adsInfoPop__item_title{
-        gap: 10px;
-    }
 }
 
 @media (max-width: 400px) {
     .table .column-3 .wrap-link {
         height: auto;
     }
+
+    #tabs-form .tabs-select-plus .tab-check-box fieldset {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #tabs-form .tab-check-box:last-child {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (min-width: 300px) {
