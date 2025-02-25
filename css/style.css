@@ -18524,14 +18524,14 @@ table.table_training_courses {
     top: 0;
     left: 0;
     z-index: 99;
-  }
-  
-  .adsInfoPop.active {
+}
+
+.adsInfoPop.active {
     display: block;
     z-index: 999;
-  }
-  
-  .adsInfoPop__container {
+}
+
+.adsInfoPop__container {
     width: 100%;
     max-width: 800px;
     background: #fff;
@@ -18541,25 +18541,25 @@ table.table_training_courses {
     left: 50%;
     transform: translateX(-50%);
     padding: 30px;
-  }
-  
-  .adsInfoPop__tit {
+}
+
+.adsInfoPop__tit {
     font-size: 29px;
     font-weight: 600;
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #333333;
-  }
-  
-  .adsInfoPop__close {
+}
+
+.adsInfoPop__close {
     width: 25px;
     height: 25px;
     position: absolute;
     top: 32px;
     right: 30px;
-  }
-  
-  .adsInfoPop__close::before {
+}
+
+.adsInfoPop__close::before {
     content: "";
     display: block;
     width: 90%;
@@ -18569,9 +18569,9 @@ table.table_training_courses {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-  }
-  
-  .adsInfoPop__close::after {
+}
+
+.adsInfoPop__close::after {
     content: "";
     display: block;
     width: 90%;
@@ -18581,77 +18581,84 @@ table.table_training_courses {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  .adsInfoPop__item {
+}
+
+.adsInfoPop__item {
     margin-bottom: 10px;
-  }
-  
-  .adsInfoPop__item:last-child {
+}
+
+.adsInfoPop__item:last-child {
     margin-bottom: 0px;
-  }
-  .adsInfoPop__item_title {
+}
+
+.adsInfoPop__item_title {
     display: flex;
     align-items: center;
     padding: 15px 20px;
     border-radius: 10px 10px 0 0;
     cursor: pointer;
-  }
-  .adsInfoPop__item_title.darkBlue {
+}
+
+.adsInfoPop__item_title.darkBlue {
     background-color: #0a2478;
-  }
-  .adsInfoPop__item_title.lightBlue {
+}
+
+.adsInfoPop__item_title.lightBlue {
     background-color: #076bc7;
-  }
-  
-  .adsInfoPop__item_title.oliveGreen {
+}
+
+.adsInfoPop__item_title.oliveGreen {
     background-color: #567e34;
-  }
-  
-  .adsInfoPop__item_title.teal {
+}
+
+.adsInfoPop__item_title.teal {
     background-color: #00827b;
-  }
-  
-  .adsInfoPop__item_title.maroon {
+}
+
+.adsInfoPop__item_title.maroon {
     background-color: #aa0000;
-  }
-  
-  .adsInfoPop__item_title.purple {
+}
+
+.adsInfoPop__item_title.purple {
     background-color: #7600d1;
-  }
-  
-  .nameBanner_info,
-  .priceBanner_info {
+}
+
+.nameBanner_info,
+.priceBanner_info {
     color: #fff;
     font-size: 16px;
     position: relative;
-  }
-  .nameBanner_info {
+}
+
+.nameBanner_info {
     flex: 2;
-  }
-  .priceBanner_info {
+}
+
+.priceBanner_info {
     flex: 5;
-  }
-  .adsInfoPop_content {
+}
+
+.adsInfoPop_content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     border: 1px solid #ddd;
     border-width: 0;
     transition: max-height 0.3s ease, opacity 0.3s ease, border-width 0.3s ease,
-      padding 0.3s ease;
-  }
-  .adsInfoPop__item.active .adsInfoPop_content {
+        padding 0.3s ease;
+}
+
+.adsInfoPop__item.active .adsInfoPop_content {
     max-height: 1000px;
     opacity: 1;
     padding: 10px;
     border-width: 1px;
-  }
-  .adsInfoPop__item.active .icon.icon-arrow-down-white {
+}
+
+.adsInfoPop__item.active .icon.icon-arrow-down-white {
     transform: rotate(180deg);
-  }
-  
-  .adsInfoPop__item:not(.active) .icon.icon-arrow-down-white {
-      transform: rotate(0deg);
-  }
-  
-  
+}
+
+.adsInfoPop__item:not(.active) .icon.icon-arrow-down-white {
+    transform: rotate(0deg);
+}
