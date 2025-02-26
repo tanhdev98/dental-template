@@ -18574,6 +18574,9 @@ table.table_training_courses {
 .adsInfoPop__container {
     width: 100%;
     max-width: 800px;
+    max-height: calc(100% - 100px);
+    overflow-y: scroll;
+    overflow-x: hidden;
     background: #fff;
     border-radius: 20px;
     position: absolute;
@@ -18691,7 +18694,6 @@ table.table_training_courses {
 .adsInfoPop__item.active .adsInfoPop_content {
     max-height: 1000px;
     opacity: 1;
-    padding: 10px;
     border-width: 1px;
 }
 
