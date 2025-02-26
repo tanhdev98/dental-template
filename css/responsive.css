@@ -4096,13 +4096,13 @@
         font-size: 12px;
     }
 
-    #tabs-form .tabs-select-plus .tab-check-box fieldset {
+    #tabs-form.tab-forms .tabs-select-plus .tab-check-box fieldset {
         grid-template-columns: repeat(4, 1fr);
         max-height: 300px;
         overflow-y: scroll;
     }
 
-    #tabs-form .tab-check-box:last-child {
+    #tabs-form.tab-forms .tab-check-box:last-child {
         grid-template-columns: repeat(4, 1fr);
         max-height: 300px;
         overflow-y: scroll;
@@ -4224,12 +4224,12 @@
 
 @media (max-width: 480px) {
 
-    #tabs-form .tabs-select-plus .tab-check-box fieldset {
+    #tabs-form.tab-forms .tabs-select-plus .tab-check-box fieldset {
         grid-template-columns: repeat(3, 1fr);
         max-height: 200px;
     }
 
-    #tabs-form .tab-check-box:last-child {
+    #tabs-form.tab-forms .tab-check-box:last-child {
         grid-template-columns: repeat(3, 1fr);
         max-height: 250px;
     }
@@ -5483,11 +5483,11 @@
         height: auto;
     }
 
-    #tabs-form .tabs-select-plus .tab-check-box fieldset {
+    #tabs-form.tab-forms .tabs-select-plus .tab-check-box fieldset {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #tabs-form .tab-check-box:last-child {
+    #tabs-form.tab-forms .tab-check-box:last-child {
         grid-template-columns: repeat(2, 1fr);
     }
 

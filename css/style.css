@@ -8559,6 +8559,9 @@ h1.title {
     background-color: #f9f9f9;
 }
 
+#tabs-form .tabs-select-plus .wrap-select-plus-child {
+    display: flex;
+}
 
 #tabs-form .tabs-select-plus .wrap-select-plus-child .group {
     display: flex;
@@ -8585,25 +8588,9 @@ h1.title {
 }
 
 #tabs-form .tabs-select-plus .tab-check-box {
-    max-width: 1150px;
-    margin-top: 10px;
-}
-
-#tabs-form .tabs-select-plus .tab-check-box+.tab-check-box {
-    padding-top: 25px;
-    margin-top: 15px;
-    border-top: 1px solid #ddd;
-}
-
-#tabs-form .tabs-select-plus .tab-check-box fieldset {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-}
-
-#tabs-form .tab-check-box:last-child {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
 }
 
 #tabs-form .tabs-select-plus .tab-check-box li label {
@@ -8696,6 +8683,59 @@ h1.title {
 #tabs-form .bsns-srch .form-select-container>.form-select-cus>.form-option-placeholder::after {
     background: url(../images/arrow-down-black.png) no-repeat center / contain;
 }
+
+#tabs-form.tab-forms .tabs-select-plus .wrap-select-plus-child {
+    display: flex;
+    flex-direction: column;
+}
+
+#tabs-form.tab-forms .tabs-select-plus .wrap-select-plus-child .group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#tabs-form.tab-forms .tabs-select-plus .wrap-select-plus-child .group .radio-group {
+    display: flex;
+    align-items: center;
+    column-gap: 52px;
+    flex-wrap: wrap;
+}
+
+#tabs-form.tab-forms .tabs-select-plus .wrap-select-plus-child li {
+    margin-left: 0;
+}
+
+#tabs-form.tab-forms .tabs-select-plus .wrap-select-plus-child .title-detailed {
+    font-size: 17px;
+    color: #333333;
+    font-weight: 600;
+    min-width: 150px;
+}
+
+#tabs-form.tab-forms .tabs-select-plus .tab-check-box {
+    max-width: 1150px;
+    margin-top: 10px;
+}
+
+#tabs-form.tab-forms .tabs-select-plus .tab-check-box+.tab-check-box {
+    padding-top: 25px;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+#tabs-form.tab-forms .tabs-select-plus .tab-check-box fieldset {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+}
+
+#tabs-form.tab-forms .tab-check-box:last-child {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
 
 .ui-datepicker-header a.ui-datepicker-prev {
     left: 0;
