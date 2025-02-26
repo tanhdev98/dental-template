@@ -443,26 +443,6 @@
         right: 3px;
     }
 
-    #tabs-form .tabs-select-bag ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0;
-    }
-
-    #tabs-form .tabs-select-bag ul li {
-        width: 100%;
-        height: 40px;
-    }
-
-    #tabs-form .tabs-select-plus .wrap-select-plus-child .title-detailed {
-        font-size: 14px;
-        min-width: 100px;
-    }
-
-    #tabs-form .tabs-select-plus .tab-check-box li label span {
-        font-size: 14px;
-        padding-left: 20px;
-    }
 
     .item-checkBox>span {
         width: 16px;

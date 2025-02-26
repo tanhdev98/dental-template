@@ -129,6 +129,7 @@
     font-size: 20px;
     color: #666;
 }
+
 .tabs-no-border li.active a,
 .tabs-no-border li a.active {
     color: #0068b7;
@@ -307,27 +308,44 @@ li.dot::before {
     font-size: 15px;
     font-weight: 400;
     cursor: pointer;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#tabs-form .tabs-select-bag.tab-5-item ul li {
+    border-right: 1px solid #ddd;
+    width: 20%;
+}
+
+
+#tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(1),
+#tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(2),
+#tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(3),
+#tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(4) {
     border-top: 1px solid #ddd;
+}
+
+#tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(4n+1) {
+    border-left: 1px solid #ddd;
+}
+
+#tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(1),
+#tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(2),
+#tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(3),
+#tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(4),
+#tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(5) {
+    border-top: 1px solid #ddd;
+}
+
+#tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(5n+1) {
     border-left: 1px solid #ddd;
 }
 
 
-#tabs-form .tabs-select-bag ul li:nth-last-child(2),
-#tabs-form .tabs-select-bag ul li:nth-last-child(3),
-#tabs-form .tabs-select-bag ul li:nth-last-child(4),
-#tabs-form .tabs-select-bag ul li:nth-last-child(5) {
-    border-bottom: 1px solid #ddd;
-}
-
-#tabs-form .tabs-select-bag ul li:last-child {
-    border-bottom: 1px solid #ddd;
+#tabs-form .tabs-select-bag.tab-4-item ul li {
     border-right: 1px solid #ddd;
-    width: calc(20% + 1px);
-}
-
-#tabs-form .tabs-select-bag ul li:nth-child(5n) {
-    border-right: 1px solid #ddd;
-    width: 20%;
+    width: 25%;
 }
 
 #tabs-form .tabs-select-bag ul li:hover,
@@ -499,14 +517,8 @@ li.dot::before {
         border-radius: 0;
     }
 
-    #tabs-form .tabs-select-bag ul {
-        justify-content: space-between;
-        gap: 5px;
-    }
-
     #tabs-form .tabs-select-bag ul li {
         width: 30%;
-        border: 1px solid #ddd !important;
         padding: 10px;
     }
 
@@ -526,7 +538,6 @@ li.dot::before {
 @media screen and (width <=767px) {
     #tabs-form .tabs-select-bag ul li {
         width: 48%;
-        border: 1px solid #ddd !important;
         padding: 10px;
     }
 
@@ -555,6 +566,43 @@ li.dot::before {
     #tabs-form .tab-select-results {
         padding: 20px;
     }
+
+    #tabs-form .tabs-select-bag.tab-4-item ul li {
+        border-right: 1px solid #ddd;
+        width: 50%;
+    }
+
+    #tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(3n+1),
+    #tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(4n+1) {
+        border-left: unset;
+    }
+
+    #tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(3),
+    #tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(4) {
+        border-top: none;
+    }
+
+    #tabs-form .tabs-select-bag.tab-4-item ul li:nth-of-type(2n+1) {
+        border-left: 1px solid #ddd;
+    }
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li {
+        width: 33%;
+    }
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(4n+1),
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(5n+1) {
+        border-left: unset;
+    }
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(4),
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(5) {
+        border-top: none;
+    }
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(3n+1) {
+        border-left: 1px solid #ddd;
+    }
 }
 
 @media screen and (width <=575px) {
@@ -566,5 +614,26 @@ li.dot::before {
         flex-direction: column;
         bottom: -60px;
         gap: 15px;
+    }
+
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li {
+        width: 50%;
+    }
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(3n+1),
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(4n+1),
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(5n+1) {
+        border-left: unset;
+    }
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(3),
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(4),
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(5) {
+        border-top: none;
+    }
+
+    #tabs-form .tabs-select-bag.tab-5-item ul li:nth-of-type(2n+1) {
+        border-left: 1px solid #ddd;
     }
 }
