@@ -51,7 +51,9 @@
         overflow-y: auto;
         z-index: 4;
     }
-
+    #top-sub-page #side-nav .close-menu-responsive.active{
+        display: block;
+    }
     .jobPop__close {
         z-index: 99;
         top: 20px;
