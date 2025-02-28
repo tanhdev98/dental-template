@@ -9551,9 +9551,11 @@ h1.title {
     height: 100%;
     top: 0;
 }
-#top-sub-page #side-nav .close-menu-responsive{
+
+#top-sub-page #side-nav .close-menu-responsive {
     display: none;
 }
+
 #top-sub-page #side-nav .side-banner img {
     margin-top: 20px;
 }
@@ -9682,7 +9684,7 @@ h1.title {
     z-index: 3;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 #top-sub-page #side-nav ul li .sub-menu::before {
@@ -9880,8 +9882,10 @@ h1.title {
     }
 
     #top-sub-page #side-nav .frame-section {
-        margin-top: 0;
-        padding-top: 70px;
+        margin-top: 20px;
+        min-height: calc(100% - 20px);
+        overflow-y: scroll;
+        border-radius: 10px 0 0 10px;
     }
 
     #top-sub-page #side-nav {
@@ -9974,7 +9978,8 @@ h1.title {
     .frame-section.frame-gray-header .content-frame {
         padding: 20px;
     }
-    #top-sub-page #side-nav .frame-section .item-has-child.active-child.active::before{
+
+    #top-sub-page #side-nav .frame-section .item-has-child.active-child.active::before {
         transform: rotate(0deg) translateY(-35%);
         transition: transform 0.3s ease-in-out;
     }
@@ -10208,6 +10213,26 @@ h1.title {
 
     .button-group {
         flex-wrap: wrap;
+    }
+
+    #top-sub-page #side-nav ul li .sub-menu {
+        display: unset;
+        overflow: hidden;
+        max-height: 0px;
+        opacity: 0;
+        z-index: 4;
+        position: unset;
+        background: #fff;
+        box-shadow: none;
+        border: none;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+    #top-sub-page #side-nav ul li .sub-menu.active {
+        overflow: visible;
+        max-height: 500px;
+        opacity: 1;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
     }
 }
 
@@ -18766,21 +18791,30 @@ table.table_training_courses {
     display: flex;
     flex-direction: column;
     min-width: 150px;
+    height: 250px;
+    overflow-y: unset;
+}
+
+#tabs-form.tabs-form-custom .tabs-left .tabs-custom a {
+    display: block;
+    width: 100%;
+    color: #333;
 }
 
 #tabs-form.tabs-form-custom .tabs-left .tab-check-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-width: 250px;
-    align-content: center;
+    min-width: 300px;
     border-right: none;
+    max-height: 160px;
 }
 
 #tabs-form.tabs-form-custom .tabs-right {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    height: 25px;
 }
 
 #tabs-form.tabs-form-custom .tabs-right .tab-check-box {
     border-left: 1px solid #ddd;
-    height: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 }
