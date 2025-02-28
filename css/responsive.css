@@ -49,6 +49,7 @@
 
     #top-sub-page #side-nav.active {
         overflow-y: auto;
+        z-index: 4;
     }
 
     .jobPop__close {
