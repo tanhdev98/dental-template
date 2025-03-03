@@ -8478,6 +8478,23 @@ h1.title {
     gap: 5px;
 }
 
+.column-1 .clinic-name .yellow{
+    width: 100%;
+    height: 30px;
+    background-color: #fbffaa;
+    text-align: center;
+}
+
+.item.pin::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to bottom right, white 50%, #7695FB 50%);
+  }
+
 @media screen and (width <=1320px) {
     #support-now .wrap-table>li>div {
         grid-template-columns: 30% calc(100% - 30% - 15px);
@@ -17478,14 +17495,20 @@ h1.title {
     justify-content: space-between;
     gap: 10px;
 }
-
+.acs__grid > * {
+    flex-basis: calc(25%);
+    max-width: calc(25%);
+}
 .acs__list {
     display: flex;
     flex-direction: column;
     gap: 15px;
     position: relative;
+    margin-left: 7px;
 }
-
+.acs__list:first-child{
+    margin-left: 0px;
+}
 .acs__grid .acs__list:not(:last-child)::after {
     content: '';
     width: 2px;
@@ -17499,7 +17522,7 @@ h1.title {
 .acs__item {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 20px;
+    gap: 10px;
 }
 
 .acs__item span {
