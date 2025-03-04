@@ -4750,7 +4750,9 @@
         font-size: 11px;
         line-height: 1.2;
     }
-
+    .pym__select {
+        width: 40px;
+    }
     .pym__table tbody td:first-child {
         border-left: 0;
     }
