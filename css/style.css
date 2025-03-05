@@ -2987,24 +2987,14 @@ h1.title {
     object-fit: cover;
 }
 
+
 .list-grid .list-item.large-full:hover,
-.list-grid .list-item.large-full:hover .item-content,
 .list-grid .list-item.large,
 .list-grid .list-item.large .item-content {
     padding: 0;
     overflow: hidden;
 }
 
-.list-grid .list-item.large-full:hover .item-content::before,
-.list-grid .list-item.large-full:hover .item-main-content,
-.list-grid .list-item.large-full .item-hover-content {
-    display: none !important;
-}
-
-.list-grid .list-item.large-full .item-main-content,
-.list-grid .list-item.large-full:hover .item-hover-content{
-    display: block !important;
-}
 
 
 .list-grid .list-item.large-full .item-hover-content .content-banner-hover {
@@ -3012,7 +3002,7 @@ h1.title {
     height: 100%;
     background-size: cover;
     background-position: center;
-    padding: 60px 40px;
+    padding: 68px 40px;
     position: relative;
 }
 
@@ -3066,6 +3056,42 @@ h1.title {
     color: #fff;
     font-size: 14px;
     line-height: 1.3;
+}
+
+.list-grid .list-item.large-full .item-hover-content {
+   opacity: 0;
+}
+
+.list-grid .list-item.large-full:hover .item-content::before,
+.list-grid .list-item.large-full:hover .item-main-content{
+    z-index: 0;
+}
+
+.list-grid .list-item.large-full:hover .item-hover-content {
+    opacity: 1;
+    position: absolute;
+    margin-left: -18px;
+    margin-top: -18px;
+    height: 100%;
+    width: 100%;
+}
+
+.list-grid .list-item.large-full .item-hover-content .content-banner-hover{
+    opacity: 0;
+    max-height: 0;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.list-grid .list-item.large-full:hover .item-hover-content .content-banner-hover {
+    opacity: 1;
+    max-height: 500px; 
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+.list-grid .list-item.large-full:hover .content-banner-hover-logo img{
+    transition: none !important;
 }
 
 .list-grid .list-item.large .item-content>img {
