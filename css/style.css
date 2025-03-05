@@ -2987,7 +2987,6 @@ h1.title {
     object-fit: cover;
 }
 
-
 .list-grid .list-item.large-full:hover,
 .list-grid .list-item.large,
 .list-grid .list-item.large .item-content {
@@ -3003,7 +3002,8 @@ h1.title {
     background-size: cover;
     background-position: center;
     padding: 68px 40px;
-    position: relative;
+    position: absolute;
+    z-index: 1;
 }
 
 .list-grid .list-item.large-full .item-hover-content .content-banner-hover::before {
@@ -3451,7 +3451,7 @@ h1.title {
 }
 
 #enterprise .list-grid .list-item .item-content .item-logo img {
-    object-fit: fill;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
@@ -8627,6 +8627,13 @@ h1.title {
 @media screen and (width <=1200px) {}
 
 @media screen and (width <=767px) {
+    .column-1 .clinic-name .yellow{
+        height: max-content;
+        margin-bottom: 5px;
+        width: auto;
+        padding: 3px 5px;
+    }
+
     #support-now .wrap-table>li {
         height: fit-content;
         padding: 15px;
@@ -9656,8 +9663,7 @@ h1.title {
     height: 100%;
     top: 0;
 }
-
-#top-sub-page #side-nav .close-menu-responsive {
+#top-sub-page #side-nav .close-menu-responsive{
     display: none;
 }
 
@@ -9728,11 +9734,20 @@ h1.title {
     transform: translateY(-50%) rotate(-90deg);
     right: 28px;
     z-index: 1;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#top-sub-page #side-nav>ul>li.item-has-child.active::before,
+#top-sub-page #side-nav>ul>li.item-has-child.active-child::before,#top-sub-page #side-nav>ul>li:hover.item-has-child::before {
+    background: url('../images/icons/icon-drop-down-blue.png') no-repeat center / 100%;
+}
+
+#top-sub-page #side-nav>ul>li.item-has-child.active-child .icon-document-subpage::after {
+    background-image: url('../images/icons/icon-document-subpage-active.png');
 }
 
 #top-sub-page #side-nav>ul>li.item-has-child.active-child::before {
-    transform: rotate(-90deg) translateX(50%);
+    transform: rotate(0deg) translateY(-35%);
+    transition: all 0.3s ease-in-out;
 }
 
 #top-sub-page #side-nav ul li.item-has-child:hover>a,
@@ -9764,9 +9779,8 @@ h1.title {
     display: block;
     opacity: 1;
     overflow: visible;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; 
 }
-
 #top-sub-page #side-nav ul li .sub-menu li:hover,
 #top-sub-page #side-nav ul li .sub-menu.active .active-child{
     background-color: #eef7fd;
@@ -9801,7 +9815,7 @@ h1.title {
     z-index: 3;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; 
 }
 
 #top-sub-page #side-nav ul li .sub-menu::before {
@@ -10095,8 +10109,7 @@ h1.title {
     .frame-section.frame-gray-header .content-frame {
         padding: 20px;
     }
-
-    #top-sub-page #side-nav .frame-section .item-has-child.active-child.active::before {
+    #top-sub-page #side-nav .frame-section .item-has-child.active-child.active::before{
         transform: rotate(0deg) translateY(-35%);
         transition: transform 0.3s ease-in-out;
     }
@@ -10331,7 +10344,6 @@ h1.title {
     .button-group {
         flex-wrap: wrap;
     }
-
     #top-sub-page #side-nav ul li .sub-menu {
         display: unset;
         overflow: hidden;
@@ -10340,16 +10352,15 @@ h1.title {
         z-index: 4;
         position: unset;
         background: #fff;
-        box-shadow: none;
-        border: none;
-        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        box-shadow: none; 
+        border:none;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out; 
     }
-
     #top-sub-page #side-nav ul li .sub-menu.active {
         overflow: visible;
         max-height: 500px;
         opacity: 1;
-        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out; 
     }
 }
 
