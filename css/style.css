@@ -16728,6 +16728,32 @@ h1.title {
     margin-top: 10px;
 }
 
+.pym__table .relative{
+    position: relative;
+}
+
+.pym__table .icon-tlt{
+    width: 15px;
+}
+
+.pym__table .icon-tlt + .tlt{
+    left: unset;
+    right:0;
+    top: 50px;
+    width: fit-content;
+}
+
+.pym__table .icon-tlt + .tlt svg{
+    position: absolute;
+    top: -12px;
+    right: 4px;
+    transform: rotate(90deg);
+}
+
+.pym__table .icon-tlt:hover + .tlt{
+    display: block;
+}
+
 .pym__table thead th {
     padding: 11px;
     text-align: center;
@@ -16882,11 +16908,11 @@ h1.title {
     font-weight: 600;
     background: #f4f6f8;
     border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
     white-space: nowrap;
 }
-.byn__table thead th:last-child{
-    border-right: none;
+.byn__table thead th:first-child{
+    border-left-color: transparent;
 }
 
 .byn__tit {
@@ -17040,6 +17066,10 @@ h1.title {
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
+}
+
+.byn__req{
+    color: #0055cc;
 }
 
 .byn_date{

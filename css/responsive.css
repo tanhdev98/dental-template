@@ -405,6 +405,12 @@
         flex-wrap: nowrap;
     }
 
+    .pym__btbx{
+        position: relative;
+        top: 0px;
+        right: 0;
+    }
+
     .tabs li a {
         font-size: 16px;
         padding: 5px;
@@ -4090,6 +4096,20 @@
         max-height: 300px;
         overflow-y: scroll;
     }
+
+    .pym__table .icon-tlt + .tlt svg{
+        top: unset;
+        left: unset;
+        right: 8px;
+    }
+
+    .byn__table thead th{
+        font-size: 13px;
+    } 
+    
+    .byn__table tbody td{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -4202,6 +4222,75 @@
 
     #status-support .table .management .management-button {
         width: 60px;
+    }
+    .byn__block:first-child .byn__table{
+        border-top: none;
+    }
+    .byn__table thead{
+        display: none;
+    }
+    .byn__table tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .byn__table tbody tr{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .byn__table tbody tr td{
+        display: flex;
+        border-right: 1px solid #ddd;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .byn__table tbody tr td.wrap-column{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .byn__table tbody tr td::before{
+       content: attr(data-label);
+       font-weight: 600;
+       white-space: nowrap;
+    }
+    
+    .byn__table tbody tr td:first-child{
+        border-top: 1px solid #ddd;
+    }
+    .byn__table tbody td:first-child:not(.byn__tdnote){
+        border-left: 1px solid #ddd;
+    }
+    .byn__tdnote{
+        flex-direction: column;
+    }
+    
+    .byn_radio{
+        display: block;
+    }
+
+    .byn__wdate{
+        gap: 10px;
+    }
+
+    .byn__block:last-child tbody th{
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .byn__block + .byn__block .byn__table{
+        border-top: none;
+    }
+
+    .byn__block:last-child tbody tr:last-child{
+        height: auto;
+    } 
+    .byn__note{
+        font-size: 12px;
     }
 }
 

@@ -148,7 +148,17 @@
                                                 <th rowspan="2" colspan="2">상품</th>
                                                 <th rowspan="2">기간</th>
                                                 <th rowspan="2">금액</th>
-                                                <th colspan="2">[덴탈잡 이용권]</th>
+                                                <th colspan="2" class="relative">
+                                                    [덴탈잡 이용권] 
+                                                    <img src="./images/icons/icon-info-th.png" alt="icon icon-tlt" class="icon-tlt" >
+                                                    <div class="tlt">
+                                                        DVmall에서 [덴탈잡 이용권]을 구매할 수<br> 있으며, 비용이 더욱 저렴합니다.
+                                                        <svg class="tlt__svg" width="28" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                            <polyline points="18 16 0 8 18 0" stroke-width="1" stroke="#88abda" fill="#e6effa" paint-order="fill"></polyline>
+                                                            <rect x="18" y="0" width="10" height="16" fill="#e6effa"></rect>
+                                                        </svg>
+                                                    </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th>보유현황</th>
@@ -413,17 +423,19 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td rowspan="2">기본상품</td>
-                                                    <td>그랜드 배너 (채용소식 포함)</td>
-                                                    <td class="center">14일</td>
-                                                    <td class="byn__wdate">
-                                                        <span class="byn__txt">시작일자</span>
+                                                    <td rowspan="2" data-label="구분">기본상품</td>
+                                                    <td data-label="선택한 상품">그랜드 배너 (채용소식 포함)</td>
+                                                    <td class="center" data-label="기간">14일</td>
+                                                    <td data-label="광고기간">
+                                                        <div class="byn__wdate">
+                                                            <span class="byn__txt">시작일자</span>
                                                         <div class="byn_date">
                                                             <input type="date" id="date" name="date" />
                                                             <i class="icon icon-date" id="start-date-icon"></i>
                                                         </div>
                                                         <span class="byn__txt">- 종료일자:</span> 
                                                         <span class="byn__tdate">2024.12.14</span>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -434,37 +446,41 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>고정옵션</td>
-                                                    <td>고정옵션 (그랜드 배너)</td>
-                                                    <td class="center">7일</td>
-                                                    <td>※ 옵션상품일자는 배너시작일부터 7일간입니다.</td>
+                                                    <td data-label="구분">고정옵션</td>
+                                                    <td data-label="선택한 상품">고정옵션 (그랜드 배너)</td>
+                                                    <td class="center" data-label="기간">7일</td>
+                                                    <td data-label="광고기간">※ 옵션상품일자는 배너시작일부터 7일간입니다.</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>고정옵션</td>
-                                                    <td>고정옵션 (채용소식)</td>
-                                                    <td class="center">7일</td>
-                                                    <td class="byn__wdate">
-                                                        <span class="byn__txt">시작일자</span>
+                                                    <td data-label="구분">고정옵션</td>
+                                                    <td data-label="선택한 상품">고정옵션 (채용소식)</td>
+                                                    <td class="center" data-label="기간">7일</td>
+                                                    <td data-label="광고기간">
+                                                        <div class="byn__wdate">
+                                                            <span class="byn__txt">시작일자</span>
                                                         <div class="byn_date">
                                                             <input type="date" id="date" name="date" />
                                                             <i class="icon icon-date" id="start-date-icon"></i>
                                                         </div>
                                                         <span class="byn__txt">- 종료일자:</span> 
                                                         <span class="byn__tdate">2024.12.14</span>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>강조옵션</td>
-                                                    <td>컬러 강조 1주</td>
-                                                    <td class="center">7일</td>
-                                                    <td class="byn__wdate">
-                                                        <span class="byn__txt">시작일자</span>
+                                                    <td data-label="구분">강조옵션</td>
+                                                    <td data-label="선택한 상품">컬러 강조 1주</td>
+                                                    <td class="center" data-label="기간">7일</td>
+                                                    <td data-label="광고기간">
+                                                        <div class="byn__wdate">
+                                                            <span class="byn__txt">시작일자</span>
                                                         <div class="byn_date">
                                                             <input type="date" id="date" name="date" />
                                                             <i class="icon icon-date" id="start-date-icon"></i>
                                                         </div>
                                                         <span class="byn__txt">- 종료일자:</span> 
                                                         <span class="byn__tdate">2024.12.14</span>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -489,22 +505,22 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>기본상품</td>
-                                                    <td>그랜드 배너 (채용소식 포함)</td>
-                                                    <td>O</td>
-                                                    <td>0 원</td>
+                                                    <td data-label="구분">기본상품</td>
+                                                    <td data-label="결제상품">그랜드 배너 (채용소식 포함)</td>
+                                                    <td data-label="덴탈잡 이용권 적용">O</td>
+                                                    <td data-label="금액">0 원</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>고정옵션</td>
-                                                    <td>고정옵션 (그랜드 배너)</td>
-                                                    <td>O</td>
-                                                    <td>0 원</td>
+                                                    <td data-label="구분">고정옵션</td>
+                                                    <td data-label="결제상품">고정옵션 (그랜드 배너)</td>
+                                                    <td data-label="덴탈잡 이용권 적용">O</td>
+                                                    <td data-label="금액">0 원</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>강조옵션</td>
-                                                    <td>컬러 강조 1주</td>
-                                                    <td>-</td>
-                                                    <td>10,000 원</td>
+                                                    <td data-label="구분">강조옵션</td>
+                                                    <td data-label="결제상품">컬러 강조 1주</td>
+                                                    <td data-label="덴탈잡 이용권 적용">-</td>
+                                                    <td data-label="금액">10,000 원</td>
                                                 </tr> 
                                                 <tr>
                                                     <td colspan="3">총 결제 금액:</td>
@@ -524,7 +540,7 @@
                                             <body>
                                                 <tr>
                                                     <th><span class="byn__req">*</span>결제수단</th>
-                                                    <td>
+                                                    <td class="wrap-column">
                                                         <fieldset class="byn_radio">
                                                             <div class="item-radioBox">
                                                                 <input type="radio" name="options-1" value="option1" id="radio1" checked>
@@ -548,7 +564,7 @@
                                                     <th>
                                                         <span class="byn__req">*</span>결제자 정보
                                                     </th>
-                                                    <td>
+                                                    <td class="wrap-column">
                                                         <div class="byn__itxt">
                                                             <span>성명:</span>
                                                             <input type="text" placeholder="이름을 입력하세요">
