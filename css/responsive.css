@@ -4257,6 +4257,7 @@
        content: attr(data-label);
        font-weight: 600;
        white-space: nowrap;
+       min-width: 60px;
     }
     
     .byn__table tbody tr td:first-child{
