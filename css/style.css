@@ -2907,12 +2907,12 @@ h1.title {
 }
 
 .list-grid .list-item:hover {
-    margin-top: 0px;
+    transform: translateY(0px);
     box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .list-grid .list-item:hover {
-    margin-top: -5px;
+    transform: translateY(-5px);
 }
 
 .list-grid .list-item .item-content {
