@@ -2907,12 +2907,12 @@ h1.title {
 }
 
 .list-grid .list-item:hover {
-    transform: translateY(0px);
+    margin-top: 0px;
     box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .list-grid .list-item:hover {
-    transform: translateY(-5px);
+    margin-top: -5px;
 }
 
 .list-grid .list-item .item-content {
@@ -3661,9 +3661,8 @@ h1.title {
 }
 
 #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-avatar img {
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
+    height: 100%;
 }
 
 #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name {
@@ -4478,10 +4477,13 @@ h1.title {
     #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-avatar {
         width: 79px;
         height: 79px;
+        display: flex;
+        align-items: center;
     }
 
     #hot-talent .list-grid .list-item .item-content .item-header .item-info .item-name {
         font-size: 30px;
+        max-width: calc(100% - 80px);
     }
 
     #hot-talent .icon-star {
@@ -11790,6 +11792,10 @@ h1.title {
     min-height: 545px;
 }
 
+.vln-mgzn__cnt img{
+    width: auto;
+} 
+
 .vln-mbl {
     border-top: 1px solid #111;
     margin-top: 30px;
@@ -16847,6 +16853,10 @@ h1.title {
     height: 50px;
 }
 
+.pym__table tbody td:nth-child(5) {
+   width: 140px;
+}
+
 .pym__table tbody td.pd9 {
     padding: 9px;
 }
@@ -16997,6 +17007,7 @@ h1.title {
 
 .byn__tdate {
     color: #007bff;
+    min-width: 80px;
 }
 
 .byn__table tbody td:first-child:not(.byn__tdnote) {
