@@ -2868,7 +2868,7 @@ h1.title {
     height: 100%;
     border-radius: 10px;
     position: relative;
-    transition: margin 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .list-grid .list-item .item-content::before {
@@ -2907,12 +2907,12 @@ h1.title {
 }
 
 .list-grid .list-item:hover {
-    margin-top: 0px;
+    transform: translateY(0px);
     box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .list-grid .list-item:hover {
-    margin-top: -5px;
+    transform: translateY(-5px);
 }
 
 .list-grid .list-item .item-content {
@@ -16789,6 +16789,7 @@ h1.title {
 
 .pym__table .icon-tlt {
     width: 15px;
+    margin-left: 6px;
 }
 
 .pym__table .icon-tlt + .tlt {
@@ -17005,6 +17006,27 @@ h1.title {
     background-color: #fff;
 }
 
+.byn__table tbody td .byn__title {
+   width: 80px;
+   min-width: 80px;
+   max-width: 80px;
+   display: flex;
+}
+
+.byn__table tbody td .byn__name {
+   width: 150px;
+   min-width: 150px;
+   max-width: 150px;
+   display: flex;
+}
+
+.byn__table tbody .byn__duration span {
+   width: 30px;
+   min-width: 30px;
+   max-width: 30px;
+   display: flex;
+}
+
 .byn__tdate {
     color: #007bff;
     min-width: 80px;
@@ -17076,7 +17098,7 @@ h1.title {
 }
 
 .byn__block tbody tr th {
-    padding: 20px;
+    padding: 20px 15px;
     font-weight: 700;
     border-bottom: 1px solid #ddd;
 }
@@ -19075,4 +19097,59 @@ table.table_training_courses {
 #tabs-form.tabs-form-custom .tabs-right .tab-check-box {
     border-left: 1px solid #ddd;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+}
+
+
+.td-wrap .wrap-top{
+    position: relative;
+    left: -15px;
+    bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    width: calc(100% + 30px);
+}
+.td-wrap .wrap-radioBox, .title-value-text{
+    padding: 0 15px;
+}
+.td-wrap .wrap-radioBox{
+    display: flex;
+    gap: 25px;
+}
+.td-wrap .wrap-radioBox label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.td-wrap .wrap-radioBox label .title-value-radio{
+    font-weight: 600;
+}
+.td-wrap .title-value-text{
+    margin: 5px 0;
+}
+.td-wrap .wrap-bottom .title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.td-wrap ul li{
+    padding-left: 5px;
+    list-style-type: disc;
+    margin-top: 5px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-break: auto;
+    white-space: normal;
+    margin-left: 17px;
+}
+.td-wrap ul li.red>*{
+    color: #ff0000;
+}
+.td-wrap ul li.blue{
+    color: #007bff;
+}
+.td-wrap ul li.noMaker{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
 }
