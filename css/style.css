@@ -15520,6 +15520,11 @@ h1.title {
     max-width: unset;
 }
 
+.dntInf__select{
+    position: relative;
+    z-index: 2;
+}
+
 .dntInf__select .form-select-container {
     width: 100%;
     max-width: 331px;
@@ -18826,10 +18831,25 @@ table.table_training_courses {
 }
 
 .popupMap__close::after {
-    content: '×';
-    font-size: 24px;
-    top: -2px;
-    position: relative;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    left: 20%;
+    top: 47%;
+    position: absolute;
+}
+
+.popupMap__close::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 48%;
+    left: 19%;
 }
 
 .popupMap__close:hover {
