@@ -44,6 +44,7 @@
         .resume__tit {
             font-size: 28px;
             font-weight: inherit;
+            text-align: start;
         }
 
         .resume__tit.col {
@@ -972,9 +973,13 @@
             padding-bottom: 0;
         }
 
+        .rsm-dtl__wrap>tbody>tr {
+            display: flex;
+            flex-direction: column;
+        }
+
         .rsm-dtl__grid {
             display: grid;
-            grid-template-columns: 140px 1fr;
         }
 
         .rsm-dtl__img {
@@ -1131,6 +1136,11 @@
             font-weight: 300;
             min-height: 255px;
         }
+
+        .rsm-dtl__table .rsm-dtl__avt {
+            width: 140px;
+            padding: 0;
+        }
     </style>
 </head>
 
@@ -1140,285 +1150,321 @@
             <!-- resume -->
             <div class="resume">
                 <div class="resume__inner">
-                    <h3 class="resume__tit">이력서 : (title)</h3>
-                    <div class="rsm-dtl">
-                        <div class="resume__block">
-                            <div class="rsm-dtl__grid">
-                                <img class="rsm-dtl__img" src="./images/PAIAB030/image-sample.png" alt="">
-                                <table class="rsm-dtl__table rsm-dtl__table--top">
+                    <table class="rsm-dtl__wrap">
+                        <tr>
+                            <th class="resume__tit">이력서 : (title)</th>
+                            <td class="resume__block">
+                                <div class="rsm-dtl__grid">
+                                    <table class="rsm-dtl__table rsm-dtl__table--top">
+                                        <tbody>
+                                            <tr>
+                                                <td class="rsm-dtl__avt" rowspan="3">
+                                                    <img class="rsm-dtl__img" src="./images/PAIAB030/image-sample.png"
+                                                        alt="">
+                                                </td>
+                                                <th>이름</th>
+                                                <td>nameKor</td>
+                                                <th>이메일</th>
+                                                <td>email</td>
+                                            </tr>
+                                            <tr>
+                                                <th>핸드폰</th>
+                                                <td>telNo</td>
+                                                <th>홈페이지</th>
+                                                <td>homeUrl</td>
+                                            </tr>
+                                            <tr>
+                                                <th>희망연락방법</th>
+                                                <td colSpan="3">contactMethod</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="resume__tit-box">
+                                <h4 class="resume__tit2">희망 근무요건</h4>
+                            </th>
+                            <td class="resume__block">
+                                <table class="rsm-dtl__table">
                                     <tbody>
                                         <tr>
-                                            <th>이름</th>
-                                            <td>nameKor</td>
-                                            <th>이메일</th>
-                                            <td>email</td>
+                                            <th>희망업무</th>
+                                            <td>resumeClass</td>
                                         </tr>
                                         <tr>
-                                            <th>핸드폰</th>
-                                            <td>telNo</td>
-                                            <th>홈페이지</th>
-                                            <td>homeUrl</td>
+                                            <th>희망 근무형태</th>
+                                            <td>resumeForm</td>
                                         </tr>
                                         <tr>
-                                            <th>희망연락방법</th>
-                                            <td colSpan="3">contactMethod</td>
+                                            <th>희망 근무지역</th>
+                                            <td>
+                                                resumeRegionSi1, resumeRegionSi2, resumeRegionSi3<br>
+                                                resumeRegionGu1, resumeRegionGu2, resumeRegionGu3
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>희망급여</th>
+                                            <td>
+                                                resumePay<br>
+                                                resumePayEtc
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>희망직급</th>
+                                            <td>resumePosition</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="resume__tit-box">
+                                <h4 class="resume__tit2">학력사항 -> (resumeSchoolInfo)</h4>
+                            </th>
+                            <td class="resume__block">
+                                <table class="rsm-dtl__table">
+                                    <tbody>
+                                        <tr>
+                                            <th>최종학력</th>
+                                            <td>고등학교 졸업</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="rsm-dtl__table2">
+                                    <thead>
+                                        <tr>
+                                            <th>재학기간</th>
+                                            <th>학교명</th>
+                                            <th class="empty"></th>
+                                            <th>전공</th>
+                                            <th>학점</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2016.3 ~ 2019.2</td>
+                                            <td>Hana Academy Seoul</td>
+                                            <td>졸업</td>
+                                            <td></td>
+                                            <td>학점</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020.3 ~ 2024.2</td>
+                                            <td>Seoul National University</td>
+                                            <td>졸업</td>
+                                            <td>치위생</td>
+                                            <td>3.5/4.0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="resume__tit-box">
+                                <h4 class="resume__tit2">경력사항 -> (resumeCareerInfo)</h4>
+                            </th>
+                            <td class="resume__block">
+                                <table class="rsm-dtl__table">
+                                    <tbody>
+                                        <tr>
+                                            <th>경력사항</th>
+                                            <td>경력 (1년 0개월)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="rsm-dtl__table2">
+                                    <thead>
+                                        <tr>
+                                            <th class="wd180">근무기간</th>
+                                            <th colspan="2">상세경력</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024.1 - 2025.1</td>
+                                            <td><strong>경기</strong> 서울비디치과 불당본점<br>
+                                                직급 : 주임,
+                                                담당업무 : 진료실 환자 응대 및 어시스트,
+                                                퇴사사유 :</td>
+                                        </tr>
 
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">희망 근무요건</h4>
-                        </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table">
-                                <tbody>
-                                    <tr>
-                                        <th>희망업무</th>
-                                        <td>resumeClass</td>
-                                    </tr>
-                                    <tr>
-                                        <th>희망 근무형태</th>
-                                        <td>resumeForm</td>
-                                    </tr>
-                                    <tr>
-                                        <th>희망 근무지역</th>
-                                        <td>
-                                            resumeRegionSi1, resumeRegionSi2, resumeRegionSi3<br>
-                                            resumeRegionGu1, resumeRegionGu2, resumeRegionGu3
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>희망급여</th>
-                                        <td>
-                                            resumePay<br>
-                                            resumePayEtc
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>희망직급</th>
-                                        <td>resumePosition</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                    </tbody>
+                                </table>
 
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">학력사항 -> (resumeSchoolInfo)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table">
-                                <tbody>
-                                    <tr>
-                                        <th>최종학력</th>
-                                        <td>고등학교 졸업</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="rsm-dtl__table2">
-                                <thead>
-                                    <tr>
-                                        <th>재학기간</th>
-                                        <th>학교명</th>
-                                        <th class="empty"></th>
-                                        <th>전공</th>
-                                        <th>학점</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2016.3 ~ 2019.2</td>
-                                        <td>Hana Academy Seoul</td>
-                                        <td>졸업</td>
-                                        <td></td>
-                                        <td>학점</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2020.3 ~ 2024.2</td>
-                                        <td>Seoul National University</td>
-                                        <td>졸업</td>
-                                        <td>치위생</td>
-                                        <td>3.5/4.0</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                <table class="rsm-dtl__table mt20">
+                                    <tbody>
+                                        <tr>
+                                            <th class="wd180">기타경력사항 및<br>기술서</th>
+                                            <td>
+                                                2024.2: <strong>치과위생사 면허증</strong> - 보건복지부<br>
+                                                2023.6: <strong>치과 보험청구사 3급</strong> - 대한치과건강보험협회<br>
+                                                2023.6: <strong>치과 코디네이터</strong> - 대한치과경영관리협회
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="resume__tit-box">
+                                <h4 class="resume__tit2">자격/면허정보 -> (resumeLicenseInfo)</h4>
+                            </th>
+                            <td class="resume__block">
+                                <table class="rsm-dtl__table2 rsm-dtl__table2--mt0">
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>자격증/면허증</th>
+                                            <th>발행처/발행기관</th>
+                                            <th>최득일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>치과위생사 면허증</td>
+                                            <td>보건복지부</td>
+                                            <td>2024.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>치과 보험청구사 3급</td>
+                                            <td>대한치과건강보험협회</td>
+                                            <td>2023.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>치과 코디네이터</td>
+                                            <td>대한치과건강보험협회</td>
+                                            <td>2023.6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="resume__tit-box">
+                                <h4 class="resume__tit2">기타활동/사회경험 -> (resumeActiveInfo)</h4>
+                            </th>
+                            <td class="resume__block">
+                                <table class="rsm-dtl__table2 rsm-dtl__table2--mt0" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th class="wd251">활동기간</th>
+                                            <th colspan="2">상세활동</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3">2024.01.10 ~ 2024.01.15</td>
+                                            <th>기관/장소</th>
+                                            <td>서울 어린이 병원</td>
+                                        </tr>
+                                        <tr>
+                                            <th>활동내용</th>
+                                            <td>어린이 환자 돌봄 및 프로그램 진행</td>
+                                        </tr>
+                                        <tr>
+                                            <th>활동내용</th>
+                                            <td>어린이 환자 돌봄 및 프로그램 진행</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">경력사항 -> (resumeCareerInfo)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table">
-                                <tbody>
-                                    <tr>
-                                        <th>경력사항</th>
-                                        <td>경력 (1년 0개월)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="rsm-dtl__table2">
-                                <thead>
-                                    <tr>
-                                        <th class="wd180">근무기간</th>
-                                        <th colspan="2">상세경력</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2024.1 - 2025.1</td>
-                                        <td><strong>경기</strong> 서울비디치과 불당본점<br>
-                                            직급 : 주임,
-                                            담당업무 : 진료실 환자 응대 및 어시스트,
-                                            퇴사사유 :</td>
-                                    </tr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="resume__tit-box">
+                                <h4 class="resume__tit2">자기소개서 -> (resumeContent)</h4>
+                            </th>
+                            <td class="resume__block">
+                                <p class="rsm-dtl__intro">
+                                    안녕하세요 저는 백석대학교 치위생학과를 졸업하고 1년차로 치과에서 근무중인 치과위생사 황서영입니다.
 
-                                </tbody>
-                            </table>
-
-                            <table class="rsm-dtl__table mt20">
-                                <tbody>
-                                    <tr>
-                                        <th class="wd180">기타경력사항 및<br>기술서</th>
-                                        <td>
-                                            2024.2: <strong>치과위생사 면허증</strong> - 보건복지부<br>
-                                            2023.6: <strong>치과 보험청구사 3급</strong> - 대한치과건강보험협회<br>
-                                            2023.6: <strong>치과 코디네이터</strong> - 대한치과경영관리협회
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">자격/면허정보 -> (resumeLicenseInfo)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table2 rsm-dtl__table2--mt0">
-                                <thead>
-                                    <tr>
-                                        <th>구분</th>
-                                        <th>자격증/면허증</th>
-                                        <th>발행처/발행기관</th>
-                                        <th>최득일</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>치과위생사 면허증</td>
-                                        <td>보건복지부</td>
-                                        <td>2024.2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>치과 보험청구사 3급</td>
-                                        <td>대한치과건강보험협회</td>
-                                        <td>2023.6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>치과 코디네이터</td>
-                                        <td>대한치과건강보험협회</td>
-                                        <td>2023.6</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">기타활동/사회경험 -> (resumeActiveInfo)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <table class="rsm-dtl__table2 rsm-dtl__table2--mt0" border="1">
-                                <thead>
-                                    <tr>
-                                        <th class="wd251">활동기간</th>
-                                        <th colspan="2">상세활동</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td rowspan="3">2024.01.10 ~ 2024.01.15</td>
-                                        <th>기관/장소</th>
-                                        <td>서울 어린이 병원</td>
-                                    </tr>
-                                    <tr>
-                                        <th>활동내용</th>
-                                        <td>어린이 환자 돌봄 및 프로그램 진행</td>
-                                    </tr>
-                                    <tr>
-                                        <th>활동내용</th>
-                                        <td>어린이 환자 돌봄 및 프로그램 진행</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-
-                        <div class="resume__tit-box">
-                            <h4 class="resume__tit2">자기소개서 -> (resumeContent)</h4>
-                        </div>
-                        <div class="resume__block">
-                            <p class="rsm-dtl__intro">
-                                안녕하세요 저는 백석대학교 치위생학과를 졸업하고 1년차로 치과에서 근무중인 치과위생사 황서영입니다.
-
-                                저는 대학교에서 담임교수님 멘토링장으로 활동하면서 단체 생활에서 일을 계획적으로 짜고 진행하는 법을 배웠고, 보건학부 학생회의 임원으로 학우들의 의견을
-                                반영하고 불만 사항들을 해결하려고 노력하며 학우들이 학교를 보다 편하게 다닐 수 있게 도왔습니다. 또한 학교생활을 조금이라도 더 즐겁게 지낼 수 있도록 봄에는
-                                벚꽃 이벤트, 시험 기간에는 간식 이벤트와 공부 인증 이벤트 등 다양한 이벤트를 기획하고 진행하였습니다. 저는 학생회 경험을 통해 많은 사람들의 의견을 어떻게
-                                하면 잘 들어주고 조율하며 공감해줄 수 있는지 경험적으로 배울 수 있었습니다.
-                                이러한 저의 배려심과 리더십, 공감적인 면은 환자분들을 대하는 서비스 정신이 기본적으로 요구되는 치과위생사에게 꼭 필요한 것이며 환자분들에게 꼭 필요한
-                                치과위생사가 되는 기본 자질이라고 생각합니다.
-                                저는 긍정적이고 낙천적인 성격을 지녔다고 생각합니다. 모든 가능성에 대해서 마음을 열고 새로운 일에도 기꺼이 도전하는 성격을 갖고 있습니다. 힘든 일을
-                                하거나, 어려운 상황에 직면하게 되더라도 쉽게 좌절하거나 포기하지 않고 모든 사람들에게 배울 것이 있다는 긍정적인 마인드로 생활하다 보니 많은 사람들에게
-                                신뢰를 얻고, 믿음직한 사람이라는 말을 들을 수 있었습니다.
-                                이런 성격 덕분에 인간관계를 잘 유지하고 사람들 사이의 갈등을 중재하는 역할을 많이 하였으며 서비스직 아르바이트를 할 때 응대하기 어려운 손님이 와도 큰 소리
-                                나지 않게 대화로 잘 풀어나갔으며 치과의료기관 현장실습 기간 중에도 환자분들께 긍정적이고 밝아서 좋다는 칭찬을 많이 들었습니다. 또한 저는 과정과 배움을
-                                즐기지 못하면, 그 꿈을 가진 사람은 과정과 배움이 길고 지루하며, 비참하다고 생각합니다. 그래서 저는 목표를 달성하는 과정과 성취하는 과정을 즐기자는
-                                긍정적인 마인드로 살아가고 있습니다.
-                                저의 또 다른 장점은 철저한 계획을 세우는 것입니다. 하루를 얼마나 알차게 계획하여 생활하느냐에 따라 성공 여부가 결정 난다고 생각합니다. 그래서 저는 하루
-                                시작 전 그 날 해야 할 일들을 정리하고 계획하는 습관을 지니게 되었습니다. 저는 저의 이러한 습관을 병원에서도 적용해 내원 예정인 환자(고객)분들을 미리
-                                체크하고 기구들을 미리 준비하는 등 병원에서도 계획적으로 진료에 임할 수 있을 것입니다.
-                                저의 단점은 뭐든 빨리빨리 해야 하고 일을 남겨 둬야 하는 상황이 생기면 마음이 불안해지는 조급한 성격입니다. 뭐든 빨리 해결해야 한다고 생각 하다 보니
-                                마음이 급해지고 그렇다 보니 완벽하지는 않은 결과물이 나오는 경우들이 존재하였습니다. 저는 이러한 단점을 보완하기 위해 여유로운 시간 텀을 두고 계획을 세워
-                                이 시간 안에 천천히 꼼꼼히 일을 끝내보려는 계획을 세웠고 그 결과 전보다는 많이 여유로워 질 수 있었습니다. 앞으로는 이런 보완된 성격으로 환자분들을 좀 더
-                                세심하게 바라볼 수 있는 치과위생사로 성장하고 싶습니다.
-                                저는 4년 동안 학교를 다니며 치과위생사로써 수행하는데 필요한 실기 능력, 유아부터 어르신까지 전 생애주기 고객(환자)들을 대하는 방법, 태도에 대한 능력을
-                                갖추었다고 생각합니다. 또한 저는 업무수행 역량을 갖추기 위해 노인구강보건교육 봉사와 지역사회 치위생학 현장실습의 일환으로 유아 구강건강증진 프로젝트를
-                                수행하였습니다. 저는 학교를 다닐 때 과제를 한 번도 놓친 적이 없으며 로컬치과, 대학 병원 실습에서도 매일매일 집중하고 열심히 임해 선생님들께 칭찬을 받는
-                                등 여러 현장실무 역량을 쌓았습니다.
-                                제가 만약 입사하게 된다면 4년 동안 전공수업을 들으며 배운 내용을 토대로 치과가 한단계 더욱 발전할 수 있도록 기여하는 치과위생사가 되고 싶습니다. 또한
-                                새로운 것을 두려워하지 않는 저는 바른마음치과에서 더 많은 것들을 경험하고 배울 수 있을 것이라고 생각합니다.
-                                선생님들이 진료하실 때 열심히 진료 보조를 하고 환자분들을 나의 가족이라고 생각하며 나의 감정과 기분이 업무태도가 되지 않도록 항상 친절함과 밝은 성격으로
-                                기분 좋은 서비스를 제공해 환자분들께서 병원을 오실 때 만족감을 더욱 높여드릴 수 있는 치과위생사가 되고 싶습니다. 또한 저는 평소 실행력이 좋고 끈기가
-                                있다는 말을 자주 듣기 때문에치과에 입사해 끈기를 가지고 몸도 마음도 성장하는 치과위생사가 되고 싶습니다. </p>
-                        </div>
-                        <div>
-                            <p
-                                style="text-align: center; margin-top: 50px; font-size: 18px; font-weight: 500; color: #333;">
-                                위의 모든 내용은 사실과 다름없음을 확인합니다.</p>
-                            <p style="text-align: center; font-size: 18px; margin: 20px;">작성일:
-                                <span style="font-weight: 600">2025.01.13</strong> / 작성자 : <span
-                                        style="font-weight: 600">VTA</strong>
-                            </p>
-                        </div>
-
-                        <dl class="rsm__dl rsm__dl--gray"
-                            style="border: 0; background: #f5f5f5; margin-top: 30px; padding: 30px 20px; line-height: 1.3; margin-bottom: 1rem;">
-                            <dt style="font-size: 20px; font-weight: 600;">위의 모든 내용은 사실과 다름없음을 확인합니다.</dt>
-                            <dd
-                                style="display: flex; flex-direction: column;font-size: 17px; font-weight: 300; margin-top: 20px; margin-bottom: 0.5rem; margin-left: 0;">
-                                <span style="display: flex ; gap: 5px;">※ 덴탈잡에서는 남녀고용평등과 일·가정 양립 지원에 관한 법률에 의거 성별 및 나이에
+                                    저는 대학교에서 담임교수님 멘토링장으로 활동하면서 단체 생활에서 일을 계획적으로 짜고 진행하는 법을 배웠고, 보건학부 학생회의 임원으로 학우들의 의견을
+                                    반영하고 불만 사항들을 해결하려고 노력하며 학우들이 학교를 보다 편하게 다닐 수 있게 도왔습니다. 또한 학교생활을 조금이라도 더 즐겁게 지낼 수 있도록
+                                    봄에는
+                                    벚꽃 이벤트, 시험 기간에는 간식 이벤트와 공부 인증 이벤트 등 다양한 이벤트를 기획하고 진행하였습니다. 저는 학생회 경험을 통해 많은 사람들의 의견을
+                                    어떻게
+                                    하면 잘 들어주고 조율하며 공감해줄 수 있는지 경험적으로 배울 수 있었습니다.
+                                    이러한 저의 배려심과 리더십, 공감적인 면은 환자분들을 대하는 서비스 정신이 기본적으로 요구되는 치과위생사에게 꼭 필요한 것이며 환자분들에게 꼭 필요한
+                                    치과위생사가 되는 기본 자질이라고 생각합니다.
+                                    저는 긍정적이고 낙천적인 성격을 지녔다고 생각합니다. 모든 가능성에 대해서 마음을 열고 새로운 일에도 기꺼이 도전하는 성격을 갖고 있습니다. 힘든 일을
+                                    하거나, 어려운 상황에 직면하게 되더라도 쉽게 좌절하거나 포기하지 않고 모든 사람들에게 배울 것이 있다는 긍정적인 마인드로 생활하다 보니 많은
+                                    사람들에게
+                                    신뢰를 얻고, 믿음직한 사람이라는 말을 들을 수 있었습니다.
+                                    이런 성격 덕분에 인간관계를 잘 유지하고 사람들 사이의 갈등을 중재하는 역할을 많이 하였으며 서비스직 아르바이트를 할 때 응대하기 어려운 손님이 와도
+                                    큰 소리
+                                    나지 않게 대화로 잘 풀어나갔으며 치과의료기관 현장실습 기간 중에도 환자분들께 긍정적이고 밝아서 좋다는 칭찬을 많이 들었습니다. 또한 저는 과정과
+                                    배움을
+                                    즐기지 못하면, 그 꿈을 가진 사람은 과정과 배움이 길고 지루하며, 비참하다고 생각합니다. 그래서 저는 목표를 달성하는 과정과 성취하는 과정을 즐기자는
+                                    긍정적인 마인드로 살아가고 있습니다.
+                                    저의 또 다른 장점은 철저한 계획을 세우는 것입니다. 하루를 얼마나 알차게 계획하여 생활하느냐에 따라 성공 여부가 결정 난다고 생각합니다. 그래서 저는
+                                    하루
+                                    시작 전 그 날 해야 할 일들을 정리하고 계획하는 습관을 지니게 되었습니다. 저는 저의 이러한 습관을 병원에서도 적용해 내원 예정인 환자(고객)분들을
+                                    미리
+                                    체크하고 기구들을 미리 준비하는 등 병원에서도 계획적으로 진료에 임할 수 있을 것입니다.
+                                    저의 단점은 뭐든 빨리빨리 해야 하고 일을 남겨 둬야 하는 상황이 생기면 마음이 불안해지는 조급한 성격입니다. 뭐든 빨리 해결해야 한다고 생각 하다
+                                    보니
+                                    마음이 급해지고 그렇다 보니 완벽하지는 않은 결과물이 나오는 경우들이 존재하였습니다. 저는 이러한 단점을 보완하기 위해 여유로운 시간 텀을 두고 계획을
+                                    세워
+                                    이 시간 안에 천천히 꼼꼼히 일을 끝내보려는 계획을 세웠고 그 결과 전보다는 많이 여유로워 질 수 있었습니다. 앞으로는 이런 보완된 성격으로 환자분들을
+                                    좀 더
+                                    세심하게 바라볼 수 있는 치과위생사로 성장하고 싶습니다.
+                                    저는 4년 동안 학교를 다니며 치과위생사로써 수행하는데 필요한 실기 능력, 유아부터 어르신까지 전 생애주기 고객(환자)들을 대하는 방법, 태도에 대한
+                                    능력을
+                                    갖추었다고 생각합니다. 또한 저는 업무수행 역량을 갖추기 위해 노인구강보건교육 봉사와 지역사회 치위생학 현장실습의 일환으로 유아 구강건강증진 프로젝트를
+                                    수행하였습니다. 저는 학교를 다닐 때 과제를 한 번도 놓친 적이 없으며 로컬치과, 대학 병원 실습에서도 매일매일 집중하고 열심히 임해 선생님들께 칭찬을
+                                    받는
+                                    등 여러 현장실무 역량을 쌓았습니다.
+                                    제가 만약 입사하게 된다면 4년 동안 전공수업을 들으며 배운 내용을 토대로 치과가 한단계 더욱 발전할 수 있도록 기여하는 치과위생사가 되고 싶습니다.
+                                    또한
+                                    새로운 것을 두려워하지 않는 저는 바른마음치과에서 더 많은 것들을 경험하고 배울 수 있을 것이라고 생각합니다.
+                                    선생님들이 진료하실 때 열심히 진료 보조를 하고 환자분들을 나의 가족이라고 생각하며 나의 감정과 기분이 업무태도가 되지 않도록 항상 친절함과 밝은
+                                    성격으로
+                                    기분 좋은 서비스를 제공해 환자분들께서 병원을 오실 때 만족감을 더욱 높여드릴 수 있는 치과위생사가 되고 싶습니다. 또한 저는 평소 실행력이 좋고
+                                    끈기가
+                                    있다는 말을 자주 듣기 때문에치과에 입사해 끈기를 가지고 몸도 마음도 성장하는 치과위생사가 되고 싶습니다.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p
+                                    style="text-align: center; margin-top: 50px; font-size: 18px; font-weight: 500; color: #333;">
+                                    위의 모든 내용은 사실과 다름없음을 확인합니다.</p>
+                                <p style="text-align: center; font-size: 18px; margin: 20px 20px 0;">작성일:
+                                    <span style="font-weight: 600">2025.01.13</strong> / 작성자 : <span
+                                            style="font-weight: 600">VTA</strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rsm__dl rsm__dl--gray"
+                                style="border: 0; background: #f5f5f5; margin-top: 30px; padding: 30px 20px; line-height: 1.3; margin-bottom: 1rem;">
+                                <div style="font-size: 20px; font-weight: 600;">
+                                    위의 모든 내용은 사실과 다름없음을 확인합니다.
+                                </div>
+                                <div style="display: flex; flex-direction: column;font-size: 17px; font-weight: 300; margin-top: 20px; margin-bottom: 0.5rem; margin-left: 0;"">
+                                    <span style=" display: flex ; gap: 5px;">※ 덴탈잡에서는 남녀고용평등과 일·가정 양립 지원에 관한 법률에 의거 성별
+                                    및
+                                    나이에
                                     대한 정보를 표시하지 않습니다.</span>
-                                <span style="display: flex ; gap: 5px;">※ 본 정보는 사용자가 구직활동을 위해 등록한 이력서 정보이며, 덴탈잡은 기재된 내용에
-                                    대한 오류와 사용자가 신뢰하여 취한 조치에 대해 책임을 지지 않습니다.</span>
-                                <span style="display: flex ; gap: 5px;">※ 본 정보는 어떠한 경우라도 덴탈잡이나 등록자의 동의없이 무단전재 및 재배포할 수
-                                    없으며 채용 목적 이외의 용도로 사용할 수 없습니다.</span>
-                                <span style="display: flex ; gap: 5px;">※ 본 정보를 출력, 복사, 유출한 경우 개인정보보호에 대한 책임은 출력, 복사, 유출
-                                    행외를 한 당사자에게 있으며 정보통신부 고 시 제2005-18호에 따라 법에 의해 책임을 지게 됨을 양지하시기 바랍니다.</span>
-                            </dd>
-                        </dl>
-                    </div>
+                                    <span style="display: flex ; gap: 5px;">※ 본 정보는 사용자가 구직활동을 위해 등록한 이력서 정보이며, 덴탈잡은 기재된
+                                        내용에
+                                        대한 오류와 사용자가 신뢰하여 취한 조치에 대해 책임을 지지 않습니다.</span>
+                                    <span style="display: flex ; gap: 5px;">※ 본 정보는 어떠한 경우라도 덴탈잡이나 등록자의 동의없이 무단전재 및 재배포할
+                                        수
+                                        없으며 채용 목적 이외의 용도로 사용할 수 없습니다.</span>
+                                    <span style="display: flex ; gap: 5px;">※ 본 정보를 출력, 복사, 유출한 경우 개인정보보호에 대한 책임은 출력,
+                                        복사, 유출
+                                        행외를 한 당사자에게 있으며 정보통신부 고 시 제2005-18호에 따라 법에 의해 책임을 지게 됨을 양지하시기 바랍니다.</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <!-- End resume -->
