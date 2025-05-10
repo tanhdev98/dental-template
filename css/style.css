@@ -285,22 +285,12 @@
 #notification .header-frame {
     color: #333;
     align-items: end;
+    border-bottom-width: 2px;
 }
 
 #notification .header-frame .titleText {
     font-size: 36px;
     font-weight: 400;
-}
-
-#notification .header-frame a,
-#notification .header-frame a span {
-    color: #333;
-    font-size: 18px;
-}
-
-#notification .header-frame a:hover,
-#notification .header-frame a:hover span {
-    color: #0068b7;
 }
 
 #notification .content-frame {
@@ -1237,9 +1227,9 @@ h1.title {
 }
 
 #notification-tab .table {
-    margin-bottom: 5px;
-    margin-top: 29px;
-    border-top: 1px solid #000;
+    /* margin-bottom: 5px; */
+    /* margin-top: 29px; */
+    border-top: 0;
 }
 
 #notification-tab.mtch__list--mt10 .table {
@@ -1255,7 +1245,7 @@ h1.title {
     grid-template-columns: 240px 1fr 220px 130px;
     padding: 29px 0px 34px 10px;
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
 }
 
 #notification-tab .table>li>div.col5 {
@@ -8299,6 +8289,10 @@ h1.title {
     white-space: nowrap;
 }
 
+#content-table .table .column-left .wrap-title .item-title.maxWidth520 {
+    max-width: 520px;
+}
+
 #content-table .table.table-has-more-infomation .column-left .wrap-title .item-title {
     font-size: 20px;
     color: #333;
@@ -8345,6 +8339,7 @@ h1.title {
     padding: 0 12px;
 }
 
+#notification-tab .table-header div.column.column-3,
 #support-now .table-header div.column.column-3 {
     font-size: 16px;
     width: 100%;
@@ -8352,11 +8347,34 @@ h1.title {
     grid-template-columns: 1fr 220px 130px;
 }
 
+#notification-tab .table-header.gridTemplateColumns {
+    grid-template-columns: 240px 1fr 220px 130px;
+    color: #111;
+}
+
+#notification-tab .table-header.gridTemplateColumns div.column.column-3 {
+    display: flex;
+}
+
+#notification-tab .table-header .column.column-3>div,
 #support-now .table-header .column.column-3>div {
     display: flex;
     align-items: end;
     justify-content: center;
     color: #666;
+}
+
+#notification-tab .msg__table th,
+#notification-tab .table-header .column.column-3>div,
+#notification-tab .table-header .column {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    white-space: nowrap;
+}
+
+#notification-tab .msg__table th {
+    background: #fafafa;
 }
 
 #support-now .table-header .column.column-3>div:first-child {
@@ -8408,7 +8426,6 @@ h1.title {
 }
 
 .wrap-table .item.yellow .clinic-name.start {
-    align-items: start;
     padding: 0;
 }
 
@@ -8467,7 +8484,7 @@ h1.title {
 }
 
 .wrap-table.table .wrap-row {
-    padding: 0 8px;
+    padding: 0 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9911,7 +9928,6 @@ h1.title {
 
 .frame-section .top-link {
     position: absolute;
-    font-weight: 300;
     padding-right: 15px;
     right: 40px;
     top: 30px;
@@ -11814,7 +11830,7 @@ td span.grdt {
 .vln-mgzn__cnt {
     padding: 25px;
     border-bottom: 1px solid #ddd;
-    min-height: 545px;
+    height: auto;
 }
 
 .vln-mgzn__cnt img {
@@ -12295,6 +12311,7 @@ td span.grdt {
     padding: 30px 16px;
     background: #f5f5f5;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .ticket__tit3 {
@@ -13446,6 +13463,7 @@ td span.grdt {
     font-weight: 600;
     border-bottom: 1px solid #ddd;
     white-space: nowrap;
+    background: #f4f6f8;
 }
 
 .rsm-mng__table th.wd37 {
@@ -14871,7 +14889,7 @@ td span.grdt {
     min-width: 130px;
     min-height: 78px;
     padding: 25px 65px 34px 25px;
-    background: #fff;
+    background: #ffeb00;
     border-radius: 30px;
     font-size: 16px;
     letter-spacing: -0.5px;
@@ -19249,27 +19267,27 @@ table.table_training_courses {
 }
 
 .adsInfoPop__item_title.darkBlue {
-    background-color: #0a2478;
+    background-color: #0A3D8A;
 }
 
 .adsInfoPop__item_title.lightBlue {
-    background-color: #076bc7;
+    background-color: #0D58C0;
 }
 
 .adsInfoPop__item_title.oliveGreen {
-    background-color: #567e34;
+    background-color: #6EA544;
 }
 
 .adsInfoPop__item_title.teal {
-    background-color: #00827b;
+    background-color: #138F84;
 }
 
 .adsInfoPop__item_title.maroon {
-    background-color: #aa0000;
+    background-color: #EC878D;
 }
 
 .adsInfoPop__item_title.purple {
-    background-color: #7600d1;
+    background-color: #9A2B89;
 }
 
 .nameBanner_info,
@@ -19685,12 +19703,12 @@ table.table_training_courses {
     border-left: 0;
 }
 
+.table-bill-data td:nth-child(4),
 .table-bill-data td:nth-child(2) {
     text-align: center;
 }
 
-.table-bill-data td:nth-child(5),
-.table-bill-data td:nth-child(4) {
+.table-bill-data td:nth-child(5) {
     text-align: end;
 }
 
