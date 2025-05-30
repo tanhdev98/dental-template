@@ -1,0 +1,27 @@
+.note-modal-content {
+    margin: 15% auto !important;
+    max-width: 650px !important;
+    width: 100%;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.note-modal-content {
+    padding: 20px;
+}
+.note-modal-header {
+    padding: 0 !important;
+    border: unset !important;
+}
+.note-input {
+    margin-top: 10px !important;
+}
+.note-modal-footer .note-btn {
+    border: 1px solid #ddd;
+}
+.note-modal-body {
+    padding: 20px !important;
+}
+.text-muted{
+    word-break: auto-phrase;
+}

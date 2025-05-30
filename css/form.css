@@ -80,6 +80,10 @@ input[type='radio'] {
     color: #666;
 }
 
+.resumeCareerYear .form-option-wrapper {
+    height: 245px;
+}
+
 /* register form */
 .register-form {
     display: flex;
@@ -116,18 +120,27 @@ input[type='radio'] {
 
 #mmbrs.register-form .form-row .group-form {
     width: 275px;
-    gap: 5px;
+    gap: 10px;
 }
 
 #mmbrs.register-form .form-row .group-form--gap3 {
     gap: 2px;
 }
 
+#mmbrs.register-form .form-select-container{
+    max-width: 100%;
+}
 .register-form .form-row .group-form input {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 0 12px;
     width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#register-page .register-form .form-row.form-phone .group-form input:read-only {
+    background-color: #ececec;
 }
 
 .register-form .form-row .group-form input::placeholder {

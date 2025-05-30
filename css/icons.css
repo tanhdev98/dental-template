@@ -79,6 +79,15 @@
   background-image: url("../images/icons/star-fill.png");
 }
 
+.icon-star-gray {
+  width: 23px;
+  height: 23px;
+}
+
+.icon-star-gray::after {
+  background-image: url("../images/icons/star-gray.png");
+}
+
 .icon-next,
 .icon-prev {
   display: flex;
@@ -148,6 +157,10 @@
   background-image: url("../images/icons/icon-pause.png");
 }
 
+.icon-play::after {
+  background-image: url("../images/icons/icon-play.png");
+}
+
 .icon-nav-docs::after {
   background-image: url("../images/icons/icon-nav-docs.png");
 }
@@ -164,6 +177,15 @@
 #top-sub-page #side-nav ul li.active .icon-nav-list::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-list::after {
   background-image: url("../images/icons/icon-nav-list_hover.png");
+}
+
+.icon-recruit-add::after {
+  background-image: url("../images/icons/recruit-add.png");
+}
+
+#top-sub-page #side-nav ul li.active .icon-recruit-add::after,
+#top-sub-page #side-nav ul li:hover .icon-recruit-add::after {
+  background-image: url("../images/icons/recruit-add-hover.png");
 }
 
 .icon-nav-light::after {
@@ -190,7 +212,7 @@
 }
 
 .icon-nav-letter::after {
-  background-image: url("../images/icons/icon-nav-letter.png");
+  background-image: url("../images/icons/icon-letter-blk.png");
 }
 
 .icon-letter::after {
@@ -199,7 +221,7 @@
 
 #top-sub-page #side-nav ul li.active .icon-nav-letter::after,
 #top-sub-page #side-nav ul li:hover .icon-nav-letter::after {
-  background-image: url("../images/icons/icon-nav-letter_hover.png");
+  background-image: url("../images/icons/icon-letter-blk-hover.png");
 }
 
 .icon-nav-coins::after {
@@ -286,6 +308,11 @@
 #top-sub-page #side-nav ul li.active .icon-document-subpage::after,
 #top-sub-page #side-nav ul li:hover .icon-document-subpage::after {
   background-image: url("../images/icons/icon-document-subpage-active.png");
+}
+
+#top-sub-page #side-nav ul li.active .icon-resume-add::after,
+#top-sub-page #side-nav ul li:hover .icon-resume-add::after {
+  background-image: url("../images/icons/resume-add-hover.png");
 }
 
 #top-sub-page #side-nav ul li.active .icon-list-two::after,
@@ -467,6 +494,12 @@
   left: 0;
 }
 
+.dropDown.icon-x::after,
+.dropDown.icon-x::before {
+  height: 1px;
+  background-color: #999;
+}
+
 .icon-back-to-top::after {
   background-image: url("../images/icons/icon-back-to-top.png");
 }
@@ -482,6 +515,7 @@
   top: 5px;
 }
 
+.icon-trash-2,
 .icon-trash {
   width: 16px;
   height: 17px;
@@ -493,6 +527,19 @@
 
 .icon-trash::after {
   background-image: url("../images/icons/icon-trash.png");
+}
+
+.icon-trash-2::after {
+  background-image: url("../images/icons/icon-trash-2.png");
+}
+
+.icon-delete {
+  width: 16px;
+  height: 17px;
+}
+
+.icon-delete::after {
+  background-image: url("../images/icons/icon-delete.png");
 }
 
 .icon-hot,
@@ -553,6 +600,10 @@
   background-image: url("../images/icons/icon-document-subpage.png");
 }
 
+.icon-resume-add::after {
+  background-image: url("../images/icons/resume-add.png");
+}
+
 .icon-link,
 .icon-zip {
   width: 30px;
@@ -573,6 +624,7 @@
   height: 12px;
   transition: transform 0.3s ease;
 }
+
 .icon-arrow-down-white::after {
   background-image: url("../images/icons/icon-arrow-down-white.png");
 }

@@ -7,6 +7,18 @@
   vertical-align: baseline;
   color: #333;
   box-sizing: border-box;
+  -webkit-user-drag: none;
+}
+
+.resume-export-root.ResumeNew * {
+  font-family: initial;
+  font-size: 11px;
+  color: initial;
+  box-sizing: initial;
+  margin: initial;
+  padding: initial;
+  border: initial;
+  vertical-align: middle;
 }
 
 article,
@@ -25,6 +37,10 @@ section {
 
 body {
   line-height: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 ol,
@@ -111,11 +127,16 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="number"] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
 strong {
   font-weight: inherit;
+}
+
+.ql-editor strong {
+  font-weight: 600;
 }
 
 .table> :not(caption)>*>* {
@@ -124,4 +145,26 @@ strong {
 
 .fade:not(.show) {
   opacity: 1;
+}
+
+textarea {
+  line-height: 1.3;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #076ecc !important;
+}
+
+.focus-none:focus {
+  border: none !important;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #076ecc;
 }

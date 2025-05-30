@@ -1,0 +1,32 @@
+.bAddr {
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.pinMap img {
+    width: auto;
+}
+
+.pinMap .dntInf__input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pinMap .rsm-mng__btn {
+    min-width: 80px;
+    padding: 0;
+    height: 36px;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pinMap .pin-results {
+    display: none;
+}
+
+.pinMap .pin-results.active {
+    display: block;
+}
