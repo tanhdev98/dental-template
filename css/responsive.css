@@ -7286,3 +7286,232 @@
     }
 
 }
+
+
+/* responsive home */
+@media screen and (width <= 1080px) {
+    .grand-banner-mobile {
+        display: none;
+    }
+    #hot-recruit .list-grid .list-item{
+        display: block !important;
+        margin-top: 12px;
+    }
+    #premium-banner, #enterprise, #hot-recruit, #hot-talent {
+        margin-top: 30px;
+    }
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item i, #bottom-nav .bottom-nav-wrap .bottom-nav-item .phone-number {
+        display: flex;
+    }
+    #bottom-nav .bottom-nav-wrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    #bottom-nav{
+        padding: 20px;
+    }
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item {
+        max-width: 100% !important;
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+        gap: 10px;
+        height: 120px;
+    }
+    #bottom-nav .title-bottom-nav-res .phone-number-res, #bottom-nav .title-bottom-nav-res{
+        display: none;
+    }
+/* #grand-banner */
+    .section-title{
+        display: block;
+    }
+    .list-grid .list-item.large-full .item-content .bookmark {
+        top: 180px;
+        right: 18px;
+    }
+    #grand-banner .list-grid>.list-item-1, #grand-banner .list-grid>.list-item-2 {
+        display: block !important;
+    }
+    #enterprise .list-grid .list-item-wrap, #premium-banner .list-grid .list-item-wrap, #grand-banner .list-grid .list-item-wrap {
+        display: block;
+    }
+    #grand-banner .list-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "item1 item2 item3 item4"
+        "item1 item2 item3 item5";
+        justify-items: end;
+        margin: unset;
+        gap: 12px;
+    }
+   
+    #grand-banner .list-grid .list-item .item-content{
+        height: auto;
+    }
+
+    #grand-banner .list-grid>.list-item-1 .item-content, #grand-banner .list-grid>.list-item-2 .item-content, #grand-banner .list-grid>.list-item-3 .item-content{
+        height: 100%;
+    }
+
+    #grand-banner .list-grid>.list-item-1, #grand-banner .list-grid>.list-item-2, #grand-banner .list-grid>.list-item-3{
+        height: 472px !important;
+    }
+
+/* #premium-banner  */
+    #premium-banner {
+        padding-bottom: 20px;
+    }
+    #premium-banner .list-grid .list-item {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0px;
+        gap: 12px;
+    }
+    #premium-banner .list-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "item1"
+        "item2";
+        justify-items: end;
+        margin: unset;
+        gap: 12px;
+    }
+
+/* #hot-talent */
+    #hot-talent .list-grid {
+        display: grid;
+        gap: 20px 16px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item6 item7 item8 item9';
+    }
+
+    #hot-talent .list-grid .list-item.full.list-item-5,
+    #hot-talent .list-grid .list-item.full.list-item-10{
+        display: none;
+    }
+
+/* enterprise */
+    #enterprise .list-grid{
+        padding-bottom: 0;
+        gap: 0 !important;
+    }
+
+}
+@media screen and (width <= 820px) {
+    #grand-banner .list-grid, #premium-banner .list-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "item1 item2 item3"
+        "item1 item2 item3";
+    }
+    #premium-banner .list-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "item1"
+        "item2";
+    }
+}
+@media screen and (width <= 768px) {
+    /* #enterprise */
+    #enterprise .list-grid .list-item .item-content{
+        display: flex;
+    }
+    #enterprise .list-grid .list-item .item-content .item-logo{
+        width: max-content;
+    }
+    #enterprise .list-grid .item-title {
+        margin-bottom: 0px;
+    }
+    #enterprise .list-grid .item-tag {
+        font-size: 14px;
+    }
+    #enterprise .list-grid .list-item .item-content .item-desc {
+        line-height: 1;
+        margin: 15px 0 10px 0;
+    }
+    #enterprise .list-grid .list-item .item-content .item-desc {
+        line-height: 1;
+        margin: 5px 0 10px 0;
+        font-size: 16px !important;
+    }
+    #enterprise .list-grid .item-title, #enterprise .list-grid .item-desc {
+        font-size: 16px !important;
+    }
+}
+@media screen and (width <= 680px) {
+    #grand-banner .list-grid, #premium-banner .list-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "item1 item2"
+        "item1 item2";
+    }
+    #grand-banner .list-grid>.list-item-3 {
+        display: none !important;
+    }
+    #grand-banner .list-grid>.list-item-1, #grand-banner .list-grid>.list-item-2, #grand-banner .list-grid>.list-item-3 {
+        height: auto !important;
+    }
+
+    #premium-banner .list-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "item1"
+        "item2";
+    }
+    
+    #hot-talent .list-grid {
+        display: grid;
+        gap: 20px 16px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'item1 item2'
+            'item3 item4'
+            'item6 item7'
+            'item8 item9';
+    }
+    #enterprise .list-grid .list-item .item-content .item-title {
+        margin-top: 0px;
+    }
+    #bottom-nav .bottom-nav-wrap a .icon:after {
+        height: 30px;
+    }
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item {
+        height: 100px;
+    }
+    #bottom-nav .bottom-nav-wrap .bottom-nav-item .phone-number{
+        font-size: 13px;
+    }
+}
+
+@media screen and (width <= 425px) {
+    #enterprise .list-grid .list-item .item-content{
+        display: flex;
+    }
+    #enterprise .list-grid .list-item .item-content .item-logo{
+        width: max-content;
+    }
+    #enterprise .list-grid .item-title {
+        margin-bottom: 0px;
+    }
+    #enterprise .list-grid .list-item .item-content .item-desc{
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+    }
+    #enterprise .list-grid .list-item .item-content {
+        padding: 15px;
+    }
+ 
+}
+@media screen and (width <= 380px) {
+    #enterprise .list-grid .list-item .item-content .item-desc {
+        line-height: 1 !important;
+    }
+ 
+}
