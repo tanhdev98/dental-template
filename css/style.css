@@ -3127,6 +3127,10 @@ h1.title {
     width: 100%;
 }
 
+#grand-banner .list-grid .list-item .item-content>div {
+    height: 100%;
+}
+
 .list-grid .list-item.large-full .item-image {
     position: absolute;
     bottom: 0;
@@ -3308,6 +3312,7 @@ h1.title {
 }
 
 .list-grid .list-item .item-content .item-tag {
+    position: relative;
     font-size: 13px;
     z-index: 1;
     max-width: calc(100% - 17px);
@@ -3430,13 +3435,6 @@ h1.title {
     height: 100%;
     object-fit: cover;
     border-radius: 0 10px 10px 0px;
-}
-
-@media screen and (width <=1590px) {
-    #grand-banner .list-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
 }
 
 @media screen and (width <=1320px) {
@@ -4041,42 +4039,6 @@ h1.title {
         display: block !important;
     }
 
-    #grand-banner .list-grid>.list-item-1,
-    #grand-banner .list-grid>.list-item-2 {
-        display: none !important;
-    }
-
-    /* #grand-banner .list-item-3,
-    #grand-banner .list-item-4,
-    #grand-banner .list-item-5,
-    #grand-banner .list-item-6,
-    #grand-banner .list-item-7,
-    #grand-banner .list-item-8,
-    #grand-banner .list-item-9,
-    #grand-banner .list-item-10,
-    #grand-banner .list-item-11,
-    #grand-banner .list-item-12,
-    #grand-banner .list-item-13,
-    #grand-banner .list-item-14,
-    #grand-banner .list-item-15,
-    #grand-banner .list-item-16,
-    #grand-banner .list-item-17,
-    #grand-banner .list-item-18 {
-        display: none;
-    } */
-
-    #grand-banner .list-grid,
-    #premium-banner .list-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-            'item1'
-            'item2';
-        justify-items: end;
-        margin: unset;
-        margin-left: 5%;
-    }
-
     #grand-banner .list-grid .list-item.large {
         max-width: 95% !important;
         margin-right: 5%;
@@ -4166,14 +4128,7 @@ h1.title {
     }
 
     .list-grid .list-item-wrap {
-        max-width: 960px;
-        width: 100%;
-    }
-
-    #enterprise .list-grid .list-item-wrap,
-    #premium-banner .list-grid .list-item-wrap,
-    #grand-banner .list-grid .list-item-wrap {
-        display: none;
+        height: 211px;
     }
 
     .scrollable-area .list-item-wrap {
@@ -4545,10 +4500,6 @@ h1.title {
         transform: translateY(0px);
     }
 
-    #grand-banner .list-grid {
-        grid-template-rows: repeat(2, 290px);
-    }
-
     #premium-banner .list-grid {
         grid-template-rows: repeat(2, auto);
     }
@@ -4799,10 +4750,6 @@ h1.title {
         grid-template-rows: 185px 215px 215px;
     }
 
-    #premium-banner .list-grid .list-item .item-content .item-logo {
-        margin: 0px auto -30px auto;
-    }
-
     #premium-banner .list-grid .scrollable-area-1,
     #premium-banner .list-grid .scrollable-area-2 {
         margin-top: 40px !important;
@@ -4966,11 +4913,6 @@ h1.title {
         justify-content: center;
     }
 
-    #premium-banner .list-grid .list-item .item-content .item-logo {
-        margin: -10px auto 0px auto;
-    }
-
-
     #premium-banner .list-grid .list-item .item-content,
     #hot-recruit .list-grid .list-item .item-content,
     #enterprise .list-grid .list-item .item-content {
@@ -5045,7 +4987,7 @@ h1.title {
     }
 
     .list-grid .list-item .item-content .item-logo {
-        height: 35px;
+        height: 40px;
         margin-bottom: 5px;
     }
 
