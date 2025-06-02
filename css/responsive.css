@@ -6889,10 +6889,6 @@
     width: 100%;
   }
 
-  .form-login form .form-group button {
-    padding: 10px 20px;
-  }
-
   #grand-banner .list-grid {
     grid-template-rows: repeat(1, auto);
   }
@@ -6909,6 +6905,7 @@
   #auth .container {
     bottom: unset;
     right: unset;
+    padding: 30px;
   }
 
   #tabs-form .bsns-srch .form-select-container {
