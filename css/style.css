@@ -3674,11 +3674,9 @@ h1.title {
         'item6 item7 item8 item9 item10';
 }
 
-@media screen and (min-width: 1320px) {
-    #hot-talent .list-grid .item-9 {
-        grid-column: 5;
-        grid-row: 1;
-    }
+#hot-talent .list-grid .item-9 {
+    grid-column: 5;
+    grid-row: 1;
 }
 
 #hot-talent .list-grid .list-item {
@@ -3787,13 +3785,6 @@ h1.title {
 
 #hot-talent .list-grid .list-item .item-content .item-tag {
     font-size: 11px;
-}
-
-@media screen and (width <=1320px) {
-    #hot-talent .list-grid {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: inherit;
-    }
 }
 
 /* Bottom Nav */
@@ -4131,6 +4122,10 @@ h1.title {
         height: 211px;
     }
 
+    #hot-talent .list-grid .list-item-wrap {
+        height: 100%;
+    }
+
     .scrollable-area .list-item-wrap {
         width: 440px;
         display: block;
@@ -4228,10 +4223,6 @@ h1.title {
     #hot-talent {
         background-color: #fff;
         max-width: 100% !important;
-    }
-
-    #hot-talent .list-grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     #hot-talent .list-grid .list-item-wrap:nth-last-child(-n + 2),
