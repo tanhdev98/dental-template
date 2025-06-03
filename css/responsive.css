@@ -422,6 +422,16 @@
 }
 
 @media (max-width: 991px) {
+  #auth {
+    min-height: 1160px;
+  }
+
+  #auth .container {
+    bottom: unset;
+    right: unset;
+    padding: 90px 30px;
+  }
+
   #tabs-form .tabs {
     flex-wrap: nowrap;
   }
@@ -543,6 +553,50 @@
 
   #content-table .table>li>div {
     grid-template-columns: calc(100% - 27.15% - 13.88%) 27.15% 13.88%;
+  }
+
+  .wrap-auth .wrap-content {
+    flex-direction: column;
+  }
+
+  .wrap-auth .wrap-content .wrap-auth-left {
+    width: 100%;
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .form-login form .form-group button {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  #auth .logo {
+    margin-bottom: 30px;
+  }
+
+  #auth .logo img {
+    width: 121px;
+  }
+
+  .wrap-auth .wrap-content .wrap-auth-right {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 260px;
+  }
+
+  .wrap-question {
+    margin-top: 30px;
+  }
+
+  .wrap-input+.form-group {
+    width: 100%;
+  }
+
+  .wrap-form-container {
+    flex-direction: column;
   }
 }
 
@@ -712,6 +766,10 @@
 }
 
 @media (max-width: 768px) {
+  #auth {
+    min-height: 990px;
+  }
+
   #wrap-search .tab-content-item .form-phone .group-phone {
     width: 100%;
     flex-wrap: wrap;
@@ -4168,13 +4226,12 @@
   }
 
   .wrap-forward a {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .wrap-forward a+a {
-    font-size: 15px;
     margin-left: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
   }
 
   .wrap-question p {
@@ -5536,6 +5593,19 @@
 }
 
 @media (max-width: 425px) {
+  .wrap-bottom-form {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .wrap-question {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
   #enterprise .list-grid .item-tag {
     font-size: 10px;
   }
@@ -6864,10 +6934,6 @@
     width: 100%;
   }
 
-  .wrap-input+.form-group {
-    width: 100%;
-  }
-
   #grand-banner .list-grid {
     grid-template-rows: repeat(1, auto);
   }
@@ -6879,12 +6945,6 @@
   #bottom-nav .bottom-nav-wrap {
     gap: 10px;
     padding: 0;
-  }
-
-  #auth .container {
-    bottom: unset;
-    right: unset;
-    padding: 30px;
   }
 
   #tabs-form .bsns-srch .form-select-container {
@@ -7406,6 +7466,10 @@
   #hot-talent .drop-list-item-res {
     display: block;
     margin: 40px 0 20px;
+  }
+
+  #loginTabs.tabs li a {
+    font-size: 14px;
   }
 }
 

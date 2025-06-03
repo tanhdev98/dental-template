@@ -5638,7 +5638,8 @@ h1.title {
 #auth {
     width: 100%;
     background-color: #f3f7f8;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 }
 
 #auth .container {
@@ -5673,16 +5674,10 @@ h1.title {
 
 #back-to-home a {
     color: #666;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 300;
     display: flex;
     justify-content: end;
-}
-
-#back-to-home a .icon {
-    margin-left: 4px;
-    width: 22px;
-    height: 18px;
 }
 
 .wrap-auth {
@@ -5860,13 +5855,9 @@ h1.title {
 }
 
 .wrap-forward a+a {
-    font-size: 18px;
-    font-weight: 400;
-    color: #666;
     margin-left: 15px;
     padding-left: 15px;
     position: relative;
-    line-height: 1;
 }
 
 .wrap-forward a+a:before {
@@ -5913,9 +5904,9 @@ h1.title {
 /* Copyright */
 .after-form p {
     text-align: center;
-    font-size: 17px;
+    font-size: 14px;
     color: #666;
-    margin-top: 38px;
+    margin-top: 25px;
     font-weight: 300;
 }
 
@@ -5924,73 +5915,6 @@ h1.title {
 @media screen and (max-width: 1200px) {
     .wrap-auth {
         padding: 60px 80px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .wrap-auth .wrap-content {
-        flex-direction: column;
-    }
-
-    .wrap-auth .wrap-content .wrap-auth-left {
-        width: 100%;
-        padding-right: 0;
-        border-right: none;
-    }
-
-    /* .wrap-auth .wrap-content .wrap-auth-right {
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-        max-width: 500px;
-        margin: 50px auto 0;
-    } */
-
-    .wrap-auth .wrap-content .wrap-auth-right {
-        display: none;
-    }
-
-    .wrap-auth .wrap-content .wrap-auth-right img {
-        width: 100%;
-    }
-
-    .form-login form .form-group button {
-        width: 100%;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    #auth .logo {
-        margin-bottom: 30px;
-    }
-
-    #auth .logo img {
-        width: 121px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .wrap-auth {
-        padding: 30px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .wrap-form-container {
-        flex-direction: column;
-    }
-
-    .wrap-bottom-form {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .wrap-question {
-        flex-direction: column;
-        margin-top: 30px;
-        gap: 10px;
-        align-items: flex-start;
     }
 }
 
