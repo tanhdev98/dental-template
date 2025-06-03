@@ -321,11 +321,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #hot-recruit .list-grid .list-item .item-content {
-    overflow: hidden;
-    width: 100%;
-  }
-
   #hot-talent .drop-list-item-res .btn-drop-list .icon-down {
     width: 10px;
   }
@@ -4638,11 +4633,6 @@
     display: block;
   }
 
-  #premium-banner .scrollable-area .list-item,
-  #hot-recruit .list-grid .list-item {
-    max-width: max-content;
-  }
-
   .scrollable-area-2 {
     margin-top: 15px;
   }
@@ -4981,13 +4971,6 @@
     min-width: auto;
     max-width: unset;
     display: flex;
-  }
-
-  #grand-banner .list-grid,
-  #premium-banner .list-grid,
-  #enterprise .list-grid,
-  #hot-recruit .list-grid {
-    margin-left: 0;
   }
 
   #status-support .table li .column {
@@ -5620,10 +5603,6 @@
   #hot-recruit .grand-banner-mobile {
     padding: 15px;
     height: fit-content;
-  }
-
-  #hot-recruit .list-grid {
-    padding: 0 0 15px;
   }
 
   #hot-talent {
@@ -6951,16 +6930,24 @@
   }
 
   #hot-recruit .list-grid .list-item .item-content .item-title {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   #hot-recruit .list-grid .list-item .item-content .item-desc {
-    margin: 5px 0 !important;
-    font-size: 13px;
+    margin: 15px 0 10px;
+    font-size: 14px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-height: 22px;
   }
 
   #hot-recruit .list-grid .list-item .item-content .item-tag {
-    font-size: 10px !important;
+    font-size: 12px;
+  }
+
+  #hot-recruit .list-grid .list-item .item-content .bookmark {
+    bottom: 18px;
+    right: 10px;
   }
 
   .carousel-indicators {
@@ -7021,7 +7008,7 @@
 
 }
 
-@media (max-width: 455px) {
+@media (max-width: 425px) {
   .dntInf__mng-btn.styleButton {
     padding: 8px 6px;
     word-break: auto-phrase;
@@ -7089,7 +7076,7 @@
   }
 
   #hot-recruit .list-grid .list-item .item-content {
-    padding: 15px;
+    padding: 18px 15px;
   }
 
   #premium-banner .list-grid .scrollable-area .list-item,
@@ -7294,11 +7281,6 @@
     display: none;
   }
 
-  #hot-recruit .list-grid .list-item {
-    display: block !important;
-    margin-top: 12px;
-  }
-
   #premium-banner,
   #enterprise,
   #hot-recruit,
@@ -7338,6 +7320,7 @@
   /* #grand-banner */
   .section-title {
     display: block;
+    font-size: 16px;
   }
 
   .list-grid .list-item.large-full .item-content .bookmark {
@@ -7392,10 +7375,6 @@
   }
 
   /* #hot-recruit  */
-  #hot-recruit .list-grid .list-item {
-    max-width: 100%;
-  }
-
   /* #hot-talent */
   #hot-talent .list-grid {
     display: grid;
@@ -7410,6 +7389,23 @@
   #hot-talent .list-grid .list-item.full.list-item-5,
   #hot-talent .list-grid .list-item.full.list-item-10 {
     display: none;
+  }
+
+  #hot-talent .btn-drop-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #hot-talent .drop-list-item-res {
+    display: block;
+    margin: 40px 0 20px;
   }
 }
 
@@ -7526,6 +7522,10 @@
 }
 
 @media screen and (width <=425px) {
+  #hot-recruit .list-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   #grand-banner .list-grid .list-item .item-content .item-desc {
     margin-top: 20px;
   }
